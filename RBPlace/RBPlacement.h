@@ -100,28 +100,28 @@ enum clusterNodeOrient {N, FN, S, FS, W, FW, E, FE, I};
 
 class RBPlacement
 {
-    friend class HGraphFixed;
+    friend class HGraphFixed;  // 友元类 - HGraphFixed类可访问RBPlacement私有成员
   public:
-    class Parameters : public HGraphParameters
+    class Parameters : public HGraphParameters // Parameters为HgraphParameters 公有继承类
     {
      public:
-        enum spaceCellsAlgType { EQUAL_SPACE, WITH_PIN_ALG1, WITH_PIN_ALG2 };
+        enum spaceCellsAlgType { EQUAL_SPACE, WITH_PIN_ALG1, WITH_PIN_ALG2 }; // 枚举声明
 
-	Verbosity       verb;
+	Verbosity       verb;  // 错误检测？
  	unsigned	numRowsToRemove; //rbplace will remove this
 					//many coreRows from the bottom of 
 					//the design
-        spaceCellsAlgType spaceCellsAlg;  // spaceCells algorithm to use
+        spaceCellsAlgType spaceCellsAlg;  // spaceCells algorithm to use 枚举定义
 	//added by sadya
 	bool            remCongestion;  //used to remove congestion by blowing
 	                                //up cell widths. to be used only on
-	                                // routed placements
+	                                // routed placements 用于通过扩大单元格宽度来消除拥塞，仅在布线时使用
 	
 	Parameters()
 	  :verb("1 1 1"), numRowsToRemove(0), spaceCellsAlg(EQUAL_SPACE),
 	  remCongestion(0)
 	  {}
-	Parameters(int argc, const char *argv[]);
+	Parameters(int argc, const char *argv[]); // 析构函数？
         Parameters(const Parameters& orig)
 	  :HGraphParameters(orig), verb(orig.verb), numRowsToRemove(orig.numRowsToRemove),
 	   spaceCellsAlg(orig.spaceCellsAlg),remCongestion(orig.remCongestion)

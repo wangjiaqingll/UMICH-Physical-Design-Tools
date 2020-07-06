@@ -45,7 +45,7 @@
 #include <vector>
 #include <iostream>
 
-//: Click to see more comments for verbosity
+//: Click to see more comments for verbosity     
 //   The goal of standardization of verbosity options
 //   is to be able to produce consistent diagnostics
 //   when using multiple packages. For example, if you
@@ -90,11 +90,11 @@
 //   Note: if needed, we can add extensions to handle
 //   output to different diagnostic streams
 //   (e.g. for each type)
-class Verbosity 
+class Verbosity   // 错误诊断
 {
-   std::vector<unsigned>  _levels;
+   std::vector<unsigned>  _levels;   // 错误等级
 
-   void _ctructFromString(const char* levels);
+   void _ctructFromString(const char* levels); // 声明
 
  public:
 

@@ -82,7 +82,7 @@
 #include "dbRoutingInfo.h"
 #include "Placement/placeWOri.h"
 
-//: ABKGOURP/UCLA Database parser
+//: ABKGOURP/UCLA Database parser 数据库解析器
 class DB
 {
 public:
@@ -90,20 +90,20 @@ public:
     class Parameters
     {
       public:
-          bool  ignoreLogicalPins;
-          bool  ignoreGlobalRoutingInfo;
-          bool  ignoreDetailedRoutingInfo;
-          bool  ignoreTimingLibs;
-          bool  fixPlacedPads;
-          Verbosity  verbose;
-          bool  routedDesign;
-          bool  alwaysCheckConsistency;
-          unsigned placeHolder2;
+          bool  ignoreLogicalPins;            // 忽略逻辑引脚
+          bool  ignoreGlobalRoutingInfo;      // 忽略全局布线信息
+          bool  ignoreDetailedRoutingInfo;    // 忽略详细布线信息
+          bool  ignoreTimingLibs;             // 忽略时间库？
+          bool  fixPlacedPads;                // 修复放置垫
+          Verbosity  verbose;                 // 错误诊断
+          bool  routedDesign;                 // 设计已布线？  
+          bool  alwaysCheckConsistency;       // 始终检查一致性
+          unsigned placeHolder2;              // 放置座1，2...
           unsigned placeHolder3;
           double placeHolder4;
           double placeHolder5;
 
-      Parameters();
+      Parameters();                           // 函数声明
     };
 
 private:

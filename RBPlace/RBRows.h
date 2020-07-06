@@ -76,9 +76,9 @@
 #include "Placement/symOri.h"
 #include "RBCellCoord.h"
 
-//========================== CLASS INTERFACES =============================
+//========================== CLASS INTERFACES (初始化类)=============================
 
-class  RBPSubRow;
+class  RBPSubRow; 
 struct RBPSite;
 class  RBPCoreRow;
  

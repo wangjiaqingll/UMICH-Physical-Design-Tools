@@ -61,7 +61,7 @@ Verbosity& Verbosity::operator=(const Verbosity& v)
          return *this;
       }
 
-ostream& operator<<(ostream& os, const Verbosity& verbsty)
+ostream& operator<<(ostream& os, const Verbosity& verbsty) // 0,1,2三个等级
 {
         unsigned numLevels=verbsty._levels.size(); 
 

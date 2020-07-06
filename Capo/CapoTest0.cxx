@@ -90,9 +90,9 @@ int main(int argc, const char *argv[])
   }
 
   cout << capoParams << endl;
-
+// 处理输入数据
   StringParam 	 auxFileName 	("f", 	argc,argv);
-  abkfatal(auxFileName.found(),"Usage: prog -f filename.aux <more params>");
+  abkfatal(auxFileName.found(),"Usage: prog -f filename.aux <more params>"); // 错误警告函数
 
   BoolParam check("checkDB",argc,argv);
   DB::Parameters dbparams;

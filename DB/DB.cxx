@@ -127,7 +127,8 @@ DB::DB(const char *auxFileName,Parameters params):_params(params)
     strcpy(origFileFormat,"No database format found"); // initial value
     delimiter=' ';                   // to be changed by LEFDEF reader etc
     
-    cout << "Reading " << auxFileName << endl;
+    cout << "Reading " << auxFileName << endl; // 输出文件读取信息
+    // 处理读取的文件
     char word1[100],word2[100],word3[100];
     char tmpw1[255],tmpw2[255],tmpw3[255];
     char * LGCFileName=NULL;
