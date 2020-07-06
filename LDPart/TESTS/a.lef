@@ -1,0 +1,2163 @@
+NAMESCASESENSITIVE ON ;
+
+# created at 98/12/28 16:54:54   By NEC OpenCAD system  ACE lefcat  V2.0_1.3.2   1992/09/14.
+
+
+
+#  COPYRIGHT (C) NEC CORPORATION 1997
+# ***************************************************
+# *****           CB-C10  SERIES LEF            *****
+# *****     CREATED BY SYSTEM-ASIC DIVISION.    *****
+# *****            REV 1.00g JAN-13-1998        *****
+# ***************************************************
+#
+# REV 1.00  AUG-01-97  BY K.KONDO    CRE. FIRST CREATE CB-C10LEF.
+# REV 1.00a DEC-11-97  BY F.SUZUKI   MOD. Modified for CBC10 5L
+# REV 1.00b DEC-20-97  BY K.KONDO    MOD. Modified to STACK VIA.
+# .                                  DEL. EA-C10's VIA.
+# REV 1.00c DEC-22-97  BY F.SUZUKI   MOD. Modified to STACK VIA.
+#                                    ADD. EAC10's VIA
+#                                    ADD. RESISTANCE VALUE FOR CBC10 VIA
+#                                    MOD. CAPASITANCE VALUE FOR METAL
+# REV 1.00d DEC-25-97  BY F.SUZUKI   MOD. CAPASITANCE VALUE FOR METAL
+# REV 1.00e JAN-08-98  BY F.SUZUKI   
+#                            MOD. CORNER SITE SIZE 300.62um -> 300.64um
+# REV 1.00f JAN-09-98  BY F.SUZUKI   
+#                            MOD. VIA DEFINE  M3M4 CUC20051 --> CUC20061
+#                                             M4M5 CUC20051 --> CUC20072
+# REV 1.00g JAN-13-98  BY F.SUZUKI   
+#                   MOD. GENVIA OVERHANG  M3M4 VERTICAL 0.02um -> 0.44um
+#                                         M4M5 VERTICAL 0.02um -> 0.44um
+# REV 2.00  MAR-10-98  BY S.Matsu ADD. EAC10's VIA(V34,V45)
+#                                 MOD. CAPASITANCE VALUE FOR METAL   
+#                                 MOD. RESISTANCE VALUE FOR METAL   
+# REV 2.01  MAR-24-98  BY S.Matsu MOD. CAPASITANCE VALUE FOR METAL   
+#                                 MOD. RESISTANCE VALUE FOR METAL   
+# ***************************************************
+# ***   CB-C10  SERIES TECNOLOGY SECTION LEF      ***
+# ***       CREATED BY K.KONDO      97/08/01      ***
+# ***************************************************
+# ==================
+# TECHNOLOGY SECTION
+# ==================
+# ============
+# LAYER DEFINE
+# ============
+#
+#  Layer CAPACITANCE value from IEC-3RA-1233.
+#  Layer RESISTANCE  value from IMR-3RA-1233.
+#
+
+# LAYER PWELL
+# #CAPEDGE 0
+#  TYPE MASTERSLICE ;
+# END PWELL
+
+# LAYER NWELL
+# #CAPEDGE 0
+#  TYPE MASTERSLICE ;
+# END NWELL
+
+LAYER PDIFF
+#CAPEDGE 0
+ TYPE MASTERSLICE ;
+END PDIFF
+
+LAYER NDIFF
+#CAPEDGE 0
+ TYPE MASTERSLICE ;
+END NDIFF
+
+LAYER POLY 
+#CAPEDGE 0
+ TYPE MASTERSLICE ;
+END POLY
+
+LAYER CUT01
+#CAPEDGE 0
+ TYPE CUT ;
+END CUT01
+
+LAYER METAL1
+#CAPEDGE 0
+ TYPE ROUTING ;
+ PITCH 0.84 ;
+ #DIRECTION VERTICAL ;
+ DIRECTION HORIZONTAL ;
+ WIDTH 0.44 ; SPACING 0.4 ;
+ CAPACITANCE CPERSQDIST 0.000636400 ;
+ RESISTANCE  RPERSQ     0.120 ; # WORST
+END METAL1
+
+LAYER CUT12
+#CAPEDGE 0
+ TYPE CUT ;
+END CUT12
+
+LAYER METAL2
+#CAPEDGE 0
+ TYPE ROUTING ;
+ PITCH 0.84 ;
+ #DIRECTION HORIZONTAL ;
+ DIRECTION VERTICAL ;
+ WIDTH 0.44 ; SPACING 0.4 ;
+ CAPACITANCE CPERSQDIST 0.000590900 ;
+ RESISTANCE  RPERSQ     0.120 ; # WORST
+END METAL2
+
+LAYER CUT23
+#CAPEDGE 0
+ TYPE CUT ;
+END CUT23
+
+LAYER METAL3
+#CAPEDGE 0
+ TYPE ROUTING ;
+ PITCH 0.84 ;
+ WIDTH 0.44 ; SPACING 0.40 ;
+ #DIRECTION VERTICAL ;
+ DIRECTION HORIZONTAL ;
+ CAPACITANCE CPERSQDIST 0.000590900 ;
+ RESISTANCE RPERSQ      0.120 ; # WORST
+END METAL3
+
+LAYER CUT34
+#CAPEDGE 0
+ TYPE CUT ;
+END CUT34
+
+LAYER METAL4
+#CAPEDGE 0
+ TYPE ROUTING ;
+ PITCH 0.84 ;
+ WIDTH 0.44 ; SPACING 0.40 ;
+ #DIRECTION HORIZONTAL ;
+ DIRECTION VERTICAL ;
+ CAPACITANCE CPERSQDIST 0.000720500 ;
+ RESISTANCE RPERSQ      0.120 ; # WORST
+END METAL4
+
+LAYER CUT45
+#CAPEDGE 0
+ TYPE CUT ;
+END CUT45
+
+LAYER METAL5
+#CAPEDGE 0
+ TYPE ROUTING ;
+ PITCH 0.84 ;
+ WIDTH 3.00 ; SPACING 3.00 ;
+ #DIRECTION VERTICAL ;
+ DIRECTION HORIZONTAL ;
+ CAPACITANCE CPERSQDIST 0.000100300 ;
+ RESISTANCE RPERSQ      0.035 ; # WORST
+END METAL5
+
+# -----< OVERLAP LAYER >-----
+
+LAYER LEV29
+#CAPEDGE 0
+ TYPE OVERLAP ;
+END LEV29
+
+# ==========
+# VIA DEFINE
+# ==========
+
+# -- for CB-C10 VIA
+
+VIA MNDIFF
+ FOREIGN CUC20011 ;
+ RESISTANCE 7.80 ; # WORST
+ LAYER NDIFF ;
+  RECT -0.32 -0.32  0.32  0.32 ;
+ LAYER CUT01 ;
+  RECT -0.18 -0.18  0.18  0.18 ;
+ LAYER METAL1 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+END MNDIFF
+
+VIA MPDIFF
+ FOREIGN CUC20021 ;
+ RESISTANCE 7.80 ; # WORST
+ LAYER PDIFF ;
+  RECT -0.32 -0.32  0.32  0.32 ;
+ LAYER CUT01 ;
+  RECT -0.18 -0.18  0.18  0.18 ;
+ LAYER METAL1 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+END MPDIFF
+
+VIA MPOLY
+ FOREIGN CUC20031 ;
+ RESISTANCE 9.60 ; # WORST
+ LAYER POLY ;
+  RECT -0.32 -0.32  0.32  0.32 ;
+ LAYER CUT01 ;
+  RECT -0.18 -0.18  0.18  0.18 ;
+ LAYER METAL1 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+END MPOLY
+
+VIA M1M2 DEFAULT
+ FOREIGN CUC20041 ;
+ RESISTANCE 5.04 ; # WORST
+ LAYER METAL1 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+ LAYER CUT12 ;
+  RECT -0.20 -0.20  0.20  0.20 ;
+ LAYER METAL2 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+END M1M2
+
+VIA M2M3 DEFAULT
+ FOREIGN CUC20051 ;
+ RESISTANCE 5.04 ; # WORST
+ LAYER METAL2 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+ LAYER CUT23 ;
+  RECT -0.20 -0.20  0.20  0.20 ;
+ LAYER METAL3 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+END M2M3
+
+VIA M3M4 DEFAULT
+ FOREIGN CUC20061 ;
+ RESISTANCE 5.04 ; # WORST
+ LAYER METAL3 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+ LAYER CUT34 ;
+  RECT -0.20 -0.20  0.20  0.20 ;
+ LAYER METAL4 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+END M3M4
+
+VIA M4M5 DEFAULT
+ FOREIGN CUC20072 ;
+ RESISTANCE 5.04 ; # WORST
+ LAYER METAL4 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+ LAYER CUT45 ;
+  RECT -0.20 -0.20  0.20  0.20 ;
+ LAYER METAL5 ;
+#  RECT -0.22 -0.22  0.22  0.22 ;
+#  RECT -0.6 -0.6  0.6  0.6 ;
+  RECT -1.5 -1.5  1.5  1.5 ;
+END M4M5
+
+# -- for EA-C10 VIA
+
+VIA V0B FOREIGN C10V0B ;
+ RESISTANCE 9.60 ; # WORST
+ LAYER POLY ;
+  RECT -0.18 -0.18  0.18  0.18 ;
+ LAYER CUT01 ;
+  RECT -0.18 -0.18  0.18  0.18 ;
+ LAYER METAL1 ;
+  RECT -0.30 -0.30  0.30  0.30 ;
+END V0B
+
+VIA V12 FOREIGN C10V12 ;
+ RESISTANCE 5.04 ; # WORST
+ LAYER METAL1 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+ LAYER CUT12 ;
+  RECT -0.20 -0.20  0.20  0.20 ;
+ LAYER METAL2 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+END V12
+
+VIA V23 FOREIGN C10V23 ;
+ RESISTANCE 5.04 ; # WORST
+ LAYER METAL2 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+ LAYER CUT23 ;
+  RECT -0.20 -0.20  0.20  0.20 ;
+ LAYER METAL3 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+END V23
+
+VIA V34 FOREIGN C10V34 ;
+ RESISTANCE 5.04 ; # WORST
+ LAYER METAL3 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+ LAYER CUT34 ;
+  RECT -0.20 -0.20  0.20  0.20 ;
+ LAYER METAL4 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+END V34
+
+VIA V45 FOREIGN C10V45 ;
+ RESISTANCE 5.04 ; # WORST
+ LAYER METAL4 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+ LAYER CUT45 ;
+  RECT -0.20 -0.20  0.20  0.20 ;
+ LAYER METAL5 ;
+  RECT -0.60 -0.60  0.60  0.60 ;
+END V45
+
+VIA V01 FOREIGN C10V01 ;
+ RESISTANCE 9.60 ; # WORST
+ LAYER POLY ;
+  RECT -0.18 -0.18  0.18  0.18 ;
+ LAYER CUT01 ;
+  RECT -0.18 -0.18  0.18  0.18 ;
+ LAYER METAL1 ;
+  RECT -0.22 -0.22  0.22  0.22 ;
+END V01
+
+VIA V0E FOREIGN C10V0E ;
+ RESISTANCE 9.60 ; # WORST
+ LAYER POLY ;
+  RECT -0.18 -0.18  0.18  0.18 ;
+ LAYER CUT01 ;
+  RECT -0.18 -0.18  0.18  0.18 ;
+ LAYER METAL1 ;
+  RECT -0.30 -0.22  0.30  0.22 ;
+END V0E
+
+VIA V0R FOREIGN C10V0R ;
+ RESISTANCE 9.60 ; # WORST
+ LAYER POLY ;
+  RECT -0.02 -0.18  0.34  0.18 ;
+ LAYER CUT01 ;
+  RECT -0.02 -0.18  0.34  0.18 ;
+ LAYER METAL1 ;
+  RECT -0.22 -0.30  0.38  0.30 ;
+END V0R
+
+VIA V0L FOREIGN C10V0L ;
+ RESISTANCE 9.60 ; # WORST
+ LAYER POLY ;
+  RECT -0.34 -0.18  0.02  0.18 ;
+ LAYER CUT01 ;
+  RECT -0.34 -0.18  0.02  0.18 ;
+ LAYER METAL1 ;
+  RECT -0.38 -0.30  0.22  0.30 ;
+END V0L
+
+VIA V1E FOREIGN C10V1E ;
+ RESISTANCE 5.04 ; # WORST
+ LAYER METAL1 ;
+  RECT -0.30 -0.22  0.30  0.22 ;
+ LAYER CUT12 ;
+  RECT -0.20 -0.20  0.20  0.20 ;
+ LAYER METAL2 ;
+  RECT -0.30 -0.22  0.30  0.22 ;
+END V1E
+
+VIA V2E FOREIGN C10V2E ;
+ RESISTANCE 5.04 ; # WORST
+ LAYER METAL2 ;
+  RECT -0.30 -0.22  0.30  0.22 ;
+ LAYER CUT23 ;
+  RECT -0.20 -0.20  0.20  0.20 ;
+ LAYER METAL3 ;
+  RECT -0.30 -0.22  0.30  0.22 ;
+END V2E
+
+# -----< STACK via >-----
+
+VIA STACK_128_212_M1M2
+ FOREIGN AS10STACK_128_212_M1M2 ;
+ LAYER METAL1 ;
+  RECT -0.64 -0.22  0.64  0.22 ;
+ LAYER CUT12 ;
+  RECT -0.62 -0.20 -0.22  0.20 ;
+#  RECT  0.22 -0.20  0.62  0.20 ;
+ LAYER METAL2 ;
+  RECT -0.64 -0.22  0.64  0.22 ;
+END STACK_128_212_M1M2
+
+VIA STACK_128_212_M2M3
+ FOREIGN AS10STACK_128_212_M2M3 ;
+ LAYER METAL2 ;
+  RECT -0.64 -0.22  0.64  0.22 ;
+ LAYER CUT23 ;
+#  RECT -0.62 -0.20 -0.22  0.20 ;
+  RECT  0.22 -0.20  0.62  0.20 ;
+ LAYER METAL3 ;
+  RECT -0.64 -0.22  0.64  0.22 ;
+END STACK_128_212_M2M3
+
+# ==============
+# VIARULE DEFINE
+# ==============
+
+# --- Cross VIA Generate.
+
+VIARULE CROSSM1M2
+ LAYER METAL1 ;
+  DIRECTION HORIZONTAL ;
+  WIDTH 0.44 TO 0.44 ;
+ LAYER METAL2 ;
+  DIRECTION VERTICAL ;
+  WIDTH 0.44 TO 0.44 ;
+ VIA M1M2 ;
+END CROSSM1M2
+
+VIARULE CROSSM2M3
+ LAYER METAL2 ;
+  DIRECTION HORIZONTAL ;
+  WIDTH 0.44 TO 0.44 ;
+ LAYER METAL3 ;
+  DIRECTION VERTICAL ;
+  WIDTH 0.44 TO 0.44 ;
+ VIA M2M3 ;
+END CROSSM2M3
+
+VIARULE CROSSM3M4
+ LAYER METAL3 ;
+  DIRECTION VERTICAL ;
+  WIDTH 0.44 TO 0.44 ;
+ LAYER METAL4 ;
+  DIRECTION HORIZONTAL ;
+  WIDTH 0.44 TO 0.44 ;
+ VIA M3M4 ;
+END CROSSM3M4
+#
+VIARULE CROSSM4M5
+ LAYER METAL4 ;
+  DIRECTION HORIZONTAL ;
+  WIDTH 0.44 TO 0.44 ;
+ LAYER METAL5 ;
+  DIRECTION VERTICAL ;
+  WIDTH 0.44 TO 0.44 ;
+ VIA M4M5 ;
+END CROSSM4M5
+
+# --- Cross Stack Via Generate.
+
+# < IntBuss(1AL) - IntBuss(2AL) >
+#      2.12um         1.28um
+#
+VIARULE CROSS-128-212-M1M2
+ LAYER METAL1 ;
+  DIRECTION HORIZONTAL ;
+  WIDTH 2.12 TO 2.12 ;
+ LAYER METAL2 ;
+  DIRECTION VERTICAL ;
+  WIDTH 1.28 TO 1.28 ;
+ VIA STACK_128_212_M1M2 ;
+END CROSS-128-212-M1M2
+
+# < IntBuss(2AL) - IntBuss(3AL) >
+#      2.12um         1.28um
+#
+
+VIARULE CROSS-128-212-M2M3
+ LAYER METAL2 ;
+  DIRECTION HORIZONTAL ;
+  WIDTH 2.12 TO 2.12 ;
+ LAYER METAL3 ;
+  DIRECTION VERTICAL ;
+  WIDTH 1.28 TO 1.28 ;
+ VIA STACK_128_212_M2M3 ;
+END CROSS-128-212-M2M3
+
+
+VIARULE GENM1M2 GENERATE
+ LAYER METAL1 ;
+  DIRECTION HORIZONTAL ;
+  OVERHANG 0.02 ;
+ LAYER METAL2 ;
+  DIRECTION VERTICAL ;
+  OVERHANG 0.02 ;
+ LAYER CUT12 ;
+  RECT -0.20 -0.20  0.20  0.20 ;
+  SPACING 0.84 BY 0.84 ; 
+  RESISTANCE 5.04 ; # WORST
+END GENM1M2
+
+VIARULE GENM2M3 GENERATE
+ LAYER METAL2 ;
+  DIRECTION HORIZONTAL ; 
+  OVERHANG 0.44 ;
+ LAYER METAL3 ; 
+  DIRECTION VERTICAL ; 
+  OVERHANG 0.02 ;
+ LAYER CUT23 ; 
+  RECT -0.20 -0.20  0.20  0.20 ;
+  SPACING 0.84 BY 0.84 ; 
+  RESISTANCE 5.04 ; # WORST
+END GENM2M3
+
+VIARULE GENM3M4 GENERATE
+ LAYER METAL3 ;
+  DIRECTION VERTICAL ;
+  OVERHANG 0.44 ;
+ LAYER METAL4 ;
+  DIRECTION HORIZONTAL ;
+  OVERHANG 0.02 ;
+ LAYER CUT34 ;
+  RECT -0.20 -0.20  0.20  0.20 ;
+  SPACING 0.84 BY 0.84 ;
+  RESISTANCE 5.04 ; # WORST
+END GENM3M4
+
+VIARULE GENM4M5 GENERATE
+ LAYER METAL4 ;
+  DIRECTION HORIZONTAL ;
+  OVERHANG 0.44 ;
+ LAYER METAL5 ;
+  DIRECTION VERTICAL ;
+  OVERHANG 0.44 ;
+ LAYER CUT45 ;
+  RECT -0.20 -0.20  0.20  0.20 ;
+  SPACING 0.84 BY 0.84 ;
+  RESISTANCE 5.04 ; # WORST
+END GENM4M5
+
+VIARULE TURN1 GENERATE
+ LAYER METAL1 ;
+  DIRECTION VERTICAL ;
+ LAYER METAL1 ; 
+  DIRECTION HORIZONTAL ; 
+END TURN1
+
+VIARULE TURN2 GENERATE
+ LAYER METAL2 ; 
+  DIRECTION VERTICAL ;
+ LAYER METAL2 ;
+  DIRECTION HORIZONTAL ; 
+END TURN2
+
+VIARULE TURN3 GENERATE
+ LAYER METAL3 ; 
+  DIRECTION VERTICAL ;
+ LAYER METAL3 ; 
+  DIRECTION HORIZONTAL ; 
+END TURN3
+
+VIARULE TURN4 GENERATE
+ LAYER METAL4 ; 
+  DIRECTION VERTICAL ;
+ LAYER METAL4 ; 
+  DIRECTION HORIZONTAL ; 
+END TURN4
+
+VIARULE TURN5 GENERATE
+ LAYER METAL5 ; 
+  DIRECTION VERTICAL ;
+ LAYER METAL5 ; 
+  DIRECTION HORIZONTAL ; 
+END TURN5
+
+# ==============
+# SPACING DEFINE
+# ==============
+
+SPACING
+ SAMENET METAL1 METAL1 0.40 ;
+ SAMENET METAL2 METAL2 0.40 ;
+ SAMENET METAL3 METAL3 0.40 ;
+ SAMENET METAL4 METAL4 0.40 ;
+ SAMENET METAL5 METAL5 3.00 ;
+ SAMENET CUT01  CUT01  0.48 ;
+ SAMENET CUT12  CUT12  0.44 ;
+ SAMENET CUT23  CUT23  0.44 ;
+ SAMENET CUT34  CUT34  0.44 ;
+ SAMENET CUT45  CUT45  0.44 ;
+END SPACING
+
+# =================
+# MINFEATURE DEFINE
+# =================
+
+MINFEATURE 0.01 0.01 ;
+
+# ===========
+# SITE DEFINE
+# ===========
+
+SITE CORE
+ CLASS CORE ;
+ SIZE 0.84 BY 8.4 ;
+END CORE
+
+#ADD by osanai
+
+SITE CORE2
+ CLASS CORE ;
+ SIZE 0.84 BY 16.8 ;
+END CORE2
+
+##
+
+
+SITE BUFF
+ CLASS PAD ;
+ SIZE 40.00 BY 300.64 ;
+END BUFF
+
+SITE BLBUFF
+ CLASS PAD ;
+ SIZE 300.64 BY 300.64 ;
+END BLBUFF
+
+SITE BRBUFF
+ CLASS PAD ;
+ SIZE 300.64 BY 300.64 ;
+END BRBUFF
+
+SITE TLBUFF
+ CLASS PAD ;
+ SIZE 300.64 BY 300.64 ;
+END TLBUFF
+
+SITE TRBUFF
+ CLASS PAD ;
+ SIZE 300.64 BY 300.64 ;
+END TRBUFF
+
+MACRO F101
+# -----------------------------------------------------------------------
+#   newlibD UC2 [0.84um Pitch] LEF Library
+#
+#   COPYRIGHT 1997 NEC Corporation & NEC IC Microcomputer Systems, Ltd.
+#   ALL RIGHTS RESERVED
+#
+#           [ F101 ]
+#
+#   Source LSEQ Version : 961202V1.0(C)NEC
+#   Created at 08/22/1997 11:12:57 by futa@nkbew80
+# -----------------------------------------------------------------------
+# 
+# gds2lef (Ver.1.10 Rev.0.52) Fri Aug 22 11:11:54 1997 # F101
+#   Input file name
+#     LEF     : top.lef.newlibD_UC2.3Al.084
+#     LEF     : uecyb970718.llef
+#     GDSII   : 7328.gds
+#     mapfile : 7328.mapfile
+#     option  : 7328.option
+#     texthead: 7328.texthead
+#   Output file name
+#     LEF     : 7328.TEMP_DIR/F101.LEFLIB
+#     summary : gds2lef.sum.7328
+#   Option Of gds2lef
+#     -offset -0.420000 0.000000
+#     -copy -rect -mh 5 -size 29
+# 
+  FOREIGN UECYBF101 -0.42 0 ;
+  CLASS CORE ;
+  SOURCE USER ;
+  SIZE 3.36 BY 8.4 ;
+  SYMMETRY X Y ;
+  SITE CORE ;
+##CLASS  BSTRCOM ;
+  PIN H01
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0.2 3.98 0.64 4.42 ;
+      LAYER METAL1 ;
+      RECT 1.04 3.98 1.48 4.42 ;
+    END
+  END H01
+  PIN N01
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 1.04 1.46 1.48 1.9 ;
+      LAYER METAL1 ;
+      RECT 1.04 2.3 1.48 2.74 ;
+      LAYER METAL1 ;
+      RECT 1.88 3.14 2.32 3.58 ;
+      LAYER METAL1 ;
+      RECT 2.72 3.14 3.16 3.58 ;
+      LAYER METAL1 ;
+      RECT 1.04 3.14 1.48 3.58 ;
+      LAYER METAL1 ;
+      RECT 2.72 3.98 3.16 4.42 ;
+      LAYER METAL1 ;
+      RECT 1.04 4.82 1.48 5.26 ;
+      LAYER METAL1 ;
+      RECT 1.88 4.82 2.32 5.26 ;
+      LAYER METAL1 ;
+      RECT 2.72 4.82 3.16 5.26 ;
+      LAYER METAL1 ;
+      RECT 1.04 5.66 1.48 6.1 ;
+    END
+  END N01
+  PIN GND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 -0.22 3.36 1.06 ;
+    END
+  END GND
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 7.34 3.36 8.62 ;
+    END
+  END VDD
+  OBS
+    LAYER METAL1 ;
+    RECT 1.88 1.46 2.32 1.9 ;
+    RECT 2.72 1.46 3.16 1.9 ;
+    RECT 1.88 2.3 2.32 2.74 ;
+    RECT 2.72 2.3 3.16 2.74 ;
+    RECT 1.88 3.98 2.32 4.42 ;
+    RECT 1.88 5.66 2.32 6.1 ;
+    RECT 2.72 5.66 3.16 6.1 ;
+    RECT 1.88 6.5 2.32 6.94 ;
+    RECT 2.72 6.5 3.16 6.94 ;
+  END
+END F101
+# 
+MACRO F102
+# -----------------------------------------------------------------------
+#   newlibD UC2 [0.84um Pitch] LEF Library
+#
+#   COPYRIGHT 1997 NEC Corporation & NEC IC Microcomputer Systems, Ltd.
+#   ALL RIGHTS RESERVED
+#
+#           [ F102 ]
+#
+#   Source LSEQ Version : 961202V1.0(C)NEC
+#   Created at 08/22/1997 11:12:57 by futa@nkbew80
+# -----------------------------------------------------------------------
+# 
+# gds2lef (Ver.1.10 Rev.0.52) Fri Aug 22 11:11:54 1997 # F102
+#   Input file name
+#     LEF     : top.lef.newlibD_UC2.3Al.084
+#     LEF     : uecyb970718.llef
+#     GDSII   : 7328.gds
+#     mapfile : 7328.mapfile
+#     option  : 7328.option
+#     texthead: 7328.texthead
+#   Output file name
+#     LEF     : 7328.TEMP_DIR/F102.LEFLIB
+#     summary : gds2lef.sum.7328
+#   Option Of gds2lef
+#     -offset -0.420000 0.000000
+#     -copy -rect -mh 5 -size 29
+# 
+  FOREIGN UECYBF102 -0.42 0 ;
+  CLASS CORE ;
+  SOURCE USER ;
+  SIZE 5.04 BY 8.4 ;
+  SYMMETRY X Y ;
+  SITE CORE ;
+##CLASS  BSTRCOM ;
+  PIN H01
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0.2 3.98 0.64 4.42 ;
+      LAYER METAL1 ;
+      RECT 1.04 3.98 1.48 4.42 ;
+    END
+  END H01
+  PIN N01
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 1.88 2.3 2.32 2.74 ;
+      LAYER METAL1 ;
+      RECT 2.72 2.3 3.16 2.74 ;
+      LAYER METAL1 ;
+      RECT 1.04 2.3 1.48 2.74 ;
+      LAYER METAL1 ;
+      RECT 3.56 3.14 4 3.58 ;
+      LAYER METAL1 ;
+      RECT 1.88 3.14 2.32 3.58 ;
+      LAYER METAL1 ;
+      RECT 3.56 3.98 4 4.42 ;
+      LAYER METAL1 ;
+      RECT 1.88 4.82 2.32 5.26 ;
+      LAYER METAL1 ;
+      RECT 2.72 4.82 3.16 5.26 ;
+      LAYER METAL1 ;
+      RECT 3.56 4.82 4 5.26 ;
+      LAYER METAL1 ;
+      RECT 1.04 4.82 1.48 5.26 ;
+      LAYER METAL1 ;
+      RECT 1.04 5.66 1.48 6.1 ;
+    END
+  END N01
+  PIN GND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 -0.22 5.04 1.06 ;
+    END
+  END GND
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 7.34 5.04 8.62 ;
+    END
+  END VDD
+  OBS
+    LAYER METAL1 ;
+    RECT 0.2 1.46 0.64 1.9 ;
+    RECT 1.04 1.46 1.48 1.9 ;
+    RECT 1.88 1.46 2.32 1.9 ;
+    RECT 2.72 1.46 3.16 1.9 ;
+    RECT 3.56 1.46 4 1.9 ;
+    RECT 4.4 1.46 4.84 1.9 ;
+    RECT 3.56 2.3 4 2.74 ;
+    RECT 4.4 2.3 4.84 2.74 ;
+    RECT 2.72 3.14 3.16 3.58 ;
+    RECT 1.88 3.98 2.32 4.42 ;
+    RECT 2.72 3.98 3.16 4.42 ;
+    RECT 1.88 5.66 2.32 6.1 ;
+    RECT 2.72 5.66 3.16 6.1 ;
+    RECT 3.56 5.66 4 6.1 ;
+    RECT 4.4 5.66 4.84 6.1 ;
+    RECT 0.2 6.5 0.64 6.94 ;
+    RECT 1.04 6.5 1.48 6.94 ;
+    RECT 1.88 6.5 2.32 6.94 ;
+    RECT 2.72 6.5 3.16 6.94 ;
+    RECT 3.56 6.5 4 6.94 ;
+    RECT 4.4 6.5 4.84 6.94 ;
+  END
+END F102
+MACRO F111
+# -----------------------------------------------------------------------
+#   newlibD UC2 [0.84um Pitch] LEF Library
+#
+#   COPYRIGHT 1997 NEC Corporation & NEC IC Microcomputer Systems, Ltd.
+#   ALL RIGHTS RESERVED
+#
+#           [ F111 ]
+#
+#   Source LSEQ Version : 961112V1.0(C)NEC
+#   Created at 08/22/1997 11:12:57 by futa@nkbew80
+# -----------------------------------------------------------------------
+# 
+# gds2lef (Ver.1.10 Rev.0.52) Fri Aug 22 11:11:54 1997 # F111
+#   Input file name
+#     LEF     : top.lef.newlibD_UC2.3Al.084
+#     LEF     : uecyb970718.llef
+#     GDSII   : 7328.gds
+#     mapfile : 7328.mapfile
+#     option  : 7328.option
+#     texthead: 7328.texthead
+#   Output file name
+#     LEF     : 7328.TEMP_DIR/F111.LEFLIB
+#     summary : gds2lef.sum.7328
+#   Option Of gds2lef
+#     -offset -0.420000 0.000000
+#     -copy -rect -mh 5 -size 29
+# 
+  FOREIGN UECYBF111 -0.42 0 ;
+  CLASS CORE ;
+  SOURCE USER ;
+  SIZE 4.2 BY 8.4 ;
+  SYMMETRY X Y ;
+  SITE CORE ;
+##CLASS  BSTRCOM ;
+  PIN H01
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0.2 6.5 0.64 6.94 ;
+      LAYER METAL1 ;
+      RECT 1.04 6.5 1.48 6.94 ;
+    END
+  END H01
+  PIN N01
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 1.88 1.46 2.32 1.9 ;
+      LAYER METAL1 ;
+      RECT 2.72 1.46 3.16 1.9 ;
+      LAYER METAL1 ;
+      RECT 3.56 2.3 4 2.74 ;
+      LAYER METAL1 ;
+      RECT 2.72 2.3 3.16 2.74 ;
+      LAYER METAL1 ;
+      RECT 3.56 3.14 4 3.58 ;
+      LAYER METAL1 ;
+      RECT 3.56 3.98 4 4.42 ;
+      LAYER METAL1 ;
+      RECT 2.72 4.82 3.16 5.26 ;
+      LAYER METAL1 ;
+      RECT 3.56 4.82 4 5.26 ;
+      LAYER METAL1 ;
+      RECT 1.88 5.66 2.32 6.1 ;
+      LAYER METAL1 ;
+      RECT 2.72 5.66 3.16 6.1 ;
+    END
+  END N01
+  PIN GND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 -0.22 4.2 1.06 ;
+    END
+  END GND
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 7.34 4.2 8.62 ;
+    END
+  END VDD
+  OBS
+    LAYER METAL1 ;
+    RECT 0.2 2.3 0.64 2.74 ;
+    RECT 1.04 2.3 1.48 2.74 ;
+    RECT 1.88 2.3 2.32 2.74 ;
+    RECT 1.04 3.14 1.48 3.58 ;
+    RECT 1.88 3.14 2.32 3.58 ;
+    RECT 2.72 3.14 3.16 3.58 ;
+    RECT 1.04 3.98 1.48 4.42 ;
+    RECT 1.88 3.98 2.32 4.42 ;
+    RECT 2.72 3.98 3.16 4.42 ;
+    RECT 0.2 4.82 0.64 5.26 ;
+    RECT 1.04 4.82 1.48 5.26 ;
+    RECT 1.88 4.82 2.32 5.26 ;
+    RECT 1.88 6.5 2.32 6.94 ;
+  END
+END F111
+# 
+MACRO F112
+# -----------------------------------------------------------------------
+#   newlibD UC2 [0.84um Pitch] LEF Library
+#
+#   COPYRIGHT 1997 NEC Corporation & NEC IC Microcomputer Systems, Ltd.
+#   ALL RIGHTS RESERVED
+#
+#           [ F112 ]
+#
+#   Source LSEQ Version : 961112V1.0(C)NEC
+#   Created at 08/22/1997 11:12:57 by futa@nkbew80
+# -----------------------------------------------------------------------
+# 
+# gds2lef (Ver.1.10 Rev.0.52) Fri Aug 22 11:11:54 1997 # F112
+#   Input file name
+#     LEF     : top.lef.newlibD_UC2.3Al.084
+#     LEF     : uecyb970718.llef
+#     GDSII   : 7328.gds
+#     mapfile : 7328.mapfile
+#     option  : 7328.option
+#     texthead: 7328.texthead
+#   Output file name
+#     LEF     : 7328.TEMP_DIR/F112.LEFLIB
+#     summary : gds2lef.sum.7328
+#   Option Of gds2lef
+#     -offset -0.420000 0.000000
+#     -copy -rect -mh 5 -size 29
+# 
+  FOREIGN UECYBF112 -0.42 0 ;
+  CLASS CORE ;
+  SOURCE USER ;
+  SIZE 6.72 BY 8.4 ;
+  SYMMETRY X Y ;
+  SITE CORE ;
+##CLASS  BSTRCOM ;
+  PIN H01
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0.2 3.98 0.64 4.42 ;
+      LAYER METAL1 ;
+      RECT 1.04 3.98 1.48 4.42 ;
+    END
+  END H01
+  PIN N01
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 4.4 1.46 4.84 1.9 ;
+      LAYER METAL1 ;
+      RECT 4.4 2.3 4.84 2.74 ;
+      LAYER METAL1 ;
+      RECT 3.56 2.3 4 2.74 ;
+      LAYER METAL1 ;
+      RECT 2.72 2.3 3.16 2.74 ;
+      LAYER METAL1 ;
+      RECT 4.4 3.14 4.84 3.58 ;
+      LAYER METAL1 ;
+      RECT 4.4 3.98 4.84 4.42 ;
+      LAYER METAL1 ;
+      RECT 4.4 4.82 4.84 5.26 ;
+      LAYER METAL1 ;
+      RECT 3.56 5.66 4 6.1 ;
+      LAYER METAL1 ;
+      RECT 4.4 5.66 4.84 6.1 ;
+      LAYER METAL1 ;
+      RECT 1.88 5.66 2.32 6.1 ;
+      LAYER METAL1 ;
+      RECT 2.72 5.66 3.16 6.1 ;
+    END
+  END N01
+  PIN GND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 -0.22 6.72 1.06 ;
+    END
+  END GND
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 7.34 6.72 8.62 ;
+    END
+  END VDD
+  OBS
+    LAYER METAL1 ;
+    RECT 1.04 1.46 1.48 1.9 ;
+    RECT 1.88 1.46 2.32 1.9 ;
+    RECT 2.72 1.46 3.16 1.9 ;
+    RECT 3.56 1.46 4 1.9 ;
+    RECT 5.24 1.46 5.68 1.9 ;
+    RECT 6.08 1.46 6.52 1.9 ;
+    RECT 0.2 2.3 0.64 2.74 ;
+    RECT 1.04 2.3 1.48 2.74 ;
+    RECT 1.88 2.3 2.32 2.74 ;
+    RECT 1.04 3.14 1.48 3.58 ;
+    RECT 1.88 3.14 2.32 3.58 ;
+    RECT 2.72 3.14 3.16 3.58 ;
+    RECT 3.56 3.14 4 3.58 ;
+    RECT 1.88 3.98 2.32 4.42 ;
+    RECT 2.72 3.98 3.16 4.42 ;
+    RECT 3.56 3.98 4 4.42 ;
+    RECT 0.2 4.82 0.64 5.26 ;
+    RECT 1.04 4.82 1.48 5.26 ;
+    RECT 1.88 4.82 2.32 5.26 ;
+    RECT 2.72 4.82 3.16 5.26 ;
+    RECT 3.56 4.82 4 5.26 ;
+    RECT 1.04 6.5 1.48 6.94 ;
+    RECT 1.88 6.5 2.32 6.94 ;
+    RECT 2.72 6.5 3.16 6.94 ;
+    RECT 3.56 6.5 4 6.94 ;
+    RECT 5.24 6.5 5.68 6.94 ;
+    RECT 6.08 6.5 6.52 6.94 ;
+  END
+END F112
+#
+MACRO F202
+# -----------------------------------------------------------------------
+#   newlibD UC2 [0.84um Pitch] LEF Library
+#
+#   COPYRIGHT 1997 NEC Corporation & NEC IC Microcomputer Systems, Ltd.
+#   ALL RIGHTS RESERVED
+#
+#           [ F202 ]
+#
+#   Source LSEQ Version : 961202V1.0(C)NEC
+#   Created at 08/22/1997 11:12:57 by futa@nkbew80
+# -----------------------------------------------------------------------
+# 
+# gds2lef (Ver.1.10 Rev.0.52) Fri Aug 22 11:11:56 1997 # F202
+#   Input file name
+#     LEF     : top.lef.newlibD_UC2.3Al.084
+#     LEF     : uecyb970718.llef
+#     GDSII   : 7328.gds
+#     mapfile : 7328.mapfile
+#     option  : 7328.option
+#     texthead: 7328.texthead
+#   Output file name
+#     LEF     : 7328.TEMP_DIR/F202.LEFLIB
+#     summary : gds2lef.sum.7328
+#   Option Of gds2lef
+#     -offset -0.420000 0.000000
+#     -copy -rect -mh 5 -size 29
+# 
+  FOREIGN UECYBF202 -0.42 0 ;
+  CLASS CORE ;
+  SOURCE USER ;
+  SIZE 5.04 BY 8.4 ;
+  SYMMETRY X Y ;
+  SITE CORE ;
+##CLASS  BSTRCOM ;
+  PIN H01
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 2.72 3.14 3.16 3.58 ;
+      LAYER METAL1 ;
+      RECT 3.56 3.14 4 3.58 ;
+      LAYER METAL1 ;
+      RECT 4.4 3.14 4.84 3.58 ;
+    END
+  END H01
+  PIN H02
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 3.56 3.98 4 4.42 ;
+      LAYER METAL1 ;
+      RECT 0.2 3.98 0.64 4.42 ;
+      LAYER METAL1 ;
+      RECT 3.56 4.82 4 5.26 ;
+      LAYER METAL1 ;
+      RECT 0.2 4.82 0.64 5.26 ;
+      LAYER METAL1 ;
+      RECT 3.56 5.66 4 6.1 ;
+      LAYER METAL1 ;
+      RECT 0.2 5.66 0.64 6.1 ;
+      LAYER METAL1 ;
+      RECT 0.2 6.5 0.64 6.94 ;
+      LAYER METAL1 ;
+      RECT 1.04 6.5 1.48 6.94 ;
+      LAYER METAL1 ;
+      RECT 1.88 6.5 2.32 6.94 ;
+      LAYER METAL1 ;
+      RECT 2.72 6.5 3.16 6.94 ;
+      LAYER METAL1 ;
+      RECT 3.56 6.5 4 6.94 ;
+    END
+  END H02
+  PIN N01
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 3.56 1.46 4 1.9 ;
+      LAYER METAL1 ;
+      RECT 1.04 1.46 1.48 1.9 ;
+      LAYER METAL1 ;
+      RECT 1.04 2.3 1.48 2.74 ;
+      LAYER METAL1 ;
+      RECT 1.88 2.3 2.32 2.74 ;
+      LAYER METAL1 ;
+      RECT 2.72 2.3 3.16 2.74 ;
+      LAYER METAL1 ;
+      RECT 3.56 2.3 4 2.74 ;
+      LAYER METAL1 ;
+      RECT 1.04 3.14 1.48 3.58 ;
+      LAYER METAL1 ;
+      RECT 1.88 3.98 2.32 4.42 ;
+      LAYER METAL1 ;
+      RECT 1.88 4.82 2.32 5.26 ;
+      LAYER METAL1 ;
+      RECT 1.88 5.66 2.32 6.1 ;
+    END
+  END N01
+  PIN GND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 -0.22 5.04 1.06 ;
+    END
+  END GND
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 7.34 5.04 8.62 ;
+    END
+  END VDD
+  OBS
+    LAYER METAL1 ;
+    RECT 1.88 1.46 2.32 1.9 ;
+    RECT 2.72 1.46 3.16 1.9 ;
+    RECT 1.88 3.14 2.32 3.58 ;
+    RECT 1.04 3.98 1.48 4.42 ;
+    RECT 2.72 3.98 3.16 4.42 ;
+    RECT 4.4 3.98 4.84 4.42 ;
+    RECT 1.04 4.82 1.48 5.26 ;
+    RECT 2.72 4.82 3.16 5.26 ;
+    RECT 1.04 5.66 1.48 6.1 ;
+    RECT 2.72 5.66 3.16 6.1 ;
+  END
+END F202
+# 
+MACRO F212
+# -----------------------------------------------------------------------
+#   newlibD UC2 [0.84um Pitch] LEF Library
+#
+#   COPYRIGHT 1997 NEC Corporation & NEC IC Microcomputer Systems, Ltd.
+#   ALL RIGHTS RESERVED
+#
+#           [ F212 ]
+#
+#   Source LSEQ Version : 961106V1.0(C)NEC
+#   Created at 08/22/1997 11:12:57 by futa@nkbew80
+# -----------------------------------------------------------------------
+# 
+# gds2lef (Ver.1.10 Rev.0.52) Fri Aug 22 11:11:57 1997 # F212
+#   Input file name
+#     LEF     : top.lef.newlibD_UC2.3Al.084
+#     LEF     : uecyb970718.llef
+#     GDSII   : 7328.gds
+#     mapfile : 7328.mapfile
+#     option  : 7328.option
+#     texthead: 7328.texthead
+#   Output file name
+#     LEF     : 7328.TEMP_DIR/F212.LEFLIB
+#     summary : gds2lef.sum.7328
+#   Option Of gds2lef
+#     -offset -0.420000 0.000000
+#     -copy -rect -mh 5 -size 29
+# 
+  FOREIGN UECYBF212 -0.42 0 ;
+  CLASS CORE ;
+  SOURCE USER ;
+  SIZE 5.04 BY 8.4 ;
+  SYMMETRY X Y ;
+  SITE CORE ;
+##CLASS  BSTRCOM ;
+  PIN H01
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0.2 3.14 0.64 3.58 ;
+      LAYER METAL1 ;
+      RECT 1.04 3.14 1.48 3.58 ;
+    END
+  END H01
+  PIN H02
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 1.04 3.98 1.48 4.42 ;
+      LAYER METAL1 ;
+      RECT 1.88 3.98 2.32 4.42 ;
+    END
+  END H02
+  PIN N01
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 3.56 1.46 4 1.9 ;
+      LAYER METAL1 ;
+      RECT 4.4 2.3 4.84 2.74 ;
+      LAYER METAL1 ;
+      RECT 3.56 2.3 4 2.74 ;
+      LAYER METAL1 ;
+      RECT 4.4 3.14 4.84 3.58 ;
+      LAYER METAL1 ;
+      RECT 4.4 3.98 4.84 4.42 ;
+      LAYER METAL1 ;
+      RECT 4.4 4.82 4.84 5.26 ;
+      LAYER METAL1 ;
+      RECT 3.56 5.66 4 6.1 ;
+      LAYER METAL1 ;
+      RECT 4.4 5.66 4.84 6.1 ;
+      LAYER METAL1 ;
+      RECT 3.56 6.5 4 6.94 ;
+    END
+  END N01
+  PIN GND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 -0.22 5.04 1.06 ;
+    END
+  END GND
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 7.34 5.04 8.62 ;
+    END
+  END VDD
+  OBS
+    LAYER METAL1 ;
+    RECT 2.72 1.46 3.16 1.9 ;
+    RECT 1.04 2.3 1.48 2.74 ;
+    RECT 1.88 2.3 2.32 2.74 ;
+    RECT 2.72 2.3 3.16 2.74 ;
+    RECT 1.88 3.14 2.32 3.58 ;
+    RECT 2.72 3.14 3.16 3.58 ;
+    RECT 3.56 3.14 4 3.58 ;
+    RECT 2.72 3.98 3.16 4.42 ;
+    RECT 3.56 3.98 4 4.42 ;
+    RECT 0.2 4.82 0.64 5.26 ;
+    RECT 1.04 4.82 1.48 5.26 ;
+    RECT 1.88 4.82 2.32 5.26 ;
+    RECT 2.72 4.82 3.16 5.26 ;
+    RECT 3.56 4.82 4 5.26 ;
+    RECT 2.72 5.66 3.16 6.1 ;
+    RECT 2.72 6.5 3.16 6.94 ;
+  END
+END F212
+# 
+MACRO F302
+# -----------------------------------------------------------------------
+#   newlibD UC2 [0.84um Pitch] LEF Library
+#
+#   COPYRIGHT 1997 NEC Corporation & NEC IC Microcomputer Systems, Ltd.
+#   ALL RIGHTS RESERVED
+#
+#           [ F302 ]
+#
+#   Source LSEQ Version : 961202V1.0(C)NEC
+#   Created at 08/22/1997 11:12:57 by futa@nkbew80
+# -----------------------------------------------------------------------
+# 
+# gds2lef (Ver.1.10 Rev.0.52) Fri Aug 22 11:12:00 1997 # F302
+#   Input file name
+#     LEF     : top.lef.newlibD_UC2.3Al.084
+#     LEF     : uecyb970718.llef
+#     GDSII   : 7328.gds
+#     mapfile : 7328.mapfile
+#     option  : 7328.option
+#     texthead: 7328.texthead
+#   Output file name
+#     LEF     : 7328.TEMP_DIR/F302.LEFLIB
+#     summary : gds2lef.sum.7328
+#   Option Of gds2lef
+#     -offset -0.420000 0.000000
+#     -copy -rect -mh 5 -size 29
+# 
+  FOREIGN UECYBF302 -0.42 0 ;
+  CLASS CORE ;
+  SOURCE USER ;
+  SIZE 5.04 BY 8.4 ;
+  SYMMETRY X Y ;
+  SITE CORE ;
+##CLASS  BSTRCOM ;
+  PIN H01
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 2.72 3.14 3.16 3.58 ;
+      LAYER METAL1 ;
+      RECT 3.56 3.14 4 3.58 ;
+    END
+  END H01
+  PIN H02
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0.2 3.14 0.64 3.58 ;
+      LAYER METAL1 ;
+      RECT 0.2 3.98 0.64 4.42 ;
+      LAYER METAL1 ;
+      RECT 4.4 3.98 4.84 4.42 ;
+      LAYER METAL1 ;
+      RECT 0.2 4.82 0.64 5.26 ;
+      LAYER METAL1 ;
+      RECT 4.4 4.82 4.84 5.26 ;
+      LAYER METAL1 ;
+      RECT 0.2 5.66 0.64 6.1 ;
+      LAYER METAL1 ;
+      RECT 4.4 5.66 4.84 6.1 ;
+      LAYER METAL1 ;
+      RECT 0.2 6.5 0.64 6.94 ;
+      LAYER METAL1 ;
+      RECT 1.04 6.5 1.48 6.94 ;
+      LAYER METAL1 ;
+      RECT 1.88 6.5 2.32 6.94 ;
+      LAYER METAL1 ;
+      RECT 2.72 6.5 3.16 6.94 ;
+      LAYER METAL1 ;
+      RECT 3.56 6.5 4 6.94 ;
+      LAYER METAL1 ;
+      RECT 4.4 6.5 4.84 6.94 ;
+    END
+  END H02
+  PIN N01
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 1.88 1.46 2.32 1.9 ;
+      LAYER METAL1 ;
+      RECT 2.72 1.46 3.16 1.9 ;
+      LAYER METAL1 ;
+      RECT 1.04 2.3 1.48 2.74 ;
+      LAYER METAL1 ;
+      RECT 1.88 2.3 2.32 2.74 ;
+      LAYER METAL1 ;
+      RECT 2.72 2.3 3.16 2.74 ;
+      LAYER METAL1 ;
+      RECT 1.88 4.82 2.32 5.26 ;
+      LAYER METAL1 ;
+      RECT 2.72 4.82 3.16 5.26 ;
+    END
+  END N01
+  PIN GND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 -0.22 5.04 1.06 ;
+    END
+  END GND
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 7.34 5.04 8.62 ;
+    END
+  END VDD
+  OBS
+    LAYER METAL1 ;
+    RECT 1.04 3.14 1.48 3.58 ;
+    RECT 1.88 3.14 2.32 3.58 ;
+    RECT 1.04 3.98 1.48 4.42 ;
+    RECT 1.88 3.98 2.32 4.42 ;
+    RECT 3.56 3.98 4 4.42 ;
+    RECT 1.04 4.82 1.48 5.26 ;
+    RECT 3.56 4.82 4 5.26 ;
+    RECT 1.04 5.66 1.48 6.1 ;
+    RECT 1.88 5.66 2.32 6.1 ;
+    RECT 2.72 5.66 3.16 6.1 ;
+    RECT 3.56 5.66 4 6.1 ;
+  END
+END F302
+# 
+MACRO F313
+# -----------------------------------------------------------------------
+#   newlibD UC2 [0.84um Pitch] LEF Library
+#
+#   COPYRIGHT 1997 NEC Corporation & NEC IC Microcomputer Systems, Ltd.
+#   ALL RIGHTS RESERVED
+#
+#           [ F313 ]
+#
+#   Source LSEQ Version : 961105V1.0(C)NEC
+#   Created at 08/22/1997 11:12:57 by futa@nkbew80
+# -----------------------------------------------------------------------
+# 
+# gds2lef (Ver.1.10 Rev.0.52) Fri Aug 22 11:12:01 1997 # F313
+#   Input file name
+#     LEF     : top.lef.newlibD_UC2.3Al.084
+#     LEF     : uecyb970718.llef
+#     GDSII   : 7328.gds
+#     mapfile : 7328.mapfile
+#     option  : 7328.option
+#     texthead: 7328.texthead
+#   Output file name
+#     LEF     : 7328.TEMP_DIR/F313.LEFLIB
+#     summary : gds2lef.sum.7328
+#   Option Of gds2lef
+#     -offset -0.420000 0.000000
+#     -copy -rect -mh 5 -size 29
+# 
+  FOREIGN UECYBF313 -0.42 0 ;
+  CLASS CORE ;
+  SOURCE USER ;
+  SIZE 6.72 BY 8.4 ;
+  SYMMETRY X Y ;
+  SITE CORE ;
+##CLASS  BSTRCOM ;
+  PIN H01
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0.2 6.5 0.64 6.94 ;
+      LAYER METAL1 ;
+      RECT 1.04 6.5 1.48 6.94 ;
+      LAYER METAL1 ;
+      RECT 1.88 6.5 2.32 6.94 ;
+    END
+  END H01
+  PIN H02
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 1.88 3.98 2.32 4.42 ;
+      LAYER METAL1 ;
+      RECT 2.72 3.98 3.16 4.42 ;
+    END
+  END H02
+  PIN H03
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 1.88 3.14 2.32 3.58 ;
+      LAYER METAL1 ;
+      RECT 2.72 3.14 3.16 3.58 ;
+    END
+  END H03
+  PIN N01
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 4.4 1.46 4.84 1.9 ;
+      LAYER METAL1 ;
+      RECT 5.24 1.46 5.68 1.9 ;
+      LAYER METAL1 ;
+      RECT 4.4 2.3 4.84 2.74 ;
+      LAYER METAL1 ;
+      RECT 4.4 3.14 4.84 3.58 ;
+      LAYER METAL1 ;
+      RECT 4.4 3.98 4.84 4.42 ;
+      LAYER METAL1 ;
+      RECT 4.4 4.82 4.84 5.26 ;
+      LAYER METAL1 ;
+      RECT 4.4 5.66 4.84 6.1 ;
+    END
+  END N01
+  PIN GND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 -0.22 6.72 1.06 ;
+    END
+  END GND
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 7.34 6.72 8.62 ;
+    END
+  END VDD
+  OBS
+    LAYER METAL1 ;
+    RECT 3.56 1.46 4 1.9 ;
+    RECT 6.08 1.46 6.52 1.9 ;
+    RECT 0.2 2.3 0.64 2.74 ;
+    RECT 1.04 2.3 1.48 2.74 ;
+    RECT 3.56 2.3 4 2.74 ;
+    RECT 0.2 3.14 0.64 3.58 ;
+    RECT 1.04 3.14 1.48 3.58 ;
+    RECT 3.56 3.14 4 3.58 ;
+    RECT 0.2 3.98 0.64 4.42 ;
+    RECT 1.04 3.98 1.48 4.42 ;
+    RECT 3.56 3.98 4 4.42 ;
+    RECT 5.24 3.98 5.68 4.42 ;
+    RECT 6.08 3.98 6.52 4.42 ;
+    RECT 0.2 4.82 0.64 5.26 ;
+    RECT 1.04 4.82 1.48 5.26 ;
+    RECT 1.88 4.82 2.32 5.26 ;
+    RECT 2.72 4.82 3.16 5.26 ;
+    RECT 3.56 4.82 4 5.26 ;
+    RECT 5.24 4.82 5.68 5.26 ;
+    RECT 6.08 4.82 6.52 5.26 ;
+    RECT 2.72 5.66 3.16 6.1 ;
+    RECT 3.56 5.66 4 6.1 ;
+    RECT 5.24 5.66 5.68 6.1 ;
+    RECT 6.08 5.66 6.52 6.1 ;
+    RECT 2.72 6.5 3.16 6.94 ;
+    RECT 3.56 6.5 4 6.94 ;
+    RECT 4.4 6.5 4.84 6.94 ;
+    RECT 5.24 6.5 5.68 6.94 ;
+    RECT 6.08 6.5 6.52 6.94 ;
+  END
+END F313
+# 
+MACRO F511
+# -----------------------------------------------------------------------
+#   newlibD UC2 [0.84um Pitch] LEF Library
+#
+#   COPYRIGHT 1997 NEC Corporation & NEC IC Microcomputer Systems, Ltd.
+#   ALL RIGHTS RESERVED
+#
+#           [ F511 ]
+#
+#   Source LSEQ Version : 961029V1.0(C)NEC
+#   Created at 08/22/1997 11:12:57 by futa@nkbew80
+# -----------------------------------------------------------------------
+# 
+# gds2lef (Ver.1.10 Rev.0.52) Fri Aug 22 11:12:10 1997 # F511
+#   Input file name
+#     LEF     : top.lef.newlibD_UC2.3Al.084
+#     LEF     : uecyb970718.llef
+#     GDSII   : 7328.gds
+#     mapfile : 7328.mapfile
+#     option  : 7328.option
+#     texthead: 7328.texthead
+#   Output file name
+#     LEF     : 7328.TEMP_DIR/F511.LEFLIB
+#     summary : gds2lef.sum.7328
+#   Option Of gds2lef
+#     -offset -0.420000 0.000000
+#     -copy -rect -mh 5 -size 29
+# 
+  FOREIGN UECYBF511 -0.42 0 ;
+  CLASS CORE ;
+  SOURCE USER ;
+  SIZE 9.24 BY 8.4 ;
+  SYMMETRY X Y ;
+  SITE CORE ;
+##CLASS  BSTRCOM ;
+  PIN H01
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0.2 3.14 0.64 3.58 ;
+      LAYER METAL1 ;
+      RECT 1.04 3.14 1.48 3.58 ;
+      LAYER METAL1 ;
+      RECT 0.2 3.98 0.64 4.42 ;
+      LAYER METAL1 ;
+      RECT 0.2 4.82 0.64 5.26 ;
+      LAYER METAL1 ;
+      RECT 0.2 5.66 0.64 6.1 ;
+      LAYER METAL1 ;
+      RECT 0.2 6.5 0.64 6.94 ;
+      LAYER METAL1 ;
+      RECT 1.04 6.5 1.48 6.94 ;
+      LAYER METAL1 ;
+      RECT 1.88 6.5 2.32 6.94 ;
+      LAYER METAL1 ;
+      RECT 2.72 6.5 3.16 6.94 ;
+      LAYER METAL1 ;
+      RECT 3.56 6.5 4 6.94 ;
+      LAYER METAL1 ;
+      RECT 4.4 6.5 4.84 6.94 ;
+    END
+  END H01
+  PIN H02
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 1.88 3.98 2.32 4.42 ;
+      LAYER METAL1 ;
+      RECT 1.88 5.66 2.32 6.1 ;
+      LAYER METAL1 ;
+      RECT 2.72 5.66 3.16 6.1 ;
+      LAYER METAL1 ;
+      RECT 3.56 5.66 4 6.1 ;
+      LAYER METAL1 ;
+      RECT 4.4 5.66 4.84 6.1 ;
+      LAYER METAL1 ;
+      RECT 5.24 5.66 5.68 6.1 ;
+    END
+  END H02
+  PIN N01
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 6.92 1.46 7.36 1.9 ;
+      LAYER METAL1 ;
+      RECT 8.6 2.3 9.04 2.74 ;
+      LAYER METAL1 ;
+      RECT 6.92 2.3 7.36 2.74 ;
+      LAYER METAL1 ;
+      RECT 7.76 2.3 8.2 2.74 ;
+      LAYER METAL1 ;
+      RECT 8.6 3.14 9.04 3.58 ;
+      LAYER METAL1 ;
+      RECT 8.6 3.98 9.04 4.42 ;
+      LAYER METAL1 ;
+      RECT 6.92 4.82 7.36 5.26 ;
+      LAYER METAL1 ;
+      RECT 7.76 4.82 8.2 5.26 ;
+      LAYER METAL1 ;
+      RECT 8.6 4.82 9.04 5.26 ;
+      LAYER METAL1 ;
+      RECT 6.92 5.66 7.36 6.1 ;
+    END
+  END N01
+  PIN GND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 -0.22 9.24 1.06 ;
+    END
+  END GND
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 7.34 9.24 8.62 ;
+    END
+  END VDD
+  OBS
+    LAYER METAL1 ;
+    RECT 0.2 1.46 0.64 1.9 ;
+    RECT 1.04 1.46 1.48 1.9 ;
+    RECT 1.88 1.46 2.32 1.9 ;
+    RECT 2.72 1.46 3.16 1.9 ;
+    RECT 3.56 1.46 4 1.9 ;
+    RECT 4.4 1.46 4.84 1.9 ;
+    RECT 5.24 1.46 5.68 1.9 ;
+    RECT 6.08 1.46 6.52 1.9 ;
+    RECT 7.76 1.46 8.2 1.9 ;
+    RECT 2.72 2.3 3.16 2.74 ;
+    RECT 3.56 2.3 4 2.74 ;
+    RECT 4.4 2.3 4.84 2.74 ;
+    RECT 5.24 2.3 5.68 2.74 ;
+    RECT 6.08 2.3 6.52 2.74 ;
+    RECT 2.72 3.14 3.16 3.58 ;
+    RECT 3.56 3.14 4 3.58 ;
+    RECT 4.4 3.14 4.84 3.58 ;
+    RECT 5.24 3.14 5.68 3.58 ;
+    RECT 6.08 3.14 6.52 3.58 ;
+    RECT 6.92 3.14 7.36 3.58 ;
+    RECT 7.76 3.14 8.2 3.58 ;
+    RECT 1.04 3.98 1.48 4.42 ;
+    RECT 2.72 3.98 3.16 4.42 ;
+    RECT 3.56 3.98 4 4.42 ;
+    RECT 4.4 3.98 4.84 4.42 ;
+    RECT 5.24 3.98 5.68 4.42 ;
+    RECT 6.08 3.98 6.52 4.42 ;
+    RECT 6.92 3.98 7.36 4.42 ;
+    RECT 7.76 3.98 8.2 4.42 ;
+    RECT 1.04 4.82 1.48 5.26 ;
+    RECT 1.88 4.82 2.32 5.26 ;
+    RECT 2.72 4.82 3.16 5.26 ;
+    RECT 3.56 4.82 4 5.26 ;
+    RECT 5.24 4.82 5.68 5.26 ;
+    RECT 6.08 4.82 6.52 5.26 ;
+    RECT 1.04 5.66 1.48 6.1 ;
+    RECT 6.08 5.66 6.52 6.1 ;
+    RECT 7.76 5.66 8.2 6.1 ;
+  END
+END F511
+# 
+MACRO F565
+# -----------------------------------------------------------------------
+#   newlibD UC2 [0.84um Pitch] LEF Library
+#
+#   COPYRIGHT 1997 NEC Corporation & NEC IC Microcomputer Systems, Ltd.
+#   ALL RIGHTS RESERVED
+#
+#           [ F565 ]
+#
+#   Source LSEQ Version : 961023V1.0(C)NEC
+#   Created at 08/22/1997 11:12:57 by futa@nkbew80
+# -----------------------------------------------------------------------
+# 
+# gds2lef (Ver.1.10 Rev.0.52) Fri Aug 22 11:12:12 1997 # F565
+#   Input file name
+#     LEF     : top.lef.newlibD_UC2.3Al.084
+#     LEF     : uecyb970718.llef
+#     GDSII   : 7328.gds
+#     mapfile : 7328.mapfile
+#     option  : 7328.option
+#     texthead: 7328.texthead
+#   Output file name
+#     LEF     : 7328.TEMP_DIR/F565.LEFLIB
+#     summary : gds2lef.sum.7328
+#   Option Of gds2lef
+#     -offset -0.420000 0.000000
+#     -copy -rect -mh 5 -size 29
+# 
+  FOREIGN UECYBF565 -0.42 0 ;
+  CLASS CORE ;
+  SOURCE USER ;
+  SIZE 8.4 BY 8.4 ;
+  SYMMETRY X Y ;
+  SITE CORE ;
+##CLASS  BSTRCOM ;
+  PIN H01
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 1.04 3.98 1.48 4.42 ;
+      LAYER METAL1 ;
+      RECT 1.88 3.98 2.32 4.42 ;
+    END
+  END H01
+  PIN H02
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 4.4 3.14 4.84 3.58 ;
+      LAYER METAL1 ;
+      RECT 5.24 3.14 5.68 3.58 ;
+    END
+  END H02
+  PIN H03
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0.2 3.14 0.64 3.58 ;
+      LAYER METAL1 ;
+      RECT 1.04 3.14 1.48 3.58 ;
+    END
+  END H03
+  PIN N01
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 6.92 1.46 7.36 1.9 ;
+      LAYER METAL1 ;
+      RECT 5.24 1.46 5.68 1.9 ;
+      LAYER METAL1 ;
+      RECT 6.08 1.46 6.52 1.9 ;
+      LAYER METAL1 ;
+      RECT 5.24 5.66 5.68 6.1 ;
+      LAYER METAL1 ;
+      RECT 6.08 5.66 6.52 6.1 ;
+      LAYER METAL1 ;
+      RECT 6.92 5.66 7.36 6.1 ;
+    END
+  END N01
+  PIN GND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 -0.22 8.4 1.06 ;
+    END
+  END GND
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 7.34 8.4 8.62 ;
+    END
+  END VDD
+  OBS
+    LAYER METAL1 ;
+    RECT 0.2 1.46 0.64 1.9 ;
+    RECT 1.04 1.46 1.48 1.9 ;
+    RECT 1.88 1.46 2.32 1.9 ;
+    RECT 2.72 1.46 3.16 1.9 ;
+    RECT 3.56 1.46 4 1.9 ;
+    RECT 4.4 1.46 4.84 1.9 ;
+    RECT 7.76 1.46 8.2 1.9 ;
+    RECT 1.88 2.3 2.32 2.74 ;
+    RECT 2.72 2.3 3.16 2.74 ;
+    RECT 3.56 2.3 4 2.74 ;
+    RECT 4.4 2.3 4.84 2.74 ;
+    RECT 5.24 2.3 5.68 2.74 ;
+    RECT 6.08 2.3 6.52 2.74 ;
+    RECT 6.92 2.3 7.36 2.74 ;
+    RECT 7.76 2.3 8.2 2.74 ;
+    RECT 1.88 3.14 2.32 3.58 ;
+    RECT 2.72 3.14 3.16 3.58 ;
+    RECT 3.56 3.14 4 3.58 ;
+    RECT 6.08 3.14 6.52 3.58 ;
+    RECT 6.92 3.14 7.36 3.58 ;
+    RECT 7.76 3.14 8.2 3.58 ;
+    RECT 2.72 3.98 3.16 4.42 ;
+    RECT 3.56 3.98 4 4.42 ;
+    RECT 4.4 3.98 4.84 4.42 ;
+    RECT 6.08 3.98 6.52 4.42 ;
+    RECT 6.92 3.98 7.36 4.42 ;
+    RECT 7.76 3.98 8.2 4.42 ;
+    RECT 1.88 4.82 2.32 5.26 ;
+    RECT 2.72 4.82 3.16 5.26 ;
+    RECT 3.56 4.82 4 5.26 ;
+    RECT 4.4 4.82 4.84 5.26 ;
+    RECT 5.24 4.82 5.68 5.26 ;
+    RECT 6.08 4.82 6.52 5.26 ;
+    RECT 6.92 4.82 7.36 5.26 ;
+    RECT 7.76 4.82 8.2 5.26 ;
+    RECT 0.2 5.66 0.64 6.1 ;
+    RECT 1.04 5.66 1.48 6.1 ;
+    RECT 1.88 5.66 2.32 6.1 ;
+    RECT 2.72 5.66 3.16 6.1 ;
+    RECT 3.56 5.66 4 6.1 ;
+    RECT 4.4 5.66 4.84 6.1 ;
+    RECT 7.76 5.66 8.2 6.1 ;
+  END
+END F565
+# 
+MACRO L615NW
+# -----------------------------------------------------------------------
+#   newlibD UC2 [0.84um Pitch] LEF Library
+#
+#   COPYRIGHT 1997 NEC Corporation & NEC IC Microcomputer Systems, Ltd.
+#   ALL RIGHTS RESERVED
+#
+#           [ L615NW ]
+#
+#   Source LSEQ Version : 970313V1.0(C)NEC
+#   Created at 08/22/1997 11:12:57 by futa@nkbew80
+# -----------------------------------------------------------------------
+# 
+# gds2lef (Ver.1.10 Rev.0.52) Fri Aug 22 11:12:38 1997 # L615NW
+#   Input file name
+#     LEF     : top.lef.newlibD_UC2.3Al.084
+#     LEF     : uecyb970718.llef
+#     GDSII   : 7328.gds
+#     mapfile : 7328.mapfile
+#     option  : 7328.option
+#     texthead: 7328.texthead
+#   Output file name
+#     LEF     : 7328.TEMP_DIR/L615NW.LEFLIB
+#     summary : gds2lef.sum.7328
+#   Option Of gds2lef
+#     -offset -0.420000 0.000000
+#     -copy -rect -mh 5 -size 29
+# 
+  FOREIGN UECYBL615NW -0.42 0 ;
+  CLASS CORE ;
+#CLASS FF ;
+  SOURCE USER ;
+  SIZE 19.32 BY 8.4 ;
+  SYMMETRY X Y ;
+  SITE CORE ;
+##CLASS  BSTRCOM ;
+  PIN H01
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 2.72 3.14 3.16 3.58 ;
+    END
+  END H01
+  PIN H02
+    DIRECTION INPUT ;
+    USE CLOCK ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0.2 6.5 0.64 6.94 ;
+      LAYER METAL1 ;
+      RECT 1.04 6.5 1.48 6.94 ;
+    END
+  END H02
+  PIN H03
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 7.76 1.46 8.2 1.9 ;
+      LAYER METAL1 ;
+      RECT 8.6 1.46 9.04 1.9 ;
+      LAYER METAL1 ;
+      RECT 9.44 1.46 9.88 1.9 ;
+    END
+  END H03
+  PIN N01
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 15.32 1.46 15.76 1.9 ;
+      LAYER METAL1 ;
+      RECT 16.16 1.46 16.6 1.9 ;
+      LAYER METAL1 ;
+      RECT 16.16 2.3 16.6 2.74 ;
+      LAYER METAL1 ;
+      RECT 16.16 3.14 16.6 3.58 ;
+      LAYER METAL1 ;
+      RECT 16.16 3.98 16.6 4.42 ;
+      LAYER METAL1 ;
+      RECT 16.16 4.82 16.6 5.26 ;
+      LAYER METAL1 ;
+      RECT 16.16 5.66 16.6 6.1 ;
+    END
+  END N01
+  PIN GND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 -0.22 19.32 1.06 ;
+    END
+  END GND
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER METAL1 ;
+      RECT 0 7.34 19.32 8.62 ;
+    END
+  END VDD
+  PIN N02
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER METAL1 ;
+      RECT 17.84 1.46 18.28 1.9 ;
+      LAYER METAL1 ;
+      RECT 18.68 1.46 19.12 1.9 ;
+      LAYER METAL1 ;
+      RECT 17.84 2.3 18.28 2.74 ;
+      LAYER METAL1 ;
+      RECT 18.68 2.3 19.12 2.74 ;
+      LAYER METAL1 ;
+      RECT 17.84 3.14 18.28 3.58 ;
+      LAYER METAL1 ;
+      RECT 18.68 3.14 19.12 3.58 ;
+      LAYER METAL1 ;
+      RECT 18.68 3.98 19.12 4.42 ;
+      LAYER METAL1 ;
+      RECT 18.68 4.82 19.12 5.26 ;
+      LAYER METAL1 ;
+      RECT 18.68 5.66 19.12 6.1 ;
+    END
+  END N02
+  OBS
+    LAYER METAL1 ;
+    RECT 0.2 1.46 0.64 1.9 ;
+    RECT 1.04 1.46 1.48 1.9 ;
+    RECT 1.88 1.46 2.32 1.9 ;
+    RECT 2.72 1.46 3.16 1.9 ;
+    RECT 3.56 1.46 4 1.9 ;
+    RECT 4.4 1.46 4.84 1.9 ;
+    RECT 5.24 1.46 5.68 1.9 ;
+    RECT 6.08 1.46 6.52 1.9 ;
+    RECT 6.92 1.46 7.36 1.9 ;
+    RECT 11.96 1.46 12.4 1.9 ;
+    RECT 12.8 1.46 13.24 1.9 ;
+    RECT 13.64 1.46 14.08 1.9 ;
+    RECT 14.48 1.46 14.92 1.9 ;
+    RECT 17 1.46 17.44 1.9 ;
+    RECT 0.2 2.3 0.64 2.74 ;
+    RECT 1.04 2.3 1.48 2.74 ;
+    RECT 1.88 2.3 2.32 2.74 ;
+    RECT 2.72 2.3 3.16 2.74 ;
+    RECT 3.56 2.3 4 2.74 ;
+    RECT 4.4 2.3 4.84 2.74 ;
+    RECT 5.24 2.3 5.68 2.74 ;
+    RECT 6.08 2.3 6.52 2.74 ;
+    RECT 6.92 2.3 7.36 2.74 ;
+    RECT 7.76 2.3 8.2 2.74 ;
+    RECT 8.6 2.3 9.04 2.74 ;
+    RECT 9.44 2.3 9.88 2.74 ;
+    RECT 10.28 2.3 10.72 2.74 ;
+    RECT 11.12 2.3 11.56 2.74 ;
+    RECT 11.96 2.3 12.4 2.74 ;
+    RECT 12.8 2.3 13.24 2.74 ;
+    RECT 13.64 2.3 14.08 2.74 ;
+    RECT 14.48 2.3 14.92 2.74 ;
+    RECT 17 2.3 17.44 2.74 ;
+    RECT 0.2 3.14 0.64 3.58 ;
+    RECT 1.04 3.14 1.48 3.58 ;
+    RECT 1.88 3.14 2.32 3.58 ;
+    RECT 3.56 3.14 4 3.58 ;
+    RECT 4.4 3.14 4.84 3.58 ;
+    RECT 5.24 3.14 5.68 3.58 ;
+    RECT 6.08 3.14 6.52 3.58 ;
+    RECT 6.92 3.14 7.36 3.58 ;
+    RECT 7.76 3.14 8.2 3.58 ;
+    RECT 8.6 3.14 9.04 3.58 ;
+    RECT 9.44 3.14 9.88 3.58 ;
+    RECT 10.28 3.14 10.72 3.58 ;
+    RECT 11.12 3.14 11.56 3.58 ;
+    RECT 11.96 3.14 12.4 3.58 ;
+    RECT 12.8 3.14 13.24 3.58 ;
+    RECT 13.64 3.14 14.08 3.58 ;
+    RECT 14.48 3.14 14.92 3.58 ;
+    RECT 17 3.14 17.44 3.58 ;
+    RECT 0.2 3.98 0.64 4.42 ;
+    RECT 1.04 3.98 1.48 4.42 ;
+    RECT 1.88 3.98 2.32 4.42 ;
+    RECT 3.56 3.98 4 4.42 ;
+    RECT 4.4 3.98 4.84 4.42 ;
+    RECT 5.24 3.98 5.68 4.42 ;
+    RECT 6.08 3.98 6.52 4.42 ;
+    RECT 8.6 3.98 9.04 4.42 ;
+    RECT 9.44 3.98 9.88 4.42 ;
+    RECT 10.28 3.98 10.72 4.42 ;
+    RECT 11.12 3.98 11.56 4.42 ;
+    RECT 11.96 3.98 12.4 4.42 ;
+    RECT 12.8 3.98 13.24 4.42 ;
+    RECT 13.64 3.98 14.08 4.42 ;
+    RECT 14.48 3.98 14.92 4.42 ;
+    RECT 15.32 3.98 15.76 4.42 ;
+    RECT 17 3.98 17.44 4.42 ;
+    RECT 17.84 3.98 18.28 4.42 ;
+    RECT 0.2 4.82 0.64 5.26 ;
+    RECT 1.04 4.82 1.48 5.26 ;
+    RECT 1.88 4.82 2.32 5.26 ;
+    RECT 2.72 4.82 3.16 5.26 ;
+    RECT 3.56 4.82 4 5.26 ;
+    RECT 4.4 4.82 4.84 5.26 ;
+    RECT 5.24 4.82 5.68 5.26 ;
+    RECT 6.08 4.82 6.52 5.26 ;
+    RECT 6.92 4.82 7.36 5.26 ;
+    RECT 7.76 4.82 8.2 5.26 ;
+    RECT 8.6 4.82 9.04 5.26 ;
+    RECT 9.44 4.82 9.88 5.26 ;
+    RECT 10.28 4.82 10.72 5.26 ;
+    RECT 11.12 4.82 11.56 5.26 ;
+    RECT 11.96 4.82 12.4 5.26 ;
+    RECT 12.8 4.82 13.24 5.26 ;
+    RECT 13.64 4.82 14.08 5.26 ;
+    RECT 14.48 4.82 14.92 5.26 ;
+    RECT 15.32 4.82 15.76 5.26 ;
+    RECT 17 4.82 17.44 5.26 ;
+    RECT 17.84 4.82 18.28 5.26 ;
+    RECT 2.72 5.66 3.16 6.1 ;
+    RECT 3.56 5.66 4 6.1 ;
+    RECT 4.4 5.66 4.84 6.1 ;
+    RECT 5.24 5.66 5.68 6.1 ;
+    RECT 6.08 5.66 6.52 6.1 ;
+    RECT 6.92 5.66 7.36 6.1 ;
+    RECT 7.76 5.66 8.2 6.1 ;
+    RECT 8.6 5.66 9.04 6.1 ;
+    RECT 9.44 5.66 9.88 6.1 ;
+    RECT 10.28 5.66 10.72 6.1 ;
+    RECT 11.12 5.66 11.56 6.1 ;
+    RECT 11.96 5.66 12.4 6.1 ;
+    RECT 12.8 5.66 13.24 6.1 ;
+    RECT 13.64 5.66 14.08 6.1 ;
+    RECT 14.48 5.66 14.92 6.1 ;
+    RECT 15.32 5.66 15.76 6.1 ;
+    RECT 17 5.66 17.44 6.1 ;
+    RECT 17.84 5.66 18.28 6.1 ;
+    RECT 1.88 6.5 2.32 6.94 ;
+    RECT 2.72 6.5 3.16 6.94 ;
+    RECT 3.56 6.5 4 6.94 ;
+    RECT 4.4 6.5 4.84 6.94 ;
+    RECT 5.24 6.5 5.68 6.94 ;
+    RECT 6.08 6.5 6.52 6.94 ;
+    RECT 6.92 6.5 7.36 6.94 ;
+    RECT 7.76 6.5 8.2 6.94 ;
+    RECT 8.6 6.5 9.04 6.94 ;
+    RECT 9.44 6.5 9.88 6.94 ;
+    RECT 10.28 6.5 10.72 6.94 ;
+    RECT 11.12 6.5 11.56 6.94 ;
+    RECT 11.96 6.5 12.4 6.94 ;
+    RECT 12.8 6.5 13.24 6.94 ;
+    RECT 13.64 6.5 14.08 6.94 ;
+    RECT 14.48 6.5 14.92 6.94 ;
+    RECT 15.32 6.5 15.76 6.94 ;
+    RECT 16.16 6.5 16.6 6.94 ;
+    RECT 17 6.5 17.44 6.94 ;
+    RECT 17.84 6.5 18.28 6.94 ;
+  END
+END L615NW
+
+END LIBRARY
+

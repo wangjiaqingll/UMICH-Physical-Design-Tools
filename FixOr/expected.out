@@ -1,0 +1,885 @@
+------------  Running test 0a...
+Reading TESTS/quasiHPl.aux
+Opening TESTS/quasiHP.lef
+Opening TESTS/quasiHP.def
+LEF file TESTS/quasiHP.lef parsed
+DEF file TESTS/quasiHP.def parsed
+Opening TESTS/quasiHP.def for GCell
+DEF file TESTS/quasiHP.def parsed
+LEF/DEF pair read successfully (LGC file passed to postprocessor)
+Opening TESTS/quasiHP.lgc
+Parsing LGC file ... 
+Fixing 76 noncore components  ...
+Compactifying constraints ... 
+Starting postprocessor ... 
+  Removing degree 1 and 0 nets ... 
+  Sorting: 
+          - obstacles in master cells by xMin ... 
+          - master cells by name ... 
+          - cells by name ... 
+          - each net's cells ... 
+          - nets ... 
+          - special nets ... 
+          - masterpins ... 
+          - pins ... 
+          - each mastercell's masterpins ... 
+          - each cell's pins ... 
+          - each net's pins ... 
+          - masterCell/Pin Equiv. Classes ... 
+          - each net's cells by direction ... 
+          - each cell by placement status and type ... 
+          - nets on cells... 
+  Sorting took  0.01 user, 0.0e+00 system, 0 real, 0.068 norm'd sec 
+  Reordering locations, constraints etc ... 
+ No RC-file name found in DB
+  Populating EasyAccess took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Postprocessor took  0.069 user, 1.0e-02 system, 0 real, 0.478 norm'd sec 
+Fixed   Group Constraint of size 76
+Consistency check took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Database setup took  0.259 user, 1.0e-02 system, 0 real, 1.776 norm'd sec 
+delta : 9100
+delta : 8840
+delta : 8320
+delta : 5330
+delta : 5200
+delta : 5200
+delta : 4680
+delta : 4420
+delta : 4420
+delta : 4160
+delta : 4160
+delta : 4160
+delta : 3640
+delta : 3640
+delta : 3250
+delta : 2860
+delta : 2340
+delta : 2080
+delta : 2080
+delta : 1820
+delta : 1820
+delta : 1820
+delta : 1820
+delta : 1560
+delta : 1560
+delta : 1560
+delta : 1560
+delta : 1300
+delta : 1300
+delta : 1300
+delta : 1040
+delta : 1040
+delta : 1040
+delta : 1040
+delta : 1040
+delta : 1040
+delta : 1040
+delta : 1040
+delta : 1560
+delta : 1040
+delta : 780
+delta : 780
+delta : 780
+delta : 780
+delta : 780
+delta : 780
+delta : 520
+delta : 520
+delta : 520
+delta : 520
+delta : 520
+delta : 520
+delta : 520
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+delta : 260
+Greedy Orientation Optimizer took  0.01 user, 0.0e+00 system, 0 real, 0.068 norm'd sec 
+Initial WL : 9.17616e+06
+Num Flipped: 76
+Final WL   : 9.30668e+06
+------------  Running test 0b...
+Reading TESTS/quasiHPl.aux
+Opening TESTS/quasiHP.lef
+Opening TESTS/quasiHP.def
+LEF file TESTS/quasiHP.lef parsed
+DEF file TESTS/quasiHP.def parsed
+Opening TESTS/quasiHP.def for GCell
+DEF file TESTS/quasiHP.def parsed
+LEF/DEF pair read successfully (LGC file passed to postprocessor)
+Opening TESTS/quasiHP.lgc
+Parsing LGC file ... 
+Fixing 76 noncore components  ...
+Compactifying constraints ... 
+Starting postprocessor ... 
+  Removing degree 1 and 0 nets ... 
+  Sorting: 
+          - obstacles in master cells by xMin ... 
+          - master cells by name ... 
+          - cells by name ... 
+          - each net's cells ... 
+          - nets ... 
+          - special nets ... 
+          - masterpins ... 
+          - pins ... 
+          - each mastercell's masterpins ... 
+          - each cell's pins ... 
+          - each net's pins ... 
+          - masterCell/Pin Equiv. Classes ... 
+          - each net's cells by direction ... 
+          - each cell by placement status and type ... 
+          - nets on cells... 
+  Sorting took  0.01 user, 0.0e+00 system, 0 real, 0.068 norm'd sec 
+  Reordering locations, constraints etc ... 
+ No RC-file name found in DB
+  Populating EasyAccess took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Postprocessor took  0.079 user, 1.0e-02 system, 0 real, 0.546 norm'd sec 
+Fixed   Group Constraint of size 76
+Consistency check took  0.01 user, 0.0e+00 system, 0 real, 0.068 norm'd sec 
+Database setup took  0.339 user, 1.0e-02 system, 0 real, 2.323 norm'd sec 
+delta : -10920
+delta : -8840
+delta : -7800
+delta : -6500
+delta : -5980
+delta : -5720
+delta : -6240
+delta : -5460
+delta : -4680
+delta : -4680
+delta : -4420
+delta : -3640
+delta : -3640
+delta : -3640
+delta : -2860
+delta : -3120
+delta : -2600
+delta : -2600
+delta : -2080
+delta : -2080
+delta : -2080
+delta : -1820
+delta : -1560
+delta : -1300
+delta : -1300
+delta : -1300
+delta : -1300
+delta : -1300
+delta : -1300
+delta : -1300
+delta : -1300
+delta : -1040
+delta : -1040
+delta : -1040
+delta : -1040
+delta : -1040
+delta : -780
+delta : -780
+delta : -780
+delta : -780
+delta : -780
+delta : -780
+delta : -780
+delta : -780
+delta : -780
+delta : -780
+delta : -780
+delta : -780
+delta : -650
+delta : -520
+delta : -520
+delta : -520
+delta : -2600
+delta : -520
+delta : -520
+delta : -520
+delta : -520
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+delta : -260
+Greedy Orientation Optimizer took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Initial WL : 9.17616e+06
+Num Flipped: 85
+Final WL   : 9.03408e+06
+ Opening testqHPgood.def ...  Ok 
+
+# Created      : Fri Oct 31 18:07:55 2003
+# Platform     : Linux 2.4.20-6bigmem #1 SMP Thu Feb 27 09:52:10 EST 2003 i686 
+# User         : sadya@zenit.eecs.umich.edu (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;) 
+# Memory usage : 8.58984Mb (peak)  8.33594Mb (estimate)
+DESIGN mdp-aries ;
+
+UNITS DISTANCE MICRONS 100 ;
+
+COMPONENTS 276 ;
+  -    along-1   ZZPADSPC  +    FIXED ( -45420  -106520 )  S  ;
+  -   along-10   ZZPADSPC  +    FIXED ( 7100  -106520 )  S  ;
+  -   along-11   ZZPADSPC  +    FIXED ( 7620  -106520 )  S  ;
+  -   along-12   ZZPADSPC  +    FIXED ( 20100  -106520 )  S  ;
+  -   along-13   ZZPADSPC  +    FIXED ( 20620  -106520 )  S  ;
+  -   along-14   ZZPADSPC  +    FIXED ( 33100  -106520 )  S  ;
+  -   along-15   ZZPADSPC  +    FIXED ( 33620  -106520 )  S  ;
+  -   along-16   ZZPADSPC  +    FIXED ( 46100  -106520 )  S  ;
+  -   along-17   ZZPADSPC  +    FIXED ( 46620  -106520 )  S  ;
+  -   along-18   ZZPADSPC  +    FIXED ( 59100  -106520 )  S  ;
+  -   along-19   ZZPADSPC  +    FIXED ( 59620  -106520 )  S  ;
+  -    along-2   ZZPADSPC  +    FIXED ( -44900  -106520 )  S  ;
+  -   along-20   ZZPADSPC  +    FIXED ( 72100  -106520 )  S  ;
+  -   along-21   ZZPADSPC  +    FIXED ( 72620  -106520 )  S  ;
+  -   along-22   ZZPADSPC  +    FIXED ( 85100  -106520 )  S  ;
+  -   along-23   ZZPADSPC  +    FIXED ( 85620  -106520 )  S  ;
+  -    along-3   ZZPADSPC  +    FIXED ( -44380  -106520 )  S  ;
+  -    along-4   ZZPADSPC  +    FIXED ( -31900  -106520 )  S  ;
+  -    along-5   ZZPADSPC  +    FIXED ( -31380  -106520 )  S  ;
+  -    along-6   ZZPADSPC  +    FIXED ( -18900  -106520 )  S  ;
+  -    along-7   ZZPADSPC  +    FIXED ( -18380  -106520 )  S  ;
+  -    along-8   ZZPADSPC  +    FIXED ( -5900  -106520 )  S  ;
+  -    along-9   ZZPADSPC  +    FIXED ( -5380  -106520 )  S  ;
+  -        I17    PADOUT8  +    FIXED ( 98100  -15520 )  E  ;
+  -        I18    PADOUT8  +    FIXED ( 98100  -3560 )  E  ;
+  -        I20    PADOUT8  +    FIXED ( 98100  8400 )  E  ;
+  -        I21    PADOUT8  +    FIXED ( 98100  44280 )  E  ;
+  -        I22    PADOUT8  +    FIXED ( 98100  32320 )  E  ;
+  -        I23    PADOUT8  +    FIXED ( 98100  20360 )  E  ;
+  -        I30    PADOUT8  +    FIXED ( 98100  56240 )  E  ;
+  -        I31    PADOUT8  +    FIXED ( 98100  68200 )  E  ;
+  -        I32    PADOUT8  +    FIXED ( 73140  -106520 )  S  ;
+  -        I33    PADOUT8  +    FIXED ( 98100  80160 )  E  ;
+  -        I38   PADTINH0  +    FIXED ( -45420  92120 )  N  ;
+  -        I39   PADTINH0  +    FIXED ( -33460  92120 )  N  ;
+  -        I40   PADTINH0  +    FIXED ( -21500  92120 )  N  ;
+  -        I41   PADTINH0  +    FIXED ( -9540  92120 )  N  ;
+  -        I51   PADTINH0  +    FIXED ( 14380  92120 )  N  ;
+  -        I52   PADTINH0  +    FIXED ( 26340  92120 )  N  ;
+  -        I53   PADTINH0  +    FIXED ( 50260  92120 )  N  ;
+  -        I54   PADTINH0  +    FIXED ( 38300  92120 )  N  ;
+  -        I55   PADTINH0  +    FIXED ( 62220  92120 )  N  ;
+  -     I62_0_    PADOUT8  +    FIXED ( 60140  -106520 )  S  ;
+  -     I62_1_    PADOUT8  +    FIXED ( 47140  -106520 )  S  ;
+  -     I62_2_    PADOUT8  +    FIXED ( 34140  -106520 )  S  ;
+  -     I62_3_    PADOUT8  +    FIXED ( -4860  -106520 )  S  ;
+  -     I62_4_    PADOUT8  +    FIXED ( -17860  -106520 )  S  ;
+  -     I62_5_    PADOUT8  +    FIXED ( -30860  -106520 )  S  ;
+  -     I62_6_    PADOUT8  +    FIXED ( -43860  -106520 )  S  ;
+  -     I62_7_    PADOUT8  +    FIXED ( -57380  -106520 )  S  ;
+  -     I64_0_   PADTINH0  +    FIXED ( -112500  8400 )  W  ;
+  -     I64_1_   PADTINH0  +    FIXED ( -112500  -3560 )  W  ;
+  -     I64_2_   PADTINH0  +    FIXED ( -112500  -15520 )  W  ;
+  -     I64_3_   PADTINH0  +    FIXED ( -112500  -27480 )  W  ;
+  -     I64_4_   PADTINH0  +    FIXED ( -112500  -39440 )  W  ;
+  -     I64_5_   PADTINH0  +    FIXED ( -112500  -51400 )  W  ;
+  -     I64_6_   PADTINH0  +    FIXED ( 86140  92120 )  N  ;
+  -     I64_7_   PADTINH0  +    FIXED ( 74180  92120 )  N  ;
+  -     I65_0_   PADTINH0  +    FIXED ( 98100  -27480 )  E  ;
+  -     I65_1_   PADTINH0  +    FIXED ( 98100  -39440 )  E  ;
+  -     I65_2_   PADTINH0  +    FIXED ( 98100  -51400 )  E  ;
+  -     I65_3_   PADTINH0  +    FIXED ( 86140  -106520 )  S  ;
+  -     I65_4_   PADTINH0  +    FIXED ( -112500  80160 )  W  ;
+  -     I65_5_   PADTINH0  +    FIXED ( -112500  68200 )  W  ;
+  -     I65_6_   PADTINH0  +    FIXED ( -112500  56240 )  W  ;
+  -     I65_7_   PADTINH0  +    FIXED ( -112500  44280 )  W  ;
+  -     I65_8_   PADTINH0  +    FIXED ( -112500  32320 )  W  ;
+  -     I65_9_   PADTINH0  +    FIXED ( -112500  20360 )  W  ;
+  -        I67    PADGNDD  +    FIXED ( 21140  -106520 )  S  ;
+  -        I68  PADGNDIOL  +    FIXED ( 8140  -106520 )  S  ;
+  -        I69    PADVDDD  +    FIXED ( -57380  92120 )  N  ;
+  -        I70  PADVDDIOL  +    FIXED ( 2420  92120 )  N  ;
+  -     necorn  PADCORNNE  +    FIXED ( 98100  92120 )  N  ;
+  -     nwcorn  PADCORNNW  +    FIXED ( -112500  92120 )  N  ;
+  -     secorn  PADCORNSE  +    FIXED ( 98100  -106520 )  N  ;
+  -     swcorn  PADCORNSW  +    FIXED ( -112500  -106520 )  N  ;
+  -     brc/I0     AND3FF  +   PLACED ( 24700  26880 )  S  ;
+  -     brc/I1      DFFFF  +   PLACED ( 26780  26880 )  S  ;
+  -    brc/I10      INVFF  +   PLACED ( 15080  3840 )  S  ;
+  -    brc/I11     AND2FF  +   PLACED ( 9100  3840 )  S  ;
+  -    brc/I12       DPFF  +   PLACED ( 18980  0 ) FN  ;
+  -    brc/I13       DPFF  +   PLACED ( 260  3840 ) FS  ;
+  -    brc/I14       DPFF  +   PLACED ( 23140  3840 )  S  ;
+  -    brc/I15       DPFF  +   PLACED ( 29380  7680 ) FN  ;
+  -    brc/I16      LTCFF  +   PLACED ( 1040  7680 )  N  ;
+  -    brc/I17    NAND2FF  +   PLACED ( 12480  11520 )  S  ;
+  -    brc/I18     AND2FF  +   PLACED ( 7800  3840 ) FS  ;
+  -    brc/I19     AND2FF  +   PLACED ( 9620  7680 ) FN  ;
+  -     brc/I2      DFFFF  +   PLACED ( 23400  11520 )  S  ;
+  -    brc/I20      INVFF  +   PLACED ( 10140  3840 ) FS  ;
+  -    brc/I21      INVFF  +   PLACED ( 28080  3840 )  S  ;
+  -    brc/I22     AND3FF  +   PLACED ( 25740  0 )  N  ;
+  -    brc/I23     AND2FF  +   PLACED ( 14820  7680 )  N  ;
+  -    brc/I24      LTCFF  +   PLACED ( 8580  26880 )  S  ;
+  -    brc/I25      LTCFF  +   PLACED ( 3900  23040 ) FN  ;
+  -    brc/I26     AND3FF  +   PLACED ( 3380  11520 ) FS  ;
+  -    brc/I27    NAND2FF  +   PLACED ( 7020  3840 )  S  ;
+  -    brc/I28      INVFF  +   PLACED ( 11440  7680 ) FN  ;
+  -     brc/I3      DFFFF  +   PLACED ( 6760  23040 ) FN  ;
+  -    brc/I33    NAND2FF  +   PLACED ( 31200  23040 ) FN  ;
+  -    brc/I34    NAND2FF  +   PLACED ( 16120  11520 )  S  ;
+  -    brc/I35      INVFF  +   PLACED ( 34320  34560 ) FS  ;
+  -    brc/I36    NAND2FF  +   PLACED ( 34580  15360 ) FN  ;
+  -     brc/I4      OR2FF  +   PLACED ( 24700  15360 ) FN  ;
+  -     brc/I6      INVFF  +   PLACED ( 260  38400 )  N  ;
+  -     brc/I7      INVFF  +   PLACED ( 520  34560 ) FS  ;
+  -     brc/I8   AOI221DD  +   PLACED ( 2860  38400 ) FN  ;
+  -     brc/I9      LTCFF  +   PLACED ( 9100  15360 ) FN  ;
+  -     dma/I0    NAND3FF  +   PLACED ( 6760  30720 )  N  ;
+  -     dma/I1      JKCFF  +   PLACED ( 6760  34560 )  S  ;
+  -    dma/I10    AOI22FF  +   PLACED ( 1300  23040 ) FN  ;
+  -    dma/I13      JKCFF  +   PLACED ( 34580  38400 )  N  ;
+  -    dma/I14     AND2FF  +   PLACED ( 36660  30720 )  N  ;
+  -    dma/I15      JKCFF  +   PLACED ( 12220  34560 ) FS  ;
+  -    dma/I16    AOI22FF  +   PLACED ( 22620  34560 )  S  ;
+  -    dma/I17      JKCFF  +   PLACED ( 20800  38400 ) FN  ;
+  -    dma/I18    NAND2FF  +   PLACED ( 32240  38400 ) FN  ;
+  -    dma/I19      JKCFF  +   PLACED ( 17680  19200 )  S  ;
+  -     dma/I2      JKCFF  +   PLACED ( 30160  11520 ) FS  ;
+  -    dma/I20    AOI22FF  +   PLACED ( 24440  23040 ) FN  ;
+  -    dma/I21      DFFFF  +   PLACED ( 24960  34560 )  S  ;
+  -     dma/I3      INVFF  +   PLACED ( 1560  30720 )  N  ;
+  -     dma/I4      INVFF  +   PLACED ( 2340  30720 ) FN  ;
+  -     dma/I5    NAND2FF  +   PLACED ( 33280  38400 ) FN  ;
+  -     dma/I6      JKCFF  +   PLACED ( 26780  30720 ) FN  ;
+  -     dma/I7    NAND2FF  +   PLACED ( 21840  34560 )  S  ;
+  -     dma/I8      JKCFF  +   PLACED ( 10660  23040 )  N  ;
+  -     dma/I9    NAND2FF  +   PLACED ( 33280  30720 )  N  ;
+  -         I0    NAND2FF  +   PLACED ( 39780  38400 ) FN  ;
+  -        I10      INVFF  +   PLACED ( 34060  15360 ) FN  ;
+  -        I11    NAND2FF  +   PLACED ( 36400  15360 ) FN  ;
+  -        I12    NAND2FF  +   PLACED ( 39780  7680 )  N  ;
+  -        I13      INVFF  +   PLACED ( 39780  11520 )  S  ;
+  -        I14    NAND2FF  +   PLACED ( 16900  3840 )  S  ;
+  -        I15      INVFF  +   PLACED ( 520  15360 )  N  ;
+  -         I2    NAND2FF  +   PLACED ( 1040  19200 ) FS  ;
+  -         I3      INVFF  +   PLACED ( 18200  3840 ) FS  ;
+  -         I4      INVFF  +   PLACED ( 2340  38400 )  N  ;
+  -        I56       TLOW  +   PLACED ( 14300  38400 ) FN  ;
+  -      lc/I0     AND2FF  +   PLACED ( 19760  11520 ) FS  ;
+  -      lc/I1     AND4FF  +   PLACED ( 14040  26880 ) FS  ;
+  -     lc/I10    NAND2FF  +   PLACED ( 15340  0 )  N  ;
+  -     lc/I11    NAND4FF  +   PLACED ( 38220  26880 ) FS  ;
+  -     lc/I12     XOR2FF  +   PLACED ( 5980  15360 ) FN  ;
+  -     lc/I16    NAND2FF  +   PLACED ( 34320  7680 )  N  ;
+  -     lc/I17    NAND5FF  +   PLACED ( 21580  26880 )  S  ;
+  -     lc/I18     XOR2FF  +   PLACED ( 5980  26880 )  S  ;
+  -     lc/I19     XOR2FF  +   PLACED ( 33540  19200 ) FS  ;
+  -      lc/I2     AND3FF  +   PLACED ( 30420  19200 )  S  ;
+  -  lc/I21/I0      DPCFF  +   PLACED ( 11180  19200 ) FS  ;
+  -  lc/I21/I1      DPCFF  +   PLACED ( 6500  38400 )  N  ;
+  -  lc/I21/I2      DPCFF  +   PLACED ( 28600  34560 )  S  ;
+  -  lc/I21/I3      DPCFF  +   PLACED ( 35360  19200 )  S  ;
+  -     lc/I22      OR2FF  +   PLACED ( 35620  11520 ) FS  ;
+  -     lc/I23     XOR2FF  +   PLACED ( 39000  0 )  N  ;
+  -     lc/I24     XOR2FF  +   PLACED ( 21320  3840 )  S  ;
+  -     lc/I25      DFFFF  +   PLACED ( 27820  23040 )  N  ;
+  -     lc/I26      THIGH  +   PLACED ( 15860  3840 )  S  ;
+  -     lc/I27    NAND6FF  +   PLACED ( 37960  23040 )  N  ;
+  -      lc/I3      INVFF  +   PLACED ( 32240  30720 )  N  ;
+  -      lc/I4    NAND2FF  +   PLACED ( 26000  15360 ) FN  ;
+  -      lc/I5      INVFF  +   PLACED ( 12740  26880 )  S  ;
+  -      lc/I6    NAND2FF  +   PLACED ( 21840  23040 ) FN  ;
+  -      lc/I7    NAND2FF  +   PLACED ( 9360  19200 )  S  ;
+  -      lc/I8    NAND2FF  +   PLACED ( 26000  26880 ) FS  ;
+  -      lc/I9    NAND3FF  +   PLACED ( 28600  19200 ) FS  ;
+  -  mux/hnl_0    NAND2FF  +   PLACED ( 29380  0 )  N  ;
+  -  mux/hnl_1    NAND2FF  +   PLACED ( 35620  3840 )  S  ;
+  - mux/hnl_10    NAND2FF  +   PLACED ( 27820  7680 ) FN  ;
+  - mux/hnl_11    NAND2FF  +   PLACED ( 39000  7680 ) FN  ;
+  - mux/hnl_12    NAND2FF  +   PLACED ( 10400  19200 )  S  ;
+  - mux/hnl_13    NAND2FF  +   PLACED ( 13260  26880 ) FS  ;
+  - mux/hnl_14    NAND2FF  +   PLACED ( 28600  3840 )  S  ;
+  - mux/hnl_15    NAND2FF  +   PLACED ( 10660  3840 )  S  ;
+  -  mux/hnl_2    NAND2FF  +   PLACED ( 36920  3840 ) FS  ;
+  -  mux/hnl_3    NAND2FF  +   PLACED ( 15860  7680 ) FN  ;
+  -  mux/hnl_4    NAND2FF  +   PLACED ( 11180  11520 )  S  ;
+  -  mux/hnl_5    NAND2FF  +   PLACED ( 3640  19200 )  S  ;
+  -  mux/hnl_6    NAND2FF  +   PLACED ( 8840  0 ) FN  ;
+  -  mux/hnl_7    NAND2FF  +   PLACED ( 5980  3840 )  S  ;
+  -  mux/hnl_8    NAND2FF  +   PLACED ( 30420  0 )  N  ;
+  -  mux/hnl_9    NAND2FF  +   PLACED ( 37960  11520 )  S  ;
+  -  mux/I0_0_     MUX2FF  +   PLACED ( 31200  0 )  N  ;
+  -  mux/I0_1_     MUX2FF  +   PLACED ( 20800  11520 ) FS  ;
+  -  mux/I0_2_     MUX2FF  +   PLACED ( 36140  7680 ) FN  ;
+  -  mux/I0_3_     MUX2FF  +   PLACED ( 11960  3840 ) FS  ;
+  -  mux/I0_4_     MUX2FF  +   PLACED ( 1040  15360 )  N  ;
+  -  mux/I0_5_     MUX2FF  +   PLACED ( 260  11520 ) FS  ;
+  -  mux/I0_6_     MUX2FF  +   PLACED ( 6760  11520 ) FS  ;
+  -  mux/I0_7_     MUX2FF  +   PLACED ( 4160  7680 )  N  ;
+  -     mux/I9      INVFF  +   PLACED ( 20020  7680 ) FN  ;
+  -  rfc/I0/I0       DCFF  +   PLACED ( 2080  34560 ) FS  ;
+  -  rfc/I0/I1       DCFF  +   PLACED ( 35620  34560 ) FS  ;
+  - rfc/I0/I10     AND2FF  +   PLACED ( 37180  26880 ) FS  ;
+  - rfc/I0/I11      INVFF  +   PLACED ( 28080  11520 ) FS  ;
+  - rfc/I0/I12     NOR2FF  +   PLACED ( 4680  26880 )  S  ;
+  - rfc/I0/I13     NOR3FF  +   PLACED ( 38220  30720 ) FN  ;
+  - rfc/I0/I17      INVFF  +   PLACED ( 35620  15360 ) FN  ;
+  - rfc/I0/I18     NOR5FF  +   PLACED ( 37440  15360 )  N  ;
+  -  rfc/I0/I2       DCFF  +   PLACED ( 30420  26880 )  S  ;
+  -  rfc/I0/I3       DCFF  +   PLACED ( 34060  0 )  N  ;
+  -  rfc/I0/I4    XNOR2FF  +   PLACED ( 1820  19200 ) FS  ;
+  -  rfc/I0/I5    XNOR2FF  +   PLACED ( 4680  11520 )  S  ;
+  -  rfc/I0/I6    XNOR2FF  +   PLACED ( 16120  26880 ) FS  ;
+  -  rfc/I0/I7    XNOR2FF  +   PLACED ( 35100  26880 ) FS  ;
+  -  rfc/I0/I8     AND2FF  +   PLACED ( 18720  15360 )  N  ;
+  -  rfc/I0/I9     AND2FF  +   PLACED ( 0  19200 ) FS  ;
+  -  rfc/I1/I0       DCFF  +   PLACED ( 20280  30720 ) FN  ;
+  -  rfc/I1/I1       DCFF  +   PLACED ( 4940  19200 ) FS  ;
+  - rfc/I1/I10     AND2FF  +   PLACED ( 16640  30720 )  N  ;
+  - rfc/I1/I11      INVFF  +   PLACED ( 19500  34560 ) FS  ;
+  - rfc/I1/I12     NOR2FF  +   PLACED ( 32240  19200 )  S  ;
+  - rfc/I1/I13     NOR3FF  +   PLACED ( 24440  30720 ) FN  ;
+  - rfc/I1/I17      INVFF  +   PLACED ( 22880  23040 )  N  ;
+  - rfc/I1/I18     NOR5FF  +   PLACED ( 18200  26880 )  S  ;
+  -  rfc/I1/I2       DCFF  +   PLACED ( 29640  3840 )  S  ;
+  -  rfc/I1/I3       DCFF  +   PLACED ( 9880  30720 )  N  ;
+  -  rfc/I1/I4    XNOR2FF  +   PLACED ( 20020  34560 )  S  ;
+  -  rfc/I1/I5    XNOR2FF  +   PLACED ( 13260  11520 )  S  ;
+  -  rfc/I1/I6    XNOR2FF  +   PLACED ( 19500  3840 )  S  ;
+  -  rfc/I1/I7    XNOR2FF  +   PLACED ( 2600  26880 )  S  ;
+  -  rfc/I1/I8     AND2FF  +   PLACED ( 15080  30720 )  N  ;
+  -  rfc/I1/I9     AND2FF  +   PLACED ( 26780  7680 )  N  ;
+  -     rfc/I5      INVFF  +   PLACED ( 10660  11520 ) FS  ;
+  -     rfc/I6    NAND2FF  +   PLACED ( 20800  7680 ) FN  ;
+  -     rfc/I7     AND2FF  +   PLACED ( 21580  7680 ) FN  ;
+  -     sel/I0      LTCFF  +   PLACED ( 780  0 ) FN  ;
+  -     sel/I1      LTCFF  +   PLACED ( 16640  38400 ) FN  ;
+  -    sel/I17      OR2FF  +   PLACED ( 34840  30720 ) FN  ;
+  -     sel/I2      LTCFF  +   PLACED ( 34840  23040 ) FN  ;
+  -    sel/I25     NOR2FF  +   PLACED ( 9360  11520 ) FS  ;
+  -    sel/I27      DFFFF  +   PLACED ( 3900  0 )  N  ;
+  -    sel/I28      DFFFF  +   PLACED ( 11960  0 ) FN  ;
+  -     sel/I3      LTCFF  +   PLACED ( 23660  19200 )  S  ;
+  - sel/I4/CMP10      INVFF  +   PLACED ( 16900  19200 )  S  ;
+  - sel/I4/CMP11      INVFF  +   PLACED ( 4160  30720 )  N  ;
+  - sel/I4/CMP12      INVFF  +   PLACED ( 34840  34560 )  S  ;
+  - sel/I4/CMP13      INVFF  +   PLACED ( 17420  11520 )  S  ;
+  - sel/I4/CMP14      INVFF  +   PLACED ( 32500  23040 )  N  ;
+  - sel/I4/CMP15      INVFF  +   PLACED ( 28860  15360 )  N  ;
+  - sel/I4/CMP16      INVFF  +   PLACED ( 17680  3840 )  S  ;
+  - sel/I4/CMP17      INVFF  +   PLACED ( 12480  7680 ) FN  ;
+  - sel/I4/CMP18      INVFF  +   PLACED ( 8580  15360 )  N  ;
+  - sel/I4/CMP19      INVFF  +   PLACED ( 15340  38400 )  N  ;
+  - sel/I4/CMP20      INVFF  +   PLACED ( 17420  34560 )  S  ;
+  - sel/I4/CMP21      INVFF  +   PLACED ( 15600  26880 )  S  ;
+  - sel/I4/CMP22      INVFF  +   PLACED ( 19240  11520 )  S  ;
+  - sel/I4/CMP23      INVFF  +   PLACED ( 9620  0 ) FN  ;
+  - sel/I4/CMP24      INVFF  +   PLACED ( 18460  11520 ) FS  ;
+  - sel/I4/CMP25     AND2FF  +   PLACED ( 31980  15360 ) FN  ;
+  - sel/I4/CMP26     AND2FF  +   PLACED ( 26260  38400 ) FN  ;
+  - sel/I4/CMP27    NAND2FF  +   PLACED ( 29640  38400 )  N  ;
+  - sel/I4/CMP28      INVFF  +   PLACED ( 16120  30720 )  N  ;
+  - sel/I4/CMP29     NOR2FF  +   PLACED ( 12740  38400 )  N  ;
+  - sel/I4/CMP30     NOR2DD  +   PLACED ( 26780  11520 ) FS  ;
+  - sel/I4/CMP31    NAND2FF  +   PLACED ( 27560  38400 )  N  ;
+  - sel/I4/CMP32     NOR2FF  +   PLACED ( 0  30720 )  N  ;
+  - sel/I4/CMP33    NAND3FF  +   PLACED ( 4940  30720 ) FN  ;
+  - sel/I4/CMP34      INVFF  +   PLACED ( 24180  26880 )  S  ;
+  - sel/I4/CMP35     AND2FF  +   PLACED ( 23400  23040 )  N  ;
+  - sel/I4/CMP36    NAND2FF  +   PLACED ( 29120  11520 ) FS  ;
+  - sel/I4/CMP37     NOR2FF  +   PLACED ( 19500  38400 ) FN  ;
+  - sel/I4/CMP38    NAND3FF  +   PLACED ( 17940  34560 ) FS  ;
+  - sel/I4/CMP39     NOR2FF  +   PLACED ( 0  23040 )  N  ;
+  - sel/I4/CMP40    NAND3FF  +   PLACED ( 260  26880 ) FS  ;
+  - sel/I4/CMP41    NAND4FF  +   PLACED ( 15340  15360 ) FN  ;
+  - sel/I4/CMP42      INVFF  +   PLACED ( 31460  15360 )  N  ;
+  - sel/I4/CMP43     AND2FF  +   PLACED ( 17680  15360 ) FN  ;
+  - sel/I4/CMP44     AND2FF  +   PLACED ( 22360  15360 )  N  ;
+  - sel/I4/CMP45    NAND2FF  +   PLACED ( 23660  15360 )  N  ;
+  - sel/I4/CMP46      INVFF  +   PLACED ( 33020  23040 ) FN  ;
+  - sel/I4/CMP9     AND2EE  +   PLACED ( 27300  15360 ) FN  ;
+  -     sel/I5     AND2FF  +   PLACED ( 30420  15360 ) FN  ;
+  -     sel/I6    DEC2NDD  +   PLACED ( 16380  23040 )  N  ;
+  -     sel/I7      INVFF  +   PLACED ( 8580  7680 ) FN  ;
+  -     sel/I8      OR2FF  +   PLACED ( 7020  7680 )  N  ;
+END COMPONENTS 
+
+NETS 287 ;
+- brc/hnl_53 ( brc/I0 Q ) ( brc/I1 D ) ;
+- brc/hnl_65 ( brc/I1 QN ) ( brc/I0 C ) ;
+- brc/hnl_64 ( brc/I2 QN ) ( brc/I0 B ) ;
+- hnl_62 ( I2 Q ) ( brc/I0 A ) ( mux/hnl_10 A ) ( mux/hnl_11 A ) 
+    ( mux/hnl_12 A ) ( mux/hnl_13 A ) ( mux/hnl_14 A ) ( mux/hnl_15 A ) 
+    ( mux/hnl_8 A ) ( mux/hnl_9 A ) ( mux/I9 A ) ( sel/I25 A ) 
+    ( brc/I22 C ) ( sel/I27 D ) ;
+- brc/hnl_85 ( brc/I20 Q ) ( brc/I1 CLK ) ( brc/I12 CLK ) ( brc/I14 CLK ) 
+    ( brc/I15 CLK ) ( brc/I2 CLK ) ( brc/I3 CLK ) ;
+- brc/hnl_61 ( brc/I1 Q ) ( brc/I4 A ) ( brc/I2 D ) ;
+- hnl_56 ( I3 Q ) ( brc/I10 A ) ( brc/I20 A ) ( brc/I13 CLK ) 
+    ( brc/I16 S ) ;
+- brc/hnl_70 ( brc/I10 Q ) ( brc/I9 S ) ;
+- brc/hnl_69 ( brc/I11 Q ) ( brc/I12 D ) ;
+- brc/hnl_68 ( brc/I12 Q ) ( brc/I11 A ) ( brc/I26 C ) ( brc/I13 D ) ;
+- brc/hnl_92 ( brc/I9 QN ) ( brc/I11 B ) ;
+- brc/hnl_91 ( brc/I19 Q ) ( brc/I12 PN ) ;
+- hnl_125 ( I51 I ) ( lc/I0 A ) ( brc/I19 B ) ( lc/I2 B ) ( lc/I1 C ) 
+    ( brc/I16 CN ) ( brc/I24 CN ) ( brc/I25 CN ) ( brc/I9 CN ) 
+    ( dma/I1 CN ) ( dma/I13 CN ) ( dma/I15 CN ) ( dma/I17 CN ) 
+    ( dma/I19 CN ) ( dma/I2 CN ) ( dma/I6 CN ) ( dma/I8 CN ) 
+    ( rfc/I0/I0 CN ) ( rfc/I0/I1 CN ) ( rfc/I0/I2 CN ) ( rfc/I0/I3 CN ) 
+    ( rfc/I1/I0 CN ) ( rfc/I1/I1 CN ) ( rfc/I1/I2 CN ) ( rfc/I1/I3 CN ) 
+    ( sel/I0 CN ) ( sel/I1 CN ) ( sel/I2 CN ) ( sel/I3 CN ) ( brc/I13 PN ) 
+    ( brc/I14 PN ) ( brc/I15 PN ) ;
+- brc/hnl_67 ( brc/I13 Q ) ( brc/I17 B ) ( brc/I18 B ) ;
+- brc/hnl_86 ( brc/I14 Q ) ( brc/I22 B ) ( brc/I15 D ) ;
+- brc/hnl_88 ( brc/I21 Q ) ( brc/I14 D ) ;
+- brc/hnl_87 ( brc/I14 QN ) ( brc/I23 B ) ;
+- brc/hnl_84 ( brc/I15 QN ) ( brc/I22 A ) ;
+- brc/hnl_83 ( brc/I15 Q ) ( brc/I23 A ) ;
+- brc/hnl_82 ( brc/I16 QN ) ( brc/I17 A ) ( brc/I9 D ) ;
+- hnl_130 ( brc/I27 Q ) ( brc/I16 D ) ( I32 O ) ;
+- hnl_113 ( brc/I17 Q ) ( mux/I0_0_ A ) ( mux/I0_1_ A ) ( mux/I0_2_ A ) 
+    ( mux/I0_3_ A ) ( mux/I0_4_ A ) ( mux/I0_5_ A ) ( mux/I0_6_ A ) 
+    ( mux/I0_7_ A ) ;
+- hnl_128 ( brc/I18 Q ) ( brc/I21 A ) ( I11 B ) ( I12 B ) ( I14 B ) ;
+- brc/hnl_71 ( brc/I9 Q ) ( brc/I18 A ) ;
+- brc/hnl_46 ( brc/I28 Q ) ( brc/I19 A ) ( brc/I27 B ) ;
+- brc/hnl_62 ( brc/I2 Q ) ( brc/I4 B ) ;
+- hnl_126 ( brc/I22 Q ) ( rfc/I0/I17 A ) ( rfc/I0/I4 A ) ( rfc/I0/I10 B ) 
+    ( rfc/I0/I8 B ) ( rfc/I0/I9 B ) ( rfc/I7 B ) ;
+- hnl_129 ( brc/I23 Q ) ( lc/I1 A ) ( lc/I27 A ) ;
+- brc/hnl_52 ( brc/I8 Q ) ( brc/I28 A ) ( brc/I24 S ) ( brc/I25 S ) ;
+- brc/hnl_94 ( brc/I24 Q ) ( brc/I26 A ) ;
+- brc/hnl_78 ( brc/I34 Q ) ( brc/I24 D ) ;
+- brc/hnl_50 ( brc/I25 Q ) ( brc/I26 B ) ;
+- brc/hnl_80 ( brc/I33 Q ) ( brc/I25 D ) ;
+- brc/hnl_81 ( brc/I26 Q ) ( brc/I27 A ) ;
+- brc/hnl_74 ( brc/I4 Q ) ( brc/I3 D ) ;
+- brc/hnl_56 ( brc/I3 Q ) ( brc/I8 E ) ;
+- brc/hnl_77 ( brc/I36 Q ) ( brc/I33 B ) ( brc/I34 B ) ;
+- a_int_16_ ( I64_6_ I ) ( brc/I33 A ) ( sel/I1 D ) ;
+- brc/hnl_79 ( brc/I35 Q ) ( brc/I34 A ) ;
+- a_int_17_ ( I64_7_ I ) ( brc/I35 A ) ( sel/I2 D ) ;
+- hnl_123 ( I52 I ) ( brc/I7 A ) ( sel/I7 A ) ( brc/I36 B ) ( sel/I17 B ) 
+    ( sel/I8 B ) ( brc/I8 C ) ;
+- hnl_131 ( dma/I2 Q ) ( brc/I36 A ) ( dma/I5 B ) ( I33 O ) ;
+- brc/hnl_72 ( brc/I6 Q ) ( brc/I8 D ) ;
+- hnl_132 ( I54 I ) ( brc/I6 A ) ;
+- brc/hnl_54 ( brc/I7 Q ) ( brc/I8 A ) ;
+- hnl_74 ( I4 Q ) ( brc/I8 B ) ;
+- dma/hnl_53 ( dma/I0 Q ) ( dma/I1 JN ) ;
+- dma/hnl_51 ( dma/I17 Q ) ( dma/I0 A ) ( dma/I18 A ) ( dma/I20 B ) ;
+- hnl_136 ( I39 I ) ( dma/I3 A ) ( dma/I0 C ) ;
+- dma/hnl_74 ( dma/I4 Q ) ( dma/I7 A ) ( dma/I0 B ) ;
+- dma/hnl_61 ( dma/I1 Q ) ( dma/I10 C ) ;
+- dma/hnl_86 ( dma/I14 Q ) ( dma/I1 K ) ( dma/I13 K ) ( dma/I15 K ) 
+    ( dma/I17 K ) ( dma/I19 K ) ( dma/I2 K ) ( dma/I6 K ) ( dma/I8 K ) ;
+- hnl_124 ( I55 I ) ( I3 A ) ( dma/I1 CLK ) ( dma/I13 CLK ) 
+    ( dma/I15 CLK ) ( dma/I17 CLK ) ( dma/I19 CLK ) ( dma/I2 CLK ) 
+    ( dma/I21 CLK ) ( dma/I6 CLK ) ( dma/I8 CLK ) ( lc/I21/I0 CLK ) 
+    ( lc/I21/I1 CLK ) ( lc/I21/I2 CLK ) ( lc/I21/I3 CLK ) ( lc/I25 CLK ) 
+    ( rfc/I0/I0 CLK ) ( rfc/I0/I1 CLK ) ( rfc/I0/I2 CLK ) 
+    ( rfc/I0/I3 CLK ) ( rfc/I1/I0 CLK ) ( rfc/I1/I1 CLK ) 
+    ( rfc/I1/I2 CLK ) ( rfc/I1/I3 CLK ) ( sel/I27 CLK ) ( sel/I28 CLK ) ;
+- dma/hnl_56 ( dma/I3 Q ) ( dma/I10 A ) ( dma/I14 A ) ( dma/I16 B ) 
+    ( dma/I2 JN ) ;
+- hnl_137 ( I38 I ) ( dma/I4 A ) ( dma/I5 A ) ( dma/I16 C ) ( dma/I10 D ) ;
+- dma/hnl_91 ( dma/I19 Q ) ( dma/I10 B ) ;
+- dma/hnl_70 ( dma/I10 Q ) ( dma/I8 JN ) ;
+- dma/hnl_67 ( dma/I13 Q ) ( dma/I14 B ) ;
+- dma/hnl_89 ( dma/I13 QN ) ( dma/I20 C ) ;
+- dma/hnl_71 ( dma/I9 Q ) ( dma/I13 JN ) ;
+- dma/hnl_83 ( dma/I15 Q ) ( dma/I16 D ) ;
+- dma/hnl_54 ( dma/I7 Q ) ( dma/I15 JN ) ;
+- dma/hnl_96 ( dma/I16 Q ) ( dma/I17 JN ) ;
+- dma/hnl_72 ( dma/I6 Q ) ( dma/I16 A ) ( dma/I7 B ) ;
+- dma/hnl_106 ( dma/I18 Q ) ( dma/I19 JN ) ;
+- hnl_53 ( I0 Q ) ( dma/I9 A ) ( dma/I18 B ) ;
+- dma/hnl_109 ( dma/I19 QN ) ( dma/I20 A ) ;
+- dma/hnl_85 ( dma/I20 Q ) ( dma/I21 D ) ;
+- dma/hnl_52 ( dma/I8 Q ) ( dma/I9 B ) ( dma/I20 D ) ;
+- hnl_135 ( dma/I21 Q ) ( I2 A ) ;
+- hnl_134 ( dma/I21 QN ) ( lc/I2 A ) ( lc/I1 D ) ;
+- dma/hnl_73 ( dma/I5 Q ) ( dma/I6 JN ) ;
+- hnl_127 ( I40 I ) ( I0 A ) ( rfc/I6 B ) ;
+- hnl_133 ( lc/I27 Q ) ( lc/I3 A ) ( I0 B ) ( lc/I0 B ) ( lc/I1 B ) ;
+- hnl_70 ( I10 Q ) ( I11 A ) ;
+- hnl_116 ( sel/I6 Q1N ) ( I10 A ) ;
+- hnl_69 ( I11 Q ) ( I20 O ) ;
+- hnl_67 ( I13 Q ) ( I12 A ) ;
+- hnl_68 ( I12 Q ) ( I18 O ) ;
+- hnl_114 ( sel/I6 Q2N ) ( I13 A ) ;
+- hnl_83 ( I15 Q ) ( I14 A ) ;
+- hnl_86 ( I14 Q ) ( I17 O ) ;
+- hnl_115 ( sel/I6 Q3N ) ( I15 A ) ;
+- ncas1 ( I17 SIGNAME ) ;
+- low ( I56 TLOW ) ( I38 IEN ) ( I39 IEN ) ( I40 IEN ) ( I41 IEN ) 
+    ( I51 IEN ) ( I52 IEN ) ( I53 IEN ) ( I54 IEN ) ( I55 IEN ) 
+    ( I64_0_ IEN ) ( I64_1_ IEN ) ( I64_2_ IEN ) ( I64_3_ IEN ) 
+    ( I64_4_ IEN ) ( I64_5_ IEN ) ( I64_6_ IEN ) ( I64_7_ IEN ) 
+    ( I65_0_ IEN ) ( I65_1_ IEN ) ( I65_2_ IEN ) ( I65_3_ IEN ) 
+    ( I65_4_ IEN ) ( I65_5_ IEN ) ( I65_6_ IEN ) ( I65_7_ IEN ) 
+    ( I65_8_ IEN ) ( I65_9_ IEN ) ( I17 OEN ) ( I18 OEN ) ( I20 OEN ) 
+    ( I21 OEN ) ( I22 OEN ) ( I23 OEN ) ( I30 OEN ) ( I31 OEN ) 
+    ( I32 OEN ) ( I33 OEN ) ( I62_0_ OEN ) ( I62_1_ OEN ) ( I62_2_ OEN ) 
+    ( I62_3_ OEN ) ( I62_4_ OEN ) ( I62_5_ OEN ) ( I62_6_ OEN ) 
+    ( I62_7_ OEN ) ;
+- ncas0 ( I18 SIGNAME ) ;
+- hnl_138 ( I41 I ) ( I2 B ) ;
+- ncas2 ( I20 SIGNAME ) ;
+- iosel ( I21 SIGNAME ) ;
+- hnl_118 ( sel/I4/CMP31 Q ) ( I21 O ) ;
+- cmossel ( I22 SIGNAME ) ;
+- hnl_117 ( sel/I4/CMP27 Q ) ( I22 O ) ;
+- rom2sel ( I23 SIGNAME ) ;
+- hnl_121 ( sel/I4/CMP38 Q ) ( I23 O ) ;
+- rom1sel ( I30 SIGNAME ) ;
+- hnl_120 ( sel/I4/CMP40 Q ) ( I30 O ) ;
+- rom0sel ( I31 SIGNAME ) ;
+- hnl_119 ( sel/I5 Q ) ( I31 O ) ;
+- nras ( I32 SIGNAME ) ;
+- hldot ( I33 SIGNAME ) ;
+- hsync ( I38 SIGNAME ) ;
+- hldin ( I39 SIGNAME ) ;
+- hnl_122 ( I53 I ) ( I4 A ) ( sel/I17 A ) ( sel/I0 S ) ( sel/I1 S ) 
+    ( sel/I2 S ) ;
+- tst2 ( I40 SIGNAME ) ;
+- tst1 ( I41 SIGNAME ) ;
+- nrst ( I51 SIGNAME ) ;
+- hlda ( I52 SIGNAME ) ;
+- ale ( I53 SIGNAME ) ;
+- nrd ( I54 SIGNAME ) ;
+- mclk ( I55 SIGNAME ) ;
+- ma_0_ ( I62_0_ SIGNAME ) ;
+- ma_int_0_ ( mux/hnl_0 Q ) ( I62_0_ O ) ;
+- ma_1_ ( I62_1_ SIGNAME ) ;
+- ma_int_1_ ( mux/hnl_1 Q ) ( I62_1_ O ) ;
+- ma_2_ ( I62_2_ SIGNAME ) ;
+- ma_int_2_ ( mux/hnl_2 Q ) ( I62_2_ O ) ;
+- ma_3_ ( I62_3_ SIGNAME ) ;
+- ma_int_3_ ( mux/hnl_3 Q ) ( I62_3_ O ) ;
+- ma_4_ ( I62_4_ SIGNAME ) ;
+- ma_int_4_ ( mux/hnl_4 Q ) ( I62_4_ O ) ;
+- ma_5_ ( I62_5_ SIGNAME ) ;
+- ma_int_5_ ( mux/hnl_5 Q ) ( I62_5_ O ) ;
+- ma_6_ ( I62_6_ SIGNAME ) ;
+- ma_int_6_ ( mux/hnl_6 Q ) ( I62_6_ O ) ;
+- ma_7_ ( I62_7_ SIGNAME ) ;
+- ma_int_7_ ( mux/hnl_7 Q ) ( I62_7_ O ) ;
+- a_10_ ( I64_0_ SIGNAME ) ;
+- a_int_10_ ( I64_0_ I ) ( mux/I0_3_ Y0 ) ;
+- a_11_ ( I64_1_ SIGNAME ) ;
+- a_int_11_ ( I64_1_ I ) ( mux/I0_4_ Y0 ) ;
+- a_12_ ( I64_2_ SIGNAME ) ;
+- a_int_12_ ( I64_2_ I ) ( mux/I0_5_ Y0 ) ;
+- a_13_ ( I64_3_ SIGNAME ) ;
+- a_int_13_ ( I64_3_ I ) ( mux/I0_6_ Y0 ) ;
+- a_14_ ( I64_4_ SIGNAME ) ;
+- a_int_14_ ( I64_4_ I ) ( sel/I3 D ) ( mux/I0_0_ Y0 ) ;
+- a_15_ ( I64_5_ SIGNAME ) ;
+- a_int_15_ ( I64_5_ I ) ( sel/I0 D ) ( mux/I0_7_ Y0 ) ;
+- a_16_ ( I64_6_ SIGNAME ) ;
+- a_17_ ( I64_7_ SIGNAME ) ;
+- a_0_ ( I65_0_ SIGNAME ) ;
+- a_int_0_ ( I65_0_ I ) ( mux/I0_0_ Y1 ) ;
+- a_1_ ( I65_1_ SIGNAME ) ;
+- a_int_1_ ( I65_1_ I ) ( mux/I0_1_ Y1 ) ;
+- a_2_ ( I65_2_ SIGNAME ) ;
+- a_int_2_ ( I65_2_ I ) ( mux/I0_2_ Y1 ) ;
+- a_3_ ( I65_3_ SIGNAME ) ;
+- a_int_3_ ( I65_3_ I ) ( mux/I0_3_ Y1 ) ;
+- a_4_ ( I65_4_ SIGNAME ) ;
+- a_int_4_ ( I65_4_ I ) ( mux/I0_4_ Y1 ) ;
+- a_5_ ( I65_5_ SIGNAME ) ;
+- a_int_5_ ( I65_5_ I ) ( mux/I0_5_ Y1 ) ;
+- a_6_ ( I65_6_ SIGNAME ) ;
+- a_int_6_ ( I65_6_ I ) ( mux/I0_6_ Y1 ) ;
+- a_7_ ( I65_7_ SIGNAME ) ;
+- a_int_7_ ( I65_7_ I ) ( mux/I0_7_ Y1 ) ;
+- a_8_ ( I65_8_ SIGNAME ) ;
+- a_int_8_ ( I65_8_ I ) ( mux/I0_1_ Y0 ) ;
+- a_9_ ( I65_9_ SIGNAME ) ;
+- a_int_9_ ( I65_9_ I ) ( mux/I0_2_ Y0 ) ;
+- lc/hnl_53 ( lc/I0 Q ) ( lc/I10 A ) ( lc/I4 A ) ( lc/I6 A ) ( lc/I8 A ) 
+    ( lc/I16 B ) ;
+- lc/hnl_61 ( lc/I1 Q ) ( lc/I11 A ) ( lc/I17 A ) ( lc/I5 A ) ( lc/I7 A ) 
+    ( lc/I9 A ) ;
+- lc/hnl_101 ( lc/I21/I3 Q ) ( lc/I10 B ) ( lc/I17 E ) ( lc/I27 E ) ;
+- lc/hnl_70 ( lc/I10 Q ) ( lc/I23 A ) ;
+- lc/hnl_104 ( lc/I21/I0 Q ) ( lc/I11 B ) ( lc/I17 B ) ( lc/I27 B ) 
+    ( lc/I4 B ) ( lc/I7 B ) ( lc/I9 B ) ;
+- lc/hnl_103 ( lc/I21/I1 Q ) ( lc/I6 B ) ( lc/I11 C ) ( lc/I17 C ) 
+    ( lc/I27 C ) ( lc/I9 C ) ;
+- lc/hnl_102 ( lc/I21/I2 Q ) ( lc/I8 B ) ( lc/I11 D ) ( lc/I17 D ) 
+    ( lc/I27 D ) ;
+- lc/hnl_69 ( lc/I11 Q ) ( lc/I23 B ) ;
+- lc/hnl_68 ( lc/I12 Q ) ( lc/I21/I0 D ) ;
+- lc/hnl_74 ( lc/I4 Q ) ( lc/I12 A ) ;
+- lc/hnl_73 ( lc/I5 Q ) ( lc/I12 B ) ;
+- lc/hnl_96 ( lc/I16 Q ) ( lc/I24 A ) ;
+- lc/hnl_50 ( lc/I25 Q ) ( lc/I16 A ) ( lc/I27 F ) ;
+- lc/hnl_51 ( lc/I17 Q ) ( lc/I24 B ) ;
+- lc/hnl_106 ( lc/I18 Q ) ( lc/I21/I1 D ) ;
+- lc/hnl_72 ( lc/I6 Q ) ( lc/I18 A ) ;
+- lc/hnl_54 ( lc/I7 Q ) ( lc/I18 B ) ;
+- lc/hnl_91 ( lc/I19 Q ) ( lc/I21/I2 D ) ;
+- lc/hnl_52 ( lc/I8 Q ) ( lc/I19 A ) ;
+- lc/hnl_71 ( lc/I9 Q ) ( lc/I19 B ) ;
+- lc/hnl_62 ( lc/I2 Q ) ( lc/I22 A ) ;
+- lc/hnl_56 ( lc/I3 Q ) ( lc/I2 C ) ;
+- lc/hnl_107 ( lc/I26 THIGH ) ( lc/I21/I0 CN ) ( lc/I21/I1 CN ) 
+    ( lc/I21/I2 CN ) ( lc/I21/I3 CN ) ( lc/I21/I0 PN ) ( lc/I21/I1 PN ) 
+    ( lc/I21/I2 PN ) ( lc/I21/I3 PN ) ;
+- lc/hnl_105 ( lc/I22 Q ) ( lc/I21/I3 D ) ;
+- lc/hnl_108 ( lc/I23 Q ) ( lc/I22 B ) ;
+- lc/hnl_94 ( lc/I24 Q ) ( lc/I25 D ) ;
+- mux/s1_0_ ( mux/hnl_8 Q ) ( mux/hnl_0 B ) ;
+- mux/s0_0_ ( mux/I0_0_ Q ) ( mux/hnl_0 A ) ;
+- mux/s1_1_ ( mux/hnl_9 Q ) ( mux/hnl_1 B ) ;
+- mux/s0_1_ ( mux/I0_1_ Q ) ( mux/hnl_1 A ) ;
+- mux/s1_2_ ( mux/hnl_10 Q ) ( mux/hnl_2 B ) ;
+- rfa_2_ ( rfc/I0/I2 Q ) ( mux/hnl_10 B ) ;
+- mux/s1_3_ ( mux/hnl_11 Q ) ( mux/hnl_3 B ) ;
+- rfa_3_ ( rfc/I0/I3 Q ) ( mux/hnl_11 B ) ;
+- mux/s1_4_ ( mux/hnl_12 Q ) ( mux/hnl_4 B ) ;
+- rfa_4_ ( rfc/I1/I0 Q ) ( mux/hnl_12 B ) ;
+- mux/s1_5_ ( mux/hnl_13 Q ) ( mux/hnl_5 B ) ;
+- rfa_5_ ( rfc/I1/I1 Q ) ( mux/hnl_13 B ) ;
+- mux/s1_6_ ( mux/hnl_14 Q ) ( mux/hnl_6 B ) ;
+- rfa_6_ ( rfc/I1/I2 Q ) ( mux/hnl_14 B ) ;
+- mux/s1_7_ ( mux/hnl_15 Q ) ( mux/hnl_7 B ) ;
+- rfa_7_ ( rfc/I1/I3 Q ) ( mux/hnl_15 B ) ;
+- mux/s0_2_ ( mux/I0_2_ Q ) ( mux/hnl_2 A ) ;
+- mux/s0_3_ ( mux/I0_3_ Q ) ( mux/hnl_3 A ) ;
+- mux/s0_4_ ( mux/I0_4_ Q ) ( mux/hnl_4 A ) ;
+- mux/s0_5_ ( mux/I0_5_ Q ) ( mux/hnl_5 A ) ;
+- mux/s0_6_ ( mux/I0_6_ Q ) ( mux/hnl_6 A ) ;
+- mux/s0_7_ ( mux/I0_7_ Q ) ( mux/hnl_7 A ) ;
+- rfa_0_ ( rfc/I0/I0 Q ) ( mux/hnl_8 B ) ;
+- rfa_1_ ( rfc/I0/I1 Q ) ( mux/hnl_9 B ) ;
+- mux/rfshn ( mux/I9 Q ) ( mux/I0_0_ E ) ( mux/I0_1_ E ) ( mux/I0_2_ E ) 
+    ( mux/I0_3_ E ) ( mux/I0_4_ E ) ( mux/I0_5_ E ) ( mux/I0_6_ E ) 
+    ( mux/I0_7_ E ) ;
+- rfc/I0/hnl_66 ( rfc/I0/I0 QN ) ( rfc/I0/I11 A ) ( rfc/I0/I12 B ) 
+    ( rfc/I0/I4 B ) ( rfc/I0/I13 C ) ( rfc/I0/I18 E ) ;
+- rfc/I0/hnl_74 ( rfc/I0/I4 Q ) ( rfc/I0/I0 D ) ;
+- rfc/I0/hnl_65 ( rfc/I0/I1 QN ) ( rfc/I0/I12 A ) ( rfc/I0/I13 B ) 
+    ( rfc/I0/I5 B ) ( rfc/I0/I18 D ) ;
+- rfc/I0/hnl_73 ( rfc/I0/I5 Q ) ( rfc/I0/I1 D ) ;
+- rfc/I0/hnl_67 ( rfc/I0/I13 Q ) ( rfc/I0/I10 A ) ;
+- rfc/I0/hnl_70 ( rfc/I0/I10 Q ) ( rfc/I0/I7 A ) ;
+- rfc/I0/hnl_69 ( rfc/I0/I11 Q ) ( rfc/I0/I8 A ) ;
+- rfc/I0/hnl_68 ( rfc/I0/I12 Q ) ( rfc/I0/I9 A ) ;
+- rfc/I0/hnl_64 ( rfc/I0/I2 QN ) ( rfc/I0/I13 A ) ( rfc/I0/I6 B ) 
+    ( rfc/I0/I18 C ) ;
+- rfc/I0/hnl_51 ( rfc/I0/I17 Q ) ( rfc/I0/I18 A ) ;
+- rfc/I0/hnl_63 ( rfc/I0/I3 QN ) ( rfc/I0/I18 B ) ( rfc/I0/I7 B ) ;
+- rfc/hnl_76 ( rfc/I0/I18 Q ) ( rfc/I5 A ) ;
+- rfc/I0/hnl_72 ( rfc/I0/I6 Q ) ( rfc/I0/I2 D ) ;
+- rfc/I0/hnl_54 ( rfc/I0/I7 Q ) ( rfc/I0/I3 D ) ;
+- rfc/I0/hnl_52 ( rfc/I0/I8 Q ) ( rfc/I0/I5 A ) ;
+- rfc/I0/hnl_71 ( rfc/I0/I9 Q ) ( rfc/I0/I6 A ) ;
+- rfc/I1/hnl_66 ( rfc/I1/I0 QN ) ( rfc/I1/I11 A ) ( rfc/I1/I12 B ) 
+    ( rfc/I1/I4 B ) ( rfc/I1/I13 C ) ( rfc/I1/I18 E ) ;
+- rfc/I1/hnl_74 ( rfc/I1/I4 Q ) ( rfc/I1/I0 D ) ;
+- rfc/I1/hnl_65 ( rfc/I1/I1 QN ) ( rfc/I1/I12 A ) ( rfc/I1/I13 B ) 
+    ( rfc/I1/I5 B ) ( rfc/I1/I18 D ) ;
+- rfc/I1/hnl_73 ( rfc/I1/I5 Q ) ( rfc/I1/I1 D ) ;
+- rfc/I1/hnl_67 ( rfc/I1/I13 Q ) ( rfc/I1/I10 A ) ;
+- rfc/hnl_54 ( rfc/I7 Q ) ( rfc/I1/I17 A ) ( rfc/I1/I4 A ) 
+    ( rfc/I1/I10 B ) ( rfc/I1/I8 B ) ( rfc/I1/I9 B ) ;
+- rfc/I1/hnl_70 ( rfc/I1/I10 Q ) ( rfc/I1/I7 A ) ;
+- rfc/I1/hnl_69 ( rfc/I1/I11 Q ) ( rfc/I1/I8 A ) ;
+- rfc/I1/hnl_68 ( rfc/I1/I12 Q ) ( rfc/I1/I9 A ) ;
+- rfc/I1/hnl_64 ( rfc/I1/I2 QN ) ( rfc/I1/I13 A ) ( rfc/I1/I6 B ) 
+    ( rfc/I1/I18 C ) ;
+- rfc/I1/hnl_51 ( rfc/I1/I17 Q ) ( rfc/I1/I18 A ) ;
+- rfc/I1/hnl_63 ( rfc/I1/I3 QN ) ( rfc/I1/I18 B ) ( rfc/I1/I7 B ) ;
+- rfc/I1/hnl_72 ( rfc/I1/I6 Q ) ( rfc/I1/I2 D ) ;
+- rfc/I1/hnl_54 ( rfc/I1/I7 Q ) ( rfc/I1/I3 D ) ;
+- rfc/I1/hnl_52 ( rfc/I1/I8 Q ) ( rfc/I1/I5 A ) ;
+- rfc/I1/hnl_71 ( rfc/I1/I9 Q ) ( rfc/I1/I6 A ) ;
+- rfc/hnl_73 ( rfc/I5 Q ) ( rfc/I6 A ) ;
+- rfc/hnl_72 ( rfc/I6 Q ) ( rfc/I7 A ) ;
+- sel/hnl_53 ( sel/I0 Q ) ( sel/I4/CMP23 A ) ( sel/I8 A ) ;
+- sel/hnl_61 ( sel/I1 Q ) ( sel/I4/CMP20 A ) ;
+- sel/hnl_51 ( sel/I17 Q ) ( sel/I3 S ) ;
+- sel/hnl_62 ( sel/I2 Q ) ( sel/I4/CMP14 A ) ;
+- sel/hnl_46 ( sel/I28 Q ) ( sel/I25 B ) ;
+- sel/hnl_50 ( sel/I25 Q ) ( sel/I6 EI ) ;
+- sel/hnl_48 ( sel/I27 Q ) ( sel/I28 D ) ;
+- sel/hnl_56 ( sel/I3 Q ) ( sel/I6 A ) ;
+- sel/I4/hnl_45 ( sel/I4/CMP14 Q ) ( sel/I4/CMP10 A ) ( sel/I4/CMP11 A ) 
+    ( sel/I4/CMP12 A ) ( sel/I4/CMP13 A ) ( sel/I4/CMP15 A ) ;
+- sel/I4/hnl_41 ( sel/I4/CMP10 Q ) ( sel/I4/CMP34 A ) ;
+- sel/I4/hnl_28 ( sel/I4/CMP11 Q ) ( sel/I4/CMP39 B ) ;
+- sel/I4/hnl_22 ( sel/I4/CMP12 Q ) ( sel/I4/CMP29 A ) ( sel/I4/CMP33 A ) ;
+- sel/I4/hnl_17 ( sel/I4/CMP13 Q ) ( sel/I4/CMP37 B ) ( sel/I4/CMP41 B ) ;
+- sel/I4/hnl_38 ( sel/I4/CMP15 Q ) ( sel/I4/CMP25 A ) ( sel/I4/CMP43 A ) ;
+- sel/I4/hnl_44 ( sel/I4/CMP17 Q ) ( sel/I4/CMP16 A ) ( sel/I4/CMP18 A ) ;
+- sel/I4/hnl_19 ( sel/I4/CMP16 Q ) ( sel/I4/CMP33 B ) ( sel/I4/CMP38 B ) 
+    ( sel/I4/CMP40 B ) ( sel/I4/CMP41 D ) ;
+- sel/hnl_54 ( sel/I7 Q ) ( sel/I4/CMP17 A ) ;
+- sel/I4/hnl_37 ( sel/I4/CMP18 Q ) ( sel/I4/CMP28 A ) ( sel/I4/CMP26 B ) 
+    ( sel/I4/CMP35 B ) ( sel/I4/CMP44 B ) ;
+- sel/I4/hnl_43 ( sel/I4/CMP20 Q ) ( sel/I4/CMP19 A ) ( sel/I4/CMP21 A ) ;
+- sel/I4/hnl_16 ( sel/I4/CMP19 Q ) ( sel/I4/CMP38 A ) ( sel/I4/CMP39 A ) 
+    ( sel/I4/CMP41 A ) ( sel/I4/CMP32 B ) ;
+- sel/I4/hnl_26 ( sel/I4/CMP21 Q ) ( sel/I4/CMP46 A ) ( sel/I4/CMP9 A ) 
+    ( sel/I4/CMP30 B ) ( sel/I4/CMP43 B ) ;
+- sel/I4/hnl_42 ( sel/I4/CMP23 Q ) ( sel/I4/CMP22 A ) ( sel/I4/CMP24 A ) ;
+- sel/I4/hnl_18 ( sel/I4/CMP22 Q ) ( sel/I4/CMP32 A ) ( sel/I4/CMP37 A ) 
+    ( sel/I4/CMP40 A ) ( sel/I4/CMP41 C ) ;
+- sel/I4/hnl_25 ( sel/I4/CMP24 Q ) ( sel/I4/CMP30 A ) ( sel/I4/CMP42 A ) 
+    ( sel/I4/CMP25 B ) ( sel/I4/CMP9 B ) ;
+- sel/I4/hnl_34 ( sel/I4/CMP25 Q ) ( sel/I4/CMP27 A ) ;
+- sel/I4/hnl_35 ( sel/I4/CMP26 Q ) ( sel/I4/CMP27 B ) ;
+- sel/I4/hnl_40 ( sel/I4/CMP46 Q ) ( sel/I4/CMP26 A ) ;
+- sel/I4/hnl_30 ( sel/I4/CMP28 Q ) ( sel/I4/CMP29 B ) ;
+- sel/I4/hnl_29 ( sel/I4/CMP29 Q ) ( sel/I4/CMP31 A ) ;
+- sel/I4/hnl_24 ( sel/I4/CMP30 Q ) ( sel/I4/CMP31 B ) ;
+- sel/I4/hnl_23 ( sel/I4/CMP32 Q ) ( sel/I4/CMP33 C ) ;
+- sel/I4/hnl_39 ( sel/I4/CMP34 Q ) ( sel/I4/CMP35 A ) ;
+- sel/I4/hnl_33 ( sel/I4/CMP35 Q ) ( sel/I4/CMP36 B ) ;
+- sel/I4/hnl_27 ( sel/I4/CMP9 Q ) ( sel/I4/CMP36 A ) ;
+- sel/hnl_57 ( sel/I4/CMP36 Q ) ( sel/I5 A ) ;
+- sel/I4/hnl_21 ( sel/I4/CMP37 Q ) ( sel/I4/CMP38 C ) ;
+- sel/I4/hnl_20 ( sel/I4/CMP39 Q ) ( sel/I4/CMP40 C ) ;
+- sel/hnl_58 ( sel/I4/CMP41 Q ) ( sel/I5 B ) ;
+- sel/I4/hnl_36 ( sel/I4/CMP42 Q ) ( sel/I4/CMP44 A ) ;
+- sel/I4/hnl_31 ( sel/I4/CMP43 Q ) ( sel/I4/CMP45 A ) ;
+- sel/I4/hnl_32 ( sel/I4/CMP44 Q ) ( sel/I4/CMP45 B ) ;
+- sel/hnl_52 ( sel/I8 Q ) ( sel/I6 B ) ;
+END NETS 
+
+ END DESIGN 

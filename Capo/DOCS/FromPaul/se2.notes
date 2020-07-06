@@ -1,0 +1,56 @@
+98.2.3
+
+Looking at the wiring of my micro case, it is clear that
+warp route has goals other than minimum wire length.  For example,
+it will introduce jogs in order to increase spacing between parallel
+wires going in the same direction.  This may have a large impact
+on my ability to make wirelength improvements based on small shifts
+and pin alignment.
+
+Is it not possible to put a via through multiple layers?  It looks
+like some jogs exist just to go up or down two layers...i.e. we
+have to go to the side a distance before putting in another via up.
+
+98.2.5
+
+Looking at overlaps in Intel.  It seems that the overlap features
+are small and contained to a band on each side, that just barely
+overlaps in the middle.  But, overlap features do not seem
+to be restrained to tracks only, so it may be necessary to model
+by intervals, if not something more accurate.  Intervals appear
+acceptable, at first glance.  Actually, in the intel case,
+tracks may work as well.  Just have to be conservative.
+Almost all features are located right on a track, but
+some clusters are off-track in the center, but, conceptually
+cover all tracks from left to right bound.
+
+In the intel case, there is exactly one horizontal detailed
+track where overlap can occur.
+
+Actually, looking at the overlap layer blockages (on one cell),
+they turn out to be vertical stripes that cover pretty much the whole cell,
+with the exception of parts of the ends.  I'm going to tentatively
+guess that all ground strip overlaps are safe, and concentrate
+on the other end.  But this is not much of a general solution.
+I guess I need one overlap for each end.  One way to guess would
+be that on the end where overlaps are of concern, one or more overlap
+stripes goes all the way to the boundary.  If not, maybe there's no
+problem on either end.
+
+98.2.8  It turns out that overlap can occur on both ends, even in
+the intel case.  Damn.  I don't know if a simple track based solution
+is going to work.  Worked one out in detail on paper.  If the situation
+doesn't get still worse, it looks like I need to model both upper and lower
+overlap regions, with intervals with heights.  This kind of sucks, but
+I don't see a way around it now.  I'm going from low linear to ... well,
+higher linear time.  I can still keep the geometries sorted by starting x.
+But it will be a lot more troublesome and error prone.
+
+98.2.11  More bad news.  The aztec test case violates some more
+assumptions.  It allows cell widths to be a non-integral multiple
+of site spacing.  And, signal pins are not always track aligned;
+they're often right between tracks. 
+But, the good news is, cells still have to be
+placed on a site...they can't be packed tighter.  So, if I round
+up the cell width, and mark a pin as occupying every track to which
+it is adjacent, I should be safe.

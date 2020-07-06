@@ -1,0 +1,37 @@
+AEC	981124
+
+
+CapoPlacer class
+
+
+class CapoPlacer : public Placement
+
+  Input:
+	DB&		db
+	Parameters	params
+  Output:
+	Capo is a Placement (it populates itself upon construction)
+	Optionally outputs statistics (run-time, WL, etc.)
+
+
+
+
+  Primary Data Structures:
+
+
+   Placement
+	stores locations of each node. This placement is
+   	constantly updated : for fixed nodes, or nodes which have been
+   	placed (via a small placer, for example) the actual location of 
+   	the node is immediately stored here.  Nodes which have not yet
+   	been placed are considered to be at the center of the block 
+   	containing them, and are marked in the Placement as such.
+
+   bit_vector _fixed;
+
+	a node is marked as being 'fixed' in this bit_vector when:
+	-it is initially fixed in the DB given to Capo
+	-it is finally placed (by a small placer, for example)
+	
+
+

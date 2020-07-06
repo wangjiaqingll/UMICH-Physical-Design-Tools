@@ -1,0 +1,16 @@
+  itMasterCell mcIt=netlist.cellLibBegin();
+  unsigned idx=0;
+  for(; mcIt!=netlist.cellLibEnd();mcIt++, idx++)
+  {
+    const dbMasterCell& mc=(*mcIt);
+    numPins=mc.getNumPins();
+    _simpleDelay.drivRes[idx]=_simpleDelay.sinkCap[idx]=vector<double>(numPins);
+    unsigned pIdx=0;
+    itMasterPinLocal pIt=mc.pinsBegin();
+    for(;pIt!=mc.pinsEnd();pIt++,pIdx++)
+    {
+       const dbMasterPin& pin=(*pIt);
+       if ( !(pin.isUseSignal() || pin.isUseClock()) ) continue;
+    }
+  }
+  

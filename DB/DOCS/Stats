@@ -1,0 +1,146 @@
+============== AUX/amd1ql.aux
+Read in 12261 components
+  12260 core components: 12260 unplaced, 0 placed, 0 fixed
+  1 cover components: 0 unplaced, 0 placed, 1 fixed
+Read in 69399 terminals
+ Total CCs       10978
+ Total SCs       1282
+ Total CoreCells 12260
+ Total AllPads   0
+ Total IOPads    0
+ Total IOPins    0
+============== AUX/aztecql.aux
+Read in 4670 components
+  4155 core components: 0 unplaced, 4155 placed, 0 fixed
+  507 pad components: 0 unplaced, 0 placed, 507 fixed
+  4 block components: 0 unplaced, 0 placed, 4 fixed
+  4 other components: 0 unplaced, 0 placed, 4 fixed
+Read in 24629 terminals
+ Total CCs       3402
+ Total SCs       753
+ Total CoreCells 4155
+ Total AllPads   511
+ Total IOPads    511
+ Total IOPins    1347
+============== AUX/brooktreeql.aux
+Read in 25995 components
+  25991 core components: 0 unplaced, 25958 placed, 33 fixed
+  4 pad components: 0 unplaced, 0 placed, 4 fixed
+Read in 141683 terminals
+ Total CCs       23386
+ Total SCs       2605
+ Total CoreCells 25991
+ Total AllPads   4
+ Total IOPads    4
+ Total IOPins    450
+============== AUX/cyrixql.aux
+Read in 8131 components
+  8130 core components: 0 unplaced, 8130 placed, 0 fixed
+  1 cover components: 0 unplaced, 0 placed, 1 fixed
+Read in 43510 terminals
+ Total CCs       7675
+ Total SCs       455
+ Total CoreCells 8130
+ Total AllPads   0
+ Total IOPads    0
+ Total IOPins    0
+============== AUX/faradayql.aux
+Read in 20577 components
+  20392 core components: 0 unplaced, 20392 placed, 0 fixed
+  185 pad components: 0 unplaced, 0 placed, 185 fixed
+Read in 113983 terminals
+ Total CCs       16830
+ Total SCs       3562
+ Total CoreCells 20392
+ Total AllPads   185
+ Total IOPads    185
+ Total IOPins    569
+============== AUX/mini1ql.aux
+Read in 12 components
+  6 core components: 6 unplaced, 0 placed, 0 fixed
+  6 pad components: 0 unplaced, 0 placed, 6 fixed
+Read in 36 terminals
+ Total CCs       6
+ Total SCs       0
+ Total CoreCells 6
+ Total AllPads   6
+ Total IOPads    6
+ Total IOPins    18
+============== AUX/mini2ql.aux
+Read in 12 components
+  6 core components: 6 unplaced, 0 placed, 0 fixed
+  6 pad components: 0 unplaced, 0 placed, 6 fixed
+Read in 40 terminals
+ Total CCs       6
+ Total SCs       0
+ Total CoreCells 6
+ Total AllPads   10
+ Total IOPads    10
+ Total IOPins    22
+============== AUX/philipsql.aux
+Read in 85572 components
+  85382 core components: 0 unplaced, 84490 placed, 892 fixed
+  173 pad components: 0 unplaced, 173 placed, 0 fixed
+  17 other components: 0 unplaced, 17 placed, 0 fixed
+Read in 477480 terminals
+ Total CCs       71763
+ Total SCs       13619
+ Total CoreCells 85382
+ Total AllPads   177
+ Total IOPads    177
+ Total IOPins    3468
+============== AUX/reduce50ql.aux
+Read in 7445 components
+  7309 core components: 7309 unplaced, 0 placed, 0 fixed
+  135 pad components: 0 unplaced, 0 placed, 135 fixed
+  1 cover components: 0 unplaced, 0 placed, 1 fixed
+Read in 39827 terminals
+ Total CCs       5743
+ Total SCs       1566
+ Total CoreCells 7309
+ Total AllPads   135
+ Total IOPads    135
+ Total IOPins    610
+============== AUX/samsung_bm_ql.aux
+Read in 35549 components
+  35549 core components: 0 unplaced, 35549 placed, 0 fixed
+Read in 244921 terminals
+ Total CCs       31277
+ Total SCs       4272
+ Total CoreCells 35549
+ Total AllPads   121
+ Total IOPads    121
+ Total IOPins    121
+============== AUX/sgiql.aux
+Read in 12133 components
+  11471 core components: 0 unplaced, 11471 placed, 0 fixed
+  662 pad components: 0 unplaced, 662 placed, 0 fixed
+Read in 61147 terminals
+ Total CCs       9721
+ Total SCs       1750
+ Total CoreCells 11471
+ Total AllPads   662
+ Total IOPads    662
+ Total IOPins    662
+============== AUX/smosql.aux
+Read in 12857 components
+  12146 core components: 12146 unplaced, 0 placed, 0 fixed
+  711 pad components: 0 unplaced, 0 placed, 711 fixed
+Read in 57147 terminals
+ Total CCs       10379
+ Total SCs       1767
+ Total CoreCells 12146
+ Total AllPads   711
+ Total IOPads    711
+ Total IOPins    711
+============== AUX/sun_timing_ql.aux
+Read in 6923 components
+  5840 core components: 0 unplaced, 5840 placed, 0 fixed
+  1083 pad components: 0 unplaced, 1083 placed, 0 fixed
+Read in 34202 terminals
+ Total CCs       5440
+ Total SCs       400
+ Total CoreCells 5840
+ Total AllPads   1083
+ Total IOPads    1083
+ Total IOPins    1083

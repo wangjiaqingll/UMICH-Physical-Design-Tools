@@ -1,0 +1,26 @@
+
+# Created    : Wed Sep 10 20:41:51 1997
+# Platform   : SunOS 5.5.1 sparc SUNW,Ultra-1 
+# User       : imarkov@nexus6 (uclacs) 
+# Memory use : 5.22656 Mb 
+
+DESIGN mini0 ;
+
+UNITS DISTANCE MICRONS 1000 ;
+
+COMPONENTS 12 ;
+  -       NIN1      INPAD  +    FIXED (        1e+06            0 )  N  ;
+  -       NIN2      INPAD  +    FIXED (        5e+06            0 )  N  ;
+  -      NOUT1     OUTPAD  +    FIXED (        7e+06            0 )  N  ;
+  -       SIN1      INPAD  +    FIXED (        2e+06        9e+06 ) FN  ;
+  -       SIN2      INPAD  +    FIXED (        4e+06        9e+06 ) FN  ;
+  -      SOUT1     OUTPAD  +    FIXED (        1e+06        9e+06 ) FN  ;
+  -       NOR1    NORGATE  +   PLACED (       271692  2.91124e+06 )  N  ;
+  -       NOR2    NORGATE  +   PLACED (      34.3892       30.886 )  N  ;
+  -       NOR3    NORGATE  +   PLACED (       524589  2.86731e+06 )  N  ;
+  -       NOR5    NORGATE  +   PLACED (  6.87517e+06  7.28283e+06 )  N  ;
+  -       NOR6    NORGATE  +   PLACED (  6.97422e+06  8.60829e+06 )  N  ;
+  -       NOR7    NORGATE  +   PLACED (  6.97248e+06  4.11242e+06 )  N  ;
+END COMPONENTS 
+
+END DESIGN 

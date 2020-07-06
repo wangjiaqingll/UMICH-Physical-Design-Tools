@@ -1,0 +1,45 @@
+#!/bin/csh -f
+
+#**************************************************************************
+#**
+#**    Copyright (c) 1995-1997 by ABKGroup, UCLA VLSI CAD Laboratory,
+#**    UCLA Computer Science Department, Los Angeles, CA 90095-1596 USA,
+#**    and by the Regents of the University of California.
+#**    All rights reserved.
+#**
+#**    No portion of this file may be used, copied, or transmitted for
+#**    any purpose, including any research or commercial purpose,
+#**    without the express written consent of Professor Andrew B. Kahng,
+#**    UCLA Computer Science Department, 3713 Boelter Hall, Los Angeles,
+#**    CA 90095-1596 USA.   Any copy made of this file must include this
+#**    notice.    ABKGroup and the Regents of the University of California
+#**    retain title to all copies of this file and/or its compiled
+#**    derivatives.
+#**
+#**************************************************************************/
+
+set DIFF=/usr/bin/diff
+set WC=/usr/bin/wc
+
+set PROG="SimAnnealTest0"
+
+/bin/rm -f seeds.out seeds.in
+
+cp TESTS/seeds.in seeds.in
+
+echo "Running SimAnnealTest0.exe on C432"
+echo "Running SimAnnealTest0.exe on C432" > new.out 
+
+${PROG}.exe -f TESTS/C432a.aux >>& new.out
+
+egrep -vi "(#|Time|Created|took|sec|User|Platform|Memory|warning)" new.out > newout.notime
+egrep -vi "(#|Time|Created|took|sec|User|Platform|Memory|warning)" expected.out > expectedout.notime
+
+$DIFF newout.notime expectedout.notime    >  diffs.notime
+
+echo " "
+echo Differences from precomputed results
+$WC diffs.notime
+
+rm -f seeds.{out,in} expectedout.notime
+

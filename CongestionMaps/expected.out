@@ -1,0 +1,124 @@
+___ Congestion Map tests
+/**************************************************************************
+***
+*** Copyright (c) 1995-2000 Regents of the University of California,
+***               Andrew E. Caldwell, Andrew B. Kahng and Igor L. Markov
+*** Copyright (c) 2000-2003 Regents of the University of Michigan,
+***               Saurabh N. Adya and Igor L. Markov
+***
+***  Contact author(s): abk@cs.ucsd.edu, imarkov@umich.edu
+***  Original Affiliation:   UCLA, Computer Science Department,
+***                          Los Angeles, CA 90095-1596 USA
+***
+***  Permission is hereby granted, free of charge, to any person obtaining 
+***  a copy of this software and associated documentation files (the
+***  Software, to deal in the Software without restriction, including
+***  without limitation 
+***  the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+***  and/or sell copies of the Software, and to permit persons to whom the 
+***  Software is furnished to do so, subject to the following conditions:
+***
+***  The above copyright notice and this permission notice shall be included
+***  in all copies or substantial portions of the Software.
+***
+*** THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, 
+*** EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+*** OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+*** IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+*** CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
+*** OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
+*** THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+***
+***
+***************************************************************************
+
+Reading TESTS/primary1.nf.WS02.aux
+Reading TESTS/primary1.nf.WS02.aux
+ Reading TESTS/primary1.nf.nodes ... 
+ Reading TESTS/primary1.nf.nets ... 
+ Reading TESTS/primary1.nf.wts ... 
+Finished reading TESTS/primary1.nf.WS02.aux and referenced files
+ Reading TESTS/primary1.nf.WS02.scl ... 
+ Reading TESTS/primary1.nf.pl ... 
+Finished reading TESTS/primary1.nf.WS02.aux and referenced files
+ RBPlacement:39 core cell(s) not in rows
+Congestion map grid size is 507.679 X 507.679
+Congestion Map Statistics 
+Congestion grid is 13 x 18 = 234 bins
+% bins with 0% - 10% congestion : 41.453
+% bins with 10% - 20% congestion : 18.3761
+% bins with 20% - 30% congestion : 8.97436
+% bins with 30% - 40% congestion : 9.40171
+% bins with 40% - 50% congestion : 7.26496
+% bins with 50% - 60% congestion : 6.41026
+% bins with 60% - 70% congestion : 2.13675
+% bins with 70% - 80% congestion : 2.5641
+% bins with 80% - 90% congestion : 2.13675
+% bins with 90% - 100% congestion : 1.28205
+
+Median Congestion : 5.89142
+Average Congestion : 10.2423
+Peak Congestion : 45.0896
+Saving out.m , outX.m and outY.m
+X = [ 
+-1416.16 ; 
+-908.481 ; 
+-400.802 ; 
+106.877 ; 
+614.556 ; 
+1122.23 ; 
+1629.91 ; 
+2137.59 ; 
+2645.27 ; 
+3152.95 ; 
+3660.63 ; 
+4168.31 ; 
+4675.99 ; 
+5183.67 ; 
+5691.35 ; 
+6199.02 ; 
+6706.7 ; 
+7214.38 ; 
+] ;
+
+Y = [ 
+19.8395 ; 
+527.519 ; 
+1035.2 ; 
+1542.88 ; 
+2050.56 ; 
+2558.23 ; 
+3065.91 ; 
+3573.59 ; 
+4081.27 ; 
+4588.95 ; 
+5096.63 ; 
+5604.31 ; 
+6111.99 ; 
+] ;
+
+Z = [
+
+0.603329 3.75885 5.40205 9.26565 15.8626 10.7561 8.58999 6.44854 6.22568 7.50758 8.04772 10.0255 9.2516 4.52599 3.98321 2.08336 0.580901 0  ; 
+2.68862 4.40468 4.54301 10.4475 24.3825 22.9169 23.6927 32.1381 30.819 26.8156 26.6194 26.1169 19.0843 3.26263 3.24629 3.34453 2.09483 0  ; 
+2.43711 1.9946 2.12685 6.2373 12.7135 14.8384 19.918 21.2455 23.0215 18.6395 18.8057 11.3147 15.7464 4.16576 3.56696 3.74951 2.90613 0  ; 
+3.4352 5.883 7.96525 23.4546 35.2367 35.6609 36.5173 42.5702 45.0896 36.2927 33.7779 21.8262 19.3879 3.72664 2.78646 2.56745 3.5393 0  ; 
+4.12768 5.89142 5.74627 17.7388 32.5089 30.8954 31.8899 37.872 42.548 36.7359 37.9114 28.4187 22.0934 4.9432 4.14529 3.35455 3.70809 0  ; 
+4.80695 4.48684 5.3226 15.0645 23.0882 21.6019 17.7671 22.7385 14.7489 16.9722 24.1794 14.6747 12.7149 5.03442 4.05873 3.03306 3.68828 0  ; 
+4.867 5.02462 6.17987 14.4274 19.6782 19.8276 16.0201 25.6209 28.2491 25.5211 31.1094 19.5607 13.9124 4.97524 5.15312 4.85927 4.90339 0  ; 
+5.77063 6.24724 7.14915 16.5358 23.7673 21.6493 12.1083 18.8677 21.3819 15.5 19.9993 13.5195 10.1548 3.42764 3.30565 2.9928 3.2841 0  ; 
+5.30474 6.41555 8.59149 9.79894 7.19785 8.8145 11.9339 13.2593 14.1695 16.943 15.4269 9.11219 6.22689 2.84577 3.14815 2.7744 2.98954 0  ; 
+3.45699 5.3855 6.51096 10.764 14.6121 15.376 24.6363 20.212 16.2953 16.7878 17.2068 10.7103 6.1368 1.98119 2.56373 2.61532 2.87697 0  ; 
+1.56113 3.41701 5.02372 6.29602 6.88163 6.19256 7.50608 10.798 9.41363 10.1599 10.8626 8.94361 5.05317 2.14417 1.8697 1.64231 1.63985 0  ; 
+0.48378 2.00884 3.10594 2.15903 1.8889 1.67963 1.71055 2.23177 1.69546 1.60454 4.22418 2.89468 2.04969 2.10127 1.11885 0.510365 0 0  ; 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  ; 
+] ;
+
+surf(X,Y,Z)
+
+colormap hot
+xlabel('X Axis')
+ylabel('Y Axis')
+zlabel('Congestion')
+title('Total Congestion')
+view(0,90)

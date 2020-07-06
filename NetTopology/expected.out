@@ -1,0 +1,1643 @@
+------------  Running test 0 ...
+Reading TESTS/quasiHPl.aux
+Opening TESTS/quasiHP.lef
+Opening TESTS/quasiHP.def
+LEF file TESTS/quasiHP.lef parsed
+DEF file TESTS/quasiHP.def parsed
+Opening TESTS/quasiHP.def for GCell
+DEF file TESTS/quasiHP.def parsed
+LEF/DEF pair read successfully (LGC file passed to postprocessor)
+Opening TESTS/quasiHP.lgc
+Parsing LGC file ... 
+Fixing 76 noncore components  ...
+Compactifying constraints ... 
+Starting postprocessor ... 
+  Removing degree 1 and 0 nets ... 
+  Sorting: 
+          - obstacles in master cells by xMin ... 
+          - master cells by name ... 
+          - cells by name ... 
+          - each net's cells ... 
+          - nets ... 
+          - special nets ... 
+          - masterpins ... 
+          - pins ... 
+          - each mastercell's masterpins ... 
+          - each cell's pins ... 
+          - each net's pins ... 
+          - masterCell/Pin Equiv. Classes ... 
+          - each net's cells by direction ... 
+          - each cell by placement status and type ... 
+          - nets on cells... 
+  Sorting took  0.02 user, 0.0e+00 system, 0 real, 0.063 norm'd sec 
+  Reordering locations, constraints etc ... 
+ No RC-file name found in DB
+  Populating EasyAccess took  0.02 user, 0.0e+00 system, 0 real, 0.063 norm'd sec 
+Postprocessor took  0.18 user, 2.0e-02 system, 0 real, 0.567 norm'd sec 
+Fixed   Group Constraint of size 76
+Consistency check took  0.01 user, 0.0e+00 system, 0 real, 0.031 norm'd sec 
+Database setup took  1 user, 6.0e-02 system, 1 real, 3.153 norm'd sec 
+ HGraphWDimsFromDB: no kill-file name found in DB
+
+ Edge sizes :  Max: 46  Min: 1  Avg: 2.78746
+     1: 45        2: 172       3: 29        4: 7         5: 15    
+     6: 8         7: 4         9: 3        14: 1        26: 1     
+    32: 1        46: 1     
+
+ Weights : Max: 3.038e+09  Min: 1.997e+06  Avg: 1.683e+08
+ Total Wt: 4.644e+10 Max:    6.542%    Min nonzero: 1.997e+06
+ Num zeros:     0   Num minNZ:    44  Num others:  232
+ Distribution in 20 equal subranges : 
+   [2e+06,1.54e+08): 223   [1.54e+08,3.06e+08): 0     [3.06e+08,4.57e+08): 0    
+[4.57e+08,6.09e+08): 0     [6.09e+08,7.61e+08): 49    [7.61e+08,9.13e+08): 0    
+[9.13e+08,1.06e+09): 0     [1.06e+09,1.22e+09): 0     [1.22e+09,1.37e+09): 0    
+[1.37e+09,1.52e+09): 0     [1.52e+09,1.67e+09): 0     [1.67e+09,1.82e+09): 0    
+[1.82e+09,1.98e+09): 0     [1.98e+09,2.13e+09): 0     [2.13e+09,2.28e+09): 0    
+[2.28e+09,2.43e+09): 0     [2.43e+09,2.58e+09): 0     [2.58e+09,2.73e+09): 0    
+[2.73e+09,2.89e+09): 0     [2.89e+09,3.04e+09]: 4     
+ Distribution in 20 deciles (equipotent subranges) : 
+      [2e+06,2e+06]: 14          [2e+06,2e+06]: 14          [2e+06,2e+06]: 14   
+      [2e+06,3e+06): 14          [3e+06,3e+06]: 13          [3e+06,3e+06]: 14   
+   [3e+06,3.99e+06): 14    [3.99e+06,4.99e+06): 14    [4.99e+06,5.99e+06): 14   
+[5.99e+06,6.99e+06): 13    [6.99e+06,9.98e+06): 14     [9.98e+06,1.1e+07): 14   
+  [1.1e+07,1.6e+07): 14        [1.6e+07,2e+07): 14       [2e+07,2.87e+07): 13   
+[2.87e+07,2.87e+07]: 14    [2.87e+07,6.59e+08): 14    [6.59e+08,6.59e+08]: 14   
+[6.59e+08,6.59e+08]: 14    [6.59e+08,3.04e+09]: 13    
+
+ Node degrees :  Max: 7  Min: 0  Avg: 2.89855
+ Total Pins: 800
+     0: 31        1: 2         2: 43        3: 135       4: 26    
+     5: 32        6: 6         7: 1     
+ Total Edges: 287
+ Total Nodes: 276
+   Terminals: 76
+   Non-Terms: 200
+HGraphWPins : HPHGraphWDims.nets HPHGraphWDims.nodes HPHGraphWDims.wts
+UCLA nets 1.0
+# Created      : Sun Jul 22 01:21:45 2001
+# User         : imarkov@xenon.cs.ucla.edu (Igor L. Markov) 
+# Platform     : Linux 2.2.12-20smp #1 SMP Mon Sep 27 10:34:45 EDT 1999 i686 
+
+NumNets : 242
+NumPins : 755
+NetDegree : 2 brc/hnl_53
+    brc/I0 O  : -520 -600
+    brc/I1 I  : -780 -480
+NetDegree : 2 brc/hnl_65
+    brc/I1 O  : 1300 -480
+    brc/I0 I  : -260 -960
+NetDegree : 2 brc/hnl_64
+    brc/I2 O  : 1300 -480
+    brc/I0 I  : 260 -600
+NetDegree : 14     hnl_62
+        I2 O  : 130 -480
+    brc/I0 I  : 520 -600
+   brc/I22 I  : -260 -960
+mux/hnl_10 I  : 260 -480
+mux/hnl_11 I  : 260 -480
+mux/hnl_12 I  : 260 -480
+mux/hnl_13 I  : 260 -480
+mux/hnl_14 I  : 260 -480
+mux/hnl_15 I  : 260 -480
+ mux/hnl_8 I  : 260 -480
+ mux/hnl_9 I  : 260 -480
+    mux/I9 I  : 130 -600
+   sel/I25 I  : 260 -480
+   sel/I27 I  : -780 -480
+NetDegree : 7 brc/hnl_85
+   brc/I20 O  : 0 -480
+    brc/I1 I  : -1560 -600
+   brc/I12 I  : -2080 -600
+   brc/I14 I  : -2080 -600
+   brc/I15 I  : -2080 -600
+    brc/I2 I  : -1560 -600
+    brc/I3 I  : -1560 -600
+NetDegree : 3 brc/hnl_61
+    brc/I1 O  : 1560 -600
+    brc/I2 I  : -780 -480
+    brc/I4 I  : -390 -600
+NetDegree : 5     hnl_56
+        I3 O  : 0 -480
+   brc/I10 I  : 130 -600
+   brc/I13 I  : -2080 -600
+   brc/I16 I  : -1300 -600
+   brc/I20 I  : 130 -600
+NetDegree : 2 brc/hnl_70
+   brc/I10 O  : 0 -480
+    brc/I9 I  : -1300 -600
+NetDegree : 2 brc/hnl_69
+   brc/I11 O  : -390 -600
+   brc/I12 I  : -1300 -480
+NetDegree : 4 brc/hnl_68
+   brc/I12 O  : 2080 -600
+   brc/I11 I  : 390 -840
+   brc/I13 I  : -1300 -480
+   brc/I26 I  : -260 -960
+NetDegree : 2 brc/hnl_92
+    brc/I9 O  : 1300 -600
+   brc/I11 I  : 130 -960
+NetDegree : 2 brc/hnl_91
+   brc/I19 O  : -390 -600
+   brc/I12 I  : 1040 -720
+NetDegree : 32    hnl_125
+       I51 O  : 3770 -27495
+   brc/I13 I  : 1040 -720
+   brc/I14 I  : 1040 -720
+   brc/I15 I  : 1040 -720
+   brc/I16 I  : -260 -360
+   brc/I19 I  : 130 -960
+   brc/I24 I  : -260 -360
+   brc/I25 I  : -260 -360
+    brc/I9 I  : -260 -360
+    dma/I1 I  : 1430 -720
+   dma/I13 I  : 1430 -720
+   dma/I15 I  : 1430 -720
+   dma/I17 I  : 1430 -720
+   dma/I19 I  : 1430 -720
+    dma/I2 I  : 1430 -720
+    dma/I6 I  : 1430 -720
+    dma/I8 I  : 1430 -720
+     lc/I0 I  : 390 -840
+     lc/I1 I  : 130 -720
+     lc/I2 I  : 260 -600
+ rfc/I0/I0 I  : -780 -360
+ rfc/I0/I1 I  : -780 -360
+ rfc/I0/I2 I  : -780 -360
+ rfc/I0/I3 I  : -780 -360
+ rfc/I1/I0 I  : -780 -360
+ rfc/I1/I1 I  : -780 -360
+ rfc/I1/I2 I  : -780 -360
+ rfc/I1/I3 I  : -780 -360
+    sel/I0 I  : -260 -360
+    sel/I1 I  : -260 -360
+    sel/I2 I  : -260 -360
+    sel/I3 I  : -260 -360
+NetDegree : 3 brc/hnl_67
+   brc/I13 O  : 2080 -600
+   brc/I17 I  : -260 -600
+   brc/I18 I  : 130 -960
+NetDegree : 3 brc/hnl_86
+   brc/I14 O  : 2080 -600
+   brc/I15 I  : -1300 -480
+   brc/I22 I  : 260 -600
+NetDegree : 2 brc/hnl_88
+   brc/I21 O  : 0 -480
+   brc/I14 I  : -1300 -480
+NetDegree : 2 brc/hnl_87
+   brc/I14 O  : 1560 -480
+   brc/I23 I  : 130 -960
+NetDegree : 2 brc/hnl_84
+   brc/I15 O  : 1560 -480
+   brc/I22 I  : 520 -600
+NetDegree : 2 brc/hnl_83
+   brc/I15 O  : 2080 -600
+   brc/I23 I  : 390 -840
+NetDegree : 3 brc/hnl_82
+   brc/I16 O  : 1300 -600
+   brc/I17 I  : 260 -480
+    brc/I9 I  : -520 -240
+NetDegree : 3    hnl_130
+   brc/I27 O  : 130 -480
+   brc/I16 I  : -520 -240
+       I32 I  : -5330 -27495
+NetDegree : 9    hnl_113
+   brc/I17 O  : 130 -480
+ mux/I0_0_ I  : 130 -600
+ mux/I0_1_ I  : 130 -600
+ mux/I0_2_ I  : 130 -600
+ mux/I0_3_ I  : 130 -600
+ mux/I0_4_ I  : 130 -600
+ mux/I0_5_ I  : 130 -600
+ mux/I0_6_ I  : 130 -600
+ mux/I0_7_ I  : 130 -600
+NetDegree : 5    hnl_128
+   brc/I18 O  : -390 -600
+   brc/I21 I  : 130 -600
+       I11 I  : -260 -600
+       I12 I  : -260 -600
+       I14 I  : -260 -600
+NetDegree : 2 brc/hnl_71
+    brc/I9 O  : 910 -600
+   brc/I18 I  : 390 -840
+NetDegree : 3 brc/hnl_46
+   brc/I28 O  : 0 -480
+   brc/I19 I  : 390 -840
+   brc/I27 I  : -260 -600
+NetDegree : 2 brc/hnl_62
+    brc/I2 O  : 1560 -600
+    brc/I4 I  : -130 -600
+NetDegree : 7    hnl_126
+   brc/I22 O  : -520 -600
+rfc/I0/I10 I  : 130 -960
+rfc/I0/I17 I  : 130 -600
+ rfc/I0/I4 I  : -780 -600
+ rfc/I0/I8 I  : 130 -960
+ rfc/I0/I9 I  : 130 -960
+    rfc/I7 I  : 130 -960
+NetDegree : 3    hnl_129
+   brc/I23 O  : -390 -600
+     lc/I1 I  : 650 -600
+    lc/I27 I  : -780 -480
+NetDegree : 4 brc/hnl_52
+    brc/I8 O  : 0 -720
+   brc/I24 I  : -1300 -600
+   brc/I25 I  : -1300 -600
+   brc/I28 I  : 130 -600
+NetDegree : 2 brc/hnl_94
+   brc/I24 O  : 910 -600
+   brc/I26 I  : 520 -600
+NetDegree : 2 brc/hnl_78
+   brc/I34 O  : 130 -480
+   brc/I24 I  : -520 -240
+NetDegree : 2 brc/hnl_50
+   brc/I25 O  : 910 -600
+   brc/I26 I  : 260 -600
+NetDegree : 2 brc/hnl_80
+   brc/I33 O  : 130 -480
+   brc/I25 I  : -520 -240
+NetDegree : 2 brc/hnl_81
+   brc/I26 O  : -520 -600
+   brc/I27 I  : 260 -480
+NetDegree : 2 brc/hnl_74
+    brc/I4 O  : 390 -600
+    brc/I3 I  : -780 -480
+NetDegree : 2 brc/hnl_56
+    brc/I3 O  : 1560 -600
+    brc/I8 I  : -1170 -840
+NetDegree : 3 brc/hnl_77
+   brc/I36 O  : 130 -480
+   brc/I33 I  : -260 -600
+   brc/I34 I  : -260 -600
+NetDegree : 3  a_int_16_
+    I64_6_ O  : 3770 -27495
+   brc/I33 I  : 260 -480
+    sel/I1 I  : -520 -240
+NetDegree : 2 brc/hnl_79
+   brc/I35 O  : 0 -480
+   brc/I34 I  : 260 -480
+NetDegree : 3  a_int_17_
+    I64_7_ O  : 3770 -27495
+   brc/I35 I  : 130 -600
+    sel/I2 I  : -520 -240
+NetDegree : 7    hnl_123
+       I52 O  : 3770 -27495
+   brc/I36 I  : -260 -600
+    brc/I7 I  : 130 -600
+    brc/I8 I  : -650 -960
+   sel/I17 I  : -130 -600
+    sel/I7 I  : 130 -600
+    sel/I8 I  : -130 -600
+NetDegree : 4    hnl_131
+    dma/I2 O  : 2470 -600
+   brc/I36 I  : 260 -480
+    dma/I5 I  : -260 -600
+       I33 I  : -5330 -27495
+NetDegree : 2 brc/hnl_72
+    brc/I6 O  : 0 -480
+    brc/I8 I  : 1430 -600
+NetDegree : 2    hnl_132
+       I54 O  : 3770 -27495
+    brc/I6 I  : 130 -600
+NetDegree : 2 brc/hnl_54
+    brc/I7 O  : 0 -480
+    brc/I8 I  : 390 -840
+NetDegree : 2     hnl_74
+        I4 O  : 0 -480
+    brc/I8 I  : 1170 -600
+NetDegree : 2 dma/hnl_53
+    dma/I0 O  : 390 -600
+    dma/I1 I  : -1950 -480
+NetDegree : 4 dma/hnl_51
+   dma/I17 O  : 2470 -600
+    dma/I0 I  : -130 -960
+   dma/I18 I  : 260 -480
+   dma/I20 I  : -260 -840
+NetDegree : 3    hnl_136
+       I39 O  : 3770 -27495
+    dma/I0 I  : -130 -600
+    dma/I3 I  : 130 -600
+NetDegree : 3 dma/hnl_74
+    dma/I4 O  : 0 -480
+    dma/I0 I  : -130 -720
+    dma/I7 I  : 260 -480
+NetDegree : 2 dma/hnl_61
+    dma/I1 O  : 2470 -600
+   dma/I10 I  : -1040 -840
+NetDegree : 9 dma/hnl_86
+   dma/I14 O  : -390 -600
+    dma/I1 I  : -2210 -600
+   dma/I13 I  : -2210 -600
+   dma/I15 I  : -2210 -600
+   dma/I17 I  : -2210 -600
+   dma/I19 I  : -2210 -600
+    dma/I2 I  : -2210 -600
+    dma/I6 I  : -2210 -600
+    dma/I8 I  : -2210 -600
+NetDegree : 26    hnl_124
+       I55 O  : 3770 -27495
+    dma/I1 I  : -1430 -480
+   dma/I13 I  : -1430 -480
+   dma/I15 I  : -1430 -480
+   dma/I17 I  : -1430 -480
+   dma/I19 I  : -1430 -480
+    dma/I2 I  : -1430 -480
+   dma/I21 I  : -1560 -600
+    dma/I6 I  : -1430 -480
+    dma/I8 I  : -1430 -480
+        I3 I  : 130 -600
+ lc/I21/I0 I  : -2600 -600
+ lc/I21/I1 I  : -2600 -600
+ lc/I21/I2 I  : -2600 -600
+ lc/I21/I3 I  : -2600 -600
+    lc/I25 I  : -1560 -600
+ rfc/I0/I0 I  : -1950 -600
+ rfc/I0/I1 I  : -1950 -600
+ rfc/I0/I2 I  : -1950 -600
+ rfc/I0/I3 I  : -1950 -600
+ rfc/I1/I0 I  : -1950 -600
+ rfc/I1/I1 I  : -1950 -600
+ rfc/I1/I2 I  : -1950 -600
+ rfc/I1/I3 I  : -1950 -600
+   sel/I27 I  : -1560 -600
+   sel/I28 I  : -1560 -600
+NetDegree : 5 dma/hnl_56
+    dma/I3 O  : 0 -480
+   dma/I10 I  : -260 -720
+   dma/I14 I  : 390 -840
+   dma/I16 I  : -260 -840
+    dma/I2 I  : -1950 -480
+NetDegree : 5    hnl_137
+       I38 O  : 3770 -27495
+   dma/I10 I  : 260 -840
+   dma/I16 I  : -1040 -840
+    dma/I4 I  : 130 -600
+    dma/I5 I  : 260 -480
+NetDegree : 2 dma/hnl_91
+   dma/I19 O  : 2470 -600
+   dma/I10 I  : -260 -840
+NetDegree : 2 dma/hnl_70
+   dma/I10 O  : 260 -720
+    dma/I8 I  : -1950 -480
+NetDegree : 2 dma/hnl_67
+   dma/I13 O  : 2470 -600
+   dma/I14 I  : 130 -960
+NetDegree : 2 dma/hnl_89
+   dma/I13 O  : -130 -360
+   dma/I20 I  : -1040 -840
+NetDegree : 2 dma/hnl_71
+    dma/I9 O  : 130 -480
+   dma/I13 I  : -1950 -480
+NetDegree : 2 dma/hnl_83
+   dma/I15 O  : 2470 -600
+   dma/I16 I  : 260 -840
+NetDegree : 2 dma/hnl_54
+    dma/I7 O  : 130 -480
+   dma/I15 I  : -1950 -480
+NetDegree : 2 dma/hnl_96
+   dma/I16 O  : 260 -720
+   dma/I17 I  : -1950 -480
+NetDegree : 3 dma/hnl_72
+    dma/I6 O  : 2470 -600
+   dma/I16 I  : -260 -720
+    dma/I7 I  : -260 -600
+NetDegree : 2 dma/hnl_106
+   dma/I18 O  : 130 -480
+   dma/I19 I  : -1950 -480
+NetDegree : 3     hnl_53
+        I0 O  : 130 -480
+   dma/I18 I  : -260 -600
+    dma/I9 I  : 260 -480
+NetDegree : 2 dma/hnl_109
+   dma/I19 O  : -130 -360
+   dma/I20 I  : -260 -720
+NetDegree : 2 dma/hnl_85
+   dma/I20 O  : 260 -720
+   dma/I21 I  : -780 -480
+NetDegree : 3 dma/hnl_52
+    dma/I8 O  : 2470 -600
+   dma/I20 I  : 260 -840
+    dma/I9 I  : -260 -600
+NetDegree : 2    hnl_135
+   dma/I21 O  : 1560 -600
+        I2 I  : 260 -480
+NetDegree : 3    hnl_134
+   dma/I21 O  : 1300 -480
+     lc/I1 I  : -390 -960
+     lc/I2 I  : 520 -600
+NetDegree : 2 dma/hnl_73
+    dma/I5 O  : 130 -480
+    dma/I6 I  : -1950 -480
+NetDegree : 3    hnl_127
+       I40 O  : 3770 -27495
+        I0 I  : 260 -480
+    rfc/I6 I  : -260 -600
+NetDegree : 5    hnl_133
+    lc/I27 O  : 1300 -600
+        I0 I  : -260 -600
+     lc/I0 I  : 130 -960
+     lc/I1 I  : 390 -720
+     lc/I3 I  : 130 -600
+NetDegree : 2     hnl_70
+       I10 O  : 0 -480
+       I11 I  : 260 -480
+NetDegree : 2    hnl_116
+    sel/I6 O  : -1040 -480
+       I10 I  : 130 -600
+NetDegree : 2     hnl_69
+       I11 O  : 130 -480
+       I20 I  : -5330 -27495
+NetDegree : 2     hnl_67
+       I13 O  : 0 -480
+       I12 I  : 260 -480
+NetDegree : 2     hnl_68
+       I12 O  : 130 -480
+       I18 I  : -5330 -27495
+NetDegree : 2    hnl_114
+    sel/I6 O  : 2470 -600
+       I13 I  : 130 -600
+NetDegree : 2     hnl_83
+       I15 O  : 0 -480
+       I14 I  : 260 -480
+NetDegree : 2     hnl_86
+       I14 O  : 130 -480
+       I17 I  : -5330 -27495
+NetDegree : 2    hnl_115
+    sel/I6 O  : 1040 -720
+       I15 I  : 130 -600
+NetDegree : 46        low
+       I56 O  : -130 -840
+       I17 I  : -1170 -27495
+       I18 I  : -1170 -27495
+       I20 I  : -1170 -27495
+       I21 I  : -1170 -27495
+       I22 I  : -1170 -27495
+       I23 I  : -1170 -27495
+       I30 I  : -1170 -27495
+       I31 I  : -1170 -27495
+       I32 I  : -1170 -27495
+       I33 I  : -1170 -27495
+       I38 I  : -4290 -27495
+       I39 I  : -4290 -27495
+       I40 I  : -4290 -27495
+       I41 I  : -4290 -27495
+       I51 I  : -4290 -27495
+       I52 I  : -4290 -27495
+       I53 I  : -4290 -27495
+       I54 I  : -4290 -27495
+       I55 I  : -4290 -27495
+    I62_0_ I  : -1170 -27495
+    I62_1_ I  : -1170 -27495
+    I62_2_ I  : -1170 -27495
+    I62_3_ I  : -1170 -27495
+    I62_4_ I  : -1170 -27495
+    I62_5_ I  : -1170 -27495
+    I62_6_ I  : -1170 -27495
+    I62_7_ I  : -1170 -27495
+    I64_0_ I  : -4290 -27495
+    I64_1_ I  : -4290 -27495
+    I64_2_ I  : -4290 -27495
+    I64_3_ I  : -4290 -27495
+    I64_4_ I  : -4290 -27495
+    I64_5_ I  : -4290 -27495
+    I64_6_ I  : -4290 -27495
+    I64_7_ I  : -4290 -27495
+    I65_0_ I  : -4290 -27495
+    I65_1_ I  : -4290 -27495
+    I65_2_ I  : -4290 -27495
+    I65_3_ I  : -4290 -27495
+    I65_4_ I  : -4290 -27495
+    I65_5_ I  : -4290 -27495
+    I65_6_ I  : -4290 -27495
+    I65_7_ I  : -4290 -27495
+    I65_8_ I  : -4290 -27495
+    I65_9_ I  : -4290 -27495
+NetDegree : 2    hnl_138
+       I41 O  : 3770 -27495
+        I2 I  : -260 -600
+NetDegree : 2    hnl_118
+sel/I4/CMP31 O  : 130 -480
+       I21 I  : -5330 -27495
+NetDegree : 2    hnl_117
+sel/I4/CMP27 O  : 130 -480
+       I22 I  : -5330 -27495
+NetDegree : 2    hnl_121
+sel/I4/CMP38 O  : 390 -600
+       I23 I  : -5330 -27495
+NetDegree : 2    hnl_120
+sel/I4/CMP40 O  : 390 -600
+       I30 I  : -5330 -27495
+NetDegree : 2    hnl_119
+    sel/I5 O  : -390 -600
+       I31 I  : -5330 -27495
+NetDegree : 6    hnl_122
+       I53 O  : 3770 -27495
+        I4 I  : 130 -600
+    sel/I0 I  : -1300 -600
+    sel/I1 I  : -1300 -600
+   sel/I17 I  : -390 -600
+    sel/I2 I  : -1300 -600
+NetDegree : 2  ma_int_0_
+ mux/hnl_0 O  : 130 -480
+    I62_0_ I  : -5330 -27495
+NetDegree : 2  ma_int_1_
+ mux/hnl_1 O  : 130 -480
+    I62_1_ I  : -5330 -27495
+NetDegree : 2  ma_int_2_
+ mux/hnl_2 O  : 130 -480
+    I62_2_ I  : -5330 -27495
+NetDegree : 2  ma_int_3_
+ mux/hnl_3 O  : 130 -480
+    I62_3_ I  : -5330 -27495
+NetDegree : 2  ma_int_4_
+ mux/hnl_4 O  : 130 -480
+    I62_4_ I  : -5330 -27495
+NetDegree : 2  ma_int_5_
+ mux/hnl_5 O  : 130 -480
+    I62_5_ I  : -5330 -27495
+NetDegree : 2  ma_int_6_
+ mux/hnl_6 O  : 130 -480
+    I62_6_ I  : -5330 -27495
+NetDegree : 2  ma_int_7_
+ mux/hnl_7 O  : 130 -480
+    I62_7_ I  : -5330 -27495
+NetDegree : 2  a_int_10_
+    I64_0_ O  : 3770 -27495
+ mux/I0_3_ I  : -1170 -600
+NetDegree : 2  a_int_11_
+    I64_1_ O  : 3770 -27495
+ mux/I0_4_ I  : -1170 -600
+NetDegree : 2  a_int_12_
+    I64_2_ O  : 3770 -27495
+ mux/I0_5_ I  : -1170 -600
+NetDegree : 2  a_int_13_
+    I64_3_ O  : 3770 -27495
+ mux/I0_6_ I  : -1170 -600
+NetDegree : 3  a_int_14_
+    I64_4_ O  : 3770 -27495
+ mux/I0_0_ I  : -1170 -600
+    sel/I3 I  : -520 -240
+NetDegree : 3  a_int_15_
+    I64_5_ O  : 3770 -27495
+ mux/I0_7_ I  : -1170 -600
+    sel/I0 I  : -520 -240
+NetDegree : 2   a_int_0_
+    I65_0_ O  : 3770 -27495
+ mux/I0_0_ I  : -130 -600
+NetDegree : 2   a_int_1_
+    I65_1_ O  : 3770 -27495
+ mux/I0_1_ I  : -130 -600
+NetDegree : 2   a_int_2_
+    I65_2_ O  : 3770 -27495
+ mux/I0_2_ I  : -130 -600
+NetDegree : 2   a_int_3_
+    I65_3_ O  : 3770 -27495
+ mux/I0_3_ I  : -130 -600
+NetDegree : 2   a_int_4_
+    I65_4_ O  : 3770 -27495
+ mux/I0_4_ I  : -130 -600
+NetDegree : 2   a_int_5_
+    I65_5_ O  : 3770 -27495
+ mux/I0_5_ I  : -130 -600
+NetDegree : 2   a_int_6_
+    I65_6_ O  : 3770 -27495
+ mux/I0_6_ I  : -130 -600
+NetDegree : 2   a_int_7_
+    I65_7_ O  : 3770 -27495
+ mux/I0_7_ I  : -130 -600
+NetDegree : 2   a_int_8_
+    I65_8_ O  : 3770 -27495
+ mux/I0_1_ I  : -1170 -600
+NetDegree : 2   a_int_9_
+    I65_9_ O  : 3770 -27495
+ mux/I0_2_ I  : -1170 -600
+NetDegree : 6  lc/hnl_53
+     lc/I0 O  : -390 -600
+    lc/I10 I  : 260 -480
+    lc/I16 I  : -260 -600
+     lc/I4 I  : 260 -480
+     lc/I6 I  : 260 -480
+     lc/I8 I  : 260 -480
+NetDegree : 6  lc/hnl_61
+     lc/I1 O  : -650 -600
+    lc/I11 I  : 260 -600
+    lc/I17 I  : -650 -480
+     lc/I5 I  : 130 -600
+     lc/I7 I  : 260 -480
+     lc/I9 I  : -130 -960
+NetDegree : 4 lc/hnl_101
+ lc/I21/I3 O  : 2600 -600
+    lc/I10 I  : -260 -600
+    lc/I17 I  : 130 -720
+    lc/I27 I  : 0 -600
+NetDegree : 2  lc/hnl_70
+    lc/I10 O  : 130 -480
+    lc/I23 I  : -780 -600
+NetDegree : 7 lc/hnl_104
+ lc/I21/I0 O  : 2600 -600
+    lc/I11 I  : -260 -600
+    lc/I17 I  : -910 -720
+    lc/I27 I  : -1040 -720
+     lc/I4 I  : -260 -600
+     lc/I7 I  : -260 -600
+     lc/I9 I  : -130 -720
+NetDegree : 6 lc/hnl_103
+ lc/I21/I1 O  : 2600 -600
+    lc/I11 I  : -780 -600
+    lc/I17 I  : -1170 -600
+    lc/I27 I  : -1300 -600
+     lc/I6 I  : -260 -600
+     lc/I9 I  : -130 -600
+NetDegree : 5 lc/hnl_102
+ lc/I21/I2 O  : 2600 -600
+    lc/I11 I  : -1040 -600
+    lc/I17 I  : -130 -720
+    lc/I27 I  : -260 -600
+     lc/I8 I  : -260 -600
+NetDegree : 2  lc/hnl_69
+    lc/I11 O  : 0 -480
+    lc/I23 I  : 780 -600
+NetDegree : 2  lc/hnl_68
+    lc/I12 O  : -260 -360
+ lc/I21/I0 I  : -1820 -480
+NetDegree : 2  lc/hnl_74
+     lc/I4 O  : 130 -480
+    lc/I12 I  : -780 -600
+NetDegree : 2  lc/hnl_73
+     lc/I5 O  : 0 -480
+    lc/I12 I  : 780 -600
+NetDegree : 2  lc/hnl_96
+    lc/I16 O  : 130 -480
+    lc/I24 I  : -780 -600
+NetDegree : 3  lc/hnl_50
+    lc/I25 O  : 1560 -600
+    lc/I16 I  : 260 -480
+    lc/I27 I  : 260 -840
+NetDegree : 2  lc/hnl_51
+    lc/I17 O  : 1170 -480
+    lc/I24 I  : 780 -600
+NetDegree : 2 lc/hnl_106
+    lc/I18 O  : -260 -360
+ lc/I21/I1 I  : -1820 -480
+NetDegree : 2  lc/hnl_72
+     lc/I6 O  : 130 -480
+    lc/I18 I  : -780 -600
+NetDegree : 2  lc/hnl_54
+     lc/I7 O  : 130 -480
+    lc/I18 I  : 780 -600
+NetDegree : 2  lc/hnl_91
+    lc/I19 O  : -260 -360
+ lc/I21/I2 I  : -1820 -480
+NetDegree : 2  lc/hnl_52
+     lc/I8 O  : 130 -480
+    lc/I19 I  : -780 -600
+NetDegree : 2  lc/hnl_71
+     lc/I9 O  : 390 -600
+    lc/I19 I  : 780 -600
+NetDegree : 2  lc/hnl_62
+     lc/I2 O  : -520 -600
+    lc/I22 I  : -390 -600
+NetDegree : 2  lc/hnl_56
+     lc/I3 O  : 0 -480
+     lc/I2 I  : -260 -960
+NetDegree : 5 lc/hnl_107
+    lc/I26 O  : 130 -360
+ lc/I21/I0 I  : 910 -480
+ lc/I21/I1 I  : 910 -480
+ lc/I21/I2 I  : 910 -480
+ lc/I21/I3 I  : 910 -480
+NetDegree : 2 lc/hnl_105
+    lc/I22 O  : 390 -600
+ lc/I21/I3 I  : -1820 -480
+NetDegree : 2 lc/hnl_108
+    lc/I23 O  : -260 -360
+    lc/I22 I  : -130 -600
+NetDegree : 2  lc/hnl_94
+    lc/I24 O  : -260 -360
+    lc/I25 I  : -780 -480
+NetDegree : 2  mux/s1_0_
+ mux/hnl_8 O  : 130 -480
+ mux/hnl_0 I  : -260 -600
+NetDegree : 2  mux/s0_0_
+ mux/I0_0_ O  : 1040 -600
+ mux/hnl_0 I  : 260 -480
+NetDegree : 2  mux/s1_1_
+ mux/hnl_9 O  : 130 -480
+ mux/hnl_1 I  : -260 -600
+NetDegree : 2  mux/s0_1_
+ mux/I0_1_ O  : 1040 -600
+ mux/hnl_1 I  : 260 -480
+NetDegree : 2  mux/s1_2_
+mux/hnl_10 O  : 130 -480
+ mux/hnl_2 I  : -260 -600
+NetDegree : 2     rfa_2_
+ rfc/I0/I2 O  : 1950 -600
+mux/hnl_10 I  : -260 -600
+NetDegree : 2  mux/s1_3_
+mux/hnl_11 O  : 130 -480
+ mux/hnl_3 I  : -260 -600
+NetDegree : 2     rfa_3_
+ rfc/I0/I3 O  : 1950 -600
+mux/hnl_11 I  : -260 -600
+NetDegree : 2  mux/s1_4_
+mux/hnl_12 O  : 130 -480
+ mux/hnl_4 I  : -260 -600
+NetDegree : 2     rfa_4_
+ rfc/I1/I0 O  : 1950 -600
+mux/hnl_12 I  : -260 -600
+NetDegree : 2  mux/s1_5_
+mux/hnl_13 O  : 130 -480
+ mux/hnl_5 I  : -260 -600
+NetDegree : 2     rfa_5_
+ rfc/I1/I1 O  : 1950 -600
+mux/hnl_13 I  : -260 -600
+NetDegree : 2  mux/s1_6_
+mux/hnl_14 O  : 130 -480
+ mux/hnl_6 I  : -260 -600
+NetDegree : 2     rfa_6_
+ rfc/I1/I2 O  : 1950 -600
+mux/hnl_14 I  : -260 -600
+NetDegree : 2  mux/s1_7_
+mux/hnl_15 O  : 130 -480
+ mux/hnl_7 I  : -260 -600
+NetDegree : 2     rfa_7_
+ rfc/I1/I3 O  : 1950 -600
+mux/hnl_15 I  : -260 -600
+NetDegree : 2  mux/s0_2_
+ mux/I0_2_ O  : 1040 -600
+ mux/hnl_2 I  : 260 -480
+NetDegree : 2  mux/s0_3_
+ mux/I0_3_ O  : 1040 -600
+ mux/hnl_3 I  : 260 -480
+NetDegree : 2  mux/s0_4_
+ mux/I0_4_ O  : 1040 -600
+ mux/hnl_4 I  : 260 -480
+NetDegree : 2  mux/s0_5_
+ mux/I0_5_ O  : 1040 -600
+ mux/hnl_5 I  : 260 -480
+NetDegree : 2  mux/s0_6_
+ mux/I0_6_ O  : 1040 -600
+ mux/hnl_6 I  : 260 -480
+NetDegree : 2  mux/s0_7_
+ mux/I0_7_ O  : 1040 -600
+ mux/hnl_7 I  : 260 -480
+NetDegree : 2     rfa_0_
+ rfc/I0/I0 O  : 1950 -600
+ mux/hnl_8 I  : -260 -600
+NetDegree : 2     rfa_1_
+ rfc/I0/I1 O  : 1950 -600
+ mux/hnl_9 I  : -260 -600
+NetDegree : 9  mux/rfshn
+    mux/I9 O  : 0 -480
+ mux/I0_0_ I  : 1170 -600
+ mux/I0_1_ I  : 1170 -600
+ mux/I0_2_ I  : 1170 -600
+ mux/I0_3_ I  : 1170 -600
+ mux/I0_4_ I  : 1170 -600
+ mux/I0_5_ I  : 1170 -600
+ mux/I0_6_ I  : 1170 -600
+ mux/I0_7_ I  : 1170 -600
+NetDegree : 6 rfc/I0/hnl_66
+ rfc/I0/I0 O  : 1690 -360
+rfc/I0/I11 I  : 130 -600
+rfc/I0/I12 I  : 130 -840
+rfc/I0/I13 I  : -390 -600
+rfc/I0/I18 I  : 130 -600
+ rfc/I0/I4 I  : 780 -480
+NetDegree : 2 rfc/I0/hnl_74
+ rfc/I0/I4 O  : -260 -600
+ rfc/I0/I0 I  : -910 -480
+NetDegree : 5 rfc/I0/hnl_65
+ rfc/I0/I1 O  : 1690 -360
+rfc/I0/I12 I  : 260 -480
+rfc/I0/I13 I  : -260 -720
+rfc/I0/I18 I  : -130 -720
+ rfc/I0/I5 I  : 780 -480
+NetDegree : 2 rfc/I0/hnl_73
+ rfc/I0/I5 O  : -260 -600
+ rfc/I0/I1 I  : -910 -480
+NetDegree : 2 rfc/I0/hnl_67
+rfc/I0/I13 O  : 390 -600
+rfc/I0/I10 I  : 390 -840
+NetDegree : 2 rfc/I0/hnl_70
+rfc/I0/I10 O  : -390 -600
+ rfc/I0/I7 I  : -780 -600
+NetDegree : 2 rfc/I0/hnl_69
+rfc/I0/I11 O  : 0 -480
+ rfc/I0/I8 I  : 390 -840
+NetDegree : 2 rfc/I0/hnl_68
+rfc/I0/I12 O  : 0 -360
+ rfc/I0/I9 I  : 390 -840
+NetDegree : 4 rfc/I0/hnl_64
+ rfc/I0/I2 O  : 1690 -360
+rfc/I0/I13 I  : 520 -840
+rfc/I0/I18 I  : -1170 -600
+ rfc/I0/I6 I  : 780 -480
+NetDegree : 2 rfc/I0/hnl_51
+rfc/I0/I17 O  : 0 -480
+rfc/I0/I18 I  : -650 -720
+NetDegree : 3 rfc/I0/hnl_63
+ rfc/I0/I3 O  : 1690 -360
+rfc/I0/I18 I  : -910 -720
+ rfc/I0/I7 I  : 780 -480
+NetDegree : 2 rfc/hnl_76
+rfc/I0/I18 O  : 1170 -600
+    rfc/I5 I  : 130 -600
+NetDegree : 2 rfc/I0/hnl_72
+ rfc/I0/I6 O  : -260 -600
+ rfc/I0/I2 I  : -910 -480
+NetDegree : 2 rfc/I0/hnl_54
+ rfc/I0/I7 O  : -260 -600
+ rfc/I0/I3 I  : -910 -480
+NetDegree : 2 rfc/I0/hnl_52
+ rfc/I0/I8 O  : -390 -600
+ rfc/I0/I5 I  : -780 -600
+NetDegree : 2 rfc/I0/hnl_71
+ rfc/I0/I9 O  : -390 -600
+ rfc/I0/I6 I  : -780 -600
+NetDegree : 6 rfc/I1/hnl_66
+ rfc/I1/I0 O  : 1690 -360
+rfc/I1/I11 I  : 130 -600
+rfc/I1/I12 I  : 130 -840
+rfc/I1/I13 I  : -390 -600
+rfc/I1/I18 I  : 130 -600
+ rfc/I1/I4 I  : 780 -480
+NetDegree : 2 rfc/I1/hnl_74
+ rfc/I1/I4 O  : -260 -600
+ rfc/I1/I0 I  : -910 -480
+NetDegree : 5 rfc/I1/hnl_65
+ rfc/I1/I1 O  : 1690 -360
+rfc/I1/I12 I  : 260 -480
+rfc/I1/I13 I  : -260 -720
+rfc/I1/I18 I  : -130 -720
+ rfc/I1/I5 I  : 780 -480
+NetDegree : 2 rfc/I1/hnl_73
+ rfc/I1/I5 O  : -260 -600
+ rfc/I1/I1 I  : -910 -480
+NetDegree : 2 rfc/I1/hnl_67
+rfc/I1/I13 O  : 390 -600
+rfc/I1/I10 I  : 390 -840
+NetDegree : 6 rfc/hnl_54
+    rfc/I7 O  : -390 -600
+rfc/I1/I10 I  : 130 -960
+rfc/I1/I17 I  : 130 -600
+ rfc/I1/I4 I  : -780 -600
+ rfc/I1/I8 I  : 130 -960
+ rfc/I1/I9 I  : 130 -960
+NetDegree : 2 rfc/I1/hnl_70
+rfc/I1/I10 O  : -390 -600
+ rfc/I1/I7 I  : -780 -600
+NetDegree : 2 rfc/I1/hnl_69
+rfc/I1/I11 O  : 0 -480
+ rfc/I1/I8 I  : 390 -840
+NetDegree : 2 rfc/I1/hnl_68
+rfc/I1/I12 O  : 0 -360
+ rfc/I1/I9 I  : 390 -840
+NetDegree : 4 rfc/I1/hnl_64
+ rfc/I1/I2 O  : 1690 -360
+rfc/I1/I13 I  : 520 -840
+rfc/I1/I18 I  : -1170 -600
+ rfc/I1/I6 I  : 780 -480
+NetDegree : 2 rfc/I1/hnl_51
+rfc/I1/I17 O  : 0 -480
+rfc/I1/I18 I  : -650 -720
+NetDegree : 3 rfc/I1/hnl_63
+ rfc/I1/I3 O  : 1690 -360
+rfc/I1/I18 I  : -910 -720
+ rfc/I1/I7 I  : 780 -480
+NetDegree : 2 rfc/I1/hnl_72
+ rfc/I1/I6 O  : -260 -600
+ rfc/I1/I2 I  : -910 -480
+NetDegree : 2 rfc/I1/hnl_54
+ rfc/I1/I7 O  : -260 -600
+ rfc/I1/I3 I  : -910 -480
+NetDegree : 2 rfc/I1/hnl_52
+ rfc/I1/I8 O  : -390 -600
+ rfc/I1/I5 I  : -780 -600
+NetDegree : 2 rfc/I1/hnl_71
+ rfc/I1/I9 O  : -390 -600
+ rfc/I1/I6 I  : -780 -600
+NetDegree : 2 rfc/hnl_73
+    rfc/I5 O  : 0 -480
+    rfc/I6 I  : 260 -480
+NetDegree : 2 rfc/hnl_72
+    rfc/I6 O  : 130 -480
+    rfc/I7 I  : 390 -840
+NetDegree : 3 sel/hnl_53
+    sel/I0 O  : 910 -600
+sel/I4/CMP23 I  : 130 -600
+    sel/I8 I  : -390 -600
+NetDegree : 2 sel/hnl_61
+    sel/I1 O  : 910 -600
+sel/I4/CMP20 I  : 130 -600
+NetDegree : 2 sel/hnl_51
+   sel/I17 O  : 390 -600
+    sel/I3 I  : -1300 -600
+NetDegree : 2 sel/hnl_62
+    sel/I2 O  : 910 -600
+sel/I4/CMP14 I  : 130 -600
+NetDegree : 2 sel/hnl_46
+   sel/I28 O  : 1560 -600
+   sel/I25 I  : 130 -840
+NetDegree : 2 sel/hnl_50
+   sel/I25 O  : 0 -360
+    sel/I6 I  : -780 -720
+NetDegree : 2 sel/hnl_48
+   sel/I27 O  : 1560 -600
+   sel/I28 I  : -780 -480
+NetDegree : 2 sel/hnl_56
+    sel/I3 O  : 910 -600
+    sel/I6 I  : -520 -720
+NetDegree : 6 sel/I4/hnl_45
+sel/I4/CMP14 O  : 0 -480
+sel/I4/CMP10 I  : 130 -600
+sel/I4/CMP11 I  : 130 -600
+sel/I4/CMP12 I  : 130 -600
+sel/I4/CMP13 I  : 130 -600
+sel/I4/CMP15 I  : 130 -600
+NetDegree : 2 sel/I4/hnl_41
+sel/I4/CMP10 O  : 0 -480
+sel/I4/CMP34 I  : 130 -600
+NetDegree : 2 sel/I4/hnl_28
+sel/I4/CMP11 O  : 0 -480
+sel/I4/CMP39 I  : 130 -840
+NetDegree : 3 sel/I4/hnl_22
+sel/I4/CMP12 O  : 0 -480
+sel/I4/CMP29 I  : 260 -480
+sel/I4/CMP33 I  : -130 -960
+NetDegree : 3 sel/I4/hnl_17
+sel/I4/CMP13 O  : 0 -480
+sel/I4/CMP37 I  : 130 -840
+sel/I4/CMP41 I  : -260 -600
+NetDegree : 3 sel/I4/hnl_38
+sel/I4/CMP15 O  : 0 -480
+sel/I4/CMP25 I  : 390 -840
+sel/I4/CMP43 I  : 390 -840
+NetDegree : 3 sel/I4/hnl_44
+sel/I4/CMP17 O  : 0 -480
+sel/I4/CMP16 I  : 130 -600
+sel/I4/CMP18 I  : 130 -600
+NetDegree : 5 sel/I4/hnl_19
+sel/I4/CMP16 O  : 0 -480
+sel/I4/CMP33 I  : -130 -720
+sel/I4/CMP38 I  : -130 -720
+sel/I4/CMP40 I  : -130 -720
+sel/I4/CMP41 I  : -1040 -600
+NetDegree : 2 sel/hnl_54
+    sel/I7 O  : 0 -480
+sel/I4/CMP17 I  : 130 -600
+NetDegree : 5 sel/I4/hnl_37
+sel/I4/CMP18 O  : 0 -480
+sel/I4/CMP26 I  : 130 -960
+sel/I4/CMP28 I  : 130 -600
+sel/I4/CMP35 I  : 130 -960
+sel/I4/CMP44 I  : 130 -960
+NetDegree : 3 sel/I4/hnl_43
+sel/I4/CMP20 O  : 0 -480
+sel/I4/CMP19 I  : 130 -600
+sel/I4/CMP21 I  : 130 -600
+NetDegree : 5 sel/I4/hnl_16
+sel/I4/CMP19 O  : 0 -480
+sel/I4/CMP32 I  : 130 -840
+sel/I4/CMP38 I  : -130 -960
+sel/I4/CMP39 I  : 260 -480
+sel/I4/CMP41 I  : 260 -600
+NetDegree : 5 sel/I4/hnl_26
+sel/I4/CMP21 O  : 0 -480
+sel/I4/CMP30 I  : -260 -600
+sel/I4/CMP43 I  : 130 -960
+sel/I4/CMP46 I  : 130 -600
+sel/I4/CMP9 I  : 390 -840
+NetDegree : 3 sel/I4/hnl_42
+sel/I4/CMP23 O  : 0 -480
+sel/I4/CMP22 I  : 130 -600
+sel/I4/CMP24 I  : 130 -600
+NetDegree : 5 sel/I4/hnl_18
+sel/I4/CMP22 O  : 0 -480
+sel/I4/CMP32 I  : 260 -480
+sel/I4/CMP37 I  : 260 -480
+sel/I4/CMP40 I  : -130 -960
+sel/I4/CMP41 I  : -780 -600
+NetDegree : 5 sel/I4/hnl_25
+sel/I4/CMP24 O  : 0 -480
+sel/I4/CMP25 I  : 130 -960
+sel/I4/CMP30 I  : 260 -600
+sel/I4/CMP42 I  : 130 -600
+sel/I4/CMP9 I  : 130 -840
+NetDegree : 2 sel/I4/hnl_34
+sel/I4/CMP25 O  : -390 -600
+sel/I4/CMP27 I  : 260 -480
+NetDegree : 2 sel/I4/hnl_35
+sel/I4/CMP26 O  : -390 -600
+sel/I4/CMP27 I  : -260 -600
+NetDegree : 2 sel/I4/hnl_40
+sel/I4/CMP46 O  : 0 -480
+sel/I4/CMP26 I  : 390 -840
+NetDegree : 2 sel/I4/hnl_30
+sel/I4/CMP28 O  : 0 -480
+sel/I4/CMP29 I  : 130 -840
+NetDegree : 2 sel/I4/hnl_29
+sel/I4/CMP29 O  : 0 -360
+sel/I4/CMP31 I  : 260 -480
+NetDegree : 2 sel/I4/hnl_24
+sel/I4/CMP30 O  : 130 -480
+sel/I4/CMP31 I  : -260 -600
+NetDegree : 2 sel/I4/hnl_23
+sel/I4/CMP32 O  : 0 -360
+sel/I4/CMP33 I  : -130 -600
+NetDegree : 2 sel/I4/hnl_39
+sel/I4/CMP34 O  : 0 -480
+sel/I4/CMP35 I  : 390 -840
+NetDegree : 2 sel/I4/hnl_33
+sel/I4/CMP35 O  : -390 -600
+sel/I4/CMP36 I  : -260 -600
+NetDegree : 2 sel/I4/hnl_27
+sel/I4/CMP9 O  : -390 -600
+sel/I4/CMP36 I  : 260 -480
+NetDegree : 2 sel/hnl_57
+sel/I4/CMP36 O  : 130 -480
+    sel/I5 I  : 390 -840
+NetDegree : 2 sel/I4/hnl_21
+sel/I4/CMP37 O  : 0 -360
+sel/I4/CMP38 I  : -130 -600
+NetDegree : 2 sel/I4/hnl_20
+sel/I4/CMP39 O  : 0 -360
+sel/I4/CMP40 I  : -130 -600
+NetDegree : 2 sel/hnl_58
+sel/I4/CMP41 O  : 0 -480
+    sel/I5 I  : 130 -960
+NetDegree : 2 sel/I4/hnl_36
+sel/I4/CMP42 O  : 0 -480
+sel/I4/CMP44 I  : 390 -840
+NetDegree : 2 sel/I4/hnl_31
+sel/I4/CMP43 O  : -390 -600
+sel/I4/CMP45 I  : 260 -480
+NetDegree : 2 sel/I4/hnl_32
+sel/I4/CMP44 O  : -390 -600
+sel/I4/CMP45 I  : -260 -600
+NetDegree : 2 sel/hnl_52
+    sel/I8 O  : 390 -600
+    sel/I6 I  : -1950 -720
+UCLA nodes 1.0
+# Created      : Sun Jul 22 01:21:45 2001
+# User         : imarkov@xenon.cs.ucla.edu (Igor L. Markov) 
+# Platform     : Linux 2.2.12-20smp #1 SMP Mon Sep 27 10:34:45 EDT 1999 i686 
+
+NumNodes :            276
+NumTerminals :         76
+   along-1         520      55120 terminal  :  R90 
+  along-10         520      55120 terminal  :  R90 
+  along-11         520      55120 terminal  :  R90 
+  along-12         520      55120 terminal  :  R90 
+  along-13         520      55120 terminal  :  R90 
+  along-14         520      55120 terminal  :  R90 
+  along-15         520      55120 terminal  :  R90 
+  along-16         520      55120 terminal  :  R90 
+  along-17         520      55120 terminal  :  R90 
+  along-18         520      55120 terminal  :  R90 
+  along-19         520      55120 terminal  :  R90 
+   along-2         520      55120 terminal  :  R90 
+  along-20         520      55120 terminal  :  R90 
+  along-21         520      55120 terminal  :  R90 
+  along-22         520      55120 terminal  :  R90 
+  along-23         520      55120 terminal  :  R90 
+   along-3         520      55120 terminal  :  R90 
+   along-4         520      55120 terminal  :  R90 
+   along-5         520      55120 terminal  :  R90 
+   along-6         520      55120 terminal  :  R90 
+   along-7         520      55120 terminal  :  R90 
+   along-8         520      55120 terminal  :  R90 
+   along-9         520      55120 terminal  :  R90 
+       I17       11960      55120 terminal  :  R90 
+       I18       11960      55120 terminal  :  R90 
+       I20       11960      55120 terminal  :  R90 
+       I21       11960      55120 terminal  :  R90 
+       I22       11960      55120 terminal  :  R90 
+       I23       11960      55120 terminal  :  R90 
+       I30       11960      55120 terminal  :  R90 
+       I31       11960      55120 terminal  :  R90 
+       I32       11960      55120 terminal  :  R90 
+       I33       11960      55120 terminal  :  R90 
+       I38       11960      55120 terminal  :  R90 
+       I39       11960      55120 terminal  :  R90 
+       I40       11960      55120 terminal  :  R90 
+       I41       11960      55120 terminal  :  R90 
+       I51       11960      55120 terminal  :  R90 
+       I52       11960      55120 terminal  :  R90 
+       I53       11960      55120 terminal  :  R90 
+       I54       11960      55120 terminal  :  R90 
+       I55       11960      55120 terminal  :  R90 
+    I62_0_       11960      55120 terminal  :  R90 
+    I62_1_       11960      55120 terminal  :  R90 
+    I62_2_       11960      55120 terminal  :  R90 
+    I62_3_       11960      55120 terminal  :  R90 
+    I62_4_       11960      55120 terminal  :  R90 
+    I62_5_       11960      55120 terminal  :  R90 
+    I62_6_       11960      55120 terminal  :  R90 
+    I62_7_       11960      55120 terminal  :  R90 
+    I64_0_       11960      55120 terminal  :  R90 
+    I64_1_       11960      55120 terminal  :  R90 
+    I64_2_       11960      55120 terminal  :  R90 
+    I64_3_       11960      55120 terminal  :  R90 
+    I64_4_       11960      55120 terminal  :  R90 
+    I64_5_       11960      55120 terminal  :  R90 
+    I64_6_       11960      55120 terminal  :  R90 
+    I64_7_       11960      55120 terminal  :  R90 
+    I65_0_       11960      55120 terminal  :  R90 
+    I65_1_       11960      55120 terminal  :  R90 
+    I65_2_       11960      55120 terminal  :  R90 
+    I65_3_       11960      55120 terminal  :  R90 
+    I65_4_       11960      55120 terminal  :  R90 
+    I65_5_       11960      55120 terminal  :  R90 
+    I65_6_       11960      55120 terminal  :  R90 
+    I65_7_       11960      55120 terminal  :  R90 
+    I65_8_       11960      55120 terminal  :  R90 
+    I65_9_       11960      55120 terminal  :  R90 
+       I67       11960      55120 terminal  :  R90 
+       I68       11960      55120 terminal  :  R90 
+       I69       11960      55120 terminal  :  R90 
+       I70       11960      55120 terminal  :  R90 
+    necorn       55120      55120 terminal 
+    nwcorn       55120      55120 terminal 
+    secorn       55120      55120 terminal 
+    swcorn       55120      55120 terminal 
+    brc/I0        1300       3840  :  Y X 
+    brc/I1        3380       3840  :  Y X 
+   brc/I10         520       3840  :  Y X 
+   brc/I11        1040       3840  :  Y X 
+   brc/I12        4420       3840  :  Y X 
+   brc/I13        4420       3840  :  Y X 
+   brc/I14        4420       3840  :  Y X 
+   brc/I15        4420       3840  :  Y X 
+   brc/I16        2860       3840  :  Y X 
+   brc/I17         780       3840  :  Y X 
+   brc/I18        1040       3840  :  Y X 
+   brc/I19        1040       3840  :  Y X 
+    brc/I2        3380       3840  :  Y X 
+   brc/I20         520       3840  :  Y X 
+   brc/I21         520       3840  :  Y X 
+   brc/I22        1300       3840  :  Y X 
+   brc/I23        1040       3840  :  Y X 
+   brc/I24        2860       3840  :  Y X 
+   brc/I25        2860       3840  :  Y X 
+   brc/I26        1300       3840  :  Y X 
+   brc/I27         780       3840  :  Y X 
+   brc/I28         520       3840  :  Y X 
+    brc/I3        3380       3840  :  Y X 
+   brc/I33         780       3840  :  Y X 
+   brc/I34         780       3840  :  Y X 
+   brc/I35         520       3840  :  Y X 
+   brc/I36         780       3840  :  Y X 
+    brc/I4        1040       3840  :  Y X 
+    brc/I6         520       3840  :  Y X 
+    brc/I7         520       3840  :  Y X 
+    brc/I8        3120       3840  :  Y X 
+    brc/I9        2860       3840  :  Y X 
+    dma/I0        1560       3840  :  Y X 
+    dma/I1        5200       3840  :  Y X 
+   dma/I10        2340       3840  :  Y X 
+   dma/I13        5200       3840  :  Y X 
+   dma/I14        1040       3840  :  Y X 
+   dma/I15        5200       3840  :  Y X 
+   dma/I16        2340       3840  :  Y X 
+   dma/I17        5200       3840  :  Y X 
+   dma/I18         780       3840  :  Y X 
+   dma/I19        5200       3840  :  Y X 
+    dma/I2        5200       3840  :  Y X 
+   dma/I20        2340       3840  :  Y X 
+   dma/I21        3380       3840  :  Y X 
+    dma/I3         520       3840  :  Y X 
+    dma/I4         520       3840  :  Y X 
+    dma/I5         780       3840  :  Y X 
+    dma/I6        5200       3840  :  Y X 
+    dma/I7         780       3840  :  Y X 
+    dma/I8        5200       3840  :  Y X 
+    dma/I9         780       3840  :  Y X 
+        I0         780       3840  :  Y X 
+       I10         520       3840  :  Y X 
+       I11         780       3840  :  Y X 
+       I12         780       3840  :  Y X 
+       I13         520       3840  :  Y X 
+       I14         780       3840  :  Y X 
+       I15         520       3840  :  Y X 
+        I2         780       3840  :  Y X 
+        I3         520       3840  :  Y X 
+        I4         520       3840  :  Y X 
+       I56         520       3840  :  Y X 
+     lc/I0        1040       3840  :  Y X 
+     lc/I1        1560       3840  :  Y X 
+    lc/I10         780       3840  :  Y X 
+    lc/I11        2340       3840  :  Y X 
+    lc/I12        1820       3840  :  Y X 
+    lc/I16         780       3840  :  Y X 
+    lc/I17        2600       3840  :  Y X 
+    lc/I18        1820       3840  :  Y X 
+    lc/I19        1820       3840  :  Y X 
+     lc/I2        1300       3840  :  Y X 
+ lc/I21/I0        5460       3840  :  Y X 
+ lc/I21/I1        5460       3840  :  Y X 
+ lc/I21/I2        5460       3840  :  Y X 
+ lc/I21/I3        5460       3840  :  Y X 
+    lc/I22        1040       3840  :  Y X 
+    lc/I23        1820       3840  :  Y X 
+    lc/I24        1820       3840  :  Y X 
+    lc/I25        3380       3840  :  Y X 
+    lc/I26         520       3840  :  Y X 
+    lc/I27        2860       3840  :  Y X 
+     lc/I3         520       3840  :  Y X 
+     lc/I4         780       3840  :  Y X 
+     lc/I5         520       3840  :  Y X 
+     lc/I6         780       3840  :  Y X 
+     lc/I7         780       3840  :  Y X 
+     lc/I8         780       3840  :  Y X 
+     lc/I9        1560       3840  :  Y X 
+ mux/hnl_0         780       3840  :  Y X 
+ mux/hnl_1         780       3840  :  Y X 
+mux/hnl_10         780       3840  :  Y X 
+mux/hnl_11         780       3840  :  Y X 
+mux/hnl_12         780       3840  :  Y X 
+mux/hnl_13         780       3840  :  Y X 
+mux/hnl_14         780       3840  :  Y X 
+mux/hnl_15         780       3840  :  Y X 
+ mux/hnl_2         780       3840  :  Y X 
+ mux/hnl_3         780       3840  :  Y X 
+ mux/hnl_4         780       3840  :  Y X 
+ mux/hnl_5         780       3840  :  Y X 
+ mux/hnl_6         780       3840  :  Y X 
+ mux/hnl_7         780       3840  :  Y X 
+ mux/hnl_8         780       3840  :  Y X 
+ mux/hnl_9         780       3840  :  Y X 
+ mux/I0_0_        2600       3840  :  Y X 
+ mux/I0_1_        2600       3840  :  Y X 
+ mux/I0_2_        2600       3840  :  Y X 
+ mux/I0_3_        2600       3840  :  Y X 
+ mux/I0_4_        2600       3840  :  Y X 
+ mux/I0_5_        2600       3840  :  Y X 
+ mux/I0_6_        2600       3840  :  Y X 
+ mux/I0_7_        2600       3840  :  Y X 
+    mux/I9         520       3840  :  Y X 
+ rfc/I0/I0        4160       3840  :  Y X 
+ rfc/I0/I1        4160       3840  :  Y X 
+rfc/I0/I10        1040       3840  :  Y X 
+rfc/I0/I11         520       3840  :  Y X 
+rfc/I0/I12        1300       3840  :  Y X 
+rfc/I0/I13        2340       3840  :  Y X 
+rfc/I0/I17         520       3840  :  Y X 
+rfc/I0/I18        2600       3840  :  Y X 
+ rfc/I0/I2        4160       3840  :  Y X 
+ rfc/I0/I3        4160       3840  :  Y X 
+ rfc/I0/I4        1820       3840  :  Y X 
+ rfc/I0/I5        1820       3840  :  Y X 
+ rfc/I0/I6        1820       3840  :  Y X 
+ rfc/I0/I7        1820       3840  :  Y X 
+ rfc/I0/I8        1040       3840  :  Y X 
+ rfc/I0/I9        1040       3840  :  Y X 
+ rfc/I1/I0        4160       3840  :  Y X 
+ rfc/I1/I1        4160       3840  :  Y X 
+rfc/I1/I10        1040       3840  :  Y X 
+rfc/I1/I11         520       3840  :  Y X 
+rfc/I1/I12        1300       3840  :  Y X 
+rfc/I1/I13        2340       3840  :  Y X 
+rfc/I1/I17         520       3840  :  Y X 
+rfc/I1/I18        2600       3840  :  Y X 
+ rfc/I1/I2        4160       3840  :  Y X 
+ rfc/I1/I3        4160       3840  :  Y X 
+ rfc/I1/I4        1820       3840  :  Y X 
+ rfc/I1/I5        1820       3840  :  Y X 
+ rfc/I1/I6        1820       3840  :  Y X 
+ rfc/I1/I7        1820       3840  :  Y X 
+ rfc/I1/I8        1040       3840  :  Y X 
+ rfc/I1/I9        1040       3840  :  Y X 
+    rfc/I5         520       3840  :  Y X 
+    rfc/I6         780       3840  :  Y X 
+    rfc/I7        1040       3840  :  Y X 
+    sel/I0        2860       3840  :  Y X 
+    sel/I1        2860       3840  :  Y X 
+   sel/I17        1040       3840  :  Y X 
+    sel/I2        2860       3840  :  Y X 
+   sel/I25        1300       3840  :  Y X 
+   sel/I27        3380       3840  :  Y X 
+   sel/I28        3380       3840  :  Y X 
+    sel/I3        2860       3840  :  Y X 
+sel/I4/CMP10         520       3840  :  Y X 
+sel/I4/CMP11         520       3840  :  Y X 
+sel/I4/CMP12         520       3840  :  Y X 
+sel/I4/CMP13         520       3840  :  Y X 
+sel/I4/CMP14         520       3840  :  Y X 
+sel/I4/CMP15         520       3840  :  Y X 
+sel/I4/CMP16         520       3840  :  Y X 
+sel/I4/CMP17         520       3840  :  Y X 
+sel/I4/CMP18         520       3840  :  Y X 
+sel/I4/CMP19         520       3840  :  Y X 
+sel/I4/CMP20         520       3840  :  Y X 
+sel/I4/CMP21         520       3840  :  Y X 
+sel/I4/CMP22         520       3840  :  Y X 
+sel/I4/CMP23         520       3840  :  Y X 
+sel/I4/CMP24         520       3840  :  Y X 
+sel/I4/CMP25        1040       3840  :  Y X 
+sel/I4/CMP26        1040       3840  :  Y X 
+sel/I4/CMP27         780       3840  :  Y X 
+sel/I4/CMP28         520       3840  :  Y X 
+sel/I4/CMP29        1300       3840  :  Y X 
+sel/I4/CMP30         780       3840  :  Y X 
+sel/I4/CMP31         780       3840  :  Y X 
+sel/I4/CMP32        1300       3840  :  Y X 
+sel/I4/CMP33        1560       3840  :  Y X 
+sel/I4/CMP34         520       3840  :  Y X 
+sel/I4/CMP35        1040       3840  :  Y X 
+sel/I4/CMP36         780       3840  :  Y X 
+sel/I4/CMP37        1300       3840  :  Y X 
+sel/I4/CMP38        1560       3840  :  Y X 
+sel/I4/CMP39        1300       3840  :  Y X 
+sel/I4/CMP40        1560       3840  :  Y X 
+sel/I4/CMP41        2340       3840  :  Y X 
+sel/I4/CMP42         520       3840  :  Y X 
+sel/I4/CMP43        1040       3840  :  Y X 
+sel/I4/CMP44        1040       3840  :  Y X 
+sel/I4/CMP45         780       3840  :  Y X 
+sel/I4/CMP46         520       3840  :  Y X 
+sel/I4/CMP9        1040       3840  :  Y X 
+    sel/I5        1040       3840  :  Y X 
+    sel/I6        5460       3840  :  Y X 
+    sel/I7         520       3840  :  Y X 
+    sel/I8        1040       3840  :  Y X 
+UCLA wts 1.0
+# Created      : Sun Jul 22 01:21:45 2001
+# User         : imarkov@xenon.cs.ucla.edu (Igor L. Markov) 
+# Platform     : Linux 2.2.12-20smp #1 SMP Mon Sep 27 10:34:45 EDT 1999 i686 
+
+   along-1   2.86624e+07
+  along-10   2.86624e+07
+  along-11   2.86624e+07
+  along-12   2.86624e+07
+  along-13   2.86624e+07
+  along-14   2.86624e+07
+  along-15   2.86624e+07
+  along-16   2.86624e+07
+  along-17   2.86624e+07
+  along-18   2.86624e+07
+  along-19   2.86624e+07
+   along-2   2.86624e+07
+  along-20   2.86624e+07
+  along-21   2.86624e+07
+  along-22   2.86624e+07
+  along-23   2.86624e+07
+   along-3   2.86624e+07
+   along-4   2.86624e+07
+   along-5   2.86624e+07
+   along-6   2.86624e+07
+   along-7   2.86624e+07
+   along-8   2.86624e+07
+   along-9   2.86624e+07
+       I17   6.59235e+08
+       I18   6.59235e+08
+       I20   6.59235e+08
+       I21   6.59235e+08
+       I22   6.59235e+08
+       I23   6.59235e+08
+       I30   6.59235e+08
+       I31   6.59235e+08
+       I32   6.59235e+08
+       I33   6.59235e+08
+       I38   6.59235e+08
+       I39   6.59235e+08
+       I40   6.59235e+08
+       I41   6.59235e+08
+       I51   6.59235e+08
+       I52   6.59235e+08
+       I53   6.59235e+08
+       I54   6.59235e+08
+       I55   6.59235e+08
+    I62_0_   6.59235e+08
+    I62_1_   6.59235e+08
+    I62_2_   6.59235e+08
+    I62_3_   6.59235e+08
+    I62_4_   6.59235e+08
+    I62_5_   6.59235e+08
+    I62_6_   6.59235e+08
+    I62_7_   6.59235e+08
+    I64_0_   6.59235e+08
+    I64_1_   6.59235e+08
+    I64_2_   6.59235e+08
+    I64_3_   6.59235e+08
+    I64_4_   6.59235e+08
+    I64_5_   6.59235e+08
+    I64_6_   6.59235e+08
+    I64_7_   6.59235e+08
+    I65_0_   6.59235e+08
+    I65_1_   6.59235e+08
+    I65_2_   6.59235e+08
+    I65_3_   6.59235e+08
+    I65_4_   6.59235e+08
+    I65_5_   6.59235e+08
+    I65_6_   6.59235e+08
+    I65_7_   6.59235e+08
+    I65_8_   6.59235e+08
+    I65_9_   6.59235e+08
+       I67   6.59235e+08
+       I68   6.59235e+08
+       I69   6.59235e+08
+       I70   6.59235e+08
+    necorn   3.03821e+09
+    nwcorn   3.03821e+09
+    secorn   3.03821e+09
+    swcorn   3.03821e+09
+    brc/I0   4.992e+06
+    brc/I1   1.29792e+07
+   brc/I10   1.9968e+06
+   brc/I11   3.9936e+06
+   brc/I12   1.69728e+07
+   brc/I13   1.69728e+07
+   brc/I14   1.69728e+07
+   brc/I15   1.69728e+07
+   brc/I16   1.09824e+07
+   brc/I17   2.9952e+06
+   brc/I18   3.9936e+06
+   brc/I19   3.9936e+06
+    brc/I2   1.29792e+07
+   brc/I20   1.9968e+06
+   brc/I21   1.9968e+06
+   brc/I22   4.992e+06
+   brc/I23   3.9936e+06
+   brc/I24   1.09824e+07
+   brc/I25   1.09824e+07
+   brc/I26   4.992e+06
+   brc/I27   2.9952e+06
+   brc/I28   1.9968e+06
+    brc/I3   1.29792e+07
+   brc/I33   2.9952e+06
+   brc/I34   2.9952e+06
+   brc/I35   1.9968e+06
+   brc/I36   2.9952e+06
+    brc/I4   3.9936e+06
+    brc/I6   1.9968e+06
+    brc/I7   1.9968e+06
+    brc/I8   1.19808e+07
+    brc/I9   1.09824e+07
+    dma/I0   5.9904e+06
+    dma/I1   1.9968e+07
+   dma/I10   8.9856e+06
+   dma/I13   1.9968e+07
+   dma/I14   3.9936e+06
+   dma/I15   1.9968e+07
+   dma/I16   8.9856e+06
+   dma/I17   1.9968e+07
+   dma/I18   2.9952e+06
+   dma/I19   1.9968e+07
+    dma/I2   1.9968e+07
+   dma/I20   8.9856e+06
+   dma/I21   1.29792e+07
+    dma/I3   1.9968e+06
+    dma/I4   1.9968e+06
+    dma/I5   2.9952e+06
+    dma/I6   1.9968e+07
+    dma/I7   2.9952e+06
+    dma/I8   1.9968e+07
+    dma/I9   2.9952e+06
+        I0   2.9952e+06
+       I10   1.9968e+06
+       I11   2.9952e+06
+       I12   2.9952e+06
+       I13   1.9968e+06
+       I14   2.9952e+06
+       I15   1.9968e+06
+        I2   2.9952e+06
+        I3   1.9968e+06
+        I4   1.9968e+06
+       I56   1.9968e+06
+     lc/I0   3.9936e+06
+     lc/I1   5.9904e+06
+    lc/I10   2.9952e+06
+    lc/I11   8.9856e+06
+    lc/I12   6.9888e+06
+    lc/I16   2.9952e+06
+    lc/I17   9.984e+06
+    lc/I18   6.9888e+06
+    lc/I19   6.9888e+06
+     lc/I2   4.992e+06
+ lc/I21/I0   2.09664e+07
+ lc/I21/I1   2.09664e+07
+ lc/I21/I2   2.09664e+07
+ lc/I21/I3   2.09664e+07
+    lc/I22   3.9936e+06
+    lc/I23   6.9888e+06
+    lc/I24   6.9888e+06
+    lc/I25   1.29792e+07
+    lc/I26   1.9968e+06
+    lc/I27   1.09824e+07
+     lc/I3   1.9968e+06
+     lc/I4   2.9952e+06
+     lc/I5   1.9968e+06
+     lc/I6   2.9952e+06
+     lc/I7   2.9952e+06
+     lc/I8   2.9952e+06
+     lc/I9   5.9904e+06
+ mux/hnl_0   2.9952e+06
+ mux/hnl_1   2.9952e+06
+mux/hnl_10   2.9952e+06
+mux/hnl_11   2.9952e+06
+mux/hnl_12   2.9952e+06
+mux/hnl_13   2.9952e+06
+mux/hnl_14   2.9952e+06
+mux/hnl_15   2.9952e+06
+ mux/hnl_2   2.9952e+06
+ mux/hnl_3   2.9952e+06
+ mux/hnl_4   2.9952e+06
+ mux/hnl_5   2.9952e+06
+ mux/hnl_6   2.9952e+06
+ mux/hnl_7   2.9952e+06
+ mux/hnl_8   2.9952e+06
+ mux/hnl_9   2.9952e+06
+ mux/I0_0_   9.984e+06
+ mux/I0_1_   9.984e+06
+ mux/I0_2_   9.984e+06
+ mux/I0_3_   9.984e+06
+ mux/I0_4_   9.984e+06
+ mux/I0_5_   9.984e+06
+ mux/I0_6_   9.984e+06
+ mux/I0_7_   9.984e+06
+    mux/I9   1.9968e+06
+ rfc/I0/I0   1.59744e+07
+ rfc/I0/I1   1.59744e+07
+rfc/I0/I10   3.9936e+06
+rfc/I0/I11   1.9968e+06
+rfc/I0/I12   4.992e+06
+rfc/I0/I13   8.9856e+06
+rfc/I0/I17   1.9968e+06
+rfc/I0/I18   9.984e+06
+ rfc/I0/I2   1.59744e+07
+ rfc/I0/I3   1.59744e+07
+ rfc/I0/I4   6.9888e+06
+ rfc/I0/I5   6.9888e+06
+ rfc/I0/I6   6.9888e+06
+ rfc/I0/I7   6.9888e+06
+ rfc/I0/I8   3.9936e+06
+ rfc/I0/I9   3.9936e+06
+ rfc/I1/I0   1.59744e+07
+ rfc/I1/I1   1.59744e+07
+rfc/I1/I10   3.9936e+06
+rfc/I1/I11   1.9968e+06
+rfc/I1/I12   4.992e+06
+rfc/I1/I13   8.9856e+06
+rfc/I1/I17   1.9968e+06
+rfc/I1/I18   9.984e+06
+ rfc/I1/I2   1.59744e+07
+ rfc/I1/I3   1.59744e+07
+ rfc/I1/I4   6.9888e+06
+ rfc/I1/I5   6.9888e+06
+ rfc/I1/I6   6.9888e+06
+ rfc/I1/I7   6.9888e+06
+ rfc/I1/I8   3.9936e+06
+ rfc/I1/I9   3.9936e+06
+    rfc/I5   1.9968e+06
+    rfc/I6   2.9952e+06
+    rfc/I7   3.9936e+06
+    sel/I0   1.09824e+07
+    sel/I1   1.09824e+07
+   sel/I17   3.9936e+06
+    sel/I2   1.09824e+07
+   sel/I25   4.992e+06
+   sel/I27   1.29792e+07
+   sel/I28   1.29792e+07
+    sel/I3   1.09824e+07
+sel/I4/CMP10   1.9968e+06
+sel/I4/CMP11   1.9968e+06
+sel/I4/CMP12   1.9968e+06
+sel/I4/CMP13   1.9968e+06
+sel/I4/CMP14   1.9968e+06
+sel/I4/CMP15   1.9968e+06
+sel/I4/CMP16   1.9968e+06
+sel/I4/CMP17   1.9968e+06
+sel/I4/CMP18   1.9968e+06
+sel/I4/CMP19   1.9968e+06
+sel/I4/CMP20   1.9968e+06
+sel/I4/CMP21   1.9968e+06
+sel/I4/CMP22   1.9968e+06
+sel/I4/CMP23   1.9968e+06
+sel/I4/CMP24   1.9968e+06
+sel/I4/CMP25   3.9936e+06
+sel/I4/CMP26   3.9936e+06
+sel/I4/CMP27   2.9952e+06
+sel/I4/CMP28   1.9968e+06
+sel/I4/CMP29   4.992e+06
+sel/I4/CMP30   2.9952e+06
+sel/I4/CMP31   2.9952e+06
+sel/I4/CMP32   4.992e+06
+sel/I4/CMP33   5.9904e+06
+sel/I4/CMP34   1.9968e+06
+sel/I4/CMP35   3.9936e+06
+sel/I4/CMP36   2.9952e+06
+sel/I4/CMP37   4.992e+06
+sel/I4/CMP38   5.9904e+06
+sel/I4/CMP39   4.992e+06
+sel/I4/CMP40   5.9904e+06
+sel/I4/CMP41   8.9856e+06
+sel/I4/CMP42   1.9968e+06
+sel/I4/CMP43   3.9936e+06
+sel/I4/CMP44   3.9936e+06
+sel/I4/CMP45   2.9952e+06
+sel/I4/CMP46   1.9968e+06
+sel/I4/CMP9   3.9936e+06
+    sel/I5   3.9936e+06
+    sel/I6   2.09664e+07
+    sel/I7   1.9968e+06
+    sel/I8   3.9936e+06

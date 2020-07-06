@@ -1,0 +1,48 @@
+#!/bin/csh -f
+
+#****************************************************************************
+#***
+#***   Copyright (c) 1997 by Max Moroz and ABKGroup, UCLA VLSI CAD Laboratory,
+#***    UCLA Computer Science Department, Los Angeles, CA 90095-1596 USA, 
+#***    and by the Regents of the University of California.    
+#***    All rights reserved.   
+#***
+#***    No portion of this package may be used, copied, or transmitted for
+#***    any purpose, including any research or commercial purpose,
+#***    without the express written consent of Professor Andrew B. Kahng,
+#***    UCLA Computer Science Department, 3713 Boelter Hall, Los Angeles,
+#***    CA 90095-1596 USA.   Any copy made of this file must include this
+#***    notice.    ABKGroup and the Regents of the University of California
+#***    retain title to all copies of this file and/or its compiled
+#***    derivatives.
+#***
+#*****************************************************************************/
+
+/bin/rm -f seeds.* >& /dev/null
+
+echo "Test 0a"
+HGraphWDimsTest0.exe -f TESTS/simpleHGWD.aux -saveAsNodes check >& new.out
+cat  check.* >> new.out
+
+echo "Test 0b"
+HGraphWDimsTest0.exe -f TESTS/mediumHGWD.aux -saveAsNodes check >>& new.out
+cat  check.* >> new.out
+
+echo "Test 0c"
+HGraphWDimsTest0.exe -f TESTS/hardHGWD.aux -saveAsNodes check >>& new.out
+cat  check.* >> new.out
+
+echo "Test 0d"
+HGraphWDimsTest0.exe -f TESTS/testAux1.aux -saveAsNodes check >>& new.out
+cat  check.* >> new.out
+
+rm check.*
+
+egrep -v "(Created|User|Platform)" new.out > newout.notime
+egrep -v "(Created|User|Platform)" expected.out > expectedout.notime
+
+diff newout.notime expectedout.notime > diffs.notime
+echo "Differences from precomputed results"
+echo "  lines:  words:  bytes:    error log:"
+wc diffs.notime
+

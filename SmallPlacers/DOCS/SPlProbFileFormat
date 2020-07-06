@@ -1,0 +1,135 @@
+
+ UCLA Small Placement Problem Netlist File Format
+  981206		AEC
+
+
+1) the Small Placement Netlist files are denoted by an "snl" extension
+
+2) snl files contain information about the netlist being placed, including:
+	-number of nets
+	-number of cells
+	-pin offset of each net-cell connection
+	-width of each cell 
+
+3) the format for the file is as follows:
+
+UCLA spl 1.0
+Cells  <#cells>
+Nets   <#nets>
+
+Net <NetIdx> : <cellIdx> ( <x-pinOffset> <y-pinOffset> )
+	     <cellIdx> ( <x-pinOffset> <y-pinOffset> )
+	     <cellIdx> ( <x-pinOffset> <y-pinOffset> )
+	     <cellIdx> ( <x-pinOffset> <y-pinOffset> )
+Net <NetIdx> : <cellIdx> ( <x-pinOffset> <y-pinOffset> )
+	     <cellIdx> ( <x-pinOffset> <y-pinOffset> )
+
+
+etc...
+
+	-pin offsets are measured from the lower-left corner of the cell.
+
+4) cells and nets are numbered consecutively from 0 (there are no pads)
+
+5) only pin offsets for conections between movable cells and nets 
+	are specified. Connections from nets to terminal pins are
+	given by the net's BBox, which is part of the PlacementProblemContext
+	(plc file)
+
+6) There must be an entry for each net - and each net must be attached to
+	at least 1 node. 
+
+7) Sample file:  problem1.snl
+UCLA spl 1.0
+Cells  3
+Nets 4
+
+Net 0 :	0 ( 0.5 2.0 )
+	2 ( 6.0 3.0 )	
+Net 1 : 0 ( 4.2 5.1 )
+Net 2 : 1 ( 5.1 2.2 )
+Net 3 : 2 ( 5 6 )
+	0 ( 2 3 )
+
+-note that nets/cells need not be listed in order.
+
+
+
+
+UCLA Small Placement Problem Area File Format
+
+1) the Small Placement Area files are denoted by an "pla" extension
+2) pla files contain the areas for each cell
+3) the format for the file is as follows:
+
+UCLA pla 1.0
+Cells <#cells>
+
+Cell <CellIdx> : <cell width>
+Cell <CellIdx> : <cell width>
+Cell <CellIdx> : <cell width>
+
+4) the number of cells in the pla file must match the number of cells in 
+	the pln file.
+5) a pla file need not be present. If one is not, each cell is assumed
+	to have area equal to one site width (site width is contained in the
+	plc file)
+6) if a pla file is present, it must include an area for every cell.
+7) example file
+
+UCLA pla 1.0
+Cells 3
+
+Cell 0 : 4
+Cell 1 : 8
+Cell 2 : 4 
+
+
+
+
+
+UCLA Small Placement Problem Context File Format
+  981207	AEC
+
+1) the Small Placement Context files are denoted by an "plc" extension
+
+2) plc files contain information about the rows and terminals on nets:
+	-size and site spacing for each row
+	-bounding box of the terminals on each net
+
+
+3) the format for the file is as follows:
+
+UCLA plc 1.0
+
+Rows <#rows>
+Total Nets <#nets>
+Net BBoxes <#BBoxes>
+
+Row <rowIdx> : <xMin> <yMin> <xMax> <yMax>    <-- bounding box of the row
+	     <siteSpacing>		     <-- spacing of sites
+Row <rowIdx> : <xMin> <yMin> <xMax> <yMax>
+	     <siteSpacing>
+
+Net <netIdx> : <xMin> <yMin> <xMax> <yMax>    <-- bounding box of terminal pins
+						on this net
+Net <netIdx> : <xMin> <yMin> <xMax> <yMax>
+
+-if a net is not listed, it is assumed to have no terminals
+
+4) Sample file:  problem1.plc
+
+UCLA plc 1.0
+
+Rows 2
+Total Nets 4
+Net BBoxes 2
+
+Row 0 : 5 10.5 985 28.5   90
+Row 1 : 5 40.5 985 58.5   90
+Net 2 : -0.78 9.0 400.0 345
+Net 3 : 0 0 1000 1000
+
+
+-note that nets/rows  not have to be listed in order
+

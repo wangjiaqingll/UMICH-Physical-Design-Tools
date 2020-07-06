@@ -1,0 +1,261 @@
+Capo0.10
+created by Andy Caldwell        caldwell@cs.ucla.edu
+
+Capo Top-Down partitioner controller.
+
+first Capo to 'work'..ie, produce reasonable results.  Uses a flat ClipFM.
+best of 1, etc.
+
+        10/11/97
+0.11:  added early exit, tested with smash till all leaves, etc.
+0.12:  to do: add non-random init.  add using Fixed core points.
+
+
+        11/3/97
+0.15:  modifications to use SAPlacer
+
+0.16  971112
+	aec	changes to allow a fixed sub-set of core cells.
+
+0.17  971113
+	aec	added class CapoPlacer::Parameters
+	aec	added regression script, which uses seeds.out to allow for
+		repeatable results.
+	aec	added regressions for both parsers.
+
+1.0  971115
+	aec	no changes from 0.17
+
+1.2  971202
+	aec	added partitioner controller for Max/Igor's placer->partitioner
+	aec	added WL estimation output at each partitioning level
+
+1.3  971205
+	aec	added output to SAPlacer::Parameters class
+	aec	added reconstruction of cltree after annealing. This allows
+		continuing with partitioning/placement after the annealer
+
+1.4  971210
+   	mm 	added const netsBegin(), netsEnd() mem fns
+	aec	fixed problems with MLFM
+
+3.2.2 980222
+        aec     uncoupled solution buffers from PartitionerParams
+        ilm     fmPartCont and mlPartCont can now be implemented
+                in PartCont  to avoid duplication of code and
+                interfaces
+        ilm     simplified and un-templated PartCont
+                by moving evaluator switch logic into basePartCont
+                and moving code from PartCont into basePartCont
+        ilm     slight changes to Capo::Parameters processing
+
+3.3.1 980302
+         ilm     removed support for node weights from controllers ---
+                this is now a function of HGraphFromClustering
+3.4   980303
+         ilm    bug fixes in Capo::Parameters and basePartCont::_terminalBlocks
+
+3.5   980304
+         ilm    several simplifications in basePartController,
+                added getNets() to CapoBlock, etc
+         ilm    removed fixedConstraint handling for Partitioner::Parameters
+         ilm    upgraded for use with new HGraphFixed      
+
+3.6   980309
+	aec	updated Capo to Partitioning1.3.1's partition numbering
+		(row major)
+
+3.7   980313
+        ilm     revised CapoPlacer::Parameters
+        ilm     added cmd line parameter processing to CapoPlacer::Parameters
+        ilm     now the original argc, argv are saved in the class  
+        ilm     three partitioners (Greedy2Way, FM2Way and FMClip2Way) are
+                supported as well as all existing evaluators -- dozen+
+        ilm     reworked main0.cxx (read comments in it!)
+        
+3.8  980313
+        ilm     added support for Verbosity to CapoPlacer and BasePartCont
+        ilm     simplified main0.cxx a bit
+        ilm     changed parentMap to hash_map in capoBlock.smashTillN()
+                and ML controller
+3.8.1  980313
+        ilm     ML controller now works
+        ilm     ML is now default, use -flat if needed 
+        ilm     FM is now default, use -part Greedy2Way if needed
+        ilm     hpl with all combinations of Greedy/FM flat/ML is purify-clean
+        ilm     added USparseMat declaration to BasePartCont::_callPartitioner()
+        ilm     BasePartCont::_rebuildClTree() now takes const Mapping&
+        ilm     smashTillN() now returns actual block size
+        ilm     added CapoBlock::getNumSubrootChildren()
+
+3.9   980324 
+        ilm     added capoWLEst.{h,cxx} with class CapoWLEst
+        ilm     multiple changes to basePartCont, capoPlacer, Makefile etc
+                wrt PartProblem
+
+3.10.8 980327
+        ilm     split ClSubTreeH.h fromClSubTreeH.h  --- will move
+                to Clustering
+3.13   980401
+        ilm     added procesing of -savePartProb parameter which tells
+	        MLPart on which levels it should save PartitioningProblems
+
+3.18   980412
+	aec	added PartProblemFromBlocks
+		added measurment of WL at a level with Evaluator objects
+		added multiple runs to main0
+	
+3.14   980401
+        ilm     added CapoBlock::splitBlock() called from refineBlock()
+        ilm     split capoPlacer.cxx into refineBlock.cxx and the remainder
+
+3.19   980412
+	aec	added tree-reclustering
+3.20   980428
+	aec	added vertical cut tolerance as a parameter & code to use
+			it in splitBlock.cxx
+	aec     added capoPlacer:_nodesInEachBlock and _terminalsToEachBlock.
+			They will be used for computing rent parameters
+	aec	changed splitBlock to use the FMClip 2-way partitioner
+			if it is a 2-way cut, Sanchis otherwise
+		
+3.21	980504
+	 aec	added thresholding nets to 30 (now an ML Param)
+	 aec	added param for removing inessential nets (default is yes)	
+	 aec    changed cut-dir algorithm.  It now cuts horiz. any block
+		with >= 30 cells and > 1 row.
+	 aec    fix & extended single row placer
+
+6.0	981128
+	 aec	re-working of Capo.  CapoBlocks changed significantly, and
+		small placers were moved into their own package. See
+		the DOCS directory for details on the 'new' capoBlocks.
+6.0.2   981203
+	aec	re-worked split block functions. Added PartProbForCapo,
+		and SubHGraphForCapo.  Problems produced by Capo now
+		only have (at most) 2 terminals, in the bi-partitioning
+		case.
+6.1	981206
+	aec	made bit_vector edgeVisited in PartProbForCapo::buildHGraph
+		static.  added tracking for #edges/ave edge degree, with
+		and without inessential edges.
+6.2     981209
+	aec	added SmallPlaceProbForCapo
+
+6.3	981217
+	aec	added params + hooks for seeding partitioners with 
+		analit. placers (for TCAD15)
+	aec	fixed bug in CapoBlocks -> DBL_MIN changed to -DBL_MAX
+
+6.3.1   990103
+	aec	small re-org for SplitBlock.  Moved seeding w/ a partitioner
+	 	to a seperate function.
+	aec     replaced 'TermiProp' object in partProbForCapo w/
+		direct comparison to locations.  Speed up smallPlProb
+		construction slightly.
+6.4	990210
+	aec	major Capo revision.  Capo now operates only on RBPlacement.
+		CapoBlocks use actual contained site areas to compute
+		 capacity.
+		Horizontal partitioning tolerance is computed with a 
+		 formula described in ~projects/CAPO/AreaMgt
+
+6.5	990215
+	AEC	skyline method of computing vertical cuts.
+        AEC	fixed mem allocation problem in SmallPlProb ctor
+
+6.6 	990223
+	AEC	added getWhitespace, getRelativeWhitespace functions to
+		 CapoBlocks.
+		added horiz-cut parameter + alternative methods for
+	 	 computing hCut tolerance
+	 	removed restriction on overfilled blocks - they are
+		 now allowed with a warning
+6.7	990304
+	aec	added ctor to PartProbForCapo to build a problem from
+	  	 2 blocks.
+
+6.8     990319  now all CapoBlocks maintain a reflexive 4-directed 
+        ilm     neighborhood relation
+                Capo levels now either split blocks or copy to the next level
+                to make neighborhood relation reflexive. Therefore, the 
+                stopping criterion in the main Capo loop has been changed to
+                from "is level empty" to "are there unplaced blocks".
+                refineBlock() now returns "this block's has children that
+                need to be partitioned/placed".
+
+6.9   	990320  split file splitBlock.cxx into splitBlock.cxx and
+		partitionBlock.cxx.  PartitionBlock contains the
+		functions which setup and call the partitioner.  
+		Split block contains functions to construct the new blocks,
+		given the partitioning.
+
+		Added ySplit finding.
+
+6.10	990326	xSplit finding.  The new method eliminates small blocks
+	 	containing sub-rows buy splitting at them early in
+		the hierarchy.
+
+6.12    990408  added a new option -plotBlocks (off by default) which causes
+        ilm     capoBlocks-layerX.gp to be saved (X=0,1,2...). 
+                Note: this adds to run time.
+
+6.13    990426
+	aec	capo now uses actual pin locations (for pins on placed
+		cells) when doing terminal prop.  A vector<orientation>
+		was added to CapoPlacer.
+
+6.14	990428
+	aec	-actual pin locations commented out (made things worse)
+		-uses BBFM 'shell partitioner' for small problems of
+		 size <= 40.  Maximum of 4M pushes (~10sec) with
+		 6 FM starts (5 random) is used for the shell partitioner
+		-removed SmallPlacementProbForCapo, replaced with call
+		 to new SmallPlProb ctor.
+
+6.15	990510
+	aec	-added parameter 
+		 'replaceSmallBlocks <never|AtTheEnd|AtEachLayer>'. 
+		 default value is never (meaning never replace..each
+		 block is placed exactly once).
+		-moved capo's main loop into a seperate function in 	
+		 a new file, capoMainLoop.cxx
+6.16    990704
+	aec	-small change: reduced verbosity passed to smallplacer
+
+6.17    991015
+	aec	-improved block splitting decisions in situations w/
+		 un-even length rows
+
+6.18    991015
+	aec	-added output of WWL 
+
+7.1     991020
+	aec	-removed all block splitting/creation functions from
+		 Capo. Created new 'splitter classes.
+7.1.1   991021
+	aec	-removed code rendered useless by 7.1 change
+
+7.4     991201  -added ctor that takes a floorplanning solution and an
+		 hcl file and begins from the floorplanning.
+
+7.8     000215
+	aec	-moved Capo Parameters into seperate .h file. They
+		are no longer defined inside Capo.  Moved CapoSplitterParams
+		into the same .h file, and its body into capoParams.cxx.
+		-general parameter cleanup. Removal of many old/redundant
+		parameters.
+		-cleanup of tolerance options and the processing of them.
+		-addition of useNameHierarchy parameter
+		-changed saving block membership file to be triggered
+		by the 'saveBlocks' option, rather than verbosity > 2.
+
+8.0     000519  
+        ilm     - ported to CC6
+8.0.5   001017
+        ilm     - fixed a bug in area estimation
+8.0.8   phm, ilm - improvements to the selection of split direction
+
+8.0.9   ilm     - turned useActualPinLocs on by default (used to be off)
+8.4     020824
+        ilm     - ported to g++ 3.1.1

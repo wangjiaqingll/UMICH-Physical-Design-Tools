@@ -1,0 +1,19 @@
+#!/bin/csh -f
+
+set PROG="shellpartTest2 -num 10"
+set DATA="-f ~data/BENCH/PartProb/AUX/"
+
+
+foreach t ( 0.2 0.3 )
+
+  $PROG ${DATA}ibm01+u02%.aux -initTolRatio $t > ibm01u.lifo.${t}%.log
+  $PROG ${DATA}ibm02+u02%.aux -initTolRatio $t > ibm02u.lifo.${t}%.log
+  $PROG ${DATA}ibm03+u02%.aux -initTolRatio $t > ibm03u.lifo.${t}%.log
+  $PROG ${DATA}ibm04+u02%.aux -initTolRatio $t > ibm04u.lifo.${t}%.log
+  $PROG ${DATA}ibm05+u02%.aux -initTolRatio $t > ibm05u.lifo.${t}%.log
+  $PROG ${DATA}ibm06+u02%.aux -initTolRatio $t > ibm06u.lifo.${t}%.log
+  $PROG ${DATA}ibm07+u02%.aux -initTolRatio $t > ibm07u.lifo.${t}%.log
+  $PROG ${DATA}ibm08+u02%.aux -initTolRatio $t > ibm08u.lifo.${t}%.log
+
+end
+

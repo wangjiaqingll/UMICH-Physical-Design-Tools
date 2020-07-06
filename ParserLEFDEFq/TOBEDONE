@@ -1,0 +1,5 @@
+
+- Hash function for dictionary (hash_map) are different from that
+  of ParserLEFDEF
+- Didn't use BBoxSimple
+

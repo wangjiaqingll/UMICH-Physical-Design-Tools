@@ -1,0 +1,169 @@
+#!/bin/csh -f
+
+#**************************************************************************
+#**
+#**    Copyright (c) 1995-1997 by ABKGroup, UCLA VLSI CAD Laboratory,
+#**    UCLA Computer Science Department, Los Angeles, CA 90095-1596 USA,
+#**    and by the Regents of the University of California.
+#**    All rights reserved.
+#**
+#**    No portion of this file may be used, copied, or transmitted for
+#**    any purpose, including any research or commercial purpose,
+#**    without the express written consent of Professor Andrew B. Kahng,
+#**    UCLA Computer Science Department, 3713 Boelter Hall, Los Angeles,
+#**    CA 90095-1596 USA.   Any copy made of this file must include this
+#**    notice.    ABKGroup and the Regents of the University of California
+#**    retain title to all copies of this file and/or its compiled
+#**    derivatives.
+#**
+#**************************************************************************/
+
+
+set DIFF=/usr/bin/diff
+set WC=/usr/bin/wc
+set PROG=ParserLEFDEFTest 
+/bin/rm -f seeds.{in,out}
+
+#echo "------------  Running test 1a..." > new.out
+#echo -n Running test 1a...
+#${PROG}1.exe -f TESTS/smallq.aux >> new.out
+#echo Ok
+#echo "------------  Running test 1b..." >> new.out
+#echo -n Running test 1b...
+#${PROG}1.exe -f TESTS/mini4ql.aux >> new.out
+#echo Ok
+#echo "------------  Running test 1c..." >> new.out
+#echo -n Running test 1c...
+#${PROG}1.exe -f TESTS/quasiHPql.aux >> new.out
+#echo Ok
+#echo "------------  Running test 1d..." >> new.out
+#echo -n Running test 1d...
+#${PROG}1.exe -f TESTS/sanyo-q.aux >> new.out
+#echo Ok
+#echo "------------  Running test 1e..." >> new.out
+#echo -n Running test 1e...
+#${PROG}1.exe -f TESTS/sgi-q.aux >> new.out
+#echo Ok
+#echo "------------  Running test 1f..." >> new.out
+#echo -n Running test 1f...
+#${PROG}1.exe -f TESTS/intel-q.aux >> new.out
+#echo Ok
+#
+#echo "" > placed.def
+#echo "" > easyAccess.out
+#echo "" > rbplacemt.out
+echo "------------  Running test 2a..." > new.out
+echo -n Running test 2a...
+${PROG}2.exe -checkDB -f TESTS/smallq.aux >> new.out
+cat placed.def     >> new.out
+cat easyAccess.out >> new.out
+#cat rbplacemt.out  >> new.out
+echo Ok
+echo "------------  Running test 2b..." >> new.out
+echo -n Running test 2b...
+echo "" > placed.def
+echo "" > easyAccess.out
+echo "" > rbplacemt.out
+${PROG}2.exe -checkDB -f TESTS/mini4ql.aux >> new.out
+cat placed.def     >> new.out
+cat easyAccess.out >> new.out
+cat rbplacemt.out  >> new.out
+echo Ok
+echo "------------  Running test 2c..." >> new.out
+echo -n Running test 2c...
+echo "" > placed.def
+echo "" > easyAccess.out
+echo "" > rbplacemt.out
+${PROG}2.exe -checkDB -f TESTS/quasiHPql.aux >> new.out
+cat placed.def     >> new.out
+cat easyAccess.out >> new.out
+cat rbplacemt.out  >> new.out
+echo Ok
+echo "------------  Running test 2d..." >> new.out
+echo -n Running test 2d...
+echo "" > placed.def
+echo "" > easyAccess.out
+echo "" > rbplacemt.out
+${PROG}2.exe -checkDB -f TESTS/sanyo-q.aux >> new.out
+cat placed.def     >> new.out
+cat easyAccess.out >> new.out
+cat rbplacemt.out  >> new.out
+echo Ok
+echo "------------  Running test 2e..." >> new.out
+echo -n Running test 2e...
+echo "" > placed.def
+echo "" > easyAccess.out
+echo "" > rbplacemt.out
+${PROG}2.exe -checkDB -f TESTS/sgi-q.aux >> new.out
+cat placed.def     >> new.out
+cat easyAccess.out >> new.out
+cat rbplacemt.out  >> new.out
+echo Ok
+echo "------------  Running test 2f..." >> new.out
+echo -n Running test 2f...
+echo "" > placed.def
+echo "" > easyAccess.out
+echo "" > rbplacemt.out
+${PROG}2.exe -checkDB -f TESTS/intel-q.aux >> new.out
+cat placed.def     >> new.out
+cat easyAccess.out >> new.out
+cat rbplacemt.out  >> new.out
+echo Ok
+echo "------------  Running test 3a..." >> new.out
+echo -n Running test 3a...
+${PROG}3.exe -checkDB -f TESTS/smallq.aux >> new.out
+echo Ok
+echo "------------  Running test 3b..." >> new.out
+echo -n Running test 3b...
+${PROG}3.exe -checkDB -f TESTS/mini4ql.aux >> new.out
+echo Ok
+echo "------------  Running test 3c..." >> new.out
+echo -n Running test 3c...
+${PROG}3.exe -checkDB -f TESTS/quasiHPql.aux >> new.out
+echo Ok
+echo "------------  Running test 3d..." >> new.out
+echo -n Running test 3d...
+${PROG}3.exe -checkDB -f TESTS/sanyo-q.aux >> new.out
+echo Ok
+echo "------------  Running test 3e..." >> new.out
+echo -n Running test 3e...
+${PROG}3.exe -checkDB -f TESTS/sgi-q.aux >> new.out
+echo Ok
+echo "------------  Running test 3f..." >> new.out
+echo -n Running test 3f...
+${PROG}3.exe -checkDB -f TESTS/intel-q.aux >> new.out
+echo Ok
+echo "------------  Running test 4a..." >> new.out
+echo -n Running test 4a...
+${PROG}4.exe -checkDB -f TESTS/smallq.aux >> new.out
+echo Ok
+echo "------------  Running test 4b..." >> new.out
+echo -n Running test 4b...
+${PROG}4.exe -checkDB -f TESTS/mini4ql.aux >> new.out
+echo Ok
+echo "------------  Running test 4c..." >> new.out
+echo -n Running test 4c...
+${PROG}4.exe -checkDB -f TESTS/quasiHPql.aux >> new.out
+echo Ok
+echo "------------  Running test 4d..." >> new.out
+echo -n Running test 4d...
+${PROG}4.exe -checkDB -f TESTS/sanyo-q.aux >> new.out
+echo Ok
+echo "------------  Running test 4e..." >> new.out
+echo -n Running test 4e...
+${PROG}4.exe -checkDB -f TESTS/sgi-q.aux >> new.out
+echo Ok
+echo "------------  Running test 4f..." >> new.out
+echo -n Running test 4f...
+${PROG}4.exe -checkDB -f TESTS/intel-q.aux >> new.out
+echo Ok
+
+egrep -vi "(Created|sec|User|Platform|Memory us|Inf)" new.out > newout.notime
+egrep -vi "(Created|sec|User|Platform|Memory us|Inf)" expected.out > expectedout.notime
+$DIFF newout.notime expectedout.notime > diffs.notime
+
+echo " "
+echo Differences from precomputed results
+echo "  lines:  words:  bytes:    error log:"
+$WC diffs.notime
+

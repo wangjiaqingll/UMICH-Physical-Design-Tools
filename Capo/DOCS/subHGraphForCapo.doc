@@ -1,0 +1,23 @@
+
+class SubHGraphForCapo
+
+
+SubHGraphForCapo is derived from SubHGraph, which is derived from HGraphFixed.
+
+It is constructed from:
+
+   const CapoBlock& 	block 
+   const vector<BBox>&  partitioning //the proposed partitioning of the block..
+					//this is necessary for terminal prop.
+
+ SubHGraphForCapo also contains the following additional information
+
+   vector<unsigned> terminalblocks
+   vector<BBox>     padBlocks
+
+   which are accessable throught the public functions
+
+   const vector<unsigned>& getTerminalBlocks() const;
+   const vector<BBox>& getPadBlocks() const; 
+ 
+

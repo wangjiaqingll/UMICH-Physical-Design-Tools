@@ -1,0 +1,43 @@
+ 
+    What information is filled by parser, what by postProcessor
+
+  dbContext
+      populated by postProcessor only
+      (at least this is our epxectation)
+  dbNetlist
+      populated partially by the parser(s), 
+      some work is done by postProcessor
+      (e.g. cells on nets, nets on cells)
+
+      Filled by parser
+	dbNetlist
+	dbCell
+	dbMasterCell
+	dbPin
+	dbMasterPin
+	dbNet
+     anything not here is currently being filled in by the postProcessor.
+
+  dbSpatial
+      populated by parser(s) only
+
+  dbTiming
+      populated by parser(s) only
+
+  dbEasyAccess
+      populated by the postProcessor only
+
+=======================================================================
+        The parsers don't have to sort anything...not pins on a cell
+        or net..not cells in dbNetlist..not anything.  You are of course
+        welcome to if you'd like, but postProcessor will always sort everything
+        (of course, if it's sorted, it will finish immediately)
+        For _index values in cells and nets (and everywhere else)..the only
+        req is that each one be unique..it's the tie-breaker in many of
+        the sorting algorithms.  It doesn't matter what order you number
+        them in, just that each, say, cell has a unique _index.
+=======================================================================
+
+FYI: Macro pin LEQ is not in nsiDesign, so I cannot set dbNetlist::_pinLEQs
+
+--Wenyong

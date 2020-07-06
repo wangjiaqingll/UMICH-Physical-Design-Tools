@@ -1,0 +1,19 @@
+971115 mro Corrected problem in lefparse.y; master pin ports specified
+           as vias are now considered in the bounding box of the pin.
+
+971204 mro Added CompareLayerGeoms to sort layer geometries in a via;
+           used it to be able to compare vias from LEF and DEF to see
+           if they're the same.  Changes to parserLEFDEF.h, lefparse.y,
+           defparse.y
+
+971209 mro Add master-cell origins into master-pin port geometries.
+           Same for obstructions.
+           change to lefparse.y
+
+980126 mro Fix problem with REGIONS section in DEF.  Change to defparse.y
+
+5.3
+000512 ilm ported to CC5.0
+
+5.4
+020824 ilm ported to g++ 3.1.1

@@ -1,0 +1,10 @@
+Q:
+	I get this error:
+
+	ERROR: nesting of identical forall macros is invalid
+	    (Error in DB/dbNet.h:156)
+
+A:
+	This error will show up anytime you nest the same 'forall' macro.
+	The work around for this error is to use iterators, and the 
+	netsBegin()/netsEnd() (or cells or pins) functions.

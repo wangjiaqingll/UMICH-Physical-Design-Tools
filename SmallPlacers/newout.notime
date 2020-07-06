@@ -1,0 +1,201 @@
+___ branch and bound tests ______
+___ size 6 tests _____
+  useInitSoln       : true
+  assignment method : LeftRight
+  use subset bound  : false
+  minWirelength     : None
+ Reading PLN File TESTS/amd_C6.pln
+ Reading PLC File TESTS/amd_C6.plc
+ Reading PLA File TESTS/amd_C6.pla
+Final WL is 966723
+___ size 8 tests _____
+  useInitSoln       : true
+  assignment method : LeftRight
+  use subset bound  : false
+  minWirelength     : None
+ Reading PLN File TESTS/pl_N8_E14_281.pln
+ Reading PLC File TESTS/pl_N8_E14_281.plc
+ Reading PLA File TESTS/pl_N8_E14_281.pla
+Final WL is 434038
+  useInitSoln       : true
+  assignment method : LeftRight
+  use subset bound  : false
+  minWirelength     : None
+ Reading PLN File TESTS/pl_N8_E18_591.pln
+ Reading PLC File TESTS/pl_N8_E18_591.plc
+ Reading PLA File TESTS/pl_N8_E18_591.pla
+Final WL is 435694
+  useInitSoln       : true
+  assignment method : LeftRight
+  use subset bound  : false
+  minWirelength     : None
+ Reading PLN File TESTS/pl_N8_E20_695.pln
+ Reading PLC File TESTS/pl_N8_E20_695.plc
+ Reading PLA File TESTS/pl_N8_E20_695.pla
+Final WL is 718391
+___ size 9 tests _____
+  useInitSoln       : true
+  assignment method : LeftRight
+  use subset bound  : false
+  minWirelength     : None
+ Reading PLN File TESTS/pl_N9_E19_365.pln
+ Reading PLC File TESTS/pl_N9_E19_365.plc
+ Reading PLA File TESTS/pl_N9_E19_365.pla
+Final WL is 296293
+  useInitSoln       : true
+  assignment method : LeftRight
+  use subset bound  : false
+  minWirelength     : None
+ Reading PLN File TESTS/pl_N9_E25_213.pln
+ Reading PLC File TESTS/pl_N9_E25_213.plc
+ Reading PLA File TESTS/pl_N9_E25_213.pla
+Final WL is 1.02153e+06
+  useInitSoln       : true
+  assignment method : LeftRight
+  use subset bound  : false
+  minWirelength     : None
+ Reading PLN File TESTS/pl_N9_E32_337.pln
+ Reading PLC File TESTS/pl_N9_E32_337.plc
+ Reading PLA File TESTS/pl_N9_E32_337.pla
+Final WL is 609706
+___ size 10 tests _____
+  useInitSoln       : true
+  assignment method : LeftRight
+  use subset bound  : false
+  minWirelength     : None
+ Reading PLN File TESTS/pl_N10_E19_297.pln
+ Reading PLC File TESTS/pl_N10_E19_297.plc
+ Reading PLA File TESTS/pl_N10_E19_297.pla
+Final WL is 514993
+  useInitSoln       : true
+  assignment method : LeftRight
+  use subset bound  : false
+  minWirelength     : None
+ Reading PLN File TESTS/pl_N10_E24_669.pln
+ Reading PLC File TESTS/pl_N10_E24_669.plc
+ Reading PLA File TESTS/pl_N10_E24_669.pla
+Final WL is 544779
+  useInitSoln       : true
+  assignment method : LeftRight
+  use subset bound  : false
+  minWirelength     : None
+ Reading PLN File TESTS/pl_N10_E25_293.pln
+ Reading PLC File TESTS/pl_N10_E25_293.plc
+ Reading PLA File TESTS/pl_N10_E25_293.pla
+Final WL is 380138
+___ size 11 tests _____
+  useInitSoln       : true
+  assignment method : LeftRight
+  use subset bound  : false
+  minWirelength     : None
+ Reading PLN File TESTS/pl_N11_E26_569.pln
+ Reading PLC File TESTS/pl_N11_E26_569.plc
+ Reading PLA File TESTS/pl_N11_E26_569.pla
+Final WL is 733420
+___ dynamic programming tests ______
+___ size 6 tests _____
+  useInitSoln       : true
+  initSolnMethod    : Analytic
+  splitMethod       : All
+ Reading PLN File TESTS/amd_C6.pln
+ Reading PLC File TESTS/amd_C6.plc
+ Reading PLA File TESTS/amd_C6.pla
+Final WL is 966723
+___ size 8 tests _____
+  useInitSoln       : true
+  initSolnMethod    : Analytic
+  splitMethod       : All
+ Reading PLN File TESTS/pl_N8_E14_281.pln
+ Reading PLC File TESTS/pl_N8_E14_281.plc
+ Reading PLA File TESTS/pl_N8_E14_281.pla
+Final WL is 434038
+  useInitSoln       : true
+  initSolnMethod    : Analytic
+  splitMethod       : All
+ Reading PLN File TESTS/pl_N8_E18_591.pln
+ Reading PLC File TESTS/pl_N8_E18_591.plc
+ Reading PLA File TESTS/pl_N8_E18_591.pla
+Final WL is 435694
+  useInitSoln       : true
+  initSolnMethod    : Analytic
+  splitMethod       : All
+ Reading PLN File TESTS/pl_N8_E20_695.pln
+ Reading PLC File TESTS/pl_N8_E20_695.plc
+ Reading PLA File TESTS/pl_N8_E20_695.pla
+Final WL is 718391
+___ size 9 tests _____
+  useInitSoln       : true
+  initSolnMethod    : Analytic
+  splitMethod       : All
+ Reading PLN File TESTS/pl_N9_E19_365.pln
+ Reading PLC File TESTS/pl_N9_E19_365.plc
+ Reading PLA File TESTS/pl_N9_E19_365.pla
+Final WL is 296293
+  useInitSoln       : true
+  initSolnMethod    : Analytic
+  splitMethod       : All
+ Reading PLN File TESTS/pl_N9_E25_213.pln
+ Reading PLC File TESTS/pl_N9_E25_213.plc
+ Reading PLA File TESTS/pl_N9_E25_213.pla
+Final WL is 1.02196e+06
+  useInitSoln       : true
+  initSolnMethod    : Analytic
+  splitMethod       : All
+ Reading PLN File TESTS/pl_N9_E32_337.pln
+ Reading PLC File TESTS/pl_N9_E32_337.plc
+ Reading PLA File TESTS/pl_N9_E32_337.pla
+Final WL is 610611
+___ size 10 tests _____
+  useInitSoln       : true
+  initSolnMethod    : Analytic
+  splitMethod       : All
+ Reading PLN File TESTS/pl_N10_E19_297.pln
+ Reading PLC File TESTS/pl_N10_E19_297.plc
+ Reading PLA File TESTS/pl_N10_E19_297.pla
+Final WL is 518246
+  useInitSoln       : true
+  initSolnMethod    : Analytic
+  splitMethod       : All
+ Reading PLN File TESTS/pl_N10_E24_669.pln
+ Reading PLC File TESTS/pl_N10_E24_669.plc
+ Reading PLA File TESTS/pl_N10_E24_669.pla
+Final WL is 544779
+  useInitSoln       : true
+  initSolnMethod    : Analytic
+  splitMethod       : All
+ Reading PLN File TESTS/pl_N10_E25_293.pln
+ Reading PLC File TESTS/pl_N10_E25_293.plc
+ Reading PLA File TESTS/pl_N10_E25_293.pla
+Final WL is 380138
+___ size 11 tests _____
+  useInitSoln       : true
+  initSolnMethod    : Analytic
+  splitMethod       : All
+ Reading PLN File TESTS/pl_N11_E26_569.pln
+ Reading PLC File TESTS/pl_N11_E26_569.plc
+ Reading PLA File TESTS/pl_N11_E26_569.pla
+Final WL is 736230
+___ size 10 2D tests _____
+  useInitSoln       : true
+  initSolnMethod    : Analytic
+  splitMethod       : All
+ Reading PLN File TESTS/smPbC432a.pln
+ Reading PLC File TESTS/smPbC432a.plc
+ Reading PLA File TESTS/smPbC432a.pla
+Final WL is 63
+___ size 15 2D tests _____
+  useInitSoln       : true
+  initSolnMethod    : Analytic
+  splitMethod       : All
+ Reading PLN File TESTS/smPbIntel.pln
+ Reading PLC File TESTS/smPbIntel.plc
+ Reading PLA File TESTS/smPbIntel.pla
+Final WL is 664478
+___ size 19 2D tests _____
+  useInitSoln       : true
+  initSolnMethod    : Analytic
+  splitMethod       : All
+ Reading PLN File TESTS/smPbPrimary1.pln
+ Reading PLC File TESTS/smPbPrimary1.plc
+ Reading PLA File TESTS/smPbPrimary1.pla
+Final WL is 38936

@@ -1,0 +1,2 @@
+s/#define\ yywrap\ lefwrap//g
+s/#define\ yywrap\ defwrap//g

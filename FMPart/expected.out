@@ -1,0 +1,73 @@
+------------  Running test 0a...
+# Built on Aug 23 2001 at 19:13:08
+#  on Unix 
+#  from FMPartTest0.cxx and libraries  
+#  using GNU C/C++ 2.95.2 19991024/Linux (release) compiler 
+HGraph Parameters: 
+   makeAllSrcSnk : 1
+   removeBigNets : 0
+   netThreshold  : 4294967295
+   nodeSortMethod: no sort
+   edgeSortMethod: no sort
+
+File seeds.in exists and will override all seeds, including hardcoded ones 
+Reading TESTS/primary1+.aux
+ Done reading HGraph
+ Reading TESTS/2way10%.blk ... 
+
+Terminals specified in .net or .netD file, but no .fix file given.
+  Making all nodes nonterminal (Warning in partProbIO.cxx:1140)
+Reading PartitioningProblem took  0.029 user, 0.0e+00 system, 0 real, 0.111 norm'd sec 
+Init+Read+PostProcess for PartProblem took  0.139 user, 4.0e-02 system, 0 real, 0.521 norm'd sec 
+   Partitioner Parameters: 
+   Verbosity levels : 3
+ For actions : 1,   For sys resources : 1,   For major stats : 1
+   Move manager           : FM            
+   Partitioning evaluator : NetCutWNetVec   
+   Solution generator     : RandomizedEngineers
+   Legalize only          : false
+   Use clip / early stop  : false/false
+   Print hill stats       : false
+   Min pass improvement   : 0%
+   Max num passes         : 0
+   Randomized             : false
+   Uncorking              : 1
+   Do first LIFO Pass     : false
+   Allow Corking Nodes    : false
+   Allow Illegal Moves    : false
+   Tie Break On PinCounts : false
+   Wiggle terminals       : false
+   Save Move Log          : false
+   Use Weights            : false
+   Use Map Based Gain Cont: false
+
+
+ Running 3 multi-starts
+ MultiStart costs : 51  51  53  
+ Legal solutions : 3 (all) 
+ Best solution:  51  Average:  51.6667 StdDev: 0.942809
+ Areas: 5.448e+06  6.579e+06  
+ Pins: 1197  1711  
+
+
+ Cut edge sizes :  Max: 18  Min: 2  Avg: 5.96078
+     2: 10        3: 12        4: 7         5: 3         6: 5     
+     7: 1         8: 1         9: 2        10: 1        11: 2     
+    13: 1        14: 2        17: 3        18: 1     
+  10  largest cells: 
+   1. area:      30000 (  0.249439%)  degree:  4 assignment: [ 0  ]
+   2. area:      30000 (  0.249439%)  degree:  4 assignment: [ 0  ]
+   3. area:      30000 (  0.249439%)  degree:  4 assignment: [ 0  ]
+   4. area:      30000 (  0.249439%)  degree:  4 assignment: [ 0  ]
+   5. area:      30000 (  0.249439%)  degree:  4 assignment: [ 1  ]
+   6. area:      30000 (  0.249439%)  degree:  4 assignment: [ 1  ]
+   7. area:      30000 (  0.249439%)  degree:  4 assignment: [ 1  ]
+   8. area:      30000 (  0.249439%)  degree:  4 assignment: [ 1  ]
+   9. area:      30000 (  0.249439%)  degree:  4 assignment: [ 0  ]
+  10. area:      30000 (  0.249439%)  degree:  5 assignment: [ 0  ]
+# Created      : Thu Aug 23 19:13:20 2001
+# Platform     : Linux 2.2.12-20smp #1 SMP Mon Sep 27 10:34:45 EDT 1999 i686 
+# User         : imarkov@xenon.cs.ucla.edu (Igor L. Markov) 
+# Memory usage : 3.91016Mb (peak)  3.94141Mb (estimate)
+# Run-time conversion to Ultra-1 @143.5/71.5MHz, SunProCC4.2/-O5 : 3.727273 
+

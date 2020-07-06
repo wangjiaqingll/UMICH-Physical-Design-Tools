@@ -1,0 +1,64 @@
+
+We "care about" a port on a pin if:
+   1) The pin is on a net, and
+   2) there is another pin on the same net, on a cell within
+      delta rows and gamma columns (in starting placement), and
+   3) the port is not blocked by another port on the cell, and
+   4) neither is its neighbor
+
+If we care about a port, we necessarily care about a partner port
+on a separate cell.  The cell in the row with lower y coordinate
+is the cache cell, and the other cell is the score cell.
+
+The port cache is just a vector of x intervals for each port.
+We don't guarantee validity of all, just of all those that
+have been tentatively placed. (But, we start with the existing
+placement values.)
+
+How to know which ports to cache?  A preprocessing step determines
+for each cell:
+  - if we care about a port; if so:
+  - the index (global) of the port
+  - the index (global) of its partner port(s)
+  - whether the port is to be cached or scored, or both
+
+Then, whenever we place a cell, we cache the cache ports,
+and when we score a frontier, we score the score ports.
+
+How does this fit with whitespace alignement?  When cache and score
+port are within a small window, we can also add a score for
+having intervening whitespace, or only allow the alignment to
+score if the whitespace is there too. Probably should allow
+for the scoring to be independent or dependent, and test to see
+which works better.
+
+
+-----
+More specific design:
+
+  During preprocessing, figure out the y displacement of
+a pair of rows, and use it to estimate row difference of cells.
+For each pin on a cell, we check if it is on a net, and if so,
+we check if there is any cell on the net within the critical
+x,y distance.  If not, we don't care about the pin.  If so,
+we do care about the pin, and may care about its ports.
+We care about a port if the partner cell is not obstructed on
+the cell.  (Check how Maogang does this.)  If we care about
+the port, index both it and its partner (using a hash table?).
+
+Once we have determined wether a port is cared about, and its
+partner ports, we can set up the data structues correctly.
+
+----
+Now I've set up easyAccess to calculate upper and lower edge
+pin profiles, so forget about individual ports.
+
+For every non-special net, we find all of the core cells on
+the net.  If there are two or more, within the critical distance,
+and the nearest edge profile of each pin is not blank, then
+we care about those pins.
+
+To do the scoring, we pairwise consider the overlap of pin profiles,
+then, and only then, if non-zero and not in adjacent rows, we can
+use the whitespace overlap routine to calculate the available
+whitespace between for routing.

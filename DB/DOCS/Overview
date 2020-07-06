@@ -1,0 +1,203 @@
+
+        UCLA DB, Overview and Frequently Asked Questions 
+
+        Maintainer: Igor Markov, <imarkov@math.ucla.edu>
+
+        Last revision : 970820
+        Latest version of DB available : DB1.27
+
+============================================================================
+
+
+
+ I. Overview
+ 
+ 1.  General
+
+   1.1  UCLA DB : typical applications and use model.
+
+   1.2  Performance of UCLA DB.
+
+   1.3  Currently supported file formats.
+        Adding support for arbitrary file formats.
+
+   1.3  Designers of UCLA DB.
+
+   1.4  Copyright issues.
+
+ 2.  Getting and installing  UCLA DB
+
+   2.1  Operating systems and compilers supported.
+
+   2.2  System requirements to use UCLA DB.
+
+   2.3  Other libraries and software needed to use UCLA DB.
+
+   2.4  Distribution and installation. What is "DBpack" ?
+
+   2.5  Where can I get UCLA DB ? (On the Web ;-)
+
+   2.6  How do I compile UCLA DB to report maximum warnings and debug 
+        information ? Other installation options are available.
+
+   2.7  Compilation problems: see section 8.
+
+   2.8  How do I run regression tests for UCLA DB ?
+
+   2.9  How do I run purify checks for memory leak/corruptions ?
+            (requires access to purify)
+
+   2.10 What's the story with "shared libraries" (libdb.so) ?
+        What do I need to know about shared libraries in DBpack 
+        (including UCLA DB) ?
+
+ 3.  Documentation and support
+
+   3.1  Documentation available.
+
+   3.2  Sample code available.
+
+   3.2  Whom do I ask if my question is not answered
+        in this FAQ, other documentation or sample code ?
+
+   3.3  Where/how do I report bugs ?
+
+ 4.  Design of UCLA DB
+
+   4.1  The top-level structure of UCLA DB ?
+
+   4.2  How do parsers relate to UCLA DB ?
+
+   4.3  VLSI design decisions (section incomplete)
+
+         a) separation into sections (also see 4.1)
+         b) variable and unmodifyiable sections of DB
+         c) sorting cells and nets
+         b) cell types
+         c) external pins: logical and physical
+         d) placements and spatial constraints
+         e) easy access to cell widths, cell areas,
+            row structure etc
+
+   4.4  Software design decisions 
+
+         a) separation into sections (also see 4.1)
+         b) constructing/populating DB classes; 
+            parsers and postprocessor
+         c) consistency checker
+         d) memory management
+         e) error conditions and warnings
+         f) const-correctness
+         g) avoiding unnecessary inlining and premature optimization
+
+ 5.  Implementation of UCLA DB
+
+   5.1  Top-level class overview
+
+         a) class DB
+         b) class dbContext (aka dbLayout)
+         c) class dbNetlist (aka dbDesign)
+         d) class dbSpatial (including class Constraints)
+         e) class dbTiming  (aka dbTemporal)
+         f) class dbEasyAccess
+         g) class RBPlacement
+
+   5.2  Middle-level classes
+
+         a) dbNet
+         b) dbMasterCell and dbCell
+         c) dbMasterPin  and dbPin
+         d) dbLayer
+         e) dbSite
+
+   5.3  To what extent STL is used in UCLA DB ? 
+        What are specififc data structures and algorithms are used ?
+
+   5.4  What is the parser API provided by DB ?
+
+   5.5  What types of constraints can be expected in DB?
+        How constraints are postprocessed ?
+
+ 6.  Using DB with other projects
+
+   6.2  Sample Makefile for projects using UCLA DB.
+
+ 7.  Performance of UCLA DB.
+
+   7.1  Benchmarks
+
+   7.2  What optimization switches can I use and how do they help ?
+
+
+============================================================================
+
+
+ II. FAQ about UCLA DB installation and use
+
+ 8.  Compilation and linking problems
+
+    
+    8.1 Can not compile an optimized version:
+          " CC: Fatal error in iropt:"
+
+    8.2  An executable links, but won't run, complaining that "can not open
+         file" something.so. (Bad shared library setup).
+
+    8.3  Wrong versions of shared libraries
+           a) everything works, but suddenly produces wrong numbers
+              (or does not pass regression tests) even though the source
+              code hasn't been modified  
+           b) mysterious memory corruption, even though the source
+              code hasn't been modified 
+
+    8.4  I can not link executables using static libraries
+         (unresolved symbols)
+
+ 9.  What is ... ?
+
+    9.1  an AUX file ?
+
+    9.2  a "placed" DEF file ?
+
+    9.3  a "must-join" ?  -- see question 5.2 a) dbMasterCell
+
+10.  Where  ... ?
+
+   10.1  are global obstacles in the layout (not obstacles in dbCells) ?
+
+   10.2  is placement status in dbSpatial (e.g. FIXED/PLACED/COVER) ?
+    
+
+11.  How do I ... ?
+
+   11.1  Instantiate a DB object and read in a design ?
+
+   11.2  Traverse all nets in dbNetlist ?
+
+   11.3  Traverse all cells incident to a dbNet ?
+
+   11.4  Find a cell's name ? Find a cell's index ? Find index by name ?
+
+   11.3  Evaluate a placement of a design ?
+
+   11.4  Save a placement to a file ?
+
+   11.5  Find out whether a cell is fixed ?
+
+   11.6  Write a new parser and and it to UCLA DB ?
+
+ 12.  Something does not work ...
+
+   12.1  I can link executables, but they won't run: 
+         problems with shared libraries (see section 8 and question 2.10)
+
+   12.2  ERROR!  can't determine installation root from PATH
+         (Cadence license manager not found)
+
+   12.3  ERROR: nesting of identical forall macros is invalid
+
+-----------------------------------------------------------------
+
+  imarkov@math.ucla.edu
+
+

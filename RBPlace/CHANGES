@@ -1,0 +1,78 @@
+
+  CHANGES TO RBPlace
+
+  980430   dv  Moved changes of Paul into RBPlace1.1
+               Added RBPCoreRow::findSubRow method, removed restriction
+               that layouts must have same number of subrows in each
+               corerow from RBPwCheckups constructor, and fixed one
+               place in RBPwCheckups::cellVOverlapOK where that
+               assumption was used.
+
+  990123  aec  ver2.0
+		-Overhauled class Violations.  Split RBPlacement into 
+		3 files, RBRows, RBPlacement, and RBCPlacement.
+		-Removed RBCPlacement and related classes.  
+		-re-did RBPlacement isConsistent()
+		-changed access to RBPlacement. Can no longer assign a
+		 cell a location directly..need to use setLocation and 
+		 similar functions, so it can update the rows.
+		-rows are no longer derived from vectors.  They contain
+		 the vectors, with access methods.
+		-RBCellCoord4 changed to RBCellCoord and moved into
+		 RBPlacement.
+
+  990208  aec  ver2.2
+		-fixed many problems with subrow splitting by special nets.
+		 Now allows for having subRows which are totall covered by
+		 SNets, and only removes sites from use if the SNet covers
+		 the whole y-range of the row (formerly, VDD/GND bars were
+		 considered to cover sites, making nearly the whole chip
+		 useless)
+		-added getSpacing, getCellWidth, getSymmetry to RBPCoreRow
+		-pin-geometries are also used in determining which layers
+		 the lib uses.  Pad MasterCells & MasterPins are NOT
+		 considered for this.
+
+  990312  aec  ver2.3
+		-added parameters class to RBPlacement.  Added 
+		 numRowsToRemove as a parameter.  This allows RBPlacement to
+		 remove coreRows, reducing whitespace.
+		-added [extract/embed]Cells[From/In]SubRow functions to
+		 RBPlacement.  These need to be functions of RBP so it
+		 can ensure that it keeps all other data items up-to-date.
+		 Alternatively, each coreRow could have a pointer to the
+		 containing RBPlace object, but that sounds ugly.
+
+  990316  aec  ver2.4
+		-added (more/better) embedding and extraction functions.
+		-added embedding function that distributes whitespace
+		 as equally as possible between cells.
+
+  990430 aec   ver2.5.1
+		-added an extract function that does not populate
+		 spacings of any type
+
+  990528 aec   ver3.0
+		-spit RBPlacement into RBPlacement and RBPlFromDB.
+		 Removed all DB references in RBPlacement
+		-added class RBPSite
+		-aded WL evaluation functions to RBPlacement
+
+  990919 aec   ver3.6
+		-added ctor that builds layout area given HGWDims
+  000516 ilm   ver 4.0
+                -ported to CC6.0
+  000803 ilm   ver 4.1
+                -rewrote RBPlacement::savePlacement() 
+                 so that it save cell names
+  001028 ilm   ver 4.3/4.4 
+                - fixes to the parser
+  001110 ilm   ver 4.5
+                - added storElts bit_vector
+  001128 s.a   ver 4.6
+                - added a plotter, overlap detector and remover
+  
+  010517 ilm   ver 5.0
+                - added .lgt files to keep track of storage elements
+  020824 ilm   ver 5.4
+                - ported to g++ 3.1.1

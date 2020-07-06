@@ -1,0 +1,19 @@
+
+PlaceEvals1.1  980918 sm
+    - added per net statistic
+
+PlaceEvals1.2  980922 sm
+    - change in reading placement, hgraph, bbox
+  980926
+    - change file input from -f ###.aux to -net, -are, -blk and -pl
+    - use LayoutBBoxes instead of vector<BBox>
+
+PlaceEvals1.3  981007 sm
+    - added HBBoxNPlEval evaluator
+
+PlaceEvals1.4  981010 sm
+    - added HBBoxNwRSMTPlEval, HBBox6PlEval, HBBox6wRSMTPlEval evaluator
+
+PlaceEvals1.7  000510 ilm
+    - ported to CC5.0
+

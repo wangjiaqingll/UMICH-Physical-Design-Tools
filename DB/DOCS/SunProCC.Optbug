@@ -1,0 +1,74 @@
+
+    Attention UCLA sysadmins : please forward this bug report to
+                               Sun Microsystems (they seem to be arrogant
+                               enough not to give resp. email addres in
+                               man pages and online documentation). Thanks.
+
+    Reported by: Igor Markov <imarkov@cs.ucla.edu>
+    Date :       Mon Aug 25 14:19:48 PDT 1997
+                           
+
+    Another instance of The SunProCC optimizer bug has been defeated.
+
+    <a simplified> command line and error message were
+
+CC -O5 -G -pic +p -I/home/userd/code/imarkov/IMPORT/STL/CC -c DBpostProc.cxx
+CC: Fatal error in iropt: Segmentation fault (core dumped)
+
+  -g version compiled and ran fine, purify and dbx did not show any
+   memory corruption, so it looked like an optimizer bug. 
+   Earlier instances have been defeated by uninlining some global operators
+   (notably user-defined stream output)
+
+   I had no other hooks at this time, so I did a "binary bug search"
+   through the source code (i.e. commenting out half and trying to compile ;-)
+   and identified the following "offending" snippet :
+
+    sort(design._cells.begin(),design._cells.begin()+numFixed,sortByCellName);
+
+    sort(design._cells.begin()+numFixed,
+                design._cells.begin()+numFixed+numFixedX, sortByCellName);
+
+    sort(design._cells.begin()+numFixed+numFixedX,
+                design._cells.begin()+numFixed+numFixedX+numFixedY, 
+                sortByCellName);
+
+    sort(design._cells.begin()+numFixed+numFixedX+numFixedY,
+                design._cells.end(), sortByCellName);
+
+  here design._cells is a STL vector of pointers, numFixed* are all unsigned
+  and sortByCellName is an instance of class CompareCellsByName (function
+  object for STL sort). In fact, CC could compiled any one sort, but not
+  any two of them (clearly CC bug).
+
+  I tried several things to simplify those, e.g. setting up a reference to
+  design._cells, setting up a non-inlined function to do each sort,
+  put parenthesis around unsigneds in sums and changing sortByCellName
+  to CompareCellsByName(). Strangely, I could compile two sorts after
+  I changed sortByCellName to CompareCellsByName(), but this didn't get me any 
+  further.
+
+
+  Eventually, I set up one non-inline function to do all four sorts, and this
+  did the trick.
+
+  // not inlined, especially to defeat a bug in SunPro CC optimizer
+  void sortDesignCellsByName(ctainerCellsGlobal::iterator begin,
+     ctainerCellsGlobal::iterator end, unsigned numFixed, unsigned numFixedX, 
+     unsigned numFixedY)
+{
+    CompareCellsByName byName;     
+
+    sort(begin,begin+numFixed, byName);
+
+    sort(begin+numFixed, begin+(numFixed+numFixedX), byName);
+ 
+    sort(begin+(numFixed+numFixedX),
+                begin+(numFixed+numFixedX+numFixedY), byName);
+    sort(begin+(numFixed+numFixedX+numFixedY), end, byName);
+}
+
+   Regards,
+
+ 							Igor Markov
+ 

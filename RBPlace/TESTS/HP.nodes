@@ -1,0 +1,283 @@
+UCLA nodes 1.0
+# Created      : Tue Sep 21 17:57:41 1999
+# User         : caldwell@nexus11.cs.ucla.edu (Andrew Caldwell) 
+# Platform     : SunOS 5.7 sparc SUNW,Ultra-5_10 
+
+NumNodes :            276
+NumTerminals :         76
+   along-1         520      55120 terminal  :  R90 
+  along-10         520      55120 terminal  :  R90 
+  along-11         520      55120 terminal  :  R90 
+  along-12         520      55120 terminal  :  R90 
+  along-13         520      55120 terminal  :  R90 
+  along-14         520      55120 terminal  :  R90 
+  along-15         520      55120 terminal  :  R90 
+  along-16         520      55120 terminal  :  R90 
+  along-17         520      55120 terminal  :  R90 
+  along-18         520      55120 terminal  :  R90 
+  along-19         520      55120 terminal  :  R90 
+   along-2         520      55120 terminal  :  R90 
+  along-20         520      55120 terminal  :  R90 
+  along-21         520      55120 terminal  :  R90 
+  along-22         520      55120 terminal  :  R90 
+  along-23         520      55120 terminal  :  R90 
+   along-3         520      55120 terminal  :  R90 
+   along-4         520      55120 terminal  :  R90 
+   along-5         520      55120 terminal  :  R90 
+   along-6         520      55120 terminal  :  R90 
+   along-7         520      55120 terminal  :  R90 
+   along-8         520      55120 terminal  :  R90 
+   along-9         520      55120 terminal  :  R90 
+       I17       11960      55120 terminal  :  R90 
+       I18       11960      55120 terminal  :  R90 
+       I20       11960      55120 terminal  :  R90 
+       I21       11960      55120 terminal  :  R90 
+       I22       11960      55120 terminal  :  R90 
+       I23       11960      55120 terminal  :  R90 
+       I30       11960      55120 terminal  :  R90 
+       I31       11960      55120 terminal  :  R90 
+       I32       11960      55120 terminal  :  R90 
+       I33       11960      55120 terminal  :  R90 
+       I38       11960      55120 terminal  :  R90 
+       I39       11960      55120 terminal  :  R90 
+       I40       11960      55120 terminal  :  R90 
+       I41       11960      55120 terminal  :  R90 
+       I51       11960      55120 terminal  :  R90 
+       I52       11960      55120 terminal  :  R90 
+       I53       11960      55120 terminal  :  R90 
+       I54       11960      55120 terminal  :  R90 
+       I55       11960      55120 terminal  :  R90 
+    I62_0_       11960      55120 terminal  :  R90 
+    I62_1_       11960      55120 terminal  :  R90 
+    I62_2_       11960      55120 terminal  :  R90 
+    I62_3_       11960      55120 terminal  :  R90 
+    I62_4_       11960      55120 terminal  :  R90 
+    I62_5_       11960      55120 terminal  :  R90 
+    I62_6_       11960      55120 terminal  :  R90 
+    I62_7_       11960      55120 terminal  :  R90 
+    I64_0_       11960      55120 terminal  :  R90 
+    I64_1_       11960      55120 terminal  :  R90 
+    I64_2_       11960      55120 terminal  :  R90 
+    I64_3_       11960      55120 terminal  :  R90 
+    I64_4_       11960      55120 terminal  :  R90 
+    I64_5_       11960      55120 terminal  :  R90 
+    I64_6_       11960      55120 terminal  :  R90 
+    I64_7_       11960      55120 terminal  :  R90 
+    I65_0_       11960      55120 terminal  :  R90 
+    I65_1_       11960      55120 terminal  :  R90 
+    I65_2_       11960      55120 terminal  :  R90 
+    I65_3_       11960      55120 terminal  :  R90 
+    I65_4_       11960      55120 terminal  :  R90 
+    I65_5_       11960      55120 terminal  :  R90 
+    I65_6_       11960      55120 terminal  :  R90 
+    I65_7_       11960      55120 terminal  :  R90 
+    I65_8_       11960      55120 terminal  :  R90 
+    I65_9_       11960      55120 terminal  :  R90 
+       I67       11960      55120 terminal  :  R90 
+       I68       11960      55120 terminal  :  R90 
+       I69       11960      55120 terminal  :  R90 
+       I70       11960      55120 terminal  :  R90 
+    necorn       55120      55120 terminal 
+    nwcorn       55120      55120 terminal 
+    secorn       55120      55120 terminal 
+    swcorn       55120      55120 terminal 
+    brc/I0        1300       3840  :  Y X 
+    brc/I1        3380       3840  :  Y X 
+   brc/I10         520       3840  :  Y X 
+   brc/I11        1040       3840  :  Y X 
+   brc/I12        4420       3840  :  Y X 
+   brc/I13        4420       3840  :  Y X 
+   brc/I14        4420       3840  :  Y X 
+   brc/I15        4420       3840  :  Y X 
+   brc/I16        2860       3840  :  Y X 
+   brc/I17         780       3840  :  Y X 
+   brc/I18        1040       3840  :  Y X 
+   brc/I19        1040       3840  :  Y X 
+    brc/I2        3380       3840  :  Y X 
+   brc/I20         520       3840  :  Y X 
+   brc/I21         520       3840  :  Y X 
+   brc/I22        1300       3840  :  Y X 
+   brc/I23        1040       3840  :  Y X 
+   brc/I24        2860       3840  :  Y X 
+   brc/I25        2860       3840  :  Y X 
+   brc/I26        1300       3840  :  Y X 
+   brc/I27         780       3840  :  Y X 
+   brc/I28         520       3840  :  Y X 
+    brc/I3        3380       3840  :  Y X 
+   brc/I33         780       3840  :  Y X 
+   brc/I34         780       3840  :  Y X 
+   brc/I35         520       3840  :  Y X 
+   brc/I36         780       3840  :  Y X 
+    brc/I4        1040       3840  :  Y X 
+    brc/I6         520       3840  :  Y X 
+    brc/I7         520       3840  :  Y X 
+    brc/I8        3120       3840  :  Y X 
+    brc/I9        2860       3840  :  Y X 
+    dma/I0        1560       3840  :  Y X 
+    dma/I1        5200       3840  :  Y X 
+   dma/I10        2340       3840  :  Y X 
+   dma/I13        5200       3840  :  Y X 
+   dma/I14        1040       3840  :  Y X 
+   dma/I15        5200       3840  :  Y X 
+   dma/I16        2340       3840  :  Y X 
+   dma/I17        5200       3840  :  Y X 
+   dma/I18         780       3840  :  Y X 
+   dma/I19        5200       3840  :  Y X 
+    dma/I2        5200       3840  :  Y X 
+   dma/I20        2340       3840  :  Y X 
+   dma/I21        3380       3840  :  Y X 
+    dma/I3         520       3840  :  Y X 
+    dma/I4         520       3840  :  Y X 
+    dma/I5         780       3840  :  Y X 
+    dma/I6        5200       3840  :  Y X 
+    dma/I7         780       3840  :  Y X 
+    dma/I8        5200       3840  :  Y X 
+    dma/I9         780       3840  :  Y X 
+        I0         780       3840  :  Y X 
+       I10         520       3840  :  Y X 
+       I11         780       3840  :  Y X 
+       I12         780       3840  :  Y X 
+       I13         520       3840  :  Y X 
+       I14         780       3840  :  Y X 
+       I15         520       3840  :  Y X 
+        I2         780       3840  :  Y X 
+        I3         520       3840  :  Y X 
+        I4         520       3840  :  Y X 
+       I56         520       3840  :  Y X 
+     lc/I0        1040       3840  :  Y X 
+     lc/I1        1560       3840  :  Y X 
+    lc/I10         780       3840  :  Y X 
+    lc/I11        2340       3840  :  Y X 
+    lc/I12        1820       3840  :  Y X 
+    lc/I16         780       3840  :  Y X 
+    lc/I17        2600       3840  :  Y X 
+    lc/I18        1820       3840  :  Y X 
+    lc/I19        1820       3840  :  Y X 
+     lc/I2        1300       3840  :  Y X 
+ lc/I21/I0        5460       3840  :  Y X 
+ lc/I21/I1        5460       3840  :  Y X 
+ lc/I21/I2        5460       3840  :  Y X 
+ lc/I21/I3        5460       3840  :  Y X 
+    lc/I22        1040       3840  :  Y X 
+    lc/I23        1820       3840  :  Y X 
+    lc/I24        1820       3840  :  Y X 
+    lc/I25        3380       3840  :  Y X 
+    lc/I26         520       3840  :  Y X 
+    lc/I27        2860       3840  :  Y X 
+     lc/I3         520       3840  :  Y X 
+     lc/I4         780       3840  :  Y X 
+     lc/I5         520       3840  :  Y X 
+     lc/I6         780       3840  :  Y X 
+     lc/I7         780       3840  :  Y X 
+     lc/I8         780       3840  :  Y X 
+     lc/I9        1560       3840  :  Y X 
+ mux/hnl_0         780       3840  :  Y X 
+ mux/hnl_1         780       3840  :  Y X 
+mux/hnl_10         780       3840  :  Y X 
+mux/hnl_11         780       3840  :  Y X 
+mux/hnl_12         780       3840  :  Y X 
+mux/hnl_13         780       3840  :  Y X 
+mux/hnl_14         780       3840  :  Y X 
+mux/hnl_15         780       3840  :  Y X 
+ mux/hnl_2         780       3840  :  Y X 
+ mux/hnl_3         780       3840  :  Y X 
+ mux/hnl_4         780       3840  :  Y X 
+ mux/hnl_5         780       3840  :  Y X 
+ mux/hnl_6         780       3840  :  Y X 
+ mux/hnl_7         780       3840  :  Y X 
+ mux/hnl_8         780       3840  :  Y X 
+ mux/hnl_9         780       3840  :  Y X 
+ mux/I0_0_        2600       3840  :  Y X 
+ mux/I0_1_        2600       3840  :  Y X 
+ mux/I0_2_        2600       3840  :  Y X 
+ mux/I0_3_        2600       3840  :  Y X 
+ mux/I0_4_        2600       3840  :  Y X 
+ mux/I0_5_        2600       3840  :  Y X 
+ mux/I0_6_        2600       3840  :  Y X 
+ mux/I0_7_        2600       3840  :  Y X 
+    mux/I9         520       3840  :  Y X 
+ rfc/I0/I0        4160       3840  :  Y X 
+ rfc/I0/I1        4160       3840  :  Y X 
+rfc/I0/I10        1040       3840  :  Y X 
+rfc/I0/I11         520       3840  :  Y X 
+rfc/I0/I12        1300       3840  :  Y X 
+rfc/I0/I13        2340       3840  :  Y X 
+rfc/I0/I17         520       3840  :  Y X 
+rfc/I0/I18        2600       3840  :  Y X 
+ rfc/I0/I2        4160       3840  :  Y X 
+ rfc/I0/I3        4160       3840  :  Y X 
+ rfc/I0/I4        1820       3840  :  Y X 
+ rfc/I0/I5        1820       3840  :  Y X 
+ rfc/I0/I6        1820       3840  :  Y X 
+ rfc/I0/I7        1820       3840  :  Y X 
+ rfc/I0/I8        1040       3840  :  Y X 
+ rfc/I0/I9        1040       3840  :  Y X 
+ rfc/I1/I0        4160       3840  :  Y X 
+ rfc/I1/I1        4160       3840  :  Y X 
+rfc/I1/I10        1040       3840  :  Y X 
+rfc/I1/I11         520       3840  :  Y X 
+rfc/I1/I12        1300       3840  :  Y X 
+rfc/I1/I13        2340       3840  :  Y X 
+rfc/I1/I17         520       3840  :  Y X 
+rfc/I1/I18        2600       3840  :  Y X 
+ rfc/I1/I2        4160       3840  :  Y X 
+ rfc/I1/I3        4160       3840  :  Y X 
+ rfc/I1/I4        1820       3840  :  Y X 
+ rfc/I1/I5        1820       3840  :  Y X 
+ rfc/I1/I6        1820       3840  :  Y X 
+ rfc/I1/I7        1820       3840  :  Y X 
+ rfc/I1/I8        1040       3840  :  Y X 
+ rfc/I1/I9        1040       3840  :  Y X 
+    rfc/I5         520       3840  :  Y X 
+    rfc/I6         780       3840  :  Y X 
+    rfc/I7        1040       3840  :  Y X 
+    sel/I0        2860       3840  :  Y X 
+    sel/I1        2860       3840  :  Y X 
+   sel/I17        1040       3840  :  Y X 
+    sel/I2        2860       3840  :  Y X 
+   sel/I25        1300       3840  :  Y X 
+   sel/I27        3380       3840  :  Y X 
+   sel/I28        3380       3840  :  Y X 
+    sel/I3        2860       3840  :  Y X 
+sel/I4/CMP10         520       3840  :  Y X 
+sel/I4/CMP11         520       3840  :  Y X 
+sel/I4/CMP12         520       3840  :  Y X 
+sel/I4/CMP13         520       3840  :  Y X 
+sel/I4/CMP14         520       3840  :  Y X 
+sel/I4/CMP15         520       3840  :  Y X 
+sel/I4/CMP16         520       3840  :  Y X 
+sel/I4/CMP17         520       3840  :  Y X 
+sel/I4/CMP18         520       3840  :  Y X 
+sel/I4/CMP19         520       3840  :  Y X 
+sel/I4/CMP20         520       3840  :  Y X 
+sel/I4/CMP21         520       3840  :  Y X 
+sel/I4/CMP22         520       3840  :  Y X 
+sel/I4/CMP23         520       3840  :  Y X 
+sel/I4/CMP24         520       3840  :  Y X 
+sel/I4/CMP25        1040       3840  :  Y X 
+sel/I4/CMP26        1040       3840  :  Y X 
+sel/I4/CMP27         780       3840  :  Y X 
+sel/I4/CMP28         520       3840  :  Y X 
+sel/I4/CMP29        1300       3840  :  Y X 
+sel/I4/CMP30         780       3840  :  Y X 
+sel/I4/CMP31         780       3840  :  Y X 
+sel/I4/CMP32        1300       3840  :  Y X 
+sel/I4/CMP33        1560       3840  :  Y X 
+sel/I4/CMP34         520       3840  :  Y X 
+sel/I4/CMP35        1040       3840  :  Y X 
+sel/I4/CMP36         780       3840  :  Y X 
+sel/I4/CMP37        1300       3840  :  Y X 
+sel/I4/CMP38        1560       3840  :  Y X 
+sel/I4/CMP39        1300       3840  :  Y X 
+sel/I4/CMP40        1560       3840  :  Y X 
+sel/I4/CMP41        2340       3840  :  Y X 
+sel/I4/CMP42         520       3840  :  Y X 
+sel/I4/CMP43        1040       3840  :  Y X 
+sel/I4/CMP44        1040       3840  :  Y X 
+sel/I4/CMP45         780       3840  :  Y X 
+sel/I4/CMP46         520       3840  :  Y X 
+sel/I4/CMP9        1040       3840  :  Y X 
+    sel/I5        1040       3840  :  Y X 
+    sel/I6        5460       3840  :  Y X 
+    sel/I7         520       3840  :  Y X 
+    sel/I8        1040       3840  :  Y X 

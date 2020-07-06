@@ -1,0 +1,15 @@
+AEC  981130
+
+
+1) upgrade subHGraph to use HGraphs's faster ctor methods
+2) examin PartProb...can it be simplified?
+3) for problems below some size threshold, partition max capacity should
+	be actual capacity of the intented sub-blocks, not totalCellArea +
+	balance tol.
+4) loosen balance tol on horiz cuts, and implement re-sizing of horiz
+	boundries between blocks to compensate.
+5) remove use of 'TermiProp' in PartProbForCapo..there are much simpler faster
+	ways
+6) remove large local bit-vectors from SmallPlProbForCapo
+7) set cell orientations based on what row they are in...
+

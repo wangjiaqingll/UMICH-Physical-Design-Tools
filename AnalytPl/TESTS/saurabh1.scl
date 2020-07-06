@@ -1,0 +1,49 @@
+UCLA scl   1.0
+# Author: Saurabh H. Adya
+# Translation date: Sat Oct 16 17:07:57 1999
+Numrows : 5
+CoreRow Horizontal
+ Coordinate   : 0
+ Height       : 1
+ Sitewidth    : 1
+ Sitespacing  : 1
+ Siteorient   : N
+ Sitesymmetry : Y
+ SubrowOrigin : 0 Numsites     : 7
+End
+CoreRow Horizontal
+ Coordinate   : 1
+ Height       : 1
+ Sitewidth    : 1
+ Sitespacing  : 1
+ Siteorient   : N
+ Sitesymmetry : Y
+ SubrowOrigin : 0 Numsites     : 7
+End
+CoreRow Horizontal
+ Coordinate   : 2
+ Height       : 1
+ Sitewidth    : 1
+ Sitespacing  : 1
+ Siteorient   : N
+ Sitesymmetry : Y
+ SubrowOrigin : 0 Numsites     : 7
+End
+CoreRow Horizontal
+ Coordinate   : 3
+ Height       : 1
+ Sitewidth    : 1
+ Sitespacing  : 1
+ Siteorient   : N
+ Sitesymmetry : Y
+ SubrowOrigin : 0 Numsites     : 7
+End
+CoreRow Horizontal
+ Coordinate   : 4
+ Height       : 1
+ Sitewidth    : 1
+ Sitespacing  : 1
+ Siteorient   : N
+ Sitesymmetry : Y
+ SubrowOrigin : 0 Numsites     : 7
+End

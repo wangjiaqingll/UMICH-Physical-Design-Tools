@@ -1,0 +1,24 @@
+UCLA plc 1.1 
+# Created      : Tue May 29 11:58:06 2001
+# User         : sadya@gagarin.eecs.umich.edu (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;30) 
+# Platform     : Linux 2.4.4 #2 SMP Fri May 4 07:48:11 EDT 2001 i686 
+
+Rows : 2
+Total Nets : 16
+Net BBoxes : 13
+
+Row 0 : 10 13 15 14 1
+Row 1 : 10 14 15 15 1
+Net    0 :       12.5       11.5       12.5       11.5
+Net    1 :        9.5       13.5        9.5       13.5
+Net    2 :       10.5       12.5       10.5       12.5
+Net    4 :       10.5        9.5       10.5        9.5
+Net    5 :        8.5        8.5       12.5       12.5
+Net    6 :       12.5       12.5       12.5       12.5
+Net    9 :        9.5        7.5       13.5       12.5
+Net   10 :        6.5       14.5        6.5       14.5
+Net   11 :        8.5        5.5        9.5       14.5
+Net   12 :       12.5       11.5       12.5       11.5
+Net   13 :        9.5       14.5        9.5       14.5
+Net   14 :       13.5       12.5       13.5       12.5
+Net   15 :       10.5       15.5       10.5       15.5

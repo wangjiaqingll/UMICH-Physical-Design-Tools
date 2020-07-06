@@ -1,0 +1,107 @@
+UCLA scl 1.0
+# Created      : Tue Sep 21 17:57:41 1999
+# User         : caldwell@nexus11.cs.ucla.edu (Andrew Caldwell) 
+# Platform     : SunOS 5.7 sparc SUNW,Ultra-5_10 
+
+
+Numrows : 11
+
+CoreRow Horizontal
+ Coordinate   :          0
+ Height       :       3840
+ Sitewidth    :        260
+ Sitespacing  :        260
+ Siteorient   :         N 
+ Sitesymmetry :         Y 
+ SubrowOrigin :          0 Numsites :        157
+End
+CoreRow Horizontal
+ Coordinate   :       3840
+ Height       :       3840
+ Sitewidth    :        260
+ Sitespacing  :        260
+ Siteorient   :        FS 
+ Sitesymmetry :         Y 
+ SubrowOrigin :          0 Numsites :        157
+End
+CoreRow Horizontal
+ Coordinate   :       7680
+ Height       :       3840
+ Sitewidth    :        260
+ Sitespacing  :        260
+ Siteorient   :         N 
+ Sitesymmetry :         Y 
+ SubrowOrigin :          0 Numsites :        157
+End
+CoreRow Horizontal
+ Coordinate   :      11520
+ Height       :       3840
+ Sitewidth    :        260
+ Sitespacing  :        260
+ Siteorient   :        FS 
+ Sitesymmetry :         Y 
+ SubrowOrigin :          0 Numsites :        157
+End
+CoreRow Horizontal
+ Coordinate   :      15360
+ Height       :       3840
+ Sitewidth    :        260
+ Sitespacing  :        260
+ Siteorient   :         N 
+ Sitesymmetry :         Y 
+ SubrowOrigin :          0 Numsites :        157
+End
+CoreRow Horizontal
+ Coordinate   :      19200
+ Height       :       3840
+ Sitewidth    :        260
+ Sitespacing  :        260
+ Siteorient   :        FS 
+ Sitesymmetry :         Y 
+ SubrowOrigin :          0 Numsites :        157
+End
+CoreRow Horizontal
+ Coordinate   :      23040
+ Height       :       3840
+ Sitewidth    :        260
+ Sitespacing  :        260
+ Siteorient   :         N 
+ Sitesymmetry :         Y 
+ SubrowOrigin :          0 Numsites :        157
+End
+CoreRow Horizontal
+ Coordinate   :      26880
+ Height       :       3840
+ Sitewidth    :        260
+ Sitespacing  :        260
+ Siteorient   :        FS 
+ Sitesymmetry :         Y 
+ SubrowOrigin :          0 Numsites :        157
+End
+CoreRow Horizontal
+ Coordinate   :      30720
+ Height       :       3840
+ Sitewidth    :        260
+ Sitespacing  :        260
+ Siteorient   :         N 
+ Sitesymmetry :         Y 
+ SubrowOrigin :          0 Numsites :        157
+End
+CoreRow Horizontal
+ Coordinate   :      34560
+ Height       :       3840
+ Sitewidth    :        260
+ Sitespacing  :        260
+ Siteorient   :        FS 
+ Sitesymmetry :         Y 
+ SubrowOrigin :          0 Numsites :        157
+End
+CoreRow Horizontal
+ Coordinate   :      38400
+ Height       :       3840
+ Sitewidth    :        260
+ Sitespacing  :        260
+ Siteorient   :         N 
+ Sitesymmetry :         Y 
+ SubrowOrigin :          0 Numsites :        157
+End

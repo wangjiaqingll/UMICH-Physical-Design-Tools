@@ -1,0 +1,28 @@
+UCLA nets 1.0
+#Created : fill in later
+#User : fill in later
+#Platform : fill in later
+
+NumNets : 7
+NumPins : 14
+NetDegree : 2
+	a0
+	a1
+NetDegree : 2
+	a1
+	a2
+NetDegree : 2
+	a3
+	a4
+NetDegree : 2
+	a4
+	a5
+NetDegree : 2
+	a0
+	a3
+NetDegree : 2
+	a1
+	a4
+NetDegree : 2
+	a2
+	a5

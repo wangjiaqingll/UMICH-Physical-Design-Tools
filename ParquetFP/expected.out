@@ -1,0 +1,105 @@
+------------  Running test ami33...
+Annealer Params: 
+	normalizing Time  30000
+	start Time        30000
+	cooling Time      0.01
+	reqd Aspect Ratio -9999 (-9999 means no fixed shape)
+	minimize WL       0
+	maximum WS        15% (only for fixed-outline)
+
+Reading Nodes
+Reading Nets
+Done creating DB 
+The random seed for this run is: 0
+realTime:0	userTime:0.12
+Final Area: 1.35191e+06 WhiteSpace 14.4581% AR 0.870787 HPWL 140839
+
+
+Average Area: 1.35191e+06 Minimum Area: 1.35191e+06
+Average HPWL: 140839 Minimum HPWL: 140839
+Average WhiteSpace: 14.4581% Minimum WhiteSpace: 14.4581%
+Average Time: 0.12
+------------  Running test ami49...
+Annealer Params: 
+	normalizing Time  30000
+	start Time        30000
+	cooling Time      0.01
+	reqd Aspect Ratio -9999 (-9999 means no fixed shape)
+	minimize WL       0
+	maximum WS        15% (only for fixed-outline)
+
+Reading Nodes
+Reading Nets
+Done creating DB 
+The random seed for this run is: 0
+realTime:0	userTime:0.29
+Final Area: 3.96694e+07 WhiteSpace 10.648% AR 0.763107 HPWL 1.76903e+06
+
+
+Average Area: 3.96694e+07 Minimum Area: 3.96694e+07
+Average HPWL: 1.76903e+06 Minimum HPWL: 1.76903e+06
+Average WhiteSpace: 10.648% Minimum WhiteSpace: 10.648%
+Average Time: 0.29
+------------  Running test apte...
+Annealer Params: 
+	normalizing Time  30000
+	start Time        30000
+	cooling Time      0.01
+	reqd Aspect Ratio -9999 (-9999 means no fixed shape)
+	minimize WL       0
+	maximum WS        15% (only for fixed-outline)
+
+Reading Nodes
+Reading Nets
+Done creating DB 
+The random seed for this run is: 0
+realTime:0	userTime:0.01
+Final Area: 4.75606e+07 WhiteSpace 2.10043% AR 1.8888 HPWL 914535
+
+
+Average Area: 4.75606e+07 Minimum Area: 4.75606e+07
+Average HPWL: 914535 Minimum HPWL: 914535
+Average WhiteSpace: 2.10043% Minimum WhiteSpace: 2.10043%
+Average Time: 0.01
+------------  Running test xerox...
+Annealer Params: 
+	normalizing Time  30000
+	start Time        30000
+	cooling Time      0.01
+	reqd Aspect Ratio -9999 (-9999 means no fixed shape)
+	minimize WL       0
+	maximum WS        15% (only for fixed-outline)
+
+Reading Nodes
+Reading Nets
+Done creating DB 
+The random seed for this run is: 0
+realTime:0	userTime:0.02
+Final Area: 2.07241e+07 WhiteSpace 6.62884% AR 0.768194 HPWL 722480
+
+
+Average Area: 2.07241e+07 Minimum Area: 2.07241e+07
+Average HPWL: 722480 Minimum HPWL: 722480
+Average WhiteSpace: 6.62884% Minimum WhiteSpace: 6.62884%
+Average Time: 0.02
+------------  Running test hp...
+Annealer Params: 
+	normalizing Time  30000
+	start Time        30000
+	cooling Time      0.01
+	reqd Aspect Ratio -9999 (-9999 means no fixed shape)
+	minimize WL       0
+	maximum WS        15% (only for fixed-outline)
+
+Reading Nodes
+Reading Nets
+Done creating DB 
+The random seed for this run is: 0
+realTime:0	userTime:0.03
+Final Area: 9.69318e+06 WhiteSpace 8.899% AR 0.22293 HPWL 406587
+
+
+Average Area: 9.69318e+06 Minimum Area: 9.69318e+06
+Average HPWL: 406587 Minimum HPWL: 406587
+Average WhiteSpace: 8.899% Minimum WhiteSpace: 8.899%
+Average Time: 0.03

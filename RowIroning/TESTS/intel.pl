@@ -1,0 +1,3292 @@
+UCLA pl 1.0
+# Created      : Thu Feb  8 21:32:18 2001
+# User         : sadya@gagarin.eecs.umich.edu (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;30) 
+# Platform     : Linux 2.2.17 #2 SMP Tue Oct 31 11:47:51 EST 2000 i686 
+
+
+     I10           0       58245 :  N 
+    I100           0       45325 :  N 
+    I101           0       44895 :  N 
+    I102           0       44375 :  N 
+    I103       49365           0 :  N 
+    I104      113735       79900 :  N 
+    I105        6520       79900 :  N 
+    I106      111480       79900 :  N 
+    I107           0       44035 :  N 
+    I108           0       41985 :  N 
+    I109           0       41645 :  N 
+     I11       53055       79900 :  N 
+    I110           0       41305 :  N 
+    I111      132185       79900 :  N 
+    I112      125830       79900 :  N 
+    I113      123370       79900 :  N 
+    I114      126650       79900 :  N 
+    I115      128905       79900 :  N 
+    I116      129725       79900 :  N 
+    I117           0       40965 :  N 
+    I118        9800       79900 :  N 
+    I119        8980       79900 :  N 
+     I12       50595       79900 :  N 
+    I120           0       40455 :  N 
+    I121           0       40115 :  N 
+    I122           0       39775 :  N 
+    I123           0       39435 :  N 
+    I124           0       38915 :  N 
+    I125           0       38395 :  N 
+    I126           0       37875 :  N 
+    I127           0       35850 :  N 
+    I128           0       35330 :  N 
+    I129           0       34990 :  N 
+     I13       45880       79900 :  N 
+    I130      133825       79900 :  N 
+    I131       35425       79900 :  N 
+    I132      112095           0 :  N 
+    I133      120910           0 :  N 
+    I134      135465       79900 :  N 
+    I135           0       34650 :  N 
+    I136           0       34310 :  N 
+    I137           0       33970 :  N 
+    I138           0       33630 :  N 
+    I139           0       33290 :  N 
+     I14       48135       79900 :  N 
+    I140           0       32950 :  N 
+    I141           0       32610 :  N 
+    I142           0       32100 :  N 
+    I143           0       31760 :  N 
+    I144      142640       79900 :  N 
+    I145      141000       79900 :  N 
+    I146           0       31420 :  N 
+    I147       42600       79900 :  N 
+    I148      112915       79900 :  N 
+    I149       69045           0 :  N 
+     I15       39320       79900 :  N 
+    I150       67815           0 :  N 
+    I151      133005       79900 :  N 
+    I152      107380       79900 :  N 
+    I153      139770           0 :  N 
+    I154      138950           0 :  N 
+    I155      145920           0 :  N 
+    I156      146945           0 :  N 
+    I157      131775           0 :  N 
+    I158      129725           0 :  N 
+    I159      134850           0 :  N 
+     I16        7340       79900 :  N 
+    I160      143870           0 :  N 
+    I161      141820           0 :  N 
+    I162       70070           0 :  N 
+    I163       71300       79900 :  N 
+    I164           0       28000 :  N 
+    I165       66995           0 :  N 
+    I166           0       27660 :  N 
+    I167           0       27320 :  N 
+    I168           0       26810 :  N 
+    I169           0       26470 :  N 
+     I17       43420       79900 :  N 
+    I170       65970           0 :  N 
+    I171           0       26130 :  N 
+    I172           0       25700 :  N 
+    I173       51825           0 :  N 
+    I174           0       25360 :  N 
+    I175      116810           0 :  N 
+    I176           0       25020 :  N 
+    I177       32965       79900 :  N 
+    I178       34605       79900 :  N 
+    I179       69865       79900 :  N 
+     I18      144280       79900 :  N 
+    I180       64125       79900 :  N 
+    I181       56950       79900 :  N 
+    I182       91595           0 :  N 
+    I183      145715       79900 :  N 
+    I184       89545           0 :  N 
+    I185      148175       79900 :  N 
+    I186      110045           0 :  N 
+    I187      102665       79900 :  N 
+    I188           0       24680 :  N 
+    I189           0       24340 :  N 
+     I19       53875           0 :  N 
+    I190           0       23820 :  N 
+    I191           0       23480 :  N 
+    I192           0       23140 :  N 
+    I193           0       22800 :  N 
+    I194           0       22370 :  N 
+    I195           0       22030 :  N 
+    I196      102870           0 :  N 
+    I197       47930           0 :  N 
+    I198       46905           0 :  N 
+    I199       27635           0 :  N 
+      I2           0       61325 :  N 
+     I20       72120       79900 :  N 
+    I200      114760           0 :  N 
+    I201      123370           0 :  N 
+    I202       29480           0 :  N 
+    I203           0       21690 :  N 
+    I204       41780           0 :  N 
+    I205       40755           0 :  N 
+    I206      148995           0 :  N 
+    I207       14515           0 :  N 
+    I208       63100           0 :  N 
+    I209       39730           0 :  N 
+     I21       79295       79900 :  N 
+    I210      154120           0 :  N 
+    I211      111070           0 :  N 
+    I212      113735           0 :  N 
+    I213      103895           0 :  N 
+    I214      121730           0 :  N 
+    I215       90570           0 :  N 
+    I216      137925           0 :  N 
+    I217      136900           0 :  N 
+    I218           0       21260 :  N 
+    I219       43830           0 :  N 
+     I22       73760       79900 :  N 
+    I220      131365       79900 :  N 
+    I221           0       20920 :  N 
+    I222           0       20580 :  N 
+    I223           0       20240 :  N 
+    I224       21075       79900 :  N 
+    I225       18615       79900 :  N 
+    I226       87495           0 :  N 
+    I227       55105           0 :  N 
+    I228           0       19900 :  N 
+    I229           0       19560 :  N 
+     I23         985       79900 :  N 
+    I230           0       19130 :  N 
+    I231           0       18700 :  N 
+    I232       85035       79900 :  N 
+    I233           0       18180 :  N 
+    I234           0       17750 :  N 
+    I235           0       17410 :  N 
+    I236       73145           0 :  N 
+    I237       74170           0 :  N 
+    I238       86470           0 :  N 
+    I239      120705           0 :  N 
+     I24      143460       79900 :  N 
+    I240           0       16890 :  N 
+    I241           0       16550 :  N 
+    I242      140795           0 :  N 
+    I243           0       16210 :  N 
+    I244           0       15870 :  N 
+    I245           0       15440 :  N 
+    I246           0       15100 :  N 
+    I247           0       14670 :  N 
+    I248           0       14330 :  N 
+    I249           0       13820 :  N 
+     I25       77040       79900 :  N 
+    I250           0       13480 :  N 
+    I251           0       13140 :  N 
+    I252           0       12710 :  N 
+    I253           0       12190 :  N 
+    I254           0       11850 :  N 
+    I255           0       11420 :  N 
+    I256           0       11080 :  N 
+    I257           0       10650 :  N 
+    I258           0       10310 :  N 
+    I259           0        9880 :  N 
+     I26       78680       79900 :  N 
+    I260           0        9450 :  N 
+    I261           0        8930 :  N 
+    I262           0        8590 :  N 
+    I263           0        8250 :  N 
+    I264           0        7910 :  N 
+    I265           0        7570 :  N 
+    I266           0        7230 :  N 
+    I267           0        6800 :  N 
+    I268           0        6370 :  N 
+    I269           0        6030 :  N 
+     I27           0       57225 :  N 
+    I270           0        5600 :  N 
+    I271           0        5170 :  N 
+    I272           0        4740 :  N 
+    I273           0        4400 :  N 
+    I274       37065       79900 :  N 
+    I275       30505       79900 :  N 
+    I276           0        3880 :  N 
+    I277           0        3450 :  N 
+    I278           0        3020 :  N 
+    I279           0        2680 :  N 
+     I28      141820       79900 :  N 
+    I280       42805           0 :  N 
+    I281           0        2250 :  N 
+    I282       48545           0 :  N 
+    I283           0        1910 :  N 
+    I284           0        1390 :  N 
+    I285       10620       79900 :  N 
+    I286       29070       79900 :  N 
+    I287           0         870 :  N 
+    I288           0         350 :  N 
+    I289           0       58075 :  N 
+     I29       74580       79900 :  N 
+    I290       85445           0 :  N 
+    I291           0       30140 :  N 
+    I292       77450           0 :  N 
+    I293       38705           0 :  N 
+    I294       83395           0 :  N 
+    I295       52645           0 :  N 
+    I296       82370           0 :  N 
+    I297           0       46785 :  N 
+    I298           0       29710 :  N 
+    I299           0       54315 :  N 
+      I3           0       60985 :  N 
+     I30           0       56795 :  N 
+    I300           0       29370 :  N 
+    I301           0       46265 :  N 
+    I302           0       28940 :  N 
+    I303           0       60815 :  N 
+    I304           0       28510 :  N 
+    I305       84215       79900 :  N 
+    I306       22510           0 :  N 
+    I307       37680           0 :  N 
+    I308       28250       79900 :  N 
+    I309       11440           0 :  N 
+     I31           0       56365 :  N 
+    I310       13490           0 :  N 
+    I311       15540           0 :  N 
+    I312        4265           0 :  N 
+    I313           0       45925 :  N 
+    I314           0       28170 :  N 
+    I315           0       53975 :  N 
+    I316           0       27830 :  N 
+    I317        1190           0 :  N 
+    I318       21485           0 :  N 
+    I319       97745           0 :  N 
+     I32       76220       79900 :  N 
+    I320           0       45495 :  N 
+    I321           0       27490 :  N 
+    I322       83395       79900 :  N 
+    I323           0       57735 :  N 
+    I324       32555           0 :  N 
+    I325       34605           0 :  N 
+    I326       36655           0 :  N 
+    I327       19640           0 :  N 
+    I328           0       26980 :  N 
+    I329           0       45155 :  N 
+     I33       80935       79900 :  N 
+    I330           0       26640 :  N 
+    I331           0       53635 :  N 
+    I332       25585           0 :  N 
+    I333       18615           0 :  N 
+    I334      152070           0 :  N 
+    I335       20665           0 :  N 
+    I336       12465           0 :  N 
+    I337       17590           0 :  N 
+    I338       16565           0 :  N 
+    I339       10415           0 :  N 
+     I34        4265       79900 :  N 
+    I340        9390           0 :  N 
+    I341        8365           0 :  N 
+    I342        7340           0 :  N 
+    I343        6315           0 :  N 
+    I344        5290           0 :  N 
+    I345       26610           0 :  N 
+    I346        3240           0 :  N 
+    I347        2215           0 :  N 
+    I348       24560           0 :  N 
+    I349           0       26300 :  N 
+     I35           0       56025 :  N 
+    I350           0       44635 :  N 
+    I351           0       25870 :  N 
+    I352           0       59795 :  N 
+    I353           0       25530 :  N 
+    I354           0       44205 :  N 
+    I355           0       25190 :  N 
+    I356           0       53115 :  N 
+    I357           0       24850 :  N 
+    I358           0       43865 :  N 
+    I359       22510       79900 :  N 
+     I36           0       55685 :  N 
+    I360       81755       79900 :  N 
+    I361           0       24510 :  N 
+    I362       81550           0 :  N 
+    I363           0       57395 :  N 
+    I364           0       24080 :  N 
+    I365       16155       79900 :  N 
+    I366           0       43525 :  N 
+    I367           0       23650 :  N 
+    I368       13080       79900 :  N 
+    I369       12260       79900 :  N 
+     I37           0       55255 :  N 
+    I370       11440       79900 :  N 
+    I371      133825           0 :  N 
+    I372           0       23310 :  N 
+    I373           0       22970 :  N 
+    I374       80525           0 :  N 
+    I375       76220           0 :  N 
+    I376           0       61155 :  N 
+    I377           0       22630 :  N 
+    I378           0       42495 :  N 
+    I379           0       22200 :  N 
+     I38           0       54825 :  N 
+    I380           0       52175 :  N 
+    I381           0       21860 :  N 
+    I382           0       42155 :  N 
+    I383           0       21520 :  N 
+    I384           0       57055 :  N 
+    I385           0       21090 :  N 
+    I386           0       41815 :  N 
+    I387       25790       79900 :  N 
+    I388       14515       79900 :  N 
+    I389       13695       79900 :  N 
+     I39       97745       79900 :  N 
+    I390           0       20750 :  N 
+    I391           0       51835 :  N 
+    I392      119680           0 :  N 
+    I393       27430       79900 :  N 
+    I394       26610       79900 :  N 
+    I395           0       20410 :  N 
+    I396           0       41475 :  N 
+    I397           0       20070 :  N 
+    I398           0       59365 :  N 
+    I399           0       19730 :  N 
+      I4           0       60645 :  N 
+     I40      101025       79900 :  N 
+    I400           0       41135 :  N 
+    I401           0       19300 :  N 
+    I402           0       51405 :  N 
+    I403           0       18960 :  N 
+    I404           0       40795 :  N 
+    I405           0       18440 :  N 
+    I406           0       56535 :  N 
+    I407           0       17920 :  N 
+    I408           0       40285 :  N 
+    I409           0       17580 :  N 
+     I41       99385       79900 :  N 
+    I410       16975       79900 :  N 
+    I411       24150       79900 :  N 
+    I412           0       51065 :  N 
+    I413      132800           0 :  N 
+    I414           0       17150 :  N 
+    I415           0       39945 :  N 
+    I416       56130           0 :  N 
+    I417           0       16720 :  N 
+    I418           0       60475 :  N 
+    I419        5700       79900 :  N 
+     I42      101845       79900 :  N 
+    I420           0       16380 :  N 
+    I421           0       39605 :  N 
+    I422           0       16040 :  N 
+    I423           0       50635 :  N 
+    I424           0       15610 :  N 
+    I425           0       39175 :  N 
+    I426           0       15270 :  N 
+    I427       65355           0 :  N 
+    I428           0       56195 :  N 
+    I429           0       14840 :  N 
+     I43       91390       79900 :  N 
+    I430           0       38655 :  N 
+    I431           0       14500 :  N 
+    I432           0       50295 :  N 
+    I433           0       13990 :  N 
+    I434           0       38135 :  N 
+    I435           0       13650 :  N 
+    I436           0       58845 :  N 
+    I437           0       13310 :  N 
+    I438           0       37615 :  N 
+    I439           0       12970 :  N 
+     I44      103485       79900 :  N 
+    I440           0       49955 :  N 
+    I441           0       12450 :  N 
+    I442           0       35590 :  N 
+    I443           0       12020 :  N 
+    I444           0       55855 :  N 
+    I445           0       11680 :  N 
+    I446           0       35160 :  N 
+    I447           0       11250 :  N 
+    I448           0       49525 :  N 
+    I449           0       10820 :  N 
+     I45      104920       79900 :  N 
+    I450           0       34820 :  N 
+    I451           0       10480 :  N 
+    I452           0       61665 :  N 
+    I453           0       10050 :  N 
+    I454           0       34480 :  N 
+    I455           0        9710 :  N 
+    I456           0       49095 :  N 
+    I457           0        9190 :  N 
+    I458           0       34140 :  N 
+    I459           0        8760 :  N 
+     I46           0       54485 :  N 
+    I460           0       55515 :  N 
+    I461           0        8420 :  N 
+    I462           0       33800 :  N 
+    I463           0        8080 :  N 
+    I464           0       48575 :  N 
+    I465           0        7740 :  N 
+    I466           0       33460 :  N 
+    I467           0        7400 :  N 
+    I468           0       58415 :  N 
+    I469           0        6970 :  N 
+     I47      105740       79900 :  N 
+    I470           0       33120 :  N 
+    I471           0        6630 :  N 
+    I472           0       48145 :  N 
+    I473           0        6200 :  N 
+    I474           0       32780 :  N 
+    I475           0        5770 :  N 
+    I476           0       54995 :  N 
+    I477           0        5430 :  N 
+    I478           0       32440 :  N 
+    I479           0        4910 :  N 
+     I48       88110       79900 :  N 
+    I480           0       47805 :  N 
+    I481           0        4570 :  N 
+    I482           0       31930 :  N 
+    I483           0        4140 :  N 
+    I484       41780       79900 :  N 
+    I485           0       60135 :  N 
+    I486           0        3620 :  N 
+    I487           0       31590 :  N 
+    I488           0        3280 :  N 
+    I489           0       47465 :  N 
+     I49           0       54145 :  N 
+    I490           0        2850 :  N 
+    I491           0       31250 :  N 
+    I492      154940           0 :  N 
+    I493           0        2510 :  N 
+    I494      130750           0 :  N 
+    I495      128700           0 :  N 
+    I496           0       54655 :  N 
+    I497      122345           0 :  N 
+    I498           0        2080 :  N 
+    I499       93030       79900 :  N 
+      I5           0       60305 :  N 
+     I50           0       53805 :  N 
+    I500      117630           0 :  N 
+    I501      105945           0 :  N 
+    I502      112710           0 :  N 
+    I503      101845           0 :  N 
+    I504           0       30910 :  N 
+    I505       96720           0 :  N 
+    I506       88520           0 :  N 
+    I507       98770           0 :  N 
+    I508      111890           0 :  N 
+    I509      107995           0 :  N 
+     I51           0       53375 :  N 
+    I510      109020           0 :  N 
+    I511      126445           0 :  N 
+    I512       59820           0 :  N 
+    I513           0        1650 :  N 
+    I514       62280           0 :  N 
+    I515       61050           0 :  N 
+    I516       59000           0 :  N 
+    I517       64125           0 :  N 
+    I518       93645           0 :  N 
+    I519      124395           0 :  N 
+     I52       54490       79900 :  N 
+    I520      118655           0 :  N 
+    I521       45880           0 :  N 
+    I522      115785           0 :  N 
+    I523      127675           0 :  N 
+    I524      106970           0 :  N 
+    I525       99795           0 :  N 
+    I526       94875           0 :  N 
+    I527       57155           0 :  N 
+    I528       58180           0 :  N 
+    I529       92620           0 :  N 
+     I53       56130       79900 :  N 
+    I530       98565       79900 :  N 
+    I531      147355       79900 :  N 
+    I532      151045           0 :  N 
+    I533      153095           0 :  N 
+    I534      125420           0 :  N 
+    I535      100820           0 :  N 
+    I536       44855           0 :  N 
+    I537       95900           0 :  N 
+    I538      150020           0 :  N 
+    I539           0       47125 :  N 
+     I54       19435           0 :  N 
+    I540      130545       79900 :  N 
+    I541       40140       79900 :  N 
+    I542      127470       79900 :  N 
+    I543       37885       79900 :  N 
+    I544           0        1130 :  N 
+    I545           0       30570 :  N 
+    I546           0         610 :  N 
+     I55        8160           0 :  N 
+     I56       31325       79900 :  N 
+     I57      142845           0 :  N 
+     I58       86675       79900 :  N 
+     I59      139360       79900 :  N 
+      I6           0       59965 :  N 
+     I60      140180       79900 :  N 
+     I61      138540       79900 :  N 
+     I62      137720       79900 :  N 
+     I63      136900       79900 :  N 
+     I64      136285       79900 :  N 
+     I65           0       52855 :  N 
+     I66           0       52345 :  N 
+     I67           0       52005 :  N 
+     I68           0       51665 :  N 
+     I69           0       51235 :  N 
+      I7           0       59625 :  N 
+     I70        2625       79900 :  N 
+     I71           0       50805 :  N 
+     I72       70685       79900 :  N 
+     I73       69045       79900 :  N 
+     I74       95285       79900 :  N 
+     I75       65765       79900 :  N 
+     I76       96105       79900 :  N 
+     I77       67405       79900 :  N 
+     I78           0       50465 :  N 
+     I79           0       50125 :  N 
+      I8           0       59105 :  N 
+     I80           0       49695 :  N 
+     I81       62485       79900 :  N 
+     I82      134645       79900 :  N 
+     I83       93850       79900 :  N 
+     I84      144895       79900 :  N 
+     I85      116195       79900 :  N 
+     I86      120090       79900 :  N 
+     I87           0       47635 :  N 
+     I88      118655       79900 :  N 
+     I89           0       47295 :  N 
+      I9           0       58585 :  N 
+     I90           0       46955 :  N 
+     I91           0       46525 :  N 
+     I92       90570       79900 :  N 
+     I93       58590       79900 :  N 
+     I94       57770       79900 :  N 
+     I95       61050       79900 :  N 
+     I96      106560       79900 :  N 
+     I97      121730       79900 :  N 
+     I98      109020       79900 :  N 
+     I99           0       45755 :  N 
+|BONUS10_3G0IN00C      145600       23460 :  N 
+|BONUS11_3G0IN00C      158800       23460 :  N 
+|BONUS12_3G0IN00C      146000       23460 :  N 
+|BONUS13_3G0IN00C      152400       23460 :  N 
+|BONUS14_3G0IN00C      152800       23460 :  N 
+|BONUS15_3G0NO03B      152400       29920 :  N 
+|BONUS16_3G0NO03B      148800       23460 :  N 
+|BONUS17_3G0NO03B      152400       26860 :  N 
+|BONUS18_3G0NO03B      145600       29920 :  N 
+|BONUS19_3G0NO03B      157600       23460 :  N 
+|BONUS1_3G0BF00UC      155800       23460 :  N 
+|BONUS20_3G0NO03B      146600       23460 :  N 
+|BONUS21_3G0NO03B      153400       29920 :  N 
+|BONUS22_3G0NO03B      145600       26860 :  N 
+|BONUS23_3G0NO03B      150000       23460 :  N 
+|BONUS24_3G0NO03B      146600       29920 :  N 
+|BONUS25_3G0NO03B      153400       23460 :  N 
+|BONUS26_3G0NO03B      147600       23460 :  N 
+|BONUS27_3G0NO03B      153600       26860 :  N 
+|BONUS28_3G0NO03B      146800       26860 :  N 
+|BONUS29_3G0NO03B      154600       23460 :  N 
+|BONUS2_3G0BF00UC      147600       29920 :  N 
+|BONUS30_3G0NO03B      152400       17170 :  N 
+|BONUS31_3G0NO03B      152400       20570 :  N 
+|BONUS32_3G0NO03B      145600       20570 :  N 
+|BONUS33_3G0NO03B      153400       17170 :  N 
+|BONUS34_3G0NO03B      151200       23460 :  N 
+|BONUS35_3G0NO03B      154600       29920 :  N 
+|BONUS36_3G0NO03B      145600       17170 :  N 
+|BONUS37_3G0NO02QF      154400       17170 :  N 
+|BONUS38_3G0NO02QF      146600       17170 :  N 
+|BONUS39_3G0NO02QF      157400       20570 :  N 
+|BONUS3_3G0BF00UC      155600       29920 :  N 
+|BONUS40_3G0NO02QF      146600       20570 :  N 
+|BONUS41_3G0NO02QF      148200       26860 :  N 
+|BONUS42_3G0NO02QF      155000       26860 :  N 
+|BONUS43_3G0NO02QF      149400       29920 :  N 
+|BONUS44_3G0NO03B      156200       20570 :  N 
+|BONUS45_3G0NO03B      148400       20570 :  N 
+|BONUS46_3G0NO03B      156400       17170 :  N 
+|BONUS47_3G0NO03B      148600       17170 :  N 
+|BONUS48_3G0NO03B      153400       20570 :  N 
+|BONUS49_3G0NO03B      149600       20570 :  N 
+|BONUS4_3G0BF00UC      150600       20570 :  N 
+|BONUS50_3G0NO03B      151200       29920 :  N 
+|BONUS51_3G0NO02QF      157400       29920 :  N 
+|BONUS52_3G0NO02QF      150200       26860 :  N 
+|BONUS53_3G0NO02QF      149800       17170 :  N 
+|BONUS54_3G0NO02QF      157400       17170 :  N 
+|BONUS55_3G0NO02QF      157200       26860 :  N 
+|BONUS5_3G0BF00UC      143400       29920 :  N 
+|BONUS6_3G0BF00UC      154600       20570 :  N 
+|BONUS7_3G0BF00UC      143600       26860 :  N 
+|BONUS8_3G0IN00C      145000       29920 :  N 
+|BONUS9_3G0IN00C      151800       17170 :  N 
+|DBCNTR_CIMDXD_0       34200       29920 :  N 
+|DBCNTR_CIMDXD_1       45800       33320 :  N 
+|DBCNTR_CIMDXD_2       37800       33320 :  N 
+|DBCNTR_CIMDXD_3       53800       33320 :  N 
+|DBCNTR_CIMDXD_4       40200       29920 :  N 
+|DBCNTR_CIMDXD_5       42000       29920 :  N 
+|DBCNTR_CIMDXD_6       43800       29920 :  N 
+|DBCNTR_CIMDXD_7       34400       36210 :  N 
+|DBCNTR_CISEGXD_0       55800        4250 :  N 
+|DBCNTR_CISEGXD_1       59200        4250 :  N 
+|DBCNTR_CISEGXD_2       55800        1360 :  N 
+|DBCNTR_CMSXD_0      108400        1360 :  N 
+|DBCNTR_CMSXD_1      110600        1360 :  N 
+|DBCNTR_CMSXD_2      108400        4250 :  N 
+|DBCNTR_CMSXD_3       97000        1360 :  N 
+|DBCNTR_CRSXD0_0       95200       26860 :  N 
+|DBCNTR_D4_SOLTCH1_O_0       38000        4250 :  N 
+|DBCNTR_D4_SOLTCH1_SO1CB1_SO1CB1_NODE481       23200        4250 :  N 
+|DBCNTR_D4_SOLTCH1_SO1CB1_SO1CB1_NODE5       14600       20570 :  N 
+|DBCNTR_D4_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O       24200        4250 :  N 
+|DBCNTR_D4_SOLTCH2_O1_0       40200        4250 :  N 
+|DBCNTR_D5_SOLTCH1_O_0      109000       14110 :  N 
+|DBCNTR_D5_SOLTCH1_SO1CB1_SO1CB1_NODE481       41200       14110 :  N 
+|DBCNTR_D5_SOLTCH1_SO1CB1_SO1CB1_NODE5       40200       14110 :  N 
+|DBCNTR_D5_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O       42600       14110 :  N 
+|DBCNTR_D5_SOLTCH2_O1_0      113000       14110 :  N 
+|DBCNTR_D6_SOLTCH1_O_0      111000       10710 :  N 
+|DBCNTR_D6_SOLTCH1_SO1CB1_SO1CB1_NODE481      111800       14110 :  N 
+|DBCNTR_D6_SOLTCH1_SO1CB1_SO1CB1_NODE5      107400       29920 :  N 
+|DBCNTR_D6_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O      110800       14110 :  N 
+|DBCNTR_D6_SOLTCH2_O1_0      115200       10710 :  N 
+|DBCNTR_DAIPS_0       38200       29920 :  N 
+|DBCNTR_DAUXS_0       32400        7650 :  N 
+|DBCNTR_DBCNTRCB10_DBCNTRCB10_CSSEL        3200        1360 :  N 
+|DBCNTR_DBCNTRCB10_DBCNTRCB10_DSSEL        5800       14110 :  N 
+|DBCNTR_DBCNTRCB10_DBCNTRCB10_ESSEL        6800       20570 :  N 
+|DBCNTR_DBCNTRCB10_DBCNTRCB10_FSSEL        5000       20570 :  N 
+|DBCNTR_DBCNTRCB10_DBCNTRCB10_GSSEL        4600       14110 :  N 
+|DBCNTR_DBCNTRCB10_DBCNTRCB10_NODE3883        4800        4250 :  N 
+|DBCNTR_DBCNTRCB10_DBCNTRCB10_NODE3887        6200       20570 :  N 
+|DBCNTR_DBCNTRCB10_DBCNTRCB10_NODE3903        9000       20570 :  N 
+|DBCNTR_DBCNTRCB10_DBCNTRCB10_SSSEL        8200       20570 :  N 
+|DBCNTR_DBCNTRCB11_DBCNTRCB11_DEEB       32400       14110 :  N 
+|DBCNTR_DBCNTRCB11_DBCNTRCB11_MESRT       32800       14110 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_DAUXSA0       34600        7650 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_DCINLA0       32600       58820 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_DMINLSA0       36000       58820 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_DMSCR4       34600       52360 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_DMSREGSA0       30600       58820 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_DMTR3SA0       34200       23460 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_DMULTSA0       32600       52360 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_ENEMA0       32400       10710 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_ESFWA0       30800       48960 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_ESMSWA0       30800       46070 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_ESSFGWA0       34000       42670 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_MSALUA0       30600       52360 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_NODE35       36200       23460 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_NODE3959       34800       58820 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_NODE4009       31800       46070 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_NODE4017       31800       48960 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_NODE4021       35400       14110 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_NODE4076       34400       26860 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_NODE4078       30600       55420 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_NODE4080       36600       52360 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_NODE4084       33200       42670 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_TEMPHDL2DZD_2_DMSIG3S       30800       42670 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_TEMPHDL3DZD_2_DMSIG2S       32400       26860 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_TEMPHDL4DZD_2_DMSIG1S       35000       26860 :  N 
+|DBCNTR_DBCNTRCB12_DBCNTRCB12_TEMPHDL5DZD_2_DMSIG0S       36000       26860 :  N 
+|DBCNTR_DBCNTRCB1_DBCNTRCB1_MESRTA0       50800       10710 :  N 
+|DBCNTR_DBCNTRCB1_DBCNTRCB1_NODE4556       52200        7650 :  N 
+|DBCNTR_DBCNTRCB1_DBCNTRCB1_NODE4558       50000        7650 :  N 
+|DBCNTR_DBCNTRCB1_DBCNTRCB1_NODE4566       52400       14110 :  N 
+|DBCNTR_DBCNTRCB1_DBCNTRCB1_NODE4648       50000       10710 :  N 
+|DBCNTR_DBCNTRCB1_DBCNTRCB1_NODE4683       52000       14110 :  N 
+|DBCNTR_DBCNTRCB1_DBCNTRCB1_NODE4691       55200        7650 :  N 
+|DBCNTR_DBCNTRCB1_DBCNTRCB1_NODE4699       53200        7650 :  N 
+|DBCNTR_DBCNTRCB1_DBCNTRCB1_NODE4711       51000        7650 :  N 
+|DBCNTR_DBCNTRCB1_DBCNTRCB1_NODE4717       50000       14110 :  N 
+|DBCNTR_DBCNTRCB1_DBCNTRCB1_NODE4719       53400       14110 :  N 
+|DBCNTR_DBCNTRCB1_DBCNTRCB1_NODE4731       53400       10710 :  N 
+|DBCNTR_DBCNTRCB1_DBCNTRCB1_NODE4737       54000       14110 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_MRSRTA0       47200       26860 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE2706       48200       23460 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE2707X1       50400       26860 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE2707X2       50800       26860 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE2708       45800       26860 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE2711       46200       23460 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE3728       54000       20570 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE4584       52800       26860 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE59920       54600       20570 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE61841       50400       23460 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE61842       49200       23460 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE61844       54600       26860 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE61846       48200       26860 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE6279       54000       23460 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE63854       48600       26860 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE63855       50000       26860 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE63856       49600       26860 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE63857       46200       26860 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE793       53400       23460 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE801       45800       23460 :  N 
+|DBCNTR_DBCNTRCB2_DBCNTRCB2_NODE853       51200       23460 :  N 
+|DBCNTR_DBCNTRCB3_DBCNTRCB3_MIB02EIN0       36400       29920 :  N 
+|DBCNTR_DBCNTRCB3_DBCNTRCB3_MIB02EIN1       37400       39610 :  N 
+|DBCNTR_DBCNTRCB3_DBCNTRCB3_MIB02EIN2       34600       33320 :  N 
+|DBCNTR_DBCNTRCB3_DBCNTRCB3_NODE6971       36000       29920 :  N 
+|DBCNTR_DBCNTRCB3_DBCNTRCB3_NODE6974       39400       39610 :  N 
+|DBCNTR_DBCNTRCB3_DBCNTRCB3_NODE6977       37000       33320 :  N 
+|DBCNTR_DBCNTRCB4_DBCNTRCB4_DINO       32200       39610 :  N 
+|DBCNTR_DBCNTRCB4_DBCNTRCB4_MISRT       40200       36210 :  N 
+|DBCNTR_DBCNTRCB4_DBCNTRCB4_NODE35510       36800       36210 :  N 
+|DBCNTR_DBCNTRCB4_DBCNTRCB4_NODE35511       39600       36210 :  N 
+|DBCNTR_DBCNTRCB4_DBCNTRCB4_NODE5396       33200       33320 :  N 
+|DBCNTR_DBCNTRCB4_DBCNTRCB4_NODE5437       35000       39610 :  N 
+|DBCNTR_DBCNTRCB4_DBCNTRCB4_NODE5445       32400       29920 :  N 
+|DBCNTR_DBCNTRCB4_DBCNTRCB4_NODE5560       32400       33320 :  N 
+|DBCNTR_DBCNTRCB4_DBCNTRCB4_NODE5579       34400       39610 :  N 
+|DBCNTR_DBCNTRCB4_DBCNTRCB4_NODE5587       36800       39610 :  N 
+|DBCNTR_DBCNTRCB4_DBCNTRCB4_NODE5591       44800       33320 :  N 
+|DBCNTR_DBCNTRCB4_DBCNTRCB4_NODE5627       37800       36210 :  N 
+|DBCNTR_DBCNTRCB4_DBCNTRCB4_NODE5635       42600       33320 :  N 
+|DBCNTR_DBCNTRCB4_DBCNTRCB4_NODE662       36400       36210 :  N 
+|DBCNTR_DBCNTRCB4_DBCNTRCB4_NODE663       38600       36210 :  N 
+|DBCNTR_DBCNTRCB4_DBCNTRCB4_NODE664       40200       33320 :  N 
+|DBCNTR_DBCNTRCB4_DBCNTRCB4_NODE7218       21800       52360 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DCIMD0       32400        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DCIMD1       47600       33320 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DCIMD2       38200       10710 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DCIMD3       51400       33320 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DCIMD4       32400        1360 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DCIMD5       42200       36210 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DCIMD6       39800        7650 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DGIES0       50800        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DGIES1       53400        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DGIES2       46400       14110 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DGIES2B0       47000        7650 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DGIES3       49200       14110 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DGIES3B0       49400       10710 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DGIES4       44000        7650 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DGIES4B0       48800       10710 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DGIES5       45000       14110 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DGIES5B0       47200       14110 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DGIES6       44000       14110 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_DGIES6B0       48600       14110 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_ENMEA0       45800       10710 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_ESIDECA0       45800       14110 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_ESITERA0       45000        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE11108       42000       10710 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE11145       42800        7650 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE11182       50200        1360 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE11272       44000        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE11273       51400        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE11275       55200        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE11276       46400        7650 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE11277       45200        7650 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE11278       48000        7650 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE11790       47800       10710 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE15899       55000       29920 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE15900       54400       29920 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE1980       38200        7650 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE1981       44400       36210 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE1982       36800        1360 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE1983       41400       10710 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE1984       50400       33320 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE1986       49800       33320 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE1987       50200       29920 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE1989       40800       10710 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE1990       40400       10710 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE1992       35800        1360 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE1993       35000        1360 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE1995       45000       36210 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE1996       42400       39610 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE1998       39000        7650 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE1999       42200        7650 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE2000       36000        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE2002       53400       33320 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE2003       34200        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE2004       51000       33320 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE2005       36400        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE20549       44600       14110 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE20551       44000       10710 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE28191X1       51600        1360 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE28191X2       53600        1360 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE38971       43000       10710 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7133       45600        1360 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7214       57600        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7227       48400       10710 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7333       47000        1360 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7337       44800        1360 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7345       46000        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7357       50200        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7433       51000       29920 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7451       47200        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7459       51800        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7460       53000        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7462       46600        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7463       42400        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7464       48600        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7466       45800        7650 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7468       49600        1360 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7470       49000        1360 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7472       44600        7650 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7473       63200        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7499       49000        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE7531       47800        1360 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE80       58200        4250 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_NODE8666       47800       14110 :  N 
+|DBCNTR_DBCNTRCB5_DBCNTRCB5_TEMPHDL6DZD_2_MDSP       52200       29920 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_DAIPSA0       39200       23460 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_DCIPSA0       39200       17170 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_DEIPSA0       39200       20570 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_DFEASA0       39200       26860 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_DFIPSA0       41200       20570 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_DRINLSA0       35000       20570 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_DSIPSA0       41200       26860 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_ENMRA0X1       46200       20570 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_ENMRA0X2       48200       20570 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_ENMRA0X3       50400       20570 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE24       36800       17170 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE28442       44600       20570 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE2944       41200       17170 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE2950       43400       20570 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE2962       41200       23460 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE2970       41800       23460 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE2983       38200       20570 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE2998       43800       17170 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE3029       45200       26860 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE3031       38800       20570 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE3033       45800       20570 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE3035       44000       20570 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE3037       36200       20570 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE3059       42000       17170 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE3061       34400       17170 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE831       32200       20570 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE841       42400       23460 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE848       44000       23460 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE861       32400       17170 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE869       36600       20570 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE874X1       45800       17170 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE874X2       53800       17170 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE874X3       51800       17170 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE879       52400       20570 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE880       43400       26860 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE886       51200       26860 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_NODE887       47600       17170 :  N 
+|DBCNTR_DBCNTRCB6_DBCNTRCB6_RSITERA0       34000       20570 :  N 
+|DBCNTR_DBCNTRCB7_DBCNTRCB7_DESPI       18600       33320 :  N 
+|DBCNTR_DBCNTRCB7_DBCNTRCB7_NODE11358       20400       33320 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_DCIPDA0         800       71740 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_DEIPDA0        2600       71740 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_DFIPD       10400       74800 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_DMTR3D        7000       71740 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_DMULTS       24800       58820 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_DMULTW        7600       46070 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_DSIPDA0        9000       71740 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_DWRTSP0       12600       52360 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_MDAUX        7600       48960 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_MDCR4        5000       61880 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_MDFL        8200       61880 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_MDFU       11800       65280 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_MDFW       11200       55420 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_MDIOL        2800       58820 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_MDITER        3000       65280 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_MDITR31X1         800       65280 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_MDMSW        9200       68340 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_MDMULT        9800       46070 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_MDSFLGX1        6400       74800 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE29895        9400       65280 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE29896       10400       65280 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE30168         800       61880 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE30169        2600       61880 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE31146        3000       68340 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3239       10200       61880 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3301        6400       71740 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3325        4600       71740 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3340        3000       61880 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3356        5000       65280 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3371        5000       58820 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3381        9600       74800 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3385        7000       68340 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3389        6200       58820 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3445       26000       55420 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3446        6400       68340 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3448        2600       74800 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3452       11000       71740 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3454         800       74800 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3458         800       58820 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3460       26000       58820 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3506       11800       61880 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3512        6200       61880 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3524       24200       58820 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3528        8600       58820 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3532        8600       48960 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3568       11200       61880 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE3582        8600       74800 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE44       11000       58820 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE46        5200       71740 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE48        6000       65280 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE49284       11000       65280 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE49869        9800       52360 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE49870       11000       52360 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE50        5000       68340 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE586        8600       55420 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE587X1        7600       55420 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE587X2        8000       55420 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE588        9600       55420 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_NODE589       10400       55420 :  N 
+|DBCNTR_DBCNTRCB8_DBCNTRCB8_RDIDEC        8200       65280 :  N 
+|DBCNTR_DBCNTRCB9_DBCNTRCB9_TEMPHDL7DZD_2_DSIGMRDY      129800       20570 :  N 
+|DBCNTR_DCIMDXD_0       12200       20570 :  N 
+|DBCNTR_DCIMDXD_1        7600       42670 :  N 
+|DBCNTR_DCIMDXD_2        9200       42670 :  N 
+|DBCNTR_DCIMDXD_3       12600       48960 :  N 
+|DBCNTR_DCIMDXD_4        5800       42670 :  N 
+|DBCNTR_DCIMDXD_5       10600       48960 :  N 
+|DBCNTR_DCIMDXD_6       11000       42670 :  N 
+|DBCNTR_DCINL_0       12600       65280 :  N 
+|DBCNTR_DCIPD_0         800       68340 :  N 
+|DBCNTR_DCIPS_0       33600       14110 :  N 
+|DBCNTR_DCOL_0       55800       23460 :  N 
+|DBCNTR_DCSHDW_0         800       29920 :  N 
+|DBCNTR_DEIPD_0        4400       74800 :  N 
+|DBCNTR_DEIPS_0       20000       65280 :  N 
+|DBCNTR_DEMSRT_0       34200       10710 :  N 
+|DBCNTR_DFEAS_0       14600       68340 :  N 
+|DBCNTR_DFIPS_0       22000       65280 :  N 
+|DBCNTR_DMESRT_0       38200       14110 :  N 
+|DBCNTR_DMINLS_0       28600       58820 :  N 
+|DBCNTR_DMSIG0S_0       37200       26860 :  N 
+|DBCNTR_DMSIG1S_0       22000       48960 :  N 
+|DBCNTR_DMSIG2S_0       32400       23460 :  N 
+|DBCNTR_DMSIG3S_0       20000       48960 :  N 
+|DBCNTR_DMSREGS_0       26600       58820 :  N 
+|DBCNTR_DMTR3S_0       37200       23460 :  N 
+|DBCNTR_DRINLS_0       22200       68340 :  N 
+|DBCNTR_DSIGMRDY_0      117200       17170 :  N 
+|DBCNTR_DSIPD_0       12600       74800 :  N 
+|DBCNTR_DSIPS_0       38000       61880 :  N 
+|DBCNTR_ESFW_0       32600       48960 :  N 
+|DBCNTR_ESIDEC_0       36200       14110 :  N 
+|DBCNTR_ESITER_0       36000        7650 :  N 
+|DBCNTR_ESMSW_0       28600       46070 :  N 
+|DBCNTR_ESSFGW_0       36200       42670 :  N 
+|DBCNTR_ITERIND_0       18200       52360 :  N 
+|DBCNTR_ITERIND_1       22200       55420 :  N 
+|DBCNTR_ITERIND_2       20000       52360 :  N 
+|DBCNTR_ITERIND_3       49600       17170 :  N 
+|DBCNTR_ITERIND_4       17000       42670 :  N 
+|DBCNTR_ITERIND_5       14600       55420 :  N 
+|DBCNTR_ITERIND_6       36200       10710 :  N 
+|DBCNTR_MDSP_0       45800       29920 :  N 
+|DBCNTR_MRSRT_0       48000       29920 :  N 
+|DBCNTR_MSALU_0       16400       52360 :  N 
+|DBCNTR_MULTS_0       24200       55420 :  N 
+|DBCNTR_RSITER_0       32400       36210 :  N 
+|DBCNTR_SMBUSIXD_0       95200       39610 :  N 
+|DBSR_CWLXD_0       16600        1360 :  N 
+|DBSR_CWLXD_1       60400        7650 :  N 
+|DBSR_D16SC1_0       22400       14110 :  N 
+|DBSR_D16SC2_0       20600       17170 :  N 
+|DBSR_D2_SOLTCH1_O_0       57600        7650 :  N 
+|DBSR_D2_SOLTCH1_SO1CB1_SO1CB1_NODE481       64000        7650 :  N 
+|DBSR_D2_SOLTCH1_SO1CB1_SO1CB1_NODE5       62200        7650 :  N 
+|DBSR_D2_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O       63000        7650 :  N 
+|DBSR_D2_SOLTCH2_O1_0       55800        7650 :  N 
+|DBSR_D3_SOLTCH1_O_0       21400        1360 :  N 
+|DBSR_D3_SOLTCH1_SO1CB1_SO1CB1_NODE481       23800        7650 :  N 
+|DBSR_D3_SOLTCH1_SO1CB1_SO1CB1_NODE5       21200        7650 :  N 
+|DBSR_D3_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O       22400        7650 :  N 
+|DBSR_D3_SOLTCH2_O1_0       23400        1360 :  N 
+|DBSR_DBSCFXD_0       57600       10710 :  N 
+|DBSR_DBSRCB1_DBSRCB1_DRBSN       24000       26860 :  N 
+|DBSR_DBSRCB1_DBSRCB1_DSCZ       31600       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_DWL1       10000       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_DWL2       12000       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_DWL4       10000       20570 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE10175       31000       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE10918       28000       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE10920       26400       20570 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE10921       29800       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE10922       27000       20570 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE10925       25400       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE16808       25400       20570 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE16809       25800       20570 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE27167       22600       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE27168       22000       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE286       26800       14110 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE29324       29200       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE300       22000       20570 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE3079       29200       20570 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE3081       30200       20570 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE3082       28000       20570 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE3084       28400       20570 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE3085       29600       20570 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE313       24000       29920 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE34185       22600       26860 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE34186       22000       26860 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE37098       19000       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE37099       24600       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE473       56600       14110 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE475       31800       14110 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE487       14000       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE512       25200       14110 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE514       26200       14110 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE54372       30400       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE54373       26400       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE587       55800       14110 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE71551       28000       10710 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE71552       31800       20570 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE71553       30800       20570 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE71915       21600       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE752       23800       20570 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE8748       31600       10710 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE8749       29800       14110 :  N 
+|DBSR_DBSRCB1_DBSRCB1_NODE9776       27600       14110 :  N 
+|DBSR_DBSRCB1_DBSRCB1_TEMPHDL12DZD_3_DSCNT2       29600       10710 :  N 
+|DBSR_DBSRCB1_DBSRCB1_TEMPHDL13DZD_3_D16SC1       23400       14110 :  N 
+|DBSR_DBSRCB1_DBSRCB1_TEMPHDL14DZD_3_D16SC2       23600       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_TEMPHDL4DZD_3_DLETAXA       27000       17170 :  N 
+|DBSR_DBSRCB1_DBSRCB1_TEMPHDL5DZD_3_DLRTBXA       24200       20570 :  N 
+|DBSR_DBSRCB1_DBSRCB1_TEMPHDL7DZD_3_DSTC3XA       26200       10710 :  N 
+|DBSR_DBSRCB3_DBSRCB3_DBSCYO       29600        4250 :  N 
+|DBSR_DBSRCB3_DBSRCB3_NODE253       27200        4250 :  N 
+|DBSR_DBSRCB3_DBSRCB3_NODE255       32000        4250 :  N 
+|DBSR_DBSRCB3_DBSRCB3_NODE72014       28400        4250 :  N 
+|DBSR_DBSRCB3_DBSRCB3_NODE72015       28000        4250 :  N 
+|DBSR_DBSRCB3_DBSRCB3_NODE73792       31400        7650 :  N 
+|DBSR_DBSRCB3_DBSRCB3_NODE75954       27600        4250 :  N 
+|DBSR_DBSRCB3_DBSRCB3_NODE75955       25400        7650 :  N 
+|DBSR_DBSRCB3_DBSRCB3_NODE75956       25400        4250 :  N 
+|DBSR_DBSRCB3_DBSRCB3_NODE78317       29000        4250 :  N 
+|DBSR_DBSRCB3_DBSRCB3_NODE78318       31400        4250 :  N 
+|DBSR_DBSRCB3_DBSRCB3_NODE78320       29000        7650 :  N 
+|DBSR_DBSRCB5_DBSRCB5_DFSCZ0       22800       10710 :  N 
+|DBSR_DBSRCB5_DBSRCB5_DSLCNT1       20800        4250 :  N 
+|DBSR_DBSRCB5_DBSRCB5_DSLCNT2       13400        4250 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE1549        7600       17170 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE1575        6600       17170 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE173        9400       14110 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE182       16600        7650 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE185       15600        1360 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE193       13600       14110 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE197       16600       14110 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE199       18400       14110 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE201       21000       10710 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE203       21400       23460 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE205       14200        7650 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE227       10400       10710 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE257       24000       23460 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE263       12600        7650 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE265       17200       14110 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE267       12600       10710 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE29       19000       10710 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE301       10000       10710 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE44       12800       14110 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE48       17800       10710 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE50       20400       10710 :  N 
+|DBSR_DBSRCB5_DBSRCB5_NODE69       19600       10710 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL10DZD_2_DLETA       20600       23460 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL11DZD_2_DLRTB       24800       23460 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL15DZD_2_DSMC1NN       11800       14110 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL16DZD_2_DSMC2ANN        5000       17170 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL17DZD_2_DSMC2BNN       14800       14110 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL18DZD_2_DSMC2CNN        7000       17170 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL19DZD_2_DSMC3NN        9200       10710 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL20DZD_2_DSMC4NN        4400       10710 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL21DZD_2_DSMC9NN       14400        1360 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL22DZD_2_DSMC10NN       13000        7650 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL23DZD_2_DSMC11NN       14200        4250 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL24DZD_2_DSMC12NN       16800       10710 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL25DZD_2_DSMC13NN       11600        7650 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL26DZD_2_DSMC14NN        5600        4250 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL27DZD_2_DSMC15NN       14800        4250 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL28DZD_2_DSMC16NN       16000        4250 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL29DZD_2_DSMC17ANN       14800       10710 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL30DZD_2_DSMC17BNN        5000        7650 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL31DZD_2_DSMC17CNN        4400        7650 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL32DZD_2_DSMC18NN        9200        7650 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL33DZD_2_DSMC19NN        5200       10710 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL34DZD_2_DSMC20NN        6200       10710 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL35DZD_2_DSMC21NN        5600       17170 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL36DZD_2_DSMC22NN        8800       14110 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL8DZD_2_DSTC1       14000       14110 :  N 
+|DBSR_DBSRCB5_DBSRCB5_TEMPHDL9DZD_2_DSTC3       20800       14110 :  N 
+|DBSR_DDBSR0XD_0       17800       48960 :  N 
+|DBSR_DDBSRA_0       30200       23460 :  N 
+|DBSR_DFSCZXD_0       27600        1360 :  N 
+|DBSR_DFSCZXDD_0       30000        1360 :  N 
+|DBSR_DLETA_0       20200       55420 :  N 
+|DBSR_DLETAXA_0       20800       20570 :  N 
+|DBSR_DLPOS_0       63600       20570 :  N 
+|DBSR_DLPOSXD_0       26600        7650 :  N 
+|DBSR_DLRTB_0       22000       23460 :  N 
+|DBSR_DLRTBXA_0       22600       20570 :  N 
+|DBSR_DLSHFT_0       59400       14110 :  N 
+|DBSR_DSCLD2_0       19000       20570 :  N 
+|DBSR_DSCNT2_0       24800       10710 :  N 
+|DBSR_DSCRD_0       95200       20570 :  N 
+|DBSR_DSL0XD_0       25400        1360 :  N 
+|DBSR_DSL_DSLOLMUX_I1        6000        4250 :  N 
+|DBSR_DSL_DSLOLMUX_I2       12800        4250 :  N 
+|DBSR_DSL_DSLOLMUX_I3       22600        4250 :  N 
+|DBSR_DSL_DSLOLMUX_I4        6600        4250 :  N 
+|DBSR_DSL_DSLOLMUX_I5       11600        4250 :  N 
+|DBSR_DSL_DSLOLMUX_I6       21600        4250 :  N 
+|DBSR_DSL_LA1         800        4250 :  N 
+|DBSR_DSL_LA2        9800        1360 :  N 
+|DBSR_DSL_LA3       19000        4250 :  N 
+|DBSR_DSLM1XD_0       19000        7650 :  N 
+|DBSR_DSMC10NN_0        9800        4250 :  N 
+|DBSR_DSMC11NN_0        7800        4250 :  N 
+|DBSR_DSMC12NN_0       17000        7650 :  N 
+|DBSR_DSMC13NN_0        9800        7650 :  N 
+|DBSR_DSMC14NN_0        2800        4250 :  N 
+|DBSR_DSMC15NN_0       14600        7650 :  N 
+|DBSR_DSMC16NN_0       17000        4250 :  N 
+|DBSR_DSMC17ANN_0        2600        7650 :  N 
+|DBSR_DSMC17BNN_0        5600        7650 :  N 
+|DBSR_DSMC17CNN_0         800        7650 :  N 
+|DBSR_DSMC18NN_0        7400        7650 :  N 
+|DBSR_DSMC19NN_0        2600       10710 :  N 
+|DBSR_DSMC1NN_0         800       14110 :  N 
+|DBSR_DSMC20NN_0         800       10710 :  N 
+|DBSR_DSMC21NN_0         800       17170 :  N 
+|DBSR_DSMC22NN_0        6800       14110 :  N 
+|DBSR_DSMC2ANN_0        2800       20570 :  N 
+|DBSR_DSMC2BNN_0        2800       17170 :  N 
+|DBSR_DSMC2CNN_0        8000       17170 :  N 
+|DBSR_DSMC3NN_0        7400       10710 :  N 
+|DBSR_DSMC4NN_0        2600       14110 :  N 
+|DBSR_DSMC9NN_0       12000        1360 :  N 
+|DBSR_DSTC1_0       10000       14110 :  N 
+|DBSR_DSTC1XA_0       21400       14110 :  N 
+|DBSR_DSTC3_0       19000       14110 :  N 
+|DBSR_DSTC3XA_0       21600       10710 :  N 
+|DBSR_IBSWAPXD_0       85000       23460 :  N 
+|DBSR_RBUFF_I1       16200       20570 :  N 
+|DBSR_RBUFF_I2       15800       20570 :  N 
+|DBSR_RBUFF_I3       16600       20570 :  N 
+|DBSR_RBUFF_I4       15200       20570 :  N 
+|DBSR_RBUFF_LA0       17000       20570 :  N 
+|DBSR_RBUFF_LA1       17400       17170 :  N 
+|DBSR_RBUFF_LA2       16000       17170 :  N 
+|DBSR_RBUFF_LA3       18000       20570 :  N 
+|DBSR_RBUFF_LA4       14600       17170 :  N 
+|DFLGR_CWLXD_0       55800       26860 :  N 
+|DFLGR_CWLXD_1       67400       23460 :  N 
+|DFLGR_D18_SOLTCH1_O_0      115000       20570 :  N 
+|DFLGR_D18_SOLTCH1_SO1CB1_SO1CB1_NODE481      108400       26860 :  N 
+|DFLGR_D18_SOLTCH1_SO1CB1_SO1CB1_NODE5      108400       29920 :  N 
+|DFLGR_D18_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O      109400       26860 :  N 
+|DFLGR_D18_SOLTCH2_O1_0      115000       17170 :  N 
+|DFLGR_D19_SOLTCH1_O_0      108400       17170 :  N 
+|DFLGR_D19_SOLTCH1_SO1CB1_SO1CB1_NODE481      113800       17170 :  N 
+|DFLGR_D19_SOLTCH1_SO1CB1_SO1CB1_NODE5      112200       20570 :  N 
+|DFLGR_D19_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O      112400       17170 :  N 
+|DFLGR_D19_SOLTCH2_O1_0      110400       17170 :  N 
+|DFLGR_D21MDOTA15XD_0       18600       29920 :  N 
+|DFLGR_D21MDOTA31XD_0       12000       26860 :  N 
+|DFLGR_D21MDOTA7XD_0       14600       46070 :  N 
+|DFLGR_D22C1_0       68400       33320 :  N 
+|DFLGR_D22C2_0       70800       33320 :  N 
+|DFLGR_D23FLXA_0       86000       71740 :  N 
+|DFLGR_DAC4_0       51800       36210 :  N 
+|DFLGR_DACXA_0       26000       65280 :  N 
+|DFLGR_DACXD_0       24200       65280 :  N 
+|DFLGR_DAF_0       53600       42670 :  N 
+|DFLGR_DAFXD_0       51400       42670 :  N 
+|DFLGR_DAMXD_0       25200       68340 :  N 
+|DFLGR_DASCJXD_0       97200       26860 :  N 
+|DFLGR_DBSFL_0       88000       61880 :  N 
+|DFLGR_DBSWAP_0       93000       65280 :  N 
+|DFLGR_DBSWAPXD_0       86000       61880 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I1       72600       52360 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I10       73200       52360 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I11       84200       55420 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I12       86800       55420 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I13       90400       46070 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I14       92200       55420 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I15       92600       46070 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I16       78200       52360 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I17       94600       52360 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I18       92400       52360 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I2       86400       55420 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I3       89000       55420 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I4       90800       48960 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I5       94600       55420 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I6       94600       48960 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I7       94800       46070 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I8       80600       52360 :  N 
+|DFLGR_DCFLGS_DNCFLGNNMUX_I9       92400       48960 :  N 
+|DFLGR_DCFLGS_I1       70400       52360 :  N 
+|DFLGR_DCFLGS_I2       71000       52360 :  N 
+|DFLGR_DCFLGS_I3       76200       48960 :  N 
+|DFLGR_DCFLGS_I4       89600       55420 :  N 
+|DFLGR_DCFLGS_I5       91200       52360 :  N 
+|DFLGR_DCFLGS_I6       88800       52360 :  N 
+|DFLGR_DCFLGXD_0       50000       52360 :  N 
+|DFLGR_DCPL0XD_0      100200       71740 :  N 
+|DFLGR_DCPL1XD_0       95200       71740 :  N 
+|DFLGR_DCPXA_0       37800       65280 :  N 
+|DFLGR_DCPXD_0       35800       65280 :  N 
+|DFLGR_DCR_0       50200       58820 :  N 
+|DFLGR_DCR_1       53800       58820 :  N 
+|DFLGR_DDECJXD_0      105400       29920 :  N 
+|DFLGR_DDF_0       62200       42670 :  N 
+|DFLGR_DDFXA_0       66600       46070 :  N 
+|DFLGR_DEMXD_0       26800       42670 :  N 
+|DFLGR_DETXD_0       46000       52360 :  N 
+|DFLGR_DFLAGS_I1       19600       55420 :  N 
+|DFLGR_DFLAGS_I2       19000       55420 :  N 
+|DFLGR_DFLAGS_I3       18400       55420 :  N 
+|DFLGR_DFLAGS_I4       16600       55420 :  N 
+|DFLGR_DFLAGS_IN1       48000       58820 :  N 
+|DFLGR_DFLAGS_IN10       39400       52360 :  N 
+|DFLGR_DFLAGS_IN11       24200       71740 :  N 
+|DFLGR_DFLAGS_IN12       24200       46070 :  N 
+|DFLGR_DFLAGS_IN13       42800       61880 :  N 
+|DFLGR_DFLAGS_IN14       31600       61880 :  N 
+|DFLGR_DFLAGS_IN15       25200       52360 :  N 
+|DFLGR_DFLAGS_IN16       18200       58820 :  N 
+|DFLGR_DFLAGS_IN17       22000       71740 :  N 
+|DFLGR_DFLAGS_IN18       20400       68340 :  N 
+|DFLGR_DFLAGS_IN19       42600       42670 :  N 
+|DFLGR_DFLAGS_IN20       56800       68340 :  N 
+|DFLGR_DFLAGS_IN21       14800       65280 :  N 
+|DFLGR_DFLAGS_IN22       50000       48960 :  N 
+|DFLGR_DFLAGS_IN23       39600       42670 :  N 
+|DFLGR_DFLAGS_IN24       58800       52360 :  N 
+|DFLGR_DFLAGS_IN26       58800       42670 :  N 
+|DFLGR_DFLAGS_IN3       48200       68340 :  N 
+|DFLGR_DFLAGS_IN4       56800       65280 :  N 
+|DFLGR_DFLAGS_IN5       42800       68340 :  N 
+|DFLGR_DFLAGS_IN6       58400       55420 :  N 
+|DFLGR_DFLAGS_IN7       29200       71740 :  N 
+|DFLGR_DFLAGS_IN8       50600       61880 :  N 
+|DFLGR_DFLAGS_IN9       24200       61880 :  N 
+|DFLGR_DFLAGS_LA0       59400       42670 :  N 
+|DFLGR_DFLAGS_LA1       57400       65280 :  N 
+|DFLGR_DFLAGS_LA10       48400       58820 :  N 
+|DFLGR_DFLAGS_LA11       40000       52360 :  N 
+|DFLGR_DFLAGS_LA12       25000       46070 :  N 
+|DFLGR_DFLAGS_LA13       18600       58820 :  N 
+|DFLGR_DFLAGS_LA14       45600       42670 :  N 
+|DFLGR_DFLAGS_LA15       15800       65280 :  N 
+|DFLGR_DFLAGS_LA16       50600       48960 :  N 
+|DFLGR_DFLAGS_LA17       18600       23460 :  N 
+|DFLGR_DFLAGS_LA18       20400       29920 :  N 
+|DFLGR_DFLAGS_LA19       18600       26860 :  N 
+|DFLGR_DFLAGS_LA2       48600       68340 :  N 
+|DFLGR_DFLAGS_LA20       25800       61880 :  N 
+|DFLGR_DFLAGS_LA21       24600       71740 :  N 
+|DFLGR_DFLAGS_LA22       43200       61880 :  N 
+|DFLGR_DFLAGS_LA23       32200       61880 :  N 
+|DFLGR_DFLAGS_LA24       25800       52360 :  N 
+|DFLGR_DFLAGS_LA25       22400       71740 :  N 
+|DFLGR_DFLAGS_LA26       18600       68340 :  N 
+|DFLGR_DFLAGS_LA3       43400       68340 :  N 
+|DFLGR_DFLAGS_LA4       58800       55420 :  N 
+|DFLGR_DFLAGS_LA5       29600       71740 :  N 
+|DFLGR_DFLAGS_LA6       49800       65280 :  N 
+|DFLGR_DFLAGS_LA7       57400       68340 :  N 
+|DFLGR_DFLAGS_LA8       40400       42670 :  N 
+|DFLGR_DFLAGS_LA9       59200       52360 :  N 
+|DFLGR_DFLAGS_TD0       50400       68340 :  N 
+|DFLGR_DFLAGS_TD1       41800       68340 :  N 
+|DFLGR_DFLAGS_TD10       21000       71740 :  N 
+|DFLGR_DFLAGS_TD11       21000       68340 :  N 
+|DFLGR_DFLAGS_TD12       39800       58820 :  N 
+|DFLGR_DFLAGS_TD13       38400       52360 :  N 
+|DFLGR_DFLAGS_TD14       57600       42670 :  N 
+|DFLGR_DFLAGS_TD15       55800       65280 :  N 
+|DFLGR_DFLAGS_TD16       27200       46070 :  N 
+|DFLGR_DFLAGS_TD17       18200       61880 :  N 
+|DFLGR_DFLAGS_TD18       38400       42670 :  N 
+|DFLGR_DFLAGS_TD19       18200       65280 :  N 
+|DFLGR_DFLAGS_TD2       57400       55420 :  N 
+|DFLGR_DFLAGS_TD20       48800       48960 :  N 
+|DFLGR_DFLAGS_TD21       38400       46070 :  N 
+|DFLGR_DFLAGS_TD22       57600       52360 :  N 
+|DFLGR_DFLAGS_TD23       55800       68340 :  N 
+|DFLGR_DFLAGS_TD3       28200       71740 :  N 
+|DFLGR_DFLAGS_TD4       49600       61880 :  N 
+|DFLGR_DFLAGS_TD5       24600       61880 :  N 
+|DFLGR_DFLAGS_TD6       24200       68340 :  N 
+|DFLGR_DFLAGS_TD7       41800       61880 :  N 
+|DFLGR_DFLAGS_TD8       35200       61880 :  N 
+|DFLGR_DFLAGS_TD9       24200       52360 :  N 
+|DFLGR_DFLGRCB10_DFLGRCB10_NODE3606       88000       68340 :  N 
+|DFLGR_DFLGRCB10_DFLGRCB10_TEMPHDL5DZD_2_D23FLXA       86400       68340 :  N 
+|DFLGR_DFLGRCB10_DFLGRCB10_TEMPHDL6DZD_2_YLLXA       87000       68340 :  N 
+|DFLGR_DFLGRCB11_DFLGRCB11_NODE3627       82400       42670 :  N 
+|DFLGR_DFLGRCB11_DFLGRCB11_NODE3629       83600       48960 :  N 
+|DFLGR_DFLGRCB11_DFLGRCB11_NODE3631       80200       46070 :  N 
+|DFLGR_DFLGRCB11_DFLGRCB11_TEMPHDL10DZD_2_DSFXD       82800       46070 :  N 
+|DFLGR_DFLGRCB11_DFLGRCB11_TEMPHDL11DZD_2_DSFX1XD       83800       46070 :  N 
+|DFLGR_DFLGRCB11_DFLGRCB11_TEMPHDL12DZD_2_DSFX2XD       84200       48960 :  N 
+|DFLGR_DFLGRCB12_DFLGRCB12_DXLD0       67400       33320 :  N 
+|DFLGR_DFLGRCB12_DFLGRCB12_NODE3649       68000       33320 :  N 
+|DFLGR_DFLGRCB14_DFLGRCB14_D23FL       58200       58820 :  N 
+|DFLGR_DFLGRCB14_DFLGRCB14_NODE3666       78200       71740 :  N 
+|DFLGR_DFLGRCB14_DFLGRCB14_NODE3668       82800       68340 :  N 
+|DFLGR_DFLGRCB14_DFLGRCB14_TEMPHDL2DZD_2_DFRZXDD       63000       58820 :  N 
+|DFLGR_DFLGRCB14_DFLGRCB14_YLLA       59000       58820 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_DAC       29600       74800 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_DIOEN       53400       68340 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_DKEN       12600       71740 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_DKWT       79000       74800 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_DPVINN       78800       58820 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_DRF       83600       74800 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_DVMIRET       53200       61880 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE1049       78200       58820 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE1053       51600       68340 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE1055       16400       58820 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE109593       47600       71740 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE109594       55400       61880 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE109595       55000       61880 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE119       52200       68340 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE179       55800       74800 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE311       52200       61880 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE4317       57000       74800 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE4408       14400       71740 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE599       64800       61880 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE60       54600       71740 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE61       46200       71740 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE627       53200       55420 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE63       53000       74800 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE633       47800       42670 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE639       35000       68340 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE67       56400       74800 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE671       24200       42670 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE687       55200       68340 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE693       39400       74800 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE695       31600       68340 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE699       34000       68340 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE701       34400       68340 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE815       37800       68340 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE817       32000       68340 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE821       47000       71740 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE823       50200       74800 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_NODE907       73600       55420 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL27DZD_2_SFLGTMP       35600       68340 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP0       52200       52360 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP1       43400       48960 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP10       45200       68340 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP11       62400       55420 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP12       38200       71740 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP13       51800       65280 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP14       29800       65280 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP15       42400       71740 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP16       45000       61880 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP17       31800       65280 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP2       47800       46070 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP3       51800       46070 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP4       41200       46070 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP5       62400       48960 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP6       57800       71740 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP7       60200       46070 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP8       61200       61880 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL28DZD_3_SFLGTMP9       48200       71740 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL30DZD_2_DCPXD       33800       65280 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL31DZD_2_DVIPXD       43800       65280 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL32DZD_2_DVIFXD       44400       71740 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL33DZD_2_DACXD       28000       65280 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL34DZD_2_DVMXD       45800       65280 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL35DZD_2_DRFXD       33400       71740 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL36DZD_2_DNTXXD       62400       52360 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL37DZD_2_DIOLXD0       50800       74800 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL37DZD_2_DIOLXD1       48200       74800 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL38DZD_2_DOFLGXD       63000       61880 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL39DZD_2_DDF       62200       46070 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL40DZD_2_DIFXD       57600       74800 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL41DZD_2_DTFLG       64400       48960 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL42DZD_2_DSGNFXD       44000       46070 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL43DZD_2_DZFLGXD       49800       46070 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL44DZD_2_DAFXD       48400       42670 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL45DZD_2_DPFLGXD       41400       48960 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL46DZD_2_DCFLGXD       48000       52360 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL47DZD_2_DVMEXD       51200       55420 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL48DZD_2_DPVIXD       49200       55420 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL49DZD_2_DPEXD       44400       55420 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL50DZD_2_DMPXD       41200       58820 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL51DZD_2_DEMXD       24800       42670 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL52DZD_2_DTSSXD       20400       58820 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL53DZD_2_DETXD       44000       52360 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL54DZD_2_DI2B       14400       61880 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL55DZD_2_DWP       31600       71740 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL56DZD_2_DAMXD       29600       68340 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL57DZD_2_DHLTXD       26400       71740 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL58DZD_2_DKWTXD       26600       55420 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL59DZD_2_DKENXD       15200       71740 :  N 
+|DFLGR_DFLGRCB15_DFLGRCB15_TEMPHDL60DZD_2_DPG       19200       71740 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_DEBDAT0         800       26860 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_DEBDAT1        4000       33320 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_DEBDAT10        6400       33320 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_DEBDAT2         800       33320 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_DEBDAT3        7600       36210 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_DEBDAT4         800       39610 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_DEBDAT5        4400       39610 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_DEBDAT6        3400       36210 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_DEBDAT7        1600       33320 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_DEBDAT8         800       36210 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_DEBDAT9         800       23460 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE42        8200       33320 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5153       12000       36210 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5154        8200       29920 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5157        6400       39610 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5158        6400       36210 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5166        9800       36210 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5281        9200       29920 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5306        7800       29920 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5310        7400       39610 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5312        9000       39610 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5318        8800       33320 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5320        9600       39610 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5330        9200       33320 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5366        8000       39610 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5372       10000       39610 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5376        4400       36210 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5390        2800       36210 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5394        3600       39610 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5396        2800       39610 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5402        3000       33320 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5408        4400       29920 :  N 
+|DFLGR_DFLGRCB16_DFLGRCB16_NODE5410       11200       36210 :  N 
+|DFLGR_DFLGRCB17_DFLGRCB17_BTMXDNN        3800       46070 :  N 
+|DFLGR_DFLGRCB19_DFLGRCB19_IDECINL6       13600       39610 :  N 
+|DFLGR_DFLGRCB20_DFLGRCB20_TEMPHDL24DZD_2_DMSDET       85200       71740 :  N 
+|DFLGR_DFLGRCB21_DFLGRCB21_TEMPHDL4DZD_2_D22C2       70400       33320 :  N 
+|DFLGR_DFLGRCB3_DFLGRCB3_TEMPHDL1DZD_2_DFRZX1D       61400       42670 :  N 
+|DFLGR_DFLGRCB4_DFLGRCB4_DMLSD       22800       29920 :  N 
+|DFLGR_DFLGRCB4_DFLGRCB4_NODE381       22200       29920 :  N 
+|DFLGR_DFLGRCB4_DFLGRCB4_NODE382       20600       26860 :  N 
+|DFLGR_DFLGRCB5_DFLGRCB5_TEMPHDL17DZD_2_ZBA2       83400       39610 :  N 
+|DFLGR_DFLGRCB5_DFLGRCB5_TEMPHDL18DZD_2_ZBT6       83000       26860 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DAFIN       54600       39610 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DCFLGN13       88600       46070 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DCFLGN14       88400       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DCFLGN16       82800       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DCFLGN17       90800       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DCFLGN18       90200       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DCFLGN19       91400       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DCFLGN20       91400       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DCFLGN4       79800       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DEO        2800       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT0       39400       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT1       38400       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT10       57400       46070 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT11       61200       65280 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT12       51000       71740 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT13       40000       68340 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT14       65000       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT16       36000       71740 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT17       47800       61880 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT18       28400       61880 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT19       24800       74800 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT2       29600       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT20       40000       61880 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT21       36200       61880 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT29       27800       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT3       20400       61880 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT30       18600       71740 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT31       23000       74800 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT4       38400       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT5       19400       65280 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT6       52600       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT7       39400       46070 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT8       55800       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFLGDAT9       55800       71740 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFXLD       31600       39610 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFXLDNN       29000       39610 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFXRB       29600       33320 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFXUD       22400       36210 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DFXUDNN       30600       36210 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DMULF       80800       74800 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DOFLGN10       86800       58820 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DOFLGN11       81000       61880 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DOFLGN7       78200       61880 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DOFLGN8       85600       65280 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DOFLGN9       88000       58820 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DRMBFLGD       24200       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DRMBFLGDNN       56400       58820 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DSGN       23000       33320 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DSGNFCNT       72600       42670 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DZFLGN13       70200       61880 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DZFLGN14       68200       58820 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DZFLGN15       72200       61880 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DZFLGN16       77400       42670 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DZFLGN17       77400       61880 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DZFLGN18       75000       46070 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DZFLGN6       67800       65280 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DZFLGN7       69200       61880 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_DZFLGN8       74800       65280 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE107429      110800       29920 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE107430       81600       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE15069       67000       65280 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE15071       69800       65280 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE15338       75400       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE15341       76600       46070 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE15342       77400       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE17786       47800       39610 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE17787       48400       39610 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE19233       27800       61880 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE200       81200       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE205       86800       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE20663       35600       71740 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE2112        5000       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE2113        6200       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE2163       79200       71740 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE23861       24400       36210 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE23862       21200       36210 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE23863       20600       36210 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE26091       74600       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE26092       55800       61880 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE26093        6600       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE28192       94400       74800 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE346       36400       46070 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE347       34400       46070 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE364       19200       61880 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE368       21000       61880 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE370       37600       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE372        6800       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE3879       38400       58820 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE3889       28600       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE3899       35200       74800 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE3913       27000       68340 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE3919       24200       74800 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE39711       82000       71740 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE3975       82000       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE3986       27800       36210 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE3990       26000       36210 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE3994       18600       39610 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE3998       18600       36210 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4002       20400       39610 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4006       26000       39610 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4020       75600       46070 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4022       77200       46070 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4050        6000       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4052        2600       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4067       27800       39610 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4083       51000       36210 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4136       62000       71740 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4142       64200       71740 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4148       66000       46070 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE422       87400       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4775       36000       46070 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4776       35400       46070 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4778       34200       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4797       83400       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4799       84000       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4875       78600       71740 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4885       95200       29920 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4954       26400       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4960      112200       29920 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4970       95600       29920 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE4972       96200       29920 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5008       82000       74800 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5014       16600       42670 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5024       80200       61880 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5026       86200       58820 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5028       90800       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5030       89800       58820 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5032       92000       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5084       28800       36210 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5140       55800       46070 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5142       32600       46070 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5144       34400       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5146       28000       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5148       35600       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5152       84200       65280 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5153       82200       61880 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5154       89800       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5156       86800       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5158       83800       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5230       48000       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5238       40400       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5248       39600       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5264       43400       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5276       45400       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5330       40000       71740 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5344       84600       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5358       85000       58820 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5370       88800       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5434       49000       39610 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5494       30400       33320 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5496       30800       39610 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5528       53800       36210 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5536       53400       39610 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5568        4600       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5582       21000       33320 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5704        4000       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5705        3600       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5721        2600       46070 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5737        5000       52360 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5761       63000       71740 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5762       40800       48960 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5763       37800       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5764       36000       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE5835       55800       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE76178       79200       68340 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_NODE76179       81000       68340 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_TEMPHDL13DZD_2_DPFLG       45800       39610 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_TEMPHDL14DZD_2_DTFLGXA      111200       29920 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_TEMPHDL15DZD_2_DGTWL       82800       74800 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_TEMPHDL16DZD_3_DGTWL       80000       71740 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_TEMPHDL20DZD_2_ZBD10       61400       71740 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_TEMPHDL21DZD_3_DLASN       85000       68340 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_TEMPHDL25DZD_2_DIF       65600       71740 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_TEMPHDL26DZD_2_DDFXA       64000       46070 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_TEMPHDL7DZD_2_DZR       92800       58820 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_TEMPHDL8DZD_2_DGT       78200       74800 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_ZBC3       78200       55420 :  N 
+|DFLGR_DFLGRCB6_DFLGRCB6_ZBC8       85000       42670 :  N 
+|DFLGR_DFLGRCB7_DFLGRCB7_DZFLGN1       67000       61880 :  N 
+|DFLGR_DFLGRCB7_DFLGRCB7_DZFLGN2       59200       65280 :  N 
+|DFLGR_DFLGRCB7_DFLGRCB7_DZFLGN3       70400       65280 :  N 
+|DFLGR_DFLGRCB7_DFLGRCB7_DZRXA       67000       58820 :  N 
+|DFLGR_DFLGRCB7_DFLGRCB7_NODE162       27200       26860 :  N 
+|DFLGR_DFLGRCB7_DFLGRCB7_NODE214       60600       61880 :  N 
+|DFLGR_DFLGRCB7_DFLGRCB7_NODE220       57400       61880 :  N 
+|DFLGR_DFLGRCB7_DFLGRCB7_NODE236       57800       61880 :  N 
+|DFLGR_DFLGRCB7_DFLGRCB7_TEMPHDL9DZD_3_DGT       58600       61880 :  N 
+|DFLGR_DFLGRCB8_DFLGRCB8_TEMPHDL3DZD_2_D22C1       69600       36210 :  N 
+|DFLGR_DFLGRCB9_DFLGRCB9_NODE3588       63800       58820 :  N 
+|DFLGR_DFLGRCB9_DFLGRCB9_TEMPHDL22DZD_2_DLMTYP       65000       58820 :  N 
+|DFLGR_DFLGRCB9_DFLGRCB9_TEMPHDL23DZD_3_DLMTYP       64400       58820 :  N 
+|DFLGR_DFRZX1D_0       61000       58820 :  N 
+|DFLGR_DFRZXDD_0       65200       61880 :  N 
+|DFLGR_DGT_0       78200       68340 :  N 
+|DFLGR_DGTWL_0       82800       71740 :  N 
+|DFLGR_DHLTXD_0       27600       74800 :  N 
+|DFLGR_DI2B_0       16200       61880 :  N 
+|DFLGR_DIF_0       65000       74800 :  N 
+|DFLGR_DIFXD_0       59400       74800 :  N 
+|DFLGR_DIMULXD_0       58000       48960 :  N 
+|DFLGR_DIMULXDD_0       55800       48960 :  N 
+|DFLGR_DIOENXD_0       61400       68340 :  N 
+|DFLGR_DIOL_0       52800       71740 :  N 
+|DFLGR_DIOL_1       44000       74800 :  N 
+|DFLGR_DIOLXD_0       53800       74800 :  N 
+|DFLGR_DIOLXD_1       46000       74800 :  N 
+|DFLGR_DKENXD_0       16400       71740 :  N 
+|DFLGR_DKWTXD_0       28600       55420 :  N 
+|DFLGR_DLALUXD_0       90800       68340 :  N 
+|DFLGR_DLALUXDD_0       92200       74800 :  N 
+|DFLGR_DLASN_0       85400       68340 :  N 
+|DFLGR_DLBSXD_0       93200       61880 :  N 
+|DFLGR_DLMTYP_0       65800       58820 :  N 
+|DFLGR_DLPOSXD_0       81200       58820 :  N 
+|DFLGR_DMFD0T_0         800       48960 :  N 
+|DFLGR_DMFD1T_0         800       46070 :  N 
+|DFLGR_DMFD23T_0        1800       42670 :  N 
+|DFLGR_DMFEN_0       93400       71740 :  N 
+|DFLGR_DMFENXD_0       93000       68340 :  N 
+|DFLGR_DMFENXDD_0       88600       68340 :  N 
+|DFLGR_DMLD1_0       88000       71740 :  N 
+|DFLGR_DMLD2_0       89800       71740 :  N 
+|DFLGR_DMLF_0       91600       71740 :  N 
+|DFLGR_DMPXD_0       43400       58820 :  N 
+|DFLGR_DMSCR4XD_0       32200       55420 :  N 
+|DFLGR_DMSDET_0       85800       74800 :  N 
+|DFLGR_DMSW_0       46200       55420 :  N 
+|DFLGR_DMSW_1       45600       58820 :  N 
+|DFLGR_DMSW_10       14600       74800 :  N 
+|DFLGR_DMSW_11       18600       74800 :  N 
+|DFLGR_DMSW_2       28800       42670 :  N 
+|DFLGR_DMSW_3       22200       58820 :  N 
+|DFLGR_DMSW_4       42000       52360 :  N 
+|DFLGR_DMSW_5       12600       61880 :  N 
+|DFLGR_DMSW_6       31600       74800 :  N 
+|DFLGR_DMSW_7       27800       68340 :  N 
+|DFLGR_DMSW_8       25600       74800 :  N 
+|DFLGR_DMSW_9       28600       52360 :  N 
+|DFLGR_DMULFXD_0       88000       74800 :  N 
+|DFLGR_DMULFXDD_0       90000       74800 :  N 
+|DFLGR_DMULXD_0       60200       48960 :  N 
+|DFLGR_DMULXDD_0       60600       55420 :  N 
+|DFLGR_DMZD0T_0         800       52360 :  N 
+|DFLGR_DMZD1T_0        2600       55420 :  N 
+|DFLGR_DMZD23T_0         800       55420 :  N 
+|DFLGR_DNMPRXD_0        5600       46070 :  N 
+|DFLGR_DNTX_0       66400       52360 :  N 
+|DFLGR_DNTXXD_0       64400       52360 :  N 
+|DFLGR_DOFLGS_DAC15MUX_I1       28400       29920 :  N 
+|DFLGR_DOFLGS_DAC15MUX_I2       30200       29920 :  N 
+|DFLGR_DOFLGS_DAC15MUX_I3       25400       29920 :  N 
+|DFLGR_DOFLGS_DAC15MUX_I4       27200       29920 :  N 
+|DFLGR_DOFLGS_DAC15MUX_I5       29200       29920 :  N 
+|DFLGR_DOFLGS_DAC15MUX_I6       26000       29920 :  N 
+|DFLGR_DOFLGS_DASNNNMUX_I1       25400       26860 :  N 
+|DFLGR_DOFLGS_DASNNNMUX_I2       30200       26860 :  N 
+|DFLGR_DOFLGS_DASNNNMUX_I3       27000       33320 :  N 
+|DFLGR_DOFLGS_DASNNNMUX_I4       25800       26860 :  N 
+|DFLGR_DOFLGS_DASNNNMUX_I5       29200       26860 :  N 
+|DFLGR_DOFLGS_DASNNNMUX_I6       26000       33320 :  N 
+|DFLGR_DOFLGS_DCYOTMUX_I1       30800       29920 :  N 
+|DFLGR_DOFLGS_DCYOTMUX_I2       31800       26860 :  N 
+|DFLGR_DOFLGS_DCYOTMUX_I3       29200       36210 :  N 
+|DFLGR_DOFLGS_DCYOTMUX_I4       31200       29920 :  N 
+|DFLGR_DOFLGS_DCYOTMUX_I5       30800       26860 :  N 
+|DFLGR_DOFLGS_DCYOTMUX_I6       29600       36210 :  N 
+|DFLGR_DOFLGS_DNOFLGMUX_I1       72000       55420 :  N 
+|DFLGR_DOFLGS_DNOFLGMUX_I10       88600       65280 :  N 
+|DFLGR_DOFLGS_DNOFLGMUX_I11       82200       65280 :  N 
+|DFLGR_DOFLGS_DNOFLGMUX_I12       79800       58820 :  N 
+|DFLGR_DOFLGS_DNOFLGMUX_I2       83000       61880 :  N 
+|DFLGR_DOFLGS_DNOFLGMUX_I3       88000       65280 :  N 
+|DFLGR_DOFLGS_DNOFLGMUX_I4       90800       61880 :  N 
+|DFLGR_DOFLGS_DNOFLGMUX_I5       83600       65280 :  N 
+|DFLGR_DOFLGS_DNOFLGMUX_I6       80800       58820 :  N 
+|DFLGR_DOFLGS_DNOFLGMUX_I7       72400       55420 :  N 
+|DFLGR_DOFLGS_DNOFLGMUX_I8       89800       61880 :  N 
+|DFLGR_DOFLGS_DNOFLGMUX_I9       83400       61880 :  N 
+|DFLGR_DOFLGS_DSGNFINMUX_I1       52200       39610 :  N 
+|DFLGR_DOFLGS_DSGNFINMUX_I2       49600       39610 :  N 
+|DFLGR_DOFLGS_DSGNFINMUX_I3       51000       39610 :  N 
+|DFLGR_DOFLGS_DSGNFINMUX_I4       50000       39610 :  N 
+|DFLGR_DOFLGS_I1       13000       23460 :  N 
+|DFLGR_DOFLGS_I10       28200       23460 :  N 
+|DFLGR_DOFLGS_I11       14600       52360 :  N 
+|DFLGR_DOFLGS_I12       55800       58820 :  N 
+|DFLGR_DOFLGS_I13       84400       61880 :  N 
+|DFLGR_DOFLGS_I14       14200       23460 :  N 
+|DFLGR_DOFLGS_I15       25400       23460 :  N 
+|DFLGR_DOFLGS_I16        1200       23460 :  N 
+|DFLGR_DOFLGS_I17       26800       26860 :  N 
+|DFLGR_DOFLGS_I18       50600       42670 :  N 
+|DFLGR_DOFLGS_I19       52800       39610 :  N 
+|DFLGR_DOFLGS_I2       25000       33320 :  N 
+|DFLGR_DOFLGS_I20       68600       55420 :  N 
+|DFLGR_DOFLGS_I21       91600       65280 :  N 
+|DFLGR_DOFLGS_I22       92800       61880 :  N 
+|DFLGR_DOFLGS_I23       63600       39610 :  N 
+|DFLGR_DOFLGS_I24       83000       58820 :  N 
+|DFLGR_DOFLGS_I25       70200       55420 :  N 
+|DFLGR_DOFLGS_I26       89800       65280 :  N 
+|DFLGR_DOFLGS_I27       91200       61880 :  N 
+|DFLGR_DOFLGS_I28       78200       65280 :  N 
+|DFLGR_DOFLGS_I29       76200       55420 :  N 
+|DFLGR_DOFLGS_I3       22200       39610 :  N 
+|DFLGR_DOFLGS_I30       70200       46070 :  N 
+|DFLGR_DOFLGS_I31       71800       46070 :  N 
+|DFLGR_DOFLGS_I32       80000       65280 :  N 
+|DFLGR_DOFLGS_I4       13600       23460 :  N 
+|DFLGR_DOFLGS_I5       27400       23460 :  N 
+|DFLGR_DOFLGS_I6       22600       39610 :  N 
+|DFLGR_DOFLGS_I7       27600       33320 :  N 
+|DFLGR_DOFLGS_I8       25400       33320 :  N 
+|DFLGR_DOFLGS_I9       11000       23460 :  N 
+|DFLGR_DOFLGS_YLU14NNMUX_I1       25200       39610 :  N 
+|DFLGR_DOFLGS_YLU14NNMUX_I2       24600       39610 :  N 
+|DFLGR_DOFLGS_YLU14NNMUX_I3       24600       29920 :  N 
+|DFLGR_DOFLGXD_0       64800       65280 :  N 
+|DFLGR_DPEXD_0       41400       55420 :  N 
+|DFLGR_DPFLG_0       45800       36210 :  N 
+|DFLGR_DPFLGXD_0       43400       42670 :  N 
+|DFLGR_DPG_0       20800       74800 :  N 
+|DFLGR_DPVIXD_0       53800       55420 :  N 
+|DFLGR_DRFXD_0       35800       74800 :  N 
+|DFLGR_DRFXDD_0       37600       74800 :  N 
+|DFLGR_DSFX1XD_0       84600       46070 :  N 
+|DFLGR_DSFX2XD_0       84800       48960 :  N 
+|DFLGR_DSFXD_0       80800       46070 :  N 
+|DFLGR_DSGNF_0       48400       36210 :  N 
+|DFLGR_DSGNFXD_0       45800       46070 :  N 
+|DFLGR_DTFLG_0       66400       48960 :  N 
+|DFLGR_DTFLGXA_0      109000       29920 :  N 
+|DFLGR_DTMXD_0      119000       20570 :  N 
+|DFLGR_DTMXDD_0         800       20570 :  N 
+|DFLGR_DTSSXD_0       22200       61880 :  N 
+|DFLGR_DVIFXA_0       42000       74800 :  N 
+|DFLGR_DVIFXD_0       40000       74800 :  N 
+|DFLGR_DVIPXA_0       41800       65280 :  N 
+|DFLGR_DVIPXD_0       40000       65280 :  N 
+|DFLGR_DVM_0       53800       65280 :  N 
+|DFLGR_DVMEXD_0       52000       58820 :  N 
+|DFLGR_DVMXD_0       47800       65280 :  N 
+|DFLGR_DWP_0       33400       74800 :  N 
+|DFLGR_DZBQ10_0       89000       23460 :  N 
+|DFLGR_DZFLGS_DZDETMUX_I1       76000       65280 :  N 
+|DFLGR_DZFLGS_DZDETMUX_I2       72200       68340 :  N 
+|DFLGR_DZFLGS_DZDETMUX_I3       70000       68340 :  N 
+|DFLGR_DZFLGS_DZDETMUX_I4       70200       71740 :  N 
+|DFLGR_DZFLGS_DZFLGN5NNMUX_I1       74600       46070 :  N 
+|DFLGR_DZFLGS_DZFLGN5NNMUX_I10       75600       42670 :  N 
+|DFLGR_DZFLGS_DZFLGN5NNMUX_I11       70800       58820 :  N 
+|DFLGR_DZFLGS_DZFLGN5NNMUX_I12       70800       61880 :  N 
+|DFLGR_DZFLGS_DZFLGN5NNMUX_I2       76800       61880 :  N 
+|DFLGR_DZFLGS_DZFLGN5NNMUX_I3       76800       42670 :  N 
+|DFLGR_DZFLGS_DZFLGN5NNMUX_I4       74000       61880 :  N 
+|DFLGR_DZFLGS_DZFLGN5NNMUX_I5       70200       58820 :  N 
+|DFLGR_DZFLGS_DZFLGN5NNMUX_I6       71800       61880 :  N 
+|DFLGR_DZFLGS_DZFLGN5NNMUX_I7       73600       46070 :  N 
+|DFLGR_DZFLGS_DZFLGN5NNMUX_I8       74600       61880 :  N 
+|DFLGR_DZFLGS_DZFLGN5NNMUX_I9       75600       61880 :  N 
+|DFLGR_DZFLGS_I1       73400       65280 :  N 
+|DFLGR_DZFLGS_LA1       68600       46070 :  N 
+|DFLGR_DZFLGXD_0       53800       46070 :  N 
+|DFLGR_DZR_0       90400       58820 :  N 
+|DFLGR_FLGRBUFF_I1        9200       23460 :  N 
+|DFLGR_FLGRBUFF_I2        8400       23460 :  N 
+|DFLGR_FLGRBUFF_I3        8000       23460 :  N 
+|DFLGR_FLGRBUFF_I4        6200       23460 :  N 
+|DFLGR_FLGRBUFF_L1       11200       33320 :  N 
+|DFLGR_FLGRBUFF_L10       15600       33320 :  N 
+|DFLGR_FLGRBUFF_L11        1600       26860 :  N 
+|DFLGR_FLGRBUFF_L2       14000       36210 :  N 
+|DFLGR_FLGRBUFF_L3        9800       26860 :  N 
+|DFLGR_FLGRBUFF_L4       11200       39610 :  N 
+|DFLGR_FLGRBUFF_L5        5200       23460 :  N 
+|DFLGR_FLGRBUFF_L6       15200       36210 :  N 
+|DFLGR_FLGRBUFF_L7        5000       29920 :  N 
+|DFLGR_FLGRBUFF_L8        6400       26860 :  N 
+|DFLGR_FLGRBUFF_L9        3000       26860 :  N 
+|DFLGR_IDECINLXD_0        6000       29920 :  N 
+|DFLGR_IDECINLXD_1        7600       26860 :  N 
+|DFLGR_IDECINLXD_2        4200       26860 :  N 
+|DFLGR_IDECINLXD_3       16600       33320 :  N 
+|DFLGR_IDECINLXD_4        2600       29920 :  N 
+|DFLGR_IDECINLXD_5       16400       36210 :  N 
+|DFLGR_IDECINLXD_6       14400       39610 :  N 
+|DFLGR_IDECINLXD_7        3200       23460 :  N 
+|DFLGR_IDECINLXD_8       16400       39610 :  N 
+|DFLGR_IDECINLXD_9       12200       33320 :  N 
+|DFLGR_MDCR4XD_0       14400       58820 :  N 
+|DFLGR_MDFLXD_0       12600       58820 :  N 
+|DFLGR_MDFUXD_0       12600       68340 :  N 
+|DFLGR_MDFWXD_0       66800       55420 :  N 
+|DFLGR_MDIOLXD_0       16600       68340 :  N 
+|DFLGR_MDMSWXD_0       10400       68340 :  N 
+|DFLGR_MDSFLGXD_0       16600       74800 :  N 
+|DFLGR_SFLGTMP_0       54400       52360 :  N 
+|DFLGR_SFLGTMP_1       46600       48960 :  N 
+|DFLGR_SFLGTMP_10       47000       68340 :  N 
+|DFLGR_SFLGTMP_11       64000       55420 :  N 
+|DFLGR_SFLGTMP_12       38800       71740 :  N 
+|DFLGR_SFLGTMP_13       51000       61880 :  N 
+|DFLGR_SFLGTMP_14       30600       61880 :  N 
+|DFLGR_SFLGTMP_15       41200       71740 :  N 
+|DFLGR_SFLGTMP_16       46800       61880 :  N 
+|DFLGR_SFLGTMP_17       34000       61880 :  N 
+|DFLGR_SFLGTMP_2       47800       48960 :  N 
+|DFLGR_SFLGTMP_3       54600       48960 :  N 
+|DFLGR_SFLGTMP_4       43000       46070 :  N 
+|DFLGR_SFLGTMP_5       61200       52360 :  N 
+|DFLGR_SFLGTMP_6       60000       71740 :  N 
+|DFLGR_SFLGTMP_7       59200       46070 :  N 
+|DFLGR_SFLGTMP_8       63400       65280 :  N 
+|DFLGR_SFLGTMP_9       50000       71740 :  N 
+|DFLGR_YLLXA_0       83200       68340 :  N 
+|DFLGR_ZBA2_0       83800       39610 :  N 
+|DFLGR_ZBC4_0       88800       42670 :  N 
+|DFLGR_ZBD10_0       61400       74800 :  N 
+|DFLGR_ZBD2_0       64200       42670 :  N 
+|DFLGR_ZBJ20_0       43400       39610 :  N 
+|DFLGR_ZBJ4NN_0       40200       39610 :  N 
+|DFLGR_ZBJ6NN_0       78200       48960 :  N 
+|DFLGR_ZBJ7_0       80000       48960 :  N 
+|DFLGR_ZBQ6_0       87000       23460 :  N 
+|DFLGR_ZBT5_0       93000       42670 :  N 
+|DFLGR_ZBT6_0       86800       46070 :  N 
+|DFLGR_ZBT9_0       65000       68340 :  N 
+|DFLGR_ZBT9XA_0       63200       68340 :  N 
+|DFLGR_ZBT9XAA_0       59400       68340 :  N 
+|DITSPR_D1_SOLTCH1_O_0       69000        4250 :  N 
+|DITSPR_D1_SOLTCH1_SO1CB1_SO1CB1_NODE481       72200        4250 :  N 
+|DITSPR_D1_SOLTCH1_SO1CB1_SO1CB1_NODE5       59600        7650 :  N 
+|DITSPR_D1_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O       71000        4250 :  N 
+|DITSPR_D1_SOLTCH2_O1_0       67000        4250 :  N 
+|DITSPR_DEST_0      117200       20570 :  N 
+|DITSPR_DESTX_0      120800       20570 :  N 
+|DITSPR_DESTXA_0      129800       26860 :  N 
+|DITSPR_DITSPRCB1_DITSPRCB1_DRIBASP       16800       46070 :  N 
+|DITSPR_DITSPRCB1_DITSPRCB1_DRIBESP       14600       42670 :  N 
+|DITSPR_DITSPRCB1_DITSPRCB1_DRIBSPL       19000       42670 :  N 
+|DITSPR_DITSPRCB1_DITSPRCB1_NODE1502       22200       46070 :  N 
+|DITSPR_DITSPRCB1_DITSPRCB1_NODE1508       19000       46070 :  N 
+|DITSPR_DITSPRCB1_DITSPRCB1_NODE1520       20800       42670 :  N 
+|DITSPR_DITSPRCB1_DITSPRCB1_NODE1528       22000       42670 :  N 
+|DITSPR_DITSPRCB1_DITSPRCB1_NODE201       22600       46070 :  N 
+|DITSPR_DITSPRCB1_DITSPRCB1_NODE202       18600       46070 :  N 
+|DITSPR_DITSPRCB1_DITSPRCB1_NODE203       23600       46070 :  N 
+|DITSPR_DITSPRCB1_DITSPRCB1_NODE748       23000       42670 :  N 
+|DITSPR_DITSPRCB2_DITSPRCB2_DWRJBSP        9800       23460 :  N 
+|DITSPR_DITSPRCB2_DITSPRCB2_NODE2722       16600       48960 :  N 
+|DITSPR_DITSPRCB2_DITSPRCB2_NODE2846       16400       46070 :  N 
+|DITSPR_DITSPRCB2_DITSPRCB2_NODE2863       21800       46070 :  N 
+|DITSPR_DITSPRCB2_DITSPRCB2_NODE2881      114200       46070 :  N 
+|DITSPR_DITSPRCB2_DITSPRCB2_NODE2883       20800       46070 :  N 
+|DITSPR_DITSPRCB2_DITSPRCB2_NODE2885       14800       33320 :  N 
+|DITSPR_DITSPRCB2_DITSPRCB2_NODE2929       16000       42670 :  N 
+|DITSPR_DITSPRCB2_DITSPRCB2_RDASPJB       15000       42670 :  N 
+|DITSPR_DITSPRCB2_DITSPRCB2_RDESPJB       14200       33320 :  N 
+|DITSPR_DITSPRCB2_DITSPRCB2_RSCJT0      114600       33320 :  N 
+|DITSPR_DITSPRCB2_DITSPRCB2_TEMPHDL1DZD_2_ISPVALXD0      113200       46070 :  N 
+|DITSPR_DITSPRCB2_DITSPRCB2_TEMPHDL1DZD_2_ISPVALXD1       99400       46070 :  N 
+|DITSPR_DITSPRCB2_DITSPRCB2_WRASPJB       14600       48960 :  N 
+|DITSPR_DITSPRCB3_DITSPRCB3_DADEC       61200        4250 :  N 
+|DITSPR_DITSPRCB4_DITSPRCB4_TEMPHDL2DZD_2_ZIDI2       57600       26860 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_DSHSP       10200       23460 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE1000      113400       33320 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE1006      106800       39610 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE1020      109400       36210 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE1035       97200       46070 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE1045      100200       46070 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE1056       96400       46070 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE1067       98600       46070 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE20      106800       33320 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE21      110200       36210 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE25      110600       42670 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE843      108600       33320 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE851      111400       36210 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE873      110000       42670 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE887      116600       39610 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE893      108600       36210 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE932      114800       42670 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE938       97200       42670 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE940       98000       46070 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE942      114400       42670 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE946      106800       36210 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE948X1      111000       39610 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE948X2      113200       39610 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE948X3      108800       39610 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE970      107400       36210 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE976      115400       39610 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE978      115200       42670 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE980      108800       42670 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_NODE982      112600       42670 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_SPDEL0       99200       48960 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_SPDEL1       95200       48960 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_SPDEL2       97200       48960 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_SPSELA0      109400       33320 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_SSTVAR0      106800       42670 :  N 
+|DITSPR_DITSPRCB5_DITSPRCB5_SSTVAR1      112600       36210 :  N 
+|DITSPR_DITSPRCB7_DITSPRCB7_TEMPHDL3DZD_2_ZIDI3       60000       23460 :  N 
+|DITSPR_DLAPUSH_0       55800       42670 :  N 
+|DITSPR_DSIGRST_0      130000        1360 :  N 
+|DITSPR_GDELXD_0      117200       29920 :  N 
+|DITSPR_IRPTRQXD_0      108400       23460 :  N 
+|DITSPR_ISPVALXD_0      113000       48960 :  N 
+|DITSPR_ISPVALXD_1       99000       42670 :  N 
+|DITSPR_ROLL_0       16400       23460 :  N 
+|DITSPR_RSCJTXD_0      115400       33320 :  N 
+|DITSPR_RSCJTXDD_0      106800       46070 :  N 
+|DITSPR_SPSEL_0      111600       33320 :  N 
+|DITSPR_SSTVARXD_0      108800       46070 :  N 
+|DITSPR_SSTVARXD_1      115000       36210 :  N 
+|DITSPR_SSTVARXDD_0      111000       46070 :  N 
+|DITSPR_SSTVARXDD_1      115200       46070 :  N 
+|DITSPR_STOPR_0      106800       48960 :  N 
+|DITSPR_STOPRXD_0       95200       42670 :  N 
+|DITSPR_ZIDI2_0       57800       23460 :  N 
+|DITSPR_ZIDI3_0       60800       23460 :  N 
+|DMDEC_CWTINLXD_0      124400       20570 :  N 
+|DMDEC_DMBUSYDD_0      129800       14110 :  N 
+|DMDEC_DMBUSYXD_0      130000       10710 :  N 
+|DMDEC_DMCAJ_0      137000        1360 :  N 
+|DMDEC_DMCAJ_1      126200        1360 :  N 
+|DMDEC_DMCAJ_2      124400        1360 :  N 
+|DMDEC_DMCAJ_3      128200        1360 :  N 
+|DMDEC_DMCAJ_4      124400       10710 :  N 
+|DMDEC_DMCAJ_5      140600        1360 :  N 
+|DMDEC_DMCAJ_6      138800        1360 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_DMBUSY      130800        7650 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_DMINLFRZ_      126600       17170 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_DMRDH       39800        1360 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_DMRDLX1      126800        7650 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_DMRDLX2      128800        7650 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_DMRDLX3      124400        7650 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_DMSTART      124400       14110 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_DMULGO      127600       14110 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_NODE19      127200        4250 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_NODE1918      126200       23460 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_NODE1926      127000       10710 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_NODE1935      128600       14110 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_NODE1945       44000        1360 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_NODE1946       41600        1360 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_NODE1951      128000       10710 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_NODE1963      125400       17170 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_NODE1966      125000        4250 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_NODE2073      127000       14110 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_NODE2097       43400        1360 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_NODE2117      126400        7650 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_NODE2145      125000       17170 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_NODE2153      126200       10710 :  N 
+|DMDEC_DMDECCB1_DMDECCB1_NODE2157      124400       17170 :  N 
+|DMDEC_DMDECCB2_DMDECCB2_IMULRESET      129200        4250 :  N 
+|DMDEC_DMDECCB2_DMDECCB2_NODE703      124400        4250 :  N 
+|DMDEC_DMDECCB3_DMDECCB3_NODE5      116400       29920 :  N 
+|DMDEC_DMDECCB3_DMDECCB3_NODE708      117200       26860 :  N 
+|DMDEC_DMDECCB3_DMDECCB3_TEMPHDL1DZD_2_TEMP      118400       26860 :  N 
+|DMDEC_DMDECCB4_DMDECCB4_DMULGOXD_      127200       17170 :  N 
+|DMDEC_DMDECCB5_DMDECCB5_SIGMRDYXD_      129200       23460 :  N 
+|DMDEC_DMRDRVH_0       38000        1360 :  N 
+|DMDEC_DMRDRVL_0      117200       10710 :  N 
+|DMDEC_DMSTARTXD_0      122400       14110 :  N 
+|DMDEC_DMSU_0      121200        7650 :  N 
+|DMDEC_DMULGOXD_0      129800       17170 :  N 
+|DMDEC_DMULGOXDD__0      127800       17170 :  N 
+|DMDEC_IMULRESETXD_0      130000        4250 :  N 
+|DMDEC_MRDYXD_0      124200       23460 :  N 
+|DMDEC_SIGMRDYXD_0      129800       23460 :  N 
+|DMDEC_SIGMRDYXDD__0      127000       23460 :  N 
+|DMDEC_SOCD17_0      122200       26860 :  N 
+|DMDEC_TEMP_0      120200       26860 :  N 
+|DMULC_DM12WLXD_0       19400        1360 :  N 
+|DMULC_DM1WLXD_0         800        1360 :  N 
+|DMULC_DM24WLXD_0      117200        1360 :  N 
+|DMULC_DM2WLXD_0        4800        1360 :  N 
+|DMULC_DM4WLXD_0        7200        1360 :  N 
+|DMULC_DMA1AXD_0      132000       23460 :  N 
+|DMULC_DMA1B3AXD_0      142400        1360 :  N 
+|DMULC_DMA2AXD_0      132000        1360 :  N 
+|DMULC_DMA2B4AXD_0      135400       17170 :  N 
+|DMULC_DMA3BXD_0      144400        1360 :  N 
+|DMULC_DMA4BXD_0      146200        1360 :  N 
+|DMULC_DMEOEDD_0      132000       10710 :  N 
+|DMULC_DMEOEXD_0      132000        7650 :  N 
+|DMULC_DMFBXD_0      124200       26860 :  N 
+|DMULC_DMFOBAFSXD_0      139400       23460 :  N 
+|DMULC_DMFOBASSXD_0      122200        1360 :  N 
+|DMULC_DMFOBAZSXD_0      120200        1360 :  N 
+|DMULC_DMFOBBSXD_0      132000        4250 :  N 
+|DMULC_DMFRREDD_0      108800       48960 :  N 
+|DMULC_DMFRREXD_0      115200       48960 :  N 
+|DMULC_DMSLCNDD_0      119200       14110 :  N 
+|DMULC_DMSLCNXD_0      117200       14110 :  N 
+|DMULC_DMSOB1SXD_0      150200        1360 :  N 
+|DMULC_DMSOB2SXD_0      148200        1360 :  N 
+|DMULC_DMSOB3SXD_0      133600        1360 :  N 
+|DMULC_DMSOB4SXD_0      136200        4250 :  N 
+|DMULC_DMSTARTXDD__0      122600       20570 :  N 
+|DMULC_DMSTATE_0      144200        7650 :  N 
+|DMULC_DMSTATE_1      132000       20570 :  N 
+|DMULC_DMSTATE_2      135200        7650 :  N 
+|DMULC_DMSTATE_3      144400       10710 :  N 
+|DMULC_DMSTATEXD_0      146200        7650 :  N 
+|DMULC_DMSTATEXD_1      134200       20570 :  N 
+|DMULC_DMSTATEXD_2      137200        7650 :  N 
+|DMULC_DMSTATEXD_3      146200       10710 :  N 
+|DMULC_DMSUDD_0      117200        4250 :  N 
+|DMULC_DMSUXD_0      123200        7650 :  N 
+|DMULC_DMULCCB1_DMULCCB1_DMSTARTXD_      123600       17170 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DM12WL       19000        1360 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DM1WL      119000        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DM24WL      119200        1360 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DM2WL      133600       17170 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMA1A      134000       23460 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMA1B3A      155400        7650 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMA2A      134000        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMA2B4A      138800       17170 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMA3B      142800        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMA4B      146200        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMEOE      134000        7650 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMFB      133800       26860 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMFOBAFS      141200       23460 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMFOBASS      120800        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMFOBAZS      122600        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMFOBBS      138200        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMFRRE      136400       29920 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMISTATE0      143800       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMISTATE1      136400       20570 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMISTATE2      135400       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMISTATE3      139400       10710 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMLCN      125600       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMSLCN      121200       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMSOB1S      152400        1360 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMSOB2S      148200       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMSOB3S      140600        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMSOB4S      145200       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_DMSTARTDD      127800       20570 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1006      157400        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1008      157400        7650 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1010      141000       17170 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1018      132000       26860 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1020      133800       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1026      153000        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1030      156800        1360 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1048      141800       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE105      143400       17170 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1052      153400       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1064      155200        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1068      156000        1360 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1090      134400       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1092      148200        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1094      141400       10710 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1096      141800       20570 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1112      150200       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1116      135200       29920 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1120      152600       10710 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1122      154800       10710 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1144      138600       29920 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1158      143600        7650 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1160      150200       10710 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1172      153200        7650 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1182      140800       20570 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1188      151600       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1190      138800       20570 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1198      157600       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1204      152600       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1232      156400        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE1233      157600        1360 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE126      143800       20570 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE129      135600       23460 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE131      150200        7650 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE132      147200       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE495      134000       10710 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE511      143200       23460 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE516      137200       23460 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE517      158200       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE523      138600       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE527      142200       17170 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE533      151400        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE535      154200        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE543      137200       26860 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE549      139400        7650 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE553      140000       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE556      148200       10710 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE560      141400        7650 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE561      145000        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE567      136400       23460 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE568      135000       26860 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE569      144800       23460 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE571      152200        7650 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE572      148200        7650 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE664      150200        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE677      139400       26860 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE709      119000        7650 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE713      121000       10710 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE718      117200        7650 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE723      137200       17170 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE735      136200       10710 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE736      137600       10710 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE740      132000       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE757      143000       10710 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE763      142400       10710 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE793      139400       29920 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE934      139400       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE936      140000       29920 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE938      141600       29920 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE940      152400        4250 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE942      141600       26860 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE944      154200        1360 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE946      126200       20570 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE956      136800       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE966      155400       14110 :  N 
+|DMULC_DMULCCB2_DMULCCB2_NODE972      157200       10710 :  N 
+|DMULC_DMULCCB3_DMULCCB3_NODE13      111600       20570 :  N 
+|DMULC_DMULCCB3_DMULCCB3_NODE15      116400       23460 :  N 
+|DMULC_DMULCCB3_DMULCCB3_NODE17      116400       26860 :  N 
+|DMULC_DMULCCB3_DMULCCB3_NODE1810      110200       23460 :  N 
+|DMULC_DMULCCB3_DMULCCB3_NODE1812      117200       23460 :  N 
+|DMULC_DMULCCB3_DMULCCB3_NODE1814      110600       26860 :  N 
+|DMULC_DMULCCB3_DMULCCB3_TEMPHDL1DZD_2_TEMP1      111400       23460 :  N 
+|DMULC_DMULCCB3_DMULCCB3_TEMPHDL2DZD_2_TEMP2      111600       26860 :  N 
+|DMULC_DMULCCB3_DMULCCB3_TEMPHDL3DZD_2_TEMP3      118400       23460 :  N 
+|DMULC_DMWL_0      119000       10710 :  N 
+|DMULC_DMWL_1      119200       17170 :  N 
+|DMULC_DMWLXD_0      122000       10710 :  N 
+|DMULC_DMWLXD_1      121200       17170 :  N 
+|DMULC_SOCD20_0      114400       23460 :  N 
+|DMULC_SOCD21_0      114600       26860 :  N 
+|DMULC_SOCD22_0      122000       23460 :  N 
+|DMULC_TEMP1_0      112600       23460 :  N 
+|DMULC_TEMP2_0      112800       26860 :  N 
+|DMULC_TEMP3_0      119800       23460 :  N 
+|DOPR_D10_SOLTCH1_O_0       95200        7650 :  N 
+|DOPR_D10_SOLTCH1_SO1CB1_SO1CB1_NODE481       99000        7650 :  N 
+|DOPR_D10_SOLTCH1_SO1CB1_SO1CB1_NODE5       97000        7650 :  N 
+|DOPR_D10_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O       97800        7650 :  N 
+|DOPR_D10_SOLTCH2_O1_0       95200       10710 :  N 
+|DOPR_D11_SOLTCH1_O_0      100200       10710 :  N 
+|DOPR_D11_SOLTCH1_SO1CB1_SO1CB1_NODE481       97800       10710 :  N 
+|DOPR_D11_SOLTCH1_SO1CB1_SO1CB1_NODE5       97000       10710 :  N 
+|DOPR_D11_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O       99000       10710 :  N 
+|DOPR_D11_SOLTCH2_O1_0      100200        7650 :  N 
+|DOPR_D12_SOLTCH1_O_0      102200        1360 :  N 
+|DOPR_D12_SOLTCH1_SO1CB1_SO1CB1_NODE481       99800        1360 :  N 
+|DOPR_D12_SOLTCH1_SO1CB1_SO1CB1_NODE5       99000        1360 :  N 
+|DOPR_D12_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O      101000        1360 :  N 
+|DOPR_D12_SOLTCH2_O1_0      104200        1360 :  N 
+|DOPR_D13_SOLTCH1_O_0       93000        4250 :  N 
+|DOPR_D13_SOLTCH1_SO1CB1_SO1CB1_NODE481       93800        1360 :  N 
+|DOPR_D13_SOLTCH1_SO1CB1_SO1CB1_NODE5       91600        1360 :  N 
+|DOPR_D13_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O       92600        1360 :  N 
+|DOPR_D13_SOLTCH2_O1_0       93200        7650 :  N 
+|DOPR_D14_SOLTCH1_O_0       93000       23460 :  N 
+|DOPR_D14_SOLTCH1_SO1CB1_SO1CB1_NODE481       93800       20570 :  N 
+|DOPR_D14_SOLTCH1_SO1CB1_SO1CB1_NODE5       72600       17170 :  N 
+|DOPR_D14_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O       92600       20570 :  N 
+|DOPR_D14_SOLTCH2_O1_0       91000       23460 :  N 
+|DOPR_D15_SOLTCH1_O_0       91400       26860 :  N 
+|DOPR_D15_SOLTCH1_SO1CB1_SO1CB1_NODE481       89400       26860 :  N 
+|DOPR_D15_SOLTCH1_SO1CB1_SO1CB1_NODE5       88800       26860 :  N 
+|DOPR_D15_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O       90400       26860 :  N 
+|DOPR_D15_SOLTCH2_O1_0       93200       26860 :  N 
+|DOPR_D16_SOLTCH1_O_0      112800       29920 :  N 
+|DOPR_D16_SOLTCH1_SO1CB1_SO1CB1_NODE481       92800       29920 :  N 
+|DOPR_D16_SOLTCH1_SO1CB1_SO1CB1_NODE5       92200       29920 :  N 
+|DOPR_D16_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O       94000       29920 :  N 
+|DOPR_D16_SOLTCH2_O1_0      114600       29920 :  N 
+|DOPR_D7_SOLTCH1_O_0      113200        7650 :  N 
+|DOPR_D7_SOLTCH1_SO1CB1_SO1CB1_NODE481      114000       10710 :  N 
+|DOPR_D7_SOLTCH1_SO1CB1_SO1CB1_NODE5      110200       10710 :  N 
+|DOPR_D7_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O      113000       10710 :  N 
+|DOPR_D7_SOLTCH2_O1_0      115200        7650 :  N 
+|DOPR_D8_SOLTCH1_O_0      113200        4250 :  N 
+|DOPR_D8_SOLTCH1_SO1CB1_SO1CB1_NODE481      111000        7650 :  N 
+|DOPR_D8_SOLTCH1_SO1CB1_SO1CB1_NODE5      110200        7650 :  N 
+|DOPR_D8_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O      112200        7650 :  N 
+|DOPR_D8_SOLTCH2_O1_0      115200        4250 :  N 
+|DOPR_D9_SOLTCH1_O_0      112800        1360 :  N 
+|DOPR_D9_SOLTCH1_SO1CB1_SO1CB1_NODE481      111000        4250 :  N 
+|DOPR_D9_SOLTCH1_SO1CB1_SO1CB1_NODE5      110200        4250 :  N 
+|DOPR_D9_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O      112200        4250 :  N 
+|DOPR_D9_SOLTCH2_O1_0      115000        1360 :  N 
+|DOPR_DADCY_0       82400        4250 :  N 
+|DOPR_DBSCF_0       59600       10710 :  N 
+|DOPR_DCAJA_0      100200       26860 :  N 
+|DOPR_DCAJA_1      102400       29920 :  N 
+|DOPR_DCAJA_2       95200       14110 :  N 
+|DOPR_DCAJXD_0       99200       20570 :  N 
+|DOPR_DCAJXD_1      102200       14110 :  N 
+|DOPR_DCAJXD_2       99800       14110 :  N 
+|DOPR_DCAJXD_3       95200       17170 :  N 
+|DOPR_DCAJXD_4       97000       17170 :  N 
+|DOPR_DCAJXD_5      108400        7650 :  N 
+|DOPR_DCAJXD_6      108400       10710 :  N 
+|DOPR_DCLIE_0       96600       29920 :  N 
+|DOPR_DCLTF_0      113000       20570 :  N 
+|DOPR_DCLZF_0      100400       29920 :  N 
+|DOPR_DCMC_0       86800       42670 :  N 
+|DOPR_DCMCIXD_0       71200        7650 :  N 
+|DOPR_DD0VL_0      132000       17170 :  N 
+|DOPR_DDLL_0       59600       17170 :  N 
+|DOPR_DDLL_1       61600       17170 :  N 
+|DOPR_DDLL_2       61800       20570 :  N 
+|DOPR_DDLL_3       55800       17170 :  N 
+|DOPR_DEBTA_0       78200       42670 :  N 
+|DOPR_DFAJXD_0       61400       14110 :  N 
+|DOPR_DFAJXD_1       67800        1360 :  N 
+|DOPR_DFAJXD_2       65000        1360 :  N 
+|DOPR_DFAJXD_3       81800        1360 :  N 
+|DOPR_DFAJXD_4       65200        4250 :  N 
+|DOPR_DFAJXD_5       62000        1360 :  N 
+|DOPR_DFALXD_0      104600       14110 :  N 
+|DOPR_DFC0XD_0       69200        7650 :  N 
+|DOPR_DFDSP_I1       92400       39610 :  N 
+|DOPR_DFDSP_I2       94200       39610 :  N 
+|DOPR_DFDSP_I3       94600       39610 :  N 
+|DOPR_DFDSP_I4       90600       39610 :  N 
+|DOPR_DFPASSRXD_0       55800       10710 :  N 
+|DOPR_DFXRS_0       72200       65280 :  N 
+|DOPR_DFXRSA_0       72200       58820 :  N 
+|DOPR_DIGAT_0        9800       29920 :  N 
+|DOPR_DLBS_0       97400       20570 :  N 
+|DOPR_DLGNBR_0       73600       42670 :  N 
+|DOPR_DLGNCY_0       60000       20570 :  N 
+|DOPR_DLRCR_0       61600       10710 :  N 
+|DOPR_DLSAL_0       68600       42670 :  N 
+|DOPR_DLSAX_0       63000       23460 :  N 
+|DOPR_DNGDV_0       83800       29920 :  N 
+|DOPR_DNGDVXD_0       85000       29920 :  N 
+|DOPR_DNMPR_0        3600       42670 :  N 
+|DOPR_DNMPRA_0       61400       26860 :  N 
+|DOPR_DNTMDXD_0       82800       42670 :  N 
+|DOPR_DOPRCB10_DOPRCB10_DNSAL         800       42670 :  N 
+|DOPR_DOPRCB11_DOPRCB11_NODE4475       14000       29920 :  N 
+|DOPR_DOPRCB11_DOPRCB11_NODE4477       15600       29920 :  N 
+|DOPR_DOPRCB11_DOPRCB11_TEMPHDL20DZD_2_DIGAT       14600       29920 :  N 
+|DOPR_DOPRCB11_DOPRCB11_TEMPHDL21DZD_3_DIGAT       12000       29920 :  N 
+|DOPR_DOPRCB15_DOPRCB15_TEMPHDL23DZD_2_YGJ4XD       92600       36210 :  N 
+|DOPR_DOPRCB1_DOPRCB1_CLRIF0      103000       26860 :  N 
+|DOPR_DOPRCB1_DOPRCB1_CLRTF0      109400       20570 :  N 
+|DOPR_DOPRCB1_DOPRCB1_CLRZF0      106400       23460 :  N 
+|DOPR_DOPRCB1_DOPRCB1_DASCJ       99400       26860 :  N 
+|DOPR_DOPRCB1_DOPRCB1_DBSCNT       97000       20570 :  N 
+|DOPR_DOPRCB1_DOPRCB1_DCAJ0      102400       23460 :  N 
+|DOPR_DOPRCB1_DOPRCB1_DCAJ1      104000       14110 :  N 
+|DOPR_DOPRCB1_DOPRCB1_DCAJ2       97000       14110 :  N 
+|DOPR_DOPRCB1_DOPRCB1_DCAJ3       99000       17170 :  N 
+|DOPR_DOPRCB1_DOPRCB1_DCAJ4       99600       17170 :  N 
+|DOPR_DOPRCB1_DOPRCB1_DCAJ5      107400        7650 :  N 
+|DOPR_DOPRCB1_DOPRCB1_DCAJ6      106200       10710 :  N 
+|DOPR_DOPRCB1_DOPRCB1_DDECJ      104000       23460 :  N 
+|DOPR_DOPRCB1_DOPRCB1_DLDITR0      101200       20570 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE12932      105000       10710 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE12933      104600       17170 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE1853      106400       20570 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE1854      105800       20570 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE2367      106000       17170 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE3512      106400        1360 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE3513      106800       17170 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE3636      110400       20570 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE3637      108800       20570 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE3798      106000       23460 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE3842      105600       10710 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE3904       99200       14110 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE3905       95200        1360 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE396      105600       26860 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE4584      104000       20570 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE4585      103000       23460 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE483      103000       20570 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE620      108400       20570 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE622      104000       17170 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE668      106800        4250 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE672      106400       14110 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE696      106200        7650 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE704      108400       14110 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE726      103000       17170 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE736      105000       20570 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE737      105000       26860 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE746      105600       17170 :  N 
+|DOPR_DOPRCB1_DOPRCB1_NODE747      107800       17170 :  N 
+|DOPR_DOPRCB1_DOPRCB1_SETZF0      106400       26860 :  N 
+|DOPR_DOPRCB1_DOPRCB1_TEMPHDL9DZD_2_DCAJA0      102400       26860 :  N 
+|DOPR_DOPRCB1_DOPRCB1_TEMPHDL9DZD_2_DCAJA1      104400       29920 :  N 
+|DOPR_DOPRCB1_DOPRCB1_TEMPHDL9DZD_2_DCAJA2       98600       14110 :  N 
+|DOPR_DOPRCB1_DOPRCB1_YFAL0      107800       14110 :  N 
+|DOPR_DOPRCB1_DOPRCB1_YFBS0      101200       17170 :  N 
+|DOPR_DOPRCB1_DOPRCB1_YFDI0      107200        4250 :  N 
+|DOPR_DOPRCB1_DOPRCB1_YFID0      102200        7650 :  N 
+|DOPR_DOPRCB1_DOPRCB1_YFLS0      104200       10710 :  N 
+|DOPR_DOPRCB1_DOPRCB1_YFMD0      100400       17170 :  N 
+|DOPR_DOPRCB1_DOPRCB1_YJC0      105800        4250 :  N 
+|DOPR_DOPRCB2_DOPRCB2_YGB40X1       81000       26860 :  N 
+|DOPR_DOPRCB2_DOPRCB2_YGB40X2       83800       26860 :  N 
+|DOPR_DOPRCB3_DOPRCB3_DCYIN       65200        7650 :  N 
+|DOPR_DOPRCB3_DOPRCB3_NODE1548       67200        7650 :  N 
+|DOPR_DOPRCB3_DOPRCB3_NODE1562       68400        7650 :  N 
+|DOPR_DOPRCB4_DOPRCB4_YGN30       82000       29920 :  N 
+|DOPR_DOPRCB4_DOPRCB4_YGN40       83800       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DCMCI0       73400       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DDECI       97400        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DDIV0       72800       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DFC00       70200       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DFDSP1DATA       87800       36210 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DFIXR0       77200       36210 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DIDIV0       72800       36210 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DIDLS       67400       26860 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DIMUL       67400       29920 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DLALU       92400       65280 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DLDPOS       67000       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DMUL       76600       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DMULSX       89600       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DNTMD0       84600       42670 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DPBSCF0       64200       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DPSNEX0       71400       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DPSNX0       68200       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DRCR0       78400        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DSCI       63600       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DSHFT       63600       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DYG7P1DATA       88400       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DZFLGN10X1       68200       71740 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DZFLGN10X2       67600       71740 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DZFLGN10X3       67000       71740 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DZFLGN11       77000       68340 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DZFLGN12       72200       71740 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DZFLGN9X1       68800       71740 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DZFLGN9X2       69600       71740 :  N 
+|DOPR_DOPRCB5_DOPRCB5_DZFLGN9X3       69600       74800 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE10169       71600       29920 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE10170       71200       29920 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE10312       86800       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE10313       92200       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE10314       93000       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE10315       90400       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE10316       85200       36210 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE10317       89800       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE10318       90800       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE10319       85800       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE10320       87800       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE10559       85800       36210 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE10560       87200       39610 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE10561       87200       36210 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE11149       73800       26860 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1192       97200       23460 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1193      101400        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1194       95800        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1195       99000        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1197       98400        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1198      101000        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE11989       78600       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1199X1       95600       23460 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1199X2       95200       23460 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1200       96200       23460 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE14611       86000       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE14612       74800       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE14614       75000       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE14615       75600       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE14616       87000       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE14646       78400        1360 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE15648       72200       29920 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE15849       74600       23460 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE15851       75800       23460 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1705       64400       36210 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1706       66800       36210 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1714       67400       36210 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1716       74200       71740 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1717       77600       71740 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1718       75600       71740 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE17990       85800       39610 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1898       93400       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1904       83600       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1905       80000       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1926       81200       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1933       75800       29920 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1939       83400       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1944       73400       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1955       86600        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1956       77400       26860 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1958       76400       26860 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1962       74200       29920 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1972       88800       36210 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1983       76000       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1985       70800       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1986       68200       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE1992       66400       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2004       78400       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2007       84800       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2015       77600       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2034       83600       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2037       81400        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2038       78400        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2044       73400        1360 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2058       76800       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2059       76400       23460 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2060       81000       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2063       82200       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2067       77200        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2080       92600       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2083       84400        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2089       86400       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2094       91000        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2100       78000       29920 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2102       89200       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2106       73200       29920 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2107       91000       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2109       77600       23460 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2115       82400       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2131       77600       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2132       85400        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2134       78000       26860 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2135       74800       26860 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2145       94400       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2233       89400       39610 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2297       70800       26860 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2315       75000       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2340       63600       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2377       68800       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2387       65600       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2618       80800        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2619       86200       36210 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2685       77800       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2701       79200       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2717       76000        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2740       89800        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2743       67400       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2747       78400       23460 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2780       81000        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2805       75800       26860 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2835       84400        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2854       86800        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2905       91600       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2909       73400        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2913       86000       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2949       71800       26860 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2993       77600        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE2997       90200       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3353X1       74000       68340 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3389       68400       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3393       66600       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3395       88000        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3397       84400        1360 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3399       68800       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3403       85400        1360 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3407       92600       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3409       91000        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3411      101600       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3413       73400       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3415       87600        1360 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3421       72800       29920 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3427       75600       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3433       75200       29920 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3437       90000       39610 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3443       87800       39610 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3509       92000       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3547       82400       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3551       79200       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3555       75800       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3556       80800        1360 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3557       76600        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3559       74000        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3569       81200       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3571       87000       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3581       84800       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3583       89600       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3587       79200       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3591       79400        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3599       93000       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3601       93200       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3615       75800        1360 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3619       72800       23460 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3629       74400       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3637       84800       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3639       80200       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3647       65400       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3661       85400       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3689       88200       39610 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3739       86000       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3749       73400       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3771       74400        1360 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3801       73400        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3811       94400       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3813       92400       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3827       87200       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3843       89800        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3847       89800       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3853       76800       29920 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3885       88400       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3891       84600       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3903       72800       26860 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3961       88600        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE3991       70000       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4005       87200       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4013       76400       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4027       88400       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4055       78600       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4059       76800       36210 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4060       69200       23460 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4061       71000       23460 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4067       74800        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4071       88400       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4087       82200        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4093       91000       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4109       95200        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4111       92200        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4119       82800        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4129       83400       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4141       90400        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4147       86000        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4159       76200        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4161       72800       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4163       77200        1360 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4167       83600        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4171       93600       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4181       86000       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4182       89800        1360 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE4888       69200       29920 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE6481       91600        7650 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE6482       89200       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE6483       94200       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE7999       70200       29920 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE8786       64600       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE883       72800       39610 :  N 
+|DOPR_DOPRCB5_DOPRCB5_NODE9875       91000       10710 :  N 
+|DOPR_DOPRCB5_DOPRCB5_TEMPHDL10DZD_2_DSBCY       81600       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_TEMPHDL11DZD_2_DADCY       79400        4250 :  N 
+|DOPR_DOPRCB5_DOPRCB5_TEMPHDL12DZD_2_DSF       77000       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_TEMPHDL13DZD_2_DLGNBR       76400       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_TEMPHDL14DZD_2_DLGNCY       79200       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_TEMPHDL15DZD_2_DDLL0       82200       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_TEMPHDL15DZD_2_DDLL1       80600       14110 :  N 
+|DOPR_DOPRCB5_DOPRCB5_TEMPHDL15DZD_2_DDLL2       75400       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_TEMPHDL15DZD_2_DDLL3       78400       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_TEMPHDL16DZD_2_YGM7NN       83800       36210 :  N 
+|DOPR_DOPRCB5_DOPRCB5_TEMPHDL17DZD_2_YGC4       79200       39610 :  N 
+|DOPR_DOPRCB5_DOPRCB5_TEMPHDL19DZD_2_YGA1       17800       29920 :  N 
+|DOPR_DOPRCB5_DOPRCB5_TEMPHDL22DZD_2_YGJ4       84400       36210 :  N 
+|DOPR_DOPRCB5_DOPRCB5_YFE10       66400       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_YFE20       71000       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_YFH3NN0       79800       20570 :  N 
+|DOPR_DOPRCB5_DOPRCB5_YFP80       70600       17170 :  N 
+|DOPR_DOPRCB5_DOPRCB5_YFR0NN0       80000       42670 :  N 
+|DOPR_DOPRCB5_DOPRCB5_YFZANN0       69400       26860 :  N 
+|DOPR_DOPRCB5_DOPRCB5_YFZBNN0       74600       36210 :  N 
+|DOPR_DOPRCB5_DOPRCB5_YFZCNN0       74600       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_YGN20       13800       26860 :  N 
+|DOPR_DOPRCB5_DOPRCB5_YGP10       63600       36210 :  N 
+|DOPR_DOPRCB5_DOPRCB5_YGP20       66600       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_YGV6IN       89800       36210 :  N 
+|DOPR_DOPRCB5_DOPRCB5_YGW20       63800       33320 :  N 
+|DOPR_DOPRCB5_DOPRCB5_YGW30       64800       36210 :  N 
+|DOPR_DOPRCB6_DOPRCB6_TEMPHDL18DZD_2_YGC1       81000       33320 :  N 
+|DOPR_DOPRCB8_DOPRCB8_DLL0       58200       17170 :  N 
+|DOPR_DOPRCB8_DOPRCB8_DLL1       58200       20570 :  N 
+|DOPR_DOPRCB8_DOPRCB8_DLL2       57600       20570 :  N 
+|DOPR_DOPRCB8_DOPRCB8_DLL3       55800       20570 :  N 
+|DOPR_DOPRCB8_DOPRCB8_NODE4402       59000       17170 :  N 
+|DOPR_DOPRCB8_DOPRCB8_NODE4404       57600       17170 :  N 
+|DOPR_DOPRCB9_DOPRCB9_DRDHCNT1       59200       33320 :  N 
+|DOPR_DOPRCB9_DOPRCB9_DRDHCNT2X1       55800       39610 :  N 
+|DOPR_DOPRCB9_DOPRCB9_DRDHCNT2X2       57800       39610 :  N 
+|DOPR_DOPRCB9_DOPRCB9_DRDHCNT2X3       59800       39610 :  N 
+|DOPR_DRBSNXD_0       79200       26860 :  N 
+|DOPR_DRDHS_DRDHMUX_I1       58200       36210 :  N 
+|DOPR_DRDHS_DRDHMUX_I10       55800       36210 :  N 
+|DOPR_DRDHS_DRDHMUX_I2       58800       36210 :  N 
+|DOPR_DRDHS_DRDHMUX_I3       60200       36210 :  N 
+|DOPR_DRDHS_DRDHMUX_I4       58600       33320 :  N 
+|DOPR_DRDHS_DRDHMUX_I5       56800       36210 :  N 
+|DOPR_DRDHS_DRDHMUX_I6       57200       36210 :  N 
+|DOPR_DRDHS_DRDHMUX_I7       59200       36210 :  N 
+|DOPR_DRDHS_DRDHMUX_I8       60600       36210 :  N 
+|DOPR_DRDHS_DRDHMUX_I9       57400       33320 :  N 
+|DOPR_DRDHS_I1       61800       39610 :  N 
+|DOPR_DRDHS_I2       60000       33320 :  N 
+|DOPR_DRDHS_I3       55800       33320 :  N 
+|DOPR_DRSAL_0       58800       26860 :  N 
+|DOPR_DSBCY_0       81000       23460 :  N 
+|DOPR_DSCCY_0       91000       42670 :  N 
+|DOPR_DSCD_0       66400       42670 :  N 
+|DOPR_DSCZXD_0       57200       14110 :  N 
+|DOPR_DSF_0       78200       46070 :  N 
+|DOPR_DSFX1_0       80600       42670 :  N 
+|DOPR_DSFX2_0       81800       48960 :  N 
+|DOPR_DSGDF_0       85800       26860 :  N 
+|DOPR_DSGDFA_0       83000       23460 :  N 
+|DOPR_DSGDFXD_0       87000       26860 :  N 
+|DOPR_DSGNEX_0       58800        1360 :  N 
+|DOPR_DSGNX_0       70600        1360 :  N 
+|DOPR_DSGNXD_0       59400       29920 :  N 
+|DOPR_DSTZF_0       98600       29920 :  N 
+|DOPR_DSUSIG_DSUNNMUX_I1       77600       68340 :  N 
+|DOPR_DSUSIG_DSUNNMUX_I10       74800       68340 :  N 
+|DOPR_DSUSIG_DSUNNMUX_I11       67000       68340 :  N 
+|DOPR_DSUSIG_DSUNNMUX_I12       67000       74800 :  N 
+|DOPR_DSUSIG_DSUNNMUX_I13       80800       36210 :  N 
+|DOPR_DSUSIG_DSUNNMUX_I14       79600       29920 :  N 
+|DOPR_DSUSIG_DSUNNMUX_I15       64800       29920 :  N 
+|DOPR_DSUSIG_DSUNNMUX_I16       74000       74800 :  N 
+|DOPR_DSUSIG_DSUNNMUX_I2       69400       68340 :  N 
+|DOPR_DSUSIG_DSUNNMUX_I3       69200       74800 :  N 
+|DOPR_DSUSIG_DSUNNMUX_I4       83200       36210 :  N 
+|DOPR_DSUSIG_DSUNNMUX_I5       79200       29920 :  N 
+|DOPR_DSUSIG_DSUNNMUX_I6       18000       26860 :  N 
+|DOPR_DSUSIG_DSUNNMUX_I7       67000       29920 :  N 
+|DOPR_DSUSIG_DSUNNMUX_I8       75000       71740 :  N 
+|DOPR_DSUSIG_DSUNNMUX_I9       15800       26860 :  N 
+|DOPR_DSUSIG_I1       60800       26860 :  N 
+|DOPR_DSUSIG_I2       63400       26860 :  N 
+|DOPR_DSUSIG_I3       79200       36210 :  N 
+|DOPR_DYG7P_I1       91200       29920 :  N 
+|DOPR_DYG7P_I2       91600       29920 :  N 
+|DOPR_DYG7P_I3       89000       29920 :  N 
+|DOPR_DYG7P_I4       87000       29920 :  N 
+|DOPR_DYGIMU_0       55800       29920 :  N 
+|DOPR_DYGMUL_0       63000       29920 :  N 
+|DOPR_YFDIXD_0      102200        4250 :  N 
+|DOPR_YFIDXD_0      104200        7650 :  N 
+|DOPR_YFJ3A_0       79200       23460 :  N 
+|DOPR_YFK_0       65200       26860 :  N 
+|DOPR_YFL_0       70600       42670 :  N 
+|DOPR_YFLSXD_0      102200       10710 :  N 
+|DOPR_YFM_0       65200       23460 :  N 
+|DOPR_YFMDA_0       98400       23460 :  N 
+|DOPR_YFMDXD_0      100400       23460 :  N 
+|DOPR_YGA1_0       16000       29920 :  N 
+|DOPR_YGA6_0       11800       46070 :  N 
+|DOPR_YGA6XD_0       12800       42670 :  N 
+|DOPR_YGC1_0       81800       33320 :  N 
+|DOPR_YGC4_0       79200       33320 :  N 
+|DOPR_YGDIV_0       70400       36210 :  N 
+|DOPR_YGDVI_0       67400       39610 :  N 
+|DOPR_YGFXR_0       74800       39610 :  N 
+|DOPR_YGJ4_0       90600       36210 :  N 
+|DOPR_YGJ4XD_0       93200       36210 :  N 
+|DOPR_YGM1NN_0       61200       29920 :  N 
+|DOPR_YGM2NN_0       57600       29920 :  N 
+|DOPR_YGM3NN_0       69200       39610 :  N 
+|DOPR_YGM4NN_0       71000       39610 :  N 
+|DOPR_YGM5NN_0       77000       39610 :  N 
+|DOPR_YGM7NN_0       81400       39610 :  N 
+|DOPR_YGNMD_0       79600       39610 :  N 
+|DOPR_YGP1XD_0       61800       36210 :  N 
+|DOPR_YGP2XD_0       64600       33320 :  N 
+|DOPR_YGV6LA_I1      134000       29920 :  N 
+|DOPR_YGV6LA_I2      134600       29920 :  N 
+|DOPR_YGV6LA_I3      132000       29920 :  N 
+|DOPR_YGW2XD_0       61800       33320 :  N 
+|DOPR_YGW3XD_0       65400       39610 :  N 
+|DOPR_YJCXD_0      104000        4250 :  N 
+|DOPR_ZFB5_0       99000       33320 :  N 
+|SCNT_BRESETX2D_0      131000       52360 :  N 
+|SCNT_BRESETX3D_0       97000       71740 :  N 
+|SCNT_BRESETXD_0      127400       52360 :  N 
+|SCNT_CDFRZXD_0      126000       33320 :  N 
+|SCNT_CINTX2D_0      119200       39610 :  N 
+|SCNT_CINTXD_0      123800       36210 :  N 
+|SCNT_CJTX2D_0      130800       33320 :  N 
+|SCNT_CJTXD_0      128400       33320 :  N 
+|SCNT_CTRAPX2D_0      119600       42670 :  N 
+|SCNT_CTRAPXD_0      117400       42670 :  N 
+|SCNT_D23_SOLTCH1_O_0      101000       33320 :  N 
+|SCNT_D23_SOLTCH1_SO1CB1_SO1CB1_NODE481      105400       33320 :  N 
+|SCNT_D23_SOLTCH1_SO1CB1_SO1CB1_NODE5      103000       33320 :  N 
+|SCNT_D23_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O      104000       33320 :  N 
+|SCNT_D23_SOLTCH2_O1_0      101000       36210 :  N 
+|SCNT_D24_SOLTCH1_O_0      104800       36210 :  N 
+|SCNT_D24_SOLTCH1_SO1CB1_SO1CB1_NODE481      102800       36210 :  N 
+|SCNT_D24_SOLTCH1_SO1CB1_SO1CB1_NODE5      104000       39610 :  N 
+|SCNT_D24_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O      103800       36210 :  N 
+|SCNT_D24_SOLTCH2_O1_0      104800       39610 :  N 
+|SCNT_D25_SOLTCH1_O_0       99000       39610 :  N 
+|SCNT_D25_SOLTCH1_SO1CB1_SO1CB1_NODE481      102800       39610 :  N 
+|SCNT_D25_SOLTCH1_SO1CB1_SO1CB1_NODE5      101000       39610 :  N 
+|SCNT_D25_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O      101600       39610 :  N 
+|SCNT_D25_SOLTCH2_O1_0       98800       36210 :  N 
+|SCNT_DRLABUSX2D_0      130800       42670 :  N 
+|SCNT_DRLABUSXD_0      131200       39610 :  N 
+|SCNT_EA1CTL_0      133200       52360 :  N 
+|SCNT_EA2CTL_0      144200       39610 :  N 
+|SCNT_GICE_0      128800       39610 :  N 
+|SCNT_GSPEC_0       95200       65280 :  N 
+|SCNT_GSPEC_1      109800       71740 :  N 
+|SCNT_GSPEC_2      111600       74800 :  N 
+|SCNT_GSPEC_3      107600       71740 :  N 
+|SCNT_GSPEC_4      102200       71740 :  N 
+|SCNT_ID1ADVXD_0      117400       33320 :  N 
+|SCNT_INPBSYXD_0      130600       46070 :  N 
+|SCNT_KBSYXD_0      127400       48960 :  N 
+|SCNT_LDTMPDES_0      146000       33320 :  N 
+|SCNT_LTCHSG1_0      150600       74800 :  N 
+|SCNT_LTCHSG2_0      157200       74800 :  N 
+|SCNT_PBSYXD_0      125600       48960 :  N 
+|SCNT_PSFLTXD_0      120200       48960 :  N 
+|SCNT_SAB_0      150600       55420 :  N 
+|SCNT_SABRTA_0      128400       42670 :  N 
+|SCNT_SADDEA_0      157200       58820 :  N 
+|SCNT_SADLO_0      137400       74800 :  N 
+|SCNT_SB86_0      136800       39610 :  N 
+|SCNT_SBB_0      133200       46070 :  N 
+|SCNT_SBRFRZ_0      129200       74800 :  N 
+|SCNT_SBRNSXD_0      129400       65280 :  N 
+|SCNT_SBRNXD_0      101200       42670 :  N 
+|SCNT_SBSYBSIG_L1      104600       55420 :  N 
+|SCNT_SBSYCNN_0      104000       42670 :  N 
+|SCNT_SCFRZXD_0      118400       48960 :  N 
+|SCNT_SCJFRZX2D_0      103000       46070 :  N 
+|SCNT_SCJFRZXD_0      101200       46070 :  N 
+|SCNT_SCJT_0      120600       33320 :  N 
+|SCNT_SCJTAX2D_0      122800       33320 :  N 
+|SCNT_SCJTINT_0      120800       36210 :  N 
+|SCNT_SCJTINTXD_0      118600       36210 :  N 
+|SCNT_SCLAL_0      146200       58820 :  N 
+|SCNT_SCLB_0      139000       58820 :  N 
+|SCNT_SCLIIBUS_0      148600       39610 :  N 
+|SCNT_SCNOP_0      157400       68340 :  N 
+|SCNT_SCNTCB12_SCNTCB12_TEMPHDL2DZD_2_SCJTINT      122800       36210 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE13056      111400       58820 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE164740      117800       48960 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE164741      117400       48960 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE168170      112600       52360 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE168171      107400       61880 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE168172      106600       61880 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE176759      111600       55420 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE176762      109800       52360 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE176763      104600       52360 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE176764      109800       55420 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE176765      108000       52360 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE180585      113600       52360 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE180682      107200       58820 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE256371      105600       52360 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE256372      106000       52360 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE258688      113600       55420 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE258689      112800       55420 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE270990      110200       52360 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE32352      106400       58820 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE4626      105400       48960 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE4647      107600       58820 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE4698      106200       48960 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE4702      104600       58820 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE4757      104800       48960 :  N 
+|SCNT_SCNTCB1_SCNTCB1_NODE8834      108800       55420 :  N 
+|SCNT_SCNTCB1_SCNTCB1_SBRAN      101200       48960 :  N 
+|SCNT_SCNTCB1_SCNTCB1_SBRANSX1      112200       58820 :  N 
+|SCNT_SCNTCB1_SCNTCB1_SBRANSX2      109600       58820 :  N 
+|SCNT_SCNTCB1_SCNTCB1_SBSYBINPNN      106600       55420 :  N 
+|SCNT_SCNTCB1_SCNTCB1_SBSYCINPNN      107000       52360 :  N 
+|SCNT_SCNTCB1_SCNTCB1_SCFRZ      105600       46070 :  N 
+|SCNT_SCNTCB1_SCNTCB1_SCJFRZ      105000       46070 :  N 
+|SCNT_SCNTCB1_SCNTCB1_SFRGT      108600       61880 :  N 
+|SCNT_SCNTCB1_SCNTCB1_SNOCHK      110600       52360 :  N 
+|SCNT_SCNTCB2_SCNTCB2_GICEUNL      125400       55420 :  N 
+|SCNT_SCNTCB2_SCNTCB2_GSPECUNL0      115800       58820 :  N 
+|SCNT_SCNTCB2_SCNTCB2_GSPECUNL1      116000       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_GSPECUNL2      115400       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_GSPECUNL3      127800       58820 :  N 
+|SCNT_SCNTCB2_SCNTCB2_GSPECUNL4      116800       68340 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1080      120200       58820 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE11495      119400       71740 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE11496      120200       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1184       98800       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1195      124000       48960 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1197      127600       36210 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1201      103400       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1205      132600       46070 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1207      121200       55420 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE12077      123400       68340 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1273      120200       52360 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1275      114200       55420 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1361      117400       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1377      119000       58820 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1380      126000       55420 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1387      124400       55420 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1389      125200       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1394      122800       52360 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1400      114200       52360 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1431      114200       71740 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1465      123000       58820 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1487      116200       71740 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1494      126400       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE1557      115200       58820 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE181807      122800       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE184287      122800       65280 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE184288      123400       65280 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE184995      126000       52360 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE184996      129400       55420 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE184997      130000       55420 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE192927      122800       55420 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE193198      122200       65280 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE219043      120800       58820 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE219938      118000       65280 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE219939      127600       55420 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE219940      116000       65280 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE220064      122000       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE220065      123600       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE282968      120200       68340 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE282969      121400       68340 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE286026      114200       65280 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE286028      126800       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE328888      116000       52360 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE328890      118400       65280 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE329056      123600       58820 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE329057      124600       58820 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE329248      129800       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE330050      131400       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE33473      119400       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE33813      123800       55420 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE33911       99200       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE42355      118200       55420 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE42356      116200       55420 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE42358      120200       55420 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE42359      119400       55420 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE48828      131200       58820 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE48829      132400       58820 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE48830      126600       58820 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE48831      130000       58820 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE53102      122200       68340 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE59002      117200       71740 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE59003      121000       71740 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE59004      118200       71740 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE61580      122400       58820 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE62948      122000       71740 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE62949      123200       71740 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE67194      125400       52360 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE67195      126800       52360 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE688      119200       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE692      124600       46070 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE706      119000       68340 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE714      125400       58820 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE732      117800       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE740      117800       58820 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE748      126400       46070 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE75862      117800       52360 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE75863      116800       52360 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE80526      123200       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE80528      122600       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE850X1      119400       65280 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE850X2      116000       68340 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE88423      120600       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE88424      129200       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE8942      120200       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE8944      126600       36210 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE92000      114200       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE93218      124200       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_NODE93220      124600       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_SBRNS      128600       68340 :  N 
+|SCNT_SCNTCB2_SCNTCB2_SBRWR4ND      114200       58820 :  N 
+|SCNT_SCNTCB2_SCNTCB2_SEIPD      117400       36210 :  N 
+|SCNT_SCNTCB2_SCNTCB2_SIORD      124200       71740 :  N 
+|SCNT_SCNTCB2_SCNTCB2_SLDEXT      114200       68340 :  N 
+|SCNT_SCNTCB2_SCNTCB2_SLGTH8      100200       61880 :  N 
+|SCNT_SCNTCB2_SCNTCB2_SMBUSI      120200       65280 :  N 
+|SCNT_SCNTCB2_SCNTCB2_SMEMRD      135400       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_SRESET       99000       71740 :  N 
+|SCNT_SCNTCB2_SCNTCB2_SRLK      120800       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_SSTEXT      114200       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_SSTVARX1      134200       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_SSTVARX2      133200       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_STIWR      104600       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_STRBR      129200       52360 :  N 
+|SCNT_SCNTCB2_SCNTCB2_STRXA      126000       36210 :  N 
+|SCNT_SCNTCB2_SCNTCB2_TEMPHDL11DZD_2_SPLTBRN      110400       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_TEMPHDL12DZD_2_SREQA      100000       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_TEMPHDL13DZD_2_SIOCYLNN      103800       74800 :  N 
+|SCNT_SCNTCB2_SCNTCB2_TEMPHDL6DZD_2_STRSTXD      128000       36210 :  N 
+|SCNT_SCNTCB3_SCNTCB3_INPBSY      133200       33320 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE100570      146800       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE10118       95800       46070 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE10119       96400       55420 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE104790       98800       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE10889      136000       61880 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE10890      135200       58820 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE110245      142200       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE110247      142600       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE115146      137400       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE119305      146200       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE119306      140600       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE119308      141000       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE12767      127600       29920 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE12769      128600       29920 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE136542      136200       33320 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE14125      146800       71740 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE1496      127200       26860 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE1501      135400        1360 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE1506      136400       58820 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE1517      133200       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE1820      135800       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE1832      146000       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE1847      138200       58820 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE1864      135800       39610 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE1865      133200       39610 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE1897      135200       61880 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE1908      144400       58820 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE1919      141000       55420 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE1986      146000       71740 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2023      141600       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2027      150600       61880 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2038      146600       61880 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2040      146000       61880 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2047      141000       61880 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2049      141000       58820 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2052      151000       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2059      156400       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2067      142200       71740 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE223678      138600       33320 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE224217      140000       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE224219      140000       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE224639      135600       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE226494       97000       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE231920      142200       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE231921      135200       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE236020      101400       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE236021       99800       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE236022      103800       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE236023      100400       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE236024       99200       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE236025      102600       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2518      135200       39610 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2537      146000       55420 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2538      133200       55420 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2542      138000       55420 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2554       95200       46070 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2557        9400       52360 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2558       13800       46070 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2583      127200       36210 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2599      131600       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2601      130200       20570 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2603      134400       33320 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2605      132800       55420 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2611      129000       26860 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2613       72600       48960 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2615       68600       48960 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2621      119600       26860 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2625      135800       58820 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2631X1       75200       48960 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2631X2       75800       48960 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2635      144200       55420 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2641      133200       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2643      126000       42670 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2711      138200       71740 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2716      141800       71740 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2719      148000       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2721      147200       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2735      145400       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2741      133200       42670 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2753      129600       29920 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2757      126200       26860 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2813      122000       42670 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2817      102400       74800 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2831      121600       46070 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2837      125000       33320 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2931      144000       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE2943      140000       71740 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE3007      127000       39610 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE3024      126000       39610 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE3048      148600       61880 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE3072      148600       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE3096      154000       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE3188      139200       61880 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE3189       75200       58820 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE3941      135000       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE60       74200       48960 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE6272      104200       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE95229      132200       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE95230      134800       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE98097      144400       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE98098      135000       71740 :  N 
+|SCNT_SCNTCB3_SCNTCB3_NODE98099      137800       71740 :  N 
+|SCNT_SCNTCB3_SCNTCB3_S0XI      125800       29920 :  N 
+|SCNT_SCNTCB3_SCNTCB3_S16IPUSH      120800       29920 :  N 
+|SCNT_SCNTCB3_SCNTCB3_S1XI      124200       29920 :  N 
+|SCNT_SCNTCB3_SCNTCB3_S2XI      130200       29920 :  N 
+|SCNT_SCNTCB3_SCNTCB3_S32IPUSH      119000       29920 :  N 
+|SCNT_SCNTCB3_SCNTCB3_S3XI      122600       29920 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SBRFRZA      133200       71740 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SBRN      138000       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SBTR      111000       48960 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SCABRT      128200       39610 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SCJTA      119600       33320 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SDODCB      144000       71740 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SDODCD      143800       61880 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SDODCI      142800       61880 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SDODECO      138000       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SFRZ      136000       71740 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SICABRT      125400       74800 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SICABRTA      124600       42670 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SILAL      142200       55420 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SLATB      133200       61880 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SLIRIP      135400       46070 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SLK2Q0X       73200       48960 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SLK2Q16X       69000       48960 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SLK2Q8X       70800       48960 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SPLIT      103200       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SPLTF       95200       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SRDSAB        7600       52360 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SRDSBB       12400       55420 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SRDSLB       95200       55420 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SRDX1       98400       55420 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SRDX2      100400       55420 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SRECIRC       74000       58820 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SWRA1      149600       61880 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SWRB1      149800       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SWRL1      155200       65280 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SZB      136800       61880 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SZD       75800       58820 :  N 
+|SCNT_SCNTCB3_SCNTCB3_SZI      144800       55420 :  N 
+|SCNT_SCNTCB3_SCNTCB3_TEMPHDL4DZD_2_DRLABUSX2D      127000       42670 :  N 
+|SCNT_SCNTCB3_SCNTCB3_TEMPHDL5DZD_2_STRBRX2D      132200       55420 :  N 
+|SCNT_SCNTCB3_SCNTCB3_TEMPHDL7DZD_2_SLEA1R      143200       68340 :  N 
+|SCNT_SCNTCB3_SCNTCB3_TEMPHDL8DZD_2_SLEA2R      145200       68340 :  N 
+|SCNT_SCNTCB4_SCNTCB4_EA1CTLA      135000       52360 :  N 
+|SCNT_SCNTCB4_SCNTCB4_EA2CTLA      142000       39610 :  N 
+|SCNT_SCNTCB4_SCNTCB4_LDTMPDESA      145000       36210 :  N 
+|SCNT_SCNTCB4_SCNTCB4_LTCHSG1A      150600       58820 :  N 
+|SCNT_SCNTCB4_SCNTCB4_LTCHSG2AX1      156800       71740 :  N 
+|SCNT_SCNTCB4_SCNTCB4_LTCHSG2AX2      154200       71740 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE139146      154400       36210 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE14770      148600       33320 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE151883      154400       39610 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE151885      156200       36210 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE151887      156600       39610 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE151888      153600       33320 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE151890      156600       33320 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE151891      154400       33320 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE151892      153600       39610 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE157849      154000       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE157851      157800       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE157852      157000       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE157853      150600       46070 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE157854      155200       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE157855      158800       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE157856      153400       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE157857      155000       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE157858      152600       39610 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE157859      149600       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE162989      144200       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE162990      154200       55420 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE162991      137000       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE163853      147000       36210 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE163882      137200       36210 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE163912      133200       36210 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE163923      143600       33320 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE163951      144400       74800 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE163983      141200       33320 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3025      138800       39610 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3026      155600       46070 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3027      157800       46070 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3028      152800       36210 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3030      146400       46070 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3031      157200       39610 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3032      154800       52360 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3033      153400       46070 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3035      157400       36210 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3040      146200       39610 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3042      151600       33320 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3043      152800       58820 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3045      151800       65280 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3059      148600       52360 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3060X1      138800       52360 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3060X2      138800       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3069      157800       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3098      139000       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3112      148600       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3134      152600       52360 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3221      144200       52360 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3240      149800       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3256      149200       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3336      156000       55420 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3338      142800       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3340      157600       55420 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3344      139600       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3360      150400       39610 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3378      137000       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3420      140000       52360 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3422      156800       36210 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3426      144600       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3428      150400       33320 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3430      140000       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3434      153400       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3436      142000       46070 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3452      150600       36210 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3478      151400       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3488      152600       68340 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3498      145400       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3502      147400       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3504      151200       46070 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3510      142000       52360 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3516      148600       46070 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3517      143400       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3518      152600       55420 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3519      153000       33320 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3609      139200       36210 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE3771      157400       33320 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE73      148600       58820 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE74      147400       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE75      157200       52360 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE79      148600       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE80      141200       39610 :  N 
+|SCNT_SCNTCB4_SCNTCB4_NODE81      154200       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SABA      148600       55420 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SADDEAA      155200       58820 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SADLOA      135000       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SB86A      140600       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SBBA      144200       46070 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SCLALA      151200       42670 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SCLBA      150200       52360 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SCLIIBUSA      148600       36210 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SCNOPA      155400       68340 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SCRDA      155400       39610 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SCZBA      145400       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SCZDA      142000       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SCZIA      146400       52360 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SLBA      140000       46070 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SLD4A      135000       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SLDFEAA      148600       68340 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SLDILA      157200       65280 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SLDRBUSA      136800       52360 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SLEA1RA      150800       71740 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SLEA2RA      140000       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SLLIMA      141200       36210 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SNULSRA      153400       68340 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SUSEG1A      153200       71740 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SUSEG2A      150600       68340 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SWRA1A      153200       61880 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SWRB1A      155800       48960 :  N 
+|SCNT_SCNTCB4_SCNTCB4_SWRL1A      154400       61880 :  N 
+|SCNT_SCNTCB5_SCNTCB5_SPG       95200       74800 :  N 
+|SCNT_SCNTCB6_SCNTCB6_TEMPHDL1DZD_2_BRESETX2D      130200       52360 :  N 
+|SCNT_SCNTCB7_SCNTCB7_NODE4442       72800       74800 :  N 
+|SCNT_SCNTCB7_SCNTCB7_TEMPHDL10DZD_2_SLD8S       73200       74800 :  N 
+|SCNT_SCNTCB7_SCNTCB7_TEMPHDL9DZD_2_SLD4S       72200       74800 :  N 
+|SCNT_SCNTCB8_SCNTCB8_SABRTBX1      132400       68340 :  N 
+|SCNT_SCNTCB8_SCNTCB8_SABRTBX2      131800       68340 :  N 
+|SCNT_SCNTCB8_SCNTCB8_SABRTBX3      131200       68340 :  N 
+|SCNT_SCRD_0      136000       55420 :  N 
+|SCNT_SCZB_0      138800       55420 :  N 
+|SCNT_SCZD_0      133800       55420 :  N 
+|SCNT_SCZI_0      146600       55420 :  N 
+|SCNT_SFRGTXD_0      110000       61880 :  N 
+|SCNT_SIGMRDYXD_0      135000       36210 :  N 
+|SCNT_SIOCYLNN_0       97000       74800 :  N 
+|SCNT_SLB_0      137600       46070 :  N 
+|SCNT_SLD4D_0      133200       48960 :  N 
+|SCNT_SLD4S_0       68600       52360 :  N 
+|SCNT_SLD8S_0       70200       74800 :  N 
+|SCNT_SLDFEA_0      146400       74800 :  N 
+|SCNT_SLDIL_0      146600       65280 :  N 
+|SCNT_SLDRBUS_0      133200       58820 :  N 
+|SCNT_SLEA1R_0      131400       71740 :  N 
+|SCNT_SLEA1RB_0      148600       71740 :  N 
+|SCNT_SLEA2R_0      102800       48960 :  N 
+|SCNT_SLEA2RB_0      142000       58820 :  N 
+|SCNT_SLGTH8XD_0       76200       74800 :  N 
+|SCNT_SLLIM_0      143200       36210 :  N 
+|SCNT_SNULSR_0      155000       74800 :  N 
+|SCNT_SPLTBRN_0      106400       74800 :  N 
+|SCNT_SPLTCXD_0       99600       68340 :  N 
+|SCNT_SREQA_0       97600       65280 :  N 
+|SCNT_SSTVARXD_0      139800       74800 :  N 
+|SCNT_STBXD_0      122200       48960 :  N 
+|SCNT_STKLXD_0      100600       74800 :  N 
+|SCNT_STRBRX2D_0      128600       46070 :  N 
+|SCNT_STRBRXD_0      130400       55420 :  N 
+|SCNT_STRSTX2D_0      131200       36210 :  N 
+|SCNT_STRSTXD_0      129200       36210 :  N 
+|SCNT_STRXAD_0      117400       46070 :  N 
+|SCNT_STTXD_0      104600       61880 :  N 
+|SCNT_SUSEG1_0      152800       74800 :  N 
+|SCNT_SUSEG2_0      148600       74800 :  N 
+|SCNT_SWRA1B_0      151400       61880 :  N 
+|SCNT_SWRA_0      125400       65280 :  N 
+|SCNT_SWRB1B_0      157400       61880 :  N 
+|SCNT_SWRB_0      112200       71740 :  N 
+|SCNT_SWRL1B_0      155400       61880 :  N 
+|SCNT_SWRL_0      127400       65280 :  N 
+|SVSS_ALDTXD_0      114800       14110 :  N 
+|SVSS_AVIOLB_0      125400       68340 :  N 
+|SVSS_D26_SOLTCH1_O_0       97000       33320 :  N 
+|SVSS_D26_SOLTCH1_SO1CB1_SO1CB1_NODE481       95200       36210 :  N 
+|SVSS_D26_SOLTCH1_SO1CB1_SO1CB1_NODE5       97800       36210 :  N 
+|SVSS_D26_SOLTCH1_SO1CB1_SO1CB1_TEMPHDL1DZD_2_O       96400       36210 :  N 
+|SVSS_D26_SOLTCH2_O1_0       95200       33320 :  N 
+|SVSS_DOCHKA_0      122000       39610 :  N 
+|SVSS_DRLABUSXD_0      119400       46070 :  N 
+|SVSS_GSBRXD_0      102400       55420 :  N 
+|SVSS_GSBRXD_1      102400       52360 :  N 
+|SVSS_GSBRXD_2      129600       71740 :  N 
+|SVSS_GSBRXD_4      102800       58820 :  N 
+|SVSS_SARBX2D_0      108400       74800 :  N 
+|SVSS_SBOWNNXD_0       97000       39610 :  N 
+|SVSS_SBRANSXD_0      129400       68340 :  N 
+|SVSS_SBRWR4NDXD_0      112000       61880 :  N 
+|SVSS_SCHKVIO_0      117400       39610 :  N 
+|SVSS_SEDX2D_0      104600       65280 :  N 
+|SVSS_SL10B_0      102000       61880 :  N 
+|SVSS_SLGTH8XD_0       95200       61880 :  N 
+|SVSS_SNOBSY_0      131200       48960 :  N 
+|SVSS_SPLITHX2D_0       95200       52360 :  N 
+|SVSS_SPLITHXD_0       22400       52360 :  N 
+|SVSS_SRLKXD_0      127200       74800 :  N 
+|SVSS_SSYSXD_0      142200       74800 :  N 
+|SVSS_SVIOXD_0      131200       74800 :  N 
+|SVSS_SVSSCB1_SVSSCB1_NODE493      123800       39610 :  N 
+|SVSS_SVSSCB1_SVSSCB1_TEMPHDL2DZD_2_SCHKVIO      124200       39610 :  N 
+|SVSS_SVSSCB2_SVSSCB2_NODE506      121000       39610 :  N 
+|SVSS_SVSSCB2_SVSSCB2_TEMPHDL1DZD_2_DOCHKA      121400       39610 :  N 
+|SVSS_SVSSCB3_SVSSCB3_NODE516      124600       48960 :  N 
+|SVSS_SVSSCB3_SVSSCB3_NODE531      123800       46070 :  N 
+|SVSS_SVSSCB3_SVSSCB3_TEMPHDL3DZD_2_SNOBSY      129400       48960 :  N 
+|SVSS_SVSSCB4_SVSSCB4_AVIOL      106400       68340 :  N 
+|SVSS_SVSSCB4_SVSSCB4_NODE12544       63200       74800 :  N 
+|SVSS_SVSSCB4_SVSSCB4_NODE12545      104600       71740 :  N 
+|SVSS_SVSSCB4_SVSSCB4_NODE12546      104600       68340 :  N 
+|SVSS_SVSSCB4_SVSSCB4_NODE13383      108200       68340 :  N 
+|SVSS_SVSSCB4_SVSSCB4_NODE13386      112800       68340 :  N 
+|SVSS_SVSSCB4_SVSSCB4_NODE13388      109800       68340 :  N 
+|SVSS_SVSSCB4_SVSSCB4_NODE16066      107400       65280 :  N 
+|SVSS_SVSSCB4_SVSSCB4_NODE16067      108600       65280 :  N 
+|SVSS_SVSSCB4_SVSSCB4_NODE16068      108000       65280 :  N 
+|SVSS_SVSSCB4_SVSSCB4_NODE16069      108800       68340 :  N 
+|SVSS_SVSSCB4_SVSSCB4_NODE16487      110800       65280 :  N 
+|SVSS_SVSSCB4_SVSSCB4_NODE16488      109800       65280 :  N 
+|SVSS_SVSSCB4_SVSSCB4_NODE1973      106400       71740 :  N 
+|SVSS_SVSSCB4_SVSSCB4_NODE2348      106600       65280 :  N 
+|SVSS_SVSSCB4_SVSSCB4_NODE2453      113400       68340 :  N 
+|SVSS_SVSSCB4_SVSSCB4_NODE936       64400       74800 :  N 
+|SVSS_SVSSCB4_SVSSCB4_SVABRTNN      110800       68340 :  N 
+|SVSS_SVSSCB4_SVSSCB4_SVIO      112600       65280 :  N 
+|SVSS_SVSSCB5_SVSSCB5_AVIOLA      127200       68340 :  N 
+|SVSS_SVSSCB5_SVSSCB5_NODE701      128200       68340 :  N 
+|SVSS_SVSSCB5_SVSSCB5_NODE703      128800       71740 :  N 
+|SVSS_SVSSCB5_SVSSCB5_NODE705      116600       14110 :  N 
+|SVSS_SVSSCB5_SVSSCB5_NODE711      129200       71740 :  N 
+|SVSS_SVSSCB5_SVSSCB5_NODE713      125400       71740 :  N 
+|SVSS_SVSSCB5_SVSSCB5_NODE717      127800       71740 :  N 
+|SVSS_SVSSCB5_SVSSCB5_NODE731      126800       71740 :  N 
+|SVSS_SVSSCB5_SVSSCB5_NODE733      125800       71740 :  N 
+|SVSS_SVSSCB6_SVSSCB6_ADEL0       97200       52360 :  N 
+|SVSS_SVSSCB6_SVSSCB6_ADEL1       99400       52360 :  N 
+|SVSS_SVSSCB6_SVSSCB6_NODE6192X1       98000       58820 :  N 
+|SVSS_SVSSCB6_SVSSCB6_NODE6192X2       95800       58820 :  N 
+|SVSS_SVSSCB6_SVSSCB6_NODE6193       97000       61880 :  N 
+|SVSS_SVSSCB6_SVSSCB6_NODE6194      101200       58820 :  N 
+|SVSS_SVSSCB6_SVSSCB6_NODE6195      101600       58820 :  N 
+|SVSS_SVSSCB6_SVSSCB6_NODE6196       95200       58820 :  N 
+|SVSS_SVSSCB6_SVSSCB6_NODE6197      100200       58820 :  N 
+|SVSS_SVSSCB6_SVSSCB6_NODE782      102200       58820 :  N 
+|SVSS_SVSSCB6_SVSSCB6_NODE795      101600       52360 :  N 
+|SVSS_SVSSCB6_SVSSCB6_NODE802      104000       61880 :  N 
+|SVSS_SVSSCB6_SVSSCB6_NODE806       98800       61880 :  N 
+|SVSS_SVSSCB6_SVSSCB6_NODE810      100800       58820 :  N 
+|SVSS_SVSSCB6_SVSSCB6_NODE812       94600       58820 :  N 
+|SVSS_SVSSCB6_SVSSCB6_SL10A       99200       61880 :  N 

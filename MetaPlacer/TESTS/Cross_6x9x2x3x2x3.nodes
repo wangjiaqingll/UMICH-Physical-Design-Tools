@@ -1,0 +1,47 @@
+UCLA nodes 1.0
+#Created : fill in later
+#User : fill in later
+#Platform : fill in later
+
+NumNodes :	40
+NumTerminals :	10
+	p0	1	1	terminal
+	p1	1	1	terminal
+	p2	1	1	terminal
+	p3	1	1	terminal
+	p4	1	1	terminal
+	p5	1	1	terminal
+	p6	1	1	terminal
+	p7	1	1	terminal
+	p8	1	1	terminal
+	p9	1	1	terminal
+	a0	1	1
+	a1	1	1
+	a2	1	1
+	a3	1	1
+	a4	1	1
+	a5	1	1
+	a6	1	1
+	a7	1	1
+	a8	1	1
+	a9	1	1
+	a10	1	1
+	a11	1	1
+	a12	1	1
+	a13	1	1
+	a14	1	1
+	a15	1	1
+	a16	1	1
+	a17	1	1
+	a18	1	1
+	a19	1	1
+	a20	1	1
+	a21	1	1
+	a22	1	1
+	a23	1	1
+	a24	1	1
+	a25	1	1
+	a26	1	1
+	a27	1	1
+	a28	1	1
+	a29	1	1

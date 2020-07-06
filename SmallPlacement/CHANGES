@@ -1,0 +1,24 @@
+
+ SmallPlacement 1.1
+   990429  ilm  added colons to the format 
+                so that it looks similar to SmallPartProblem;
+                added indentation
+   990429  ilm  changed format version number from 1.0 to 1.1
+                and upgraded the description
+
+ SmallPlacement 1.2
+   990430  ilm  renamed SmallPlacementProblem into BaseSmallPlacementProblem
+                so that new ctors can be added to SmallPlacementProblem
+	 	   w/o too much clutter; 
+                simplifications to SmallPlRow and other cosmetic changes --
+                   all dependent code needs adjustments
+
+ SmallPlacement 1.3
+   990501  ilm  wrote a new generic ctor for SmallPlacementProblem
+                (the class is derived from BaseSmallPlacementProblem)
+
+ SmallPlacement 1.3
+   001128  s.a  added a plotter, added a function to detect/remove overlaps
+      
+ SmallPlacement 2.5
+   020824  ilm  ported to g++ 3.1.1 

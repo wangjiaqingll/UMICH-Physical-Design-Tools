@@ -1,0 +1,7 @@
+#!/bin/csh -f
+
+set TBase="~data/BENCH/NewIBM/ORIG/"
+set TPL="~data/BENCH/NewIBM/Placements/"
+
+partTest10 -net ${TBase}new1.netD -are ${TBase}new1.are -place ${TPL}new1.pl
+

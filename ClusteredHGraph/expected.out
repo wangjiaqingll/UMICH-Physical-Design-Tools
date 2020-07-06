@@ -1,0 +1,246 @@
+------------  Running test 0a...
+Clustering Parameters
+ Clustering Type: HEM   
+ ClusterRatio:    1.3
+ LevelGrowth:     2.5
+ MaxNewClRatio:   9
+ MaxChildClRatio: 4.5
+ MaxClArea:       0
+ SizeOfTop:       200
+ RemoveDup:       0
+ WeightOption:    3
+ dontClusterToTerms 0
+
+File seeds.in exists and will override all seeds, including hardcoded ones 
+Reading TESTS/primary1+.aux
+ Done reading HGraph
+ Reading TESTS/2way10%.blk ... 
+
+Terminals specified in .net or .netD file, but no .fix file given.
+  Making all nodes nonterminal (Warning in partProbIO.cxx:1164)
+Reading PartitioningProblem took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Init+Read+PostProcess for PartProblem took  0.039 user, 2.0e-02 system, 1 real, 0.546 norm'd sec 
+HEM Clustering
+ #Clusters
+ 833
+ 314
+ 200
+ 0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+# Memory usage : 4.07812Mb (peak)  4.14844Mb (estimate)
+
+Degree 2 duplicate edges removed: 0
+Degree 3 duplicate edges removed: 0
+There are 3 saved HGraphs
+TopLevel HGraph (#2)
+  NumNodes: 200
+  NumTerms: 0
+  NumEdges: 484
+Top level cut: 307
+HGraph #1
+  NumNodes: 314
+  NumTerms: 0
+  NumEdges: 575
+  Cut: 307
+HGraph #0
+  NumNodes: 833
+  NumTerms: 0
+  NumEdges: 902
+  Cut: 307
+------------  Running test 0b-opt1...
+Clustering Parameters
+ Clustering Type: HEM   
+ ClusterRatio:    1.3
+ LevelGrowth:     2.5
+ MaxNewClRatio:   9
+ MaxChildClRatio: 4.5
+ MaxClArea:       0
+ SizeOfTop:       75
+ RemoveDup:       0
+ WeightOption:    3
+ dontClusterToTerms 0
+
+File seeds.in exists and will override all seeds, including hardcoded ones 
+Reading TESTS/ibm01+.aux
+ Done reading HGraph
+ Reading TESTS/2way10%.blk ... 
+
+Terminals specified in .net or .netD file, but no .fix file given.
+  Making all nodes nonterminal (Warning in partProbIO.cxx:1164)
+Reading PartitioningProblem took  0.179 user, 3.0e-02 system, 0 real, 1.845 norm'd sec 
+Init+Read+PostProcess for PartProblem took  0.219 user, 4.0e-02 system, 0 real, 2.255 norm'd sec 
+HEM Clustering
+ #Clusters
+ 12752
+ 4765
+ 1906
+ 763
+ 306
+ 75
+ 0.3 user, 1.0e-02 system, 1 real, 3.075 norm'd sec 
+# Memory usage : 11.1445Mb (peak)  11.2109Mb (estimate)
+
+Degree 2 duplicate edges removed: 0
+Degree 3 duplicate edges removed: 0
+There are 6 saved HGraphs
+TopLevel HGraph (#5)
+  NumNodes: 75
+  NumTerms: 0
+  NumEdges: 2728
+Top level cut: 1629
+HGraph #4
+  NumNodes: 306
+  NumTerms: 0
+  NumEdges: 4183
+  Cut: 1629
+HGraph #3
+  NumNodes: 763
+  NumTerms: 0
+  NumEdges: 5483
+  Cut: 1629
+HGraph #2
+  NumNodes: 1906
+  NumTerms: 0
+  NumEdges: 7170
+  Cut: 1629
+HGraph #1
+  NumNodes: 4765
+  NumTerms: 0
+  NumEdges: 9284
+  Cut: 1629
+HGraph #0
+  NumNodes: 12752
+  NumTerms: 0
+  NumEdges: 14111
+  Cut: 1629
+------------  Running test 0b-opt2...
+Clustering Parameters
+ Clustering Type: HEM   
+ ClusterRatio:    1.3
+ LevelGrowth:     2.5
+ MaxNewClRatio:   9
+ MaxChildClRatio: 4.5
+ MaxClArea:       0
+ SizeOfTop:       75
+ RemoveDup:       2
+ WeightOption:    3
+ dontClusterToTerms 0
+
+File seeds.in exists and will override all seeds, including hardcoded ones 
+Reading TESTS/ibm01+.aux
+ Done reading HGraph
+ Reading TESTS/2way10%.blk ... 
+
+Terminals specified in .net or .netD file, but no .fix file given.
+  Making all nodes nonterminal (Warning in partProbIO.cxx:1164)
+Reading PartitioningProblem took  0.179 user, 0.0e+00 system, 0 real, 1.844 norm'd sec 
+Init+Read+PostProcess for PartProblem took  0.22 user, 2.0e-02 system, 0 real, 2.254 norm'd sec 
+HEM Clustering
+ #Clusters
+ 12752
+ 4765
+ 1906
+ 763
+ 306
+ 75
+ 0.31 user, 0.0e+00 system, 0 real, 3.177 norm'd sec 
+# Memory usage : 10.8867Mb (peak)  10.9453Mb (estimate)
+
+Degree 2 duplicate edges removed: 4180
+Degree 3 duplicate edges removed: 0
+There are 6 saved HGraphs
+TopLevel HGraph (#5)
+  NumNodes: 75
+  NumTerms: 0
+  NumEdges: 1171
+Top level cut: 1629
+HGraph #4
+  NumNodes: 306
+  NumTerms: 0
+  NumEdges: 2537
+  Cut: 1629
+HGraph #3
+  NumNodes: 763
+  NumTerms: 0
+  NumEdges: 3855
+  Cut: 1629
+HGraph #2
+  NumNodes: 1906
+  NumTerms: 0
+  NumEdges: 5648
+  Cut: 1629
+HGraph #1
+  NumNodes: 4765
+  NumTerms: 0
+  NumEdges: 8093
+  Cut: 1629
+HGraph #0
+  NumNodes: 12752
+  NumTerms: 0
+  NumEdges: 14111
+  Cut: 1629
+------------  Running test 0b-opt3...
+Clustering Parameters
+ Clustering Type: HEM   
+ ClusterRatio:    1.3
+ LevelGrowth:     2.5
+ MaxNewClRatio:   9
+ MaxChildClRatio: 4.5
+ MaxClArea:       0
+ SizeOfTop:       75
+ RemoveDup:       3
+ WeightOption:    3
+ dontClusterToTerms 0
+
+File seeds.in exists and will override all seeds, including hardcoded ones 
+Reading TESTS/ibm01+.aux
+ Done reading HGraph
+ Reading TESTS/2way10%.blk ... 
+
+Terminals specified in .net or .netD file, but no .fix file given.
+  Making all nodes nonterminal (Warning in partProbIO.cxx:1164)
+Reading PartitioningProblem took  0.169 user, 1.0e-02 system, 0 real, 1.742 norm'd sec 
+Init+Read+PostProcess for PartProblem took  0.209 user, 2.0e-02 system, 0 real, 2.152 norm'd sec 
+HEM Clustering
+ #Clusters
+ 12752
+ 4765
+ 1906
+ 763
+ 306
+ 75
+ 0.319 user, 0.0e+00 system, 0 real, 3.279 norm'd sec 
+# Memory usage :  10.875Mb (peak)  10.9414Mb (estimate)
+
+Degree 2 duplicate edges removed: 4094
+Degree 3 duplicate edges removed: 327
+There are 6 saved HGraphs
+TopLevel HGraph (#5)
+  NumNodes: 75
+  NumTerms: 0
+  NumEdges: 1009
+Top level cut: 1629
+HGraph #4
+  NumNodes: 306
+  NumTerms: 0
+  NumEdges: 2451
+  Cut: 1629
+HGraph #3
+  NumNodes: 763
+  NumTerms: 0
+  NumEdges: 3785
+  Cut: 1629
+HGraph #2
+  NumNodes: 1906
+  NumTerms: 0
+  NumEdges: 5622
+  Cut: 1629
+HGraph #1
+  NumNodes: 4765
+  NumTerms: 0
+  NumEdges: 8088
+  Cut: 1629
+HGraph #0
+  NumNodes: 12752
+  NumTerms: 0
+  NumEdges: 14111
+  Cut: 1629

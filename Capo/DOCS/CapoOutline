@@ -1,0 +1,56 @@
+AEC	981124
+
+
+Overview Of the Capo Placer:
+
+
+Capo is a top-down partitioning based global placment tool.
+
+The intent is for Capo itself to manage layout areas, and construct
+	individual problems to be solved (partitionings, placements, etc.),
+	which it then has other tools/packages solve.
+
+The primary components of Capo are:
+
+class CapoPlacer : public Placement
+
+  The Capo placer itself.  
+  Input:
+	DB&		db
+	Parameters	params
+  Output:
+	Capo is a Placement (it populates itself upon construction)
+	Optionally outputs statistics (run-time, WL, etc.)
+
+  
+
+class CapoBlock
+  
+  A block of the layout area (a sequence of contiguous (horizontal) rows, 
+				and an x-interval)
+  Primarially a data storage class 
+
+  Input:
+	Interval& 		interval // the x-interval of the block
+	vector<unsigned>&	cellIds  // the index of all cells
+					 // (movable or fixed) contained
+					 // within the region
+	FixedHGraph&		hgraph
+	vec<dbRow&>::iterator	rowsBegin//the first row
+	vec<dbRow&>::iterator	rowsEnd  //the last row
+
+  Output:
+	none: CapoBlock is a storage class, not a computation class
+
+
+
+
+Block Partitioning Issues
+
+  Assuming a 2-way partitioning, Capo splits the block along its longer
+side.  For horizontal cuts, the default balance tolerance is 2%.  For
+vertical cuts it is 10%.  Capo will adjust the vertical cut-line to
+match the actual balance of the resulting partitioning.  __It will not
+move a horizontal cut line__.  This allows for the posibility of
+sliding the vertical cuts later, to balance out area usage.
+

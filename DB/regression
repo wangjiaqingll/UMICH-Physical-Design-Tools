@@ -1,0 +1,73 @@
+#!/bin/csh  -f
+
+#**************************************************************************
+#**
+#**    Copyright (c) 1995-1997 by ABKGroup, UCLA VLSI CAD Laboratory,
+#**    UCLA Computer Science Department, Los Angeles, CA 90095-1596 USA,
+#**    and by the Regents of the University of California.
+#**    All rights reserved.
+#**
+#**    No portion of this file may be used, copied, or transmitted for
+#**    any purpose, including any research or commercial purpose,
+#**    without the express written consent of Professor Andrew B. Kahng,
+#**    UCLA Computer Science Department, 3713 Boelter Hall, Los Angeles,
+#**    CA 90095-1596 USA.   Any copy made of this file must include this
+#**    notice.    ABKGroup and the Regents of the University of California
+#**    retain title to all copies of this file and/or its compiled
+#**    derivatives.
+#**
+#**************************************************************************/
+
+
+set DIFF=/usr/bin/diff
+set WC=/usr/bin/wc
+set PROG=DBTest 
+/bin/rm -f seeds.{in,out}
+
+echo "------------  Running test 1a..." > new.out
+echo -n Running test 1a...
+${PROG}1.exe -checkDB -f TESTS/small.aux >> new.out
+echo Ok
+echo "------------  Running test 1b..." >> new.out
+echo -n Running test 1b...
+${PROG}1.exe -checkDB -f TESTS/mini4l.aux >> new.out
+echo Ok
+echo "------------  Running test 1c..." >> new.out
+echo -n Running test 1c...
+${PROG}1.exe -checkDB -f TESTS/quasiHPl.aux >> new.out
+echo Ok
+echo "------------  Running test 2a..." >> new.out
+echo -n Running test 2a...
+${PROG}2.exe -checkDB -f TESTS/small.aux >> new.out
+echo Ok
+echo "------------  Running test 2b..." >> new.out
+echo -n Running test 2b...
+${PROG}2.exe -checkDB -f TESTS/mini4l.aux >> new.out
+echo Ok
+echo "------------  Running test 2c..." >> new.out
+echo -n Running test 2c...
+${PROG}2.exe -checkDB -f TESTS/quasiHPl.aux >> new.out
+echo Ok
+echo "------------  Running test 3 ..." >> new.out
+echo -n Running test 3 ...
+${PROG}3.exe -checkDB -f TESTS/quasiHPl.aux >> new.out
+cat dbpic.xy >> new.out
+echo Ok
+echo "------------  Running test 4 ..." >> new.out
+echo -n Running test 4 ...
+${PROG}4.exe -checkDB -f TESTS/quasiHP.wr.aux >> new.out
+#cat saveDEF.out >> new.out
+echo Ok
+echo "------------  Running test 5..." >> new.out
+echo -n Running test 5...
+${PROG}5.exe -checkDB -f TESTS/quasiHPl.aux >> new.out
+echo Ok
+
+egrep -v "(Created|sec|User|Platform|Memory us)" new.out > newout.notime
+egrep -v "(Created|sec|User|Platform|Memory us)" expected.out > expectedout.notime
+$DIFF newout.notime expectedout.notime > diffs.notime
+
+echo " "
+echo Differences from precomputed results
+echo "  lines:  words:  bytes:    error log:"
+$WC diffs.notime

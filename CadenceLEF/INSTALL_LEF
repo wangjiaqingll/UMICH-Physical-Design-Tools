@@ -1,0 +1,18 @@
+Basic Installation
+==================
+
+The simplest way to compile this package is:
+
+
+  1. `cd' to the 'lef' sub-directory containing the package's 
+     source code. 
+
+  2. Type `gmake' to compile and build the package.
+     `gmake release' will set DEBUG with the OPTIMIZE_FLAG.
+
+  3. Optionally, type `./gmake test' to run tests that come with
+     the package.
+
+  4. You can remove the program binaries and object files from the
+     source code directory by typing `gmake clean'.  
+

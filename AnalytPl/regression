@@ -1,0 +1,24 @@
+#!/bin/csh -f
+
+set DIFF=/usr/bin/diff
+set WC=/usr/bin/wc
+set RM=/bin/rm
+set PROG=AnalytPlTest0.exe
+
+echo "------------  Running test saurabh..." > new.out
+$PROG -f TESTS/intel.aux>>new.out
+/bin/rm -f out.gpl
+echo OK
+
+egrep -i -v time new.out > new.out.notime
+egrep -i -v time expected.out > expected.out.notime
+
+$DIFF new.out.notime expected.out.notime > diffs.out
+echo Differences from precomputed results
+echo "  lines:  words:  bytes:    error log:"
+$WC diffs.out
+
+$RM -f new.out.notime expected.out.notime
+
+
+

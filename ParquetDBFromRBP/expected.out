@@ -1,0 +1,24 @@
+------------  Running test saurabh...
+Reading TESTS/saurabh1.aux
+Reading TESTS/saurabh1.aux
+ Reading TESTS/saurabh1.nodes ... 
+ Reading TESTS/saurabh1.nets ... 
+Finished reading TESTS/saurabh1.aux and referenced files
+ Reading TESTS/saurabh1.scl ... 
+ Reading TESTS/saurabh1.pl ... 
+Finished reading TESTS/saurabh1.aux and referenced files
+reqd Aspect Ratio 1.4
+reqdArea 35
+nodesArea 20
+%WS  75 %
+Annealer Params: 
+	normalizing Time  30000
+	start Time        30000
+	cooling Time      0.01
+	reqd Aspect Ratio 1.4 (-9999 means no fixed shape)
+	minimize WL       1   :  wireWeight = 0.4
+	maximum WS        75% (only for fixed-outline)
+
+The random seed for this run is: 0
+realTime:1	userTime:0.04
+Final Area: 20 WhiteSpace 0% AR 1.25 HPWL 13

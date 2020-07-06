@@ -1,0 +1,8 @@
+CAPO7.7 is a short-term hack.  We need the functionality
+ASAP, and it's not clear that it will be helpful...so..
+
+-> it hardcodes in construction of a FilledHierarchy
+based on the names of the cells in each block on which
+ML will be called, using the default FilledHierarchy parameter
+values.
+

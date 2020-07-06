@@ -1,0 +1,117 @@
+
+
+ ilm 980119
+
+  Contents:
+
+      I. Important items :
+           a) outstanding bugs
+           b) changes and additions
+     II. Items to be discussed
+    III. Items which can wait
+
+Ia) outstanding bugs and annoyances
+
+   1. Difficulty: medium
+      dbEasyAccess::populateCoreBBox() produces
+      empty BBox on samsung_bm-xo
+
+   2. Difficulty: medium
+      Need to introduce Verbosity into DB::Parameters
+      with the default Verbosity("1 1 1") and the
+      output as it is now, leaving the possibility
+      to run with Verbosity("silent") producing no
+      output to cout/cerr.
+
+      This is needed ASAP in order to facilitate
+      easy creation of tables with statistical info   
+      about testcases (now, one needs to write a script
+      to get rid of the garbage printed by parsers,
+      postprocessor etc).  
+
+      Verbosity should be checked by postprocessor
+      and by Mike's parser. It would be very nice if
+      we could find a way to close file descriptor
+      corresp. to stdout before calling the Q parser
+      and then reopen stdout again.
+
+   3. Difficulty: easy
+      DB::saveXYLineDrawing() draws cells not accouting on their
+      orientation
+
+
+Ib) Important additions/changes
+
+   4. Difficulty: medium
+
+      Add DB::saveLEF() 
+
+      By analogy with existing DB::saveDEF(),
+      it will save *some* sections only and they will be
+      inserted into the original LEF file by a PERL script
+      (cf. defComplete) replacing the original information.
+      The saved sections must include all pad and core sites
+      and all pad and core masters (macros).
+
+      Question: will it make sense to write specilized
+      methods for dbNetlist and dbContext to modify the information
+      about masters, dbRows and dbSites ?
+
+      Apparently, will need to add DB::getContextForSurgery()
+
+   5. Difficulty: hard 
+      Need to introduce an option to split covers into individual
+      pins (use one of boolean placeholders in DB::Parameters)
+      removing the cover macro from netlist.
+
+      Motivation: we can't do cell-level placement with covers
+                  because their multiple pins can be far apart.
+
+      Ideally, the splitting should be done in post-processor 
+      (before various sorts?) to work with any parser.
+
+      The default value should be on, so that one doesn't get any
+      cover macros until one asks for them.
+
+   6. Difficulty: hard
+      Same as above, but now for multi-pin pads
+      (abkfatal if "all pads are fixed" option is not set, 
+       but it's set by default)
+
+   7. Difficulty: medium
+      Need a resolution on why dbCell.isPI() dbCell.isPO() do not
+      work, i.e. why post-processor does not look at their source/sink
+      attributes wrt the adjacent nets to guess the PI/PO type.
+
+      This should make sense at least for single-pin pads (cf. 3. 4.),
+      so, perhaps, do it.
+
+   8. Difficulty: easy
+      Need to introduce a "modified" bit, or, better unsigned 
+      "revision number" into DB with isModified() inspector.
+      Revision number will be incremented by each call to 
+      already existing getNetlistForSurgery()  (in the furture,
+      by other calls as well)
+
+ II. Items to discuss
+
+  1. DB timing extentions (DB::dbTiming)   *SOME* ADDED BY ILM & MSM 12/04/97
+  2. allowing dbNetlist mutations with all
+     consequences to dbSpatial, dbTiming
+     and dbEasyAccess.
+
+III. Items which can wait
+
+     DB DOCS
+     Context consist. checker
+     RBPCoreRow should know its totalLegalWidth
+     need to add IORows to RBPlacement
+
+ -pat (obsolete ?)
+
+        Orientations are not yet handled properly in the database
+        postprocessor.  In particular, dbEasyAccess ignores orientations 
+        in filling in the whitespace and portLocations fields, from 
+        geometric data.  The orientations must be read from db.spatial 
+        and used to rotate/flip the obstacles used as input.
+---------

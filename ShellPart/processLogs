@@ -1,0 +1,69 @@
+#!/usr/local/bin/perl -w
+
+sub trunc;
+
+@Logs=<*.log>;
+
+for($i=0;$i<=$#Logs;$i++)
+{
+  $Tests[$i]="no name";
+  $BestCuts[$i]=-1;
+  $AveCuts[$i]=-1;
+  $CPUTimes[$i]=-1;
+}
+
+$User="";
+
+$i=-1;
+while ($file = <@Logs>)
+{
+  open(LOG,"$file");
+  $file =~ s/.log//;
+  $Tests[++$i]=$file;
+  while (<LOG>)
+  {
+      if (/Cuts:\s+.*Min:\s+(\S+)\s+Avg:\s+(\S+)/)
+      {  $BestCuts[$i]=$1;
+         $AveCuts[$i]=$2  if $2;
+         next; 
+      }
+
+      if (/Total Time:\s+.*\(\s+(\S+) sec per start\)/)
+      {  $CPUTimes[$i]= $1; next;}
+  }
+  close(LOG);
+}
+
+@lines2print=();
+
+for($i=0;$i<=$#Tests;$i++)
+{
+  $CPUTimes[$i]=trunc($CPUTimes[$i]);
+
+  push @lines2print,
+    sprintf("%+15s | Ave:%5.1f Min:%4d AveT:%5.3f\n",
+     $Tests[$i], $AveCuts[$i], $BestCuts[$i], $CPUTimes[$i]);
+}
+
+map 
+{
+  if ( !/DELETED/ ) 
+  { print; }
+
+} @lines2print;
+
+$User =~ s/User/Created by/;
+$User =~ s/:* +/ /g;
+print $User;
+
+sub trunc
+{
+  my $a=shift;
+  if ($a>=100 || $a<=0) {return int($a);}
+  elsif ($a>=10) {$mult=10;}
+  elsif ($a>=1)  {$mult=100;}
+  else           {$mult=1000;}
+
+  int($a*$mult)/$mult;
+}
+

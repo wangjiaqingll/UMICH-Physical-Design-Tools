@@ -1,0 +1,11 @@
+
+ constraints.compactify() should merge FixedX and FixeY constraints for
+ the same cell into Fixed constraint and check for conflicts (w Fixed). 
+
+ Take this check off constraints.getPermutation()
+
+ hasFGC() should abkfatal() if ! isCompactified()
+
+ filters ?
+
+ O(1) access to other constraints

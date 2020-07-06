@@ -1,0 +1,12 @@
+UCLA fix 1.0 
+# Created      : Thu Sep  9 16:50:30 1999
+# User         : caldwell@nexus12.cs.ucla.edu (uclacs) 
+# Platform     : SunOS 5.7 sparc SUNW,Ultra-5_10 
+
+Regular partitions : 2
+Pad partitions : 3
+Fixed Pads : 3
+Fixed NonPads : 0
+       Xp1 : pb0 
+       Xp2 : pb1 
+       Xp3 : pb2 

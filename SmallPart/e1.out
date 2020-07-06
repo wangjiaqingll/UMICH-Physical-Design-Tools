@@ -1,0 +1,269 @@
+------------  Running test 0a...
+
+File seeds.out is in use; random seeds from this process will not be logged.
+Initial non-deterministic seed is 3675664514.
+If there is no other process running in this directory, then an earlier
+process may have terminated
+abnormally. You should remove or rename seeds.out
+ (Warning in seed.cxx:388)
+Reading TESTS/test2cells.aux
+ Done reading HGraph
+ Reading TESTS/2way10%-2pb.blk ... 
+ Reading TESTS/test2pads.fix ... 
+Reading PartitioningProblem took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Init+Read+PostProcess for PartProblem took  0.049 user, 0.0e+00 system, 0 real, 0.409 norm'd sec 
+ Found 2 movables
+Legal solution found
+ Resulting cut is 1
+ Max violations   0
+ Checked cost  is 1
+ Exhaustive search took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec  Writing best.sol ... 
+UCLA sol 1.0 
+# Created      : Wed Sep 25 18:51:55 2002
+# User         : sadya@buran (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;30) 
+# Platform     : Linux 2.4.17 #4 SMP Wed Mar 20 13:31:05 EST 2002 i686 
+
+Regular partitions : 2
+Pad partitions : 2
+Fixed Pads : 2
+Fixed NonPads : 2
+        p1 : b0 
+        p2 : b1 
+        a0 : b0 
+        a1 : b1 
+------------  Running test 0b...
+
+File seeds.out is in use; random seeds from this process will not be logged.
+Initial non-deterministic seed is 3470216954.
+If there is no other process running in this directory, then an earlier
+process may have terminated
+abnormally. You should remove or rename seeds.out
+ (Warning in seed.cxx:388)
+Reading TESTS/test12cells.aux
+ Done reading HGraph
+ Reading TESTS/2way10%-12pb.blk ... 
+ Reading TESTS/test12pads.fix ... 
+Reading PartitioningProblem took  0.01 user, 0.0e+00 system, 0 real, 0.136667 norm'd sec 
+Init+Read+PostProcess for PartProblem took  0.039 user, 2.0e-02 system, 0 real, 0.546 norm'd sec 
+ Found 14 movables
+Legal solution found
+ Resulting cut is 1
+ Max violations   0
+ Checked cost  is 1
+ Exhaustive search took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec  Writing best.sol ... 
+UCLA sol 1.0 
+# Created      : Wed Sep 25 18:51:55 2002
+# User         : sadya@buran (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;30) 
+# Platform     : Linux 2.4.17 #4 SMP Wed Mar 20 13:31:05 EST 2002 i686 
+
+Regular partitions : 2
+Pad partitions : 12
+Fixed Pads : 12
+Fixed NonPads : 12
+        p1 : b0 
+        p2 : b0 
+        p3 : b1 
+        p4 : b1 
+        p5 : b1 
+        p6 : b1 
+        p7 : b1 
+        p8 : b0 
+        p9 : b0 
+       p10 : b0 
+       p11 : b0 
+       p12 : b0 
+        a0 : b0 
+        a1 : b1 
+        a2 : b1 
+        a3 : b0 
+        a4 : b0 
+        a5 : b1 
+        a6 : b1 
+        a7 : b0 
+        a8 : b0 
+        a9 : b0 
+       a10 : b1 
+       a11 : b0 
+------------  Running test 0c...
+
+File seeds.out is in use; random seeds from this process will not be logged.
+Initial non-deterministic seed is 3232443610.
+If there is no other process running in this directory, then an earlier
+process may have terminated
+abnormally. You should remove or rename seeds.out
+ (Warning in seed.cxx:388)
+Reading TESTS/spp-i872.aux
+ Done reading HGraph
+ Reading TESTS/spp-i872.blk ... 
+ Reading TESTS/spp-i872.fix ... 
+Reading PartitioningProblem took  0.01 user, 0.0e+00 system, 0 real, 0.1025 norm'd sec 
+Init+Read+PostProcess for PartProblem took  0.049 user, 1.0e-02 system, 0 real, 0.512 norm'd sec 
+ Found 14 movables
+Legal solution found
+ Resulting cut is 7
+ Max violations   0
+ Checked cost  is 7
+ Exhaustive search took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec  Writing best.sol ... 
+UCLA sol 1.0 
+# Created      : Wed Sep 25 18:51:55 2002
+# User         : sadya@buran (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;30) 
+# Platform     : Linux 2.4.17 #4 SMP Wed Mar 20 13:31:05 EST 2002 i686 
+
+Regular partitions : 2
+Pad partitions : 81
+Fixed Pads : 81
+Fixed NonPads : 8
+        p1 : b1 
+        p2 : b1 
+        p3 : b1 
+        p4 : b1 
+        p5 : b1 
+        p6 : b0 
+        p7 : b0 
+        p8 : b1 
+        p9 : b0 
+       p10 : b1 
+       p11 : b0 
+       p12 : b0 
+       p13 : b0 
+       p14 : b0 
+       p15 : b0 
+       p16 : b1 
+       p17 : b0 
+       p18 : b1 
+       p19 : b0 
+       p20 : b0 
+       p21 : b0 
+       p22 : b1 
+       p23 : b1 
+       p24 : b0 
+       p25 : b0 
+       p26 : b1 
+       p27 : b1 
+       p28 : b0 
+       p29 : b1 
+       p30 : b0 
+       p31 : b0 
+       p32 : b0 
+       p33 : b0 
+       p34 : b1 
+       p35 : b0 
+       p36 : b1 
+       p37 : b1 
+       p38 : b0 
+       p39 : b0 
+       p40 : b0 
+       p41 : b0 
+       p42 : b0 
+       p43 : b0 
+       p44 : b0 
+       p45 : b0 
+       p46 : b0 
+       p47 : b0 
+       p48 : b0 
+       p49 : b1 
+       p50 : b0 
+       p51 : b1 
+       p52 : b0 
+       p53 : b0 
+       p54 : b0 
+       p55 : b1 
+       p56 : b1 
+       p57 : b0 
+       p58 : b0 
+       p59 : b0 
+       p60 : b0 
+       p61 : b0 
+       p62 : b1 
+       p63 : b1 
+       p64 : b0 
+       p65 : b0 
+       p66 : b0 
+       p67 : b1 
+       p68 : b0 
+       p69 : b0 
+       p70 : b0 
+       p71 : b0 
+       p72 : b0 
+       p73 : b0 
+       p74 : b0 
+       p75 : b0 
+       p76 : b0 
+       p77 : b0 
+       p78 : b0 
+       p79 : b0 
+       p80 : b0 
+       p81 : b0 
+        a0 : b1 
+        a1 : b0 
+        a2 : b1 
+        a3 : b1 
+        a4 : b0 
+        a5 : b1 
+        a6 : b0 
+        a7 : b0 
+------------  Running test 2...
+Reading TESTS/OddCut.aux
+ Resulting cut is 11
+ Max violations   0
+ Branch-and-bound search took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Reading TESTS/amd_101.aux
+ Resulting cut is 8
+ Max violations   550384
+ Branch-and-bound search took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Reading TESTS/amd_102.aux
+ Resulting cut is 9
+ Max violations   551873
+ Branch-and-bound search took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Reading TESTS/amd_63.aux
+ Resulting cut is 11
+ Max violations   527535
+ Branch-and-bound search took  0.01 user, 0.0e+00 system, 0 real, 0.102 norm'd sec 
+Reading TESTS/artificial.aux
+ Resulting cut is 3
+ Max violations   0
+ Branch-and-bound search took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Reading TESTS/faraday_1019.aux
+ Resulting cut is 0
+ Max violations   0
+ Branch-and-bound search took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Reading TESTS/faraday_9193.aux
+ Resulting cut is 30
+ Max violations   0
+ Branch-and-bound search took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Reading TESTS/faraday_9709.aux
+ Resulting cut is 12
+ Max violations   0
+ Branch-and-bound search took  0.04 user, 0.0e+00 system, 0 real, 0.546 norm'd sec 
+Reading TESTS/faraday_noSoln.aux
+ Resulting cut is 35
+ Max violations   62226
+ Branch-and-bound search took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Reading TESTS/lastProblem.aux
+ Resulting cut is 8
+ Max violations   0
+ Branch-and-bound search took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Reading TESTS/manyPins.aux
+ Resulting cut is 121
+ Max violations   0
+ Branch-and-bound search took  0.13 user, 0.0e+00 system, 0 real, 1.066 norm'd sec 
+Reading TESTS/spp-i802.aux
+ Resulting cut is 8
+ Max violations   0
+ Branch-and-bound search took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Reading TESTS/spp-i872.aux
+ Resulting cut is 7
+ Max violations   0
+ Branch-and-bound search took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Reading TESTS/test12cells.aux
+ Resulting cut is 1
+ Max violations   0
+ Branch-and-bound search took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Reading TESTS/test2cells.aux
+ Resulting cut is 1
+ Max violations   0
+ Branch-and-bound search took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Reading TESTS/test4cells.aux
+ Resulting cut is 1
+ Max violations   0
+ Branch-and-bound search took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 

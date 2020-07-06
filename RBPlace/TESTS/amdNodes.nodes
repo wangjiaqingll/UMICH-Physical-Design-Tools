@@ -1,0 +1,1761 @@
+UCLA nodes 1.0
+# Created      : Thu Sep 30 21:31:46 1999
+# User         : caldwell@nexus10.cs.ucla.edu (Andrew Caldwell) 
+# Platform     : SunOS 5.7 sparc SUNW,Ultra-1 
+
+NumNodes :           1754
+NumTerminals :        386
+  DUMMY_01         360        360 terminal  :  R90 
+  DUMMY_02         360        360 terminal  :  R90 
+  DUMMY_03         360        360 terminal  :  R90 
+  DUMMY_04         360        360 terminal  :  R90 
+  DUMMY_05         360        360 terminal  :  R90 
+  DUMMY_06         360        360 terminal  :  R90 
+  DUMMY_07         360        360 terminal  :  R90 
+  DUMMY_08         360        360 terminal  :  R90 
+  DUMMY_10         360        360 terminal  :  R90 
+  DUMMY_11         360        360 terminal  :  R90 
+  DUMMY_12         360        360 terminal  :  R90 
+  DUMMY_13         360        360 terminal  :  R90 
+  DUMMY_14         360        360 terminal  :  R90 
+  DUMMY_15         360        360 terminal  :  R90 
+  DUMMY_16         360        360 terminal  :  R90 
+  DUMMY_17         360        360 terminal  :  R90 
+  DUMMY_18         360        360 terminal  :  R90 
+  DUMMY_19         360        360 terminal  :  R90 
+  DUMMY_20         360        360 terminal  :  R90 
+  DUMMY_21         360        360 terminal  :  R90 
+  DUMMY_22         360        360 terminal  :  R90 
+  DUMMY_23         360        360 terminal  :  R90 
+  DUMMY_24         360        360 terminal  :  R90 
+  DUMMY_25         360        360 terminal  :  R90 
+  DUMMY_27         360        360 terminal  :  R90 
+  DUMMY_28         360        360 terminal  :  R90 
+  DUMMY_29         360        360 terminal  :  R90 
+  DUMMY_30         360        360 terminal  :  R90 
+  DUMMY_31         360        360 terminal  :  R90 
+  DUMMY_32         360        360 terminal  :  R90 
+  DUMMY_33         360        360 terminal  :  R90 
+  DUMMY_34         360        360 terminal  :  R90 
+  DUMMY_36         360        360 terminal  :  R90 
+  DUMMY_37         360        360 terminal  :  R90 
+  DUMMY_38         360        360 terminal  :  R90 
+  DUMMY_39         360        360 terminal  :  R90 
+  DUMMY_40         360        360 terminal  :  R90 
+  DUMMY_41         360        360 terminal  :  R90 
+  DUMMY_42         360        360 terminal  :  R90 
+  DUMMY_44         360        360 terminal  :  R90 
+  DUMMY_45         360        360 terminal  :  R90 
+  DUMMY_46         360        360 terminal  :  R90 
+  DUMMY_47         360        360 terminal  :  R90 
+  DUMMY_48         360        360 terminal  :  R90 
+  DUMMY_49         360        360 terminal  :  R90 
+  DUMMY_50         360        360 terminal  :  R90 
+  DUMMY_51         360        360 terminal  :  R90 
+  DUMMY_53         360        360 terminal  :  R90 
+  DUMMY_54         360        360 terminal  :  R90 
+  DUMMY_55         360        360 terminal  :  R90 
+  DUMMY_56         360        360 terminal  :  R90 
+  DUMMY_57         360        360 terminal  :  R90 
+  DUMMY_58         360        360 terminal  :  R90 
+  DUMMY_61         360        360 terminal  :  R90 
+  DUMMY_62         360        360 terminal  :  R90 
+   IADR_21         360        360 terminal  :  R90 
+   IADR_22         360        360 terminal  :  R90 
+   IADR_23         360        360 terminal  :  R90 
+   IADR_24         360        360 terminal  :  R90 
+   IADR_25         360        360 terminal  :  R90 
+   IADR_26         360        360 terminal  :  R90 
+ L_IADR_27         360        360 terminal  :  R90 
+ L_IADR_28         360        360 terminal  :  R90 
+ L_IADR_29         360        360 terminal  :  R90 
+ L_IADR_30         360        360 terminal  :  R90 
+ L_IADR_31         360        360 terminal  :  R90 
+  L_PAD_27         360        360 terminal  :  R90 
+  L_PAD_28         360        360 terminal  :  R90 
+  L_PAD_29         360        360 terminal  :  R90 
+  L_PAD_30         360        360 terminal  :  R90 
+  L_PAD_31         360        360 terminal  :  R90 
+ L_XMUXLAB         360        360 terminal  :  R90 
+ L_XPAD_27         360        360 terminal  :  R90 
+ L_XPAD_28         360        360 terminal  :  R90 
+ L_XPAD_29         360        360 terminal  :  R90 
+ L_XPAD_30         360        360 terminal  :  R90 
+ L_XPAD_31         360        360 terminal  :  R90 
+       PH1         360        360 terminal  :  R90 
+       PH2         360        360 terminal  :  R90 
+  R_A18_12         360        360 terminal  :  R90 
+  R_A19_12         360        360 terminal  :  R90 
+    R_AL90         360        360 terminal  :  R90 
+    R_AL92         360        360 terminal  :  R90 
+    R_ARB0         360        360 terminal  :  R90 
+     R_B27         360        360 terminal  :  R90 
+     R_B28         360        360 terminal  :  R90 
+     R_B31         360        360 terminal  :  R90 
+    R_B419         360        360 terminal  :  R90 
+   R_B419B         360        360 terminal  :  R90 
+    R_B421         360        360 terminal  :  R90 
+   R_B421B         360        360 terminal  :  R90 
+    R_B502         360        360 terminal  :  R90 
+    R_B503         360        360 terminal  :  R90 
+    R_B507         360        360 terminal  :  R90 
+    R_B508         360        360 terminal  :  R90 
+    R_B514         360        360 terminal  :  R90 
+    R_B526         360        360 terminal  :  R90 
+    R_B527         360        360 terminal  :  R90 
+    R_B528         360        360 terminal  :  R90 
+    R_B529         360        360 terminal  :  R90 
+    R_B52A         360        360 terminal  :  R90 
+    R_B530         360        360 terminal  :  R90 
+    R_B531         360        360 terminal  :  R90 
+    R_B532         360        360 terminal  :  R90 
+    R_B533         360        360 terminal  :  R90 
+    R_B534         360        360 terminal  :  R90 
+    R_B535         360        360 terminal  :  R90 
+    R_B536         360        360 terminal  :  R90 
+    R_B537         360        360 terminal  :  R90 
+    R_B538         360        360 terminal  :  R90 
+     R_BB1         360        360 terminal  :  R90 
+     R_BB2         360        360 terminal  :  R90 
+     R_BI1         360        360 terminal  :  R90 
+    R_BI21         360        360 terminal  :  R90 
+ R_CAM_ENA         360        360 terminal  :  R90 
+ R_CAM_RST         360        360 terminal  :  R90 
+    R_DS_5         360        360 terminal  :  R90 
+R_DUMMY_R1         360        360 terminal  :  R90 
+R_DUMMY_R2         360        360 terminal  :  R90 
+R_DUMMY_R3         360        360 terminal  :  R90 
+R_DUMMY_R4         360        360 terminal  :  R90 
+R_DUMMY_R5         360        360 terminal  :  R90 
+  R_FICL_0         360        360 terminal  :  R90 
+  R_FICL_1         360        360 terminal  :  R90 
+  R_FICL_2         360        360 terminal  :  R90 
+  R_FICL_3         360        360 terminal  :  R90 
+  R_FICL_4         360        360 terminal  :  R90 
+  R_FICL_5         360        360 terminal  :  R90 
+    R_FS_0         360        360 terminal  :  R90 
+  R_IADR_0         360        360 terminal  :  R90 
+  R_IADR_1         360        360 terminal  :  R90 
+ R_IADR_10         360        360 terminal  :  R90 
+ R_IADR_11         360        360 terminal  :  R90 
+ R_IADR_12         360        360 terminal  :  R90 
+ R_IADR_13         360        360 terminal  :  R90 
+ R_IADR_14         360        360 terminal  :  R90 
+ R_IADR_15         360        360 terminal  :  R90 
+ R_IADR_16         360        360 terminal  :  R90 
+ R_IADR_17         360        360 terminal  :  R90 
+ R_IADR_18         360        360 terminal  :  R90 
+ R_IADR_19         360        360 terminal  :  R90 
+  R_IADR_2         360        360 terminal  :  R90 
+ R_IADR_20         360        360 terminal  :  R90 
+ R_IADR_21         360        360 terminal  :  R90 
+ R_IADR_22         360        360 terminal  :  R90 
+ R_IADR_23         360        360 terminal  :  R90 
+ R_IADR_24         360        360 terminal  :  R90 
+ R_IADR_25         360        360 terminal  :  R90 
+ R_IADR_26         360        360 terminal  :  R90 
+ R_IADR_27         360        360 terminal  :  R90 
+ R_IADR_28         360        360 terminal  :  R90 
+ R_IADR_29         360        360 terminal  :  R90 
+  R_IADR_3         360        360 terminal  :  R90 
+ R_IADR_30         360        360 terminal  :  R90 
+ R_IADR_31         360        360 terminal  :  R90 
+  R_IADR_4         360        360 terminal  :  R90 
+  R_IADR_5         360        360 terminal  :  R90 
+  R_IADR_6         360        360 terminal  :  R90 
+  R_IADR_7         360        360 terminal  :  R90 
+  R_IADR_8         360        360 terminal  :  R90 
+  R_IADR_9         360        360 terminal  :  R90 
+R_IFETCH_0         360        360 terminal  :  R90 
+R_IFETCH_1         360        360 terminal  :  R90 
+R_IFETCH_2         360        360 terminal  :  R90 
+  R_IICEMD         360        360 terminal  :  R90 
+  R_KEN116         360        360 terminal  :  R90 
+   R_KEN13         360        360 terminal  :  R90 
+   R_KEN29         360        360 terminal  :  R90 
+   R_LAB_0         360        360 terminal  :  R90 
+   R_LAB_1         360        360 terminal  :  R90 
+  R_LAB_10         360        360 terminal  :  R90 
+  R_LAB_11         360        360 terminal  :  R90 
+   R_LAB_2         360        360 terminal  :  R90 
+   R_LAB_3         360        360 terminal  :  R90 
+   R_LAB_4         360        360 terminal  :  R90 
+   R_LAB_5         360        360 terminal  :  R90 
+   R_LAB_6         360        360 terminal  :  R90 
+   R_LAB_7         360        360 terminal  :  R90 
+   R_LAB_8         360        360 terminal  :  R90 
+   R_LAB_9         360        360 terminal  :  R90 
+    R_MA76         360        360 terminal  :  R90 
+    R_MA77         360        360 terminal  :  R90 
+    R_MA78         360        360 terminal  :  R90 
+    R_MA81         360        360 terminal  :  R90 
+    R_MA83         360        360 terminal  :  R90 
+    R_MA84         360        360 terminal  :  R90 
+ R_PATTR_0         360        360 terminal  :  R90 
+ R_PATTR_1         360        360 terminal  :  R90 
+ R_PATTR_2         360        360 terminal  :  R90 
+ R_PATTR_3         360        360 terminal  :  R90 
+    R_PB_0         360        360 terminal  :  R90 
+    R_PB_1         360        360 terminal  :  R90 
+   R_PB_10         360        360 terminal  :  R90 
+   R_PB_11         360        360 terminal  :  R90 
+   R_PB_12         360        360 terminal  :  R90 
+   R_PB_13         360        360 terminal  :  R90 
+   R_PB_14         360        360 terminal  :  R90 
+   R_PB_15         360        360 terminal  :  R90 
+   R_PB_16         360        360 terminal  :  R90 
+   R_PB_17         360        360 terminal  :  R90 
+   R_PB_18         360        360 terminal  :  R90 
+   R_PB_19         360        360 terminal  :  R90 
+    R_PB_2         360        360 terminal  :  R90 
+   R_PB_20         360        360 terminal  :  R90 
+   R_PB_21         360        360 terminal  :  R90 
+   R_PB_22         360        360 terminal  :  R90 
+   R_PB_23         360        360 terminal  :  R90 
+   R_PB_24         360        360 terminal  :  R90 
+   R_PB_25         360        360 terminal  :  R90 
+   R_PB_26         360        360 terminal  :  R90 
+   R_PB_27         360        360 terminal  :  R90 
+   R_PB_28         360        360 terminal  :  R90 
+   R_PB_29         360        360 terminal  :  R90 
+   R_PB_30         360        360 terminal  :  R90 
+   R_PB_31         360        360 terminal  :  R90 
+    R_PB_4         360        360 terminal  :  R90 
+    R_PB_5         360        360 terminal  :  R90 
+    R_PB_6         360        360 terminal  :  R90 
+    R_PB_7         360        360 terminal  :  R90 
+    R_PB_8         360        360 terminal  :  R90 
+    R_PB_9         360        360 terminal  :  R90 
+R_PG_CTRL_0         360        360 terminal  :  R90 
+R_PG_CTRL_1         360        360 terminal  :  R90 
+R_PG_CTRL_2         360        360 terminal  :  R90 
+  R_PG_HIT         360        360 terminal  :  R90 
+ R_PG_MISS         360        360 terminal  :  R90 
+R_PHIT_CODE_0         360        360 terminal  :  R90 
+R_PHIT_CODE_1         360        360 terminal  :  R90 
+  R_PIPLA2         360        360 terminal  :  R90 
+R_PREG_DRV_0         360        360 terminal  :  R90 
+R_PREG_DRV_1         360        360 terminal  :  R90 
+R_PREG_DRV_2         360        360 terminal  :  R90 
+R_PREG_DRV_3         360        360 terminal  :  R90 
+R_PREG_DRV_4         360        360 terminal  :  R90 
+R_PREG_DRV_5         360        360 terminal  :  R90 
+R_PREG_DRV_6         360        360 terminal  :  R90 
+R_PREG_LDA_0         360        360 terminal  :  R90 
+R_PREG_LDA_1         360        360 terminal  :  R90 
+R_PREG_LDA_2         360        360 terminal  :  R90 
+R_PREG_LDA_3         360        360 terminal  :  R90 
+R_PREG_LDA_4         360        360 terminal  :  R90 
+R_PREG_LDA_5         360        360 terminal  :  R90 
+R_PREG_LDA_6         360        360 terminal  :  R90 
+R_PREG_LDI         360        360 terminal  :  R90 
+R_PREG_LDP         360        360 terminal  :  R90 
+R_PREG_MUX         360        360 terminal  :  R90 
+R_PREG_OUT_0         360        360 terminal  :  R90 
+R_PREG_OUT_1         360        360 terminal  :  R90 
+R_PREG_OUT_2         360        360 terminal  :  R90 
+ R_PREPL_0         360        360 terminal  :  R90 
+ R_PREPL_1         360        360 terminal  :  R90 
+R_RST_TST1         360        360 terminal  :  R90 
+    R_SF_0         360        360 terminal  :  R90 
+    R_SF_1         360        360 terminal  :  R90 
+   R_SF_10         360        360 terminal  :  R90 
+   R_SF_11         360        360 terminal  :  R90 
+   R_SF_12         360        360 terminal  :  R90 
+   R_SF_13         360        360 terminal  :  R90 
+   R_SF_14         360        360 terminal  :  R90 
+   R_SF_15         360        360 terminal  :  R90 
+   R_SF_16         360        360 terminal  :  R90 
+   R_SF_17         360        360 terminal  :  R90 
+    R_SF_2         360        360 terminal  :  R90 
+    R_SF_4         360        360 terminal  :  R90 
+    R_SF_6         360        360 terminal  :  R90 
+    R_SF_7         360        360 terminal  :  R90 
+    R_SF_8         360        360 terminal  :  R90 
+    R_SF_9         360        360 terminal  :  R90 
+    R_WPQA         360        360 terminal  :  R90 
+    R_WPQB         360        360 terminal  :  R90 
+    R_WPQC         360        360 terminal  :  R90 
+    R_WPQD         360        360 terminal  :  R90 
+R_XCAM_ENA         360        360 terminal  :  R90 
+R_XCAM_WRT         360        360 terminal  :  R90 
+R_XPATTR_0         360        360 terminal  :  R90 
+R_XPATTR_1         360        360 terminal  :  R90 
+R_XPATTR_2         360        360 terminal  :  R90 
+R_XPATTR_3         360        360 terminal  :  R90 
+R_XPCHG_REG         360        360 terminal  :  R90 
+   R_XPCPR         360        360 terminal  :  R90 
+R_XPG_MISS         360        360 terminal  :  R90 
+R_XPRAM_WRT_0         360        360 terminal  :  R90 
+R_XPRAM_WRT_1         360        360 terminal  :  R90 
+R_XPRAM_WRT_2         360        360 terminal  :  R90 
+R_XPRAM_WRT_3         360        360 terminal  :  R90 
+R_XPREG_LDA_0         360        360 terminal  :  R90 
+R_XPREG_LDA_1         360        360 terminal  :  R90 
+R_XPREG_LDA_2         360        360 terminal  :  R90 
+R_XPREG_LDA_3         360        360 terminal  :  R90 
+R_XPREG_LDA_4         360        360 terminal  :  R90 
+R_XPREG_LDA_5         360        360 terminal  :  R90 
+R_XPREG_LDA_6         360        360 terminal  :  R90 
+R_XPREG_LDI         360        360 terminal  :  R90 
+R_XPREG_LDP         360        360 terminal  :  R90 
+R_XPREG_MUX         360        360 terminal  :  R90 
+R_XPREPL_0         360        360 terminal  :  R90 
+R_XPREPL_1         360        360 terminal  :  R90 
+    T_AL42         360        360 terminal  :  R90 
+    T_AL43         360        360 terminal  :  R90 
+    T_AL45         360        360 terminal  :  R90 
+    T_AL46         360        360 terminal  :  R90 
+    T_AL47         360        360 terminal  :  R90 
+    T_AL50         360        360 terminal  :  R90 
+    T_AL51         360        360 terminal  :  R90 
+    T_AL52         360        360 terminal  :  R90 
+    T_AL97         360        360 terminal  :  R90 
+    T_ARB4         360        360 terminal  :  R90 
+    T_ARB5         360        360 terminal  :  R90 
+    T_ARB6         360        360 terminal  :  R90 
+    T_ARB7         360        360 terminal  :  R90 
+  T_IADR_0         360        360 terminal  :  R90 
+  T_IADR_1         360        360 terminal  :  R90 
+   T_PA3T4         360        360 terminal  :  R90 
+   T_PABR4         360        360 terminal  :  R90 
+   T_PABR6         360        360 terminal  :  R90 
+  T_PAD_27         360        360 terminal  :  R90 
+  T_PAD_28         360        360 terminal  :  R90 
+  T_PAD_29         360        360 terminal  :  R90 
+  T_PAD_30         360        360 terminal  :  R90 
+  T_PAD_31         360        360 terminal  :  R90 
+    T_PB_0         360        360 terminal  :  R90 
+    T_PB_1         360        360 terminal  :  R90 
+   T_PB_10         360        360 terminal  :  R90 
+   T_PB_11         360        360 terminal  :  R90 
+   T_PB_12         360        360 terminal  :  R90 
+   T_PB_13         360        360 terminal  :  R90 
+   T_PB_14         360        360 terminal  :  R90 
+   T_PB_15         360        360 terminal  :  R90 
+   T_PB_16         360        360 terminal  :  R90 
+   T_PB_17         360        360 terminal  :  R90 
+   T_PB_18         360        360 terminal  :  R90 
+   T_PB_19         360        360 terminal  :  R90 
+    T_PB_2         360        360 terminal  :  R90 
+   T_PB_20         360        360 terminal  :  R90 
+   T_PB_21         360        360 terminal  :  R90 
+   T_PB_22         360        360 terminal  :  R90 
+   T_PB_23         360        360 terminal  :  R90 
+   T_PB_24         360        360 terminal  :  R90 
+   T_PB_25         360        360 terminal  :  R90 
+   T_PB_26         360        360 terminal  :  R90 
+   T_PB_27         360        360 terminal  :  R90 
+   T_PB_28         360        360 terminal  :  R90 
+   T_PB_29         360        360 terminal  :  R90 
+    T_PB_3         360        360 terminal  :  R90 
+   T_PB_30         360        360 terminal  :  R90 
+   T_PB_31         360        360 terminal  :  R90 
+    T_PB_4         360        360 terminal  :  R90 
+    T_PB_5         360        360 terminal  :  R90 
+    T_PB_6         360        360 terminal  :  R90 
+    T_PB_7         360        360 terminal  :  R90 
+    T_PB_8         360        360 terminal  :  R90 
+    T_PB_9         360        360 terminal  :  R90 
+  T_PG_HIT         360        360 terminal  :  R90 
+     T_PH1         360        360 terminal  :  R90 
+     T_PH2         360        360 terminal  :  R90 
+  T_PIPLA3         360        360 terminal  :  R90 
+T_RST_TST1         360        360 terminal  :  R90 
+   T_VCC_2         360        360 terminal  :  R90 
+   T_VCC_3         360        360 terminal  :  R90 
+   T_VCC_4         360        360 terminal  :  R90 
+   T_VCC_5         360        360 terminal  :  R90 
+   T_VCC_6         360        360 terminal  :  R90 
+   T_VSS_1         360        360 terminal  :  R90 
+   T_VSS_2         360        360 terminal  :  R90 
+   T_VSS_3         360        360 terminal  :  R90 
+   T_VSS_4         360        360 terminal  :  R90 
+   T_VSS_5         360        360 terminal  :  R90 
+ T_XPAD_27         360        360 terminal  :  R90 
+ T_XPAD_28         360        360 terminal  :  R90 
+ T_XPAD_29         360        360 terminal  :  R90 
+ T_XPAD_30         360        360 terminal  :  R90 
+ T_XPAD_31         360        360 terminal  :  R90 
+    T_XPH1         360        360 terminal  :  R90 
+    T_XPH2         360        360 terminal  :  R90 
+     VCC_2         360        360 terminal  :  R90 
+     VCC_3         360        360 terminal  :  R90 
+     VCC_4         360        360 terminal  :  R90 
+     VCC_5         360        360 terminal  :  R90 
+     VCC_6         360        360 terminal  :  R90 
+     VSS_1         360        360 terminal  :  R90 
+     VSS_2         360        360 terminal  :  R90 
+     VSS_3         360        360 terminal  :  R90 
+     VSS_4         360        360 terminal  :  R90 
+     VSS_5         360        360 terminal  :  R90 
+      XPH1         360        360 terminal  :  R90 
+      XPH2         360        360 terminal  :  R90 
+/FENFICL/I$2923/I$391/F        1440       3680  :  X 
+/FENFICL/I$2926        1920       3680  :  X 
+/FENFICL/I$2927/U        2400       3680  :  X 
+/FENFICL/I$2940/U        2400       3680  :  X 
+/FENFICL/I$2941/D        1440       3680  :  X 
+/FENFICL/I$2942/G        2400       3680  :  X 
+/FENFICL/I$2943/C        1440       3680  :  X 
+/FENFICL/I$2944/A        2400       3680  :  X 
+/FENFICL/I$2949/B        1920       3680  :  X 
+/FENFICL/I$2950        1920       3680  :  X 
+/FENFICL/I$2951/U        2400       3680  :  X 
+/FENFICL/I$2952/B         960       3680  :  X 
+/FENFICL/I$2955/A         960       3680  :  X 
+/FENFICL/I$2956/A         960       3680  :  X 
+/FENFICL/I$2957/U        2400       3680  :  X 
+/FENFICL/I$2958/U        2880       3680  :  X 
+/FENFICL/I$2961/A        1440       3680  :  X 
+/FENFICL/I$2963/B        3360       3680  :  X 
+/FENFICL/I$2964        1920       3680  :  X 
+/FENFICL/I$2966/B         960       3680  :  X 
+/FENFICL/I$2971/U        2400       3680  :  X 
+/FENFICL/I$2972/U        2400       3680  :  X 
+/FENFICL/I$2973/A         960       3680  :  X 
+/FENFICL/I$2975/A         960       3680  :  X 
+/FENFICL/I$2976/A         960       3680  :  X 
+/FENFICL/I$2977        1920       3680  :  X 
+/FENFICL/I$2978/B         960       3680  :  X 
+/FENFICL/I$2980/A        1440       3680  :  X 
+/FENFICL/I$2981/A        1440       3680  :  X 
+/FENFICL/I$2982/A         960       3680  :  X 
+/FENFICL/I$2983/A        1440       3680  :  X 
+/FENFICL/I$2984/B        1920       3680  :  X 
+/FENFICL/I$2985/A         960       3680  :  X 
+/FENFICL/I$2986/B        1920       3680  :  X 
+/FENFICL/I$2987/C        1440       3680  :  X 
+/FENFICL/I$2989        1920       3680  :  X 
+/FENFICL/I$2990        3360       3680  :  X 
+/FENFICL/I$2991        1920       3680  :  X 
+/FENFICL/I$2992/A         960       3680  :  X 
+/FENFICL/I$2993/A        1440       3680  :  X 
+/FENFICL/I$2994/B         960       3680  :  X 
+/FENFICL/I$2995/K        5280       3680  :  X 
+/FENFICL/I$2996/U        2400       3680  :  X 
+/FENFICL/I$2997/U        2400       3680  :  X 
+/FENFICL/I$2998/E        1920       3680  :  X 
+/FENFICL/I$2999/U        2400       3680  :  X 
+/FENFICL/I$3000/U        2400       3680  :  X 
+/FENFICL/I$3001/U        2400       3680  :  X 
+/FENFICL/I$3004/U        2880       3680  :  X 
+/FENFICL/I$3005/K        5280       3680  :  X 
+/FENFICL/I$3008/B         960       3680  :  X 
+/FENFICL/I$3009/U        2400       3680  :  X 
+/FENFICL/I$3012/A        3360       3680  :  X 
+/FENFICL/I$3013/G        2400       3680  :  X 
+/FENFICL/I$3021/B        1920       3680  :  X 
+/FENFICL/I$3033/A         960       3680  :  X 
+/FENFICL/I$3034/A         960       3680  :  X 
+/FENFICL/I$3037/A        1440       3680  :  X 
+/FENFICL/I$3038/U        2400       3680  :  X 
+/FENFICL/I$3044/U        2400       3680  :  X 
+/FENFICL/I$3045/A        1440       3680  :  X 
+/FENFICL/I$3047/B        1920       3680  :  X 
+/FENFICL/I$3049/B         960       3680  :  X 
+/FENFICL/I$3181/C        1440       3680  :  X 
+/FENFICL/I$3182/B         960       3680  :  X 
+/FENFICL/I$3183        4800       3680  :  X 
+/FENFICL/I$3184        3360       3680  :  X 
+/FENFICL/I$3185        4800       3680  :  X 
+/FENFICL/I$3186/B        1920       3680  :  X 
+/FENFICL/I$3187        3360       3680  :  X 
+/FENFICL/I$3188/C        2880       3680  :  X 
+/FENFICL/I$3189        4800       3680  :  X 
+/FENFICL/I$3523/A         960       3680  :  X 
+/FGNFICL/F3PLA/I$327/A         960       3680  :  X 
+/FGNFICL/F3PLA/I$329/A        1440       3680  :  X 
+/FGNFICL/F3PLA/I$341/B        1920       3680  :  X 
+/FGNFICL/F3PLA/I$347/A         960       3680  :  X 
+/FGNFICL/F3PLA/I$349/A        1440       3680  :  X 
+/FGNFICL/F3PLA/I$353/A        1440       3680  :  X 
+/FGNFICL/F3PLA/I$381/D        3840       3680  :  X 
+/FGNFICL/F3PLA/I$387/C        3840       3680  :  X 
+/FGNFICL/F3PLA/I$390/B        3840       3680  :  X 
+/FGNFICL/F3PLA/I$396/C        3840       3680  :  X 
+/FGNFICL/F3PLA/I$416/A         960       3680  :  X 
+/FGNFICL/F3PLA/I$418/A        1440       3680  :  X 
+/FGNFICL/F3PLA/I$422/A        1440       3680  :  X 
+/FGNFICL/F3PLA/I$440/A         960       3680  :  X 
+/FGNFICL/F3PLA/I$443/A         960       3680  :  X 
+/FGNFICL/F3PLA/I$446/A         960       3680  :  X 
+/FGNFICL/F3PLA/I$489/A        1440       3680  :  X 
+/FGNFICL/F3PLA/I$491/A        3840       3680  :  X 
+/FGNFICL/F3PLA/I$492/B        3840       3680  :  X 
+/FGNFICL/F3PLA/I$497/A        3360       3680  :  X 
+/FGNFICL/F3PLA/I$498/A        3360       3680  :  X 
+/FGNFICL/F3PLA/I$499/A        3840       3680  :  X 
+/FGNFICL/F3PLA/I$500/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$513/E        1920       3680  :  X 
+/FGNFICL/F3PLA/I$519/H        2880       3680  :  X 
+/FGNFICL/F3PLA/I$523/F        1920       3680  :  X 
+/FGNFICL/F3PLA/I$621/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$622/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$623/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$624/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$625/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$626/A        3360       3680  :  X 
+/FGNFICL/F3PLA/I$627/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$661/C        1440       3680  :  X 
+/FGNFICL/F3PLA/I$662/G        2400       3680  :  X 
+/FGNFICL/F3PLA/I$663/F        1920       3680  :  X 
+/FGNFICL/F3PLA/I$664/E        1920       3680  :  X 
+/FGNFICL/F3PLA/I$665/G        2400       3680  :  X 
+/FGNFICL/F3PLA/I$666/G        2400       3680  :  X 
+/FGNFICL/F3PLA/I$667/H        2880       3680  :  X 
+/FGNFICL/F3PLA/I$668/G        2400       3680  :  X 
+/FGNFICL/F3PLA/I$669/G        2400       3680  :  X 
+/FGNFICL/F3PLA/I$670/I        3360       3680  :  X 
+/FGNFICL/F3PLA/I$671/C        1440       3680  :  X 
+/FGNFICL/F3PLA/I$672/B        3360       3680  :  X 
+/FGNFICL/F3PLA/I$673/C        7200       3680  :  X 
+/FGNFICL/F3PLA/I$674/B        4800       3680  :  X 
+/FGNFICL/F3PLA/I$822/A         960       3680  :  X 
+/FGNFICL/F3PLA/I$824/A         960       3680  :  X 
+/FGNFICL/F3PLA/I$841/A        3840       3680  :  X 
+/FGNFICL/F3PLA/I$842/A        3360       3680  :  X 
+/FGNFICL/F3PLA/I$843/A        1440       3680  :  X 
+/FGNFICL/F3PLA/I$901/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$902/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$903/A        1440       3680  :  X 
+/FGNFICL/F3PLA/I$904/B         960       3680  :  X 
+/FGNFICL/F3PLA/I$905/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$906/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$907/A        1440       3680  :  X 
+/FGNFICL/F3PLA/I$908/C        1440       3680  :  X 
+/FGNFICL/F3PLA/I$909/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$910/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$911/A        1440       3680  :  X 
+/FGNFICL/F3PLA/I$912/B         960       3680  :  X 
+/FGNFICL/F3PLA/I$913/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$914/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$915/A        1440       3680  :  X 
+/FGNFICL/F3PLA/I$916/C        1440       3680  :  X 
+/FGNFICL/F3PLA/I$917/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$918/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$919/A        1440       3680  :  X 
+/FGNFICL/F3PLA/I$920/B         960       3680  :  X 
+/FGNFICL/F3PLA/I$921/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$922/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$924/A        3360       3680  :  X 
+/FGNFICL/F3PLA/I$925/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$926/A        3360       3680  :  X 
+/FGNFICL/F3PLA/I$928/A        3360       3680  :  X 
+/FGNFICL/F3PLA/I$929/A        3360       3680  :  X 
+/FGNFICL/F3PLA/I$930/A        1440       3680  :  X 
+/FGNFICL/F3PLA/I$931/A        3360       3680  :  X 
+/FGNFICL/F3PLA/I$932/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$933/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$934/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$935/A        1440       3680  :  X 
+/FGNFICL/F3PLA/I$936/B         960       3680  :  X 
+/FGNFICL/F3PLA/I$937/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$938/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$939/A        1440       3680  :  X 
+/FGNFICL/F3PLA/I$940/C        1440       3680  :  X 
+/FGNFICL/F3PLA/I$941/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$942/A        2400       3680  :  X 
+/FGNFICL/F3PLA/I$943/A        1440       3680  :  X 
+/FGNFICL/F3PLA/I$944/B         960       3680  :  X 
+/FGNFICL/GNF0/I$2        3360       3680  :  X 
+/FGNFICL/GNF0/I$3/U        2400       3680  :  X 
+/FGNFICL/GNF0/I$4/A        1440       3680  :  X 
+/FGNFICL/GNF0/I$5/A         960       3680  :  X 
+/FGNFICL/GNF1/I$2        3360       3680  :  X 
+/FGNFICL/GNF1/I$3/U        2400       3680  :  X 
+/FGNFICL/GNF1/I$4/A        1440       3680  :  X 
+/FGNFICL/GNF1/I$5/A         960       3680  :  X 
+/FGNFICL/GNF2/I$2        3360       3680  :  X 
+/FGNFICL/GNF2/I$3/U        2400       3680  :  X 
+/FGNFICL/GNF2/I$4/A        1440       3680  :  X 
+/FGNFICL/GNF2/I$5/A         960       3680  :  X 
+/FGNFICL/GNF3/I$2        3360       3680  :  X 
+/FGNFICL/GNF3/I$3/U        2400       3680  :  X 
+/FGNFICL/GNF3/I$4/A        1440       3680  :  X 
+/FGNFICL/GNF3/I$5/A         960       3680  :  X 
+/FGNFICL/I$1000/B        1920       3680  :  X 
+/FGNFICL/I$1001/A        2400       3680  :  X 
+/FGNFICL/I$1002/A        1440       3680  :  X 
+/FGNFICL/I$1003/B        3360       3680  :  X 
+/FGNFICL/I$1006/B        4800       3680  :  X 
+/FGNFICL/I$1007        3360       3680  :  X 
+/FGNFICL/I$1008/A        2400       3680  :  X 
+/FGNFICL/I$1012/D        3360       3680  :  X 
+/FGNFICL/I$1016/U       10560       3680  :  X 
+/FGNFICL/I$1022        4320       3680  :  X 
+/FGNFICL/I$1023        4320       3680  :  X 
+/FGNFICL/I$1028/A         960       3680  :  X 
+/FGNFICL/I$1029/A         960       3680  :  X 
+/FGNFICL/I$1035/U        2400       3680  :  X 
+/FGNFICL/I$1036/U        2400       3680  :  X 
+/FGNFICL/I$1046/B         960       3680  :  X 
+/FGNFICL/I$1047/C        1440       3680  :  X 
+/FGNFICL/I$1052        4800       3680  :  X 
+/FGNFICL/I$1053        4800       3680  :  X 
+/FGNFICL/I$1054/B         960       3680  :  X 
+/FGNFICL/I$1055/A         960       3680  :  X 
+/FGNFICL/I$1056        3360       3680  :  X 
+/FGNFICL/I$1057        3360       3680  :  X 
+/FGNFICL/I$1058        3360       3680  :  X 
+/FGNFICL/I$1059        3360       3680  :  X 
+/FGNFICL/I$1060        3360       3680  :  X 
+/FGNFICL/I$1061        3360       3680  :  X 
+/FGNFICL/I$1062        3360       3680  :  X 
+/FGNFICL/I$1063        3360       3680  :  X 
+/FGNFICL/I$1066/C        2880       3680  :  X 
+/FGNFICL/I$1067/C        2880       3680  :  X 
+/FGNFICL/I$1068/A        1440       3680  :  X 
+/FGNFICL/I$1069/B        1920       3680  :  X 
+/FGNFICL/I$1115_3/A         960       3680  :  X 
+/FGNFICL/I$1115_4/A         960       3680  :  X 
+/FGNFICL/I$1115_5/A         960       3680  :  X 
+/FGNFICL/I$1116_0/A         960       3680  :  X 
+/FGNFICL/I$1116_1/A         960       3680  :  X 
+/FGNFICL/I$1116_2/A         960       3680  :  X 
+/FGNFICL/I$1123_3        1920       3680  :  X 
+/FGNFICL/I$1123_4        1920       3680  :  X 
+/FGNFICL/I$1123_5        1920       3680  :  X 
+/FGNFICL/I$1124_0/A        1440       3680  :  X 
+/FGNFICL/I$1124_1/A        1440       3680  :  X 
+/FGNFICL/I$1124_2/A        1440       3680  :  X 
+/FGNFICL/I$1461/A         960       3680  :  X 
+/FGNFICL/I$1462        3360       3680  :  X 
+/FGNFICL/I$1463/U        4800       3680  :  X 
+/FGNFICL/I$1464/U        4800       3680  :  X 
+/FGNFICL/I$2182_3/U        2400       3680  :  X 
+/FGNFICL/I$2182_4/U        2400       3680  :  X 
+/FGNFICL/I$2182_5/U        2400       3680  :  X 
+/FGNFICL/I$2183_0/U        2400       3680  :  X 
+/FGNFICL/I$2183_1/U        2400       3680  :  X 
+/FGNFICL/I$2183_2/U        2400       3680  :  X 
+/FGNFICL/I$2604/A        1440       3680  :  X 
+/FGNFICL/I$3221_3/A         960       3680  :  X 
+/FGNFICL/I$3221_4/A         960       3680  :  X 
+/FGNFICL/I$3221_5/A         960       3680  :  X 
+/FGNFICL/I$3222_0/A         960       3680  :  X 
+/FGNFICL/I$3222_1/A         960       3680  :  X 
+/FGNFICL/I$3222_2/A         960       3680  :  X 
+/FGNFICL/I$3624_0/B         960       3680  :  X 
+/FGNFICL/I$3624_1/B         960       3680  :  X 
+/FGNFICL/I$3624_2/B         960       3680  :  X 
+/FGNFICL/I$3624_3/B         960       3680  :  X 
+/FGNFICL/I$3624_4/B         960       3680  :  X 
+/FGNFICL/I$3624_5/B         960       3680  :  X 
+/FGNFICL/I$3625_0/I        3360       3680  :  X 
+/FGNFICL/I$3625_1/I        3360       3680  :  X 
+/FGNFICL/I$3625_2/I        3360       3680  :  X 
+/FGNFICL/I$3625_3/I        3360       3680  :  X 
+/FGNFICL/I$3625_4/I        3360       3680  :  X 
+/FGNFICL/I$3625_5/I        3360       3680  :  X 
+/FGNFICL/I$998/A        1440       3680  :  X 
+/FGNFICL/I$999/A        2400       3680  :  X 
+/FQCNTR/EC0/I$2        4320       3680  :  X 
+/FQCNTR/EC0/I$3/D        1440       3680  :  X 
+/FQCNTR/EC0/I$4/U        2400       3680  :  X 
+/FQCNTR/EC0/I$5/A         960       3680  :  X 
+/FQCNTR/EC0/I$6/D        1440       3680  :  X 
+/FQCNTR/EC1/I$2        4320       3680  :  X 
+/FQCNTR/EC1/I$3/D        1440       3680  :  X 
+/FQCNTR/EC1/I$4/U        2400       3680  :  X 
+/FQCNTR/EC1/I$5/A         960       3680  :  X 
+/FQCNTR/EC1/I$6/D        1440       3680  :  X 
+/FQCNTR/I$194/B         960       3680  :  X 
+/FQCNTR/I$217/A        1440       3680  :  X 
+/FQCNTR/I$218/A        3360       3680  :  X 
+/FQCNTR/I$219/A        2400       3680  :  X 
+/FQCNTR/I$220/B        3360       3680  :  X 
+/FQCNTR/I$2541        3360       3680  :  X 
+/FQCNTR/I$2547        4800       3680  :  X 
+/FQCNTR/I$2549        3360       3680  :  X 
+/FQCNTR/I$265/B         960       3680  :  X 
+/FQCNTR/I$284/A        1440       3680  :  X 
+/FQCNTR/I$285/A        2400       3680  :  X 
+/FQCNTR/I$286/A        3360       3680  :  X 
+/FQCNTR/I$287/A         960       3680  :  X 
+/FQCNTR/I$290/B        3360       3680  :  X 
+/FQCNTR/I$291/B        1920       3680  :  X 
+/FQCNTR/I$292/A        2400       3680  :  X 
+/FQCNTR/I$293        4800       3680  :  X 
+/FQCNTR/I$294        3360       3680  :  X 
+/FQCNTR/I$295        4800       3680  :  X 
+/FQCNTR/I$296        4800       3680  :  X 
+/FQCNTR/I$297        3360       3680  :  X 
+/FQCNTR/I$298        3360       3680  :  X 
+/FQCNTR/I$3405/B         960       3680  :  X 
+/FQCNTR/I$3406/B         960       3680  :  X 
+/FQCNTR/I$3407/B         960       3680  :  X 
+/FQCNTR/I$3408/A         960       3680  :  X 
+/FQCNTR/I$3409/B        1920       3680  :  X 
+/FQCNTR/I$3410/B        1920       3680  :  X 
+/FQCNTR/I$3411/B        1920       3680  :  X 
+/FQCNTR/I$3412/B        1920       3680  :  X 
+/FQCNTR/I$3413/H        2880       3680  :  X 
+/FQCNTR/I$3414/H        2880       3680  :  X 
+/FQCNTR/I$3415/H        2880       3680  :  X 
+/FQCNTR/I$3416/H        2880       3680  :  X 
+/FQCNTR/I$3417/C        1440       3680  :  X 
+/FQCNTR/I$3418/C        1440       3680  :  X 
+/FQCNTR/I$3419/A         960       3680  :  X 
+/FQCNTR/I$3420/B         960       3680  :  X 
+/FQCNTR/I$3421/B        1920       3680  :  X 
+/FQCNTR/I$3422/B        1920       3680  :  X 
+/FQCNTR/I$3423/B        1920       3680  :  X 
+/FQCNTR/I$3424/B        1920       3680  :  X 
+/FQCNTR/I$3425/H        2880       3680  :  X 
+/FQCNTR/I$3426/H        2880       3680  :  X 
+/FQCNTR/I$3427/H        2880       3680  :  X 
+/FQCNTR/I$3428/H        2880       3680  :  X 
+/FQCNTR/I$3440/C        1440       3680  :  X 
+/FQCNTR/I$3441/C        1440       3680  :  X 
+/FQCNTR/I$3442/B         960       3680  :  X 
+/FQCNTR/I$3443/B         960       3680  :  X 
+/FQCNTR/I$3444/B        3360       3680  :  X 
+/FQCNTR/I$3445/B        3360       3680  :  X 
+/FQCNTR/I$3446/B        3360       3680  :  X 
+/FQCNTR/I$3447/B        3360       3680  :  X 
+/FQCNTR/I$3452        5760       3680  :  X 
+/FQCNTR/I$3453        5760       3680  :  X 
+/FQCNTR/I$3454        5760       3680  :  X 
+/FQCNTR/I$3455        5760       3680  :  X 
+/FQCNTR/I$355/B         960       3680  :  X 
+/FQCNTR/I$365/B         960       3680  :  X 
+/FQCNTR/I$366/E        1920       3680  :  X 
+/FQCNTR/I$477/U        4800       3680  :  X 
+/FQCNTR/I$478/U        4800       3680  :  X 
+/FQCNTR/I$81/B        1920       3680  :  X 
+/FQCNTR/I$82/B        3360       3680  :  X 
+/FQCNTR/I$83        4800       3680  :  X 
+/FQCNTR/I$84        4800       3680  :  X 
+/FQCNTR/PC0/I$2        4320       3680  :  X 
+/FQCNTR/PC0/I$3/D        1440       3680  :  X 
+/FQCNTR/PC0/I$4/U        2400       3680  :  X 
+/FQCNTR/PC0/I$5/A         960       3680  :  X 
+/FQCNTR/PC0/I$6/D        1440       3680  :  X 
+/FQCNTR/PC1/I$2        4320       3680  :  X 
+/FQCNTR/PC1/I$3/D        1440       3680  :  X 
+/FQCNTR/PC1/I$4/U        2400       3680  :  X 
+/FQCNTR/PC1/I$5/A         960       3680  :  X 
+/FQCNTR/PC1/I$6/D        1440       3680  :  X 
+/FQCNTR/SC0/I$2        4320       3680  :  X 
+/FQCNTR/SC0/I$3/D        1440       3680  :  X 
+/FQCNTR/SC0/I$4/U        2400       3680  :  X 
+/FQCNTR/SC0/I$5/A         960       3680  :  X 
+/FQCNTR/SC0/I$6/D        1440       3680  :  X 
+/FQCNTR/SC1/I$2        4320       3680  :  X 
+/FQCNTR/SC1/I$3/D        1440       3680  :  X 
+/FQCNTR/SC1/I$4/U        2400       3680  :  X 
+/FQCNTR/SC1/I$5/A         960       3680  :  X 
+/FQCNTR/SC1/I$6/D        1440       3680  :  X 
+/FTIMING/F1PLA/I$10/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$100/E        1920       3680  :  X 
+/FTIMING/F1PLA/I$101/C        1440       3680  :  X 
+/FTIMING/F1PLA/I$102/F        1920       3680  :  X 
+/FTIMING/F1PLA/I$103/G        2400       3680  :  X 
+/FTIMING/F1PLA/I$104/E        1920       3680  :  X 
+/FTIMING/F1PLA/I$105/F        1920       3680  :  X 
+/FTIMING/F1PLA/I$106/D        1440       3680  :  X 
+/FTIMING/F1PLA/I$107/D        1440       3680  :  X 
+/FTIMING/F1PLA/I$108/E        1920       3680  :  X 
+/FTIMING/F1PLA/I$109/F        1920       3680  :  X 
+/FTIMING/F1PLA/I$11/A         960       3680  :  X 
+/FTIMING/F1PLA/I$12/B        4800       3680  :  X 
+/FTIMING/F1PLA/I$121/A        2400       3680  :  X 
+/FTIMING/F1PLA/I$122/A        2400       3680  :  X 
+/FTIMING/F1PLA/I$13/B        4800       3680  :  X 
+/FTIMING/F1PLA/I$14/A        3360       3680  :  X 
+/FTIMING/F1PLA/I$15/D       11040       3680  :  X 
+/FTIMING/F1PLA/I$16/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$17/A         960       3680  :  X 
+/FTIMING/F1PLA/I$18/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$19/B         960       3680  :  X 
+/FTIMING/F1PLA/I$2/B        4800       3680  :  X 
+/FTIMING/F1PLA/I$20/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$21/A         960       3680  :  X 
+/FTIMING/F1PLA/I$22/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$23/C        1440       3680  :  X 
+/FTIMING/F1PLA/I$24/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$25/A         960       3680  :  X 
+/FTIMING/F1PLA/I$26/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$27/A         960       3680  :  X 
+/FTIMING/F1PLA/I$28/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$29/B         960       3680  :  X 
+/FTIMING/F1PLA/I$30/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$31/A         960       3680  :  X 
+/FTIMING/F1PLA/I$32/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$33/A         960       3680  :  X 
+/FTIMING/F1PLA/I$34/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$35/A         960       3680  :  X 
+/FTIMING/F1PLA/I$36/B        4800       3680  :  X 
+/FTIMING/F1PLA/I$37/B        4800       3680  :  X 
+/FTIMING/F1PLA/I$38/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$39/A         960       3680  :  X 
+/FTIMING/F1PLA/I$4/B        4800       3680  :  X 
+/FTIMING/F1PLA/I$40/A        3360       3680  :  X 
+/FTIMING/F1PLA/I$41/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$42/B         960       3680  :  X 
+/FTIMING/F1PLA/I$43/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$44/A         960       3680  :  X 
+/FTIMING/F1PLA/I$45/C        7200       3680  :  X 
+/FTIMING/F1PLA/I$47/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$49/A         960       3680  :  X 
+/FTIMING/F1PLA/I$50/A         960       3680  :  X 
+/FTIMING/F1PLA/I$51/A         960       3680  :  X 
+/FTIMING/F1PLA/I$53/B        3360       3680  :  X 
+/FTIMING/F1PLA/I$54/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$55/A         960       3680  :  X 
+/FTIMING/F1PLA/I$56/A        3360       3680  :  X 
+/FTIMING/F1PLA/I$57/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$58/A         960       3680  :  X 
+/FTIMING/F1PLA/I$59/A        2400       3680  :  X 
+/FTIMING/F1PLA/I$6/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$60/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$61/A         960       3680  :  X 
+/FTIMING/F1PLA/I$62/C        7200       3680  :  X 
+/FTIMING/F1PLA/I$63/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$64/A         960       3680  :  X 
+/FTIMING/F1PLA/I$65/A        3360       3680  :  X 
+/FTIMING/F1PLA/I$66/B        4800       3680  :  X 
+/FTIMING/F1PLA/I$67/A        3360       3680  :  X 
+/FTIMING/F1PLA/I$68/A        1440       3680  :  X 
+/FTIMING/F1PLA/I$69/A         960       3680  :  X 
+/FTIMING/F1PLA/I$7/B         960       3680  :  X 
+/FTIMING/F1PLA/I$72/B        1920       3680  :  X 
+/FTIMING/F1PLA/I$73/A         960       3680  :  X 
+/FTIMING/F1PLA/I$74/A        3840       3680  :  X 
+/FTIMING/F1PLA/I$75/A        3360       3680  :  X 
+/FTIMING/F1PLA/I$76/A         960       3680  :  X 
+/FTIMING/F1PLA/I$77/A         960       3680  :  X 
+/FTIMING/F1PLA/I$79/A        2400       3680  :  X 
+/FTIMING/F1PLA/I$8/A        3360       3680  :  X 
+/FTIMING/F1PLA/I$9/A        3360       3680  :  X 
+/FTIMING/F1PLA/I$94/B         960       3680  :  X 
+/FTIMING/F1PLA/I$95/C        1440       3680  :  X 
+/FTIMING/F1PLA/I$96/C        1440       3680  :  X 
+/FTIMING/F1PLA/I$97/D        1440       3680  :  X 
+/FTIMING/F1PLA/I$98/E        1920       3680  :  X 
+/FTIMING/F1PLA/I$99/E        1920       3680  :  X 
+/FTIMING/F2PLA/I$305/P9        5760       3680  :  X 
+/FTIMING/F2PLA/I$309/P5        2880       3680  :  X 
+/FTIMING/F2PLA/I$312/P7        4840       3680  :  X 
+/FTIMING/F2PLA/I$315/P7        4840       3680  :  X 
+/FTIMING/F2PLA/I$318/P6        4320       3680  :  X 
+/FTIMING/F2PLA/I$321/P8        5280       3680  :  X 
+/FTIMING/F2PLA/I$347/P5        2880       3680  :  X 
+/FTIMING/F2PLA/I$388/P6        4320       3680  :  X 
+/FTIMING/F2PLA/I$407/P7        4840       3680  :  X 
+/FTIMING/F2PLA/I$410/P5        2880       3680  :  X 
+/FTIMING/F2PLA/I$416/P5        2880       3680  :  X 
+/FTIMING/F2PLA/I$441/A        1440       3680  :  X 
+/FTIMING/F2PLA/I$442/A        1440       3680  :  X 
+/FTIMING/F2PLA/I$443/A        1440       3680  :  X 
+/FTIMING/F2PLA/I$444/A        1440       3680  :  X 
+/FTIMING/F2PLA/I$445/A        1440       3680  :  X 
+/FTIMING/F2PLA/I$446/A        1440       3680  :  X 
+/FTIMING/F2PLA/I$447/A        1440       3680  :  X 
+/FTIMING/F2PLA/I$448/A        1440       3680  :  X 
+/FTIMING/F2PLA/I$449/A        1440       3680  :  X 
+/FTIMING/F2PLA/I$450/A         960       3680  :  X 
+/FTIMING/F2PLA/I$451/A        1440       3680  :  X 
+/FTIMING/F2PLA/I$452/A        1440       3680  :  X 
+/FTIMING/F2PLA/I$453/A        1440       3680  :  X 
+/FTIMING/F2PLA/I$454/B        1920       3680  :  X 
+/FTIMING/F2PLA/I$455/A        1440       3680  :  X 
+/FTIMING/F2PLA/I$471/C        1440       3680  :  X 
+/FTIMING/F2PLA/I$472/B         960       3680  :  X 
+/FTIMING/F2PLA/I$473/D        1440       3680  :  X 
+/FTIMING/F2PLA/I$474/B         960       3680  :  X 
+/FTIMING/F2PLA/I$475/G        2400       3680  :  X 
+/FTIMING/F2PLA/I$506/C        1440       3680  :  X 
+/FTIMING/F2PLA/I$507/B         960       3680  :  X 
+/FTIMING/F2PLA/I$517/G        2400       3680  :  X 
+/FTIMING/F2PLA/I$545/A        2400       3680  :  X 
+/FTIMING/F2PLA/I$546/A        2400       3680  :  X 
+/FTIMING/F2PLA/I$547/A        3360       3680  :  X 
+/FTIMING/F2PLA/I$548/A        3360       3680  :  X 
+/FTIMING/F2PLA/I$549/A        3360       3680  :  X 
+/FTIMING/F2PLA/I$550/A        2400       3680  :  X 
+/FTIMING/F2PLA/I$551/A        3360       3680  :  X 
+/FTIMING/F2PLA/I$561/B         960       3680  :  X 
+/FTIMING/F2PLA/I$562/B         960       3680  :  X 
+/FTIMING/F2PLA/I$661/A         960       3680  :  X 
+/FTIMING/F2PLA/I$701/A         960       3680  :  X 
+/FTIMING/F2PLA/I$702/A         960       3680  :  X 
+/FTIMING/F2PLA/I$703/A         960       3680  :  X 
+/FTIMING/F2PLA/I$704/A         960       3680  :  X 
+/FTIMING/F2PLA/I$721/A         960       3680  :  X 
+/FTIMING/F2PLA/I$722/B         960       3680  :  X 
+/FTIMING/F2PLA/I$723/A         960       3680  :  X 
+/FTIMING/F2PLA/I$724/A         960       3680  :  X 
+/FTIMING/F2PLA/I$725/A         960       3680  :  X 
+/FTIMING/F2PLA/I$726/D        1440       3680  :  X 
+/FTIMING/F2PLA/I$727/A         960       3680  :  X 
+/FTIMING/F2PLA/I$728/E        1920       3680  :  X 
+/FTIMING/F2PLA/I$729/P4        2400       3680  :  X 
+/FTIMING/F2PLA/I$730/P4        2400       3680  :  X 
+/FTIMING/F2PLA/I$731/P4        2400       3680  :  X 
+/FTIMING/F2PLA/I$732/A        2400       3680  :  X 
+/FTIMING/I$103/A         960       3680  :  X 
+/FTIMING/I$104/A        1440       3680  :  X 
+/FTIMING/I$105        3360       3680  :  X 
+/FTIMING/I$106/U        6240       3680  :  X 
+/FTIMING/I$107/U        6240       3680  :  X 
+/FTIMING/I$108/U        6240       3680  :  X 
+/FTIMING/I$109_6/B         960       3680  :  X 
+/FTIMING/I$109_7/B         960       3680  :  X 
+/FTIMING/I$109_8/B         960       3680  :  X 
+/FTIMING/I$109_9/B         960       3680  :  X 
+/FTIMING/I$110/B         960       3680  :  X 
+/FTIMING/I$111/U        2880       3680  :  X 
+/FTIMING/I$112/A        1440       3680  :  X 
+/FTIMING/I$117_6/U        2400       3680  :  X 
+/FTIMING/I$117_7/U        2400       3680  :  X 
+/FTIMING/I$117_8/U        2400       3680  :  X 
+/FTIMING/I$117_9/U        2400       3680  :  X 
+/FTIMING/I$118/A        1440       3680  :  X 
+/FTIMING/I$119/A        1440       3680  :  X 
+/FTIMING/I$120/D        3360       3680  :  X 
+/FTIMING/I$121/C        2880       3680  :  X 
+/FTIMING/I$122/A        1440       3680  :  X 
+/FTIMING/I$129/D        1440       3680  :  X 
+/FTIMING/I$139/U        2880       3680  :  X 
+/FTIMING/I$146/A        1440       3680  :  X 
+/FTIMING/I$147/U        6240       3680  :  X 
+/FTIMING/I$152/D        1440       3680  :  X 
+/FTIMING/I$156/U        2400       3680  :  X 
+/FTIMING/I$158_0/B         960       3680  :  X 
+/FTIMING/I$158_1/B         960       3680  :  X 
+/FTIMING/I$158_2/B         960       3680  :  X 
+/FTIMING/I$158_3/B         960       3680  :  X 
+/FTIMING/I$158_4/B         960       3680  :  X 
+/FTIMING/I$159/C        1440       3680  :  X 
+/FTIMING/I$160/B         960       3680  :  X 
+/FTIMING/I$162_0/U        2400       3680  :  X 
+/FTIMING/I$162_1/U        2400       3680  :  X 
+/FTIMING/I$162_2/U        2400       3680  :  X 
+/FTIMING/I$162_3/U        2400       3680  :  X 
+/FTIMING/I$162_4/U        2400       3680  :  X 
+/FTIMING/I$169/I        3360       3680  :  X 
+/FTIMING/I$172/C        1440       3680  :  X 
+/FTIMING/I$173_0/U        2400       3680  :  X 
+/FTIMING/I$173_1/U        2400       3680  :  X 
+/FTIMING/I$173_2/U        2400       3680  :  X 
+/FTIMING/I$173_3/U        2400       3680  :  X 
+/FTIMING/I$173_4/U        2400       3680  :  X 
+/FTIMING/I$19/U        2400       3680  :  X 
+/FTIMING/I$20/A        1440       3680  :  X 
+/FTIMING/I$21/B        1920       3680  :  X 
+/FTIMING/I$22/H        2880       3680  :  X 
+/FTIMING/I$221/A         960       3680  :  X 
+/FTIMING/I$23/U        2400       3680  :  X 
+/FTIMING/I$24/U        2400       3680  :  X 
+/FTIMING/I$25/A        1440       3680  :  X 
+/FTIMING/I$26/B         960       3680  :  X 
+/FTIMING/I$27/G        2400       3680  :  X 
+/FTIMING/I$28/B         960       3680  :  X 
+/FTIMING/I$29        1920       3680  :  X 
+/FTIMING/I$30/U        2400       3680  :  X 
+/FTIMING/I$31/U        2880       3680  :  X 
+/FTIMING/I$32/C        1440       3680  :  X 
+/FTIMING/I$33/U        2400       3680  :  X 
+/FTIMING/I$35/A         960       3680  :  X 
+/FTIMING/I$38/D        1440       3680  :  X 
+/FTIMING/I$42/A         960       3680  :  X 
+/FTIMING/I$45/A         960       3680  :  X 
+/FTIMING/I$46/A         960       3680  :  X 
+/FTIMING/I$47/U        2400       3680  :  X 
+/FTIMING/I$48/U        2880       3680  :  X 
+/FTIMING/I$52/B         960       3680  :  X 
+/FTIMING/I$53        3840       3680  :  X 
+/FTIMING/I$55/A        1440       3680  :  X 
+/FTIMING/I$56/C        5280       3680  :  X 
+/FTIMING/I$57/A         960       3680  :  X 
+/FTIMING/I$59/B        3360       3680  :  X 
+/FTIMING/I$60/A        1440       3680  :  X 
+/FTIMING/I$61/B         960       3680  :  X 
+/FTIMING/I$62/B        1920       3680  :  X 
+/FTIMING/I$63/U        2400       3680  :  X 
+/FTIMING/I$64/A        1440       3680  :  X 
+/FTIMING/I$65/C        1440       3680  :  X 
+/FTIMING/I$66/A        2400       3680  :  X 
+/FTIMING/I$67/B        3360       3680  :  X 
+/FTIMING/I$68/A        1440       3680  :  X 
+/FTIMING/I$69/A         960       3680  :  X 
+/FTIMING/I$70/U        2400       3680  :  X 
+/FTIMING/I$71/A        2400       3680  :  X 
+/FTIMING/I$72/B         960       3680  :  X 
+/FTIMING/I$73/C        1440       3680  :  X 
+/FTIMING/I$74/C        1440       3680  :  X 
+/FTIMING/I$89/U        6240       3680  :  X 
+/FTIMING/I$90        3360       3680  :  X 
+/FTIMING/I$91/B         960       3680  :  X 
+/FTIMING/I$93_6/U        2400       3680  :  X 
+/FTIMING/I$93_7/U        2400       3680  :  X 
+/FTIMING/I$93_8/U        2400       3680  :  X 
+/FTIMING/I$93_9/U        2400       3680  :  X 
+/FTIMING/I$94/U        6240       3680  :  X 
+/MISC_RL/I$13/A        2400       3680  :  X 
+/MISC_RL/I$14/A        1440       3680  :  X 
+/MISC_RL/I$158/A         960       3680  :  X 
+/MISC_RL/I$159/A         960       3680  :  X 
+/MISC_RL/I$160/A         960       3680  :  X 
+/MISC_RL/I$161/A         960       3680  :  X 
+/MISC_RL/I$162/G        2400       3680  :  X 
+/MISC_RL/I$163/C        1440       3680  :  X 
+/MISC_RL/I$164/A         960       3680  :  X 
+/MISC_RL/I$165/A         960       3680  :  X 
+/MISC_RL/I$166/B        1920       3680  :  X 
+/MISC_RL/I$167/D        1440       3680  :  X 
+/MISC_RL/I$168/B         960       3680  :  X 
+/MISC_RL/I$169/C        1440       3680  :  X 
+/MISC_RL/I$171/B         960       3680  :  X 
+/MISC_RL/I$172/C        1440       3680  :  X 
+/MISC_RL/I$174/B         960       3680  :  X 
+/MISC_RL/I$175/A        1440       3680  :  X 
+/MISC_RL/I$176/D        1440       3680  :  X 
+/MISC_RL/I$178/A         960       3680  :  X 
+/MISC_RL/I$179/G        2400       3680  :  X 
+/MISC_RL/I$180/G        2400       3680  :  X 
+/MISC_RL/I$181/B         960       3680  :  X 
+/MISC_RL/I$182/B        1920       3680  :  X 
+/MISC_RL/I$183/A         960       3680  :  X 
+/MISC_RL/I$184/B        1920       3680  :  X 
+/MISC_RL/I$185/F        1920       3680  :  X 
+/MISC_RL/I$186/B        1920       3680  :  X 
+/MISC_RL/I$187/C        2880       3680  :  X 
+/MISC_RL/I$188/B        1920       3680  :  X 
+/MISC_RL/I$189/A         960       3680  :  X 
+/MISC_RL/I$190/B        1920       3680  :  X 
+/MISC_RL/I$191/C        2880       3680  :  X 
+/MISC_RL/I$193/F        1920       3680  :  X 
+/MISC_RL/I$194        5280       3680  :  X 
+/MISC_RL/I$195/D        3360       3680  :  X 
+/MISC_RL/I$197        5280       3680  :  X 
+/MISC_RL/I$198/A        3360       3680  :  X 
+/MISC_RL/I$199/A        2400       3680  :  X 
+/MISC_RL/I$200/G        2400       3680  :  X 
+/MISC_RL/I$201/A         960       3680  :  X 
+/MISC_RL/I$202/G        2400       3680  :  X 
+/MISC_RL/I$203/G        2400       3680  :  X 
+/MISC_RL/I$204/G        2400       3680  :  X 
+/MISC_RL/I$205/G        2400       3680  :  X 
+/MISC_RL/I$206/A        2400       3680  :  X 
+/MISC_RL/I$207/A        3360       3680  :  X 
+/MISC_RL/I$208/G        2400       3680  :  X 
+/MISC_RL/I$209/G        2400       3680  :  X 
+/MISC_RL/I$210/G        2400       3680  :  X 
+/MISC_RL/I$211/C        2880       3680  :  X 
+/MISC_RL/I$217/G        2400       3680  :  X 
+/MISC_RL/I$220/B         960       3680  :  X 
+/MISC_RL/I$221/G        2400       3680  :  X 
+/MISC_RL/I$222/A         960       3680  :  X 
+/MISC_RL/I$28        1920       3680  :  X 
+/MISC_RL/I$281/U        2400       3680  :  X 
+/MISC_RL/I$282/U        2400       3680  :  X 
+/MISC_RL/I$283/U        2400       3680  :  X 
+/MISC_RL/I$284/U        2400       3680  :  X 
+/MISC_RL/I$29/A         960       3680  :  X 
+/MISC_RL/I$30/B         960       3680  :  X 
+/MISC_RL/I$31/C        1440       3680  :  X 
+/MISC_RL/I$32/A         960       3680  :  X 
+/MISC_RL/I$34/B        3360       3680  :  X 
+/MISC_RL/I$35/D        1440       3680  :  X 
+/MISC_RL/I$36/A        1440       3680  :  X 
+/MISC_RL/I$37        3360       3680  :  X 
+/MISC_RL/I$39/B         960       3680  :  X 
+/MISC_RL/I$41/B         960       3680  :  X 
+/MISC_RL/I$42/A        1440       3680  :  X 
+/MISC_RL/I$43/A         960       3680  :  X 
+/MISC_RL/I$44/B        7200       3680  :  X 
+/MISC_RL/I$45/A         960       3680  :  X 
+/MISC_RL/I$46        1920       3680  :  X 
+/MISC_RL/I$48/A         960       3680  :  X 
+/MISC_RL/I$49/D        1440       3680  :  X 
+/MISC_RL/I$50/C        1440       3680  :  X 
+/MISC_RL/I$51/A        3360       3680  :  X 
+/MISC_RL/I$52/A        1440       3680  :  X 
+/MISC_RL/I$53/A        1440       3680  :  X 
+/MISC_RL/I$54/A        1440       3680  :  X 
+/MISC_RL/I$55/A        1440       3680  :  X 
+/MISC_RL/I$56        5280       3680  :  X 
+/MISC_RL/I$58        1920       3680  :  X 
+/MISC_RL/I$59/A        1440       3680  :  X 
+/MISC_RL/I$6/B         960       3680  :  X 
+/MISC_RL/I$60/A        1440       3680  :  X 
+/MISC_RL/I$61/A        1440       3680  :  X 
+/MISC_RL/I$62/A        1440       3680  :  X 
+/MISC_RL/I$621        3840       3680  :  X 
+/MISC_RL/I$623        3840       3680  :  X 
+/MISC_RL/I$624        3840       3680  :  X 
+/MISC_RL/I$625        3840       3680  :  X 
+/MISC_RL/I$626        3840       3680  :  X 
+/MISC_RL/I$627        3840       3680  :  X 
+/MISC_RL/I$628        4320       3680  :  X 
+/MISC_RL/I$629        3840       3680  :  X 
+/MISC_RL/I$63/A        1440       3680  :  X 
+/MISC_RL/I$630        2400       3680  :  X 
+/MISC_RL/I$631        2400       3680  :  X 
+/MISC_RL/I$632        3840       3680  :  X 
+/MISC_RL/I$633        3360       3680  :  X 
+/MISC_RL/I$634        3840       3680  :  X 
+/MISC_RL/I$635        2400       3680  :  X 
+/MISC_RL/I$636        2400       3680  :  X 
+/MISC_RL/I$637        2400       3680  :  X 
+/MISC_RL/I$638        2400       3680  :  X 
+/MISC_RL/I$639        2400       3680  :  X 
+/MISC_RL/I$64/A        1440       3680  :  X 
+/MISC_RL/I$640        2400       3680  :  X 
+/MISC_RL/I$641/U        6240       3680  :  X 
+/MISC_RL/I$644/A         960       3680  :  X 
+/MISC_RL/I$65/A        1440       3680  :  X 
+/MISC_RL/I$66/A        1440       3680  :  X 
+/MISC_RL/I$67/A         960       3680  :  X 
+/MISC_RL/I$68/A        1440       3680  :  X 
+/MISC_RL/I$69/B        1920       3680  :  X 
+/MISC_RL/I$7        1920       3680  :  X 
+/MISC_RL/I$70/B         960       3680  :  X 
+/MISC_RL/I$72/A        1440       3680  :  X 
+/MISC_RL/I$73/B         960       3680  :  X 
+/PATTR_GEN/I$17/U        4800       3680  :  X 
+/PATTR_GEN/I$18/U        4800       3680  :  X 
+/PATTR_GEN/I$19/B         960       3680  :  X 
+/PATTR_GEN/I$237/A        1440       3680  :  X 
+/PATTR_GEN/I$238/A         960       3680  :  X 
+/PATTR_GEN/I$239/A         960       3680  :  X 
+/PATTR_GEN/I$240/C        1440       3680  :  X 
+/PATTR_GEN/I$241/A        1440       3680  :  X 
+/PATTR_GEN/I$26/B         960       3680  :  X 
+/PATTR_GEN/I$321        2400       3680  :  X 
+/PATTR_GEN/I$322        2400       3680  :  X 
+/PATTR_GEN/I$323        2400       3680  :  X 
+/PATTR_GEN/I$328        2400       3680  :  X 
+/PATTR_GEN/I$329        2400       3680  :  X 
+/PATTR_GEN/I$330        2400       3680  :  X 
+/PATTR_GEN/I$331        2400       3680  :  X 
+/PATTR_GEN/I$332        2400       3680  :  X 
+/PATTR_GEN/I$333        2400       3680  :  X 
+/PATTR_GEN/I$334        2400       3680  :  X 
+/PATTR_GEN/I$335        2400       3680  :  X 
+/PATTR_GEN/I$337        2400       3680  :  X 
+/PATTR_GEN/I$338        2400       3680  :  X 
+/PATTR_GEN/I$339        2400       3680  :  X 
+/PATTR_GEN/I$340        2400       3680  :  X 
+/PATTR_GEN/I$341        3840       3680  :  X 
+/PATTR_GEN/I$37/B        1920       3680  :  X 
+/PATTR_GEN/I$38/C        2880       3680  :  X 
+/PATTR_GEN/I$39/A         960       3680  :  X 
+/PATTR_GEN/I$40/A         960       3680  :  X 
+/PATTR_GEN/I$41/B        1920       3680  :  X 
+/PATTR_GEN/I$45/D        1440       3680  :  X 
+/PATTR_GEN/I$50/B         960       3680  :  X 
+/PATTR_GEN/I$52/A         960       3680  :  X 
+/PATTR_GEN/I$55/A         960       3680  :  X 
+/PATTR_GEN/I$56/A         960       3680  :  X 
+/PATTR_GEN/I$57/A        1440       3680  :  X 
+/PATTR_GEN/I$58/A        1440       3680  :  X 
+/PATTR_GEN/I$66        3360       3680  :  X 
+/PATTR_GEN/I$67        1920       3680  :  X 
+/PATTR_GEN/I$68/D        1440       3680  :  X 
+/PATTR_GEN/I$69/A        1440       3680  :  X 
+/PATTR_GEN/I$70        1920       3680  :  X 
+/PATTR_GEN/I$71        2880       3680  :  X 
+/PATTR_GEN/I$72        2880       3680  :  X 
+/PATTR_GEN/I$73        2880       3680  :  X 
+/PATTR_GEN/I$74/A         960       3680  :  X 
+/PATTR_GEN/I$75/D        1440       3680  :  X 
+/PATTR_GEN/I$76        2880       3680  :  X 
+/PATTR_GEN/I$77        2880       3680  :  X 
+/PATTR_GEN/I$78        2880       3680  :  X 
+/PATTR_GEN/I$782/D        1440       3680  :  X 
+/PATTR_GEN/I$783/A         960       3680  :  X 
+/PATTR_GEN/I$786/A         960       3680  :  X 
+/PATTR_GEN/I$788/D        1440       3680  :  X 
+/PATTR_GEN/I$79        2880       3680  :  X 
+/PATTR_GEN/I$791/A         960       3680  :  X 
+/PATTR_GEN/I$793/D        1440       3680  :  X 
+/PATTR_GEN/I$796/A         960       3680  :  X 
+/PATTR_GEN/I$798/D        1440       3680  :  X 
+/PATTR_GEN/I$80/A         960       3680  :  X 
+/PATTR_GEN/I$801/A         960       3680  :  X 
+/PATTR_GEN/I$803/D        1440       3680  :  X 
+/PATTR_GEN/I$806/A         960       3680  :  X 
+/PATTR_GEN/I$808/D        1440       3680  :  X 
+/PATTR_GEN/I$81        2880       3680  :  X 
+/PATTR_GEN/I$811/A         960       3680  :  X 
+/PATTR_GEN/I$813/D        1440       3680  :  X 
+/PATTR_GEN/I$82        5280       3680  :  X 
+/PATTR_GEN/I$83/B        1920       3680  :  X 
+/PATTR_GEN/I$84/D        1440       3680  :  X 
+/PG_PLA/I$100/A        1440       3680  :  X 
+/PG_PLA/I$107/A        1440       3680  :  X 
+/PG_PLA/I$118/A        2400       3680  :  X 
+/PG_PLA/I$121/A        2400       3680  :  X 
+/PG_PLA/I$125/B        4800       3680  :  X 
+/PG_PLA/I$126/A        2400       3680  :  X 
+/PG_PLA/I$127/A        1440       3680  :  X 
+/PG_PLA/I$131/B         960       3680  :  X 
+/PG_PLA/I$132/A        1440       3680  :  X 
+/PG_PLA/I$135/B         960       3680  :  X 
+/PG_PLA/I$136/C        2880       3680  :  X 
+/PG_PLA/I$137/C        2880       3680  :  X 
+/PG_PLA/I$138/B        3360       3680  :  X 
+/PG_PLA/I$140/C        2880       3680  :  X 
+/PG_PLA/I$141/B         960       3680  :  X 
+/PG_PLA/I$142/B        3360       3680  :  X 
+/PG_PLA/I$147/A        1440       3680  :  X 
+/PG_PLA/I$149/B        4800       3680  :  X 
+/PG_PLA/I$15/A         960       3680  :  X 
+/PG_PLA/I$150/A        3840       3680  :  X 
+/PG_PLA/I$151/B        4800       3680  :  X 
+/PG_PLA/I$152/B        4800       3680  :  X 
+/PG_PLA/I$153/B        7200       3680  :  X 
+/PG_PLA/I$155/B        4800       3680  :  X 
+/PG_PLA/I$158/B        4800       3680  :  X 
+/PG_PLA/I$159/A        2400       3680  :  X 
+/PG_PLA/I$161/A        3840       3680  :  X 
+/PG_PLA/I$162/B        4800       3680  :  X 
+/PG_PLA/I$163/A        3360       3680  :  X 
+/PG_PLA/I$165/A        2400       3680  :  X 
+/PG_PLA/I$166/A        3360       3680  :  X 
+/PG_PLA/I$168/A         960       3680  :  X 
+/PG_PLA/I$173/D        3360       3680  :  X 
+/PG_PLA/I$176/B        1920       3680  :  X 
+/PG_PLA/I$177/A        2400       3680  :  X 
+/PG_PLA/I$178/A         960       3680  :  X 
+/PG_PLA/I$183/B        1920       3680  :  X 
+/PG_PLA/I$184/B        1920       3680  :  X 
+/PG_PLA/I$258/A         960       3680  :  X 
+/PG_PLA/I$259/A         960       3680  :  X 
+/PG_PLA/I$260/A         960       3680  :  X 
+/PG_PLA/I$2602/B        3360       3680  :  X 
+/PG_PLA/I$2603/A        1440       3680  :  X 
+/PG_PLA/I$2604/C        4320       3680  :  X 
+/PG_PLA/I$2605/A        2400       3680  :  X 
+/PG_PLA/I$2607/U        2880       3680  :  X 
+/PG_PLA/I$2608/U        2400       3680  :  X 
+/PG_PLA/I$2609/U        2880       3680  :  X 
+/PG_PLA/I$261/B        3360       3680  :  X 
+/PG_PLA/I$2610/U        2400       3680  :  X 
+/PG_PLA/I$2611/U        2400       3680  :  X 
+/PG_PLA/I$2612/U        2400       3680  :  X 
+/PG_PLA/I$2613/U        2400       3680  :  X 
+/PG_PLA/I$2614/U        2880       3680  :  X 
+/PG_PLA/I$2615/U        2880       3680  :  X 
+/PG_PLA/I$2616/U        2400       3680  :  X 
+/PG_PLA/I$2617/U        2400       3680  :  X 
+/PG_PLA/I$2618/U        2400       3680  :  X 
+/PG_PLA/I$2619/U        2400       3680  :  X 
+/PG_PLA/I$262/A        2400       3680  :  X 
+/PG_PLA/I$2620/U        2400       3680  :  X 
+/PG_PLA/I$2622/U        2400       3680  :  X 
+/PG_PLA/I$2623/U        2400       3680  :  X 
+/PG_PLA/I$2624/U        2400       3680  :  X 
+/PG_PLA/I$2625/U        2400       3680  :  X 
+/PG_PLA/I$2626/U        2880       3680  :  X 
+/PG_PLA/I$2627/U        2400       3680  :  X 
+/PG_PLA/I$2628/U        2400       3680  :  X 
+/PG_PLA/I$2629/U        2400       3680  :  X 
+/PG_PLA/I$2630/U        2400       3680  :  X 
+/PG_PLA/I$2631/U        2400       3680  :  X 
+/PG_PLA/I$2632/U        2400       3680  :  X 
+/PG_PLA/I$2633/U        2400       3680  :  X 
+/PG_PLA/I$2634/U        2880       3680  :  X 
+/PG_PLA/I$2635/H        2880       3680  :  X 
+/PG_PLA/I$2636/A         960       3680  :  X 
+/PG_PLA/I$2637/B         960       3680  :  X 
+/PG_PLA/I$2638/A         960       3680  :  X 
+/PG_PLA/I$2639/A         960       3680  :  X 
+/PG_PLA/I$2640/C        1440       3680  :  X 
+/PG_PLA/I$2641/C        1440       3680  :  X 
+/PG_PLA/I$2642/F        1920       3680  :  X 
+/PG_PLA/I$2643/E        1920       3680  :  X 
+/PG_PLA/I$2644/D        1440       3680  :  X 
+/PG_PLA/I$2645/A         960       3680  :  X 
+/PG_PLA/I$2646/B         960       3680  :  X 
+/PG_PLA/I$2647/A         960       3680  :  X 
+/PG_PLA/I$2648/A         960       3680  :  X 
+/PG_PLA/I$2649/B         960       3680  :  X 
+/PG_PLA/I$2650/U        2400       3680  :  X 
+/PG_PLA/I$2651/U        2400       3680  :  X 
+/PG_PLA/I$2652/U        2880       3680  :  X 
+/PG_PLA/I$349/C        5280       3680  :  X 
+/PG_PLA/I$350/C        5280       3680  :  X 
+/PG_PLA/I$351/B        3360       3680  :  X 
+/PG_PLA/I$352/A        2400       3680  :  X 
+/PG_PLA/I$353/C        5280       3680  :  X 
+/PG_PLA/I$354/B        3360       3680  :  X 
+/PG_PLA/I$355/B        3360       3680  :  X 
+/PG_PLA/I$356/C        5280       3680  :  X 
+/PG_PLA/I$361/A         960       3680  :  X 
+/PG_PLA/I$368/A         960       3680  :  X 
+/PG_PLA/I$369/C        1440       3680  :  X 
+/PG_PLA/I$377/E        1920       3680  :  X 
+/PG_PLA/I$381/D        1440       3680  :  X 
+/PG_PLA/I$383/E        1920       3680  :  X 
+/PG_PLA/I$385/B         960       3680  :  X 
+/PG_PLA/I$387/D        1440       3680  :  X 
+/PG_PLA/I$392/A        1440       3680  :  X 
+/PG_PLA/I$393/A        1440       3680  :  X 
+/PG_PLA/I$397/B         960       3680  :  X 
+/PG_PLA/I$398/D        1440       3680  :  X 
+/PG_PLA/I$400/C        1440       3680  :  X 
+/PG_PLA/I$401/B         960       3680  :  X 
+/PG_PLA/I$402/D        1440       3680  :  X 
+/PG_PLA/I$403/B         960       3680  :  X 
+/PG_PLA/I$41/D        5280       3680  :  X 
+/PG_PLA/I$412/D        1440       3680  :  X 
+/PG_PLA/I$413/B         960       3680  :  X 
+/PG_PLA/I$414/C        1440       3680  :  X 
+/PG_PLA/I$415/C        1440       3680  :  X 
+/PG_PLA/I$418/B         960       3680  :  X 
+/PG_PLA/I$419/C        1440       3680  :  X 
+/PG_PLA/I$423/A         960       3680  :  X 
+/PG_PLA/I$424/A         960       3680  :  X 
+/PG_PLA/I$431/C        1440       3680  :  X 
+/PG_PLA/I$432/D        1440       3680  :  X 
+/PG_PLA/I$434/D        1440       3680  :  X 
+/PG_PLA/I$435/B         960       3680  :  X 
+/PG_PLA/I$436/A         960       3680  :  X 
+/PG_PLA/I$437/A        1440       3680  :  X 
+/PG_PLA/I$438/A        1440       3680  :  X 
+/PG_PLA/I$439/A        1440       3680  :  X 
+/PG_PLA/I$44/B        3360       3680  :  X 
+/PG_PLA/I$440/A        1440       3680  :  X 
+/PG_PLA/I$441/A        1440       3680  :  X 
+/PG_PLA/I$442/B        1920       3680  :  X 
+/PG_PLA/I$443/B        1920       3680  :  X 
+/PG_PLA/I$444/A        1440       3680  :  X 
+/PG_PLA/I$445/A        1440       3680  :  X 
+/PG_PLA/I$446/A        1440       3680  :  X 
+/PG_PLA/I$447/A        1440       3680  :  X 
+/PG_PLA/I$449/A        1440       3680  :  X 
+/PG_PLA/I$45/D        3360       3680  :  X 
+/PG_PLA/I$450/B        3360       3680  :  X 
+/PG_PLA/I$521/B        1920       3680  :  X 
+/PG_PLA/I$522/B        1920       3680  :  X 
+/PG_PLA/I$523/A        1440       3680  :  X 
+/PG_PLA/I$524/A        1440       3680  :  X 
+/PG_PLA/I$525/A        2400       3680  :  X 
+/PG_PLA/I$526/A        1440       3680  :  X 
+/PG_PLA/I$527/A        1440       3680  :  X 
+/PG_PLA/I$528/A        1440       3680  :  X 
+/PG_PLA/I$529/A        1440       3680  :  X 
+/PG_PLA/I$53/B        1920       3680  :  X 
+/PG_PLA/I$531/A        1440       3680  :  X 
+/PG_PLA/I$532/A        1440       3680  :  X 
+/PG_PLA/I$533/B        1920       3680  :  X 
+/PG_PLA/I$534/A        1440       3680  :  X 
+/PG_PLA/I$535/A        1440       3680  :  X 
+/PG_PLA/I$536/B        1920       3680  :  X 
+/PG_PLA/I$537/A        1440       3680  :  X 
+/PG_PLA/I$538/A        1440       3680  :  X 
+/PG_PLA/I$539/A        2400       3680  :  X 
+/PG_PLA/I$540/C        1440       3680  :  X 
+/PG_PLA/I$543/E        1920       3680  :  X 
+/PG_PLA/I$544/C        1440       3680  :  X 
+/PG_PLA/I$546/B         960       3680  :  X 
+/PG_PLA/I$551/G        2400       3680  :  X 
+/PG_PLA/I$552/G        2400       3680  :  X 
+/PG_PLA/I$553/I        3360       3680  :  X 
+/PG_PLA/I$554/A         960       3680  :  X 
+/PG_PLA/I$555/F        1920       3680  :  X 
+/PG_PLA/I$556/F        1920       3680  :  X 
+/PG_PLA/I$557/G        2400       3680  :  X 
+/PG_PLA/I$558/A         960       3680  :  X 
+/PG_PLA/I$563/C        1440       3680  :  X 
+/PG_PLA/I$564/B         960       3680  :  X 
+/PG_PLA/I$565/H        2880       3680  :  X 
+/PG_PLA/I$566/G        2400       3680  :  X 
+/PG_PLA/I$567/B         960       3680  :  X 
+/PG_PLA/I$568/B         960       3680  :  X 
+/PG_PLA/I$569/E        1920       3680  :  X 
+/PG_PLA/I$570/F        1920       3680  :  X 
+/PG_PLA/I$571/B         960       3680  :  X 
+/PG_PLA/I$573/C        1440       3680  :  X 
+/PG_PLA/I$67/B        1920       3680  :  X 
+/PG_PLA/I$75/A        1440       3680  :  X 
+/PG_PLA/I$76/A        2400       3680  :  X 
+/PG_PLA/I$79/C        7200       3680  :  X 
+/PG_PLA/I$81/C        1440       3680  :  X 
+/PG_PLA/I$82/A         960       3680  :  X 
+/PG_PLA/I$93/B        3360       3680  :  X 
+/PG_PLA/I$94/B        4800       3680  :  X 
+/PG_PLA/I$96/B        3840       3680  :  X 
+/PG_PLA/I$97/C        2880       3680  :  X 
+/PG_PLA/I$98/A        2400       3680  :  X 
+/PG_PLA/I$99/B        3360       3680  :  X 
+/PPLA_RL/I$112/A         960       3680  :  X 
+/PPLA_RL/I$113        1920       3680  :  X 
+/PPLA_RL/I$116/A         960       3680  :  X 
+/PPLA_RL/I$117/G        2400       3680  :  X 
+/PPLA_RL/I$118/B         960       3680  :  X 
+/PPLA_RL/I$119/A         960       3680  :  X 
+/PPLA_RL/I$120/A         960       3680  :  X 
+/PPLA_RL/I$121/C        1440       3680  :  X 
+/PPLA_RL/I$122/B         960       3680  :  X 
+/PPLA_RL/I$123        2880       3680  :  X 
+/PPLA_RL/I$125        1920       3680  :  X 
+/PPLA_RL/I$126/E        1920       3680  :  X 
+/PPLA_RL/I$127/F        1920       3680  :  X 
+/PPLA_RL/I$128/A        1440       3680  :  X 
+/PPLA_RL/I$130/B        1920       3680  :  X 
+/PPLA_RL/I$131/A        2400       3680  :  X 
+/PPLA_RL/I$132/C        1440       3680  :  X 
+/PPLA_RL/I$133/B        1920       3680  :  X 
+/PPLA_RL/I$134/A        1440       3680  :  X 
+/PPLA_RL/I$135/A        1440       3680  :  X 
+/PPLA_RL/I$138        3360       3680  :  X 
+/PPLA_RL/I$139/D        1440       3680  :  X 
+/PPLA_RL/I$140/B        1920       3680  :  X 
+/PPLA_RL/I$141/B        1920       3680  :  X 
+/PPLA_RL/I$142/B        1920       3680  :  X 
+/PPLA_RL/I$15/A        1440       3680  :  X 
+/PPLA_RL/I$16/D        1440       3680  :  X 
+/PPLA_RL/I$17/B        1920       3680  :  X 
+/PPLA_RL/I$18/C        1440       3680  :  X 
+/PPLA_RL/I$188/A        1440       3680  :  X 
+/PPLA_RL/I$19/A        1440       3680  :  X 
+/PPLA_RL/I$198/A        2400       3680  :  X 
+/PPLA_RL/I$20/U        4800       3680  :  X 
+/PPLA_RL/I$200/B        1920       3680  :  X 
+/PPLA_RL/I$201/A         960       3680  :  X 
+/PPLA_RL/I$202/A        1440       3680  :  X 
+/PPLA_RL/I$205/A        1440       3680  :  X 
+/PPLA_RL/I$208/B        3360       3680  :  X 
+/PPLA_RL/I$209/A        1440       3680  :  X 
+/PPLA_RL/I$210/A        1440       3680  :  X 
+/PPLA_RL/I$212/A         960       3680  :  X 
+/PPLA_RL/I$213/A        1440       3680  :  X 
+/PPLA_RL/I$214/L        7200       3680  :  X 
+/PPLA_RL/I$215/B        1920       3680  :  X 
+/PPLA_RL/I$216/B        1920       3680  :  X 
+/PPLA_RL/I$217/A         960       3680  :  X 
+/PPLA_RL/I$218/A         960       3680  :  X 
+/PPLA_RL/I$22/A         960       3680  :  X 
+/PPLA_RL/I$220/G        2400       3680  :  X 
+/PPLA_RL/I$221/A         960       3680  :  X 
+/PPLA_RL/I$222/A         960       3680  :  X 
+/PPLA_RL/I$223/A         960       3680  :  X 
+/PPLA_RL/I$224/A         960       3680  :  X 
+/PPLA_RL/I$225/A        1440       3680  :  X 
+/PPLA_RL/I$226/A        3360       3680  :  X 
+/PPLA_RL/I$227/A        1440       3680  :  X 
+/PPLA_RL/I$228/A         960       3680  :  X 
+/PPLA_RL/I$229/A        1440       3680  :  X 
+/PPLA_RL/I$230/A         960       3680  :  X 
+/PPLA_RL/I$231/A         960       3680  :  X 
+/PPLA_RL/I$234/A        2400       3680  :  X 
+/PPLA_RL/I$235/A        2400       3680  :  X 
+/PPLA_RL/I$236/A        2400       3680  :  X 
+/PPLA_RL/I$238/A         960       3680  :  X 
+/PPLA_RL/I$239/A        2400       3680  :  X 
+/PPLA_RL/I$241/B        1920       3680  :  X 
+/PPLA_RL/I$246/B         960       3680  :  X 
+/PPLA_RL/I$248/A        1440       3680  :  X 
+/PPLA_RL/I$251/A        2400       3680  :  X 
+/PPLA_RL/I$252/A        1440       3680  :  X 
+/PPLA_RL/I$253/A        2400       3680  :  X 
+/PPLA_RL/I$254/A        2400       3680  :  X 
+/PPLA_RL/I$255/A        3360       3680  :  X 
+/PPLA_RL/I$258/A        1440       3680  :  X 
+/PPLA_RL/I$262/K        5280       3680  :  X 
+/PPLA_RL/I$263/A         960       3680  :  X 
+/PPLA_RL/I$268/A         960       3680  :  X 
+/PPLA_RL/I$269        1920       3680  :  X 
+/PPLA_RL/I$271/A        1440       3680  :  X 
+/PPLA_RL/I$272/A         960       3680  :  X 
+/PPLA_RL/I$273/A        3360       3680  :  X 
+/PPLA_RL/I$274/A        1440       3680  :  X 
+/PPLA_RL/I$28/A        1440       3680  :  X 
+/PPLA_RL/I$280/A         960       3680  :  X 
+/PPLA_RL/I$281/A         960       3680  :  X 
+/PPLA_RL/I$282/D        1440       3680  :  X 
+/PPLA_RL/I$283/A         960       3680  :  X 
+/PPLA_RL/I$284/A         960       3680  :  X 
+/PPLA_RL/I$286/A        3360       3680  :  X 
+/PPLA_RL/I$287/A        2400       3680  :  X 
+/PPLA_RL/I$288/D        1440       3680  :  X 
+/PPLA_RL/I$289/A        1440       3680  :  X 
+/PPLA_RL/I$29/A        1440       3680  :  X 
+/PPLA_RL/I$290/A         960       3680  :  X 
+/PPLA_RL/I$291/A         960       3680  :  X 
+/PPLA_RL/I$292/A        2400       3680  :  X 
+/PPLA_RL/I$293        3360       3680  :  X 
+/PPLA_RL/I$296/A         960       3680  :  X 
+/PPLA_RL/I$297/A         960       3680  :  X 
+/PPLA_RL/I$30/A        1440       3680  :  X 
+/PPLA_RL/I$304/G        2400       3680  :  X 
+/PPLA_RL/I$308        4800       3680  :  X 
+/PPLA_RL/I$310        4800       3680  :  X 
+/PPLA_RL/I$318/A         960       3680  :  X 
+/PPLA_RL/I$319/K        5280       3680  :  X 
+/PPLA_RL/I$320/K        5280       3680  :  X 
+/PPLA_RL/I$321/D        1440       3680  :  X 
+/PPLA_RL/I$327        3360       3680  :  X 
+/PPLA_RL/I$33/A         960       3680  :  X 
+/PPLA_RL/I$34/A         960       3680  :  X 
+/PPLA_RL/I$35/A         960       3680  :  X 
+/PPLA_RL/I$36/F        1920       3680  :  X 
+/PPLA_RL/I$37/A        2400       3680  :  X 
+/PPLA_RL/I$38/A        1440       3680  :  X 
+/PPLA_RL/I$39        2880       3680  :  X 
+/PPLA_RL/I$41        1920       3680  :  X 
+/PPLA_RL/I$42/A         960       3680  :  X 
+/PPLA_RL/I$43        1920       3680  :  X 
+/PPLA_RL/I$45/A        1440       3680  :  X 
+/PPLA_RL/I$46        3360       3680  :  X 
+/PPLA_RL/I$48/A        1440       3680  :  X 
+/PPLA_RL/I$52/B         960       3680  :  X 
+/PPLA_RL/I$54/H        2880       3680  :  X 
+/PPLA_RL/I$56/A         960       3680  :  X 
+/PPLA_RL/I$58/D        1440       3680  :  X 
+/PPLA_RL/I$68/A        2400       3680  :  X 
+/PPLA_RL/I$69/C        1440       3680  :  X 
+/PPLA_RL/I$70/A         960       3680  :  X 
+/PPLA_RL/I$71/B        1920       3680  :  X 
+/PPLA_RL/I$72/A        1440       3680  :  X 
+/PPLA_RL/I$721/A         960       3680  :  X 
+/PPLA_RL/I$722/A        1440       3680  :  X 
+/PPLA_RL/I$723/A        1440       3680  :  X 
+/PPLA_RL/I$725/A         960       3680  :  X 
+/PPLA_RL/I$727/D        1440       3680  :  X 
+/PPLA_RL/I$73/A        2400       3680  :  X 
+/PPLA_RL/I$74/A         960       3680  :  X 
+/PPLA_RL/I$75/A        1440       3680  :  X 
+/PPLA_RL/I$76/A        1440       3680  :  X 
+/PPLA_RL/I$761/U        2400       3680  :  X 
+/PPLA_RL/I$762/U        2400       3680  :  X 
+/PPLA_RL/I$763/U        2400       3680  :  X 
+/PPLA_RL/I$764/U        2400       3680  :  X 
+/PPLA_RL/I$765/U        2400       3680  :  X 
+/PPLA_RL/I$766/U        2400       3680  :  X 
+/PPLA_RL/I$767/U        2400       3680  :  X 
+/PPLA_RL/I$768/U        2400       3680  :  X 
+/PPLA_RL/I$769/U        2400       3680  :  X 
+/PPLA_RL/I$770/U        2400       3680  :  X 
+/PPLA_RL/I$771/U        2400       3680  :  X 
+/PPLA_RL/I$772/U        2880       3680  :  X 
+/PPLA_RL/I$773/U        2400       3680  :  X 
+/PPLA_RL/I$774/U        2400       3680  :  X 
+/PPLA_RL/I$775/U        2880       3680  :  X 
+/PPLA_RL/I$776/U        2400       3680  :  X 
+/PPLA_RL/I$777/U        2400       3680  :  X 
+/PPLA_RL/I$778/U        2400       3680  :  X 
+/PPLA_RL/I$779/U        2400       3680  :  X 
+/PPLA_RL/I$780/U        2400       3680  :  X 
+/PPLA_RL/I$781/U        2400       3680  :  X 
+/PPLA_RL/I$782/U        2400       3680  :  X 
+/PPLA_RL/I$783/U        2400       3680  :  X 
+/PPLA_RL/I$784/U        2400       3680  :  X 
+/PPLA_RL/I$785/U        2400       3680  :  X 
+/PPLA_RL/I$786/U        2400       3680  :  X 
+/PPLA_RL/I$787/U        2400       3680  :  X 
+/PPLA_RL/I$788        3840       3680  :  X 
+/PPLA_RL/I$789        2400       3680  :  X 
+/PPLA_RL/I$790/U        2400       3680  :  X 
+/PPLA_RL/I$791/U        2400       3680  :  X 
+/PPLA_RL/I$792/U        2400       3680  :  X 
+/PPLA_RL/I$82/A        1440       3680  :  X 
+/PPLA_RL/I$83/A        1440       3680  :  X 
+/PPLA_RL/I$84/A         960       3680  :  X 
+/PPLA_RL/I$85/C        2880       3680  :  X 
+/PPLA_RL/I$86/A         960       3680  :  X 
+/PPLA_RL/I$87/A        3360       3680  :  X 
+/PPLA_RL/I$88/A        1440       3680  :  X 
+/PPLA_RL/I$89/A         960       3680  :  X 
+/PPLA_RL/I$90/K        5280       3680  :  X 
+/PREG_CTRL/I$100        3360       3680  :  X 
+/PREG_CTRL/I$101/A         960       3680  :  X 
+/PREG_CTRL/I$102/A        2400       3680  :  X 
+/PREG_CTRL/I$109/A        1440       3680  :  X 
+/PREG_CTRL/I$110/B        1920       3680  :  X 
+/PREG_CTRL/I$111/B         960       3680  :  X 
+/PREG_CTRL/I$112/B        1920       3680  :  X 
+/PREG_CTRL/I$113/A        1440       3680  :  X 
+/PREG_CTRL/I$114/A        1440       3680  :  X 
+/PREG_CTRL/I$115/A        1440       3680  :  X 
+/PREG_CTRL/I$116/B         960       3680  :  X 
+/PREG_CTRL/I$1164/A         960       3680  :  X 
+/PREG_CTRL/I$1165/D        1440       3680  :  X 
+/PREG_CTRL/I$117/I        3360       3680  :  X 
+/PREG_CTRL/I$118/C        4320       3680  :  X 
+/PREG_CTRL/I$119/A        2400       3680  :  X 
+/PREG_CTRL/I$12/B         960       3680  :  X 
+/PREG_CTRL/I$120        3360       3680  :  X 
+/PREG_CTRL/I$121/B         960       3680  :  X 
+/PREG_CTRL/I$128/F        1920       3680  :  X 
+/PREG_CTRL/I$129/A         960       3680  :  X 
+/PREG_CTRL/I$13/C        1440       3680  :  X 
+/PREG_CTRL/I$131/A         960       3680  :  X 
+/PREG_CTRL/I$132/C        1440       3680  :  X 
+/PREG_CTRL/I$133/I        3360       3680  :  X 
+/PREG_CTRL/I$134/A        1440       3680  :  X 
+/PREG_CTRL/I$136/B         960       3680  :  X 
+/PREG_CTRL/I$137/C        1440       3680  :  X 
+/PREG_CTRL/I$138/F        1920       3680  :  X 
+/PREG_CTRL/I$139/D        1440       3680  :  X 
+/PREG_CTRL/I$14/C        1440       3680  :  X 
+/PREG_CTRL/I$140/A        1440       3680  :  X 
+/PREG_CTRL/I$141/B        3360       3680  :  X 
+/PREG_CTRL/I$142/A        2400       3680  :  X 
+/PREG_CTRL/I$143/A         960       3680  :  X 
+/PREG_CTRL/I$144/A         960       3680  :  X 
+/PREG_CTRL/I$145/A         960       3680  :  X 
+/PREG_CTRL/I$146/B         960       3680  :  X 
+/PREG_CTRL/I$147/A         960       3680  :  X 
+/PREG_CTRL/I$148        2880       3680  :  X 
+/PREG_CTRL/I$149/B         960       3680  :  X 
+/PREG_CTRL/I$15/D        1440       3680  :  X 
+/PREG_CTRL/I$150/B        4800       3680  :  X 
+/PREG_CTRL/I$152/A         960       3680  :  X 
+/PREG_CTRL/I$153        2880       3680  :  X 
+/PREG_CTRL/I$154/A        1440       3680  :  X 
+/PREG_CTRL/I$155        1920       3680  :  X 
+/PREG_CTRL/I$156/A        1440       3680  :  X 
+/PREG_CTRL/I$157/A         960       3680  :  X 
+/PREG_CTRL/I$170        3840       3680  :  X 
+/PREG_CTRL/I$174/B        1920       3680  :  X 
+/PREG_CTRL/I$175/B         960       3680  :  X 
+/PREG_CTRL/I$176/B        3360       3680  :  X 
+/PREG_CTRL/I$178/E        1920       3680  :  X 
+/PREG_CTRL/I$179/A         960       3680  :  X 
+/PREG_CTRL/I$185/B         960       3680  :  X 
+/PREG_CTRL/I$186/C        1440       3680  :  X 
+/PREG_CTRL/I$187/U        6240       3680  :  X 
+/PREG_CTRL/I$188/A         960       3680  :  X 
+/PREG_CTRL/I$189/F        1920       3680  :  X 
+/PREG_CTRL/I$190        3360       3680  :  X 
+/PREG_CTRL/I$191        3360       3680  :  X 
+/PREG_CTRL/I$192        3360       3680  :  X 
+/PREG_CTRL/I$193        3360       3680  :  X 
+/PREG_CTRL/I$194/A         960       3680  :  X 
+/PREG_CTRL/I$195/F        1920       3680  :  X 
+/PREG_CTRL/I$196/F        1920       3680  :  X 
+/PREG_CTRL/I$197/F        1920       3680  :  X 
+/PREG_CTRL/I$199/F        1920       3680  :  X 
+/PREG_CTRL/I$253/A         960       3680  :  X 
+/PREG_CTRL/I$254/B        1920       3680  :  X 
+/PREG_CTRL/I$28/A         960       3680  :  X 
+/PREG_CTRL/I$281/A        1440       3680  :  X 
+/PREG_CTRL/I$282/A        1440       3680  :  X 
+/PREG_CTRL/I$285/B         960       3680  :  X 
+/PREG_CTRL/I$286/F        1920       3680  :  X 
+/PREG_CTRL/I$287/A         960       3680  :  X 
+/PREG_CTRL/I$288/U        4800       3680  :  X 
+/PREG_CTRL/I$289/U        4800       3680  :  X 
+/PREG_CTRL/I$290/U        6240       3680  :  X 
+/PREG_CTRL/I$291/U        6240       3680  :  X 
+/PREG_CTRL/I$292/U        3360       3680  :  X 
+/PREG_CTRL/I$293/U        3360       3680  :  X 
+/PREG_CTRL/I$294/G        2400       3680  :  X 
+/PREG_CTRL/I$295/F        1920       3680  :  X 
+/PREG_CTRL/I$32/A        3360       3680  :  X 
+/PREG_CTRL/I$33/B        4800       3680  :  X 
+/PREG_CTRL/I$34/A        2400       3680  :  X 
+/PREG_CTRL/I$35/B        4800       3680  :  X 
+/PREG_CTRL/I$36/A        3360       3680  :  X 
+/PREG_CTRL/I$37/B        4800       3680  :  X 
+/PREG_CTRL/I$38/B        4800       3680  :  X 
+/PREG_CTRL/I$403/B        1920       3680  :  X 
+/PREG_CTRL/I$404/B         960       3680  :  X 
+/PREG_CTRL/I$405/G        2400       3680  :  X 
+/PREG_CTRL/I$406/H        2880       3680  :  X 
+/PREG_CTRL/I$501/U        2400       3680  :  X 
+/PREG_CTRL/I$502/U        2400       3680  :  X 
+/PREG_CTRL/I$55        3360       3680  :  X 
+/PREG_CTRL/I$56/A         960       3680  :  X 
+/PREG_CTRL/I$57/A         960       3680  :  X 
+/PREG_CTRL/I$58/B        1920       3680  :  X 
+/PREG_CTRL/I$59        3360       3680  :  X 
+/PREG_CTRL/I$60/A        1440       3680  :  X 
+/PREG_CTRL/I$61/B         960       3680  :  X 
+/PREG_CTRL/I$62/A        1440       3680  :  X 
+/PREG_CTRL/I$63/B        1920       3680  :  X 
+/PREG_CTRL/I$64/C        4320       3680  :  X 
+/PREG_CTRL/I$65        1920       3680  :  X 
+/PREG_CTRL/I$66/B        1920       3680  :  X 
+/PREG_CTRL/I$67/A        1440       3680  :  X 
+/PREG_CTRL/I$68/A         960       3680  :  X 
+/PREG_CTRL/I$69        1920       3680  :  X 
+/PREG_CTRL/I$70        1920       3680  :  X 
+/PREG_CTRL/I$72        4800       3680  :  X 
+/PREG_CTRL/I$721/U        2400       3680  :  X 
+/PREG_CTRL/I$722/U        2400       3680  :  X 
+/PREG_CTRL/I$723/U        2400       3680  :  X 
+/PREG_CTRL/I$724/U        2400       3680  :  X 
+/PREG_CTRL/I$73/A         960       3680  :  X 
+/PREG_CTRL/I$74/A        2400       3680  :  X 
+/PREG_CTRL/I$75/A         960       3680  :  X 
+/PREG_CTRL/I$76/A         960       3680  :  X 
+/PREG_CTRL/I$77/C        1440       3680  :  X 
+/PREG_CTRL/I$79/A         960       3680  :  X 
+/PREG_CTRL/I$80/A        2400       3680  :  X 
+/PREG_CTRL/I$81/U        3360       3680  :  X 
+/PREG_CTRL/I$82/U        3360       3680  :  X 
+/PREG_CTRL/I$83/U        2880       3680  :  X 
+/PREG_CTRL/I$84/U        3360       3680  :  X 
+/PREG_CTRL/I$85/B        1920       3680  :  X 
+/PREG_CTRL/I$87/A         960       3680  :  X 
+/PREG_CTRL/I$88/U        3360       3680  :  X 
+/PREG_CTRL/I$89/A        1440       3680  :  X 
+/PREG_CTRL/I$90/B        3360       3680  :  X 
+/PREG_CTRL/I$91/A        3360       3680  :  X 
+/PREG_CTRL/I$93/A         960       3680  :  X 
+/PREG_CTRL/I$96/A         960       3680  :  X 
+/PREG_CTRL/I$97/B        3360       3680  :  X 
+/PREG_CTRL/I$98/A        1440       3680  :  X 
+/PREG_CTRL/I$99        1920       3680  :  X 
+/PREPL_LGC/I$14/B        1920       3680  :  X 
+/PREPL_LGC/I$15/D        1440       3680  :  X 
+/PREPL_LGC/I$184/A         960       3680  :  X 
+/PREPL_LGC/I$185/A        2400       3680  :  X 
+/PREPL_LGC/I$186/A        2400       3680  :  X 
+/PREPL_LGC/I$187/A        1440       3680  :  X 
+/PREPL_LGC/I$188/A        1440       3680  :  X 
+/PREPL_LGC/I$189/B         960       3680  :  X 
+/PREPL_LGC/I$191/U        2400       3680  :  X 
+/PREPL_LGC/I$192/U        2400       3680  :  X 
+/PREPL_LGC/I$193/U        2400       3680  :  X 
+/PREPL_LGC/I$194/U        2400       3680  :  X 
+/PREPL_LGC/I$195        4320       3680  :  X 
+/PREPL_LGC/I$196        3840       3680  :  X 
+/PREPL_LGC/I$201        2400       3680  :  X 
+/PREPL_LGC/I$202        2400       3680  :  X 
+/PREPL_LGC/I$24        3360       3680  :  X 
+/PREPL_LGC/I$33/A        1440       3680  :  X 
+/PREPL_LGC/I$34        4800       3680  :  X 
+/PREPL_LGC/I$35/A         960       3680  :  X 
+/PREPL_LGC/I$36/D        1440       3680  :  X 
+/PREPL_LGC/I$37/U        4800       3680  :  X 
+/PREPL_LGC/I$50/U        4800       3680  :  X 
+/PREPL_LGC/I$55/A         960       3680  :  X 
+/PREPL_LGC/I$56/A         960       3680  :  X 
+/PREPL_LGC/I$57/A         960       3680  :  X 
+/PREPL_LGC/I$58        2880       3680  :  X 
+/PREPL_LGC/I$59        2880       3680  :  X 
+/PREPL_LGC/I$60/A         960       3680  :  X 
+/PREPL_LGC/I$61/A         960       3680  :  X 
+/PREPL_LGC/I$62        2880       3680  :  X 
+/PREPL_LGC/I$63        2880       3680  :  X 
+/PREPL_LGC/I$64/B         960       3680  :  X 
+/PREPL_LGC/I$65/B         960       3680  :  X 
+/PREPL_LGC/I$66/B         960       3680  :  X 
+/PREPL_LGC/I$67/B         960       3680  :  X 
+/PREPL_LGC/I$68/A        2400       3680  :  X 
+/PREPL_LGC/I$69/A        2400       3680  :  X 
+/PREPL_LGC/I$70/A        2400       3680  :  X 
+/PREPL_LGC/I$71/A        2400       3680  :  X 
+/PREPL_LGC/I$76/A        1440       3680  :  X 
+/PREPL_LGC/I$77/A        1440       3680  :  X 
+/PREPL_LGC/I$78/A        1440       3680  :  X 
+/PREPL_LGC/I$79/A        1440       3680  :  X 
+/PREPL_LGC/I$80/D        1440       3680  :  X 
+/PREPL_LGC/I$81/D        1440       3680  :  X 
+/PREPL_LGC/I$82/D        1440       3680  :  X 
+/PREPL_LGC/I$83/D        1440       3680  :  X 
+/PREPL_LGC/I$84/D        1440       3680  :  X 
+/PREPL_LGC/I$85/D        1440       3680  :  X 
+/PREPL_LGC/I$86/D        1440       3680  :  X 
+/PREPL_LGC/I$87/D        1440       3680  :  X 
+/PREPL_LGC/I$88/D        1440       3680  :  X 
+       TIE         480       3680  :  X 

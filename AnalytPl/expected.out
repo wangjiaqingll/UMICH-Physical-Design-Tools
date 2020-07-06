@@ -1,0 +1,40 @@
+------------  Running test saurabh...
+Reading TESTS/intel.aux
+Reading TESTS/intel.aux
+ Reading TESTS/intel.nodes ... 
+ Reading TESTS/intel.nets ... 
+ Reading TESTS/intel.wts ... 
+Finished reading TESTS/intel.aux and referenced files
+ Reading TESTS/intel.scl ... 
+ Reading TESTS/intel.pl ... 
+Finished reading TESTS/intel.aux and referenced files
+Iteration 1  Max Movement 64852.4
+Iteration 2  Max Movement 49030.3
+Iteration 3  Max Movement 36039.6
+Iteration 4  Max Movement 29290.7
+Iteration 5  Max Movement 14571.7
+Iteration 6  Max Movement 11661.9
+Iteration 7  Max Movement 6774.88
+Iteration 8  Max Movement 7205.53
+Iteration 9  Max Movement 3575.45
+Iteration 10  Max Movement 3569.11
+Iteration 11  Max Movement 1739.09
+Iteration 12  Max Movement 1689.11
+Iteration 13  Max Movement 864.372
+Epsilon is 1594  numIter  13
+Iteration 1  Max Movement 96742.2
+Iteration 2  Max Movement 67719.5
+Iteration 3  Max Movement 47403.7
+Iteration 4  Max Movement 33182.6
+Iteration 5  Max Movement 23227.8
+Iteration 6  Max Movement 16259.5
+Iteration 7  Max Movement 11381.6
+Iteration 8  Max Movement 7967.14
+Iteration 9  Max Movement 5576.99
+Iteration 10  Max Movement 3903.9
+Iteration 11  Max Movement 2732.73
+Iteration 12  Max Movement 1912.91
+Iteration 13  Max Movement 1339.04
+Epsilon is 1594  numIter  13
+Time taken = 1.88 seconds
+Saving out.gpl

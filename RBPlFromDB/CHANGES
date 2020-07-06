@@ -1,0 +1,6 @@
+
+  CHANGES TO RBPlacementFromDB
+
+990527 ver5.0	aec	split from RBPlacement
+000516 ver1.2   ilm     ported to CC6.0
+020824 ver1.5   ilm     ported to g++ 3.1.1

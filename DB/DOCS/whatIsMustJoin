@@ -1,0 +1,21 @@
+
+if a cell has, say, 6 pins A, B, C, D, E, F
+then LEF can do something like:
+
+pin A
+
+pin B mustjoin pin A
+
+pin C
+
+pin D mustjoin pin A
+
+pin E
+
+pin F mustjoin pin C
+
+
+So, here there are two "sets" -- this is why Igor and I thought that
+we need a vector of vectors.    In this example, one vector would be
+A/B/D, the other would be C/F, and each of the pins A,B,C,D,F would
+have a pointer to the appropriate vector (pin E would have a null pointer).

@@ -1,0 +1,20 @@
+UCLA nets 1.0
+NumPins : 13
+NetDegree : 3 netA
+        pp1 B 
+        aa1 B 
+        aa0 B 
+NetDegree : 3 netB
+        aa0 B 
+        aa2 B 
+        aa3 B 
+NetDegree : 3
+        aa1 B 
+        aa2 B 
+        aa3 B 
+NetDegree : 2 netC
+        aa2 B 
+        pp2 B 
+NetDegree : 2
+        aa3 B 
+        pp3 B 

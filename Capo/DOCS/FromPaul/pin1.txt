@@ -1,0 +1,48 @@
+97.12.5 More on pin alignment.
+
+I was assuming before that we only want to align pins on vertical
+routing layers, but now I think that's wrong.  Pins can have ports
+on almost any layer it seems; the vertical routing layer wire just has
+to pass by, and the router will put in a via or contact or whatever.
+
+So, my port image must take the intersection of all the ports
+on a pin (unless I find out they fall into different classes...
+checking with Andrew on this now, e.g. when ports are on
+different types of layers).  From this intersection, we block
+out only obstructions on the vertical routing layer.  If there
+are multiple vertical routing layers, in that case only do we
+have multiple layers in the pin images.
+
+...And it turns out that this is exactly what I programmed
+some months ago, so I guess I'm OK.  We go for any port,
+on any layer.  Great.  The only problem was the master
+pin ID bug, which did really screw things up.
+
+98.2.20  It turns out that when I'm guessing which pin to score 
+during preprocessing, I assume that a cell that ends to the right 
+will go in a later frontier.  This is not true.
+  - find out exactly how I assign frontiers.
+  OK.  If all cells were constant width, this would work.
+But, in practice I sometimes put multiple cells in the same
+row into a frontier.  For example:
+   +-----+ +------+
+   |  A  | |  B   |
+   +-----+ +------+
+ +------------+
+ |     C      |
+ +------------+
+If C goes into frontier k (because of prior decisions)
+then A and B will go into the next frontier, even though
+A ends before C.
+   In short, until I have carved up the entire row into
+frontiers, I don't know which cells will proceed others
+into frontier processing.  In order to do pin alignment
+and wirelength estimation properly, I've either got
+to delay picking pin partners until frontiers are
+assigned, or re-adjust pin partners after assignment.
+
+Here's an easy solution: do the frontier assignment
+during preprocessing; there's no reason why not.
+
+
+

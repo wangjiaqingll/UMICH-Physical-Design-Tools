@@ -1,0 +1,3 @@
+/bin/rm -rf fillHierTestS0
+g++ -o fillHierTestS0 main0.o  -L/home/userg/code/lib/g++/O5/static -L/home/userg/code/OUR/Strata/Fundamental/Graphs/FilledHier1.1 -lfillHier -lclustHG -lgenHier -lpartEvals -lpart -lhgraph  -lplace -lctainers -lgeoms -lstats -lcombi  -lcommon
+make: Fatal error: Don't know how to make target `main1.o'

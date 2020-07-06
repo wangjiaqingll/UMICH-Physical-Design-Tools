@@ -1,0 +1,14 @@
+UCLA nodes 1.0
+# Created      : Thu Sep  9 00:35:21 1999
+# User         : caldwell@nexus11.cs.ucla.edu (uclacs) 
+# Platform     : SunOS 5.7 sparc SUNW,Ultra-5_10 
+
+NumNodes :              7
+NumTerminals :          3
+        p1           1          1 terminal  :  R90 
+        p2          20        200 terminal  :  Y X 
+        p3          30        300 terminal 
+        a0         0.5       10.5 
+        a1          10        100  :  R90 X 
+        a2           1          1  :  R90 Y X 
+        a3          30        300  :  X 

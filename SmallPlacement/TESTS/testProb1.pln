@@ -1,0 +1,12 @@
+#test file
+UCLA pln 1.0
+# comments work, right?
+
+Cells :  3
+Nets :   2
+
+Net 0 : 0 ( 0.5 2.0 )
+        2 ( 6 16 )
+Net 1 : 1 ( 1.1 1.5 )
+        2 ( 3 36 )
+

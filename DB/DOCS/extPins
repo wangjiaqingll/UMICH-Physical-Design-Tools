@@ -1,0 +1,9 @@
+
+external pin declared as
+INPUT should be an OUTPUT pin to its fake cell, and vice versa, on
+the grounds that it's an INPUT to the chip or block, meaning that it
+sends a signal *in* to a net, which is what an *out* pin does on
+an ordinary cell.  That made sense.
+
+So my parser will resolve INPUT --> OUTPUT, OUTPUT --> INPUT, INOUT --> INOUT.
+(FEEDTHROUGH  should be FEEDTHROUGH (?))

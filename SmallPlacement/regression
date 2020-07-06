@@ -1,0 +1,58 @@
+#!/bin/csh -f
+
+#**************************************************************************
+#**
+#**    Copyright (c) 1995-1997 by ABKGroup, UCLA VLSI CAD Laboratory,
+#**    UCLA Computer Science Department, Los Angeles, CA 90095-1596 USA,
+#**    and by the Regents of the University of California.
+#**    All rights reserved.
+#**
+#**    No portion of this file may be used, copied, or transmitted for
+#**    any purpose, including any research or commercial purpose,
+#**    without the express written consent of Professor Andrew B. Kahng,
+#**    UCLA Computer Science Department, 3713 Boelter Hall, Los Angeles,
+#**    CA 90095-1596 USA.   Any copy made of this file must include this
+#**    notice.    ABKGroup and the Regents of the University of California
+#**    retain title to all copies of this file and/or its compiled
+#**    derivatives.
+#**
+#**************************************************************************/
+
+set DIFF=/usr/bin/diff
+set WC=/usr/bin/wc
+
+/bin/rm -f seeds.out seeds.in
+
+echo "TestCase 0" > new.out
+SmallPlacementTest0.exe -f TESTS/amd_C6.aux >> new.out
+cat savedProb.pla savedProb.plc savedProb.pln >> new.out
+echo "OK"
+
+echo "TestCase 1" >> new.out
+SmallPlacementTest0.exe -f TESTS/pl_N8_E14_281.aux >> new.out
+cat savedProb.pla savedProb.plc savedProb.pln >> new.out
+echo "OK"
+
+echo "TestCase 2" >> new.out
+SmallPlacementTest0.exe -f TESTS/pl_N8_E18_591.aux >> new.out
+cat savedProb.pla savedProb.plc savedProb.pln >> new.out
+echo "OK"
+
+echo "TestCase 3" >> new.out
+SmallPlacementTest0.exe -f TESTS/pl_N8_E20_695.aux >> new.out
+cat savedProb.pla savedProb.plc savedProb.pln >> new.out
+echo "OK"
+
+rm savedProb.*
+
+egrep -v "(Created|sec|User|Platform|Memory)" new.out > newout.notime
+egrep -v "(Created|sec|User|Platform|Memory)" expected.out > expectedout.notime
+
+$DIFF newout.notime expectedout.notime    >  diffs.notime
+
+echo " "
+echo Differences from precomputed results
+$WC diffs.notime
+
+rm -f seeds.{out,in} expectedout.notime
+

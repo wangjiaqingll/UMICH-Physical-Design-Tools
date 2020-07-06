@@ -1,0 +1,45 @@
+#!/bin/csh -f
+
+#**************************************************************************
+#**
+#**    Copyright (c) 1995-1997 by ABKGroup, UCLA VLSI CAD Laboratory,
+#**    UCLA Computer Science Department, Los Angeles, CA 90095-1596 USA,
+#**    and by the Regents of the University of California.
+#**    All rights reserved.
+#**
+#**    No portion of this file may be used, copied, or transmitted for
+#**    any purpose, including any research or commercial purpose,
+#**    without the express written consent of Professor Andrew B. Kahng,
+#**    UCLA Computer Science Department, 3713 Boelter Hall, Los Angeles,
+#**    CA 90095-1596 USA.   Any copy made of this file must include this
+#**    notice.    ABKGroup and the Regents of the University of California
+#**    retain title to all copies of this file and/or its compiled
+#**    derivatives.
+#**
+#**************************************************************************/
+
+
+set DIFF=/usr/bin/diff
+set WC=/usr/bin/wc
+set PROG=FixOrTest 
+/bin/rm -f seeds.{in,out}
+
+echo "------------  Running test 0a..." > new.out
+echo -n Running test 0a...
+${PROG}0.exe -f TESTS/quasiHPl.aux -verb 2_2_2 -maximize >> new.out
+echo Ok
+echo "------------  Running test 0b..." >> new.out
+echo -n Running test 0b...
+${PROG}0.exe -f TESTS/quasiHPl.aux -verb 2_2_2 -o testqHPgood.def >> new.out
+cat testqHPgood.def >> new.out
+rm -f testqHPgood.def
+echo Ok
+
+egrep -v "(Created|sec|User|Platform|Memory us)" new.out > newout.notime
+egrep -v "(Created|sec|User|Platform|Memory us)" expected.out > expectedout.notime
+$DIFF newout.notime expectedout.notime > diffs.notime
+
+echo " "
+echo Differences from precomputed results
+echo "  lines:  words:  bytes:    error log:"
+$WC diffs.notime

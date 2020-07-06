@@ -1,0 +1,1080 @@
+#################################################################################
+#                                                                               #
+#       Version         :       5.2.all                                         #
+#       Last updated    :       07/23/98                                        #
+#                                                                               #
+#################################################################################
+
+VERSION 5.2 ;
+NAMESCASESENSITIVE ON ;
+NOWIREEXTENSIONATPIN ON ;
+
+BUSBITCHARS "<>" ;
+DIVIDERCHAR ":" ;
+
+UNITS
+  TIME NANOSECONDS 100 ;
+  CAPACITANCE PICOFARADS 10 ;
+  RESISTANCE OHMS 10000 ;
+  POWER MILLIWATTS 10000 ;
+  CURRENT MILLIAMPS 10000 ;
+  VOLTAGE VOLTS 1000 ;
+END UNITS
+
+PROPERTYDEFINITIONS
+        LIBRARY NAME STRING "Cadence96" ;
+        LIBRARY intNum  INTEGER 20 ;
+        LIBRARY realNum REAL 21.22 ;
+        PIN TYPE STRING ;
+        PIN intProp INTEGER ;
+        PIN realProp REAL ;
+        MACRO stringProp STRING ;
+        MACRO integerProp INTEGER ;
+        MACRO WEIGHT REAL RANGE 1.0 100.0 ;
+        VIA stringProperty STRING ;
+        VIA realProperty REAL ;
+        VIA COUNT INTEGER RANGE 1 100 ;
+        LAYER lsp STRING ;
+        LAYER lip INTEGER ;
+        LAYER lrp REAL ;
+        VIARULE vrsp STRING ;
+        VIARULE vrip INTEGER ;
+        VIARULE vrrp REAL ;
+        NONDEFAULTRULE ndrsp STRING ;
+        NONDEFAULTRULE ndrip INTEGER ;
+        NONDEFAULTRULE ndrrp REAL ;
+END PROPERTYDEFINITIONS
+
+LAYER POLYS
+        TYPE MASTERSLICE ;
+        PROPERTY lsp "top" lip 1 lrp 2.3 ;
+END POLYS
+
+LAYER CUT01
+        TYPE CUT ;
+END CUT01
+
+LAYER RX
+        TYPE ROUTING ;
+        WIDTH 1 ;
+        WIREEXTENSION 0.75 ;
+        PITCH 1.8 ;
+        OFFSET 0.9 ;
+        SPACING 0.6 RANGE 0.1 9 ;
+        DIRECTION HORIZONTAL ;
+        RESISTANCE RPERSQ 0.103 ;
+        CAPACITANCE CPERSQDIST 0.000156 ;
+        HEIGHT 9 ;
+        THICKNESS 1 ;
+        SHRINKAGE 0.1 ;
+        CAPMULTIPLIER 1 ;
+        EDGECAPACITANCE 0.00005 ;
+        ANTENNAAREAFACTOR 1 ;
+        ANTENNALENGTHFACTOR 1 ;
+        CURRENTDEN 8.9 ;
+END RX
+
+LAYER CUT12
+        TYPE CUT ;
+END CUT12
+
+LAYER PC
+        TYPE ROUTING ;
+        WIDTH 1 ;
+        WIREEXTENSION 0.4 ; #should be ignored
+        PITCH 1.8 ;
+        SPACING 0.6 RANGE 0.1 9 ;
+        DIRECTION HORIZONTAL ;
+        RESISTANCE RPERSQ PWL ( ( 1 0.103 ) ) ;
+        CAPACITANCE CPERSQDIST PWL ( ( 1 0.000156 ) ( 10 0.001 ) ) ;
+        CURRENTDEN PWL ( ( 1 10.01 ) ( 10 11.02 ) ) ;
+END PC
+
+LAYER CA
+        TYPE CUT ;
+END CA
+
+LAYER M1
+        TYPE ROUTING ;
+        WIDTH 1 ;
+        WIREEXTENSION 7 ;
+        PITCH 1.8 ;
+        SPACING 0.6 ;
+        DIRECTION HORIZONTAL ;
+        RESISTANCE RPERSQ 0.103 ;
+        CAPACITANCE CPERSQDIST 0.000156 ;
+END M1
+
+LAYER V1
+        TYPE CUT ;
+        SPACING 0.6 LAYER CA ;
+END V1
+
+LAYER M2
+        TYPE ROUTING ;
+        WIDTH 0.9 ;
+        WIREEXTENSION 8 ;
+        PITCH 1.8 ;
+        SPACING 0.9 ;
+        DIRECTION VERTICAL ;
+        RESISTANCE RPERSQ 0.0608 ;
+        CAPACITANCE CPERSQDIST 0.000184 ;
+END M2
+
+LAYER V2
+        TYPE CUT ;
+END V2
+
+LAYER M3
+        TYPE ROUTING ;
+        WIDTH 0.9 ;
+        WIREEXTENSION 8 ;
+        PITCH 1.8 ;
+        SPACING 0.9 ;
+        DIRECTION HORIZONTAL ;
+        RESISTANCE RPERSQ 0.0608 ;
+        CAPACITANCE CPERSQDIST 0.000184 ;
+END M3
+
+LAYER V3
+        TYPE CUT ;
+END V3
+
+LAYER MT
+        TYPE ROUTING ;
+        WIDTH 0.9 ;
+        PITCH 1.8 ;
+        SPACING 0.9 ;
+        DIRECTION VERTICAL ;
+        RESISTANCE RPERSQ 0.0608 ;
+        CAPACITANCE CPERSQDIST 0.000184 ;
+END MT
+
+layeR OVERLAP
+        TYPE OVERLAP ;
+END OVERLAP
+
+VIA RX_PC DEFAULT
+        RESISTANCE 2 ;
+        LAYER RX ;
+          RECT -0.7 -0.7 0.7 0.7 ;
+        LAYER CUT12 ;
+          RECT -0.25 -0.25 0.25 0.25 ;
+        LAYER PC ;
+          RECT -0.6 -0.6 0.6 0.6 ;
+        PROPERTY stringProperty "DEFAULT" realProperty 32.33 COUNT 34 ;
+END RX_PC
+
+VIA PC_M1 DEFAULT
+        RESISTANCE 1 ;
+        LAYER PC ;
+          RECT -0.6 -0.6 0.6 0.6 ;
+        LAYER CA ;
+          RECT -0.25 -0.25 0.25 0.25 ;
+        LAYER M1 ;
+          RECT -0.6 -0.6 0.6 0.6 ;
+END PC_M1
+
+VIA M1_M2 DEFAULT
+        RESISTANCE 1.5 ;
+        LAYER M1 ;
+          RECT -0.6 -0.6 0.6 0.6 ;
+        LAYER V1 ;
+          RECT -0.45 -0.45 0.45 0.45 ;
+        LAYER M2 ;
+          RECT -0.45 -0.45 0.45 0.45 ;
+END M1_M2
+
+VIA M2_M3 DEFAULT
+        RESISTANCE 1.5 ;
+        LAYER M2 ;
+          RECT -0.45 -0.9 0.45 0.9 ;
+        LAYER V2 ;
+          RECT -0.45 -0.45 0.45 0.45 ;
+        LAYER M3 ;
+          RECT -0.45 -0.45 0.45 0.45 ;
+END M2_M3
+
+VIA M2_M3_PWR 
+        RESISTANCE 0.4 ;
+        LAYER M2 ;
+          RECT -1.35 -1.35 1.35 1.35 ;
+        LAYER V2 ;
+          RECT -1.35 -1.35 -0.45 1.35 ;
+          RECT 0.45 -1.35 1.35 -0.45 ;
+          RECT 0.45 0.45 1.35 1.35 ;
+        LAYER M3 ;
+          RECT -1.35 -1.35 1.35 1.35 ;
+END M2_M3_PWR
+
+VIA M3_MT DEFAULT
+        RESISTANCE 1.5 ;
+        LAYER M3 ;
+          RECT -0.9 -0.45 0.9 0.45 ;
+        LAYER V3 ;
+          RECT -0.45 -0.45 0.45 0.45 ;
+        LAYER MT ;
+          RECT -0.45 -0.45 0.45 0.45 ;
+END M3_MT
+
+VIA IN1X
+        TOPOFSTACKONLY 
+        FOREIGN IN1X ;
+        LAYER CUT01 ;
+          RECT -0.45 -0.45 0.45 0.45 ;
+        PROPERTY COUNT 1 ;
+END IN1X
+
+VIA VIACENTER12
+  LAYER M1 ;
+      RECT -4.6 -2.2 4.6 2.2 ;
+  LAYER V1 ;
+      RECT -3.1 -0.8 -1.9 0.8 ;
+      RECT 1.9 -0.8 3.1 0.8 ;
+  LAYER M2 ;
+      RECT -4.4 -2.0 4.4 2.0 ;
+  RESISTANCE 0.24 ; # Timing
+END VIACENTER12
+
+VIARULE VIALIST12
+  LAYER M1 ;
+      DIRECTION VERTICAL ;
+      WIDTH 9.0 TO 9.6 ;
+      OVERHANG 4.5 ;
+      METALOVERHANG 0 ;
+  LAYER M2 ;
+      DIRECTION HORIZONTAL ;
+      WIDTH 3.0 TO 3.0 ;
+  VIA VIACENTER12 ;
+  PROPERTY vrsp "new" vrip 1 vrrp 4.5 ;
+END VIALIST12
+  
+VIARULE VIAGEN12 GENERATE 
+   LAYER M1 ;
+        DIRECTION VERTICAL ;
+        WIDTH 0.1 TO 19 ;
+        OVERHANG 1.4 ;
+        METALOVERHANG 0 ;
+   LAYER M2 ;
+        DIRECTION HORIZONTAL ;
+        OVERHANG 1.4 ;
+   LAYER V1 ;
+        RECT -0.8 -0.8 0.8 0.8 ;
+        SPACING 5.6 BY 6.0 ;
+        RESISTANCE 0.2 ; # Timing
+END VIAGEN12
+
+NONDEFAULTRULE RULE1
+    LAYER RX
+        WIDTH 10.0 ;
+        WIREEXTENSION 6 ;
+        SPACING 2.2 ;
+    END RX
+
+    LAYER PC
+        WIDTH 10.0 ;
+        SPACING 2.2 ;
+    END PC
+
+    LAYER M1
+        WIDTH 10.0 ;
+        SPACING 2.2 ;
+    END M1
+             
+    LAYER M2
+         WIDTH 10.0 ;
+         SPACING 2.2 ;
+    END M2
+                                          
+    LAYER M3
+         WIDTH 11.0 ;
+         SPACING 3.2 ;
+    END M3
+
+    LAYER  MT
+        WIDTH 11.0 ;
+        SPACING 3.2 ;
+    END MT
+
+    VIA nd1VIARX0
+         RESISTANCE 0.2 ;
+         LAYER RX ;
+          RECT -3 -3 3 3 ;
+         LAYER CUT12 ;
+          RECT -1.0 -1.0 1.0 1.0 ;
+         LAYER PC ;
+          RECT -3 -3 3 3 ;
+    END nd1VIARX0
+
+    VIA nd1VIA01
+        RESISTANCE 0.2 ;
+        LAYER PC ;
+          RECT -3 -3 3 3 ;
+        LAYER CA ;
+          RECT -1.0 -1.0 1.0 1.0 ;
+        LAYER M1 ;
+          RECT -3 -3 3 3 ;
+    END nd1VIA01
+
+    VIA nd1VIA12
+         FOREIGN IN1X ;
+         RESISTANCE 0.2 ;
+         LAYER M1 ;
+          RECT -3 -3 3 3 ;
+         LAYER V1 ;
+          RECT -1.0 -1.0 1.0 1.0 ;
+         LAYER M2 ;
+          RECT -3 -3 3 3 ;
+     END nd1VIA12
+                                    
+     VIA nd1VIA23
+         LAYER M3 ;
+          RECT -2.2 -2.2 2.2 2.2 ;
+         LAYER V2 ;
+          RECT -0.8 -0.8 0.8 0.8 ;
+         LAYER M2 ;
+          RECT -2.0 -2.0 2.0 2.0 ;
+     END nd1VIA23
+
+     VIA nd1VIA34
+        LAYER M3 ;
+          RECT -2.2 -2.2 2.2 2.2 ;
+        LAYER V3 ;
+          RECT -0.8 -0.8 0.8 0.8 ;
+        LAYER MT ;
+          RECT -2.0 -2.0 2.0 2.0 ;
+     END nd1VIA34
+
+     SPACING
+         SAMENET
+          CUT01 RX 0.1 STACK ;
+     END SPACING
+
+     PROPERTY ndrsp "single" ndrip 1 ndrrp 6.7 ;
+
+END RULE1
+
+UNIVERSALNOISEMARGIN 0.1 20 ;
+
+EDGERATETHRESHOLD1 0.1 ;
+EDGERATETHRESHOLD2 0.9 ;
+EDGERATESCALEFACTOR 1.0 ;
+
+NOISETABLE 1 ;
+        EDGERATE 20 ;
+        OUTPUTRESISTANCE 3 ;
+        VICTIMLENGTH 25 ;
+        VICTIMNOISE 10 ;
+END NOISETABLE
+
+CORRECTIONTABLE 1 ;
+        EDGERATE 20 ;
+        OUTPUTRESISTANCE 3 ;
+        VICTIMLENGTH 25 ;
+        CORRECTIONFACTOR 10.5 ;
+END CORRECTIONTABLE
+
+SPACING
+        SAMENET CUT01 CA 1.5 ;
+        SAMENET CA V1 1.5 STACK ;
+        SAMENET M1 M1 3.5 STACK ;
+        SAMENET V1 V2 1.5 STACK ;
+        SAMENET M2 M2 3.5 STACK ;
+        SAMENET V2 V3 1.5 STACK ;
+END SPACING
+
+MINFEATURE 0.1 0.1 ;
+
+DIELECTRIC 0.000345 ;
+
+IRDROP 
+        TABLE DRESHI
+                0.0001 -0.7 0.001 -0.8 0.01 -0.9 0.1 -1.0 ;
+        TABLE DRESLO
+                0.0001 -1.7 0.001 -1.6 0.01 -1.5 0.1 -1.3 ;
+        TABLE DNORESHI
+                0.0001 -0.6 0.001 -0.7 0.01 -0.9 0.1 -1.1 ;
+        TABLE DNORESLO
+                0.0001 -1.5 0.001 -1.5 0.01 -1.4 0.1 -1.4 ;
+END IRDROP
+
+SITE CORE1
+        CLASS CORE ;
+        SYMMETRY X ;
+        SIZE 67.2 BY 6 ;
+END CORE1
+
+SITE CORE
+        CLASS CORE ;
+        SIZE 3.6 BY 28.8 ;
+        SYMMETRY  Y  ;
+END CORE
+
+SITE MRCORE
+        CLASS CORE ;
+        SIZE 3.6 BY 28.8 ;
+        SYMMETRY  Y  ;
+END MRCORE
+
+SITE IOWIRED
+        CLASS PAD ;
+        SIZE 57.6 BY 432 ;
+END IOWIRED
+
+SITE IOTEST
+        CLASS PAD ;
+        SIZE 57.6 BY 432 ;
+END IOTEST
+
+SITE IODI1
+        CLASS PAD ;
+        SIZE 57.6 BY 432 ;
+END IODI1
+
+SITE IODI2
+        CLASS PAD ;
+        SIZE 57.6 BY 432 ;
+END IODI2
+
+SITE IODI3
+        CLASS PAD ;
+        SIZE 57.6 BY 432 ;
+END IODI3
+
+SITE IODI4
+        CLASS PAD ;
+        SIZE 57.6 BY 432 ;
+END IODI4
+
+SITE IO
+        CLASS PAD ;
+        SIZE 57.6 BY 432 ;
+END IO
+
+SITE IOPMON
+        CLASS PAD ;
+        SIZE 57.6 BY 432 ;
+END IOPMON
+
+SITE IOPMONFL
+        CLASS PAD ;
+        SIZE 57.6 BY 432 ;
+END IOPMONFL
+
+SITE IOPSRO
+        CLASS PAD ;
+        SIZE 57.6 BY 432 ;
+END IOPSRO
+
+SITE IOVDDB
+        CLASS PAD ;
+        SIZE 57.6 BY 432 ;
+END IOVDDB
+
+SITE IOGNDB
+        CLASS PAD ;
+        SIZE 57.6 BY 432 ;
+END IOGNDB
+
+SITE IONUM
+        CLASS PAD ;
+        SIZE 57.6 BY 432 ;
+END IONUM
+
+SITE IMAGE
+        CLASS CORE ;
+        SIZE 1 BY 1 ;
+END IMAGE
+
+MACRO CHK3A
+        CLASS RING ;
+        FUNCTION BUFFER ;
+        ORIGIN 0.9 0.9 ;
+        SIZE 10.8 BY 28.8 ;
+        SYMMETRY X Y R90  ;
+        SITE CORE ;
+        PIN GND
+                DIRECTION INOUT ;
+                TAPERRULE RULE1 ;
+                USE GROUND ;
+                SHAPE ABUTMENT ;
+                PORT
+                        LAYER M1 ;
+                         RECT ( -0.9 3 ) ( 9.9 6 ) ;
+                END
+                PROPERTY TYPE "special" intProp 23 realProp 24.25 ;
+                MAXLOAD 0.1 ;
+                RISESLEWLIMIT 0.01 ;
+                FALLSLEWLIMIT 0.02 ;
+                ANTENNASIZE 1 LAYER M1 ;
+                ANTENNASIZE 2 LAYER M2 ;
+        END GND
+        PIN VDD
+                DIRECTION INOUT ;
+                USE POWER ;
+                SHAPE ABUTMENT ;
+                PORT
+                        LAYER M1 ;
+                         RECT -0.9 21 9.9 24 ;
+                END
+                ANTENNAMETALAREA 3 LAYER M1 ;
+                ANTENNAMETALAREA 4 LAYER M2 ;
+                ANTENNAMETALLENGTH 5 LAYER M1 ;
+                ANTENNAMETALLENGTH 6 LAYER M2 ;
+        END VDD
+        PIN PA3
+                DIRECTION INPUT ;
+                PORT
+                        LAYER M1 ;
+                         RECT 1.35 -0.45 2.25 0.45 ;
+                         RECT -0.45 -0.45 0.45 0.45 ;
+                END
+                PORT
+                        LAYER PC ;
+                         RECT -0.45 12.15 0.45 13.05 ;
+                END
+                PORT
+                        LAYER PC ;
+                         RECT -0.45 24.75 0.45 25.65 ;
+                END
+        END PA3
+        PIN PA2
+                DIRECTION INPUT ;
+                PORT
+                        LAYER M1 ;
+                         RECT 4.95 -0.45 5.85 0.45 ;
+                         RECT 3.15 -0.45 4.05 0.45 ;
+                END
+                PORT
+                        LAYER PC ;
+                         RECT 1.35 24.75 2.25 25.65 ;
+                END
+        END PA2
+        PIN PA0
+                DIRECTION INPUT ;
+                PORT
+                        LAYER M1 ;
+                         RECT 8.55 8.55 9.45 9.45 ;
+                         RECT 6.75 6.75 7.65 7.65 ;
+                         RECT 6.75 8.55 7.65 9.45 ;
+                         RECT 6.75 10.35 7.65 11.25 ;
+                END
+                PORT
+                        LAYER PC ;
+                         RECT 8.55 24.75 9.45 25.65 ;
+                END
+                PORT
+                        LAYER PC ;
+                         RECT 6.75 1.35 7.65 2.25 ;
+                END
+                PORT
+                        LAYER PC ;
+                         RECT 6.75 24.75 7.65 25.65 ;
+                END
+                PORT
+                        LAYER PC ;
+                         RECT 4.95 1.35 5.85 2.25 ;
+                END
+        END PA0
+        PIN P10
+                DIRECTION OUTPUT ;
+                PORT
+                        LAYER M1 ;
+                         RECT -0.45 15.75 0.45 16.65 ;
+                         RECT -0.45 13.95 0.45 14.85 ;
+                         RECT 1.35 15.75 2.25 16.65 ;
+                         RECT 1.35 13.95 2.25 14.85 ;
+                         RECT 3.15 15.75 4.05 16.65 ;
+                         RECT 3.15 13.95 4.05 14.85 ;
+                         RECT 3.15 12.15 4.05 13.05 ;
+                         RECT 3.15 10.35 4.05 11.25 ;
+                         RECT 3.15 8.55 4.05 9.45 ;
+                         RECT 4.95 15.75 5.85 16.65 ;
+                         RECT 4.95 13.95 5.85 14.85 ;
+                         RECT 4.95 10.35 5.85 11.25 ;
+                         RECT 4.95 8.55 5.85 9.45 ;
+                         RECT 6.75 15.75 7.65 16.65 ;
+                         RECT 6.75 13.95 7.65 14.85 ;
+                END
+        END P10
+        PIN PA1
+                DIRECTION INPUT ;
+                PORT
+                        LAYER M1 ;
+                         RECT 8.55 -0.45 9.45 0.45 ;
+                         RECT 6.75 -0.45 7.65 0.45 ;
+                END
+                PORT
+                        LAYER M1 ;
+                         RECT 8.55 12.15 9.45 13.05 ;
+                         RECT 6.75 12.15 7.65 13.05 ;
+                         RECT 4.95 12.15 5.85 13.05 ;
+                END
+                PORT
+                        LAYER PC ;
+                         RECT 4.95 24.75 5.85 25.65 ;
+                END
+                PORT
+                        LAYER PC ;
+                         RECT 3.15 24.75 4.05 25.65 ;
+                END
+        END PA1
+        OBS
+                LAYER M1 ;
+                 RECT 6.6 -0.6 9.6 0.6 ;
+                 RECT 4.8 12 9.6 13.2 ;
+                 RECT 3 13.8 7.8 16.8 ;
+                 RECT 3 -0.6 6 0.6 ;
+                 RECT 3 8.4 6 11.4 ;
+                 RECT 3 8.4 4.2 16.8 ;
+                 RECT -0.6 13.8 4.2 16.8 ;
+                 RECT -0.6 -0.6 2.4 0.6 ;
+                 RECT 6.6 6.6 9.6 11.4 ;
+                 RECT 6.6 6.6 7.8 11.4 ;
+        END 
+        PROPERTY stringProp "first" integerProp 1 WEIGHT 30.31 ;
+        CLOCKTYPE EDGETRIGGERED ;
+END CHK3A
+
+MACRO CHM6A
+        CLASS PAD INPUT ;
+        FUNCTION INVERTER ;
+        ORIGIN 0.9 0.9 ;
+        SIZE 18 BY 28.8 ;
+        SYMMETRY X   ;
+        SITE CORE ;
+        PIN GND
+                DIRECTION INOUT ;
+                USE GROUND ;
+                SHAPE ABUTMENT ;
+                PORT
+                        LAYER M1 ;
+                         RECT -0.9 3 17.1 6 ;
+                END
+        END GND
+        PIN VDD
+                DIRECTION INOUT ;
+                USE POWER ;
+                SHAPE ABUTMENT ;
+                PORT
+                        LAYER M1 ;
+                         RECT -0.9 21 17.1 24 ;
+                END
+        END VDD
+        PIN PB1
+                DIRECTION INPUT ;
+                PORT
+                        LAYER M1 ;
+                         RECT 13.95 -0.45 14.85 0.45 ;
+                         RECT 15.75 -0.45 16.65 0.45 ;
+                END
+        END PB1
+        PIN PB0
+                DIRECTION INPUT ;
+                PORT
+                        LAYER M1 ;
+                         RECT 10.35 -0.45 11.25 0.45 ;
+                         RECT 12.15 -0.45 13.05 0.45 ;
+                END
+        END PB0
+        PIN P10
+                DIRECTION OUTPUT ;
+                PORT
+                        LAYER M1 ;
+                         RECT 1.35 17.55 2.25 18.45 ;
+                         RECT 1.35 15.75 2.25 16.65 ;
+                         RECT 3.15 17.55 4.05 18.45 ;
+                         RECT 3.15 15.75 4.05 16.65 ;
+                         RECT 4.95 17.55 5.85 18.45 ;
+                         RECT 4.95 15.75 5.85 16.65 ;
+                         RECT 6.75 17.55 7.65 18.45 ;
+                         RECT 6.75 15.75 7.65 16.65 ;
+                         RECT 6.75 10.35 7.65 11.25 ;
+                         RECT 6.75 8.55 7.65 9.45 ;
+                         RECT 8.55 17.55 9.45 18.45 ;
+                         RECT 8.55 15.75 9.45 16.65 ;
+                         RECT 8.55 10.35 9.45 11.25 ;
+                         RECT 8.55 8.55 9.45 9.45 ;
+                         RECT 10.35 17.55 11.25 18.45 ;
+                         RECT 10.35 15.75 11.25 16.65 ;
+                         RECT 10.35 10.35 11.25 11.25 ;
+                         RECT 10.35 8.55 11.25 9.45 ;
+                         RECT 12.15 17.55 13.05 18.45 ;
+                         RECT 12.15 15.75 13.05 16.65 ;
+                         RECT 12.15 10.35 13.05 11.25 ;
+                         RECT 12.15 8.55 13.05 9.45 ;
+                         RECT 13.95 17.55 14.85 18.45 ;
+                         RECT 13.95 15.75 14.85 16.65 ;
+                         RECT 13.95 10.35 14.85 11.25 ;
+                         RECT 13.95 8.55 14.85 9.45 ;
+                         RECT 15.75 17.55 16.65 18.45 ;
+                         RECT 15.75 15.75 16.65 16.65 ;
+                         RECT 15.75 13.95 16.65 14.85 ;
+                         RECT 15.75 12.15 16.65 13.05 ;
+                         RECT 15.75 10.35 16.65 11.25 ;
+                         RECT 15.75 8.55 16.65 9.45 ;
+                END
+        END P10
+        PIN PA0
+                DIRECTION INPUT ;
+                PORT
+                        LAYER M1 ;
+                         RECT 6.75 -0.45 7.65 0.45 ;
+                         RECT 8.55 -0.45 9.45 0.45 ;
+                END
+        END PA0
+        PIN PA2
+                DIRECTION INPUT ;
+                PORT
+                        LAYER M1 ;
+                         RECT -0.45 -0.45 0.45 0.45 ;
+                         RECT 1.35 -0.45 2.25 0.45 ;
+                END
+        END PA2
+        PIN PA1
+                DIRECTION INPUT ;
+                PORT
+                        LAYER M1 ;
+                         RECT 3.15 -0.45 4.05 0.45 ;
+                         RECT 4.95 -0.45 5.85 0.45 ;
+                END
+        END PA1
+        OBS
+                LAYER M1 ;
+                 RECT 13.8 -0.6 16.8 0.6 ;
+                 RECT 15.6 8.4 16.8 18.6 ;
+                 RECT 6.6 8.4 16.8 11.4 ;
+                 RECT 1.2 15.6 16.8 18.6 ;
+                 RECT 3 13.8 15 15 ;
+                 RECT 10.2 -0.6 13.2 0.6 ;
+                 RECT 6.6 -0.6 9.6 0.6 ;
+                 RECT 3 -0.6 6 0.6 ;
+                 RECT -0.6 -0.6 2.4 0.6 ;
+        END 
+END CHM6A
+
+MACRO INV
+  
+   CLASS CORE ;
+   FOREIGN INVS ;
+   POWER 1.0 ;
+   SIZE 67.2 BY 24 ;
+   SYMMETRY X Y R90 ;
+   SITE CORE1 ;
+             
+   PIN Z DIRECTION OUTPUT ;
+    USE SIGNAL ;        
+    RISETHRESH 22 ;        
+    FALLTHRESH 100 ;        
+    RISESATCUR 4 ;        
+    FALLSATCUR .5 ;        
+    VLO 0 ;        
+    VHI 5 ;        
+    CAPACITANCE 0.1 ;        
+    MAXDELAY 21 ;        
+    POWER 0.1 ;
+    PORT
+        LAYER M2 ;
+           PATH 30.8 9 42 9 ;
+    END
+   END Z
+                                                                      
+   PIN A DIRECTION INPUT ;
+    USE SIGNAL ;        
+    RISETHRESH 22 ;        
+    FALLTHRESH 100 ;        
+    RISESATCUR 4 ;        
+    FALLSATCUR .5 ;        
+    VLO 0 ;        
+    VHI 5 ;        
+    CAPACITANCE 0.08 ;        
+    MAXDELAY 21 ;        
+    PORT 
+        LAYER M1 ;
+           PATH 25.2 15 ;
+    END
+   END A
+
+   PIN VDD DIRECTION INOUT ;
+    SHAPE ABUTMENT ;
+    POWER 0.1 ;
+    PORT
+        LAYER M1 ;
+           WIDTH 5.6 ;
+           PATH 50.4 2.8 50.4 21.2 ;
+    END
+   END VDD
+                                        
+   PIN VSS DIRECTION INOUT ;
+    SHAPE ABUTMENT ;
+    POWER 0.1 ;
+    PORT
+        LAYER M1 ;
+           WIDTH 5.6 ;
+           PATH 16.8 2.8 16.8 21.2 ;
+    END
+   END VSS
+                                                                       
+   TIMING
+    FROMPIN A ;
+    TOPIN Z ;
+    RISE INTRINSIC .39 .41 1.2 .25 .29 1.8 .67 .87 2.2
+         VARIABLE 0.12 0.13 ;
+    FALL INTRINSIC .24 .29 1.3 .26 .31 1.7 .6 .8 2.1
+         VARIABLE 0.11 0.14 ;
+    RISERS 83.178 90.109 ;
+    FALLRS 76.246 97.041 ;
+    RISECS 0.751 0.751 ;
+    FALLCS 0.751 0.751 ;
+    RISET0 0.65493 0.65493 ;
+    FALLT0 0.38 0.38 ;
+    RISESATT1 0 0 ;
+    FALLSATT1 0.15 0.15 ;
+    UNATENESS INVERT ;
+   END TIMING
+                                                
+   OBS
+    LAYER M1 ;
+        RECT 24.1 1.5 43.5 16.5 ;
+   END
+         
+END INV
+          
+MACRO INV_B
+   EEQ INV ;
+             
+   FOREIGN INVS ;
+   POWER 1.0 ;
+   SIZE 67.2 BY 24 ;
+   SYMMETRY X Y R90 ;
+   SITE CORE1 ;
+                
+   PIN Z DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    RISETHRESH 22 ;
+    FALLTHRESH 100 ;
+    RISESATCUR 4 ;
+    FALLSATCUR .5 ;
+    VLO 0 ;
+    VHI 5 ;
+    CAPACITANCE 0.1 ;
+    MAXDELAY 21 ;
+    POWER 0.1 ;
+    PORT
+        LAYER M2 ;
+           PATH 30.8 9 42 9 ;
+    END
+   END Z
+ 
+   PIN A DIRECTION INPUT ;
+    USE SIGNAL ;
+    RISETHRESH 22 ;
+    FALLTHRESH 100 ;
+    RISESATCUR 4 ;
+    FALLSATCUR .5 ;
+    VLO 0 ;
+    VHI 5 ;
+    CAPACITANCE 0.08 ;
+    MAXDELAY 21 ;
+    PORT
+        LAYER M1 ;
+           PATH 25.2 15 ;
+    END
+   END A
+             
+   PIN VDD DIRECTION INOUT ;
+    SHAPE ABUTMENT ;
+    POWER 0.1 ;
+    PORT
+        LAYER M1 ;
+           WIDTH 5.6 ;
+           PATH 50.4 2.8 50.4 21.2 ;
+    END
+   END VDD
+                                                    
+   PIN VSS DIRECTION INOUT ;
+    SHAPE ABUTMENT ;
+    POWER 0.1 ;
+    PORT
+        LAYER M1 ;
+           WIDTH 5.6 ;
+           PATH 16.8 2.8 16.8 21.2 ;
+    END
+   END VSS
+                                                                           
+   TIMING
+    FROMPIN A ;
+    TOPIN Z ;
+    RISE INTRINSIC .39 .41 1.2 .25 .29 1.8 .67 .87 2.2
+        VARIABLE 0.12 0.13 ;
+    FALL INTRINSIC .24 .29 1.3 .26 .31 1.7 .6 .8 2.1
+        VARIABLE 0.11 0.14 ;
+    RISERS 83.178 90.109 ;
+    FALLRS 76.246 97.041 ;
+    RISECS 0.751 0.751 ;
+    FALLCS 0.751 0.751 ;
+    RISET0 0.65493 0.65493 ;
+    FALLT0 0.38 0.38 ;
+    RISESATT1 0 0 ;
+    FALLSATT1 0.15 0.15 ;
+    UNATENESS INVERT ;
+   END TIMING
+                                               
+   OBS
+    LAYER M1 ;
+        RECT 24.1 1.5 43.5 16.5 ;
+   END
+                                                      
+END INV_B
+
+MACRO DFF3
+  
+   FOREIGN DFF3S ;
+   POWER 4.0 ;  
+   SIZE 67.2 BY 210 ;
+   SYMMETRY X Y R90 ;
+   SITE CORE1 ;
+             
+   PIN Q DIRECTION OUTPUT ;
+    USE SIGNAL ;        
+    RISETHRESH 22 ;        
+    FALLTHRESH 100 ;        
+    RISESATCUR 4 ;        
+    FALLSATCUR .5 ;        
+    VLO 0 ;        
+    VHI 5 ;        
+    CAPACITANCE 0.12 ;        
+    MAXDELAY 20 ;        
+    POWER 0.4 ;  
+    PORT
+        LAYER M2 ;
+           PATH 19.6 99 47.6 99 ;
+    END
+   END Q
+                                                      
+   PIN QN DIRECTION OUTPUT ;
+    USE SIGNAL ;        
+    RISETHRESH 22 ;        
+    FALLTHRESH 100 ;        
+    RISESATCUR 4 ;        
+    FALLSATCUR .5 ;        
+    VLO 0 ;        
+    VHI 5 ;        
+    CAPACITANCE 0.11 ;        
+    MAXDELAY 20 ;        
+    POWER 0.4 ;  
+    PORT 
+        LAYER M2 ;
+           PATH 25.2 123 42 123 ;
+    END
+   END QN
+
+   PIN D DIRECTION INPUT ;
+    USE SIGNAL ;
+    RISETHRESH 22 ;
+    FALLTHRESH 100 ;
+    RISESATCUR 4 ;
+    FALLSATCUR .5 ;
+    VLO 0 ;   
+    VHI 5 ;   
+    CAPACITANCE 0.13 ;
+    MAXDELAY 20 ;
+    POWER 0.4 ;
+    PORT
+        LAYER M1 ;
+           PATH 30.8 51 ;
+    END
+   END D
+                                                  
+   PIN G DIRECTION INPUT ;
+    USE SIGNAL ;
+    RISETHRESH 22 ;
+    FALLTHRESH 100 ;
+    RISESATCUR 4 ;
+    FALLSATCUR .5 ;
+    VLO 0 ;   
+    VHI 5 ;   
+    CAPACITANCE 0.11 ;
+    MAXDELAY 20 ;
+    POWER 0.4 ;
+    PORT
+        LAYER M1 ;
+           PATH 25.2 3 ;
+    END
+   END G
+   
+   PIN CD DIRECTION INPUT ;
+    USE CLOCK ;
+    RISETHRESH 22 ;
+    FALLTHRESH 100 ;
+    RISESATCUR 4 ;
+    FALLSATCUR .5 ;
+    VLO 0 ;
+    VHI 5 ;   
+    CAPACITANCE 0.1 ;
+    MAXDELAY 20 ;
+    POWER 0.4 ;
+    PORT
+        LAYER M1 ;
+           PATH 36.4 75 ;
+    END
+   END CD
+                               
+   PIN VDD DIRECTION INOUT ;
+    SHAPE ABUTMENT ;
+    POWER 0.4 ;
+    PORT
+        LAYER M1 ;
+           WIDTH 5.6 ;
+           PATH 50.4 2.8 50.4 207.2 ;
+    END
+   END VDD
+      
+   PIN VSS DIRECTION INOUT ;
+    SHAPE ABUTMENT ;
+    POWER 0.4 ;
+    PORT
+        LAYER M1 ;
+           WIDTH 5.6 ;
+           PATH 16.8 2.8 16.8 207.2 ;
+    END
+   END VSS
+    
+   TIMING
+    FROMPIN D ;
+    TOPIN Q ;
+    RISE INTRINSIC .51 .6 1.4 .37 .45 1.7 .6 .81 2.1
+        VARIABLE 0.06 0.1 ;
+    FALL INTRINSIC 1 1.2 1.4 1.77 1.85 1.8 .56 .81 2.4
+        VARIABLE 0.08 0.09 ;
+    RISERS 41.589 69.315 ;
+    FALLRS 55.452 62.383 ;
+    RISECS 0.113 0.113 ;
+    FallCS 0.113 0.113 ;
+    RISET0 0.023929 0.023929 ;
+    FALLT0 0.38 0.38 ;
+    RISESATT1 0 0 ;
+    FALLSATT1 0.15 0.15 ;
+    UNATENESS      NONINVERT ;
+   END TIMING
+                       
+   OBS
+    LAYER M1 ;
+        RECT 24.1 1.5 43.5 208.5 ;
+        PATH 8.4 3 8.4 123 ;
+        PATH 58.8 3 58.8 123 ;
+        PATH 64.4 3 64.4 123 ;
+   END
+                                          
+END DFF3
+
+INPUTPINANTENNASIZE 1 ;
+OUTPUTPINANTENNASIZE -1 ;
+INOUTPINANTENNASIZE -1 ;
+
+BEGINEXT "SIGNATURE"
+        CREATOR "CADENCE"
+        DATE "04/14/98"
+ENDEXT
+
+END LIBRARY

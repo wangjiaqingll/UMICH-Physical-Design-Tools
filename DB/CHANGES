@@ -1,0 +1,625 @@
+
+  CHANGES TO DB
+
+1.3  970729 ilm  made dbMasterCell::_site (see dbCell.h)
+                          a reference to dbSite (was dbSite)
+
+                 changed dbMasterPin::_offset to dbMasterPin::_center
+
+                 commented out dbPin::_name
+
+                 created  DBpostProc.cxx and started DB::postProcessor()
+
+                 DB::postProcessor() is called by DB::DB() before isConsistent()
+
+                 dbCellType::dbCellType() now abkfatals() . dbCellType will be
+
+                 set by the postProcessor(), so we'll need the ctor then.
+
+                 added a default constructor for dbCellType as well as 
+                             MacroUNITIALIZED constrant and bool isInitialized()
+
+                 dbCell ctor does not take cellType anymore (cellType will
+                             be set in the postProcessor)
+
+1.4  970729 ilm  moved moved enums (used for types in dbContext.h) inside
+                       respective classes simplifying the enum names and 
+                       the enumed names
+
+                 dbLayer::dbLayer now initializes all members
+
+                 changed dbLayer::_capmult => dbLayer::capMult
+                         dbLayer::_edgecap => dbLayer::_edgeCap
+                          (access methods too)
+
+                 deleted dbLayer::_startCoord. dbLayer::_numTracks will    
+                         eventually be set by DB::postProcessor(), but 
+                         parsers can put someinfo there for postprocessor 
+                         (we will standardize what exactly after the first
+                          parser works ;-)
+ 
+       ilm/aec   default ctor dbNetlist now initialized the 3 aggregate members
+
+1.5 970730 wyd   changed dbMasterPin back to 1.2 regarding _name.
+
+		 changed dbPin accessor getName() to getMasterPinName().
+
+		 taken away _numTracks from dbLayer constructor.
+
+		 added MakeFriendsWithParsers to class DB.
+
+		 corrected typo error in dbDefines.h (parser -> Parser)
+		 also typo in dbContext.h: dbLayer::Type
+
+           ilm   added a missing const next to dbPin::getMasterPinName()
+
+                 added a missing dbLayout::getNumRows()
+
+1.6 970731 ilm   Still reworking Makefile for db to link with two parsers
+
+	         Added methods to DB for LEFDEFq
+
+		 Split DB.cxx into pathDelims.h, DB.cxx, DBreadLEFDEF.cxx
+			  DBreadLEFDEFq.cxx
+
+                 MSVC++ portability change A::Type -> Type (when inside A)
+
+1.7 970731  ilm  Finally figured out a reasonable Makefile
+
+1.8 970803  aec  postprocessor fills cells' nets and net's cells.
+
+1.9 970804  ilm  now LGC file name is passed to the postprocessor only
+            
+                 added LEFDEFqLGC file format
+ 
+                 added a hook for saveDEF(const char *auxFileName) const
+
+                 added a hook for dbSpatial::reorderCells(const Permutation&)
+
+                 changed what looked like a typo in class dbMasterCellType
+                              in dbTypes.h (enum LClass into enum MClass)
+
+                 made enums public in all type classes and added "direct"
+                                      constructors (as requested by Mike)
+
+                 dbLayer ctor now sets _height; old ctor is still there 
+                                  for compatibility, but will be deleted soon
+
+                 parsers are not friends to dbLayer since ctor does everything
+
+                 added unified checks  (not finished)
+
+                 abkassert around consistency check now functional
+
+                 added three accessors to dbMasterCell
+
+	   aec	 changed dbCell constructor to set inDegree/outDegree
+		
+		 added postprocessing to set instance cell types
+	
+		 added _numIOPads, _numAllPads and _coreCellArea to dbNetlist
+			they are set by the postProcessor
+	
+		 added private function dbMasterCellType::setCoreClass(char*)
+		 added checking of all 'nums' and total areas in consist. chk.
+
+		 
+	  		 
+1.10 970805 aec  dbNetlist is now a friend to dbMasterCell for
+			postProcessing of LGC files.
+
+		 added setCoreCell in dbMasterCellType.
+
+  		 added processing of LGC files 
+
+1.11 970806 aec  change LGC processing..entries for non-core cells are now
+			just ignored.
+
+     970806 ilm  the old dbLayer ctor is gone
+     
+     970806 ilm  consistency checker now prints the types and numbers of
+                 ctraints
+
+1.12 970807 ilm  added row/site/layer accessors to class dbContext
+     970807 ilm  added cell and pin "by index" accessors to class dbNet
+     970807 aec  changed cerr's to abkwarn's in conchk.
+		 added checking that each cell's nets are in design's vector
+		 added checking that each net's cells are in design's vector
+		 added isConnected() to dbPin
+		 net's of degree0 are now just a msg, not an error
+		 special nets are removed from each cell's vector of nets
+
+1.13         (aec)   ??
+
+1.14 970808  mro Added new dbMasterCell ctor using enum types and obstacles
+     970808  mro added pragmas to get rid of warnings in MSVC++
+     970808  mro changed "UnknownCC" to "UnknownCoreClass"
+
+1.15         aec changes to sorting in dbPostProc.h.  Added sorting of all
+			cells name, then nets by cell indexes, and cells
+			in pads first order.	
+     970812  ilm changed Makefile to use the "alpha" versions of libparserLEFDEF
+                      (i.e. Mike's parser)
+
+1.16 970812  ilm corrected a bug in the AUX file reader 
+                   (missing 0 char at the end of AUX file directory name)
+             ilm renamed the AUX directory into EXAMPLES directory
+	     aec added numCCs and numSCs to dbNetlist.
+             ilm calls to Mike's parser commented out to avoid problems
+                     with Cadence license manager
+
+1.17 970812  ilm fixed two bugs in the Constraints package
+             wyd fixed a bug in parserLEFDEFq
+
+1.18 970813   
+         aec/pat added dbEasyAccess
+             mro added double() around _ranIntWidth in four places
+
+1.18.1 970813  
+             mro moved struct equnsigned in dbEasyAcess.cxx to file scope
+                               otherwise can't use in templates in WinNT
+             mro added pragma to turn off warning 4786
+
+1.19 970814
+             aec fixed dbCell::isMarked, and changed error messages
+			in dbCellType
+             ilm moved implementations from dbSpatial.h into newly created
+                       dbSpatial.cxx
+             ilm filled dbSpatial::reorder(const Permutation&)
+	     aec added final cell sorting, with fixed first.
+	     aec changed dbNetlist::postProcess to take spatial as an argument.
+
+1.20 970814  aec moved cell/net sorting from dbNetlist::postProcess to
+		    	DB::postProcess().
+	     aec updated easyAccess isConsistent
+	     aec added checking for empty constraints in postProcessor
+	     aec re-ordering of constraints after final cell sorting
+
+1.20.1 970814 
+           ilm  created dbContext.cxx and wrote ~dbContext()
+           ilm  corrected dbCell:::setTypeFromMaster() not to leak memory
+           ilm  created dbNetlist.cxx and wrote ~dbNetlist() (no leaks anymore)
+           ilm  added #include "plGeom.h" to dbPins.h
+           mro  changed declaration for DB::saveDEF() and wrote implementation
+
+1.21 970815 
+           ilm  added designName and techoName (initialized to "")
+           ilm  added DB::hasDesignName(), DBhasTechnoName(),
+                      DB::getDesignName() and DBgetTechnoName()
+           ilm  added output if DESIGN/END DESIGN tags to saveDEF()
+                    if no design name was given, uses "NO_DESIGN_NAME" for name
+           ilm  corrected ";" in saveDEF() so that they look 
+                   like in qplace.out.def files
+           ilm     added "UNITS DISTANCE" output into saveDEF()
+1.21.1 970815 
+           ilm     saveDEF() now can tell FIXED cells from PLACED
+1.21.2 970815 
+           ilm     added consistency checks for invalid locations of fixed cells
+                      and unsatisfied constraints (the latter produces WARNING)
+1.21.3 970815
+	   aec  fixed problem with final cell sort
+	   aec  moved netlist isConsistent from conchk.cxx to dbNetlist.cxx
+	   aec  added _totalCellWidths and _coreCellArea to dbEasyAccess
+			plus code to set them in the postProcessor
+1.22   970815
+          ilm   fixed the hasDesignName() bug and added timestamp to saveDEF
+          ilm   added bool dbSpatial::allCellsPlaced() const
+
+1.23   970817
+	  aec   changed dbCell::setTypeFromMaster.
+ 	  aec   added getType to masterCell, Cell, pin and MasterPin
+	  aec   added to dbMasterCell and dbMasterCellType::isCoreUnknown()
+	  aec   added const to masterPinType::operator()
+	  aec   added 'dir' 'shape' to UNKNOWN in dbMasterPin::operator() 
+          ilm   uninlined many methods and moved them from *h into *cxx
+                      files. Rearranged *h files. No more dbPostProc.h
+                      and dbSortComp.h (dbXXX::YYY() is defined in 
+                      dbXXX.h if inline and in dbXXX.cxx if not)
+1.23.1 970817
+          ilm uninlined stream I/O in dbIntervals.h and moved it
+                        into dbIntervals.cxx. This does not trigger
+                        CC +O5 optimizer bug anymore.
+          pat added ctor for RBPlacement from DB
+1.24.1 970818
+          ilm fixed  UMRs (actual bugs) in the dMasterCells ctors
+
+1.24.2 970818
+	  aec updated dbTypes, dbMasterCell, and dbCell to updated types
+			in dbTypes1.0
+1.25   970818
+	  aec fixed bug in dbCell::induceNetsFromPins
+          ilm LGC files now allow for comment lines with #
+          ilm initialized _fallDelay and _riseDelay in dbCell.cxx
+                    with -1.234567
+1.26   970818
+          pat bug fixes to RBPlacemet and dbEasyAccess
+
+1.27   970819
+	  ilm added snet access iterators to dbNetlist 
+	  aec added loop functions for snets to netlist, and forallSnets
+	  aec removed sets from dbCell::induceNetsFromPins()
+	  aec postProcessor now removes nets of degree 1
+          aec added halfPerimEval()
+       970820
+          ilm changed char in bit-fields in dbTypes.h to unsigned char
+                       for Windows portability
+          ilm added additional regression checks
+          ilm added copy-constructors and assignments ops with abkfatals
+                    to DB, dbNetlist and dbContext
+          ilm took off unnecessary #include statements in several files
+                 (mostly <set.h> and <map.h>)
+          ilm  slight correction to halfPerimEval()
+1.27.1 970820
+          mro added const_casts (Windows compatibility)
+          ilm changed _snets to _sNets in class dbNetlist etc
+1.28   970820
+          mro added optional "include logical pins" switch to parseLEFDEF
+                 (with default "don't") 
+          pat dbIntervals: make ranIntSeqs begin with dark space
+          pat added x-coord sort to subRows in RBPlacement
+          ilm reworked stream output in dbEasyAccess and RBPlacement
+          ilm expanded regression tests to dbEasyAccess and RBPlacement
+1.29  970822
+	  aec added cellLib/pinLib/pins begin and end iterators in dbNetlist
+	  aec added population of pinLib and pins in dbNetlist:postProcessor
+	  aec added checking of pinLib and pins in dbNetlist::isConsistent
+	  aec added if stmt for pins not on a net in dbEasyAccess::pop'NetIds
+	  aec changes sets in dbNetlist::isConsistent to sorted vectors
+		using binary_search
+1.30  970823
+          ilm fixed  iropt: Fatal error 
+          ilm saveDEF() now gives platform, user name and memory usage
+          ilm saveDEF() output beautified ;-)
+          ilm added orientations to RBPCoreRow and RBPIORow  (Maogang's request)
+                    they are initialized now
+          ilm added documentation
+          ilm changed vector<bool> to bit_vector in dbSpatial::orientations
+          ilm global change from vector<bool> to bit_vector
+1.30.3 970824
+          ilm overloaded operator<< and operator>> for DB
+1.30.5 970824
+          ilm renamed Interval into dbInterval everywhere, IntervalSeq
+              into dbIntervalSeq etc. Also, dbIntervals.{h,cxx} now are called
+              dbInterval.{h,cxx} to conform to our file naming conventions
+1.31   970824
+	  ilm worked around the SunPro CC optimizer bug (DBpostProc.cxx)
+1.32   970825
+	  aec finished dbNetlist::halfPerimEval function. added orientations
+		to the evaluator.
+	  aec added const to a number of functions in dbNetlist and dbCommonPin
+	  aec fixed bug in dbInterval.cxx, mergeIntervals
+          ilm merged dbDesign.cxx into dbTypes.cxx
+          ilm improved diagnostics for nested forall macros
+          ilm extended regression tests with dbtest4 (evaluator tests)
+1.33  970526
+          aec rewrote the functionality fo dbIntervalSeq::Merge
+          ilm reworked ~dbMasterCell
+          ilm removed dbInterval::merge
+          ilm changed (double) to static_cast<double>() in dbInterval.h
+          ilm corrected a bug in dbMasterPin::getPorts()
+          ilm renamed halfPerimEval() into evalHalfPerimCost()
+          ilm added evalMSTCost()
+          ilm uninlined many destructors (~dbMasterPin, ~dbMasterCell etc)
+                to fight memory leaks w/o threatening Wenyong's rebuilds
+          ilm added dbPin.cxx and dbPin.o to the Makefile
+1.34  970526
+          ilm more memory leaks fixed
+          ilm   changed dbMasterPin::_mustJoin to ctainerMasterPinsLocal
+                      added bool isJoint() and getJointPins()
+          ilm added dbMasterCell::_setsOfJointPins (no accessors yet)
+1.35  970827
+	  aec added dbNetlist::getNumCCs() and dbNetlist::getNumSCs()
+	  aec added sorting of masterCell obstacles by xMin
+          ilm moved the above from dbNetlist.cxx to DBpostProc.xx
+1.36  970828
+	  aec removed dbCellType::CoreUNKNOWN.  Masters w/ CoreUNKNOWN
+		now have instances of type dbType::CORE::CC
+	  aec added dbNetlist::getNumIOPads getNumAllPads getNumCoreCells
+1.37 == 2.0 
+      970829
+          ilm reworked stream output in dbEasyAccess.cxx so that 
+                   it does not confuse diff and human readers 
+          ilm removed definitions for ctainerCoords and ctainerIndices
+                   in dbEasyAccess.h
+2.1   970829
+          ilm modified output of RBPlacement
+          ilm added a hack with ABKDEBUG to DBpostProc.cxx and
+                 DB.cxx as a workaround for a bug in SunCC4.2 iropt
+          ilm added support for coreCellsEmbedding
+          ilm reworked some stream output for dbEasyAccess yet again
+2.2  970902
+          ilm  RBPlacement::RBPlacement(const DB&) does not populate rows
+//                  with cell Id numbers anymore. This is done with
+//                  RBPlacement::populateRowsWith(const Placement&)
+//                  (the code has to be exteneded to put IOPads intoIORows,
+//                  and a lot more)
+          ilm  mini3.def was created from mini2.def on 970104 by ilm
+               changing vertical rows to horizontal. Shortened all core
+               rows 10 times to fit into the die area
+          ilm  regression tests now use mini3 instead of mini2
+          ilm  removed ctainerRows, itRow, added ctainerRowsGlobal,
+//               ctainerRowsLocal, itRowLocal, itRowGLobal; similarly for
+//               tracks
+          ilm  added class dbTrack
+          ilm  added DB::Parameters
+          ilm  added class dbContex::_tracks and accessors
+
+2.2.1  970904
+	  aec  added sorting of pins and Mpins in cells,  Mcells, nets and
+		 netlist
+2.2.2  970906
+	  aec  added dbNet::_numOuts, _numInOuts, added getNumOut/In/InOut,
+		and sourcesBegin/End, sinksBegin/End, sourceSinksBegin/End
+		iterators
+          ilm  more hacks to circumvent the iropt O5 problem
+                 (DBpostProc.cxx, dbCell.*, dbDefines.h)
+2.2.3  970907
+	  aec  added sorting of eqClasses, moved findLEQ/EEQ functions from
+		dbNetlist.h to dbNetlist.cxx
+2.2.4  970908
+	  aec  changes and bug fixed to extpin/pad/pin directionality.
+		modified sorting order to put unknown pins/cells last
+2.3    970908
+	  aec  changed halfPerim eval function, and added one for a single net.
+2.4    970911  
+	  aec  changed halfPerim eval function.  Updated MST to cleaner
+			orientation code.
+	  aec  changed processLGC to make case-insensative changes
+	  aec  added dbContext::rowsBegin(), rowsEnd()
+2.5    970917
+          ilm  moved everything associated with dbIntervals to the Placement
+                     package: now you need to #include "interval.h" which
+                     defines class Interval
+          pat  fixed a bug in RBPlacement test ctor
+2.6    970922
+	  mro  changed dbNetlist LEQ and EEQs..they now do not contain 
+		EQs of size 1. A temp vector with just the single master cell
+		is created.
+
+          pat  added Rectangle dbMasterCell::reOrientRec
+               (const Rectangle& rec, const Orientation& orien) const;
+               was added that transforms a rectangle (e.g. a dbLayerGeom
+               obstacle or port) given in masterCell coordinates to
+               coordinates relative to the lower-left corner of the instance
+               cell in its given orientation.  
+
+               The RBPlacement constructor now splits subRows according to
+               special net geometry.  Whenever a special net dbLayerGeom wiring
+               element intersects a subRow, the subRow is split in two, so
+               that no subRow intersects any special net wiring.
+
+               There is now a real RBCPlacement constructor that builds
+               subRow column objects.  (Probably no one uses this but me.)
+
+               The dbEasyAccess populate functions for _whitespace and 
+               _portLocations have been upgraded to take cell orientations 
+               into account when building these vectors.
+
+         ilm   Now placed pads and ext. pins are being fixed by DBpostProc
+               by defualt DB::_params.fixPlacedPads is responsible for 
+               this behavior
+               and can be changed
+ 2.7 970924
+         pat   finish RBCPlacement ctor, and other minor improvements
+	         to RBPlacement.cxx
+         ilm   added DB::getAuxName()
+ 2.8
+   970930 pat  erase subRow index vectors at start of 
+               RBPlacement::populateRowsWith, so legalizer can move cells around
+   970930 ilm  added RBPCoreSubrow::getSymmetry() const;
+   970930 pat  added findCoreRow, findSubRow findBothRows search functions,
+	       and RBPRowPtrs typedef
+   971004 pat  added missing lines to reOrientRec in dbCell.cxx
+   971006 ilm  added dbEasyAccess::_pin2CellIdx to cache indices of
+               containg cells for all pins
+               Note: this is not a Mapping (not injective)
+          ilm  added inspectors and dbEasyAccess::populatePin2CellIdx(),
+               the latter now called by dbEasyAccess::populate()
+          ilm  added dependency on the package StatzenPlotz
+                     (every user of DB should do this now as well)
+          ilm  added dNetlist::printNetStats(ostream&) and
+                     dNetlist::printNetStats()   (prints to cout)
+          ilm  added a call to db.getNetlist().printNetStats() in main0.cxx
+                     and changed regression tests
+ 2.8.1
+   971007 pat  added getSpacing to RBPSubRow in RBPlacement.h
+   971009 mro  adapted to the new version of ABKCommon
+
+ 2.9
+   971018 mro  hooked up ParserLEFDEF
+
+ 2.9.1
+   971023 mro  changed dbMasterCellType direct ctor to remap
+               ENDCAP to PAD, as string-based ctor had already done.
+
+ 2.10
+   971110 mro  removed the ParserLEFDEF subdirectory, making
+               it a separate project parallel to ParserLEFDEFq
+
+ 2.12
+
+   971129 pat  improved the portLocation vector building routine in
+               dbEasyAccess.cxx, which also required a couple new typedefs
+               in dbEasyAccess.h.  Also took an obsolete message out
+	       of RBPlacement.cxx, and brought the expected.out file
+	       up to date with these changes.
+
+   971130 ilm  added "prohibiting" copy-ctor and op= for dbMasterPin and dbPin
+
+   971130 ilm  ditto for dbMasterCell, dbCell and dbNet
+
+   971130 ilm  dbNetlist::evalHalfPerimCost() for nets is now returning
+               half-perim as double, as opposite to the whole BBox
+
+   971130 ilm  op<< setting a placement into DB now makes all locations valid
+
+   971130 ilm  added DB::evalHPWLcost() and DB::evalWHPWLcost()
+                      they assume valid placement in DB (e.g. do DB<<pl).
+                      Note that if, for speed, you don't need to check for
+                      valid placement every time (slow), you need to use
+                      dbNetlist::evalHalfPerimCost() and
+                      dbNetlist::evalWHalfPerimCost() directly.
+                    The new additions are goof for slow benchmarking only.
+
+   971130  ilm    corrected a bug in dbMasterCell:
+                   getOutdegree() actually returned _indegree
+           ilm  changed return type of dbMasterCell::getType()
+                  and dbCell::getType() to dbMasterCellType and dbCellType resp.
+           ilm  added getHeight(), getWidth(), getIndegree() and getOutdegre()
+                   for dbCell (they look up the master's params)
+           ilm  corrected a dozen const-correctness bugs in 
+                  wirelength cost evaluators in dbNetlist
+
+   971130  ilm  added DB::saveXYLineDrawing()
+                which plots cells as rectangles
+
+                to view the resulting "xy" file in gnuplot plot type 
+                    plot "filename.xy" with lines
+                  to produce a PS file (e.g. if you don't have an X terminal)
+                  type
+                    set terminal postscript
+                    set output   "myfile.ps"
+                  before issuing the plot command
+    
+           ilm  added main5.cxx which "plots an aux file"
+                (if it refers to a def with a valid placement)
+ 2.13 - 2.13.2
+
+  971205   ilm  pins are now reindexed after being sorted
+           ilm  dbTemporal has changed according to Max' requirements
+  971205   pat  fixed easyAccess._portLocations bug exposed by pin reindexing 
+  
+ 2.13.3
+  971208   mro  changed tie-breaker in CompareNetsByCellIndex
+  971209   mro  added CompareNetsByName class to sort special nets
+
+ 2.13.4
+           ilm  (noted by mro) commented out populatePortLocations().
+ 2.13.5
+  971213   mro  changed DB::saveDEF() so that it outputs the NETS section
+  971214   ilm  added DB::getNetlistForSurgery()
+  971214   ilm  publicized ("nationalized" ?) cells/pins in dbNet
+
+ 2.13.6
+  980105? aec? changes to dbPin::commonPin()
+ 2.13.7
+  980108  mro    constified inputs to CompareCellsByName
+  980108  mro    changed tiebreak in ComparePinsByDirAnName to cell name
+ 2.13.8
+  980118  mro    made dbContext dtor clean up tracks.
+
+ 2.14
+  980121  ilm   added optional thresholding to WL estimators
+                as well as IONetsOnly flag
+
+ 2.14.2 
+  980213   ilm  added dependancy on HGraph, class HGfromDB in dbHGr.h
+                and main6.cxx
+
+ 2.15
+  980217   pat added some missing cases to RBPSubRow constructions,
+               and some extra fields to other RBP* objects.  
+  980217    dv revamped interfaces (and added files) for Violation Reports
+               and orientation Sets. Added Files for placement of cells
+               with their orientation defined (in rows-based-placement).
+               files changed - dbSymOri.h, dbSymOri.cxx
+
+ 2.15.2
+  980219    dv Changed the interface of getViols to operator[] to return
+               one single violation at a time (in violationReport.{cxx,h}.
+               Also, removed _checkLegalization, removed _verbose
+
+ 2.16.3    mro made dbNetlist::postProcess() delete nets that it's
+               planning to erase from _nets (i.e those of degree
+               1 or 0).
+               Also made names passed to ctors for dbCell, dbNet and
+               dbSite, "const char*" instead of "char*"
+  980302   ilm changed a C-style cast to (unsigned) in dbEasyAccess.cxx 
+               to reinterpret_cast<unsigned>()
+           ilm moved #include <stdio.h> from dbNetlist.h to the *.cxx file
+
+ 2.17
+  980306    dv removed a class (orientedRBPlacement/ORBPlacement) and
+               moved its functionality to RBPlacement
+
+ 2.18
+  980308    dv added classes RBPWithCheckups, RBCellCoord4, and
+  			   restructured violationReport once again. Added files
+			   violations.{cxx,h}, RBPwithCheckups.h RBPWithCheckups.cxx
+ 2.19
+  980315   pat Rehack and ext. of changes in support of new optimization 
+               primitives and per-cell checking.
+               Rolled back violationReport.cxx to 2.17, except
+               left violations.h as separate header file, with
+               minor mods.  New header file RBPwCheckups.h
+               defines classes RBCellCoord4 and RBPwCheckups.
+               New file RBPwCheckups.cxx 
+               defines constructors and related methods.
+               New file RBCellChecking.cxx defines per-cell
+               legality checking methods. 
+               Added main8 to regression suite, to test per-cell
+               checking.
+               Added siteRoundup method and enhanced RBPlacement
+               constsructor to make sure subrows begin and end
+               on legal sites when subrows are split by special nets. 
+
+2.22
+  980503   aec changed CompareCellsByDir to correctly place Output cells
+	       ahead of InOut cells
+
+2.23
+  980506   ilm added hash tables for cell and net names to dbEasyAccess
+               (if you need non-const access, use cellIds to get non-const
+                pointers from dbNetlist checked out with 
+                getdbNetlistForSurgery)
+
+2.25
+  980601   aec added class CompareNetsByDirection and function dbCell::sortNets.
+	 	added postprocess sorting of nets on cells
+
+2.27
+  990117   s.m  added class RoutingElement, RoutedNet, dbMasterVia, and
+                 dbRoute for routing information (segments and vias)
+                added interface to populate dbRoute from LEF/DEF and
+                 update DB::saveDEF to save the routing information if
+                 it exists
+                added a new public member "route" in DB which holds the
+                 routing information (this is a type of dbRoute)
+                added STL container & iterator for dbMasterVia, RoutedNet,
+                and RoutingElement in dbTypes.h
+
+2.27.1
+  990211   s.m added DB::locatePin() for calculating the actual location
+               of the pin 
+               unconstify _masterViaIndex, layer1, layer2 in dbRoutingElement
+               and move layer1, layer2 to private member
+               added dbRoutingElement::getLayer1() and ...::getLayer2()
+               as the interface to get both _layer1 and _layer2
+
+2.27.3
+  990405   s.m remove the checking for pin outside cell bbox in
+               DB::locatePin() because for external pins, the actual
+               pin locations may be outside the cell bbox
+               
+2.28
+  990426   pmr changed dbTemporal.{h,cxx} according to the new scheme of things.
+               added populating functions (to be called by parser)
+               added internal structures for keeping timing data
+               added call to dbTemporal::postProcess() in DB:postProcessor()
+               added timing field in DB
+
+3.2
+  000512  ilm ported to CC5.0
+
+3.4
+  000929  ilm added DB::getFileNames() and its implementation
+                (it reports all filenames mentioned in the AUX file)
+          ilm fixed dbRoutingInfo.cxx to take care of \r
+3.4.1
+  001004  mro conditioned warnings in dbNetlist::processLGC() on
+              verbosity; put check in DBTest0.cxx to make sure
+              FixedGroupConstraint object exists before using it.
+3.7 
+  010721  ilm added dbSimpleTiming to dbEasyAccess
+3.8 
+  020824  ilm ported to g++ 3.1.1

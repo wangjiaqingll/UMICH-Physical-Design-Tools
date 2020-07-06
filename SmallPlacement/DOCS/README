@@ -1,0 +1,69 @@
+
+
+SmallPlacement Engines:
+
+
+
+Input:
+
+
+  2-D array of Points		_pinOffsets;
+	-indexed as [cellId][netId]
+	-for each net-cell connection, the offset of the pin is
+	 stored in this array.
+	-for cell/net combos that are not connected, _pinOffsets is
+	 Point(dbl_max, dbl_max)
+
+
+  vector<double>		_cellWidths;
+
+  vector<BBox>			_netTerminalBBoxes;
+	-for each net, this gives the BBox of its terminals
+
+  vector<PlacementRow>		_rows;
+	-PlacementRow has a bbox, and site info (spacing, width)
+
+Output:
+  smallPlacement engines are placements
+
+ // possibly output orientations, as well. if so, then it seems we need
+ //	to pass input about the legal orientations, etc. 
+//	- not using orientations ATM.
+
+
+
+Q&A:
+
+Q) should the placer put the cells into sites only, or just equally
+	distribute white-space? Should this block be over-filled, equally
+	distributed white-space deals with the situation better)
+
+A) this is an issue for the individual placer, not (nesc.) the interface.
+	The 'better' placers should put things in actual locations.
+	First, though, let's do equal white-space...it's simpler.
+
+
+Q) can we limit ourselves to cost functions that can be expressed
+	as net-vectors? (for placement, this would be BBox only, I think).
+
+A) at least for now, the only cost function is BBox.  One difficulty with
+	the above interface is that it passes only a BBox of all terminal
+	locations on a net..not the individual cell locs.  This would
+	make a cost function like RSMT impossible.
+
+
+
+Files:
+
+A Small Placement Problem consists of the following files:
+ - Small Placement Netlist (sln file)
+	o contains the net-cell pin offsets
+	o width of each cell
+
+ - Small Placement Context (plc file)
+	o bounding box of the terminals of each net
+	o bounding box and site spacing of each row
+
+
+
+

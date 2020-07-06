@@ -1,0 +1,30 @@
+#!/bin/csh -f
+
+#**************************************************************************
+#**
+#**    Copyright (c) 1995-1997 by ABKGroup, UCLA VLSI CAD Laboratory,
+#**    UCLA Computer Science Department, Los Angeles, CA 90095-1596 USA,
+#**    and by the Regents of the University of California.
+#**    All rights reserved.
+#**
+#**    No portion of this file may be used, copied, or transmitted for
+#**    any purpose, including any research or commercial purpose,
+#**    without the express written consent of Professor Andrew B. Kahng,
+#**    UCLA Computer Science Department, 3713 Boelter Hall, Los Angeles,
+#**    CA 90095-1596 USA.   Any copy made of this file must include this
+#**    notice.    ABKGroup and the Regents of the University of California
+#**    retain title to all copies of this file and/or its compiled
+#**    derivatives.
+#**
+#**************************************************************************/
+
+
+set DIFF=/usr/bin/diff
+set WC=/usr/bin/wc
+set PROG=dbTest 
+
+echo "" > new4e.out
+foreach i (~data/BENCH/AUX/*qp-q.aux ~data/BENCH/AUX/*xo-q.aux)
+  echo $i
+  nice -15 ${PROG}4 -f $i >> new4e.out
+end

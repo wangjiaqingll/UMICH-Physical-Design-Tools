@@ -1,0 +1,211 @@
+Observations on looking at designs using silicon engineer
+
+AZTEC
+
+The rows are immediately adjacent, with no channels.
+The pins are almost all small squarews towards the center of the
+cells, but not quite on a line, or symmetric.  The "top"/"bottom"
+exposure abstraction looks quite suspect.
+The long pin rectangles are almost all vertical.  Lots of connections are
+probably left/right in this design.
+No nets or special nets visible.
+
+AMD1
+
+TThis is a big design of a more conventional kind.  Cells are
+in regular rows with columns, and channels between the rows.
+Pins are interesting: there are broad power & ground pins along
+the top and bottom edge of every cell, with striped pins of
+odd patterns within the cells.  The pins look maze-like.  I suspect
+the pins are defined for internal electrical properties, rather than
+connection convenience, but I guess they can be connected anywhere.
+The obstructions cover most of the area not used by pins, and
+includes objects that look like internal wiring.
+
+REUDUCE50
+
+Standard cell rows with channels.  Power pins are along top and bottom
+edges
+of cells, but set back; also, all pins are squares scattered in the
+interior.  There appears to be nothing along the edges of the cell
+boundaries.  Wierd.  Some very large cells are missing one power pin,
+and have a larger shaded area, representing the obstructions.  In these
+cells, the pins go into the extended shaded area, beyond the ordinary
+bounds. 
+
+I don't know why some pins are red, and others blue.  It's the layer.  In
+this case, blue for M1, red for M2, green for M3.  It looks like in these
+standard cell designs, The signal pins are almost always blocked on thier
+home layer by the power/ground pins.  All routing must take place through
+vias up to another layer.  Check a routed example.
+
+quasiHP
+
+This is a standard cell layout much like reduce 50.  When routed, it
+is interesting to see that cell ports are all (almost?) on metal 1, while
+all routing takes place on M2 (vertical) and M3 (horizontal). The power
+bars make it impossible to do any inter-row routing on M1, while other
+obstructions make it impossible to do just about anything inside the cells
+on M1.  This is really a pretty simple model.  It also looks like wires
+are thicker than pins, often.  Because the feature size increases with the
+upper layers.  I'm guessing that minimum contact area is probably the
+size of the lowest layer features.  So, for alignment, we need no more
+than that extent.  Also, whitespace alignment probably doesn't count for
+anything in this kind of design, since there are no obstructions on the
+routing layers, and no vertical routing is feasible on M1 or poly.
+
+98.1.2  I routed this one using warp route (qhproute.def) and it
+turns out that metal3 can route both horizontally and vertically.
+Horizontal dominates, but... well, this is strange.  In most of
+the core m2 is vertical and m3 is horizontal except for very small
+jogs.  m1 is almost unused, except for short runs, and some channel
+wires.  But in one corner, where wiring is sparse, m2 is mostly
+horizontal, and m3 is mostly vertical.  Why?  Not quite, m2 is
+still vertical as well.  I guess if the usage is sparse enough,
+then warp route will go any direction it wants, and in this
+case it mostly needs to go vertical.
+
+INTEL
+
+It looks like a standard cell design where the inter-row spacing is not
+only eliminated, but the cells actually overlap, up to the power pin on one
+side (or is it ground?) and the other pin not quite touching on the other.
+There are some features (blockages) defined in the overlap region as
+blockages on M1.  What do they mean? These overlap features are between the
+non-touching special pin bars.
+
+
+HITACHS
+
+This one has lots of huge cells: big ratio from smalles to largest.
+Also, it looks like there are lots of features on the first two
+layers, not just metal one.  The whole inside of each cell is
+blocked on one of these two layers.  All of the first (AG1) layer pins are
+little squares right on the edge, while most of the rest of the edge region
+is a fat stripe pin on the second layer (AG2).  My guess is that power is
+going on layer 2, while the logic is inside and under.   There are also
+regularly spaced little square pins in the central portion.  My guess:
+signal pins from the logic.  Probably this definition is meant to hide
+internals, on the assumption that all routing is going to happen
+(vertically) on the third layer.  Try wiring?
+
+OK, spent nearly two hours routing it.  Very interesting.  In fact,
+all horizontal wiring is going in the channels (no wonder they're so
+fat, and almost all vertical wiring is going on layer 3, except for
+a little going across the channels on layer 1.  The layer one routing
+tends to go just out to a via, then up to layer 2, and elsewhere.
+The layer 1 ports are just the little blue squares right on the edge.
+The only other signal ports are the squares right along the median line of
+the cells.  Alignment of the squares is definitely of value, and the
+only relevant obstructions are ports of other cells that might get
+in the way.... AND, whitespace on layer 1 is important w.r.t. vertical
+routing on layer 1.  
+
+Even in this case, the number of layer 1 wires going across layer 1
+whitespace in a row is almost negligible.  Even when layer 1 is clear, the
+router is sending wires over layer 3, probably because it does everything
+else on layer 3, and when layer 1 is white, there is less demand on layer 3
+as well, because there are no ports below.
+
+Looking in greater detail at this case, the wiring can be very ugly.  A
+single wire might jump back up and down from layer 1 to 3 through 2 several
+times, in weaving its way from one cell to another, since it has to go up
+to 3 to cross a row (unless it sneaks through a white channel on 1) but
+then has to go down to 2 to go sideways, and can avoid conjestion on 3 by
+crossing channels on 1.
+
+Once routed, it also becomes clear that wiring to pads only goes to the
+very small layer 1 ports on the pads, and nowhere else in their large
+expanse, so it should be relatively easy to deal with port pins as well.
+
+In this case, a shift of 2 is still almost nothing.  Some of these cells
+must be 100 long, with a port every 20 or so positions.  Others are only
+2 long, but they're not so common.  The interrow spacing is greater
+than the cell height, so these small cells don't look much like bricks at
+all. 
+
+I think I see one via that contacts its port with <= 1/3 of the port
+width.  Might be a mistake, because there's room to make it cover
+completely, like all the others do.
+
+It appears that the placement step exactly coincides with the track step,
+so that...of course; that only makes sense.  A shift of one is a move
+to the next track over.
+
+It also looks like the router does not minimize wire length as the only
+metric.  Some wires take extra jogs apparantly in order to evenly
+split the gap between obstacles on either side, even when a straight path
+is possible.  Why?  Is this good for crosstalk avoidance?  A general
+practice?
+
+
+MICRO
+
+This is my new test case.  The track spacing appears to be exactly the same
+as site spacing (of course) but half-way in between.
+
+
+-----------
+random ideas
+
+When cells have varying inter-cell spacing, maybe we can dynamically
+change the shift step to get larger shifts per step in sparse regions.
+But, this supposes that prior placement was probably not very good.
+
+I probably ought to scan for pins inside a single cell on the same net,
+and eliminate from consideration, since I can't do anything about it;
+Maybe what I want to do is scan cells on a net, rather than pins on
+a net.
+
+Maybe when there are more than 3 cells on a net, I should just forget
+about trying to do anything with it, unless the directionality
+strongly dominates (i.e. all other cells are in one direction).
+
+I need a new, more general definition of whitespace, and another of
+alignment,... and I suppose a better idea about wirelength as well.
+Let's see some individual nets.
+
+Q1: are pin alignment and wirelength the same?  If not, can I make my
+metrics orthagonal, and useful? 
+
+  When pins are far apart, aligning them may not result in the shortest
+route if there are intervening obstacles.  And, those intervening obstacles
+may be congestion on the routing layers that is difficult for the detailed
+placer to anticipate.  But, maybe the detailed placer needs to anticipate
+routing congestion, if it is truely to do a good job for the placer. (Right
+now I'm looking at a situation where a wire crosses several rows to get to
+a pad port, and needs to take a slight jog just because of vertical wires
+passing between the intervening rows.)
+
+Can I improve my algs behavior in the face of great differences in cell
+sizes by setting limits to how much whitespace of any kind it worries
+about.  In other words, let's see.  Maybe:
+   a) some cells are so symmetric (almost) that we don't bother flipping
+   b) some cells can't be flipped (in their current site)
+   c) above a certain amount, maybe we just call the whitespace infinite,
+    and don't give any additional score.
+
+Can I sensibly decide to consider shifts that are not exhasutive in their
+range.  Like -5 -2 1 3 4 ?  So long as original is always included, we will
+never lose, but the idea is to gain additional alignment.  For just
+wirelength reduction, these large shifts might be a good idea, but for
+exact alignment, we may lose.  This could be an experiment.
+
+Maybe I can also decide to very shift locally.  I already do, in order
+to deal with giant cells.
+
+Another experiment would be to see how much giant cells move (if at all,
+especially regarding flips) in an improvemed placement (annealing?) then
+see if there's benefit to just assuming they are a fixed part of the
+landscape, and dealing with the other cells instead.  For example,
+
+HERE"s an IDEA:  Run several passes of the algorithm.  In the beginning, we
+only consider large cells.  Smaller cells are put into immutable blocks
+that can only be shifted and flipped together.  Then, in the next round we
+only consider smaller cells.  The big cells are considered fixed, and
+we just deal with small cells.  Dealing only with cells within a factor of
+2 in size might result in a much better situation.
+
+For some cell libraries, it might make sense to do horizontal
+alignment....Nah.  If this is of benefit, the wirelength reduction
+heuristic should point the same way.

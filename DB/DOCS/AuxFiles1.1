@@ -1,0 +1,46 @@
+
+  AUX file format 1.1
+
+  ilm 970716
+
+  Contact:  imarkov@cs.ucla.edu
+
+----------------------
+
+  AUX files are to be used to support multifile formats (e.g. LEFDEF)
+  by storing references to several files together with format names.
+
+  1. Support for comments.
+     Lines starting with hash symbol (#) are ignored (considered comments).
+        It is recommended that every AUX file is annotated at least  with
+        creation date, author's email and, if produced by a program,
+        command line (in this case  author's email can be substituted
+        by the userId under which the program ran). Other information
+        (e.g. benchmark sizes) can be put into comments in aux files.
+
+
+  2. Each non-commented line of AUX file should start either with a 
+     one-word format name or a one-word command. The second word
+     must be colon (:). 
+
+  3. Known format names include LEFDEF and LEFDEFLGC.
+     Users can freely introduce new format names provided they
+     do not clash with existing format names and commands.
+
+  4. A list of all filenames for a given multifile foormat should
+     follow the colon on the same line. No extra filenames allowed.
+     Relative file names are considered from the directory of the
+     aux file, unless one or more CD commands (see 5.) were interpretted
+     before the format line.
+
+  5. Currently, the only supported command is CD. It takes one argument
+     which goes after the colon. All further filenames will be interpretted
+     as being within the directory set by CD command which understands
+     both relative and absolute directory names.
+
+  6. (partially implemented) All of the above must work on Unix systems and
+     on Windows systems (having different path delimiters conventions).
+
+     Aux files not using absolute path names should work both on
+     Unix and Windows systems w/o change in most cases (i.e. aux readers
+     should convert path delimiters according to the host system type)

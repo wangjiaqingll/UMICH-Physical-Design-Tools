@@ -1,0 +1,29 @@
+
+ MetaPlacer 1.1  ILM Dec 1, 1999
+
+  -  created class MetaPlacer that implements most of code 
+     from former main0.cxx and main1.cxx; it automagically
+     detects different kinds of .aux files and instantiates
+     resp. datastructs
+  -  currently supported .aux formats are LEFDEF* and RowBasedPlacement
+  -  moved main0.cxx into main2.cxx and created a new main0.cxx
+  -  the  options are -help, -flip, -save, -doRowIroning
+     Currently cell flipping can only be done on LEFDEF input, 
+       you get an abkwarn if you request -flip on RowBasedPlacement
+  -  Files saved by -save are called out.pl and out.def
+
+ MetaPlacer 1.2  SNA Nov 30, 2000
+
+  -  added the call to rbplace.plot function in RBPlacement package
+  -  All the parameters of this function are now printed when Metaplacer
+     is invoked with -h options.
+
+ MetaPlacer 1.3  ILM Dec 7, 2000
+  -  added TESTS and regression
+
+ MetaPlacer 1.3.1 ILM Dec 9, 2000
+  -  -flip is on by default
+
+ MetaPlacer 1.4   ILM Dec 22, 2000
+  -  row Ironing is now on by default
+     -rowIroning changed to -noRowIroning

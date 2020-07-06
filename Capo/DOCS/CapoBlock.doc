@@ -1,0 +1,69 @@
+
+CapoBlock documentation
+
+981124		AEC
+
+
+I) Overview of class CapoBlock
+
+
+  -CapoBlock is a data storage class
+  -It represents a (rectangular) region of the layout area, and the 
+	cells/rows which are (will be) placed inside it
+  -the vertical boundries of a block are ALWAYS defined by the top and 
+	bottom of a rows   
+
+
+II) Significant data inside CapoBlock
+
+  vector<const dbRow*> _rows;		
+	_rows contains all rows in the db which the CapoBlock intersects
+	with.  Note that it does not contain all of each of these rows,
+	just the part of the row inside it's x-interval.
+	
+	_rows are sorted, first (top-to-bottom) by y, than then 
+	by x (left-to right).  
+
+	IMPORTANT: even though rows may have various orientations 
+	(FS, etc.), they do not flip around their origin, the way cells do.  
+	A FS row, and a N row with the same origin occupy the same 
+	layout area.
+
+	CapoBlock will sort the rows given to it in the ctor, and remove
+	any which lie outside its layout region.
+
+  BBox			_bbox;
+	the x min/max of the bbox is the interval passed to the ctor
+	the ymin/max is the bottom of the bottom-most row, and the
+	top of the top-most row the block contains. 
+
+  vector<unsigned> 	_cellIds;
+
+	The indicies of the nodes (movable or not) that are contained within
+	the block.  The indicies refer to nodeIds in Capo's netlist-level
+	HGraph (as it happens, they also corespond to cellIds in Capo's
+	DB)
+
+  Note that CapoBlocks do not contain nets.  The nets which intersect a
+  CapoBlock must be 'discovered' by iterating through the nodes in the block.
+
+  double		_capacity:
+	sum of area of all sites within the block
+
+  double		_totalCellArea;
+	sum of area of all cells within the block
+
+  double		_largestCellArea;
+	area of the alrgest cell in the block
+
+   char*		_name;
+	name of the block. names are assigned based on the hierarchy of
+	partitionings which produced the block 
+	(i.e. <designName>[V/H][0/1][V/H][0/1]...etc..assuming bi-partitioning
+	Note that CapoBlocks own the memory for their names.
+ 
+III) Services provided by CapoBlocks
+
+   Being a data storage class, CapoBlocks provide only inspectors.
+
+

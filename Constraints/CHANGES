@@ -1,0 +1,44 @@
+
+
+1.6  970730  ilm    added  SoftGroupConstraint and MultRectRegionConstraint
+                    rearranged *.h and *.cxx files
+                    some loops now go backwards for speed
+		    changed ordering of ctraints
+
+                    added  in bool BBox(BBox& bbx)  const to most classes
+1.8.1 970730-97081
+             ilm    reworked Constraints::compactify() 
+             ilm    added special acces to FixedType constraints
+	     ilm    added Constraints::getPermutation() which puts constrained
+                    cells first
+1.9.5 970815 ilm    added Constraints::allConstrSatisfied()
+             ilm    added support for O(1) test for fixed/fixedX/fixedY
+2.0   970815 ilm    added pullBack ctor for class Constraints and 
+                          corresp. methods in individual constraints
+             ilm    split realConstr.h into fxTypeConstr.h, regionConstr.h,
+                          otherConstr.h and *cxx files; users may now need
+                          to include allConstr.h in addition to constraints.h
+                          (regionConstr.h and otherConstr.h are not included
+                          by constraints.h)
+2.1   970823 ilm    changed all vector<bool> from bit_vector
+2.2   970825 ilm    added Placement re-association ctor to class Constraints
+             ilm    changed Constraints copy-like ctors to compactify if the
+                          argument was compactified
+             ilm    added Constraint.isFixedType()
+             ilm    added cloning with placement re-association to all
+                          individual Constraint classes
+2.3   970828 ilm    separated restriction from pull-back
+      970828 ilm    reimplemented restriction and added pull-back,
+                     both with partial inverse
+                     (restriction used sorting and binary_search)
+2.4   970907 ilm    added FIXEDONLY filter
+2.5   970923 ilm    added simplified ctors for FixedTypeConstraints
+2.6   971126 ilm    added Constraints::getFixedBBox() and corresp.
+                          methods in each FixedTypeConstraint
+      971121 ilm added "add-constraint with re-association"
+
+2.6.1 971216 mro virtual destructors in regionConstr.h are now
+                 defined in .cxx file; same for ~Constraint()
+2.8   000503 ilm ported to Sun CC5.0
+2.9   020824 ilm ported to g++ 3.1.1
+

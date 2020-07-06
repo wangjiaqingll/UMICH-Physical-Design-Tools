@@ -1,0 +1,105 @@
+This is a list of rules in lefparse.y where something might be done, but isn't
+The ones that start with * are rules where it IS handled, so they're not
+properly part of the list as described above.
+
+The ones that start with - are ones where I don't believe there's any
+place in the DB to put this info.
+
+A line starting with & means that the particular rule named is done,
+except possibly for something depending on rules it depends on, which
+will be listed indented.
+
+A line starting with ! is something that needs to be added.
+
+A line starting with ? means it's not clear what needs to be done.
+
+*case_stmt       (case sensitive or not)
+*units_stmt      (distance units only ones that matter)
+-dielectric_stmt (LEF 1-37, diel. const. of insulator) 
+-irdrop_stmt     ((LEF 1-38, IR drop calculation info)
+
+&macro_stmt
+    *macro_id DONE
+    &macro_body
+        &macro_class
+            &COVER,RING,BLOCK,CORE,PAD,ENDCAP  -done, except:
+                -macro_core_subclass (i.e. CORE {FEEDTHRU,TIEHIGH,TIELOW}
+                                      I don't think this is in DB).
+                -macro_endcap_subclass (i.e. ENDCAP {PRE,POST,
+                                                     TOPLEFT,
+                                                     TOPRIGHT,
+                                                     BOTTOMLEFT,
+                                                     BOTTOMRIGHT}
+                                        I don't think this is in DB).
+                *macro_pad_subclass (i.e. PAD {INPUT,OUTPUT,INOUT,
+                                               POWER,SPACER}) (DONE)
+        -FOREIGN ... (LEF 1-47; I don't think we can do anything)
+        -SOURCE  ... (same notation)
+        !leq_or_eeq (NEED)
+        !ORIGIN ... (NEED)
+        *macro_size
+        *symmetry
+        *site_id
+        -site_entry (LEF 1-45; this is the GE version)
+        &pin_stmt (see below)
+        &obs_stmt (see below)
+        ?timing_stmt (values in DB do not correspond 1-1)
+        -POWER... (LEF 1-58; no place to put it in DB.  Power consumption.)
+
+&pin_stmt
+    *pin_id
+    &pin_attr_list (see below)
+
+&pin_attr
+    -FOREIGN...
+    !LEQ (NEED)
+    *DIRECTION (I was wrong before when I thought this wasn't done)
+    *USE...
+    *SHAPE...
+    !MUSTJOIN... (NEED)
+    &port (done except noted facts on geometries; see below)
+    ? a whole bunch of timing info that doesn't correspond 1-1 with DB:
+        OUTPUTNOISEMARGIN,OUTPUTRESISTANCE,INPUTNOISEMARGIN,
+        POWER,LEAKAGE,CAPACITANCE,RESISTANCE,PULLDOWNRES,TIEOFFRES,
+        VHI,VLO,RISEVOLTAGETHRESHOLD,FALLVOLTAGETHRESHOLD,FALLTHRESH,
+        RISETHRESH,RISESATCUR,FALLSATCUR,MAXDELAY,CURRENTSOURCE,
+        IV_TABLES,SETUPTIME
+
+&obs_stmt (MACRO obstruction; done except noted facts on geometries below)
+
+&layer_geom
+    *layer
+    &gen_geom
+        &geom (geometry specified other than as a via)
+            *rect (ordinary rectangular geometry)
+            ? all the other ways of specifying them
+                   (i.e. path, polygon, iterated rectangle, iterated path,
+                    iterated polygon.  These will give warnings if they
+                    show up in any of our files)
+
+        ?via_geom (this is when you give the geometry by naming a via.
+                   I still don't know exactly what this means.  Right
+                   now it will give a warning.  Unfortunately we
+                   do have some cases of this.  We're not processing
+                   vias at all, so this would be some work to fix)
+
+
+
+?lef_step_pattern (seems to relate only to GE designs and via_geoms
+                   could be relevant if we're doing the latter)
+
+-spacing_stmt (same net spacing.  I don't think we have this in DB (?))
+
+*layer_stmt
+
+?via_stmt (we don't do anything with vias.  Could be necessary if
+           we need to use them for geometries)
+
+-viarule_stmt (LEF 1-30. I don't think the DB has any info for this)
+-nondefault_stmt  (LEF 1-25.  Nondefault regular wiring rules. Nothing in DB)
+-crosstalk_stmt  (LEF 1-32.  Nothing in DB)
+*lef_site_stmt (LEF 1-39.  Declares a site)
+-lef_array_stmt (LEF 1-40.  Only for GE designs)
+-orient   (everything that depends on it is either FOREIGN or GE (I think(?))
+
+

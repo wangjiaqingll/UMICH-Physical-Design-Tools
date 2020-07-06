@@ -1,0 +1,62 @@
+
+UCLAscript v0.03
+-- Scripting Support for UCLApack
+
+This package provides a Perl, Python or Tcl interface to UCLA P&R package
+(http://vlsicad.cs.ucla.edu/software/PDtools/).
+
+0. Software Requirement
+Depending on what you intend to build, you may need the following 
+packages.
+
+Perl5.0 or above  ,  http://www.perl.com/
+Python2.0 or above,  http://www.python.org/
+Tcl8.0 or above      http://www.scriptics.com/
+SWIG1.3a5,           http://www.swig.org/
+
+1. Build
+
+Unpack this package into UCLApack-37-010603/
+For example,
+
+cd UCLAscript
+#
+# Option -noSWIG is used when you don't have SWIG installed
+
+# for Perl
+perl Makefile.PL -perl [-noSWIG]
+make                     # Note no "perl" here!
+
+# for Python, 
+perl Makefile.PL -python [-noSWIG]
+make python
+
+# for Tcl
+perl Makefile.PL -tcl [-noSWIG]
+make tcl
+
+1.1 Include more APIs:
+   Edit h2i.pl after the line, '__END__;' 
+Put the header files you want to include in the interface,
+and recompile this package.
+ 
+2. Test
+
+cd path_to/UCLApack-37-001221/UCLAscript
+
+perl test_DB.pl
+# or
+python test_DB.py
+# or
+tclsh test_DB.tcl
+
+
+3. Author(s):
+   Pinhong Chen,  pinhong@eecs.berkeley.edu
+
+4. Version:
+   5/24, 2001, initial release
+   6/5,  2001, 2nd release, no SWIG is needed
+
+5. License: GPL
+

@@ -1,0 +1,107 @@
+
+ README for DB2.18
+ Contact: Igor Markov <imarkov@cs.ucla.edu>
+ Date:  March 8, 1997
+
+ Copyright: ABKGroup and UC Regents, see file COPYRIGHT
+ Authors: (design) Andy Caldwell, Andrew Kahng, Igor Markov
+          (code)   Andy Caldwell, Igor Markov, Mike Oliver, Paul Tucker
+                   and Devendra Vidhani 
+
+          Parsers by Wenyong Deng and Mike Oliver
+
+     OS and compilers supported : CC 4.2+ for  Solaris 2.5+,
+                               MSVC++5.0 for Windows NT4.0
+                                   (probably for Windows '95 as well)
+     compilers not supported : MSVC++4.x, g++ 2.7.2, CC 4.1
+
+   ******************  THIS IS THE SOLARIS DISTRIBUTION ***************
+
+
+ Libraries used : STL 2.01  (see STL note below), ABKCommon2.6.1
+                  Placement4.1, Constraints2.4
+
+ Formal C++ interface : DB.h
+
+ Linking interface: 
+   one static (libdb.a) or shared (libdb.so) library
+
+   NOTE:   there are unsually  complicated requirements related to the
+           use of parsers and other packages. While this is not a part
+           of DB linking interface, it makes project management using
+           DB very hard in practise. The simplest way to handle this is
+           to modify DB/Makefile.sample into your project Makefile by a minimal
+           set of changes. Namely
+
+               0) DB pathname has to be defined correctly
+               1) THISLIB shoul be your project library name
+               3) OBJ must list your project's
+                  *.o files to be included into the library
+
+            if I missed something or if the above does not work, email
+            to <imarkov@math.ucla.edu>
+
+ Test:
+         produce executable dbTest with "make test", then use 
+         script "regression"; correct output contains
+
+          Differences from precomputed results
+           0       0       0 diffs.notime
+
+         If you do not get zeros, look at the file diffs.notime
+         and if you think the differences are essential, 
+         email them to <imarkov@math.ucla.edu>
+
+ Installation notes : customize Makefile to your filesystem,
+		      Type make. This will build the libraries. 
+                      The shared library can not be
+		      moved from its initial location.
+
+  Purify note :        you may want to put
+
+suppress umr ...; Timer*
+suppress umr ...; lmCheckOut
+
+                     into your ~/.purify file because purify reports
+                     uninitialized memory reads in UNIX system calls.
+
+
+
+ STL note: you need an *adapted* version 2.01  970718) or higher. 
+            It is available (together with a testsuite) from
+            http://www.ipmce.su/people/fbp/stl/stlport.html. 
+            Extensive online documentation is available at
+            http://www.sgi.com/Technology/STL/
+            Links to tutorials can be found at
+            http://www.sgi.com/Technology/STL/other_resources.html
+
+
+ Synopsys: ABKGROUP/UCLA database to be used in VLSI CAD-related software
+           It will be populated by parser(s) kept as separate projects.
+           It defines two independent classes: DB and RBPlacement (row-based
+           placement), the latter can be constructed [essentially] from DB and
+           will be used by legalizing and detailed placers
+
+ Additional documentation : in DB/DOCS subdirectory
+
+ Consumers of the DB package are mentioned in ABKdepend2.0.ps (or higher)
+
+
+ Sample code :   for sample Makefile for projects using UCLA DB look at
+                     DB/Makefile.sample
+                 for netlist traversals look at dbNetlist::isConsistent()
+                     this, DB::postProcessor() and their callees have a lot
+                     of code good for samples (also see main3.cxx)
+                 for handling constraints, look at main?.cxx files in
+                     the Constraints package. Also, look at DB::postProcessor()
+                     where it does cell reordering
+                 for handling of mappings, permutations and subplacements,
+                     look at the Placement package, files mapping.{h,cxx} and
+                     subPlacement.{h,cxx}, plus applicable main?.cxx
+                     class Placement is defined in Placement/placement.h 
+                 for placement evaluators, see main4.cxx
+                 for drawing a cell placement, se main5.cxx
+
+ Changes : see the file DB/CHANGES
+
+ Future work : see the file DB/TODO

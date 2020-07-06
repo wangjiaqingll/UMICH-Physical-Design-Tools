@@ -1,0 +1,14 @@
+UCLA nodes 1.0 
+# Created      : Sun Oct 22 23:14:58 2000
+# User         : imarkov@nexus12.cs.ucla.edu (Igor Markov) 
+# Platform     : SunOS 5.7 sparc SUNW,Ultra-5_10 
+
+NumNodes :                7
+NumTerminals :            3
+p1 terminal
+p2 terminal
+p3 terminal
+a0
+a1
+a2
+a3

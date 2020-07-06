@@ -1,0 +1,161 @@
+This document describes RBPlacement's cell embed and extract functions.
+
+created by AEC, 990315   8:30 PM
+
+
+
+Overview:
+  RBPlacement's embed and extract functions provide an interface for removing
+cells from a (sub-range of a) subRow, receiving ordering and offset 
+information, and placing cells into a (sub-range of a) subRow, by providing
+ordering and optionally offset information.
+
+Extract functions REMOVE cells
+Embed functions   INSERT cells
+
+IMPORTANT:  
+
+- all 'location' values are OFFSETS.  Specifically:
+  [begin/end]Loc  is the (x)DISTANCE from the subrows XStart (left edge).
+  [begin/end]Site is the number of sites from the left most site..namely, 0.
+
+- Cells inclusion in a range is based on the cell's LEFT-EDGE
+  (location of its origin).
+
+- These ranges are NOT inclusive..that is, if a cell is located EXACTLY
+  at the end point, it is NOT in the range.
+
+
+Extract Functions:
+
+
+There are two extract functions, differing only in how offset information
+is presented. They are:
+
+void RBPlacement::extractCellsFromSR (RBPSubRow&        sr, 
+				      vector<unsigned>& cellIds,
+				      vector<double>&   offsets,
+				      double            beginOffset=0, 
+			              double            endOffset  =UINT_MAX);
+
+void RBPlacement::extractCellsFromSR (RBPSubRow&        sr, 
+				      vector<unsigned>& siteOffsets,
+				      vector<unsigned>& cellIds,
+				      unsigned          beginSite=0, 
+			              unsigned          endSite=UINT_MAX);
+
+Both functions POPULATE the cellIds and offsets vectors (any data in
+them when they are passed to these functions will be deleted).
+For both functions, cellIds will contain the id's of all cells, in order,
+contained given range in the subRow.  The actual range is used is:
+
+leftEdge  = min(beginOffset, sr.getXStart());
+rightEdge = max(endOffset  ,   sr.getXEnd());
+
+The default is the whole subrow. 
+
+Note that this modifies the subrow..it removes the cells from the subrow,
+and RBPlace no longer considers them to be placed, or in a subrow.
+They have been complete 'un-placed'.
+
+finally..if you are going to ignore the offsets entirely...the version
+producing doubles (offsets in terms of distance) is SLIGHTLY faster,
+as it involves no division, and the site-width version actuall calls
+the distance version, and translates the offsets.
+
+
+Embed Functions:
+
+
+There are three embed functions, differing in how offset information is
+provided (if at all).  they are:
+
+
+void RBPlacement::embedCellsInSR (  RBPSubRow& 		    sr, 
+				    const vector<unsigned>& cellIds,
+                                    const vector<double>&   offset);
+
+void RBPlacement::embedCellsInSR (  RBPSubRow&              sr, 
+				    const vector<unsigned>& cellIds,
+                                    const vector<unsigned>& siteOffsets);
+
+void RBPlacement::embedCellsInSR (  RBPSubRow&              sr, 
+				    const vector<unsigned>& cellIds,
+                                    unsigned                beginSite=0,
+				    unsigned                endSite=UINT_MAX);
+
+
+Embed functions place the cells in the given sub row.
+For the versions with offsets, RBPlacement will put the cells EXACTLY
+there..even if this should overlap, be off the end of the subrow, etc etc.
+If there are other cells between/below the cells being added, that is
+fine..there may be overlaps in the placment.  The cells will be in
+the correct order in the subrow.  Note that this means that the cells
+you embed may not be contiguous in the subrows listing of cells it
+contains.  Of course, if there are no cells in the range of your 
+insertions, the embeded cells will be contiguous in the final order.
+
+The third embed function does not take offsets as an argument.  This is
+likely to be the most commonly used version.  RBPlacement will place the
+cells with the specified range, with whitespace as evenly distributed
+as possible (note that this is different from evenly spaced left-edges,
+as cells have varying widths).  No part of any cell will extend beyond
+the range.  In the event of an overfilled range (more cell width than
+site width), there will be (uniformly distributed) overlap.
+
+Restrictions:
+
+-it should be the case that the offsets are in increasing order.
+The insertion functions are somewhat 'error tolerant' of this, however.  
+That is, if you have the following:
+
+cellIds ={1,2,3}
+offsets={0,10,5}
+
+the embed functions will actually insert the cells into the subRow in the
+order {1,3,2}, and at the specified offsets.  This will, however, take
+SLIGHTLY longer to process (more insertions into the middle of a vector),
+and is strictly speaking NOT supported behavior. Do not do this..it doesn't
+make a whole lot of sense, and I do not guarantee that all embed functions
+will, for all time, behave this way.
+
+-there is only one version of the function that does not take offsets.
+If you do not wish to have RBPlacement use the whole row, you must 
+specify the available range in SITES.  RBPlacement will ignore any
+other cells that should happen to be in this region..if there are any,
+there will likely be overlaps.  The final order of cells will be
+correct in all cases, though.
+
+
+
+Future Extensions:
+
+1) extract/embed functions for whole coreRows
+2) interface for giving 'hints' to the embed functions about offsets..
+
+
+PermuteCellsInSR function
+
+
+  This function allows specifying a new order for cells that are currently
+in a subrow.  The argument description is:
+
+RBPSubRow& sr			
+
+	SubRow in which to permute cells
+
+unsigned   firstCellOffset	
+
+	Permute cells, begining with the 'firstCellOffset'st cell
+
+vector<unsigned>& newCellOrder	
+
+	CellIds, in the order they should go in.  Note that the 
+	cellIds should match with the
+	'firstCellOffset'->('firstCellOffset'+newCellOrder.size()) 
+	cell Ids currently currently in the subrow.
+
+
+
+
+

@@ -1,0 +1,6 @@
+#!/bin/csh -f
+partTest7 -f ~data/BENCH/PartProb/AUX/ibm01+.aux > ibm01.stats
+partTest7 -f ~data/BENCH/PartProb/AUX/ibm02+.aux > ibm02.stats
+partTest7 -f ~data/BENCH/PartProb/AUX/ibm03+.aux > ibm03.stats
+partTest7 -f ~data/BENCH/PartProb/AUX/ibm04+.aux > ibm04.stats
+partTest7 -f ~data/BENCH/PartProb/AUX/ibm05+.aux > ibm05.stats

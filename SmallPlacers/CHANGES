@@ -1,0 +1,8 @@
+
+
+ver 2.0	990607	aec
+	moved to new architecture that uses netStacks equivlent
+    2.2 000510  ilm
+        ported to CC5.0
+    3.0 020824  ilm
+        ported to g++

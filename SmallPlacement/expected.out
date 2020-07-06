@@ -1,0 +1,377 @@
+TestCase 0
+ Reading PLN File TESTS/amd_C6.pln
+ Reading PLC File TESTS/amd_C6.plc
+ Reading PLA File TESTS/amd_C6.pla
+ Writing savedProb.pln
+ Writing savedProb.plc
+ Writing savedProb.pla
+ Writing savedProb.aux
+Writing savedProb.gpl
+UCLA pla 1.1 
+# Created      : Thu Nov 30 16:02:52 2000
+# User         : sadya@belka (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;) 
+# Platform     : Linux 2.2.15 #1 Thu Jun 1 10:47:16 EST 2000 i686 
+
+Cells : 6
+
+Cell    0 :     2400
+Cell    1 :     5280
+Cell    2 :     1440
+Cell    3 :     1920
+Cell    4 :     5280
+Cell    5 :     2400
+UCLA plc 1.1 
+# Created      : Thu Nov 30 16:02:52 2000
+# User         : sadya@belka (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;) 
+# Platform     : Linux 2.2.15 #1 Thu Jun 1 10:47:16 EST 2000 i686 
+
+Rows : 1
+Total Nets : 13
+Net BBoxes : 13
+
+Row 0 : 51218.5 206880 72583.2 210560 480
+Net    0 :    62380.8     192320    82335.5     269120
+Net    1 :    7137.32     163520    62812.4     240320
+Net    2 :    39617.8     210560    41537.8     210560
+Net    3 :    61852.4     220880    62332.4     221120
+Net    4 :    11800.5     125120    63292.4     221120
+Net    5 :    62860.8     192320    66460.8     192320
+Net    6 :    83119.6     335840    83119.6     335840
+Net    7 :    55152.9     105920    83368.8     163280
+Net    8 :    84123.1     259520    84123.1     259520
+Net    9 :    53952.9     105920    57361.9     163280
+Net   10 :    63100.8     192080    63100.8     192080
+Net   11 :    62380.8     177680    62380.8     177680
+Net   12 :    83691.6     210320    83691.6     210320
+UCLA pln 1.1 
+# Created      : Thu Nov 30 16:02:52 2000
+# User         : sadya@belka (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;) 
+# Platform     : Linux 2.2.15 #1 Thu Jun 1 10:47:16 EST 2000 i686 
+
+Cells : 6
+Nets : 13
+
+Net    0 :    0 (        720       1600 )
+
+Net    1 :    0 (       2155       1600 )
+
+Net    2 :    1 (       2400       1600 )
+
+Net    3 :    1 (       4560       1840 )
+
+Net    4 :    1 (       4080       1840 )
+
+Net    5 :    2 (        720       1600 )
+   3 (        960       1840 )
+   4 (       5040       1840 )
+
+Net    6 :    3 (       1080       1600 )
+
+Net    7 :    3 (       1680       1840 )
+
+Net    8 :    4 (       2640       1600 )
+
+Net    9 :    4 (       4560       1840 )
+
+Net   10 :    4 (       4080       1840 )
+
+Net   11 :    5 (        720       1600 )
+
+Net   12 :    5 (       2155       1600 )
+
+TestCase 1
+ Reading PLN File TESTS/pl_N8_E14_281.pln
+ Reading PLC File TESTS/pl_N8_E14_281.plc
+ Reading PLA File TESTS/pl_N8_E14_281.pla
+ Writing savedProb.pln
+ Writing savedProb.plc
+ Writing savedProb.pla
+ Writing savedProb.aux
+Writing savedProb.gpl
+UCLA pla 1.1 
+# Created      : Thu Nov 30 16:02:52 2000
+# User         : sadya@belka (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;) 
+# Platform     : Linux 2.2.15 #1 Thu Jun 1 10:47:16 EST 2000 i686 
+
+Cells : 8
+
+Cell    0 :      600
+Cell    1 :      600
+Cell    2 :      400
+Cell    3 :     1800
+Cell    4 :     2000
+Cell    5 :     1800
+Cell    6 :     1800
+Cell    7 :      400
+UCLA plc 1.1 
+# Created      : Thu Nov 30 16:02:52 2000
+# User         : sadya@belka (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;) 
+# Platform     : Linux 2.2.15 #1 Thu Jun 1 10:47:16 EST 2000 i686 
+
+Rows : 1
+Total Nets : 14
+Net BBoxes : 12
+
+Row 0 : 24025.8 46070 34135.4 49640 200
+Net    1 :    29180.6    52592.5    40460.2      75400
+Net    2 :    30070.6      44460    30070.6      44460
+Net    4 :    29180.6    52592.5    29580.6    52592.5
+Net    5 :          0      52470    30735.6      53375
+Net    6 :    29550.6      44540    30640.6      52172
+Net    7 :    29535.6      52620    93464.7      53980
+Net    8 :          0      54145          0      54145
+Net    9 :    29180.6      68555    29227.6    68767.5
+Net   10 :    30747.6      55590    30747.6      55590
+Net   11 :    29610.6      52360    29610.6      52360
+Net   12 :    29210.6      52840    29210.6      52840
+Net   13 :    28761.2          0     154120      45020
+UCLA pln 1.1 
+# Created      : Thu Nov 30 16:02:52 2000
+# User         : sadya@belka (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;) 
+# Platform     : Linux 2.2.15 #1 Thu Jun 1 10:47:16 EST 2000 i686 
+
+Cells : 8
+Nets : 14
+
+Net    0 :    0 (        377     1747.5 )
+   4 (        930     1787.5 )
+
+Net    1 :    0 (        500     1847.5 )
+   1 (        500     1847.5 )
+
+Net    2 :    0 (        100     1847.5 )
+   1 (        100     1847.5 )
+   2 (        100     1702.5 )
+
+Net    3 :    1 (        377     1747.5 )
+   4 (        100       1755 )
+
+Net    4 :    2 (        300     1857.5 )
+
+Net    5 :    3 (        990       1535 )
+   4 (       1655       1725 )
+
+Net    6 :    3 (        130       2095 )
+   4 (       1560       1427 )
+
+Net    7 :    3 (        500       1787 )
+   4 (        455       1875 )
+
+Net    8 :    4 (       1870       1600 )
+
+Net    9 :    5 (        990       1535 )
+   6 (        130       2095 )
+
+Net   10 :    5 (        130       2095 )
+
+Net   11 :    6 (        990       1535 )
+
+Net   12 :    7 (        300     1857.5 )
+
+Net   13 :    7 (        100     1702.5 )
+
+TestCase 2
+ Reading PLN File TESTS/pl_N8_E18_591.pln
+ Reading PLC File TESTS/pl_N8_E18_591.plc
+ Reading PLA File TESTS/pl_N8_E18_591.pla
+ Writing savedProb.pln
+ Writing savedProb.plc
+ Writing savedProb.pla
+ Writing savedProb.aux
+Writing savedProb.gpl
+UCLA pla 1.1 
+# Created      : Thu Nov 30 16:02:53 2000
+# User         : sadya@belka (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;) 
+# Platform     : Linux 2.2.15 #1 Thu Jun 1 10:47:16 EST 2000 i686 
+
+Cells : 8
+
+Cell    0 :     1800
+Cell    1 :     1800
+Cell    2 :      400
+Cell    3 :      400
+Cell    4 :     1000
+Cell    5 :     1600
+Cell    6 :      600
+Cell    7 :     2000
+UCLA plc 1.1 
+# Created      : Thu Nov 30 16:02:53 2000
+# User         : sadya@belka (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;) 
+# Platform     : Linux 2.2.15 #1 Thu Jun 1 10:47:16 EST 2000 i686 
+
+Rows : 1
+Total Nets : 18
+Net BBoxes : 17
+
+Row 0 : 67836.4 61880 78354.8 65450 200
+Net    0 :      72679      24450      72679      24450
+Net    1 :    73195.6      62220    73995.6      78075
+Net    2 :    73202.6      68492    74655.6      78200
+Net    3 :    73202.6      68540    74365.6      78515
+Net    4 :    73202.6    68932.5    73408.1    75382.5
+Net    5 :    29210.6    65512.5    50614.6      78680
+Net    6 :    59222.3      62140    74245.6      75400
+Net    7 :    73965.6    68992.5    73965.6    68992.5
+Net    9 :    73195.6      62140    74085.6      75425
+Net   10 :    73600.6      71600    73600.6      71600
+Net   11 :    73195.6      62095      84003      75450
+Net   12 :    64954.5      62535    74365.6      78210
+Net   13 :    64961.5      78060    64961.5      78060
+Net   14 :    73595.6      58740    73785.1    75372.5
+Net   15 :    29210.6      46550    29210.6      46550
+Net   16 :    73195.6    71972.5    73595.6      78200
+Net   17 :      72649      39750    73795.6    75272.5
+UCLA pln 1.1 
+# Created      : Thu Nov 30 16:02:53 2000
+# User         : sadya@belka (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;) 
+# Platform     : Linux 2.2.15 #1 Thu Jun 1 10:47:16 EST 2000 i686 
+
+Cells : 8
+Nets : 18
+
+Net    0 :    0 (       1667       1445 )
+
+Net    1 :    0 (        147       1490 )
+   7 (       1655       1725 )
+
+Net    2 :    0 (        530       1615 )
+   5 (        470       1615 )
+   7 (        100       1755 )
+
+Net    3 :    0 (       1270       1930 )
+   7 (       1560       1427 )
+
+Net    4 :    0 (        900       1787 )
+
+Net    5 :    1 (        990       1535 )
+
+Net    6 :    1 (        130       2095 )
+
+Net    7 :    1 (        500       1787 )
+
+Net    8 :    2 (        300     1857.5 )
+   3 (        300     1857.5 )
+   4 (        100       1925 )
+
+Net    9 :    2 (        100     1702.5 )
+   3 (        100     1702.5 )
+
+Net   10 :    4 (        655     1827.5 )
+
+Net   11 :    4 (        687       1900 )
+   5 (       1150       1625 )
+
+Net   12 :    4 (        372     1647.5 )
+
+Net   13 :    6 (        377     1747.5 )
+
+Net   14 :    6 (        100     1847.5 )
+
+Net   15 :    7 (       1870       1600 )
+
+Net   16 :    7 (        455       1875 )
+
+Net   17 :    7 (        930     1787.5 )
+
+TestCase 3
+ Reading PLN File TESTS/pl_N8_E20_695.pln
+ Reading PLC File TESTS/pl_N8_E20_695.plc
+ Reading PLA File TESTS/pl_N8_E20_695.pla
+ Writing savedProb.pln
+ Writing savedProb.plc
+ Writing savedProb.pla
+ Writing savedProb.aux
+Writing savedProb.gpl
+UCLA pla 1.1 
+# Created      : Thu Nov 30 16:02:53 2000
+# User         : sadya@belka (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;) 
+# Platform     : Linux 2.2.15 #1 Thu Jun 1 10:47:16 EST 2000 i686 
+
+Cells : 8
+
+Cell    0 :      600
+Cell    1 :     1800
+Cell    2 :     1000
+Cell    3 :      600
+Cell    4 :     1000
+Cell    5 :     1800
+Cell    6 :      600
+Cell    7 :     1800
+UCLA plc 1.1 
+# Created      : Thu Nov 30 16:02:53 2000
+# User         : sadya@belka (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;) 
+# Platform     : Linux 2.2.15 #1 Thu Jun 1 10:47:16 EST 2000 i686 
+
+Rows : 1
+Total Nets : 20
+Net BBoxes : 16
+
+Row 0 : 87671.2 14110 98217.5 17680 200
+Net    0 :    93044.3       4620    93449.3       5070
+Net    1 :    20074.2      17990      72726      42840
+Net    2 :      63101    20822.5     103747    46302.5
+Net    4 :      77450          0      77450          0
+Net    5 :    93203.4    17597.5     148095    39642.5
+Net    6 :    93790.4    17597.5     104583      39895
+Net    8 :      81550          0    94770.4      36550
+Net   10 :      86470          0     123387      17510
+Net   11 :      83395          0     104424      11050
+Net   12 :     103939       4680     104424      17370
+Net   13 :    51060.4          0    93844.3      20580
+Net   14 :    93091.3       7525     104704      20490
+Net   15 :    83207.4      11050    93633.4    30502.5
+Net   16 :    40180.2      10925    93250.4      42930
+Net   17 :    93044.3       7510    93449.3       7960
+Net   19 :    93934.3      20490    93934.3      20490
+UCLA pln 1.1 
+# Created      : Thu Nov 30 16:02:53 2000
+# User         : sadya@belka (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;) 
+# Platform     : Linux 2.2.15 #1 Thu Jun 1 10:47:16 EST 2000 i686 
+
+Cells : 8
+Nets : 20
+
+Net    0 :    0 (        377     1747.5 )
+
+Net    1 :    0 (        100     1847.5 )
+
+Net    2 :    1 (        990       1535 )
+
+Net    3 :    1 (        130       2095 )
+   5 (       1667       1445 )
+
+Net    4 :    2 (        655     1827.5 )
+
+Net    5 :    2 (        372     1647.5 )
+
+Net    6 :    2 (        687       1900 )
+
+Net    7 :    2 (        100       1925 )
+   3 (        377     1747.5 )
+
+Net    8 :    3 (        500     1847.5 )
+
+Net    9 :    3 (        100     1847.5 )
+   4 (        870     1927.5 )
+
+Net   10 :    4 (        107       1475 )
+
+Net   11 :    4 (        505       1475 )
+
+Net   12 :    4 (        700       2095 )
+
+Net   13 :    5 (        900       1787 )
+
+Net   14 :    5 (       1270       1930 )
+
+Net   15 :    5 (        530       1615 )
+
+Net   16 :    5 (        147       1490 )
+
+Net   17 :    6 (        377     1747.5 )
+
+Net   18 :    6 (        500     1847.5 )
+   7 (        990       1535 )
+
+Net   19 :    7 (        130       2095 )
+

@@ -1,0 +1,39 @@
+
+  Adding a new parser to DB (DB-parser API)
+
+  ilm 970719
+
+  Contact:  imarkov@math.ucla.edu
+
+----------------------
+  
+  Parsers are connected to the DB package by providing one method for class DB.
+  For [multi]file format XXX, it will be called DB::parserXXX()
+  (e.g. DB::parserLEFDEF()). Such methods have to be declared in DB.h
+  and called from DB.cc : either directly from DB::DB(const char * auxFileName)
+  w/o guranatees for validity of file names, or from DB::readXXX() 
+  (e.g. DB::readLEFDEF()). In the latter case DB::readXXX() needs to be 
+  declared in DB.h and defined in DB.cc. It will take the same file name 
+  arguments as parseXXX, check that the files exist/can be opened and then 
+  calls DB::parseXXX().
+
+  Each parser should be a separate project in a separate directory, not 
+  necessarily, but likely, a subdirectory of the DB project directory.
+  It depends on the DB project (uses its header files).
+  Each parser  should produce a static library libparserXXX.a
+  which will be linked against when producing libdb.so/libdb.a
+  (this hides parser inside DB and users only have to link against
+  libdb.so/libdb.a). As a consequence, DB Makefile will need to have 
+  hooks for each parser installed (in our Makefile, all places which
+  need to be changed to accomodate additional parser should be obvious,
+  if not, contact iml ;-)
+
+  The ParserXXX subdirectory in DB contains a template for starting a new
+  parser. One can copy it to a different directory and fill the empty
+  methods/classes.
+
+  Parsers will normally define class ParserXXX which will be made a 
+  friend to many DB classes (another "hook"). This class will be instantiated
+  within DB::parseXXX() and its methods will populate members of DB.
+
+

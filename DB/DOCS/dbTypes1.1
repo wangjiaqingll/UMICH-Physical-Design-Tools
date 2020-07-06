@@ -1,0 +1,159 @@
+//CREATED:  970817 AEC
+
+This is the canonical listing of types for cells and pins contained in
+dbNetlist.  
+
+
+
+1) MASTER TYPES: parsers need to set the types for Masters only..instances will
+	have their types set by the postProcessor.
+
+class dbMasterCellType
+{
+ 
+    enum MClass		//this will be set by parsers
+    {
+        COVER,
+        RING,
+        BLOCK,
+        CORE,
+        PAD,
+        ENDCAP,
+        EXTPIN,		
+        MCUNKNOWN
+    };
+		all the above are identical to MACRO CLASS in
+	LEF, with the exception of EXTPIN and MCUNKNOWN, which are
+	for the ExtPin FakedMasters and masters with unspecified class,
+	respectively.
+
+   
+   //valid only for MClass == PAD
+    enum PadSubClass	//this will be set by parsers
+    {
+	INPUT,
+	OUTPUT,
+	INOUT,
+	POWER,
+	SPACER,
+	PadUNKNOWN
+    };
+
+    //valid only for MClass == CORE
+    enum CoreClass	//this will NOT be set by parsers.
+			//this comes from the .lgc file
+    {
+        FLIPFLOP,
+        LATCH,
+        INVERTER,
+        BUFFER,
+        NAND,
+        NOR,
+        CoreUNKNOWN
+    };
+}
+
+
+	LEF's ENDCAP subtype is being ignored
+	LEF's CORE   subtype is being ignored
+
+
+
+class dbMasterPinType
+{
+    
+    enum Shape 
+    {
+	ShapeABUTMENT, 
+	ShapeFEEDTHROUGH, 
+	ShapeRING, 
+	ShapeUNKNOWN  
+    };
+
+    enum Use   
+    {
+	SIGNAL, 
+	ANALOG, 
+	POWER, 
+	GROUND, 
+	CLOCK, 
+	TIEOFF,		//note: only for MasterPins for ExtPins
+	UseUNKNOWN 
+    };
+
+    enum Dir   
+    {
+	OUT, 
+	IN, 
+	INOUT, 
+	OUTTRISTATE, 
+	DirFEEDTHROUGH, 
+	DirUNKNOWN
+    };
+
+}
+	UNKNOWN == not given in all cases.
+	all 3 should be set for each MasterPin (including MasterPins for
+	FakedMasters)
+
+
+
+  when processing an External Pin:
+	-set Shape, Use, and Dir in the FakedMasterPin.  
+	-DEF's PIN stmt. does not contain Shape, so it should be UNKNOWN.  
+	-External Pins can only have DIR == OUT, IN, INOUT, or DirFEEDTHROUGH.
+		(they can not be OUTTRISTATE)
+
+	-the FakedMasterCell should have MClass == EXTPIN
+
+
+
+
+2) instance Types:  These will be set by the postProcessor
+
+
+class dbCellType
+{
+ 
+    enum MacroType 
+    { 				(masterCell type)
+	MacroUNINITIALIZED, 	//default. parsers will set it to this.
+	IO,			//PAD and EXTPIN
+	BLOCK, 			//BLOCK
+	CORE,			//CORE
+	MacroOTHER, 		//COVER,RING and ENDCAP
+	MacroUNKNOWN		//UNKNOWN
+    };
+
+    enum IOType    
+    { 
+	PI, 			//PAD:PI or EXTPIN:FakedMasterPin:OUT or
+				//      EXTPIN:FakedMasterPin:OUTTRISTATE
+	PO, 			//PAD:PO or EXTPIN:FakedMasterPin:IN
+	PIO, 			//PAD:PIO or EXTPIN:FakedMasterPin:INOUT
+	POTHER,			//PAD:POWER or PAD:SPACER or 
+				//	EXTPIN:FakedMasterPin:DirFEEDTHROUGH
+	PUNKNOWN		//PAD:UNKNOWN EXTPIN:FakedMasterPin:UNKNOWN
+    };
+	IOType can be determined for EXTPINs from the FakedMasterPin.
+	Note that IOTypes directions are 'flipped' from the Master's
+		directions for EXTPINS.
+
+    enum CoreType  
+    { 
+	SC, 			//CORE:FLIPFLOP or CORE:LATCH
+	CC, 			//CORE:<all others>
+	CoreOTHER, 		//currently, nothing should be CoreOTHER
+    };
+}
+
+note: pin instances do not have a type
+
+
+as a general rule for instances, labels such as IN or OUT are relative 
+to the CELL.  Therefore, an OUT would be a source to a net, and an IN a sink.
+
+
+
+
+

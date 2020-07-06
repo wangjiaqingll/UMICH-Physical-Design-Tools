@@ -1,0 +1,150 @@
+This is a list of rules in defparse.y where something might be done, but isn't
+The ones that start with * are rules where it IS handled, so they're not
+properly part of the list as described above.
+
+The ones that start with - are ones where I don't believe there's any
+place in the DB to put this info.
+
+A line starting with & means that the particular rule named is done,
+except possibly for something depending on rules it depends on, which
+will be listed indented.
+
+A line starting with ! is something that needs to be added.
+
+A line starting with ? means it's not clear what needs to be done.
+
+*design_name
+*tech_name
+-array_name
+-floorplan_name
+*history
+?units (should we error-check against LEF?)
+
+//next two are together -- row_start is the new style, site_start the old
+&row_start 
+&site_start
+    *row_init //however no impossible value given for orientation, so
+              //we need to make sure previous orientations aren't getting
+              //carried over.  Shouldn't be possible since orientation is
+              //a required field
+    *row
+    ?site_step_pattern //only worry here: are we deciding correctly
+                       //between horizontal and vertical rows?  I
+                       //decide based on whether it says "n by 1"
+                       //or "1 by n" where n>1, not by "step x 0"
+                       //vs "step 0 y".  Furthermore if it says
+                       //"1 by 1" I assume it's horizontal and take
+                       //the x step even if it's zero.
+
+*die_area
+-pin_cap_rule (this is the DEFAULTCAP rule.  No place for it in DB
+               as things stand, but could influence timing-related
+               values that we do have).
+
+*pins  //I'll expand this out anyway for testing purposes
+       //remember to test both pins-before-nets and pins-after-nets
+    *pin_start
+    *ext_pin_net_opts
+        *direction_spec
+        *use_option
+        *special_opt
+        *ext_pin_layer_opt
+        *comp_type
+
+!tracks_rule
+
+-gcellgrid
+
+!via //This is kind of interesting -- the declarations appear
+     //to be redundant with the info already taken from LEF.
+     //should we override, error-check, what?
+     //The only reason we seem to need this is for special wiring.
+
+*regions_section // except for properties, which are not handled anywhere
+*pt
+*bbox
+
+&comps_section
+    *start_comps
+    &comp
+        &comp_start
+            *comp_id_and_name
+            !comp_netlist //Although this has a '!' I have no immediate
+                          //plans to add it, because it's not found
+                          //in any examples we have.  It's a net specified
+                          //in the comps section
+        &comp_options
+            -comp_generate //hopefully this is not in any of our
+                           //examples either.  I don't understand from docs
+                           //just how it's supposed to work.  I've added
+                           //a warning in case it shows.
+
+            -comp_source //not clear what this means either; don't
+                         //think it's in DB.  No warning.
+
+            *comp_type
+
+            ?weight      //This is not in DB, but maybe it should be?
+
+            -comp_foreign //We never do anything with "foreign"
+
+            *comp_region // except they aren't yet consolidated, if multiple
+                         // regions with same coords specified.
+                         
+&nets_section
+    *start_nets
+    &one_net
+        &net_and_connections
+            *net_start
+            *net_connection //ok except for:
+                ? "+ SYNTHESIZED"
+        &net_options
+            ?net_type paths //This gives wiring.  We'll need this
+                            //for special wiring; it's not implemented.
+
+            - "SCANFIX" //I don't even find this in the LEFDEF manual;
+                        // maybe it's obsolete?                      
+
+            - "XTALK"
+            - "NONDEFAULTRULE"
+            - "SOURCE"
+            - "ORIGINAL"
+            ? "WEIGHT"   //not in DB, but maybe should be?
+            - "PATTERN"
+            - "ESTCAP"
+            *use_option
+
+&snets_section //special nets
+               //these are almost parallel to regular nets, except
+               // i)   they have a few extra options (snet_width, snet_voltage
+               //      and snet_spacing), for which we have no place
+               //      in the DB anyway.
+               //
+               // ii)  We're going to be keeping track of their wiring;
+               //      this is not yet done (count this as a !)
+               //
+               // iii) The syntax for the wiring, according to the manual,
+               //      is slightly different: you specify a width instead
+               //      of (possibly) the keyword "TAPER".  However the
+               //      grammar currently seems to be written for special
+               //      wiring, not regular.  This could be a problem if
+               //      we have any examples with regular wiring.
+
+-scan_section  //scan chains; no place in DB
+
+*groups_section
+
+-constraint_section
+
+
+
+
+    
+
+            
+
+
+
+
+
+

@@ -1,0 +1,716 @@
+------------  Running test 0a...
+# Built on Dec 15 2003 at 16:51:15
+#  on Unix 
+#  from LDPartTest0.cxx and libraries  
+#  using GNU C/C++ 3.2.2 20030222 (Red Hat Linux 3.2.2-5) compiler 
+# Command line : LDPartTest0.exe -f TESTS/small.aux 
+
+ Multi-Level Partitioner Parameters : 
+   Partitioner Parameters: 
+   Verbosity levels : 3
+ For actions : 1,   For sys resources : 1,   For major stats : 1
+   Move manager           : FM            
+   Partitioning evaluator : NetCutWNetVec   
+   Solution generator     : RandomizedEngineers
+   Legalize only          : false
+   Use clip / early stop  : false/true
+   Print hill stats       : false
+   Max hill height factor : 2x
+   Max hill width         : 100%
+   Max num moves          : 0
+   Min pass improvement   : 0%
+   Max num passes         : 0
+   Randomized             : false
+   Uncorking              : 1
+   Do first LIFO Pass     : false
+   Allow Corking Nodes    : false
+   Allow Illegal Moves    : false
+   Tie Break On PinCounts : false
+   Wiggle terminals       : false
+   Save Move Log          : false
+   Use Weights            : false
+   Use Map Based Gain Cont: false
+ Flat partitioner              FM          
+ Use B&B at top level          false
+ Partition fuzziness:          0
+ Runs per clustering:          1
+ Solution pool on top level    3
+ Tolerance Multiple:           2
+ Tolerance Alpha:              0
+ Use Two Partitioner Calls     TopOnly
+ Max num passes at bottom:     0
+ Cluster to terminals:         false
+ Seed Top Level Solution:      false
+ V-cycling type:               Exclusive
+ vcNumFailures:                1
+ vcImproveRatio:               1
+ vc1ClusterRatio:              2
+ vc1FirstLevel:                200
+ vc1LevelGrowth:               2
+ vc2ClusterRatio:              1.3
+ vc2FirstLevel:                200
+ vc2LevelGrowth:               2
+ Pruning Percentage:           No Pruning 
+ Pruning Point:               30%
+ Net threshold (max net size): 0
+ Time limit (sec):             0
+ Clustering Parameters 
+Clustering Parameters
+ Clustering Type: HEM   
+ ClusterRatio:    1.3
+ LevelGrowth:     2.5
+ MaxNewClRatio:   9
+ MaxChildClRatio: 4.5
+ MaxClArea:       0
+ SizeOfTop:       200
+ RemoveDup:       0
+ WeightOption:    3
+ dontClusterToTerms 0
+
+solnGen RandomizedEngineers
+Reading TESTS/small.aux
+Opening TESTS/small.lef
+Opening TESTS/small.def
+LEF file TESTS/small.lef parsed
+DEF file TESTS/small.def parsed
+Opening TESTS/small.def for GCell
+DEF file TESTS/small.def parsed
+LEF/DEF pair read successfully
+Fixing 5 noncore components  ...
+Compactifying constraints ... 
+Starting postprocessor ... 
+  No degree 1 or 0 nets found
+  Sorting: 
+          - obstacles in master cells by xMin ... 
+          - master cells by name ... 
+          - cells by name ... 
+          - each net's cells ... 
+          - nets ... 
+          - special nets ... 
+          - masterpins ... 
+          - pins ... 
+          - each mastercell's masterpins ... 
+          - each cell's pins ... 
+          - each net's pins ... 
+          - masterCell/Pin Equiv. Classes ... 
+          - each net's cells by direction ... 
+          - each cell by placement status and type ... 
+          - nets on cells... 
+File seeds.in exists and will override all seeds, including hardcoded ones 
+  Sorting took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+  Reordering locations, constraints etc ... 
+ No RC-file name found in DB
+  Populating EasyAccess took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Postprocessor took  0.059 user, 1.0e-02 system, 0 real, 0.409 norm'd sec 
+Fixed   Group Constraint of size 5
+Consistency check took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Database setup took  0.059 user, 1.0e-02 system, 0 real, 0.409 norm'd sec 
+ HGraphWDimsFromDB: no kill-file name found in DB
+
+Problem too small for ML, running flat
+ Best Cost in one ML (1 starts):5   average :    5
+ Part Areas: 1.27536e+07 / 9.0912e+06
+ Pin balances :   8 / 7
+ One ML took            0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Net Cut:    5
+Part Areas: 1.27536e+07 / 9.0912e+06
+
+ Cut edge sizes :  Max: 3  Min: 2  Avg: 2.2
+     2: 4         3: 1     
+ Writing best.sol ... 
+# Created      : Mon Dec 15 23:12:18 2003
+# Platform     : Linux 2.4.20-24.9smp #1 SMP Mon Dec 1 11:25:17 EST 2003 i686 
+# User         : iamyou@ariane3.eecs.umich.edu (David Papa,4343 EECS,NotAvailable/Williams;SR0i;30) 
+# Memory usage : 5.97656Mb (peak)  6.04297Mb (estimate)
+# Run-time conversion to Ultra-1 @143.5/71.5MHz, SunProCC4.2/-O5 : 6.833333 
+
+UCLA sol 1.0 
+# Created      : Mon Dec 15 23:12:18 2003
+# User         : iamyou@ariane3.eecs.umich.edu (David Papa,4343 EECS,NotAvailable/Williams;SR0i;30) 
+# Platform     : Linux 2.4.20-24.9smp #1 SMP Mon Dec 1 11:25:17 EST 2003 i686 
+
+Regular partitions : 2
+Pad partitions : 5
+Fixed Pads : 5
+Fixed NonPads : 5
+    PAD_01 : b1 
+    PAD_02 : b0 
+    PAD_03 : b1 
+   PAD_VCC : b0 
+   PAD_VSS : b0 
+     /INV1 : b0 
+     /INV2 : b1 
+     /INV3 : b0 
+    /NAND1 : b1 
+    /NAND2 : b0 
+------------  Running test 0b...
+# Built on Dec 15 2003 at 16:51:15
+#  on Unix 
+#  from LDPartTest0.cxx and libraries  
+#  using GNU C/C++ 3.2.2 20030222 (Red Hat Linux 3.2.2-5) compiler 
+# Command line : LDPartTest0.exe -f TESTS/mini4l.aux 
+
+ Multi-Level Partitioner Parameters : 
+   Partitioner Parameters: 
+   Verbosity levels : 3
+ For actions : 1,   For sys resources : 1,   For major stats : 1
+   Move manager           : FM            
+   Partitioning evaluator : NetCutWNetVec   
+   Solution generator     : RandomizedEngineers
+   Legalize only          : false
+   Use clip / early stop  : false/true
+   Print hill stats       : false
+   Max hill height factor : 2x
+   Max hill width         : 100%
+   Max num moves          : 0
+   Min pass improvement   : 0%
+   Max num passes         : 0
+   Randomized             : false
+   Uncorking              : 1
+   Do first LIFO Pass     : false
+   Allow Corking Nodes    : false
+   Allow Illegal Moves    : false
+   Tie Break On PinCounts : false
+   Wiggle terminals       : false
+   Save Move Log          : false
+   Use Weights            : false
+   Use Map Based Gain Cont: false
+ Flat partitioner              FM          
+ Use B&B at top level          false
+ Partition fuzziness:          0
+ Runs per clustering:          1
+ Solution pool on top level    3
+ Tolerance Multiple:           2
+ Tolerance Alpha:              0
+ Use Two Partitioner Calls     TopOnly
+ Max num passes at bottom:     0
+ Cluster to terminals:         false
+ Seed Top Level Solution:      false
+ V-cycling type:               Exclusive
+ vcNumFailures:                1
+ vcImproveRatio:               1
+ vc1ClusterRatio:              2
+ vc1FirstLevel:                200
+ vc1LevelGrowth:               2
+ vc2ClusterRatio:              1.3
+ vc2FirstLevel:                200
+ vc2LevelGrowth:               2
+ Pruning Percentage:           No Pruning 
+ Pruning Point:               30%
+ Net threshold (max net size): 0
+ Time limit (sec):             0
+ Clustering Parameters 
+Clustering Parameters
+ Clustering Type: HEM   
+ ClusterRatio:    1.3
+ LevelGrowth:     2.5
+ MaxNewClRatio:   9
+ MaxChildClRatio: 4.5
+ MaxClArea:       0
+ SizeOfTop:       200
+ RemoveDup:       0
+ WeightOption:    3
+ dontClusterToTerms 0
+
+solnGen RandomizedEngineers
+Reading TESTS/mini4l.aux
+Opening TESTS/mini4.lef
+Opening TESTS/mini4.def
+LEF file TESTS/mini4.lef parsed
+DEF file TESTS/mini4.def parsed
+Opening TESTS/mini4.def for GCell
+DEF file TESTS/mini4.def parsed
+LEF/DEF pair read successfully (LGC file passed to postprocessor)
+Opening TESTS/mini4.lgc
+Parsing LGC file ... 
+Fixing 10 noncore components  ...
+Compactifying constraints ... 
+Starting postprocessor ... 
+  No degree 1 or 0 nets found
+  Sorting: 
+          - obstacles in master cells by xMin ... 
+          - master cells by name ... 
+          - cells by name ... 
+          - each net's cells ... 
+          - nets ... 
+          - special nets ... 
+          - masterpins ... 
+          - pins ... 
+          - each mastercell's masterpins ... 
+          - each cell's pins ... 
+          - each net's pins ... 
+          - masterCell/Pin Equiv. Classes ... 
+          - each net's cells by direction ... 
+          - each cell by placement status and type ... 
+          - nets on cells... 
+File seeds.in exists and will override all seeds, including hardcoded ones 
+  Sorting took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+  Reordering locations, constraints etc ... 
+ No RC-file name found in DB
+  Populating EasyAccess took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Postprocessor took  0.059 user, 1.0e-02 system, 0 real, 0.409 norm'd sec 
+ === Total of 3 spatial constraints : 
+ Rect. Region Constraint of size 3
+ Rect. Region Constraint of size 3
+Fixed   Group Constraint of size 10
+   *WARNING* spatial.constraints are not satisfied 
+Consistency check took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Database setup took  0.069 user, 1.0e-02 system, 0 real, 0.478 norm'd sec 
+ HGraphWDimsFromDB: no kill-file name found in DB
+
+Problem too small for ML, running flat
+ Best Cost in one ML (1 starts):3   average :    3
+ Part Areas: 2.73947e+12 / 2.73947e+12
+ Pin balances :   13 / 15
+ One ML took            0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Net Cut:    3
+Part Areas: 2.73947e+12 / 2.73947e+12
+
+ Cut edge sizes :  Max: 2  Min: 2  Avg: 2
+     2: 3     
+ Writing best.sol ... 
+# Created      : Mon Dec 15 23:12:18 2003
+# Platform     : Linux 2.4.20-24.9smp #1 SMP Mon Dec 1 11:25:17 EST 2003 i686 
+# User         : iamyou@ariane3.eecs.umich.edu (David Papa,4343 EECS,NotAvailable/Williams;SR0i;30) 
+# Memory usage : 5.95703Mb (peak)  6.02344Mb (estimate)
+# Run-time conversion to Ultra-1 @143.5/71.5MHz, SunProCC4.2/-O5 : 6.833333 
+
+UCLA sol 1.0 
+# Created      : Mon Dec 15 23:12:18 2003
+# User         : iamyou@ariane3.eecs.umich.edu (David Papa,4343 EECS,NotAvailable/Williams;SR0i;30) 
+# Platform     : Linux 2.4.20-24.9smp #1 SMP Mon Dec 1 11:25:17 EST 2003 i686 
+
+Regular partitions : 2
+Pad partitions : 10
+Fixed Pads : 10
+Fixed NonPads : 6
+FakedInstantiatedCellForNEXP1 : b0 
+FakedInstantiatedCellForNEXP2 : b1 
+FakedInstantiatedCellForSEXP1 : b1 
+FakedInstantiatedCellForSEXP2 : b1 
+      NIN1 : b0 
+      NIN2 : b0 
+     NOUT1 : b0 
+      SIN1 : b1 
+      SIN2 : b1 
+     SOUT1 : b1 
+      NOR1 : b0 
+      NOR2 : b0 
+      NOR3 : b0 
+      NOR5 : b1 
+      NOR6 : b1 
+      NOR7 : b1 
+------------  Running test 0c...
+# Built on Dec 15 2003 at 16:51:15
+#  on Unix 
+#  from LDPartTest0.cxx and libraries  
+#  using GNU C/C++ 3.2.2 20030222 (Red Hat Linux 3.2.2-5) compiler 
+# Command line : LDPartTest0.exe -f TESTS/quasiHPl.aux 
+
+ Multi-Level Partitioner Parameters : 
+   Partitioner Parameters: 
+   Verbosity levels : 3
+ For actions : 1,   For sys resources : 1,   For major stats : 1
+   Move manager           : FM            
+   Partitioning evaluator : NetCutWNetVec   
+   Solution generator     : RandomizedEngineers
+   Legalize only          : false
+   Use clip / early stop  : false/true
+   Print hill stats       : false
+   Max hill height factor : 2x
+   Max hill width         : 100%
+   Max num moves          : 0
+   Min pass improvement   : 0%
+   Max num passes         : 0
+   Randomized             : false
+   Uncorking              : 1
+   Do first LIFO Pass     : false
+   Allow Corking Nodes    : false
+   Allow Illegal Moves    : false
+   Tie Break On PinCounts : false
+   Wiggle terminals       : false
+   Save Move Log          : false
+   Use Weights            : false
+   Use Map Based Gain Cont: false
+ Flat partitioner              FM          
+ Use B&B at top level          false
+ Partition fuzziness:          0
+ Runs per clustering:          1
+ Solution pool on top level    3
+ Tolerance Multiple:           2
+ Tolerance Alpha:              0
+ Use Two Partitioner Calls     TopOnly
+ Max num passes at bottom:     0
+ Cluster to terminals:         false
+ Seed Top Level Solution:      false
+ V-cycling type:               Exclusive
+ vcNumFailures:                1
+ vcImproveRatio:               1
+ vc1ClusterRatio:              2
+ vc1FirstLevel:                200
+ vc1LevelGrowth:               2
+ vc2ClusterRatio:              1.3
+ vc2FirstLevel:                200
+ vc2LevelGrowth:               2
+ Pruning Percentage:           No Pruning 
+ Pruning Point:               30%
+ Net threshold (max net size): 0
+ Time limit (sec):             0
+ Clustering Parameters 
+Clustering Parameters
+ Clustering Type: HEM   
+ ClusterRatio:    1.3
+ LevelGrowth:     2.5
+ MaxNewClRatio:   9
+ MaxChildClRatio: 4.5
+ MaxClArea:       0
+ SizeOfTop:       200
+ RemoveDup:       0
+ WeightOption:    3
+ dontClusterToTerms 0
+
+solnGen RandomizedEngineers
+Reading TESTS/quasiHPl.aux
+Opening TESTS/quasiHP.lef
+Opening TESTS/quasiHP.def
+LEF file TESTS/quasiHP.lef parsed
+DEF file TESTS/quasiHP.def parsed
+Opening TESTS/quasiHP.def for GCell
+DEF file TESTS/quasiHP.def parsed
+LEF/DEF pair read successfully (LGC file passed to postprocessor)
+Opening TESTS/quasiHP.lgc
+Parsing LGC file ... 
+Fixing 76 noncore components  ...
+Compactifying constraints ... 
+Starting postprocessor ... 
+  Removing degree 1 and 0 nets ... 
+  Sorting: 
+          - obstacles in master cells by xMin ... 
+          - master cells by name ... 
+          - cells by name ... 
+          - each net's cells ... 
+          - nets ... 
+          - special nets ... 
+          - masterpins ... 
+          - pins ... 
+          - each mastercell's masterpins ... 
+          - each cell's pins ... 
+          - each net's pins ... 
+          - masterCell/Pin Equiv. Classes ... 
+          - each net's cells by direction ... 
+          - each cell by placement status and type ... 
+          - nets on cells... 
+File seeds.in exists and will override all seeds, including hardcoded ones 
+  Sorting took  0.01 user, 0.0e+00 system, 0 real, 0.058 norm'd sec 
+  Reordering locations, constraints etc ... 
+ No RC-file name found in DB
+  Populating EasyAccess took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Postprocessor took  0.08 user, 2.0e-02 system, 1 real, 0.468 norm'd sec 
+Fixed   Group Constraint of size 76
+Consistency check took  0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Database setup took  0.24 user, 3.0e-02 system, 1 real, 1.405 norm'd sec 
+ HGraphWDimsFromDB: no kill-file name found in DB
+
+Problem too small for ML, running flat
+ Best Cost in one ML (1 starts):17   average :    17
+ Part Areas: 2.36968e+10 / 2.27437e+10
+ Pin balances :   293 / 462
+ One ML took            0 user, 0.0e+00 system, 0 real, 0 norm'd sec 
+Net Cut:    17
+Part Areas: 2.36968e+10 / 2.27437e+10
+
+ Cut edge sizes :  Max: 46  Min: 2  Avg: 9.52941
+     2: 7         3: 3         5: 1         7: 1         9: 1     
+    14: 1        26: 1        32: 1        46: 1     
+ Writing best.sol ... 
+# Created      : Mon Dec 15 23:12:19 2003
+# Platform     : Linux 2.4.20-24.9smp #1 SMP Mon Dec 1 11:25:17 EST 2003 i686 
+# User         : iamyou@ariane3.eecs.umich.edu (David Papa,4343 EECS,NotAvailable/Williams;SR0i;30) 
+# Memory usage :  9.8125Mb (peak)  9.60938Mb (estimate)
+# Run-time conversion to Ultra-1 @143.5/71.5MHz, SunProCC4.2/-O5 : 5.857143 
+
+UCLA sol 1.0 
+# Created      : Mon Dec 15 23:12:19 2003
+# User         : iamyou@ariane3.eecs.umich.edu (David Papa,4343 EECS,NotAvailable/Williams;SR0i;30) 
+# Platform     : Linux 2.4.20-24.9smp #1 SMP Mon Dec 1 11:25:17 EST 2003 i686 
+
+Regular partitions : 2
+Pad partitions : 76
+Fixed Pads : 76
+Fixed NonPads : 200
+   along-1 : b0 
+  along-10 : b0 
+  along-11 : b0 
+  along-12 : b0 
+  along-13 : b0 
+  along-14 : b0 
+  along-15 : b0 
+  along-16 : b0 
+  along-17 : b0 
+  along-18 : b0 
+  along-19 : b0 
+   along-2 : b0 
+  along-20 : b0 
+  along-21 : b0 
+  along-22 : b0 
+  along-23 : b0 
+   along-3 : b0 
+   along-4 : b0 
+   along-5 : b0 
+   along-6 : b0 
+   along-7 : b0 
+   along-8 : b0 
+   along-9 : b0 
+       I17 : b0 
+       I18 : b0 
+       I20 : b0 
+       I21 : b1 
+       I22 : b1 
+       I23 : b1 
+       I30 : b1 
+       I31 : b1 
+       I32 : b0 
+       I33 : b1 
+       I38 : b1 
+       I39 : b1 
+       I40 : b1 
+       I41 : b1 
+       I51 : b1 
+       I52 : b1 
+       I53 : b1 
+       I54 : b1 
+       I55 : b1 
+    I62_0_ : b0 
+    I62_1_ : b0 
+    I62_2_ : b0 
+    I62_3_ : b0 
+    I62_4_ : b0 
+    I62_5_ : b0 
+    I62_6_ : b0 
+    I62_7_ : b0 
+    I64_0_ : b0 
+    I64_1_ : b0 
+    I64_2_ : b0 
+    I64_3_ : b0 
+    I64_4_ : b0 
+    I64_5_ : b0 
+    I64_6_ : b1 
+    I64_7_ : b1 
+    I65_0_ : b0 
+    I65_1_ : b0 
+    I65_2_ : b0 
+    I65_3_ : b0 
+    I65_4_ : b1 
+    I65_5_ : b1 
+    I65_6_ : b1 
+    I65_7_ : b1 
+    I65_8_ : b1 
+    I65_9_ : b0 
+       I67 : b0 
+       I68 : b0 
+       I69 : b1 
+       I70 : b1 
+    necorn : b1 
+    nwcorn : b1 
+    secorn : b0 
+    swcorn : b0 
+    brc/I0 : b1 
+    brc/I1 : b1 
+   brc/I10 : b1 
+   brc/I11 : b1 
+   brc/I12 : b1 
+   brc/I13 : b1 
+   brc/I14 : b1 
+   brc/I15 : b1 
+   brc/I16 : b1 
+   brc/I17 : b1 
+   brc/I18 : b1 
+   brc/I19 : b1 
+    brc/I2 : b1 
+   brc/I20 : b1 
+   brc/I21 : b1 
+   brc/I22 : b1 
+   brc/I23 : b1 
+   brc/I24 : b1 
+   brc/I25 : b1 
+   brc/I26 : b1 
+   brc/I27 : b1 
+   brc/I28 : b1 
+    brc/I3 : b1 
+   brc/I33 : b1 
+   brc/I34 : b1 
+   brc/I35 : b1 
+   brc/I36 : b1 
+    brc/I4 : b1 
+    brc/I6 : b1 
+    brc/I7 : b1 
+    brc/I8 : b1 
+    brc/I9 : b1 
+    dma/I0 : b1 
+    dma/I1 : b1 
+   dma/I10 : b1 
+   dma/I13 : b1 
+   dma/I14 : b1 
+   dma/I15 : b1 
+   dma/I16 : b1 
+   dma/I17 : b1 
+   dma/I18 : b1 
+   dma/I19 : b1 
+    dma/I2 : b1 
+   dma/I20 : b1 
+   dma/I21 : b1 
+    dma/I3 : b1 
+    dma/I4 : b1 
+    dma/I5 : b1 
+    dma/I6 : b1 
+    dma/I7 : b1 
+    dma/I8 : b1 
+    dma/I9 : b1 
+        I0 : b1 
+       I10 : b0 
+       I11 : b0 
+       I12 : b0 
+       I13 : b0 
+       I14 : b0 
+       I15 : b0 
+        I2 : b1 
+        I3 : b1 
+        I4 : b1 
+       I56 : b1 
+     lc/I0 : b1 
+     lc/I1 : b1 
+    lc/I10 : b1 
+    lc/I11 : b1 
+    lc/I12 : b1 
+    lc/I16 : b1 
+    lc/I17 : b1 
+    lc/I18 : b1 
+    lc/I19 : b1 
+     lc/I2 : b1 
+ lc/I21/I0 : b1 
+ lc/I21/I1 : b1 
+ lc/I21/I2 : b1 
+ lc/I21/I3 : b1 
+    lc/I22 : b1 
+    lc/I23 : b1 
+    lc/I24 : b1 
+    lc/I25 : b1 
+    lc/I26 : b1 
+    lc/I27 : b1 
+     lc/I3 : b1 
+     lc/I4 : b1 
+     lc/I5 : b1 
+     lc/I6 : b1 
+     lc/I7 : b1 
+     lc/I8 : b1 
+     lc/I9 : b1 
+ mux/hnl_0 : b0 
+ mux/hnl_1 : b0 
+mux/hnl_10 : b0 
+mux/hnl_11 : b0 
+mux/hnl_12 : b0 
+mux/hnl_13 : b0 
+mux/hnl_14 : b0 
+mux/hnl_15 : b0 
+ mux/hnl_2 : b0 
+ mux/hnl_3 : b0 
+ mux/hnl_4 : b0 
+ mux/hnl_5 : b0 
+ mux/hnl_6 : b0 
+ mux/hnl_7 : b0 
+ mux/hnl_8 : b0 
+ mux/hnl_9 : b0 
+ mux/I0_0_ : b0 
+ mux/I0_1_ : b0 
+ mux/I0_2_ : b0 
+ mux/I0_3_ : b0 
+ mux/I0_4_ : b0 
+ mux/I0_5_ : b0 
+ mux/I0_6_ : b0 
+ mux/I0_7_ : b0 
+    mux/I9 : b0 
+ rfc/I0/I0 : b0 
+ rfc/I0/I1 : b0 
+rfc/I0/I10 : b0 
+rfc/I0/I11 : b0 
+rfc/I0/I12 : b0 
+rfc/I0/I13 : b0 
+rfc/I0/I17 : b0 
+rfc/I0/I18 : b0 
+ rfc/I0/I2 : b0 
+ rfc/I0/I3 : b0 
+ rfc/I0/I4 : b0 
+ rfc/I0/I5 : b0 
+ rfc/I0/I6 : b0 
+ rfc/I0/I7 : b0 
+ rfc/I0/I8 : b0 
+ rfc/I0/I9 : b0 
+ rfc/I1/I0 : b0 
+ rfc/I1/I1 : b0 
+rfc/I1/I10 : b0 
+rfc/I1/I11 : b0 
+rfc/I1/I12 : b0 
+rfc/I1/I13 : b0 
+rfc/I1/I17 : b0 
+rfc/I1/I18 : b0 
+ rfc/I1/I2 : b0 
+ rfc/I1/I3 : b0 
+ rfc/I1/I4 : b0 
+ rfc/I1/I5 : b0 
+ rfc/I1/I6 : b0 
+ rfc/I1/I7 : b0 
+ rfc/I1/I8 : b0 
+ rfc/I1/I9 : b0 
+    rfc/I5 : b0 
+    rfc/I6 : b0 
+    rfc/I7 : b0 
+    sel/I0 : b1 
+    sel/I1 : b1 
+   sel/I17 : b1 
+    sel/I2 : b1 
+   sel/I25 : b0 
+   sel/I27 : b0 
+   sel/I28 : b0 
+    sel/I3 : b0 
+sel/I4/CMP10 : b1 
+sel/I4/CMP11 : b1 
+sel/I4/CMP12 : b1 
+sel/I4/CMP13 : b1 
+sel/I4/CMP14 : b1 
+sel/I4/CMP15 : b1 
+sel/I4/CMP16 : b1 
+sel/I4/CMP17 : b1 
+sel/I4/CMP18 : b1 
+sel/I4/CMP19 : b1 
+sel/I4/CMP20 : b1 
+sel/I4/CMP21 : b1 
+sel/I4/CMP22 : b1 
+sel/I4/CMP23 : b1 
+sel/I4/CMP24 : b1 
+sel/I4/CMP25 : b1 
+sel/I4/CMP26 : b1 
+sel/I4/CMP27 : b1 
+sel/I4/CMP28 : b1 
+sel/I4/CMP29 : b1 
+sel/I4/CMP30 : b1 
+sel/I4/CMP31 : b1 
+sel/I4/CMP32 : b1 
+sel/I4/CMP33 : b1 
+sel/I4/CMP34 : b1 
+sel/I4/CMP35 : b1 
+sel/I4/CMP36 : b1 
+sel/I4/CMP37 : b1 
+sel/I4/CMP38 : b1 
+sel/I4/CMP39 : b1 
+sel/I4/CMP40 : b1 
+sel/I4/CMP41 : b1 
+sel/I4/CMP42 : b1 
+sel/I4/CMP43 : b1 
+sel/I4/CMP44 : b1 
+sel/I4/CMP45 : b1 
+sel/I4/CMP46 : b1 
+sel/I4/CMP9 : b1 
+    sel/I5 : b1 
+    sel/I6 : b0 
+    sel/I7 : b1 
+    sel/I8 : b1 

@@ -1,0 +1,15 @@
+175a176,178
+> Reading TESTS/OddCut.aux
+>  Resulting cut is 11
+>  Max violations   0
+178c181
+<  Max violations   551384
+---
+>  Max violations   550384
+205,210d207
+<  Max violations   0
+< Reading TESTS/OddCut.aux
+<  Resulting cut is 11
+<  Max violations   0
+< Reading TESTS/problemH.aux
+<  Resulting cut is 90

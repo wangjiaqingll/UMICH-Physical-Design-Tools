@@ -1,0 +1,78 @@
+
+Subject: Re: pin alignment
+   Date: Thu, 04 Mar 1999 20:12:14 -0800
+   From: Paul Tucker <ptucker@cs.ucsd.edu>
+     To: Igor Markov <imarkov@CS.UCLA.EDU>
+     CC: ptucker@ucsd.edu
+
+Igor,
+
+I'm happy to tell you what I know, but it's been a little while
+since I thought about it, and if you tell me what you're thinking,
+it might help me to remember something pertinent.
+
+Roughly, pins turn out to have different properties from what
+I initially imagined, but maybe you've been involved with CAD
+long enough to have a good idea already.
+
+I found it helped to use the Silicon Engineer package to visually examine
+some of the test cases in ABKACES.  There are some surprising differences
+between cases.  For the most part, pins are rectilinear polygons in the
+interior of cells, which often have non-symmetric, non-convex shapes.  I
+believe connection can only be done to ports on pins, but the ports can
+also have significant extent.  So, the routing phase often has considerable
+choice as to where the wire connects with a pin.  This means that two cells
+often have multiple relative positions in which a wire can connect a pin on
+each without a jog.
+
+For detailed placement, I was trying to shift and flip cells so as to
+improve wirelength.  I didn't get a lot of improvement...probably because
+it just wasn't to be had.  And, I'm not sure that just reducing estimated
+wirelength was really the right thing to do either, since that reduction
+seemed to correspond to an increase in complaints from the router.  I think
+that some of the reduction was just coming from compaction: shifting cells
+towards the centers of the rows, which tended to reduce estimated
+wirelength.
+
+My eventual model for pin alignment involved preprocessing every cell
+to generate an interval sequence for its upper and lower edges
+that is an approximation of the x-dimension layout of ports inside.
+(Actually, one sequence pair for every "care about" pin.)
+Then, these sequences were manipulated to compute horizontal
+overlap of ports on pins on a single net.  Also, I think there
+was some consideration of the case below:
+   -------
+   |  A   |
+   -------
+     ---------
+    |   B     |
+    ----------
+  --------
+  |  C    |
+  --------
+If A and C have a pin on the same net, and B has a pin on a different
+net, and B's pin lies exactly between those of A and C, then B's pin
+is considered to block (at least in overlapping tracks) those
+of A and C.  A and C only score alignment on unblocked tracks.
+
+Maogang did something like this, but just focussed on a window of tracks,
+and tried to shift cells in the window to maximize the track alignment
+score. 
+
+As I recall, whitespace alignment turned out to be useless, and blocked
+tracks were of minimal effect, because almost all routing happens on upper
+layers where the cells have no obstructions, and most ports are large
+enough to give the router considerable flexibility.
+
+I've got several files of notes I wrote to myself in ~ptucker.
+They're just raw observations or rough sketches of ideas, but you
+might find them of interest.
+Try 
+    se.notes
+    se2.notes
+    pin.txt
+    pin1.txt
+
+Let me know if I can help further (as if this is any help ;-)
+
+- Paul

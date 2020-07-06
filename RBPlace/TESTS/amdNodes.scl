@@ -1,0 +1,280 @@
+UCLA scl 1.0
+# Created      : Thu Sep 30 21:31:47 1999
+# User         : caldwell@nexus10.cs.ucla.edu (Andrew Caldwell) 
+# Platform     : SunOS 5.7 sparc SUNW,Ultra-1 
+
+
+Numrows : 34
+
+CoreRow Horizontal
+ Coordinate   :       6240
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :         N 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :      16320
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :        FS 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :      25440
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :         N 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :      35040
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :        FS 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :      44640
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :         N 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :      53760
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :        FS 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :      63840
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :         N 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :      72960
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :        FS 
+ SubrowOrigin :        720 Numsites :        182
+End
+CoreRow Horizontal
+ Coordinate   :      83040
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :         N 
+ SubrowOrigin :        720 Numsites :        182
+End
+CoreRow Horizontal
+ Coordinate   :      92640
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :        FS 
+ SubrowOrigin :        720 Numsites :        182
+End
+CoreRow Horizontal
+ Coordinate   :     102240
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :         N 
+ SubrowOrigin :        720 Numsites :        182
+End
+CoreRow Horizontal
+ Coordinate   :     111360
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :        FS 
+ SubrowOrigin :        720 Numsites :        182
+End
+CoreRow Horizontal
+ Coordinate   :     121440
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :         N 
+ SubrowOrigin :        720 Numsites :        182
+End
+CoreRow Horizontal
+ Coordinate   :     130560
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :        FS 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     140640
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :         N 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     149280
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :        FS 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     159840
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :         N 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     168960
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :        FS 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     179040
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :         N 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     188640
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :        FS 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     198240
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :         N 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     206880
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :        FS 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     217440
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :         N 
+ SubrowOrigin :        720 Numsites :        191
+End
+CoreRow Horizontal
+ Coordinate   :     226080
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :        FS 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     236640
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :         N 
+ SubrowOrigin :        720 Numsites :        191
+End
+CoreRow Horizontal
+ Coordinate   :     255840
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :        FS 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     265440
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :         N 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     274560
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :        FS 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     284640
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :         N 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     292800
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :        FS 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     303840
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :         N 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     312480
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :        FS 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     323040
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :         N 
+ SubrowOrigin :        720 Numsites :        194
+End
+CoreRow Horizontal
+ Coordinate   :     332160
+ Height       :       3680
+ Sitewidth    :        480
+ Sitespacing  :        480
+ Siteorient   :        FS 
+ SubrowOrigin :        720 Numsites :        194
+End

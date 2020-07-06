@@ -1,0 +1,17 @@
+$X=6980;
+$Y=2980;
+print "Total blocks : 100\n";
+for($i=0; $i < 10; $i++)
+{
+    for($j=0; $j < 10; $j++)
+    {
+        print $X*$j-100;
+        print " ";
+        print $Y*$i-100;
+        print " ";
+        print $X*($j+1)-100;
+        print " ";
+        print $Y*($i+1)-100;
+        print "\n";
+    }
+}

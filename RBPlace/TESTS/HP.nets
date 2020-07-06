@@ -1,0 +1,1003 @@
+UCLA nets 1.0
+# Created      : Tue Sep 21 17:57:41 1999
+# User         : caldwell@nexus11.cs.ucla.edu (Andrew Caldwell) 
+# Platform     : SunOS 5.7 sparc SUNW,Ultra-5_10 
+
+NumPins : 755
+NetDegree : 2
+    brc/I0 O  : 130 1320
+    brc/I1 I  : 910 1440
+NetDegree : 2
+    brc/I1 O  : 2990 1440
+    brc/I0 I  : 390 960
+NetDegree : 2
+    brc/I2 O  : 2990 1440
+    brc/I0 I  : 910 1320
+NetDegree : 14
+        I2 O  : 520 1440
+    brc/I0 I  : 1170 1320
+   brc/I22 I  : 390 960
+mux/hnl_10 I  : 650 1440
+mux/hnl_11 I  : 650 1440
+mux/hnl_12 I  : 650 1440
+mux/hnl_13 I  : 650 1440
+mux/hnl_14 I  : 650 1440
+mux/hnl_15 I  : 650 1440
+ mux/hnl_8 I  : 650 1440
+ mux/hnl_9 I  : 650 1440
+    mux/I9 I  : 390 1320
+   sel/I25 I  : 910 1440
+   sel/I27 I  : 910 1440
+NetDegree : 7
+   brc/I20 O  : 260 1440
+    brc/I1 I  : 130 1320
+   brc/I12 I  : 130 1320
+   brc/I14 I  : 130 1320
+   brc/I15 I  : 130 1320
+    brc/I2 I  : 130 1320
+    brc/I3 I  : 130 1320
+NetDegree : 3
+    brc/I1 O  : 3250 1320
+    brc/I2 I  : 910 1440
+    brc/I4 I  : 130 1320
+NetDegree : 5
+        I3 O  : 260 1440
+   brc/I10 I  : 390 1320
+   brc/I13 I  : 130 1320
+   brc/I16 I  : 130 1320
+   brc/I20 I  : 390 1320
+NetDegree : 2
+   brc/I10 O  : 260 1440
+    brc/I9 I  : 130 1320
+NetDegree : 2
+   brc/I11 O  : 130 1320
+   brc/I12 I  : 910 1440
+NetDegree : 4
+   brc/I12 O  : 4290 1320
+   brc/I11 I  : 910 1080
+   brc/I13 I  : 910 1440
+   brc/I26 I  : 390 960
+NetDegree : 2
+    brc/I9 O  : 2730 1320
+   brc/I11 I  : 650 960
+NetDegree : 2
+   brc/I19 O  : 130 1320
+   brc/I12 I  : 3250 1200
+NetDegree : 32
+       I51 O  : 9750 65
+   brc/I13 I  : 3250 1200
+   brc/I14 I  : 3250 1200
+   brc/I15 I  : 3250 1200
+   brc/I16 I  : 1170 1560
+   brc/I19 I  : 650 960
+   brc/I24 I  : 1170 1560
+   brc/I25 I  : 1170 1560
+    brc/I9 I  : 1170 1560
+    dma/I1 I  : 4030 1200
+   dma/I13 I  : 4030 1200
+   dma/I15 I  : 4030 1200
+   dma/I17 I  : 4030 1200
+   dma/I19 I  : 4030 1200
+    dma/I2 I  : 4030 1200
+    dma/I6 I  : 4030 1200
+    dma/I8 I  : 4030 1200
+     lc/I0 I  : 910 1080
+     lc/I1 I  : 910 1200
+     lc/I2 I  : 910 1320
+ rfc/I0/I0 I  : 1300 1560
+ rfc/I0/I1 I  : 1300 1560
+ rfc/I0/I2 I  : 1300 1560
+ rfc/I0/I3 I  : 1300 1560
+ rfc/I1/I0 I  : 1300 1560
+ rfc/I1/I1 I  : 1300 1560
+ rfc/I1/I2 I  : 1300 1560
+ rfc/I1/I3 I  : 1300 1560
+    sel/I0 I  : 1170 1560
+    sel/I1 I  : 1170 1560
+    sel/I2 I  : 1170 1560
+    sel/I3 I  : 1170 1560
+NetDegree : 3
+   brc/I13 O  : 4290 1320
+   brc/I17 I  : 130 1320
+   brc/I18 I  : 650 960
+NetDegree : 3
+   brc/I14 O  : 4290 1320
+   brc/I15 I  : 910 1440
+   brc/I22 I  : 910 1320
+NetDegree : 2
+   brc/I21 O  : 260 1440
+   brc/I14 I  : 910 1440
+NetDegree : 2
+   brc/I14 O  : 3770 1440
+   brc/I23 I  : 650 960
+NetDegree : 2
+   brc/I15 O  : 3770 1440
+   brc/I22 I  : 1170 1320
+NetDegree : 2
+   brc/I15 O  : 4290 1320
+   brc/I23 I  : 910 1080
+NetDegree : 3
+   brc/I16 O  : 2730 1320
+   brc/I17 I  : 650 1440
+    brc/I9 I  : 910 1680
+NetDegree : 3
+   brc/I27 O  : 520 1440
+   brc/I16 I  : 910 1680
+       I32 I  : 650 65
+NetDegree : 9
+   brc/I17 O  : 520 1440
+ mux/I0_0_ I  : 1430 1320
+ mux/I0_1_ I  : 1430 1320
+ mux/I0_2_ I  : 1430 1320
+ mux/I0_3_ I  : 1430 1320
+ mux/I0_4_ I  : 1430 1320
+ mux/I0_5_ I  : 1430 1320
+ mux/I0_6_ I  : 1430 1320
+ mux/I0_7_ I  : 1430 1320
+NetDegree : 5
+   brc/I18 O  : 130 1320
+   brc/I21 I  : 390 1320
+       I11 I  : 130 1320
+       I12 I  : 130 1320
+       I14 I  : 130 1320
+NetDegree : 2
+    brc/I9 O  : 2340 1320
+   brc/I18 I  : 910 1080
+NetDegree : 3
+   brc/I28 O  : 260 1440
+   brc/I19 I  : 910 1080
+   brc/I27 I  : 130 1320
+NetDegree : 2
+    brc/I2 O  : 3250 1320
+    brc/I4 I  : 390 1320
+NetDegree : 7
+   brc/I22 O  : 130 1320
+rfc/I0/I10 I  : 650 960
+rfc/I0/I17 I  : 390 1320
+ rfc/I0/I4 I  : 130 1320
+ rfc/I0/I8 I  : 650 960
+ rfc/I0/I9 I  : 650 960
+    rfc/I7 I  : 650 960
+NetDegree : 3
+   brc/I23 O  : 130 1320
+     lc/I1 I  : 1430 1320
+    lc/I27 I  : 650 1440
+NetDegree : 4
+    brc/I8 O  : 1560 1200
+   brc/I24 I  : 130 1320
+   brc/I25 I  : 130 1320
+   brc/I28 I  : 390 1320
+NetDegree : 2
+   brc/I24 O  : 2340 1320
+   brc/I26 I  : 1170 1320
+NetDegree : 2
+   brc/I34 O  : 520 1440
+   brc/I24 I  : 910 1680
+NetDegree : 2
+   brc/I25 O  : 2340 1320
+   brc/I26 I  : 910 1320
+NetDegree : 2
+   brc/I33 O  : 520 1440
+   brc/I25 I  : 910 1680
+NetDegree : 2
+   brc/I26 O  : 130 1320
+   brc/I27 I  : 650 1440
+NetDegree : 2
+    brc/I4 O  : 910 1320
+    brc/I3 I  : 910 1440
+NetDegree : 2
+    brc/I3 O  : 3250 1320
+    brc/I8 I  : 390 1080
+NetDegree : 3
+   brc/I36 O  : 520 1440
+   brc/I33 I  : 130 1320
+   brc/I34 I  : 130 1320
+NetDegree : 3
+    I64_6_ O  : 9750 65
+   brc/I33 I  : 650 1440
+    sel/I1 I  : 910 1680
+NetDegree : 2
+   brc/I35 O  : 260 1440
+   brc/I34 I  : 650 1440
+NetDegree : 3
+    I64_7_ O  : 9750 65
+   brc/I35 I  : 390 1320
+    sel/I2 I  : 910 1680
+NetDegree : 7
+       I52 O  : 9750 65
+   brc/I36 I  : 130 1320
+    brc/I7 I  : 390 1320
+    brc/I8 I  : 910 960
+   sel/I17 I  : 390 1320
+    sel/I7 I  : 390 1320
+    sel/I8 I  : 390 1320
+NetDegree : 4
+    dma/I2 O  : 5070 1320
+   brc/I36 I  : 650 1440
+    dma/I5 I  : 130 1320
+       I33 I  : 650 65
+NetDegree : 2
+    brc/I6 O  : 260 1440
+    brc/I8 I  : 2990 1320
+NetDegree : 2
+       I54 O  : 9750 65
+    brc/I6 I  : 390 1320
+NetDegree : 2
+    brc/I7 O  : 260 1440
+    brc/I8 I  : 1950 1080
+NetDegree : 2
+        I4 O  : 260 1440
+    brc/I8 I  : 2730 1320
+NetDegree : 2
+    dma/I0 O  : 1170 1320
+    dma/I1 I  : 650 1440
+NetDegree : 4
+   dma/I17 O  : 5070 1320
+    dma/I0 I  : 650 960
+   dma/I18 I  : 650 1440
+   dma/I20 I  : 910 1080
+NetDegree : 3
+       I39 O  : 9750 65
+    dma/I0 I  : 650 1320
+    dma/I3 I  : 390 1320
+NetDegree : 3
+    dma/I4 O  : 260 1440
+    dma/I0 I  : 650 1200
+    dma/I7 I  : 650 1440
+NetDegree : 2
+    dma/I1 O  : 5070 1320
+   dma/I10 I  : 130 1080
+NetDegree : 9
+   dma/I14 O  : 130 1320
+    dma/I1 I  : 390 1320
+   dma/I13 I  : 390 1320
+   dma/I15 I  : 390 1320
+   dma/I17 I  : 390 1320
+   dma/I19 I  : 390 1320
+    dma/I2 I  : 390 1320
+    dma/I6 I  : 390 1320
+    dma/I8 I  : 390 1320
+NetDegree : 26
+       I55 O  : 9750 65
+    dma/I1 I  : 1170 1440
+   dma/I13 I  : 1170 1440
+   dma/I15 I  : 1170 1440
+   dma/I17 I  : 1170 1440
+   dma/I19 I  : 1170 1440
+    dma/I2 I  : 1170 1440
+   dma/I21 I  : 130 1320
+    dma/I6 I  : 1170 1440
+    dma/I8 I  : 1170 1440
+        I3 I  : 390 1320
+ lc/I21/I0 I  : 130 1320
+ lc/I21/I1 I  : 130 1320
+ lc/I21/I2 I  : 130 1320
+ lc/I21/I3 I  : 130 1320
+    lc/I25 I  : 130 1320
+ rfc/I0/I0 I  : 130 1320
+ rfc/I0/I1 I  : 130 1320
+ rfc/I0/I2 I  : 130 1320
+ rfc/I0/I3 I  : 130 1320
+ rfc/I1/I0 I  : 130 1320
+ rfc/I1/I1 I  : 130 1320
+ rfc/I1/I2 I  : 130 1320
+ rfc/I1/I3 I  : 130 1320
+   sel/I27 I  : 130 1320
+   sel/I28 I  : 130 1320
+NetDegree : 5
+    dma/I3 O  : 260 1440
+   dma/I10 I  : 910 1200
+   dma/I14 I  : 910 1080
+   dma/I16 I  : 910 1080
+    dma/I2 I  : 650 1440
+NetDegree : 5
+       I38 O  : 9750 65
+   dma/I10 I  : 1430 1080
+   dma/I16 I  : 130 1080
+    dma/I4 I  : 390 1320
+    dma/I5 I  : 650 1440
+NetDegree : 2
+   dma/I19 O  : 5070 1320
+   dma/I10 I  : 910 1080
+NetDegree : 2
+   dma/I10 O  : 1430 1200
+    dma/I8 I  : 650 1440
+NetDegree : 2
+   dma/I13 O  : 5070 1320
+   dma/I14 I  : 650 960
+NetDegree : 2
+   dma/I13 O  : 2470 1560
+   dma/I20 I  : 130 1080
+NetDegree : 2
+    dma/I9 O  : 520 1440
+   dma/I13 I  : 650 1440
+NetDegree : 2
+   dma/I15 O  : 5070 1320
+   dma/I16 I  : 1430 1080
+NetDegree : 2
+    dma/I7 O  : 520 1440
+   dma/I15 I  : 650 1440
+NetDegree : 2
+   dma/I16 O  : 1430 1200
+   dma/I17 I  : 650 1440
+NetDegree : 3
+    dma/I6 O  : 5070 1320
+   dma/I16 I  : 910 1200
+    dma/I7 I  : 130 1320
+NetDegree : 2
+   dma/I18 O  : 520 1440
+   dma/I19 I  : 650 1440
+NetDegree : 3
+        I0 O  : 520 1440
+   dma/I18 I  : 130 1320
+    dma/I9 I  : 650 1440
+NetDegree : 2
+   dma/I19 O  : 2470 1560
+   dma/I20 I  : 910 1200
+NetDegree : 2
+   dma/I20 O  : 1430 1200
+   dma/I21 I  : 910 1440
+NetDegree : 3
+    dma/I8 O  : 5070 1320
+   dma/I20 I  : 1430 1080
+    dma/I9 I  : 130 1320
+NetDegree : 2
+   dma/I21 O  : 3250 1320
+        I2 I  : 650 1440
+NetDegree : 3
+   dma/I21 O  : 2990 1440
+     lc/I1 I  : 390 960
+     lc/I2 I  : 1170 1320
+NetDegree : 2
+    dma/I5 O  : 520 1440
+    dma/I6 I  : 650 1440
+NetDegree : 3
+       I40 O  : 9750 65
+        I0 I  : 650 1440
+    rfc/I6 I  : 130 1320
+NetDegree : 5
+    lc/I27 O  : 2730 1320
+        I0 I  : 130 1320
+     lc/I0 I  : 650 960
+     lc/I1 I  : 1170 1200
+     lc/I3 I  : 390 1320
+NetDegree : 2
+       I10 O  : 260 1440
+       I11 I  : 650 1440
+NetDegree : 2
+    sel/I6 O  : 1690 1440
+       I10 I  : 390 1320
+NetDegree : 2
+       I11 O  : 520 1440
+       I20 I  : 650 65
+NetDegree : 2
+       I13 O  : 260 1440
+       I12 I  : 650 1440
+NetDegree : 2
+       I12 O  : 520 1440
+       I18 I  : 650 65
+NetDegree : 2
+    sel/I6 O  : 5200 1320
+       I13 I  : 390 1320
+NetDegree : 2
+       I15 O  : 260 1440
+       I14 I  : 650 1440
+NetDegree : 2
+       I14 O  : 520 1440
+       I17 I  : 650 65
+NetDegree : 2
+    sel/I6 O  : 3770 1200
+       I15 I  : 390 1320
+NetDegree : 46
+       I56 O  : 130 1080
+       I17 I  : 4810 65
+       I18 I  : 4810 65
+       I20 I  : 4810 65
+       I21 I  : 4810 65
+       I22 I  : 4810 65
+       I23 I  : 4810 65
+       I30 I  : 4810 65
+       I31 I  : 4810 65
+       I32 I  : 4810 65
+       I33 I  : 4810 65
+       I38 I  : 1690 65
+       I39 I  : 1690 65
+       I40 I  : 1690 65
+       I41 I  : 1690 65
+       I51 I  : 1690 65
+       I52 I  : 1690 65
+       I53 I  : 1690 65
+       I54 I  : 1690 65
+       I55 I  : 1690 65
+    I62_0_ I  : 4810 65
+    I62_1_ I  : 4810 65
+    I62_2_ I  : 4810 65
+    I62_3_ I  : 4810 65
+    I62_4_ I  : 4810 65
+    I62_5_ I  : 4810 65
+    I62_6_ I  : 4810 65
+    I62_7_ I  : 4810 65
+    I64_0_ I  : 1690 65
+    I64_1_ I  : 1690 65
+    I64_2_ I  : 1690 65
+    I64_3_ I  : 1690 65
+    I64_4_ I  : 1690 65
+    I64_5_ I  : 1690 65
+    I64_6_ I  : 1690 65
+    I64_7_ I  : 1690 65
+    I65_0_ I  : 1690 65
+    I65_1_ I  : 1690 65
+    I65_2_ I  : 1690 65
+    I65_3_ I  : 1690 65
+    I65_4_ I  : 1690 65
+    I65_5_ I  : 1690 65
+    I65_6_ I  : 1690 65
+    I65_7_ I  : 1690 65
+    I65_8_ I  : 1690 65
+    I65_9_ I  : 1690 65
+NetDegree : 2
+       I41 O  : 9750 65
+        I2 I  : 130 1320
+NetDegree : 2
+sel/I4/CMP31 O  : 520 1440
+       I21 I  : 650 65
+NetDegree : 2
+sel/I4/CMP27 O  : 520 1440
+       I22 I  : 650 65
+NetDegree : 2
+sel/I4/CMP38 O  : 1170 1320
+       I23 I  : 650 65
+NetDegree : 2
+sel/I4/CMP40 O  : 1170 1320
+       I30 I  : 650 65
+NetDegree : 2
+    sel/I5 O  : 130 1320
+       I31 I  : 650 65
+NetDegree : 6
+       I53 O  : 9750 65
+        I4 I  : 390 1320
+    sel/I0 I  : 130 1320
+    sel/I1 I  : 130 1320
+   sel/I17 I  : 130 1320
+    sel/I2 I  : 130 1320
+NetDegree : 2
+ mux/hnl_0 O  : 520 1440
+    I62_0_ I  : 650 65
+NetDegree : 2
+ mux/hnl_1 O  : 520 1440
+    I62_1_ I  : 650 65
+NetDegree : 2
+ mux/hnl_2 O  : 520 1440
+    I62_2_ I  : 650 65
+NetDegree : 2
+ mux/hnl_3 O  : 520 1440
+    I62_3_ I  : 650 65
+NetDegree : 2
+ mux/hnl_4 O  : 520 1440
+    I62_4_ I  : 650 65
+NetDegree : 2
+ mux/hnl_5 O  : 520 1440
+    I62_5_ I  : 650 65
+NetDegree : 2
+ mux/hnl_6 O  : 520 1440
+    I62_6_ I  : 650 65
+NetDegree : 2
+ mux/hnl_7 O  : 520 1440
+    I62_7_ I  : 650 65
+NetDegree : 2
+    I64_0_ O  : 9750 65
+ mux/I0_3_ I  : 130 1320
+NetDegree : 2
+    I64_1_ O  : 9750 65
+ mux/I0_4_ I  : 130 1320
+NetDegree : 2
+    I64_2_ O  : 9750 65
+ mux/I0_5_ I  : 130 1320
+NetDegree : 2
+    I64_3_ O  : 9750 65
+ mux/I0_6_ I  : 130 1320
+NetDegree : 3
+    I64_4_ O  : 9750 65
+ mux/I0_0_ I  : 130 1320
+    sel/I3 I  : 910 1680
+NetDegree : 3
+    I64_5_ O  : 9750 65
+ mux/I0_7_ I  : 130 1320
+    sel/I0 I  : 910 1680
+NetDegree : 2
+    I65_0_ O  : 9750 65
+ mux/I0_0_ I  : 1170 1320
+NetDegree : 2
+    I65_1_ O  : 9750 65
+ mux/I0_1_ I  : 1170 1320
+NetDegree : 2
+    I65_2_ O  : 9750 65
+ mux/I0_2_ I  : 1170 1320
+NetDegree : 2
+    I65_3_ O  : 9750 65
+ mux/I0_3_ I  : 1170 1320
+NetDegree : 2
+    I65_4_ O  : 9750 65
+ mux/I0_4_ I  : 1170 1320
+NetDegree : 2
+    I65_5_ O  : 9750 65
+ mux/I0_5_ I  : 1170 1320
+NetDegree : 2
+    I65_6_ O  : 9750 65
+ mux/I0_6_ I  : 1170 1320
+NetDegree : 2
+    I65_7_ O  : 9750 65
+ mux/I0_7_ I  : 1170 1320
+NetDegree : 2
+    I65_8_ O  : 9750 65
+ mux/I0_1_ I  : 130 1320
+NetDegree : 2
+    I65_9_ O  : 9750 65
+ mux/I0_2_ I  : 130 1320
+NetDegree : 6
+     lc/I0 O  : 130 1320
+    lc/I10 I  : 650 1440
+    lc/I16 I  : 130 1320
+     lc/I4 I  : 650 1440
+     lc/I6 I  : 650 1440
+     lc/I8 I  : 650 1440
+NetDegree : 6
+     lc/I1 O  : 130 1320
+    lc/I11 I  : 1430 1320
+    lc/I17 I  : 650 1440
+     lc/I5 I  : 390 1320
+     lc/I7 I  : 650 1440
+     lc/I9 I  : 650 960
+NetDegree : 4
+ lc/I21/I3 O  : 5330 1320
+    lc/I10 I  : 130 1320
+    lc/I17 I  : 1430 1200
+    lc/I27 I  : 1430 1320
+NetDegree : 2
+    lc/I10 O  : 520 1440
+    lc/I23 I  : 130 1320
+NetDegree : 7
+ lc/I21/I0 O  : 5330 1320
+    lc/I11 I  : 910 1320
+    lc/I17 I  : 390 1200
+    lc/I27 I  : 390 1200
+     lc/I4 I  : 130 1320
+     lc/I7 I  : 130 1320
+     lc/I9 I  : 650 1200
+NetDegree : 6
+ lc/I21/I1 O  : 5330 1320
+    lc/I11 I  : 390 1320
+    lc/I17 I  : 130 1320
+    lc/I27 I  : 130 1320
+     lc/I6 I  : 130 1320
+     lc/I9 I  : 650 1320
+NetDegree : 5
+ lc/I21/I2 O  : 5330 1320
+    lc/I11 I  : 130 1320
+    lc/I17 I  : 1170 1200
+    lc/I27 I  : 1170 1320
+     lc/I8 I  : 130 1320
+NetDegree : 2
+    lc/I11 O  : 1170 1440
+    lc/I23 I  : 1690 1320
+NetDegree : 2
+    lc/I12 O  : 650 1560
+ lc/I21/I0 I  : 910 1440
+NetDegree : 2
+     lc/I4 O  : 520 1440
+    lc/I12 I  : 130 1320
+NetDegree : 2
+     lc/I5 O  : 260 1440
+    lc/I12 I  : 1690 1320
+NetDegree : 2
+    lc/I16 O  : 520 1440
+    lc/I24 I  : 130 1320
+NetDegree : 3
+    lc/I25 O  : 3250 1320
+    lc/I16 I  : 650 1440
+    lc/I27 I  : 1690 1080
+NetDegree : 2
+    lc/I17 O  : 2470 1440
+    lc/I24 I  : 1690 1320
+NetDegree : 2
+    lc/I18 O  : 650 1560
+ lc/I21/I1 I  : 910 1440
+NetDegree : 2
+     lc/I6 O  : 520 1440
+    lc/I18 I  : 130 1320
+NetDegree : 2
+     lc/I7 O  : 520 1440
+    lc/I18 I  : 1690 1320
+NetDegree : 2
+    lc/I19 O  : 650 1560
+ lc/I21/I2 I  : 910 1440
+NetDegree : 2
+     lc/I8 O  : 520 1440
+    lc/I19 I  : 130 1320
+NetDegree : 2
+     lc/I9 O  : 1170 1320
+    lc/I19 I  : 1690 1320
+NetDegree : 2
+     lc/I2 O  : 130 1320
+    lc/I22 I  : 130 1320
+NetDegree : 2
+     lc/I3 O  : 260 1440
+     lc/I2 I  : 390 960
+NetDegree : 5
+    lc/I26 O  : 390 1560
+ lc/I21/I0 I  : 3640 1440
+ lc/I21/I1 I  : 3640 1440
+ lc/I21/I2 I  : 3640 1440
+ lc/I21/I3 I  : 3640 1440
+NetDegree : 2
+    lc/I22 O  : 910 1320
+ lc/I21/I3 I  : 910 1440
+NetDegree : 2
+    lc/I23 O  : 650 1560
+    lc/I22 I  : 390 1320
+NetDegree : 2
+    lc/I24 O  : 650 1560
+    lc/I25 I  : 910 1440
+NetDegree : 2
+ mux/hnl_8 O  : 520 1440
+ mux/hnl_0 I  : 130 1320
+NetDegree : 2
+ mux/I0_0_ O  : 2340 1320
+ mux/hnl_0 I  : 650 1440
+NetDegree : 2
+ mux/hnl_9 O  : 520 1440
+ mux/hnl_1 I  : 130 1320
+NetDegree : 2
+ mux/I0_1_ O  : 2340 1320
+ mux/hnl_1 I  : 650 1440
+NetDegree : 2
+mux/hnl_10 O  : 520 1440
+ mux/hnl_2 I  : 130 1320
+NetDegree : 2
+ rfc/I0/I2 O  : 4030 1320
+mux/hnl_10 I  : 130 1320
+NetDegree : 2
+mux/hnl_11 O  : 520 1440
+ mux/hnl_3 I  : 130 1320
+NetDegree : 2
+ rfc/I0/I3 O  : 4030 1320
+mux/hnl_11 I  : 130 1320
+NetDegree : 2
+mux/hnl_12 O  : 520 1440
+ mux/hnl_4 I  : 130 1320
+NetDegree : 2
+ rfc/I1/I0 O  : 4030 1320
+mux/hnl_12 I  : 130 1320
+NetDegree : 2
+mux/hnl_13 O  : 520 1440
+ mux/hnl_5 I  : 130 1320
+NetDegree : 2
+ rfc/I1/I1 O  : 4030 1320
+mux/hnl_13 I  : 130 1320
+NetDegree : 2
+mux/hnl_14 O  : 520 1440
+ mux/hnl_6 I  : 130 1320
+NetDegree : 2
+ rfc/I1/I2 O  : 4030 1320
+mux/hnl_14 I  : 130 1320
+NetDegree : 2
+mux/hnl_15 O  : 520 1440
+ mux/hnl_7 I  : 130 1320
+NetDegree : 2
+ rfc/I1/I3 O  : 4030 1320
+mux/hnl_15 I  : 130 1320
+NetDegree : 2
+ mux/I0_2_ O  : 2340 1320
+ mux/hnl_2 I  : 650 1440
+NetDegree : 2
+ mux/I0_3_ O  : 2340 1320
+ mux/hnl_3 I  : 650 1440
+NetDegree : 2
+ mux/I0_4_ O  : 2340 1320
+ mux/hnl_4 I  : 650 1440
+NetDegree : 2
+ mux/I0_5_ O  : 2340 1320
+ mux/hnl_5 I  : 650 1440
+NetDegree : 2
+ mux/I0_6_ O  : 2340 1320
+ mux/hnl_6 I  : 650 1440
+NetDegree : 2
+ mux/I0_7_ O  : 2340 1320
+ mux/hnl_7 I  : 650 1440
+NetDegree : 2
+ rfc/I0/I0 O  : 4030 1320
+ mux/hnl_8 I  : 130 1320
+NetDegree : 2
+ rfc/I0/I1 O  : 4030 1320
+ mux/hnl_9 I  : 130 1320
+NetDegree : 9
+    mux/I9 O  : 260 1440
+ mux/I0_0_ I  : 2470 1320
+ mux/I0_1_ I  : 2470 1320
+ mux/I0_2_ I  : 2470 1320
+ mux/I0_3_ I  : 2470 1320
+ mux/I0_4_ I  : 2470 1320
+ mux/I0_5_ I  : 2470 1320
+ mux/I0_6_ I  : 2470 1320
+ mux/I0_7_ I  : 2470 1320
+NetDegree : 6
+ rfc/I0/I0 O  : 3770 1560
+rfc/I0/I11 I  : 390 1320
+rfc/I0/I12 I  : 780 1080
+rfc/I0/I13 I  : 780 1320
+rfc/I0/I18 I  : 1430 1320
+ rfc/I0/I4 I  : 1690 1440
+NetDegree : 2
+ rfc/I0/I4 O  : 650 1320
+ rfc/I0/I0 I  : 1170 1440
+NetDegree : 5
+ rfc/I0/I1 O  : 3770 1560
+rfc/I0/I12 I  : 910 1440
+rfc/I0/I13 I  : 910 1200
+rfc/I0/I18 I  : 1170 1200
+ rfc/I0/I5 I  : 1690 1440
+NetDegree : 2
+ rfc/I0/I5 O  : 650 1320
+ rfc/I0/I1 I  : 1170 1440
+NetDegree : 2
+rfc/I0/I13 O  : 1560 1320
+rfc/I0/I10 I  : 910 1080
+NetDegree : 2
+rfc/I0/I10 O  : 130 1320
+ rfc/I0/I7 I  : 130 1320
+NetDegree : 2
+rfc/I0/I11 O  : 260 1440
+ rfc/I0/I8 I  : 910 1080
+NetDegree : 2
+rfc/I0/I12 O  : 650 1560
+ rfc/I0/I9 I  : 910 1080
+NetDegree : 4
+ rfc/I0/I2 O  : 3770 1560
+rfc/I0/I13 I  : 1690 1080
+rfc/I0/I18 I  : 130 1320
+ rfc/I0/I6 I  : 1690 1440
+NetDegree : 2
+rfc/I0/I17 O  : 260 1440
+rfc/I0/I18 I  : 650 1200
+NetDegree : 3
+ rfc/I0/I3 O  : 3770 1560
+rfc/I0/I18 I  : 390 1200
+ rfc/I0/I7 I  : 1690 1440
+NetDegree : 2
+rfc/I0/I18 O  : 2470 1320
+    rfc/I5 I  : 390 1320
+NetDegree : 2
+ rfc/I0/I6 O  : 650 1320
+ rfc/I0/I2 I  : 1170 1440
+NetDegree : 2
+ rfc/I0/I7 O  : 650 1320
+ rfc/I0/I3 I  : 1170 1440
+NetDegree : 2
+ rfc/I0/I8 O  : 130 1320
+ rfc/I0/I5 I  : 130 1320
+NetDegree : 2
+ rfc/I0/I9 O  : 130 1320
+ rfc/I0/I6 I  : 130 1320
+NetDegree : 6
+ rfc/I1/I0 O  : 3770 1560
+rfc/I1/I11 I  : 390 1320
+rfc/I1/I12 I  : 780 1080
+rfc/I1/I13 I  : 780 1320
+rfc/I1/I18 I  : 1430 1320
+ rfc/I1/I4 I  : 1690 1440
+NetDegree : 2
+ rfc/I1/I4 O  : 650 1320
+ rfc/I1/I0 I  : 1170 1440
+NetDegree : 5
+ rfc/I1/I1 O  : 3770 1560
+rfc/I1/I12 I  : 910 1440
+rfc/I1/I13 I  : 910 1200
+rfc/I1/I18 I  : 1170 1200
+ rfc/I1/I5 I  : 1690 1440
+NetDegree : 2
+ rfc/I1/I5 O  : 650 1320
+ rfc/I1/I1 I  : 1170 1440
+NetDegree : 2
+rfc/I1/I13 O  : 1560 1320
+rfc/I1/I10 I  : 910 1080
+NetDegree : 6
+    rfc/I7 O  : 130 1320
+rfc/I1/I10 I  : 650 960
+rfc/I1/I17 I  : 390 1320
+ rfc/I1/I4 I  : 130 1320
+ rfc/I1/I8 I  : 650 960
+ rfc/I1/I9 I  : 650 960
+NetDegree : 2
+rfc/I1/I10 O  : 130 1320
+ rfc/I1/I7 I  : 130 1320
+NetDegree : 2
+rfc/I1/I11 O  : 260 1440
+ rfc/I1/I8 I  : 910 1080
+NetDegree : 2
+rfc/I1/I12 O  : 650 1560
+ rfc/I1/I9 I  : 910 1080
+NetDegree : 4
+ rfc/I1/I2 O  : 3770 1560
+rfc/I1/I13 I  : 1690 1080
+rfc/I1/I18 I  : 130 1320
+ rfc/I1/I6 I  : 1690 1440
+NetDegree : 2
+rfc/I1/I17 O  : 260 1440
+rfc/I1/I18 I  : 650 1200
+NetDegree : 3
+ rfc/I1/I3 O  : 3770 1560
+rfc/I1/I18 I  : 390 1200
+ rfc/I1/I7 I  : 1690 1440
+NetDegree : 2
+ rfc/I1/I6 O  : 650 1320
+ rfc/I1/I2 I  : 1170 1440
+NetDegree : 2
+ rfc/I1/I7 O  : 650 1320
+ rfc/I1/I3 I  : 1170 1440
+NetDegree : 2
+ rfc/I1/I8 O  : 130 1320
+ rfc/I1/I5 I  : 130 1320
+NetDegree : 2
+ rfc/I1/I9 O  : 130 1320
+ rfc/I1/I6 I  : 130 1320
+NetDegree : 2
+    rfc/I5 O  : 260 1440
+    rfc/I6 I  : 650 1440
+NetDegree : 2
+    rfc/I6 O  : 520 1440
+    rfc/I7 I  : 910 1080
+NetDegree : 3
+    sel/I0 O  : 2340 1320
+sel/I4/CMP23 I  : 390 1320
+    sel/I8 I  : 130 1320
+NetDegree : 2
+    sel/I1 O  : 2340 1320
+sel/I4/CMP20 I  : 390 1320
+NetDegree : 2
+   sel/I17 O  : 910 1320
+    sel/I3 I  : 130 1320
+NetDegree : 2
+    sel/I2 O  : 2340 1320
+sel/I4/CMP14 I  : 390 1320
+NetDegree : 2
+   sel/I28 O  : 3250 1320
+   sel/I25 I  : 780 1080
+NetDegree : 2
+   sel/I25 O  : 650 1560
+    sel/I6 I  : 1950 1200
+NetDegree : 2
+   sel/I27 O  : 3250 1320
+   sel/I28 I  : 910 1440
+NetDegree : 2
+    sel/I3 O  : 2340 1320
+    sel/I6 I  : 2210 1200
+NetDegree : 6
+sel/I4/CMP14 O  : 260 1440
+sel/I4/CMP10 I  : 390 1320
+sel/I4/CMP11 I  : 390 1320
+sel/I4/CMP12 I  : 390 1320
+sel/I4/CMP13 I  : 390 1320
+sel/I4/CMP15 I  : 390 1320
+NetDegree : 2
+sel/I4/CMP10 O  : 260 1440
+sel/I4/CMP34 I  : 390 1320
+NetDegree : 2
+sel/I4/CMP11 O  : 260 1440
+sel/I4/CMP39 I  : 780 1080
+NetDegree : 3
+sel/I4/CMP12 O  : 260 1440
+sel/I4/CMP29 I  : 910 1440
+sel/I4/CMP33 I  : 650 960
+NetDegree : 3
+sel/I4/CMP13 O  : 260 1440
+sel/I4/CMP37 I  : 780 1080
+sel/I4/CMP41 I  : 910 1320
+NetDegree : 3
+sel/I4/CMP15 O  : 260 1440
+sel/I4/CMP25 I  : 910 1080
+sel/I4/CMP43 I  : 910 1080
+NetDegree : 3
+sel/I4/CMP17 O  : 260 1440
+sel/I4/CMP16 I  : 390 1320
+sel/I4/CMP18 I  : 390 1320
+NetDegree : 5
+sel/I4/CMP16 O  : 260 1440
+sel/I4/CMP33 I  : 650 1200
+sel/I4/CMP38 I  : 650 1200
+sel/I4/CMP40 I  : 650 1200
+sel/I4/CMP41 I  : 130 1320
+NetDegree : 2
+    sel/I7 O  : 260 1440
+sel/I4/CMP17 I  : 390 1320
+NetDegree : 5
+sel/I4/CMP18 O  : 260 1440
+sel/I4/CMP26 I  : 650 960
+sel/I4/CMP28 I  : 390 1320
+sel/I4/CMP35 I  : 650 960
+sel/I4/CMP44 I  : 650 960
+NetDegree : 3
+sel/I4/CMP20 O  : 260 1440
+sel/I4/CMP19 I  : 390 1320
+sel/I4/CMP21 I  : 390 1320
+NetDegree : 5
+sel/I4/CMP19 O  : 260 1440
+sel/I4/CMP32 I  : 780 1080
+sel/I4/CMP38 I  : 650 960
+sel/I4/CMP39 I  : 910 1440
+sel/I4/CMP41 I  : 1430 1320
+NetDegree : 5
+sel/I4/CMP21 O  : 260 1440
+sel/I4/CMP30 I  : 130 1320
+sel/I4/CMP43 I  : 650 960
+sel/I4/CMP46 I  : 390 1320
+sel/I4/CMP9 I  : 910 1080
+NetDegree : 3
+sel/I4/CMP23 O  : 260 1440
+sel/I4/CMP22 I  : 390 1320
+sel/I4/CMP24 I  : 390 1320
+NetDegree : 5
+sel/I4/CMP22 O  : 260 1440
+sel/I4/CMP32 I  : 910 1440
+sel/I4/CMP37 I  : 910 1440
+sel/I4/CMP40 I  : 650 960
+sel/I4/CMP41 I  : 390 1320
+NetDegree : 5
+sel/I4/CMP24 O  : 260 1440
+sel/I4/CMP25 I  : 650 960
+sel/I4/CMP30 I  : 650 1320
+sel/I4/CMP42 I  : 390 1320
+sel/I4/CMP9 I  : 650 1080
+NetDegree : 2
+sel/I4/CMP25 O  : 130 1320
+sel/I4/CMP27 I  : 650 1440
+NetDegree : 2
+sel/I4/CMP26 O  : 130 1320
+sel/I4/CMP27 I  : 130 1320
+NetDegree : 2
+sel/I4/CMP46 O  : 260 1440
+sel/I4/CMP26 I  : 910 1080
+NetDegree : 2
+sel/I4/CMP28 O  : 260 1440
+sel/I4/CMP29 I  : 780 1080
+NetDegree : 2
+sel/I4/CMP29 O  : 650 1560
+sel/I4/CMP31 I  : 650 1440
+NetDegree : 2
+sel/I4/CMP30 O  : 520 1440
+sel/I4/CMP31 I  : 130 1320
+NetDegree : 2
+sel/I4/CMP32 O  : 650 1560
+sel/I4/CMP33 I  : 650 1320
+NetDegree : 2
+sel/I4/CMP34 O  : 260 1440
+sel/I4/CMP35 I  : 910 1080
+NetDegree : 2
+sel/I4/CMP35 O  : 130 1320
+sel/I4/CMP36 I  : 130 1320
+NetDegree : 2
+sel/I4/CMP9 O  : 130 1320
+sel/I4/CMP36 I  : 650 1440
+NetDegree : 2
+sel/I4/CMP36 O  : 520 1440
+    sel/I5 I  : 910 1080
+NetDegree : 2
+sel/I4/CMP37 O  : 650 1560
+sel/I4/CMP38 I  : 650 1320
+NetDegree : 2
+sel/I4/CMP39 O  : 650 1560
+sel/I4/CMP40 I  : 650 1320
+NetDegree : 2
+sel/I4/CMP41 O  : 1170 1440
+    sel/I5 I  : 650 960
+NetDegree : 2
+sel/I4/CMP42 O  : 260 1440
+sel/I4/CMP44 I  : 910 1080
+NetDegree : 2
+sel/I4/CMP43 O  : 130 1320
+sel/I4/CMP45 I  : 650 1440
+NetDegree : 2
+sel/I4/CMP44 O  : 130 1320
+sel/I4/CMP45 I  : 130 1320
+NetDegree : 2
+    sel/I8 O  : 910 1320
+    sel/I6 I  : 780 1200

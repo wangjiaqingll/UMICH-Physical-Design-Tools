@@ -1,0 +1,235 @@
+# this file created 1 august 1997 mro for testing parsers.  It is not intended
+# to be realistic. Corrections by wyd
+
+
+NAMESCASESENSITIVE ON ;
+
+UNITS
+    DATABASE MICRONS 1000 ;
+END UNITS
+
+LAYER POLY
+	TYPE MASTERSLICE ;
+END POLY
+
+LAYER CUT01
+	TYPE CUT ;
+END CUT01
+
+LAYER M1
+    TYPE ROUTING ;
+    PITCH 2.4 ;
+    WIDTH 1.0 ;
+    SPACING 1.0 ;
+    DIRECTION HORIZONTAL ;
+    RESISTANCE RPERSQ 0.03 ;
+    CAPACITANCE CPERSQDIST 2.7E-5 ;
+    HEIGHT 5.07 ;
+    THICKNESS 2.14 ;
+    SHRINKAGE .07 ;
+    EDGECAPACITANCE 9.0e-2 ;
+    CAPMULTIPLIER 2.2 ;
+END M1
+
+LAYER CUT12
+  TYPE CUT ; 
+END CUT12
+
+LAYER M2
+    TYPE ROUTING ;
+    PITCH 2.6 ;
+    WIDTH 1.0 ;
+    SPACING 1.0 ;
+    DIRECTION VERTICAL ;
+    RESISTANCE RPERSQ 0.01 ;
+    CAPACITANCE CPERSQDIST 2.9E-5 ;
+    HEIGHT 3.02 ;
+    THICKNESS 2.12 ;
+    SHRINKAGE .01 ;
+    EDGECAPACITANCE 8.3e-2 ;
+    CAPMULTIPLIER 0.4 ;
+END M2
+
+LAYER CUT23
+  TYPE CUT ; 
+END CUT23
+
+LAYER M3
+    TYPE ROUTING ;
+    PITCH 3.2 ;
+    WIDTH 1.8 ;
+    SPACING 1.2 ;
+    DIRECTION HORIZONTAL ;
+    RESISTANCE RPERSQ 0.08 ;
+    CAPACITANCE CPERSQDIST 2.8E-3 ;
+    HEIGHT 9.07 ;
+    THICKNESS 2.04 ;
+    SHRINKAGE .007 ;
+    EDGECAPACITANCE 1e-2 ;
+    CAPMULTIPLIER 1.0 ;
+END M3
+
+VIA via01 DEFAULT
+  LAYER POLY ; RECT -0.8 -0.8 0.8 0.8 ;
+  LAYER CUT01 ; RECT -0.4 -0.4 0.4 0.4 ;
+  LAYER M1 ; RECT -0.8 -0.8 0.8 0.8 ;
+  RESISTANCE 8.0 ; 
+END via01
+
+VIA via12 DEFAULT
+  LAYER M1 ; RECT -0.8 -0.8 0.8 0.8 ; 
+  LAYER CUT12 ; RECT -0.4 -0.4 0.4 0.4 ; 
+  LAYER M2 ; RECT -0.8 -0.8 0.8 0.8 ; 
+  RESISTANCE 1.5 ; 
+END via12
+ 
+VIA via23 DEFAULT
+  LAYER M2 ; RECT -0.8 -0.8 0.8 0.8 ; 
+  LAYER CUT23 ; RECT -0.4 -0.4 0.4 0.4 ; 
+  LAYER M3 ; RECT -1.0 -1.0 1.0 1.0 ; 
+  RESISTANCE 1.5 ; 
+END via23
+
+MINFEATURE 0.01 0.02 ;
+
+SITE ORDINARY
+    CLASS CORE ;
+    SYMMETRY Y ;
+    SIZE 245 BY 32 ;
+END ORDINARY
+
+SITE IOSITE
+    CLASS PAD ;
+    SYMMETRY X Y ;
+    SIZE 900 BY 1100 ;
+END IOSITE
+
+MACRO INPAD
+    CLASS PAD INPUT ;
+    SIZE 850 BY 1074 ;
+    SYMMETRY X Y ;
+    SITE IOSITE ;
+
+    PIN OUTPIN
+        USE SIGNAL ;
+        DIRECTION OUTPUT ;
+        PORT
+            LAYER M1 ;
+            RECT 1 3 5 7 ;
+        END
+    END OUTPIN
+
+
+    PIN POWERPIN
+        USE POWER ;
+        PORT
+            LAYER M1 ;
+            RECT 1 2 3 4 ;
+            LAYER M2 ;
+            RECT 5 6 7 8 ;
+        END
+    END POWERPIN
+
+    PIN CLOCKPIN
+        USE CLOCK ;
+        PORT
+            LAYER M3 ;
+            RECT 8 9 10 11 ;
+        END
+    END CLOCKPIN
+
+END INPAD
+
+
+
+MACRO OUTPAD
+    CLASS PAD OUTPUT ;
+    SIZE 850 BY 1074 ;
+    SYMMETRY X Y ;
+    SITE IOSITE ;
+
+    PIN INPIN
+        USE SIGNAL ;
+        DIRECTION INPUT ;
+        PORT
+            LAYER M1 ;
+            RECT 1 3 5 7 ;
+        END
+    END INPIN
+
+
+    PIN POWERPIN
+        USE POWER ;
+        PORT
+            LAYER M1 ;
+            RECT 1 2 3 4 ;
+            LAYER M2 ;
+            RECT 5 6 7 8 ;
+        END
+    END POWERPIN
+
+    PIN CLOCKPIN
+        USE CLOCK ;
+        PORT
+            LAYER M3 ;
+            RECT 8 9 10 11 ;
+        END
+    END CLOCKPIN
+
+END OUTPAD
+
+    
+
+MACRO NORGATE
+    CLASS CORE ;
+    SIZE 16 BY 16 ;
+    SYMMETRY X Y ;
+    SITE ORDINARY ;
+
+    PIN IN1
+        USE SIGNAL ;
+        DIRECTION INPUT ;
+        PORT
+            LAYER M1 ;
+            RECT 1 3 5 7 ;
+        END
+    END IN1
+
+    PIN IN2
+        USE SIGNAL ;
+        DIRECTION INPUT ;
+        PORT
+            LAYER M2 ;
+            RECT 1 3 5 7 ;
+        END
+    END IN2
+
+    PIN RESULT
+        USE SIGNAL ;
+        DIRECTION OUTPUT ;
+        PORT
+            LAYER M3 ;
+            RECT 1 3 5 7 ;
+        END
+
+    END RESULT
+
+
+    PIN POWERPIN
+        USE POWER ;
+        PORT
+            LAYER M1 ;
+            RECT 7 8 9 10 ;
+            LAYER M2 ;
+            RECT 5 6 7 8 ;
+        END
+    END POWERPIN
+
+    OBS
+        LAYER M2 ;
+        WIDTH 0.5 ;
+        RECT 10 11 12 13 ;
+    END
+
+END NORGATE
+

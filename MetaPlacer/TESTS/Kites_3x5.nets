@@ -1,0 +1,115 @@
+UCLA nets 1.0
+#Created : fill in later
+#User : fill in later
+#Platform : fill in later
+
+NumNets : 28
+NumPins : 80
+NetDegree : 2
+	p0 B
+	a0 B
+NetDegree : 4
+	a0 B : 0.25 0.25
+	a2 B : -0.25 0.25
+	a1 B : 0.25 -0.25
+	a3 B : -0.25 -0.25
+NetDegree : 2
+	p1 B
+	a4 B
+NetDegree : 4
+	a4 B : 0.25 0.25
+	a6 B : -0.25 0.25
+	a5 B : 0.25 -0.25
+	a7 B : -0.25 -0.25
+NetDegree : 2
+	p2 B
+	a8 B
+NetDegree : 4
+	a8 B : 0.25 0.25
+	a10 B : -0.25 0.25
+	a9 B : 0.25 -0.25
+	a11 B : -0.25 -0.25
+NetDegree : 2
+	p3 B
+	a12 B
+NetDegree : 4
+	a12 B : 0.25 0.25
+	a14 B : -0.25 0.25
+	a13 B : 0.25 -0.25
+	a15 B : -0.25 -0.25
+NetDegree : 2
+	p4 B
+	a16 B
+NetDegree : 4
+	a16 B : 0.25 0.25
+	a18 B : -0.25 0.25
+	a17 B : 0.25 -0.25
+	a19 B : -0.25 -0.25
+NetDegree : 2
+	p5 B
+	a0 B
+NetDegree : 2
+	p6 B
+	a20 B
+NetDegree : 4
+	a20 B : 0.25 0.25
+	a21 B : -0.25 0.25
+	a24 B : 0.25 -0.25
+	a25 B : -0.25 -0.25
+NetDegree : 2
+	p7 B
+	a28 B
+NetDegree : 2
+	p8 B
+	a29 B
+NetDegree : 4
+	a28 B : 0.25 0.25
+	a30 B : -0.25 0.25
+	a29 B : 0.25 -0.25
+	a31 B : -0.25 -0.25
+NetDegree : 2
+	p9 B
+	a33 B
+NetDegree : 4
+	a32 B : 0.25 0.25
+	a34 B : -0.25 0.25
+	a33 B : 0.25 -0.25
+	a35 B : -0.25 -0.25
+NetDegree : 2
+	p10 B
+	a37 B
+NetDegree : 4
+	a36 B : 0.25 0.25
+	a38 B : -0.25 0.25
+	a37 B : 0.25 -0.25
+	a39 B : -0.25 -0.25
+NetDegree : 2
+	p11 B
+	a41 B
+NetDegree : 4
+	a40 B : 0.25 0.25
+	a42 B : -0.25 0.25
+	a41 B : 0.25 -0.25
+	a43 B : -0.25 -0.25
+NetDegree : 2
+	p12 B
+	a45 B
+NetDegree : 4
+	a44 B : 0.25 0.25
+	a46 B : -0.25 0.25
+	a45 B : 0.25 -0.25
+	a47 B : -0.25 -0.25
+NetDegree : 2
+	p13 B
+	a18 B
+NetDegree : 2
+	p14 B
+	a23 B
+NetDegree : 4
+	a22 B : 0.25 0.25
+	a23 B : -0.25 0.25
+	a26 B : 0.25 -0.25
+	a27 B : -0.25 -0.25
+NetDegree : 2
+	p15 B
+	a46 B

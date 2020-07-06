@@ -1,0 +1,3 @@
+#!/bin/csh -f
+make DEPENDOPT="-MM" CC4LIBS="g++" OPTFLAGS='-g -DABKDEBUG $(ABKSYMBOLS)'  CCFLAGS="-fPIC -Wall -pipe -g" CC='g++ $(OPTFLAGS) $(CCFLAGS)' LD="g++ -g -shared" LDFINAL="g++ -g" SOLABEL="" SODIRKEY="-Wl,-rpath," YACC_LIB="" $1 $2 $3 $4 $5
+# SONAMEKEY="-Wl,-soname," 

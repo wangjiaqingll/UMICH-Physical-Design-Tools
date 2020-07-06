@@ -1,0 +1,58 @@
+
+ README for Constraints2.0
+ contact: Igor Markov <imarkov@cs.ucla.edu>
+ date:    Aug 16, 1997
+
+ COPYRIGHT: ABKGroup and UC Regents, see file COPYRIGHT
+
+ OS and compilers supported : CC 4.2+ for  Solaris 2.5+,
+                              MSVC++5.0 for Windows NT4.0
+                                  (probably for Windows '95 as well)
+    compilers not supported : MSVC++4.x, g++ 2.7.2, CC 4.1
+
+   ******************  THIS IS THE SOLARIS DISTRIBUTION ***************
+   *****  WINDOWS DISTRIBUTION IS (WILL BE) AVAILABLE SEPARATELY ******
+
+
+ Libraries used : STL 2.01 (see STL note below) ABKCommon2.1 Placement3.8.1
+
+ Formal C++ interface : constraints.h, plus allConstr.h (if needed)
+
+ note: the two headers not included by constraints.h, but included by
+       allConstr.h are regionConstr.h and otherConstr.h (dbConstr.h 
+       included regionConstr.h only)
+
+ Linking interface: 
+   one static (libconstr.a) or shared (libconstr.so) library
+
+ Test (no tests yet):
+         produce executable rnplacerTest with "make test", then use 
+         script "regression"; correct output contains
+
+          Differences from precomputed results
+           0       0       0 someofdiffs
+
+ Installation notes : customize Makefile to your filesystem,
+		      Type make. This will build the libraries. 
+                      The shared library can not be
+		      moved from its initial location.
+
+  Purify note :        you may want to put
+
+suppress umr ...; Timer*
+
+                     into your ~/.purify file because purify reports
+                     uninitialized memory reads in UNIX system calls.
+
+  STL note: you need an *adapted* version 2.01  970718) or higher. 
+            It is available (together with a testsuite) from
+            http://www.ipmce.su/people/fbp/stl/stlport.html. 
+            Extensive online documentation is available at
+            http://www.sgi.com/Technology/STL/
+            Links to tutorials can be found at
+            http://www.sgi.com/Technology/STL/other_resources.html
+
+
+ Synopsys: Various constraints for use in placers
+           and manager class Constraints
+          

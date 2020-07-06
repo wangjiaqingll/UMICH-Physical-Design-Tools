@@ -1,0 +1,82 @@
+This is a documentation for dbRoutingInfo
+
+1. dbRoutingInfo
+
+       This is a class for storing all the routing information (segments
+    and vias).   This class consists of two main containers:
+          - ctainerMasterVias _masterVias and 
+          - ctainerRoutedNets _netlistRoute.
+    _masterVias is used to store all the master via read from LEF file.
+    _netlistRoute is a list of all nets with its routing.
+    dbRoutingInfo is constructed from LEF/DEF directly.
+
+2. dbRoutedNet
+       This is a class for storing the routing information for a single
+    net.    This is the base class of the ctainerRoutedNets.   This class
+    has three member of ctainerRoutingElements:
+        _route - which holds all the segments and vias
+        _segments - which holds all segments
+        _vias - which holds all vias
+    (for short: _route = _segments + _vias)
+    
+        This class has member _netIndex which is an index to the original
+    net in dbNetlist.   This index has to be maintain in order to maintain
+    the consistency between dbRoutingInfo and dbNetlist (this is important
+    for other package that changes the order of the nets, such as
+    LogicResynt).
+
+        The construction for this class will create an empty list of
+    dbRoutingElement and mark the _type into NONE which also means
+    "not yet routed".   Then the list has to be build one at a time
+    by using member function: addElement().   For each element added
+    to the list, the function will also update the statistical data
+    such as total wirelength, number of vias, etc.
+
+
+3. dbRoutingElement
+
+       This is a class that is used in dbRoutedNet to represent vias
+    and segments.   The type for each item instantiate from this class
+    can be determined by checking isVia() and isSegment().   For each
+    type, it has its own restriction on the data that it can use.
+    The following are the member description for each type:
+
+    VIA
+        x,y :    The (x,y) coordinate of the via.
+        layer1, layer2 :
+                 The two metal layer that this via connects.
+                 The value for these variable is the dbLayer index
+        _masterViaIndex :
+                 Index to the dbMasterVia from the master via 
+                 list in the dbRoutingInfo.
+        getMasterViaIndex() : returns the _masterViaIndex
+
+        The rest of member function does not give much information because
+        they are mostly used for SEGMENT type, however calling those
+        functions is still allowed which will return default value
+        explained below:
+            getXEnd() and getYEnd() will return x and y
+            getLength() will return 0
+            isHorizontal() and isVertical() will return false
+
+    SEGMENT
+        Segment will be represented as a vector with base coordinate,
+        direction, and distance.
+        x,y :        The (x,y) coordinate of the origin (base coordinate).
+        _distance :  The distance where the value can be negative which
+                     means that the vector points to the opposite direction.
+        _direction : The direction in Manhattan plane where this vector
+                     points to. It has to be either HORiZontal or
+                     VERTical.
+        getXEnd(), getYEnd() :
+                     Gives the (x,y) coordinate of the end point of the
+                     vector. Note that this coordinate can be less than
+                     the origin when the _distance is negative.
+        isHorizontal(), isVertical() :
+                     Will check whether it is a horizontal or a vertical
+                     segment.
+        getLength() : Will return the length of the segment which is the
+                     absolute value of the _distance (magnitude)
+
+        With this type, calling getMasterViaIndex() will result an
+        abkfatal because master via is not defined for segment.

@@ -1,0 +1,303 @@
+
+#################################################################################
+#                                                                               #
+#       Version         :       5.2.all                                         #
+#       Last updated    :       07/23/98                                        #
+#                                                                               #
+#################################################################################
+
+VERSION 5.2 ;
+NAMESCASESENSITIVE ON ;
+DIVIDERCHAR ":" ;
+BUSBITCHARS "[]" ;
+DESIGN muk ;
+TECHNOLOGY muk ;
+#ARRAY core_array ;
+#FLOORPLAN DEFAULT ;
+UNITS DISTANCE MICRONS 100 ;
+
+HISTORY 07/23/98 Corrected STEP for ROW_9 and added ROW_10 of SITE CORE1 (def) ;
+HISTORY 07/23/98 Removed NONDEFAULTRULE from the net XX100 (def) ;
+HISTORY 07/23/98 Changed some cell orientations (def) ;
+HISTORY 07/23/98 Changed SYMMETRY of the MACRO CHK3A (lef);
+HISTORY 07/21/98 Added "()" to the PWL (CURRENTDEN, RESISTANCE, CAPACITANCE) (lef) ;
+HISTORY 07/16/98 Created from small.lef/def 5.2.2 ;
+HISTORY 07/16/98 Added DIVIDERCHAR keywords (lef) ;
+HISTORY 07/16/98 Added STRING,INTEGER,REAL properties for LAYER,VIARULE,NONDEF. (lef) ;
+HISTORY 07/16/98 Added TAPERRULE keywords to a MACRO PIN (lef) ;
+HISTORY 07/16/98 Added CURRENTDEN (with and without PWL) (lef) ;
+HISTORY 07/16/98 Added PWL to the LAYER RESISTANCE and CAPACITANCE (lef) ;
+HISTORY 07/16/98 Added TAPER and TAPERRULE keywords to the net XX100 (def) ;
+HISTORY 07/16/98 Added WIREEXTENSION to the LAYER and NONDEFAULTRULE (lef) ;
+HISTORY 07/16/98 Added WIREEXTENSION value to some wires of the net XX100 (def) ;
+
+PROPERTYDEFINITIONS
+  REGION scum STRING ;
+  REGION center INTEGER ;
+  REGION area REAL ;
+  GROUP ggrp STRING ;
+  GROUP side INTEGER RANGE 0 25 ;
+  GROUP maxarea REAL ;
+  COMPONENT cc STRING ;
+  COMPONENT index INTEGER ;
+  COMPONENT size REAL ;
+  NET alt INTEGER ;
+  NET lastName STRING ;
+  NET length REAL ;
+  SPECIALNET contype STRING ;
+  SPECIALNET ind INTEGER ;
+  SPECIALNET maxlength REAL ;
+  DESIGN title STRING "Buffer" ;
+  DESIGN priority INTEGER 14 ;
+  DESIGN howbig REAL 15.16 ;
+  ROW minlength REAL RANGE 1.0 100.0 ;
+  ROW firstName STRING ;
+  ROW idx INTEGER ;
+  COMPONENTPIN dpIgnoreTerm INTEGER ;
+  COMPONENTPIN dpBit STRING ;
+  COMPONENTPIN realProperty REAL ;
+END PROPERTYDEFINITIONS
+
+DIEAREA ( -190000 -120000 ) ( 190000 70000 ) ;
+
+ROW ROW_9 CORE -177320 -111250 FS DO 911 BY 1 STEP 360 0 
+  + PROPERTY minlength 50.5 firstName "Only" idx 1 ;
+ROW ROW_10 CORE1 -19000 -11000 FE DO 1 BY 100 STEP 0 600 ;
+
+TRACKS
+  X 3000 DO 40 STEP 120 LAYER M1 ;
+TRACKS
+  Y 5000 DO 10 STEP 20 LAYER M2 ;
+
+GCELLGRID X 0 DO 100 STEP 600 ;
+GCELLGRID Y 10 DO 120 STEP 400 ;
+
+DEFAULTCAP 4
+  MINPINS 2 WIRECAP 3 ;
+  MINPINS 4 WIRECAP 6 ;
+  MINPINS 8 WIRECAP 9 ;
+  MINPINS 10 WIRECAP 12 ;
+END DEFAULTCAP
+
+#CANPLACE
+#CANNOTOCCUPY
+
+VIAS 2 ;
+- VIA_ARRAY + RECT M1 ( -40 -40 ) ( 40 40 )
+            + RECT V1 ( -40 -40 ) ( 40 40 )
+            + RECT M2 ( -50 -50 ) ( 50 50 ) ;
+- VIA_ARRAY1 + RECT M1 ( -40 -40 ) ( 40 40 )
+             + RECT V1 ( -40 -40 ) ( 40 40 )
+             + RECT M2 ( -50 -50 ) ( 50 50 ) ;
+
+END VIAS
+
+REGIONS 2 ;
+- region1 ( -500 -500 ) ( 300 100 ) ( 500 500 ) ( 1000 1000 )
+  + PROPERTY scum "on top" center 250 area 730000
+  ;
+- region2 ( 4000 0 ) ( 5000 1000 )
+  + PROPERTY scum "on bottom"
+  ;
+END REGIONS
+
+COMPONENTS 11 ;
+- Z38A01 DFF3 + PLACED ( 18592 5400 ) FS ;
+- Z38A03 DFF3 + PLACED ( 16576 42600 ) FS ;
+- Z38A05 DFF3 + PLACED ( 51520 9600 ) FS ;
+- |i0 INV_B 
+  + REGION region1 
+  + EEQMASTER INV ;
+- |i1 INV_B 
+  + EEQMASTER INV
+  + UNPLACED ( 1000 1000 ) N ;
+- cell1 CHM6A + FIXED ( 0 10 ) N
+  #+ GENERATE generator 
+  + WEIGHT 100
+  + SOURCE USER
+  ;
+- cell2 CHM6A + COVER ( 120 10 ) FN 
+  + WEIGHT 2
+  + SOURCE NETLIST
+  ;
+- cell3 CHM6A + PLACED ( 240 10 ) N
+  + SOURCE TIMING
+  + FOREIGN gds2name ( -500 -500 ) E
+  + REGION region1
+  ;
+- cell4 CHK3A + PLACED ( 360 10 ) W
+  + SOURCE DIST
+  + REGION region2
+  + PROPERTY cc "This is the copy list" index 9 size 7.8
+  + EEQMASTER CHM6A
+  ;
+- scancell1 CHK3A + PLACED ( 500 10 ) FW
+  ;
+- scancell2 CHK3A + PLACED ( 700 10 ) FS
+  ;
+END COMPONENTS
+
+PINS 6 ;
+- scanpin + NET SCAN 
+  + DIRECTION INPUT ;
+- pin1 + NET net1
+  + SPECIAL
+  + USE POWER
+  + LAYER M1 ( -5000 -100 ) ( -4950 -90 )
+  ;
+- pin2 + NET net2
+  + DIRECTION INPUT
+  + USE SIGNAL
+  + LAYER M1 ( -5000 0 ) ( -4950 10 )
+  ;
+- INBUS[1] + NET |INBUS[1]
+  + DIRECTION INPUT
+  + USE SIGNAL
+  + LAYER M2 ( 0 0 ) ( 30 135 )
+  + FIXED ( 45 -2160 ) N ;
+- INBUS<0> + NET |INBUS<0> 
+  + DIRECTION INPUT
+  + USE SIGNAL
+  + LAYER M2 ( 0 0 ) ( 30 135 )
+  + PLACED ( -45 2160 ) S ;
+- OUTBUS<1> + NET |OUTBUS<1> 
+  + DIRECTION OUTPUT 
+  + USE SIGNAL
+  + LAYER M1 ( 0 0 ) ( 30 135 ) 
+  + COVER ( 2160 645 ) W ;
+END PINS
+
+PINPROPERTIES 2 ;
+- cell1 PB1 + PROPERTY dpBit "1" + PROPERTY realProperty 3.4 ; 
+- cell2 vdd + PROPERTY dpIgnoreTerm 2 ; 
+END PINPROPERTIES
+
+SPECIALNETS 2 ;
+- net1 ( cell1 VDD ) ( cell2 VDD ) ( cell3 VDD ) ( cell4 VDD )
+  + WIDTH M1 200
+  + WIDTH M2 300
+  + VOLTAGE 3.2
+  + SPACING M1 200 RANGE 190 210
+  + SOURCE TIMING
+  + ORIGINAL VDD
+  + USE POWER
+  + WEIGHT 30
+  + PROPERTY contype "star" ind 1 maxlength 12.13
+  ;
+- VSS ( cell1 GND ) ( cell2 GND ) ( cell3 GND ) ( cell4 GND )  
+  + ROUTED M1 250 + SHAPE IOWIRE ( 5 15 ) ( 125 * ) ( 245 * )
+  + PATTERN STEINER
+  + ESTCAP 100 ;
+END SPECIALNETS
+
+NETS 10 ;
+- net1 ( Z38A01 Q ) ( Z38A03 Q ) ( Z38A05 Q ) ;
+- net2 ( cell1 PB1 ) ( cell2 PB1 ) ( cell3 PB1 )
+  + ESTCAP 200
+  + WEIGHT 2
+  ;
+- net3  ( cell4 PA3 ) ( cell2 P10 )
+  + XTALK 30
+  + ORIGINAL extra_crispy
+  + SOURCE USER
+  + USE SIGNAL
+  + PROPERTY alt 37 lastName "Unknown" length 10.11
+  + PATTERN BALANCED
+  ;
+- |INBUS[1] ( |i1 A ) ;
+- |INBUS<0> ( |i0 A ) ;
+- |OUTBUS<1> ( |i0 Z ) ;
+- MUSTJOIN ( cell4 PA1 ) ;
+- XX100 ( Z38A05 G ) ( Z38A03 G ) ( Z38A01 G ) 
+  + VPIN V_SUB3_XX100 ( -333 -333 ) ( 333 333 ) PLACED ( 189560 27300 ) N
+  + VPIN V_SUB2_XX100 ( -333 -333 ) ( 333 333 ) PLACED ( 169400 64500 ) N
+  + VPIN V_SUB1_XX100 ( -333 -333 ) ( 333 333 ) PLACED ( 55160 31500 ) N
+  + SUBNET SUB1_XX100 ( Z38A05 G ) ( VPIN V_SUB1_XX100 )
+    ROUTED M1 TAPERRULE RULE1 ( 54040 30300 0 ) ( * 30900 ) nd1VIA12 ( * * 0 ) 
+    ( 56280 * ) nd1VIA23 ( * 31500 ) ( 55160 * )
+  + SUBNET SUB2_XX100 ( Z38A03 G ) ( VPIN V_SUB2_XX100 )
+    NONDEFAULTRULE RULE1
+    ROUTED M1 ( 168280 63300 7 ) ( * 64500 ) M1_M2 ( 169400 * 8 ) M2_M3
+  + SUBNET SUB3_XX100 ( Z38A01 G ) ( VPIN V_SUB3_XX100 )
+    ROUTED M1 ( 188440 26100 0 ) ( * 27300 0 ) M1_M2 ( 189560 * 0 ) M1_M2
+  + SUBNET SUB0_XX100 ( VPIN V_SUB1_XX100 ) ( VPIN V_SUB2_XX100 ) ( VPIN V_SUB3_XX100 )
+    NONDEFAULTRULE RULE1
+    ROUTED M3 ( 169400 64500 0 ) ( * 54900 ) ( 170520 * ) ( * 37500 ) ( * 30300 )
+     nd1VIA23 ( 171080 * ) ( 174440 * 0 ) nd1VIA23 ( * * ) ( * 26700 8 ) nd1VIA23 
+     ( 177800 * )
+     nd1VIA23 ( * * 8 ) ( * 30300 8 ) nd1VIA23 ( 189560 * 8 ) nd1VIA12 ( * 27300 0 )
+    NEW M3 TAPER ( 55160 31500 8 ) ( * 34500 0 ) M2_M3 ( 149800 * 8 ) M2_M3 ( * 35700 )
+     ( * 37500 ) M2_M3 ( * * 8 ) ( 170520 * 0 ) M2_M3 ;
+- SCAN ( scancell1 P10 + SYNTHESIZED ) ( scancell2 PA0 + SYNTHESIZED )
+  + SOURCE TEST ;
+- testBug ( Z38A05 G ) ( Z38A03 G ) ( Z38A01 G )
+  + ROUTED M1 ( 1288210 580930 ) GETH1W1W1
+    ( * 582820 ) GETH2W1W1
+    NEW M3 ( 1141350 582820 ) GETH2W1W1
+    ( * 580930 ) GETH1W1W1
+    NEW M1 ( 1278410 275170 )
+    NEW M1 ( 1141210 271250 ) GETH1W1W1
+    ( * 271460 ) GETH2W1W1
+    ( 1142820 * ) GETH3W1W1 ;
+
+END NETS
+
+IOTIMINGS 3 ;
+- ( PIN INBUS<0> ) 
+  + RISE VARIABLE 6100000 7100000
+  + FALL VARIABLE 3100000 3100000 
+  + RISE SLEWRATE 110 110
+  + FALL SLEWRATE 290 290 
+  + CAPACITANCE 0 ;
+- ( PIN INBUS[1] )
+  + DRIVECELL INV FROMPIN A  TOPIN Z PARALLEL 2
+  + RISE SLEWRATE 110 110
+  + FALL SLEWRATE 290 290 
+  + CAPACITANCE 0 ;
+- ( PIN OUTBUS<1> ) + CAPACITANCE 120000 ;
+END IOTIMINGS
+
+SCANCHAINS 1 ;
+- the_chain
+  + COMMONSCANPINS ( IN PA1 ) ( OUT PA2 )
+  + START PIN scanpin
+  + STOP  cell4 PA2
+  + ORDERED 
+     cell2 ( IN PA0 )
+     cell1 ( OUT P10 )
+  + FLOATING
+     scancell1 ( IN PA0 )
+     scancell2 ( OUT P10 )
+  ;
+END SCANCHAINS
+
+CONSTRAINTS 3 ;
+- PATH cell1 VDD cell2 VDD
+  + RISEMAX 6000 + FALLMAX 9000 ;
+- SUM ( NET net2 , NET net3 )
+  + RISEMIN 2000 + FALLMIN 5000 ;
+- WIREDLOGIC net1 MAXDIST 1000 ;
+END CONSTRAINTS
+
+GROUPS 2 ;
+- group1  cell2 cell3
+  + REGION region1
+  + PROPERTY ggrp "xx" side 2 maxarea 5.6
+  ;
+- group2 cell1
+  + REGION ( 0 10 ) ( 1000 1010 )
+  + PROPERTY ggrp "after the fall"
+  + SOFT MAXHALFPERIMETER 4000 MAXX 100000
+  ;
+END GROUPS
+
+BEGINEXT tag
+- OTTER furry
+  + PROPERTY arrg later
+  ;
+- SEAL cousin to WALRUS ;
+ENDEXT
+
+END DESIGN
+
+

@@ -1,0 +1,45 @@
+UCLA pln 1.1 
+# Created      : Tue May 29 11:58:06 2001
+# User         : sadya@gagarin.eecs.umich.edu (Saurabh N Adya,Not Available,NotAvailable/Freysinger;CR0i;30) 
+# Platform     : Linux 2.4.4 #2 SMP Fri May 4 07:48:11 EDT 2001 i686 
+
+Cells : 10
+Nets : 16
+
+Net    0 :    0 (        0.5        0.5 )
+
+Net    1 :    0 (        0.5        0.5 )
+
+Net    2 :    0 (        0.5        0.5 )
+
+Net    3 :    1 (        0.5        0.5 )
+   7 (        0.5        0.5 )
+
+Net    4 :    1 (        0.5        0.5 )
+   5 (        0.5        0.5 )
+
+Net    5 :    1 (        0.5        0.5 )
+
+Net    6 :    2 (        0.5        0.5 )
+
+Net    7 :    2 (        0.5        0.5 )
+   3 (        0.5        0.5 )
+
+Net    8 :    3 (        0.5        0.5 )
+   9 (        0.5        0.5 )
+
+Net    9 :    3 (        0.5        0.5 )
+
+Net   10 :    5 (        0.5        0.5 )
+
+Net   11 :    5 (        0.5        0.5 )
+
+Net   12 :    7 (        0.5        0.5 )
+
+Net   13 :    7 (        0.5        0.5 )
+
+Net   14 :    8 (        0.5        0.5 )
+
+Net   15 :    8 (        0.5        0.5 )
+   9 (        0.5        0.5 )
+

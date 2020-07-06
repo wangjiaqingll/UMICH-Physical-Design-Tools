@@ -1,0 +1,39 @@
+HGraph Utility:  version 1.0
+# Created      : Fri Mar  3 15:19:54 2000
+
+Copyright (c) 1998-1999 Regents of the University of California
+           All rights reserved.
+Authors: Andrew E. Caldwell, Andrew B. Kahng, Igor L. Markov
+Email:   {caldwell,abk,imarkov}@cs.ucla.edu
+
+Permission is hereby granted, without written agreement and 
+without license or royalty fee, to use, copy, modify, and 
+distribute and sell this software and its documentation for 
+any purpose, provided that the above copyright notice, this 
+permission notice, and the following two paragraphs appear 
+in all copies of this software as well as in all copies of 
+supporting documentation.
+
+THIS SOFTWARE AND SUPPORTING DOCUMENTATION IS PROVIDED "AS IS".
+The Microelectronics Advanced Research Corporation (MARCO), the
+Gigascale Silicon Research Center (GSRC),  and 
+("PROVIDERS") MAKE NO WARRANTIES, whether express 
+or implied, including warranties of merchantability or fitness
+for a particular purpose or noninfringement, with respect to 
+this software and supporting documentation.
+Providers have NO obligation to provide ANY support, assistance,
+installation, training or other services, updates, enhancements
+or modifications related to this software and supporting
+documentation.
+
+Providers shall NOT be liable for ANY costs of procurement of 
+substitutes, loss of profits, interruption of business, or any 
+other direct, indirect, special, consequential or incidental 
+damages arising from the use of this software and its 
+documentation, whether or not Providers have been advised of 
+the possibility of such damages.
+
+
+  --- ABK GROUP DELIBERATE STACK DUMP  ----------- 
+
+  ------------------ END STACK DUMP -------------- 

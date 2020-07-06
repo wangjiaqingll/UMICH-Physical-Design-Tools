@@ -1,0 +1,391 @@
+------------  Running test 0...
+------ Original placement 
+# Created    : Wed Nov 26 00:55:00 1997
+Total points : 5
+       0.999        0.999 
+      0.4444       0.4444 
+       0.333        0.333 
+      0.4444       0.4444 
+      0.4444       0.4444 
+------ Original subset 
+ Mapping source size : 3    destination size : 5
+0 : 2
+1 : 0
+2 : 4
+
+----- Testing FixedGroupConstraint 
+Is satisfied : 0
+Penalty      : 3.1112
+Enforce now 
+# Created    : Wed Nov 26 00:55:00 1997
+Total points : 5
+           1            1 
+      0.4444       0.4444 
+           0            0 
+      0.4444       0.4444 
+           2            2 
+Is satisfied : 1
+Penalty      : 0
+----- Testing FixedXGroupConstraint 
+Is satisfied : 0
+Penalty      : 1.5556
+Enforce now 
+# Created    : Wed Nov 26 00:55:00 1997
+Total points : 5
+           1        0.999 
+      0.4444       0.4444 
+           0        0.333 
+      0.4444       0.4444 
+           2       0.4444 
+Is satisfied : 1
+Penalty      : 0
+----- Testing FixedYGroupConstraint 
+Is satisfied : 0
+Penalty      : 1.5556
+Enforce now 
+# Created    : Wed Nov 26 00:55:00 1997
+Total points : 5
+       0.999            1 
+      0.4444       0.4444 
+       0.333            0 
+      0.4444       0.4444 
+      0.4444            2 
+Is satisfied : 1
+Penalty      : 0
+----- Testing TetheredGroupConstraint 
+Is satisfied : 0
+Penalty      : 3.0112
+Enforce now 
+# Created    : Wed Nov 26 00:55:00 1997
+Total points : 5
+       0.999        0.999 
+      0.4444       0.4444 
+    0.049995     0.049995 
+      0.4444       0.4444 
+        1.95         1.95 
+Is satisfied : 1
+Penalty      : 0
+----- Testing RectRegionConstraint 
+Is satisfied : 0
+Penalty      : 1.298
+Enforce now 
+# Created    : Wed Nov 26 00:55:00 1997
+Total points : 5
+        0.35         0.35 
+      0.4444       0.4444 
+       0.333        0.333 
+      0.4444       0.4444 
+        0.35         0.35 
+Is satisfied : 1
+Penalty      : 0
+----- Testing COGConstraint 
+Is satisfied : 0
+Penalty      : 0.184267
+ Readjusting placement
+# Created    : Wed Nov 26 00:55:00 1997
+Total points : 5
+         0.3          0.5 
+      0.4444       0.4444 
+         0.7          0.7 
+      0.4444       0.4444 
+         0.5          0.3 
+Is satisfied : 1
+Penalty      : 0
+----- Testing EqualXConstraint 
+Is satisfied : 0
+Penalty      : 0.666
+ Enforce now
+# Created    : Wed Nov 26 00:55:00 1997
+Total points : 5
+    0.592133        0.999 
+      0.4444       0.4444 
+    0.592133        0.333 
+      0.4444       0.4444 
+    0.592133       0.4444 
+Is satisfied : 1
+Penalty      : 0
+----- Testing EqualYConstraint 
+Is satisfied : 0
+Penalty      : 0.666
+ Enforce now
+# Created    : Wed Nov 26 00:55:00 1997
+Total points : 5
+       0.999     0.592133 
+      0.4444       0.4444 
+       0.333     0.592133 
+      0.4444       0.4444 
+      0.4444     0.592133 
+Is satisfied : 1
+Penalty      : 0
+----- Testing StayTogetherConstraint 
+Is satisfied : 0
+Penalty      : 0.713733
+ Enforce now
+# Created    : Wed Nov 26 00:55:00 1997
+Total points : 5
+    0.592133     0.592133 
+      0.4444       0.4444 
+    0.592133     0.592133 
+      0.4444       0.4444 
+    0.592133     0.592133 
+Is satisfied : 1
+Penalty      : 0
+----- Testing SoftGroupConstraint 
+Is satisfied : 0
+Penalty      : 0.1
+----- Testing MultRectRegionConstraint 
+Is satisfied : 0
+Penalty      : 0.1
+Is satisfied : 1
+Penalty      : 0
+------------  Running test 1...
+ === Total of 12 spatial constraints : 
+Fixed   Group Constraint of size 3
+Fixed X Group Constraint of size 3
+Fixed Y Group Constraint of size 3
+ Tethered Grp Constraint of size 3
+ Rect. Region Constraint of size 3
+Ctr of Grvity Constraint of size 3
+      Equal X Constraint of size 3
+      Equal Y Constraint of size 3
+Stay Together Constraint of size 3
+  Soft  Group Constraint of size 3
+Mult Rect. Region Constraint of size 3
+Mult Rect. Region Constraint of size 3
+
+Now sorted 
+ === Total of 12 spatial constraints : 
+Stay Together Constraint of size 3
+ Tethered Grp Constraint of size 3
+Mult Rect. Region Constraint of size 3
+Mult Rect. Region Constraint of size 3
+ Rect. Region Constraint of size 3
+  Soft  Group Constraint of size 3
+Ctr of Grvity Constraint of size 3
+      Equal Y Constraint of size 3
+      Equal X Constraint of size 3
+Fixed Y Group Constraint of size 3
+Fixed X Group Constraint of size 3
+Fixed   Group Constraint of size 3
+
+------------  Running test 2...
+ === Total of 9 spatial constraints : 
+Fixed   Group Constraint of size 3
+Fixed X Group Constraint of size 3
+ Tethered Grp Constraint of size 3
+ Rect. Region Constraint of size 3
+      Equal X Constraint of size 3
+      Equal Y Constraint of size 3
+  Soft  Group Constraint of size 3
+Fixed   Group Constraint of size 2
+Fixed X Group Constraint of size 2
+
+Compactified  
+ === Total of 7 spatial constraints : 
+ Tethered Grp Constraint of size 3
+ Rect. Region Constraint of size 3
+  Soft  Group Constraint of size 3
+      Equal Y Constraint of size 3
+      Equal X Constraint of size 3
+Fixed X Group Constraint of size 4
+Fixed   Group Constraint of size 4
+
+ ===== The FixedGroup constraint ====== 
+# Created    : Wed Nov 26 00:55:00 1997
+Total points : 4
+           1            1 
+         0.1          0.1 
+           0            0 
+           2            2 
+
+ Mapping source size : 4    destination size : 5
+0 : 0
+1 : 1
+2 : 2
+3 : 4
+
+------------  Running test 3...
+ === Total of 8 spatial constraints : 
+Fixed   Group Constraint of size 2
+ Tethered Grp Constraint of size 3
+ Rect. Region Constraint of size 3
+      Equal X Constraint of size 3
+      Equal Y Constraint of size 3
+  Soft  Group Constraint of size 3
+Fixed   Group Constraint of size 2
+Fixed X Group Constraint of size 1
+
+Compactified  
+ === Total of 7 spatial constraints : 
+ Tethered Grp Constraint of size 3
+ Rect. Region Constraint of size 3
+  Soft  Group Constraint of size 3
+      Equal Y Constraint of size 3
+      Equal X Constraint of size 3
+Fixed X Group Constraint of size 1
+Fixed   Group Constraint of size 3
+
+ ===== The FixedGroup constraint ====== 
+# Created    : Wed Nov 26 00:55:00 1997
+Total points : 3
+         0.1          0.1 
+           0            0 
+           1            1 
+
+ Mapping source size : 3    destination size : 5
+0 : 1
+1 : 2
+2 : 4
+
+ Permutation: 
+ Permutation size : 5
+0 : 4
+1 : 0
+2 : 1
+3 : 3
+4 : 2
+
+FGCbitVec : 0 1 1 0 1 
+FXGCbitVec : 0 0 0 1 0 
+FYGCbitVec : 0 0 0 0 0 
+------------  Running test 4...
+ Compactified:  === Total of 7 spatial constraints : 
+ Tethered Grp Constraint of size 3
+ Rect. Region Constraint of size 3
+  Soft  Group Constraint of size 3
+      Equal Y Constraint of size 3
+      Equal X Constraint of size 3
+Fixed X Group Constraint of size 1
+Fixed   Group Constraint of size 3
+
+ ===== The FixedGroup constraint ====== 
+# Created    : Wed Nov 26 00:55:00 1997
+Total points : 3
+         0.1          0.1 
+           0            0 
+           1            1 
+
+ Mapping source size : 3    destination size : 5
+0 : 1
+1 : 2
+2 : 4
+
+ Restrict to / pull-back along :
+ Mapping source size : 2    destination size : 5
+0 : 2
+1 : 3
+ Restriction: 
+ === Total of 7 spatial constraints : 
+ Tethered Grp Constraint of size 1
+ Rect. Region Constraint of size 1
+  Soft  Group Constraint of size 1
+      Equal Y Constraint of size 1
+      Equal X Constraint of size 1
+Fixed X Group Constraint of size 1
+Fixed   Group Constraint of size 1
+
+ Pull-back : 
+ === Total of 7 spatial constraints : 
+ Tethered Grp Constraint of size 1
+ Rect. Region Constraint of size 1
+  Soft  Group Constraint of size 1
+      Equal Y Constraint of size 1
+      Equal X Constraint of size 1
+Fixed X Group Constraint of size 1
+Fixed   Group Constraint of size 1
+
+ ===== The FixedGroup constraint ====== 
+# Created    : Wed Nov 26 00:55:00 1997
+Total points : 1
+           0            0 
+
+ Mapping source size : 1    destination size : 5
+0 : 2
+
+ ===== The FixedGroup constraint ====== 
+# Created    : Wed Nov 26 00:55:00 1997
+Total points : 1
+           0            0 
+
+ Mapping source size : 1    destination size : 2
+0 : 0
+
+ Restrict to / pull-back along :
+ Mapping source size : 2    destination size : 5
+0 : 1
+1 : 3
+ Restriction: 
+ === Total of 2 spatial constraints : 
+Fixed X Group Constraint of size 1
+Fixed   Group Constraint of size 1
+
+ Pull-back : 
+ === Total of 2 spatial constraints : 
+Fixed X Group Constraint of size 1
+Fixed   Group Constraint of size 1
+
+ ===== The FixedGroup constraint ====== 
+# Created    : Wed Nov 26 00:55:00 1997
+Total points : 1
+         0.1          0.1 
+
+ Mapping source size : 1    destination size : 5
+0 : 1
+
+ ===== The FixedGroup constraint ====== 
+# Created    : Wed Nov 26 00:55:00 1997
+Total points : 1
+         0.1          0.1 
+
+ Mapping source size : 1    destination size : 2
+0 : 0
+
+------------  Running test 5...
+ Compactified:  === Total of 7 spatial constraints : 
+ Tethered Grp Constraint of size 3
+ Rect. Region Constraint of size 3
+  Soft  Group Constraint of size 3
+      Equal Y Constraint of size 3
+      Equal X Constraint of size 3
+Fixed X Group Constraint of size 1
+Fixed   Group Constraint of size 3
+
+ ===== The FixedGroup constraint ====== 
+# Created    : Wed Nov 26 00:55:01 1997
+Total points : 3
+         0.1          0.1 
+           0            0 
+           1            1 
+
+ Mapping source size : 3    destination size : 5
+0 : 1
+1 : 2
+2 : 4
+
+ New constraints:  === Total of 2 spatial constraints : 
+Fixed X Group Constraint of size 1
+Fixed   Group Constraint of size 3
+
+ Placement size : 10
+ ===== The FixedGroup constraint ====== 
+# Created    : Wed Nov 26 00:55:01 1997
+Total points : 3
+         0.1          0.1 
+           0            0 
+           1            1 
+
+ Mapping source size : 3    destination size : 10
+0 : 1
+1 : 2
+2 : 4
+
+ Fixed BBox : 0  0   1  1
+
+ === Total of 7 spatial constraints : 
+ Tethered Grp Constraint of size 3
+ Rect. Region Constraint of size 3
+  Soft  Group Constraint of size 3
+      Equal Y Constraint of size 3
+      Equal X Constraint of size 3
+Fixed X Group Constraint of size 1
+Fixed   Group Constraint of size 3

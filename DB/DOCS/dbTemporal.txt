@@ -1,0 +1,36 @@
+dbTemporal
+==========
+
+  Contains the timing information gathered from LEF/DEF files.
+  
+Overview
+--------
+
+The dbTemporal class contains information about the timing
+characteristics of the design. This information is contained in two
+basic structures:
+
+1) A series of dbTEdgeTimingInfo structures (which contain information
+   regarding gate delays between two dbMasterPin's);
+
+2) A timing graph containing nodes for each of the relevant pins. Each
+   node contains information relevant to the pin (e.g., on resistance,
+   load capacitance) and each edge, to the relevant pair of
+   dbMasterPin's.
+
+Construction & Population
+-------------------------
+
+The dbTemporal pointer inside DB should be filled by a new object
+constructed by the parser. This object should then be populated
+according to the following procedure:
+
+
+1) each time a MACRO TIMING statement is found, the method addInfoTo()
+   should be called, passing the appropriate dbMasterPin's as parameters;
+
+2) for each piece of information gathered from the file, the
+   corresponding method add*() should be called.
+
+
+

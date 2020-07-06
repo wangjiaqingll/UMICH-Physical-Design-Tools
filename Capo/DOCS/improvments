@@ -1,0 +1,5 @@
+-changed tolerance computation from the one in the w.s. paper.  For
+ non-overfilled blocks, we were setting the tolerance to 
+ max(computed tol, median cell size).  However, B&B partitioners do not 
+ need such allowances.  So, for problems below the smallPart threshold,
+ the tolerance is not relaxed in such situations.

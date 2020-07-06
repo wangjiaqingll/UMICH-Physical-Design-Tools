@@ -1,0 +1,172 @@
+UCLA nets 1.0
+#Created : fill in later
+#User : fill in later
+#Platform : fill in later
+
+NumNets : 55
+NumPins : 110
+NetDegree : 2
+	p0 B
+	a0 B
+NetDegree : 2
+	p1 B
+	a1 B
+NetDegree : 2
+	p2 B
+	a2 B
+NetDegree : 2
+	p3 B
+	a27 B
+NetDegree : 2
+	p4 B
+	a28 B
+NetDegree : 2
+	p5 B
+	a29 B
+NetDegree : 2
+	p6 B
+	a6 B
+NetDegree : 2
+	p7 B
+	a15 B
+NetDegree : 2
+	p8 B
+	a14 B
+NetDegree : 2
+	p9 B
+	a23 B
+NetDegree : 2
+	a0 B
+	a1 B
+NetDegree : 2
+	a1 B
+	a2 B
+NetDegree : 2
+	a3 B
+	a4 B
+NetDegree : 2
+	a4 B
+	a5 B
+NetDegree : 2
+	a0 B
+	a3 B
+NetDegree : 2
+	a1 B
+	a4 B
+NetDegree : 2
+	a2 B
+	a5 B
+NetDegree : 2
+	a6
+	a7
+NetDegree : 2
+	a7
+	a8
+NetDegree : 2
+	a8
+	a9
+NetDegree : 2
+	a9
+	a10
+NetDegree : 2
+	a10
+	a11
+NetDegree : 2
+	a11
+	a12
+NetDegree : 2
+	a12
+	a13
+NetDegree : 2
+	a13
+	a14
+NetDegree : 2
+	a15
+	a16
+NetDegree : 2
+	a16
+	a17
+NetDegree : 2
+	a17
+	a18
+NetDegree : 2
+	a18
+	a19
+NetDegree : 2
+	a19
+	a20
+NetDegree : 2
+	a20
+	a21
+NetDegree : 2
+	a21
+	a22
+NetDegree : 2
+	a22
+	a23
+NetDegree : 2
+	a6
+	a15
+NetDegree : 2
+	a7
+	a16
+NetDegree : 2
+	a8
+	a17
+NetDegree : 2
+	a9
+	a18
+NetDegree : 2
+	a10
+	a19
+NetDegree : 2
+	a11
+	a20
+NetDegree : 2
+	a12
+	a21
+NetDegree : 2
+	a13
+	a22
+NetDegree : 2
+	a14
+	a23
+NetDegree : 2
+	a24
+	a27
+NetDegree : 2
+	a25
+	a28
+NetDegree : 2
+	a26
+	a29
+NetDegree : 2
+	a24
+	a25
+NetDegree : 2
+	a25
+	a26
+NetDegree : 2
+	a27
+	a28
+NetDegree : 2
+	a28
+	a29
+NetDegree : 2
+	a3
+	a9
+NetDegree : 2
+	a4
+	a10
+NetDegree : 2
+	a5
+	a11
+NetDegree : 2
+	a18
+	a24
+NetDegree : 2
+	a19
+	a25
+NetDegree : 2
+	a20
+	a26

@@ -1,0 +1,74 @@
+#!/bin/csh -f
+
+#**************************************************************************
+#**
+#**    Copyright (c) 1995-1997 by ABKGroup, UCLA VLSI CAD Laboratory,
+#**    UCLA Computer Science Department, Los Angeles, CA 90095-1596 USA,
+#**    and by the Regents of the University of California.
+#**    All rights reserved.
+#**
+#**    No portion of this file may be used, copied, or transmitted for
+#**    any purpose, including any research or commercial purpose,
+#**    without the express written consent of Professor Andrew B. Kahng,
+#**    UCLA Computer Science Department, 3713 Boelter Hall, Los Angeles,
+#**    CA 90095-1596 USA.   Any copy made of this file must include this
+#**    notice.    ABKGroup and the Regents of the University of California
+#**    retain title to all copies of this file and/or its compiled
+#**    derivatives.
+#**
+#**************************************************************************/
+
+set DIFF=/usr/bin/diff
+set WC=/usr/bin/wc
+
+set PROG="MetaPlacerTest"
+
+/bin/rm -f seeds.out seeds.in
+
+cp TESTS/seeds.in seeds.in
+
+echo "Running MetaPlacer on saurabh1 (20 cells)" 
+echo "Running MetaPlacer on saurabh1 (20 cells)" > new.out
+${PROG}0.exe -f TESTS/saurabh1.aux -verb 6_6_6 -plotWNames saurabh1 -saveBlocks -plotBlocks >>& new.out
+cat saurabh1.gpl block_mem.dat cell_names.dat capoBlocks-layer*.gpl >>& new.out
+rm -rf saurabh1.gpl block_mem.dat cell_names.dat capoBlocks-layer*.gpl >>& /dev/null
+
+echo "Running MetaPlacer on C432a (160 cells)" 
+echo "Running MetaPlacer on C432a (160 cells)" >>& new.out
+${PROG}0.exe -f TESTS/C432a.aux -verb 6_6_6 -plot C432a -saveBlocks -plotBlocks -save >>& new.out
+cat C432a.gpl block_mem.dat cell_names.dat capoBlocks-layer*.gpl out.pl >>& new.out
+rm -rf C432a.gpl block_mem.dat cell_names.dat capoBlocks-layer*.gpl out.pl >& /dev/null
+
+echo "Running MetaPlacer on saurabh1 (20 cells) : 1-dim placement" 
+echo "Running MetaPlacer on saurabh1 (20 cells) : 1-dim placement" >> new.out
+${PROG}0.exe -f TESTS/saurabh1-hg.aux -save -saveXorder >>& new.out
+cat out.pl left2right.ord >>& new.out
+
+echo "Running MetaPlacer on feature benchmarks" 
+echo "Running MetaPlacer on feature benchmarks" >> new.out
+${PROG}0.exe -f TESTS/AAIO_2x3.aux >>& new.out
+${PROG}0.exe -f TESTS/Blob_6x9x2x3x2x3.aux >>& new.out
+${PROG}0.exe -f TESTS/Brickwall_11x25x2x1.aux >>& new.out
+${PROG}0.exe -f TESTS/Centerblock_6x9x2x3x2x3.aux >>& new.out
+${PROG}0.exe -f TESTS/Cross_6x9x2x3x2x3.aux >>& new.out
+${PROG}0.exe -f TESTS/Kites_3x5.aux >>& new.out
+${PROG}0.exe -f TESTS/MPIO_5x5x2x2x2x2.aux >>& new.out
+${PROG}0.exe -f TESTS/Obstacle_6x9x2x3x2x3.aux >>& new.out
+${PROG}0.exe -f TESTS/PerifIO_3x5.aux >>& new.out
+${PROG}0.exe -f TESTS/BlobObstacle_6x12x2x3x2x3.aux >>& new.out
+
+egrep -vi "(#|Time|Created|took|sec|User|Platform|Memory|warning)" new.out > newout.notime
+egrep -vi "(#|Time|Created|took|sec|User|Platform|Memory|warning)" expected.out > expectedout.notime
+
+$DIFF newout.notime expectedout.notime    >  diffs.notime
+
+echo " "
+echo Differences from precomputed results
+$WC diffs.notime
+
+echo "** Depending on your platform, there may be large differences "
+echo "** in this test -- that's ok "
+echo "** Check for crashes; check the final WLs number (they must be close)"
+
+rm -f seeds.{out,in} expectedout.notime
+

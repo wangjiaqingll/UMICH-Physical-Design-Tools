@@ -1,0 +1,64 @@
+
+UCLA MLPart 4.19 (May 24 2000)
+
+Copyright (c) 1998-2000 Regents of the University of California
+           All rights reserved.
+Authors: Andrew E. Caldwell, Andrew B. Kahng, Igor L. Markov
+Email:   {caldwell,abk,imarkov}@cs.ucla.edu
+
+Permission is hereby granted, without written agreement and 
+without license or royalty fee, to use, copy, modify, and 
+distribute and sell this software and its documentation for 
+any purpose, provided that the above copyright notice, this 
+permission notice, and the following two paragraphs appear 
+in all copies of this software as well as in all copies of 
+supporting documentation.
+
+THIS SOFTWARE AND SUPPORTING DOCUMENTATION IS PROVIDED "AS IS".
+The Microelectronics Advanced Research Corporation (MARCO), the
+Gigascale Silicon Research Center (GSRC),  and 
+("PROVIDERS") MAKE NO WARRANTIES, whether express 
+or implied, including warranties of merchantability or fitness
+for a particular purpose or noninfringement, with respect to 
+this software and supporting documentation.
+Providers have NO obligation to provide ANY support, assistance,
+installation, training or other services, updates, enhancements
+or modifications related to this software and supporting
+documentation.
+
+Providers shall NOT be liable for ANY costs of procurement of 
+substitutes, loss of profits, interruption of business, or any 
+other direct, indirect, special, consequential or incidental 
+damages arising from the use of this software and its 
+documentation, whether or not Providers have been advised of 
+the possibility of such damages.
+
+Reading TESTS/primary1+.aux
+ Done reading HGraph
+ Reading TESTS/2way10%.blk ... 
+
+Terminals specified in .net or .netD file, but no .fix file given.
+  Making all nodes nonterminal (Warning in partProbIO.cxx:1140)
+
+-----   Run Number 1 of 1 runs (each a best of 1)
+
+ Will now create 1 clusterTree to find one solution
+ Selecting 1 initial solution(s), from 3 random starts each
+ Performing 1 V-Cycle
+ Best Cost in one ML (1 starts):49   average :    50
+ Part Areas: 6.4575e+06 / 5.5695e+06
+ Pin balances :   1671 / 1237
+ One ML took            0.36 user, 6.0e-02 system, 0 real, 0.614 norm'd sec 
+Net Cut: 49
+Part Areas: 6.4575e+06 / 5.5695e+06
+________________ Overall Results ___________________
+  Best Costs:    Max: 49  Min: 49  Avg: 49  StdDev: 0
+
+  RunTime:       Max: 0.36  Min: 0.36  Avg: 0.36  StdDev: 0
+
+# Created      : Tue May  8 13:02:59 2001
+# Platform     : SunOS 5.7 sparc SUNW,Ultra-5_10 
+# User         : stefanus@nexus11.cs.ucla.edu (Stefanus Mantik) 
+# Memory usage : 8.76562Mb (peak)  2.85156Mb (estimate)
+# Run-time conversion to Ultra-1 @143.5/71.5MHz, SunProCC4.2/-O5 : 1.708333 
+
