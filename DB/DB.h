@@ -103,21 +103,27 @@ public:
           double placeHolder4;
           double placeHolder5;
 
-      Parameters();                           // 函数声明
+      Parameters();                           // 构造函数
     };
 
 private:
+    // 待定
     MakeFriendsWithParsers
- 
+    // 声明一个Parameters类
     Parameters _params;
-
+    // 原始文件格式
     char origFileFormat[30];
+    // 原始文件名字
     char origFileName[255];
+    // 目录名称？
     char dirName  [1023];
+    // 容器存储.aux文件里面所有文件的名称
     vector<char*>  allFileNamesInAUX;
+    // 设计的名字
     char designName[255];
+    // 采用技术名称
     char technoName[255];
-    char delimiter;             // no code to set delimiter yet
+    char delimiter;             // no code to set delimiter yet 定界符
 
     void  postProcessor(const char * LGCFileName=NULL);
                            //always called after parsing in every DB

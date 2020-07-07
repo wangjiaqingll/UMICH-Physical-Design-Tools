@@ -101,7 +101,7 @@
 #ifndef  ABKDEBUG
 #define  ABKDEBUG
 #endif
-
+// DB::Parameters构造函数 - 初始化
 DB::Parameters::Parameters():ignoreLogicalPins(true),
                              ignoreGlobalRoutingInfo(true),
                              ignoreDetailedRoutingInfo(true),

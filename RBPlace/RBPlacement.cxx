@@ -812,7 +812,7 @@ abkassert(sr.getNumCells()-firstCellOffset >= cellPermutation.size(),
     }
 }
 
-ostream& operator<<(ostream& out, const RBPlacement& arg)
+ostream& operator<<(ostream& out, const RBPlacement& arg) // 重载<<定义
 {
   unsigned i,j;
   unsigned cellCount = 0;
@@ -831,7 +831,7 @@ ostream& operator<<(ostream& out, const RBPlacement& arg)
   out << endl;
   return out;
 }
-
+// 函数定义 - 声明在RBPlacement.h中 函数功能是给几个变量赋值 numRowsToRemove ermCongestion spaceCellsAlg
 RBPlacement::Parameters::Parameters(int argc, const char *argv[])
   :HGraphParameters(argc,argv),
    verb(argc,argv), numRowsToRemove(0), spaceCellsAlg(EQUAL_SPACE),
@@ -840,13 +840,13 @@ RBPlacement::Parameters::Parameters(int argc, const char *argv[])
    UnsignedParam numRowsToRemove_("numRowsToRemove", argc, argv);
    StringParam spaceCellsAlg_("spaceCellsAlg", argc, argv);
    BoolParam remCongestion_("remCongestion", argc, argv);
-
+	// Congestion - 拥塞
    if(remCongestion_.found())
      remCongestion = 1;
-
+	// 需要移除的行 or 移除行的数量？
    if(numRowsToRemove_.found())
 	numRowsToRemove = numRowsToRemove_; 
-
+	// 枚举赋值
    if(spaceCellsAlg_.found())
    {
       if(strcasecmp(spaceCellsAlg_,"EQUAL") == 0)
@@ -856,10 +856,10 @@ RBPlacement::Parameters::Parameters(int argc, const char *argv[])
       else if(strcasecmp(spaceCellsAlg_,"PIN2") == 0)
          spaceCellsAlg = WITH_PIN_ALG2;
       else
-          abkwarn(0,"Unrecognize spaceCellsAlg! Using default value");
+          abkwarn(0,"Unrecognize spaceCellsAlg! Using default value"); // 警告
    }
 }
-
+// 重载输出？ 对是上面三个参数进行输出
 ostream& operator<< (ostream& out, const RBPlaceParams& params)
 {
     out<<" RBPlacement Parameters"<<endl;
@@ -881,16 +881,17 @@ ostream& operator<< (ostream& out, const RBPlaceParams& params)
     return out;
 }
 
+// 保存布局 怎么保存？保存哪些信息
 void RBPlacement::savePlacement (const char* plFileName)   const
 {
    ofstream out(plFileName); 
    
    out << "UCLA pl 1.0"<<endl;
-   out <<TimeStamp() << User() << Platform() << endl << endl;
+   out <<TimeStamp() << User() << Platform() << endl << endl; // 输出时间， 用户， 平台等信息
 
-   for (unsigned i=0; i<_placement.getSize(); i++)
+   for (unsigned i=0; i<_placement.getSize(); i++)   // getSize在Placement类中
    {
-        const char * namePtr=_hgWDims -> getNodeByIdx(i). getName();
+        const char * namePtr=_hgWDims -> getNodeByIdx(i). getName(); // 获取名字
 
         out<<setw(8) << (namePtr ? namePtr : "name unavailable")
 	   <<"  "<<setw(10)<<static_cast <long long int> (_placement[i].x)

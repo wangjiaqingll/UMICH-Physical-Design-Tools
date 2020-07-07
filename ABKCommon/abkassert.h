@@ -190,6 +190,7 @@ char* BaseFileName(char *filename);
 //: just like abkassert(), but does not depend on  whether
 // a symbol is defined. "unconditional assertion"
 // should be used in all noncritical places
+// CONDITION为情况，ERRMESSAGE为错误信息，如果CONDITION为假，输出错误信息
 #define abkfatal(CONDITION, ERRMESSAGE)                                 \
         {  if (!(CONDITION))                                            \
        {  cerr << endl << (ERRMESSAGE) ;                                \

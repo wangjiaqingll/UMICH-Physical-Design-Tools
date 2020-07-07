@@ -97,7 +97,7 @@ using std::vector;
 #include "dbPin.h"
 #include "Placement/placement.h"
 
-class CompareNetsByCellIndex;
+class CompareNetsByCellIndex;  
 class CompareMCsByName;
 class CompareCellsByName;
 class CompareCellsByCellIndex;

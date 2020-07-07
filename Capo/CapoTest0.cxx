@@ -59,21 +59,24 @@
 //#include "rownet.h"
 //#include "netopt.h"
 #include "PlaceEvals/edgePlEval.h"
-
+// argc = argument count,表示传入main函数的数组元素的个数，int 类型
+// argv = argument vector, 表示传入main函数的指针数组， char**类型
+// 第一个数组元素argv[0]是程序名称，包含程序所在完整路径
+// 两个参数通过终端输入获得
 int main(int argc, const char *argv[])
-{
+{ // 声明几个类型类，以便接收处理终端信息
   NoParams         noParams       (argc,argv);
-  BoolParam        helpRequest    ("help",argc,argv);
+  BoolParam        helpRequest    ("help",argc,argv); // help - key 
   BoolParam        helpRequest1   ("h",   argc,argv);
   BoolParam        saveDef        ("save",argc,argv);
   BoolParam        saveOrigDef    ("saveOrig",argc,argv);
 // BoolParam        doCellFlipping ("flip",argc,argv);
 // BoolParam        doCellSpacing  ("cellSpace",argc,argv);
 
-  Verbosity	   verb(argc, argv);
+  Verbosity	   verb(argc, argv); // Going! July 08
 
   PRINT_VERSION_INFO
-  cout << CmdLine(argc,argv);
+  cout << CmdLine(argc,argv); // 输出终端
 
 // ------------- Process parameters before getting bogged down in computations
 
@@ -94,6 +97,7 @@ int main(int argc, const char *argv[])
   StringParam 	 auxFileName 	("f", 	argc,argv);
   abkfatal(auxFileName.found(),"Usage: prog -f filename.aux <more params>"); // 错误警告函数
 
+  // 检查信息
   BoolParam check("checkDB",argc,argv);
   DB::Parameters dbparams;
   dbparams.alwaysCheckConsistency=check;
@@ -102,11 +106,11 @@ int main(int argc, const char *argv[])
 
   if(saveOrigDef.found())
 	db.saveDEF("orig.def");
-
+  // 输出设计名称
   cerr<<"Design Name: "<<db.getDesignName()<<endl;
 
-
-  RBPlaceParams rbParam(argc,argv);
+  // 
+  RBPlaceParams rbParam(argc,argv); // 处理参数 - 返回什么
   RBPlaceFromDB rbplace(db, rbParam);   
 
   Timer capoTimer;

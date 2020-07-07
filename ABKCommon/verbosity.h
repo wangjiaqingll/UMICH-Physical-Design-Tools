@@ -90,14 +90,15 @@
 //   Note: if needed, we can add extensions to handle
 //   output to different diagnostic streams
 //   (e.g. for each type)
-class Verbosity   // 错误诊断
+class Verbosity   // 声明类
 {
-   std::vector<unsigned>  _levels;   // 错误等级
+  // 私有成员 - 默认
+   std::vector<unsigned>  _levels;   // 声明一个无符号数组容器存储错误等级
 
-   void _ctructFromString(const char* levels); // 声明
-
+   void _ctructFromString(const char* levels); // 声明成员函数
+  // 公有成员
  public:
-
+    
     Verbosity(); 
     // the default is "silent"
     Verbosity(const char* levels);

@@ -80,7 +80,7 @@ public:
 
 protected:
 
-   unsigned nPts;
+   unsigned nPts; // 代表什么
    Point    *points;
 
 protected:
@@ -104,7 +104,7 @@ public:
     Placement(Examples ex, unsigned size, BBox bb=BBox(0,0,1,1));
     virtual ~Placement() { if(points) delete[] points; };
 
-    unsigned getSize()    const     {return nPts; };  
+    unsigned getSize()    const     {return nPts; };   // 获取尺寸？ nPts代表什么
     unsigned size()       const     {return nPts; };  
 
     Point&         operator[](unsigned idx) 

@@ -98,11 +98,11 @@ typedef pair<const RBPCoreRow *, const RBPSubRow *> RBRowPtrs;
 
 enum clusterNodeOrient {N, FN, S, FS, W, FW, E, FE, I};
 
-class RBPlacement
+class RBPlacement 
 {
     friend class HGraphFixed;  // 友元类 - HGraphFixed类可访问RBPlacement私有成员
   public:
-    class Parameters : public HGraphParameters // Parameters为HgraphParameters 公有继承类
+    class Parameters : public HGraphParameters // Parameters为HgraphParameters 公有继承类 类的嵌套使用
     {
      public:
         enum spaceCellsAlgType { EQUAL_SPACE, WITH_PIN_ALG1, WITH_PIN_ALG2 }; // 枚举声明
@@ -116,17 +116,17 @@ class RBPlacement
 	bool            remCongestion;  //used to remove congestion by blowing
 	                                //up cell widths. to be used only on
 	                                // routed placements 用于通过扩大单元格宽度来消除拥塞，仅在布线时使用
-	
+	// 此处函数功能是什么？重点***
 	Parameters()
 	  :verb("1 1 1"), numRowsToRemove(0), spaceCellsAlg(EQUAL_SPACE),
 	  remCongestion(0)
 	  {}
-	Parameters(int argc, const char *argv[]); // 析构函数？
+	Parameters(int argc, const char *argv[]); // 构造函数？ 输入一个整数和一个字符串列表指针
         Parameters(const Parameters& orig)
-	  :HGraphParameters(orig), verb(orig.verb), numRowsToRemove(orig.numRowsToRemove),
+	  :HGraphParameters(orig), verb(orig.verb), numRowsToRemove(orig.numRowsToRemove), // 了解HGraphParameters类的功能
 	   spaceCellsAlg(orig.spaceCellsAlg),remCongestion(orig.remCongestion)
-	  {}
-	friend ostream& operator<<(ostream&, const Parameters&);
+	  {}                                                                               // Parameters声明
+	friend ostream& operator<<(ostream&, const Parameters&); // 重载<< 定义在RBPlacements.cxx中
     };
 
     Constraints constraints;  // defined in the Constraints package
@@ -138,7 +138,7 @@ class RBPlacement
 
   protected:
 
-    HGraphWDimensions*   _hgWDims;  //owned by RBPl, but 
+    HGraphWDimensions*   _hgWDims;  //owned by RBPl, but  指针
 				//a pointer so it can be populated by
 				//ctors of derived classes
     bool 		_populated;
@@ -146,7 +146,7 @@ class RBPlacement
 
     vector<RBPCoreRow> 	_coreRows;    
 
-    PlacementWOrient	_placement;		//location of each cell
+    PlacementWOrient	_placement;		//location of each cell // 每个单元格位置
     bit_vector		_isInSubRow;
     vector<RBCellCoord> _cellCoords;		//for cells in subRows,
 						//cellCoords allows for O(1)
@@ -550,7 +550,7 @@ class RBPlacement
 
 };
 
-typedef RBPlacement::Parameters RBPlaceParams;
+typedef RBPlacement::Parameters RBPlaceParams; // Parameters为RBPlacement的内部类 - 此处声明了一个Parameters类为RBPlaceParams
 
 class CompareCellIdsByX
 {

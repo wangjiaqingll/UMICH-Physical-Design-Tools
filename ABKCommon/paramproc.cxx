@@ -62,18 +62,18 @@
 static char _uninitialized[]="Uninitialized";
 
 //using namespace std;
-
+// Param构造函数 - 正常 初始化列表
 Param::Param(Type pt,int argc, const char * const argv[])
 : _b(false), _on(false), _i(INT_MAX), _u(unsigned(-1)), _d(-1.29384756657), 
   _s(_uninitialized), _pt(pt), _key("")
-{
+{ // 类型Type为无参数时，提示此结构仅能用于无参数情况
   abkfatal(pt==NOPARAM," This constructor can only work with Param:NOPARAM\n");
   (void)argv; // please compiler 
    
-  _b=(argc<2?true:false);
+  _b=(argc<2?true:false); // 输入的数组元素少于两个
   return;
 } 
-
+// 有参数的情况  初始化列表
 Param::Param (const char * key, Type pt,int argc, const char * const argv[])
 : _b(false), _on(false), _i(-1), _u(unsigned(-1)), _d(-1.23456), 
   _s(_uninitialized), _pt(pt), _key(key)
@@ -99,7 +99,7 @@ Param::Param (const char * key, Type pt,int argc, const char * const argv[])
          else
             _on=true;  
 
-         if (strcasecmp(start,_key)==0)
+         if (strcasecmp(start,_key)==0) // 为什么无定义？ 平台问题？ 暂定
          {
               _b=true;
               if (n+1 < argc)
@@ -121,19 +121,19 @@ Param::Param (const char * key, Type pt,int argc, const char * const argv[])
       }
   }
 }
-
+// 检查到输入参数，返回True
 bool      Param::found()       const
 { return _b; }
-
+// 为检查到参数，输出提示
 bool      Param::on()          const // true for +option, false otherwise
 { 
   abkfatal(found()," Parameter not found: you need to check for this first\n");
   return _on;
 }
-
+// 获取对应类型的参数
 int       Param::getInt()      const
 { 
-   abkfatal(_pt==INT," Parameter is not INT ");
+   abkfatal(_pt==INT," Parameter is not INT "); // abkfatal - 如果_pt==INT为假，输出“Parameter...”
    abkfatal(found()," Parameter not found: you need to check for this first\n");
    return _i;
 }

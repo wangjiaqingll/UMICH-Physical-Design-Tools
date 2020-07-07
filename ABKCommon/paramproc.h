@@ -53,7 +53,7 @@
                   with unambiguous conversions and clever found()
  980313 ilm    fixed const-correctness
 */ 
-
+/*此文件用于对终端获取的参数进行相应处理*/
 #ifndef _PARAMPROC_H_
 #define _PARAMPROC_H__
 
@@ -71,12 +71,15 @@
 #include "abkassert.h"
 
 //:(base class) Catches a given parameter from the command line 
+// 从终端获取参数
 class Param            
-{               
+{
+// 公有成员为一个枚举类型              
 public:
     enum Type { NOPARAM, BOOL, INT, UNSIGNED, DOUBLE, STRING };
     // NOPARAM means "empty command line"
     // BOOL means "no value: either found in command line or not"
+// 私有成员
 private:
     bool          _b;  // found
     bool          _on; 
@@ -86,15 +89,19 @@ private:
     const char *  _s;
     Type          _pt;
     const char *  _key;
+// 成员函数声明
 public:
+    // 构造函数
     Param(const char * keyy, Type part, int argc, const char * const argv[]);
+    // 为何有两个？输入参数不一样
     Param(Type part, int argc, const char * const argv[]); // for NOPARAM only
-   ~Param() {};
+   ~Param() {}; // 析构函数
+   // found函数声明
     bool      found()       const; 
     // for any Param::Type, always need to check before anything else
     bool      on()          const;  
     // for any Param::Type; true if the option was invoked with +
-
+    // 声明不同类型参数获取函数
     int       getInt()      const;
     unsigned  getUnsigned() const;
     double    getDouble()   const;
@@ -105,10 +112,12 @@ public:
 };
 
 //:Constructed from argc/argv, returns to true 
-// if the command line had no parameters 
+// if the command line had no parameters
+// 如果终端名为没有输入信息，则用NoParams类处理，继承了Parm类的私有成员，即_b等
 class NoParams  : private Param
 {
 public:
+    // 构造函数声明 - 使用了基类Param的NoParam情况下的成员函数
      NoParams(int argc, const char * const argv[]):Param(Param::NOPARAM,argc,argv) {}
      bool found()    const { return Param::found(); }
      operator bool() const { return Param::found(); }
@@ -116,9 +125,11 @@ public:
 };
 
 //: Catches a given boolean parameter
+// 获取一个布尔型参数 - 私有继承Param
 class BoolParam : private Param
 {
 public:
+    // 构造函数声明 - 使用了基类Param的有参数情况下的成员函数 -->下同
     BoolParam(const char * key, int argc, const char * const argv[]) 
     : Param(key,Param::BOOL,argc,argv) {}
     bool found() const    { return Param::found(); }
