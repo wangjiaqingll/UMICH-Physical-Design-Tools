@@ -92,7 +92,7 @@ private:
 // 成员函数声明
 public:
     // 构造函数
-    Param(const char * keyy, Type part, int argc, const char * const argv[]);
+    Param(const char * key, Type part, int argc, const char * const argv[]);
     // 为何有两个？输入参数不一样
     Param(Type part, int argc, const char * const argv[]); // for NOPARAM only
    ~Param() {}; // 析构函数

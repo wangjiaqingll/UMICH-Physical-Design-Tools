@@ -831,7 +831,7 @@ ostream& operator<<(ostream& out, const RBPlacement& arg) // 重载<<定义
   out << endl;
   return out;
 }
-// 函数定义 - 声明在RBPlacement.h中 函数功能是给几个变量赋值 numRowsToRemove ermCongestion spaceCellsAlg
+// 函数定义 - 接收终端参数，参数列表初始化
 RBPlacement::Parameters::Parameters(int argc, const char *argv[])
   :HGraphParameters(argc,argv),
    verb(argc,argv), numRowsToRemove(0), spaceCellsAlg(EQUAL_SPACE),

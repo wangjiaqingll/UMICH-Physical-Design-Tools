@@ -103,7 +103,25 @@ class CompareCellsByName;
 class CompareCellsByCellIndex;
 
 class dbNetlist 
-{
+{   
+// MakeFriendsWithParsers  定义为一些友元类
+/*
+#ifndef 
+MakeFriendsWithParsers 
+#define MakeFriendsWithParsers  friend int   lefparse();    \ 				
+        friend int   defparse();    \ 				
+        friend class ParserLEFDEF;  \ 				
+        friend class ParserLEFDEFq; \ 				
+        friend class ParserXXX;     \ 				
+        friend class putYourFavoriteParserHere; \ 
+        friend class AtomicChanges; \ 
+        friend class InsertDelete; \ 
+        friend void sortEqClasses(dbNetlist& design); \ 
+        friend void sortObstacles(dbNetlist& design); \ 
+        friend void sortPins(dbNetlist& design); // workaround for CC iropt bug  
+        #endif   
+        #endif
+*/
     MakeFriendsWithParsers
     friend class DB;
     

@@ -87,16 +87,16 @@ ostream& operator<<(ostream& os, const Verbosity& verbsty) // 0,1,2三个等级
 
     return os;
 }
-
-void Verbosity::_ctructFromString(const char* levels)
-{
+// 成员函数定义 - 对诊断等级进行判断处理
+void Verbosity::_ctructFromString(const char* levels) 
+{  // 默认等级 - 静默 - 结束
    if (levels==NULL || 
        !strcmp(levels,"0") || !strcasecmp(levels,"silent"))
    {
       _levels.erase(_levels.begin()+3,_levels.end());
       return;
    }
-
+   // 非默认等级
    unsigned len=strlen(levels);
    char * levs=new char[len+1];
    for(unsigned c=0;c<len;c++) 
@@ -123,7 +123,7 @@ void Verbosity::_ctructFromString(const char* levels)
    _levels.erase(_levels.begin()+numLev,_levels.end());
    delete[] levs;
 }
-
+// Verbosity成员函数定义 - 参数为诊断等级
 Verbosity::Verbosity(const char* levels)
 // space or underscore-separated unsigneds
 :_levels(100,0),
@@ -131,7 +131,7 @@ forActions(_levels[0]),forSysRes(_levels[1]),forMajStats(_levels[2])
 {
   _ctructFromString(levels);
 }
-
+// 参数传入 - 构造函数
 Verbosity::Verbosity(int argc, const char *argv[]) // catches -verb
 :_levels(100,0),
 forActions(_levels[0]),forSysRes(_levels[1]),forMajStats(_levels[2])
@@ -143,6 +143,7 @@ forActions(_levels[0]),forSysRes(_levels[1]),forMajStats(_levels[2])
     if (helpRequest1.found() || helpRequest2.found())
     {
       cout << " -verb 1_1_1 | silent " << endl; 
+      // _levels为一个vector --> erase为erase功能
       _levels.erase(_levels.begin()+3,_levels.end());
       return;
     }

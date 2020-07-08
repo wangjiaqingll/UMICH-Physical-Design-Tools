@@ -73,15 +73,15 @@ int main(int argc, const char *argv[])
 // BoolParam        doCellFlipping ("flip",argc,argv);
 // BoolParam        doCellSpacing  ("cellSpace",argc,argv);
 
-  Verbosity	   verb(argc, argv); // Going! July 08
-
+  Verbosity	   verb(argc, argv); // 诊断
+  // 打印出版本信息
   PRINT_VERSION_INFO
   cout << CmdLine(argc,argv); // 输出终端
 
 // ------------- Process parameters before getting bogged down in computations
-
+  // 利用CapoParameters类接收终端命令
   CapoParameters capoParams(argc,argv);
-
+  // 如果终端没有输入参数或者接收到帮助请求，输出如下信息
   if (noParams.found() || helpRequest.found() || helpRequest1.found())
   {
      cout << "  Use '-help' or '-f filename.aux' " << endl;
@@ -91,27 +91,32 @@ int main(int argc, const char *argv[])
           << endl;
      return 0;
   }
-
+  // 输出capoParams参数信息
   cout << capoParams << endl;
-// 处理输入数据
+  // 处理输入数据 - 接收处理文件名信息
   StringParam 	 auxFileName 	("f", 	argc,argv);
+  // 如果未找到.aux文件，执行以下函数输出错误信息
   abkfatal(auxFileName.found(),"Usage: prog -f filename.aux <more params>"); // 错误警告函数
 
-  // 检查信息
+  // 检查数据内容 - checkDB命令在哪里声明的，没有找到。 返回_b或者_on
   BoolParam check("checkDB",argc,argv);
-  DB::Parameters dbparams;
-  dbparams.alwaysCheckConsistency=check;
-
+  DB::Parameters dbparams; // 声明一个Parameters类 - 嵌套于DB中
+  dbparams.alwaysCheckConsistency=check; // _b or _on
+  // 文件数据读取处理 - 输入参数为.aux文件以及Parameters参数列表
+  // 最后将文件读取进内存？或者以什么方式存放？
   DB db(auxFileName,dbparams);
-
+  // 如果接收到命令，存储文件为orig.def
   if(saveOrigDef.found())
 	db.saveDEF("orig.def");
   // 输出设计名称
   cerr<<"Design Name: "<<db.getDesignName()<<endl;
 
-  // 
+  // 主要是设置了三个参数 
+  // remCongestion --> 移除拥塞？ 
+  // numRowsToRemove --> 移除的行数量
+  // spaceCellsAlg --> ? (是一个枚举)
   RBPlaceParams rbParam(argc,argv); // 处理参数 - 返回什么
-  RBPlaceFromDB rbplace(db, rbParam);   
+  RBPlaceFromDB rbplace(db, rbParam); // 一个参数是处理过后文件信息，一个是设置的一些参数 
 
   Timer capoTimer;
   CapoPlacer capo(rbplace, capoParams);

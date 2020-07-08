@@ -415,7 +415,7 @@ void CapoParameters::printHelp()
 
 // ---------------------------------------------------
 // implementation of CapoSplitterParams
-
+// 通过接收到的终端参数，设置相应的布局器执行参数
 CapoSplitterParams::CapoSplitterParams(int argc, const char *argv[])
         : doRepartitioning(false), repartSmallWS(true), useQuadCluster(false),
 	  useWSTolMethod(true), constantTolerance(20), uniformWS(true),

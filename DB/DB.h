@@ -158,7 +158,7 @@ private:
 	dbEasyAccess	easyAccess;
         dbRoutingInfo   routedNets;
         dbTemporal  	*timing;
-        
+        // 成员函数声明
         DB(const char *auxFileName, Parameters params=Parameters());
        ~DB();
         bool  isConsistent()            const;
@@ -173,7 +173,7 @@ private:
         const dbNetlist& getNetlist() const { return design;  }
               dbNetlist& getNetlistForSurgery() { return design;  }
         const dbTemporal &getTiming() const { return *timing; }
-
+        // 存储文件函数声明
         void saveDEF(const char *defFileName,
                      bool bSaveUnPlacedLocs=false,
                      bool bSaveRoutingInfo=true) const;

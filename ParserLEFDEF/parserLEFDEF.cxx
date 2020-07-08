@@ -136,7 +136,7 @@ void processRegions(ParserLEFDEF &p)
 	  }
       }
     }
-
+// 文件读取函数，处理LEF与DEF文件
 ParserLEFDEF::ParserLEFDEF(DB& db,
                            const char *lname,
                            const char *dname):
@@ -147,14 +147,17 @@ pp = this;
 pdb = &_db;
 //set default values
 _db.context._units = 100;
-
+// 读取文件，返回FILE* 
+// lname --> LEFFileName
 lefin=fopen(lname,"r");
+// 如果读取失败
 if (!lefin)
     {
     fprintf(stdout,"Unable to open LEF file %s\n",lname);
     printf("Unable to open LEF file %s\n",lname);
     exit(-1);
     }
+// dname --> DEFFileName
 defin=fopen(dname,"r");
 if (!defin)
     {
@@ -162,9 +165,11 @@ if (!defin)
     printf("Unable to open DEF file %s\n",dname);
     exit(-1);
     }
+// 这是什么东西？判断读取成功？
 retcode =   lefparse();
 if (!retcode)
       {
+          // fprintf返回输出的字符
       fprintf(stdout,"LEF file %s parsed\n",lname);
       fflush(stdout);
       }
@@ -178,6 +183,7 @@ else
     }
 
 //make bogus site for external pins
+// 下面是做什么用的呢？
 _db.context._sites.push_back(pExtPinSite=new dbSite("FakedSiteForExtPins",
                              dbSite::PAD,
                              Symmetry(false,false,false),

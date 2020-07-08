@@ -67,7 +67,8 @@
 #endif
 
 using std::vector;
-
+// 初始化参数列表
+// 
 RBPlaceFromDB::RBPlaceFromDB (const DB& db, RBPlacement::Parameters params) 
 	: RBPlacement(db.getNetlist().getNumCells(), db.spatial.locations,
 		      db.spatial.orientations, params), 

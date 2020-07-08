@@ -101,7 +101,7 @@
 #ifndef  ABKDEBUG
 #define  ABKDEBUG
 #endif
-// DB::Parameters构造函数 - 初始化
+// DB::Parameters构造函数 - 初始化参数列表
 DB::Parameters::Parameters():ignoreLogicalPins(true),
                              ignoreGlobalRoutingInfo(true),
                              ignoreDetailedRoutingInfo(true),
@@ -111,12 +111,16 @@ DB::Parameters::Parameters():ignoreLogicalPins(true),
                              routedDesign(false),
                              alwaysCheckConsistency(false)
 {}
-
+// 成员函数定义 - 接收参数为.aux文件名称和初始化参数列表
+// 判断文件类型并读取 支持LEFDEF, LEFDEFLGC, LEFDEFq, LEFDEFqLGC集中文件
 DB::DB(const char *auxFileName,Parameters params):_params(params)
-{
+{   // 时间
     Timer tm;
+    // 无法构造数据，.aux文件未找到
    abkfatal(auxFileName!=NULL,"Can\'t construct DB: NULL aux file name passed");
+    // 读取.aux文件
     ifstream auxFile(auxFileName);
+    // 无法读取输出提示信息
     abkfatal(auxFile,"Can\'t open aux file to construct DB");
     
     timing = NULL;
@@ -174,6 +178,7 @@ DB::DB(const char *auxFileName,Parameters params):_params(params)
             if (word2[0]==pathDelimWindows || word1[0] == pathDelimUnix) 
                 strcpy(tmpw2,word2);
             else { strcpy(tmpw2,dirName),strcat(tmpw2,word2);  }
+            // 读取文件内容
             readLEFDEFq(_abk_cpd(tmpw1),_abk_cpd(tmpw2));
             strcpy(origFileFormat,"LEFDEFq");
             cout << "LEF/DEF q pair read successfully" << endl;
@@ -190,6 +195,7 @@ DB::DB(const char *auxFileName,Parameters params):_params(params)
             if (word2[0]==pathDelimWindows || word1[0] == pathDelimUnix) 
                 strcpy(tmpw2,word2);
             else { strcpy(tmpw2,dirName),strcat(tmpw2,word2);  }
+            // 读取文件内容
             readLEFDEF(_abk_cpd(tmpw1),_abk_cpd(tmpw2)); 
             strcpy(origFileFormat,"LEFDEF");
             cout << "LEF/DEF pair read successfully" << endl;
@@ -263,7 +269,7 @@ DB::DB(const char *auxFileName,Parameters params):_params(params)
    cout << "Consistency check took " << tm1 << endl;
    cout << "Database setup took " << tm << endl;
 }
-
+// 存储文件函数
 void DB::saveDEF(const char *defFileName,bool bSaveUnPlacedLocs,
                  bool bSaveRoutingInfo) const
 {

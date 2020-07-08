@@ -53,15 +53,17 @@
 class DB;
 class dbEasyAccess;
 
-
+// 公有继承RBPlacement
 class RBPlaceFromDB : public RBPlacement
 {
   protected:
-    const DB&		_db;
+  // 两个数据成员分别是什么？
+    const DB&		_db;  // 创建一个数据处理类对象，处理的是.aux文件信息
     const dbNetlist&    _netlist;
 
 
 	//construction functions
+  // 成员函数声明
     void constructCellStats();
     void constructRows();
     void splitRowsOnNets();

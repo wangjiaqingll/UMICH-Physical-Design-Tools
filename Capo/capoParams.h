@@ -48,13 +48,14 @@
 
 #include "MLPart/mlPart.h"
 #include "SmallPlacers/baseSmallPl.h"
-
+// 分割参数
 class CapoSplitterParams
 {
   public:
 
-        //if doRepartitioning, then the first tolerance is always
-        //20%, and the second tolerance follows the parameters below
+        //if doRepartitioning, then the first tolerance(第一公差) is always
+        //20%, and the second tolerance（第二公差） follows the parameters below
+        // 如果要重新分割，则第一公差始终是20%,第二公差遵循以下参数
     bool        doRepartitioning;
  
     // if repartSmallWS then whenever partitioning a block with < 2% WhiteSpace
@@ -90,8 +91,9 @@ class CapoSplitterParams
     bool fillerCellsPartCaps;
 
     Verbosity   verb;
- 
+    // 接收终端参数
     CapoSplitterParams(int argc, const char *argv[]);
+    // 初始化参数列表
     CapoSplitterParams(Verbosity verbosity = Verbosity("0_0_0"))
         : doRepartitioning(true), repartSmallWS(true), useWSTolMethod(true),
           constantTolerance(10), uniformWS(true), numMLSets(2), 
@@ -107,13 +109,13 @@ enum SeedPlacerType {DumbPlacerSeed, BaryPlacerSeed, WeiszPlacerSeed};
 enum ReplaceSmallBlocksType {Never, AtTheEnd, AtEveryLayer};        
 
 class CapoSplitterParams;
-
+// 参数定义 - 输入信息来自终端
 class CapoParameters 
-{
+{   // 声明
     void setDefaults();
 
   public: 
-    Verbosity verb;
+    Verbosity verb; // 诊断
 
       //  PARAMETERS FOR TOP-DOWN FLOW
     unsigned stopAtBlocks;  //if !=0, stop when >= this many blocks
@@ -121,7 +123,7 @@ class CapoParameters
 
     unsigned saveAtBlocks;  //if !=0, save when >= this many blocks
                             //default == 0 => run till end.
-
+    // 什么功能
     ReplaceSmallBlocksType 	replaceSmallBlocks;
 
     bool     useActualPinLocs;

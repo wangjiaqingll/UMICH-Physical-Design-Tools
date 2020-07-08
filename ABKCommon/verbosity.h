@@ -98,18 +98,18 @@ class Verbosity   // 声明类
    void _ctructFromString(const char* levels); // 声明成员函数
   // 公有成员
  public:
-    
+    // 成员函数 - 有重载
     Verbosity(); 
-    // the default is "silent"
+    // the default is "silent" 默认为静默
     Verbosity(const char* levels);
     //  space or underscore-separated unsigneds 
     //  can also be "silent" and "0" (same as "0 0 0", same as "0_0_0")
-    Verbosity(int argc, const char *argv[]); 
+    Verbosity(int argc, const char *argv[]);  // 初始 - 参数传入
     //  catches -verb 
     Verbosity(unsigned numArgs, unsigned forActions, 
               unsigned forSysRes, unsigned forMajStats, ...);
     Verbosity(const std::vector<unsigned>&);
-
+    // 声明 - 初始化列表
     Verbosity(const Verbosity& v):_levels(v._levels),
       forActions(_levels[0]),forSysRes(_levels[1]),forMajStats(_levels[2]) {}
   
@@ -119,16 +119,16 @@ class Verbosity   // 声明类
 
     unsigned& operator[](unsigned diagType);
 
-  
+    // 做什么？
     unsigned & forActions;
     // "verbosity for actions" means writing "doing this, doing that"
     //    with more or less detail, depending on the level
-
+    // 系统资源的详细情况
     unsigned & forSysRes;
     // "verbosity for system resources" means writing
     //    how much memory/CPU time/etc was used
     //    in more or fewer places depending on the level
-
+    // 主要状态
     unsigned & forMajStats;
     // "verbosity for major stats" means writing
     //    quantities/sizes of importants components,
