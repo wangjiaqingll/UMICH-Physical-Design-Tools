@@ -61,6 +61,7 @@
 
 int main(int argc, const char *argv[])
 {
+  // 创建几个类对象，以便接收终端信息
   NoParams         noParams       (argc,argv);
   BoolParam        helpRequest    ("help",argc,argv);
   BoolParam        helpRequest1   ("h",   argc,argv);
@@ -68,32 +69,38 @@ int main(int argc, const char *argv[])
 // BoolParam        doCellFlipping ("flip",argc,argv);
 //  BoolParam        doCellSpacing  ("cellSpace",argc,argv);
 
-  Verbosity	   verb(argc, argv);
+  Verbosity	   verb(argc, argv); // 诊断？
 
   cout<<"\n(c) copyright, 1998-1999 Regents of the University of California\n";
   cout<<" Authors: Andrew E. Caldwell, Andrew B. Kahng, Igor L. Markov\n";
   cout<<" Email:   {caldwell,abk,imarkov}@cs.ucla.edu"<<endl<<endl;
-  PRINT_VERSION_INFO
-  cout << CmdLine(argc,argv);
+  PRINT_VERSION_INFO // 打印版本信息
+  cout << CmdLine(argc,argv); // 命令输入提示 --> 终端
 
 // ------------- Process parameters before getting bogged down in computations
-
+  // 创建CapoParameters类接收终端命令 --> 根据命令设置一些系统参数
   CapoParameters capoParams(argc,argv);
-
+  // 如果终端没有输入参数或者接收到帮助请求时，输出如下帮助信息
   if (noParams.found() || helpRequest.found() || helpRequest1.found())
   {
      cout << "  Use '-help' or '-f filename.aux' " << endl;
      cout << "  To save output, use -savePl filename " << endl;
      return 0;
   }
-
+  // 输出系统参数设置信息
   cout << capoParams << endl;
-
+  // 创建StringParam类接收文件名参数
   StringParam 	 auxFileName 	("f", 	argc,argv);
+  // 如果未找到.aux文件名信息，执行abkfatal函数输出提示信息
   abkfatal(auxFileName.found(),"Usage: prog -f filename.aux <more params>");
-
+  // 接收终端信息设置三个系统参数
+  // remCongestion --> 移除拥塞?
+  // numRowsToRemove --> 移除行的数量？
+  // spaceCellsAlg --> 是什么，三个值可选:EQUAL, PIN1, PIN2
   RBPlaceParams rbParam(argc,argv);
+  // 输出系统参数
   cout << rbParam <<endl;
+  // 
   RBPlacement rbplace(auxFileName, rbParam);   
 
   Timer capoTimer;

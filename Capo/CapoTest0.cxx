@@ -115,8 +115,9 @@ int main(int argc, const char *argv[])
   // remCongestion --> 移除拥塞？ 
   // numRowsToRemove --> 移除的行数量
   // spaceCellsAlg --> ? (是一个枚举)
-  RBPlaceParams rbParam(argc,argv); // 处理参数 - 返回什么
-  RBPlaceFromDB rbplace(db, rbParam); // 一个参数是处理过后文件信息，一个是设置的一些参数 
+  RBPlaceParams rbParam(argc,argv);
+  // db是处理过后文件信息，rbParam是设置的一些系统参数
+  RBPlaceFromDB rbplace(db, rbParam);  
 
   Timer capoTimer;
   CapoPlacer capo(rbplace, capoParams);

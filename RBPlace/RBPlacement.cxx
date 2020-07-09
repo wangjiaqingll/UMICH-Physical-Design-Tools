@@ -831,7 +831,7 @@ ostream& operator<<(ostream& out, const RBPlacement& arg) // 重载<<定义
   out << endl;
   return out;
 }
-// 函数定义 - 接收终端参数，参数列表初始化
+// Parameters构造函数定义 - 接收终端参数，参数列表初始化
 RBPlacement::Parameters::Parameters(int argc, const char *argv[])
   :HGraphParameters(argc,argv),
    verb(argc,argv), numRowsToRemove(0), spaceCellsAlg(EQUAL_SPACE),
@@ -859,7 +859,7 @@ RBPlacement::Parameters::Parameters(int argc, const char *argv[])
           abkwarn(0,"Unrecognize spaceCellsAlg! Using default value"); // 警告
    }
 }
-// 重载输出？ 对是上面三个参数进行输出
+// 重载输出？ 对是上面三个参数进行输出？ 需要进一步研究
 ostream& operator<< (ostream& out, const RBPlaceParams& params)
 {
     out<<" RBPlacement Parameters"<<endl;

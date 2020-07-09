@@ -116,19 +116,23 @@ class RBPlacement
 	bool            remCongestion;  //used to remove congestion by blowing
 	                                //up cell widths. to be used only on
 	                                // routed placements 用于通过扩大单元格宽度来消除拥塞，仅在布线时使用
-	// 此处函数功能是什么？重点***
+	// Parameters(RBPlaceParams)构造函数1 无输入参数，设置参数列表为默认值
 	Parameters()
 	  :verb("1 1 1"), numRowsToRemove(0), spaceCellsAlg(EQUAL_SPACE),
 	  remCongestion(0)
 	  {}
-	Parameters(int argc, const char *argv[]); // 构造函数？ 输入一个整数和一个字符串列表指针
-        Parameters(const Parameters& orig)
+  // Parameters(RBPlaceParams)的构造函数2，输入参数是终端信息 argc为元素个数，argv为动态数组
+	Parameters(int argc, const char *argv[]);
+  // Parameters(RBPlaceParams)的构造函数3，输入参数一个
+  // 继承了HGraphParameters类，需要进一步了解
+  Parameters(const Parameters& orig)
 	  :HGraphParameters(orig), verb(orig.verb), numRowsToRemove(orig.numRowsToRemove), // 了解HGraphParameters类的功能
 	   spaceCellsAlg(orig.spaceCellsAlg),remCongestion(orig.remCongestion)
-	  {}                                                                               // Parameters声明
-	friend ostream& operator<<(ostream&, const Parameters&); // 重载<< 定义在RBPlacements.cxx中
+	  {}
+  // 重载<< 定义在RBPlacements.cxx中                                                                       // Parameters声明
+	friend ostream& operator<<(ostream&, const Parameters&);
     };
-
+    // 声明约束类
     Constraints constraints;  // defined in the Constraints package
                               // each individual constraint within
                               // this object will reference the
@@ -138,10 +142,10 @@ class RBPlacement
 
   protected:
 
-    HGraphWDimensions*   _hgWDims;  //owned by RBPl, but  指针
+    HGraphWDimensions*   _hgWDims;  //owned by RBPl, but
 				//a pointer so it can be populated by
 				//ctors of derived classes
-    bool 		_populated;
+    bool 		_populated;  // 是否引用？
     unsigned 		_cellsNotInRows;	//the #of cells not in a subrow
 
     vector<RBPCoreRow> 	_coreRows;    
@@ -218,7 +222,7 @@ class RBPlacement
    	: _hgWDims(NULL), _populated(false), _cellsNotInRows(0), 
 	  _placement(0), _params(), _nonConstThis(this)
    	{initBBox();}
-
+  // 构造函数，输入参数为.aux文件名和系统参数，定义在RBPlaceIO.cxx中
    RBPlacement(const char* auxFileName, const Parameters& params);
 
 	//this ctor reads only the netlist from the auxfile.
@@ -549,9 +553,8 @@ class RBPlacement
    void unmarkMacrosAsFixed(void);
 
 };
-
-typedef RBPlacement::Parameters RBPlaceParams; // Parameters为RBPlacement的内部类 - 此处声明了一个Parameters类为RBPlaceParams
-
+// Parametes为RBPlacement的嵌套类，此处将其定义为 RBPlaceParams
+typedef RBPlacement::Parameters RBPlaceParams; 
 class CompareCellIdsByX
 {
     const Placement& _placement;

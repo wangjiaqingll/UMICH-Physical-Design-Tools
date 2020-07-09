@@ -48,17 +48,22 @@
 #include "Geoms/bbox.h"
 #include "RBPlacement.h"
 #include "CongestionMaps/CongestionMaps.h"
-
+// RBPlacement类的构造函数，声明在RBPlacement.h中
+// 初始化参数列表
 RBPlacement::RBPlacement(const char* auxFileName, const Parameters& params) 
 	: _hgWDims(NULL), _populated(false), _cellsNotInRows(0),
 	  _placement(0), _isFixed(0), _isCoreCell(0), _storElt(0),
 	  _params(params), _nonConstThis(this)
 {
+    // 读取文件
     ifstream auxFile(auxFileName);
+    // 如果读取失败，输出提示信息
     abkfatal(auxFile, "no aux file found");
+    // 将.aux文件名赋给orifFileName
     strcpy(origFileName,auxFileName);
 
 //  char dir[255];
+// 文件目录
     const char *auxFileDirEnd=strrchr(auxFileName,pathDelim);
     if (auxFileDirEnd)
     {

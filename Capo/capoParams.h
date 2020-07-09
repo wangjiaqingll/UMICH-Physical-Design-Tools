@@ -177,7 +177,7 @@ class CapoParameters
     bool            saveSmallPlProb;
 
     bool saveBlocksFloorplan;       //save blocks before detailed placement
-
+    // 构造函数 --> 根据参数列表自动选择（重载）
     CapoParameters();
     CapoParameters(int argc, const char *argv[]);
     CapoParameters(const CapoParameters &srcParams);

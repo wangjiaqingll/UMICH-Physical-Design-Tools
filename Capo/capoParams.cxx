@@ -61,6 +61,7 @@
 #include "ABKCommon/abkcommon.h"
 #include "capoParams.h"
 
+// 默认设置
 void CapoParameters::setDefaults()
 {
     verb=Verbosity("1 1 1");
@@ -102,11 +103,12 @@ void CapoParameters::setDefaults()
     useKPl	       = false;
     useGrpConstr       = false;
 }
-
+// 无参数输入时设为默认值
 CapoParameters::CapoParameters()
 	: verb("1 1 1")
 {  setDefaults(); }
 
+// 接收一个参数时初始化类参数列表如下：
 CapoParameters::CapoParameters(const CapoParameters &srcParams)
 	:verb(srcParams.verb),
 	 stopAtBlocks(srcParams.stopAtBlocks), 
@@ -141,7 +143,8 @@ CapoParameters::CapoParameters(const CapoParameters &srcParams)
          saveSmallPlProb(srcParams.saveSmallPlProb),
 	 saveBlocksFloorplan(srcParams.saveBlocksFloorplan)		  
 {}
-
+// 接收到来自终端的两个参数，argc为元素个数，argv为动态数组元素
+// 设置系统参数如下：
 CapoParameters::CapoParameters(int argc, const char *argv[])
 	:mlParams(argc,argv), smplParams(argc,argv),
 	 splitterParams(argc, argv)
@@ -415,7 +418,7 @@ void CapoParameters::printHelp()
 
 // ---------------------------------------------------
 // implementation of CapoSplitterParams
-// 通过接收到的终端参数，设置相应的布局器执行参数
+// 通过接收到的终端参数，设置相应的布局器执行参数                                                                                                                                                     
 CapoSplitterParams::CapoSplitterParams(int argc, const char *argv[])
         : doRepartitioning(false), repartSmallWS(true), useQuadCluster(false),
 	  useWSTolMethod(true), constantTolerance(20), uniformWS(true),
