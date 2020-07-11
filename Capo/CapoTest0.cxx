@@ -59,6 +59,10 @@
 //#include "rownet.h"
 //#include "netopt.h"
 #include "PlaceEvals/edgePlEval.h"
+
+  using std::cout;
+  using std::endl;
+  using std::cerr;
 // argc = argument count,表示传入main函数的数组元素的个数，int 类型
 // argv = argument vector, 表示传入main函数的指针数组， char**类型
 // 第一个数组元素argv[0]是程序名称，包含程序所在完整路径

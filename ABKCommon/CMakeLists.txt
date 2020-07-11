@@ -16,7 +16,7 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 # Create a library for ABKCOMMON
 ############################################################
 set( ABKCOMMON_SRC
-  src/ABKCommonTest3.cxx
+  src/ABKCommonTest0.cxx
   src/abkassert.cxx
   src/abkcpunorm.cxx
   src/abkfunc.cxx
