@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wangjiaqing/Desktop/projects/UMICH-Physical-Design-Tools/AnalytPl/src/AnalytPlTest0.cxx
+analytPl.h
+/home/wangjiaqing/Desktop/projects/UMICH-Physical-Design-Tools/AnalytPl/src/analytPl.h
+
+/home/wangjiaqing/Desktop/projects/UMICH-Physical-Design-Tools/AnalytPl/src/analytPl.cxx
+analytPl.h
+/home/wangjiaqing/Desktop/projects/UMICH-Physical-Design-Tools/AnalytPl/src/analytPl.h
+
+/home/wangjiaqing/Desktop/projects/UMICH-Physical-Design-Tools/AnalytPl/src/analytPl.h
+sgi_hash_map.h
+/home/wangjiaqing/Desktop/projects/UMICH-Physical-Design-Tools/AnalytPl/src/sgi_hash_map.h
+map
+-
+abkcommon.h
+/home/wangjiaqing/Desktop/projects/UMICH-Physical-Design-Tools/AnalytPl/src/abkcommon.h
+RBPlace/RBPlacement.h
+/home/wangjiaqing/Desktop/projects/UMICH-Physical-Design-Tools/AnalytPl/src/RBPlace/RBPlacement.h
+

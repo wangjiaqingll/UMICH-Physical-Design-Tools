@@ -22,9 +22,7 @@ set DIFF=/usr/bin/diff
 set WC=/usr/bin/wc
 set PROG=./ABKCommonTest
 
-rm  someofdiffs
-touch someofdiffs
-/bin/rm -f seeds.{in,out}
+/bin/rm -f diffs.notime seeds.{in,out}
 
 echo -n "Running test0  ..."
 echo -n "Running test0  ..." >> newout
@@ -132,9 +130,9 @@ echo Ok
 
 egrep -vi "(Created|sec|in seed.cxx)" newout > newout.notime
 egrep -vi "(Created|sec|in seed.cxx)" expectedout > expectedout.notime
-$DIFF newout.notime expectedout.notime > diffs
+$DIFF newout.notime expectedout.notime > diffs.notime
 
 echo " "
 echo Differences from precomputed results
 echo "  lines:  words:  bytes:    error log:"
-$WC diffs
+$WC diffs.notime

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libAnalytPl.a  CMakeFiles/AnalytPl.dir/src/analytPl.cxx.o CMakeFiles/AnalytPl.dir/src/AnalytPlTest0.cxx.o
+/usr/bin/ranlib ../lib/libAnalytPl.a

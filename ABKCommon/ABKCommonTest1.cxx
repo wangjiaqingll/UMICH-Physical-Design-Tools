@@ -2,8 +2,9 @@
 ***    
 *** Copyright (c) 1995-2000 Regents of the University of California,
 ***               Andrew E. Caldwell, Andrew B. Kahng and Igor L. Markov
-*** Copyright (c) 2000-2002 Regents of the University of Michigan,
-***               Saurabh N. Adya and Igor L. Markov
+*** Copyright (c) 2000-2010 Regents of the University of Michigan,
+***               Saurabh N. Adya, Jarrod A. Roy, David A. Papa and
+***               Igor L. Markov
 ***
 ***  Contact author(s): abk@cs.ucsd.edu, imarkov@umich.edu
 ***  Original Affiliation:   UCLA, Computer Science Department,
@@ -32,11 +33,8 @@
 ***************************************************************************/
 
 
-
-
 #include <iostream>
 #include "abktimer.h"
-#include "math.h"
 
 int main()
 {
@@ -49,29 +47,29 @@ int main()
     d=sqrt(i*i+5*i+8);
     if (tm.expired()) break;
   };
-  cout << i << endl;
+  std::cout << "Spend Time :"<< i << std::endl;
  
 /*
-  cout << " Timer tests " << endl;
+  std::cout << " Timer tests " << std::endl;
   Timer  tm;
      for(i=0; i<1000008; i++) d=sqrt(i*i+5*i+8);
   tm.stop();
-  cout << tm << endl;
+  std::cout << tm << std::endl;
   tm.start();
      for(i=0; i<1000048; i++) d=sqrt(i*i+23*i+sin(i)*8 + 100 );
   tm.stop();
-  cout << tm << endl;
-  cout << tm.getUnixTime()<<endl;
+  std::cout << tm << std::endl;
+  std::cout << tm.getUnixTime()<<std::endl;
   tm.start(0.001);
   for(i=0; i<1000008; i++) 
   { 
     d=sqrt(i*i+5*i+8);
     if (tm.expired()) break;
   };
-  cout << i << endl;
+  std::cout << i << std::endl;
 
   tm.stop();
-  cout << tm << endl;
+  std::cout << tm << std::endl;
 */
   return 0;
 }
