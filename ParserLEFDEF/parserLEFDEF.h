@@ -194,15 +194,17 @@ class dbVia
 // numbers of components (e.g. for preallocation), supporting 
 // global buffering etc.
 
+// 此类用来解析LEF和DEF文件内容
 class ParserLEFDEF
     {
+    // 声明几个友元函数作用？
     friend int lefparse();
     friend int defparse();
     friend void processRegions(ParserLEFDEF &p);
 
     DB& _db; // ParserXXX knows which DB object instantiated it
-            // and populates its members
-
+            // and populates its members 引用-别名
+    // 创建几个容器， 动态数组
     ctainerCellsGlobal tempAllCells;
     ctainerNetsGlobal  tempAllNets;
     ctainerNetsGlobal  tempAllSNets;

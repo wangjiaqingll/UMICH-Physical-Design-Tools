@@ -84,7 +84,7 @@ double CapoPlacer::capoTimer::MLTime;
 double CapoPlacer::capoTimer::BBTime;
 double CapoPlacer::capoTimer::SmTime;
 double CapoPlacer::capoTimer::SetupTime;
-
+typedef std::vector< bool > bit_vector;
 void CapoPlacer::printNetStat()
 {
   int first=1;
@@ -155,7 +155,7 @@ CapoPlacer::CapoPlacer(RBPlacement& rbplace, const CapoParameters& params,
 //                     const vector<char*>* altCellNames)
 	: _params(params), _rbplace(rbplace),
           _hgraphOfNetlist(rbplace.getHGraph()),
-	  _coreBBox(/*BBoxFromRBPlace*/), 
+	  _coreBBox(/*BBoxFromRBPlace*/), 4
 	  _placement(static_cast<PlacementWOrient>(rbplace)), 
 	  _kPlacement(static_cast<PlacementWOrient>(rbplace)), 
 	  _congestionMap(congestionMap),

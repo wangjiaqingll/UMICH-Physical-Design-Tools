@@ -44,7 +44,7 @@
 
 #include "ABKCommon/abkcommon.h"
 #include "DB.h"
-
+using namespace std;
 int main(int argc, char *argv[])
 {
   StringParam auxFileName("f",argc,argv);

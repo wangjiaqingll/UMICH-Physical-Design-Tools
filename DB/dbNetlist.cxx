@@ -139,7 +139,7 @@ void dbNetlist::processLGC( ifstream &lgcf,const Verbosity &verbose)
         for(mcIndex = 0, mcItr = _cellLib.begin(); mcItr != _cellLib.end(); 
 		mcItr++, mcIndex++)
         {
-            if(strcasecmp((*mcItr)->getName(), MCname) == 0)
+            if(abk_strcasecmp((*mcItr)->getName(), MCname) == 0)
             {
                 found = true;
                 break;

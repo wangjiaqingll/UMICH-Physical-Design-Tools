@@ -97,6 +97,7 @@
 #include  "ABKCommon/abkcommon.h"
 #include  "Placement/xyDraw.h"
 #include  "DB.h"
+using namespace std;
 
 #ifndef  ABKDEBUG
 #define  ABKDEBUG
@@ -112,9 +113,10 @@ DB::Parameters::Parameters():ignoreLogicalPins(true),
                              alwaysCheckConsistency(false)
 {}
 // 成员函数定义 - 接收参数为.aux文件名称和初始化参数列表
-// 判断文件类型并读取 支持LEFDEF, LEFDEFLGC, LEFDEFq, LEFDEFqLGC集中文件
+// 判断文件类型并读取 支持LEFDEF, LEFDEFLGC, LEFDEFq, LEFDEFqLGC几种文件
 DB::DB(const char *auxFileName,Parameters params):_params(params)
-{   // 时间
+{   
+    // 时间
     Timer tm;
     // 无法构造数据，.aux文件未找到
    abkfatal(auxFileName!=NULL,"Can\'t construct DB: NULL aux file name passed");
@@ -153,7 +155,7 @@ DB::DB(const char *auxFileName,Parameters params):_params(params)
                 >> noeol(lineNo) >> word2 >> noeol(lineNo);
         abkfatal(!strcmp(word2,":"),
             " Error in aux file: space-separated column expected");
-        if (!strcasecmp(word1,"CD"))
+        if (!abk_strcasecmp(word1,"CD")) // 原strcasecmp改为abk_strcasecmp,定义在abkstring.cxx中
         {
             auxFile >> word1;
             auxFile >> needeol(lineNo++);
@@ -166,7 +168,7 @@ DB::DB(const char *auxFileName,Parameters params):_params(params)
                 || word1[0] == pathDelimUnix)
                 strcat(dirName,fDel);
         }
-        else if (!strcasecmp(word1,"LEFDEFq"))
+        else if (!abk_strcasecmp(word1,"LEFDEFq"))
         {
             cout << " Entering LEFDEFq parser based on Cadence code " << endl;
             found=true; 
@@ -183,7 +185,7 @@ DB::DB(const char *auxFileName,Parameters params):_params(params)
             strcpy(origFileFormat,"LEFDEFq");
             cout << "LEF/DEF q pair read successfully" << endl;
          }
-        else if (!strcasecmp(word1,"LEFDEF"))
+        else if (!abk_strcasecmp(word1,"LEFDEF"))
         {
 //		abkfatal(0, "readLEFDEF not currently supported");
             found=true; 
@@ -201,7 +203,7 @@ DB::DB(const char *auxFileName,Parameters params):_params(params)
             cout << "LEF/DEF pair read successfully" << endl;
 
          }
-         else if (!strcasecmp(word1,"LEFDEFLGC"))
+         else if (!abk_strcasecmp(word1,"LEFDEFLGC"))
          {
 //		abkfatal(0, "readLEFDEF not currently supported");
             found=true; 
@@ -223,7 +225,7 @@ DB::DB(const char *auxFileName,Parameters params):_params(params)
             cout << "LEF/DEF pair read successfully "
                  << "(LGC file passed to postprocessor)" << endl;
          }
-         else if (!strcasecmp(word1,"LEFDEFqLGC"))
+         else if (!abk_strcasecmp(word1,"LEFDEFqLGC"))
          {
             found=true; 
             auxFile >> word1 >> noeol(lineNo) >> word2 >> noeol(lineNo)>> word3;
@@ -354,7 +356,7 @@ void DB::saveDEF(const char *defFileName,bool bSaveUnPlacedLocs,
             {
                 dbNet const &net=design.getNetByIdx(rnetIdx);
                 char const *netName = net.getName();
-                abkfatal(!strcasecmp(netName, (*iRN)->getName()), 
+                abkfatal(!abk_strcasecmp(netName, (*iRN)->getName()), 
                          "net name does not match");
                 os << "  - " << netName << " ";
 
@@ -713,13 +715,13 @@ void DB::parseDEFforGCell(const char * DEFFileName)
   while(!defFile.eof())
   {
     defFile >> eathash(lineNo) >> word1;
-    if(!strcasecmp(word1,"GCELLGRID"))
+    if(!abk_strcasecmp(word1,"GCELLGRID"))
     {
         bool horiz;
         unsigned numDivs;
         defFile >> noeol(lineNo) >> word2;
-        if(!strcasecmp(word2,"Y")) horiz = false;
-        else if(!strcasecmp(word2,"X")) horiz = true;
+        if(!abk_strcasecmp(word2,"Y")) horiz = false;
+        else if(!abk_strcasecmp(word2,"X")) horiz = true;
         else abkfatal(0, "Invalid direction for GCELLGRID");
         defFile >> noeol(lineNo) >> num1 >> noeol(lineNo) >> word1
                 >> noeol(lineNo) >> numDivs >> noeol(lineNo) >> word2
@@ -727,7 +729,7 @@ void DB::parseDEFforGCell(const char * DEFFileName)
         lineNo++;
         context.addGCellGrid(horiz, num1, numDivs, num2);
     }
-    else if(!strcasecmp(word1,"COMPONENTS")) break;
+    else if(!abk_strcasecmp(word1,"COMPONENTS")) break;
     else
     {
       defFile >> skiptoeol;

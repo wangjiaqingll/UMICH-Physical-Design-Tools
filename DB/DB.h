@@ -83,11 +83,12 @@
 #include "Placement/placeWOri.h"
 
 //: ABKGOURP/UCLA Database parser 数据库解析器
+// 只有一个DB类，对文件进行初始化
 class DB
 {
 public:
 
-    class Parameters
+    class Parameters // 设置系统参数
     {
       public:
           bool  ignoreLogicalPins;            // 忽略逻辑引脚
@@ -107,28 +108,26 @@ public:
     };
 
 private:
-    // 待定
+    // 设置一些友元类
     MakeFriendsWithParsers
-    // 声明一个Parameters类
+    // 创建一个Parameters类对象
     Parameters _params;
-    // 原始文件格式
+    // 声明几个字符串列表存储信息
     char origFileFormat[30];
-    // 原始文件名字
     char origFileName[255];
-    // 目录名称？
     char dirName  [1023];
-    // 容器存储.aux文件里面所有文件的名称
+    // 创建一个动态数组，存储.aux文件里面所有文件的名称
+    // 类型为char*, 动态数组名称为 allFileNamesInAUX
     vector<char*>  allFileNamesInAUX;
-    // 设计的名字
+    // 声明几个字符列表储存信息
     char designName[255];
-    // 采用技术名称
     char technoName[255];
     char delimiter;             // no code to set delimiter yet 定界符
-
+    // 处理LGC文件
     void  postProcessor(const char * LGCFileName=NULL);
                            //always called after parsing in every DB
                            //constructor, before consistency check
-  
+    // 声明读取LEF和DEF文件
     void      readLEFDEF(const char * LEFFileName, const char * DEFFileName);
 
     void      parseLEFDEF(const char * LEFFileName,

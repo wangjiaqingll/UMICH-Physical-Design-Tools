@@ -41,7 +41,7 @@
 
 #include "ABKCommon/abkcommon.h"
 #include "DB/DB.h"
-
+using namespace std;
 // Test for aux file reader
 
 int main(int argc, char *argv[])

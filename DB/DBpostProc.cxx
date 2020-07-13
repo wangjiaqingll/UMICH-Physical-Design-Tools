@@ -67,9 +67,9 @@
 #include "DB.h"
 #include "dbTemporal.h"
 
-using std::sort;
-using std::less;
-
+//using std::sort;
+//using std::less;
+using namespace std;
 // not inlined, specially to defeat a bug in SunPro CC optimizer
 void sortDesignCellsByName(ctainerCellsGlobal::iterator begin,
      ctainerCellsGlobal::iterator end, unsigned nFixed, unsigned nFixedX, 

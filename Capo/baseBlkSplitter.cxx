@@ -50,7 +50,7 @@
 #include "baseBlkSplitter.h"
 #include "ABKCommon/abkcommon.h"
 #include "RBPlace/RBPlacement.h"
-
+using namespace std;
 	//this verson finds the best row to split at
 void BaseBlockSplitter::createHSplitBlocks
 		(PartitioningProblemForCapo& problem)

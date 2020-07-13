@@ -60,7 +60,7 @@
 //#include "netopt.h"
 #include "PlaceEvals/edgePlEval.h"
 
-#include "TDplace/tdPlace.h"
+//#include "TDplace/tdPlace.h"
 
 int main(int argc, const char *argv[])
 {

@@ -72,7 +72,8 @@
 #include "baseBlkSplitter.h"
 #include "capoParams.h"
 #include "Constraints/constraints.h"
-
+#include <vector>
+typedef std::vector< bool > bit_vector;
 class PartitioningProblemForCapo;
 class CapoSplitterParams;
 class CongestionMaps;
@@ -168,7 +169,7 @@ class CapoPlacer
       static double SetupTime;
     } capoTimes;
 
-
+  // 声明
     CapoPlacer(RBPlacement& rbplace, const CapoParameters& params,
 	       CongestionMaps* congestionMap = NULL);
 //             const vector<char*>* altCellNames=0);

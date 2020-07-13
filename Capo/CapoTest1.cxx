@@ -58,7 +58,7 @@
 //#include "rowdp.h"
 //#include "rownet.h"
 //#include "netopt.h"
-
+using namespace std;
 int main(int argc, const char *argv[])
 {
   // 创建几个类对象，以便接收终端信息

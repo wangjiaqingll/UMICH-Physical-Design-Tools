@@ -79,13 +79,14 @@
 
 #include <vector>
 using std::vector;
-using std::bit_vector;
+//using std::bit_vector;
 #include "ABKCommon/abkcommon.h"
 #include "Placement/placeWOri.h"
 #include "RBRows.h"
 #include "RBCellCoord.h"
 #include "HGraphWDims/hgWDims.h"
 #include "Constraints/constraints.h"
+typedef std::vector< bool > bit_vector;
 
 #ifdef _MSC_VER
   #pragma warning(disable:4355)

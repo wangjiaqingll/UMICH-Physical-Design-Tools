@@ -102,6 +102,7 @@ class CompareMCsByName;
 class CompareCellsByName;
 class CompareCellsByCellIndex;
 
+using namespace std;
 class dbNetlist 
 {   
 // MakeFriendsWithParsers  定义为一些友元类

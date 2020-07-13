@@ -80,13 +80,13 @@ char *lltostr(int value,char *ptr)
 
 #endif
 
-
+// 函数功能是 --> 判断文件内容格式是否规范？
 int abk_strcasecmp(const char *a, const char *b) {
   int ca, cb;
   do {
      ca = (unsigned char) *a++;
      cb = (unsigned char) *b++;
-     ca = tolower(toupper(ca));
+     ca = tolower(toupper(ca)); // 大小写转换
      cb = tolower(toupper(cb));
    } while (ca == cb && ca != '\0');
    return ca - cb;

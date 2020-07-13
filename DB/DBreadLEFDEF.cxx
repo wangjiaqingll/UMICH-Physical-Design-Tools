@@ -49,6 +49,7 @@
 #include  "ABKCommon/pathDelims.h"
 #include  "ABKCommon/abkcommon.h"
 #include  "DB.h"
+using namespace std;
 // 读取文件 - 此函数仅仅判断文件是否存在以及能否被打开，随即调用parse函数处理文件
 // ****parse函数是重点
 void DB::readLEFDEF
@@ -57,7 +58,8 @@ void DB::readLEFDEF
 {  
    abkfatal(LEFFileName!=NULL,"Can\'t construct DB: NULL LEF file name passed");
    abkfatal(DEFFileName!=NULL,"Can\'t construct DB: NULL DEF file name passed");
-   const char *lefExt=LEFFileName+strlen(LEFFileName)-4;
+   const char *lefExt=LEFFileName+strlen(LEFFileName)-4; // 提取文件后缀
+   // 比较文件后缀
    abkfatal3(strcmp(lefExt,".lef")==0 || strcmp(lefExt,".LEF")==0,
        "LEF file expected instead of ",LEFFileName,"\n");
    const char *defExt=DEFFileName+strlen(DEFFileName)-4;

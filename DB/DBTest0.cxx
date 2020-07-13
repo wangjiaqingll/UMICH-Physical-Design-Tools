@@ -47,12 +47,14 @@
 
 int main(int argc, char *argv[])
 {
+  using std::cout;
+  using std::endl;
   StringParam auxFileName("f",argc,argv);
   BoolParam check("checkDB",argc,argv);
-  DB::Parameters params;
-  params.alwaysCheckConsistency=check;
-  abkfatal(auxFileName.found(),"Usage: prog -f filename.aux");
-  DB db(auxFileName,params);
+  DB::Parameters params; // 创建对象 --> 初始化系统参数
+  params.alwaysCheckConsistency=check; // 检查一致性，布尔值
+  abkfatal(auxFileName.found(),"Usage: prog -f filename.aux"); // 判断文件是否存在
+  DB db(auxFileName,params); // 创建对象，初始化数据
   cout << " Testcase : " << db.getAuxName() << endl;
   
   cout<<" Total CCs       "<< db.getNetlist().getNumCCs()       << endl;
